@@ -1,0 +1,204 @@
+// Grundgerüst: Leiste, Kopfzeile, Bereich.
+
+import { useEffect, useState } from 'preact/hooks';
+import { inhalt } from './daten/inhalt.js';
+import { useRoute, link, geheZu } from './router.js';
+import { useLernstand, fehlerZustand } from './lernstand/store.js';
+import { setzeEinstellung, einstellung } from './lernstand/einstellungen.js';
+import { kartenZustand, blockZustand } from './lernstand/ableiten.js';
+import { Icon, SymbolKnopf, Balken } from './ui/bausteine.jsx';
+import { Meldungen, BestaetigungsDialog, melde } from './ui/dialog.jsx';
+import { trainerIn, trainerById } from './bereiche/trainer/verzeichnis.js';
+import { Lernen } from './bereiche/lernen/Lernen.jsx';
+import { Karten } from './bereiche/karten/Karten.jsx';
+import { Glossar } from './bereiche/glossar/Glossar.jsx';
+import { Hilfe } from './bereiche/hilfe/Hilfe.jsx';
+import { Wichtigkeit } from './bereiche/wichtigkeit/Wichtigkeit.jsx';
+import { TrainerBereich } from './bereiche/trainer/index.jsx';
+import { PruefungBereich } from './bereiche/pruefung/Pruefung.jsx';
+import { SicherungsKnopf } from './bereiche/sicherung/Sicherung.jsx';
+import { Feier } from './bereiche/feier/Feier.jsx';
+import { Befehlspalette } from './bereiche/palette/Befehlspalette.jsx';
+import { Intro, spieleIntro } from './bereiche/intro/Intro.jsx';
+import { TimerPille } from './bereiche/start/FokusTimer.jsx';
+
+const BEREICH_NAMEN = { start: 'Lernplan', lernen: 'Lernplan', karten: 'Lernkarten', pruefung: 'Probeprüfung', trainer: 'Üben', glossar: 'Glossar', wichtigkeit: 'Wichtigkeit', hilfe: 'Hilfe' };
+
+export function App() {
+  const route = useRoute();
+  const stand = useLernstand();
+  const [leisteOffen, setLeisteOffen] = useState(false); // schmale Fenster: Schublade
+  // Nach einem Klick in der Schublade (Navigation) die Schublade schließen
+  useEffect(() => setLeisteOffen(false), [location.hash]);
+
+  // Ohne Raum in der Adresse: zuletzt gewählten Raum öffnen
+  // Gibt es den Raum nicht (z. B. AP2 nach dem Umbau in PB1/PB2), passenden Raum wählen
+  const gueltig = (r) => (inhalt.raeume.has(r) ? r : 'AP1');
+  useEffect(() => {
+    if (!route.raum || !inhalt.raeume.has(route.raum)) geheZu(gueltig(route.raum ?? einstellung('raum', 'AP1')), route.raum ? route.bereich : 'start', null, null, { ersetzen: true });
+  }, [route.raum]);
+  const raum = gueltig(route.raum ?? einstellung('raum', 'AP1'));
+  useEffect(() => {
+    document.documentElement.dataset.raum = raum;
+    setzeEinstellung('raum', raum);
+  }, [raum]);
+  useEffect(() => {
+    setLeisteOffen(false);
+    window.scrollTo({ top: 0 });
+  }, [route.raum, route.bereich, route.unter]);
+  useEffect(() => {
+    const { ladeFehler } = fehlerZustand();
+    if (ladeFehler) melde(`Der gespeicherte Lernstand war beschädigt und wurde beiseitegelegt: ${ladeFehler}`, { fehler: true, dauer: 10000 });
+  }, []);
+  // Speichern fehlgeschlagen (z. B. Speicher voll): einmal melden, bis es wieder klappt
+  const { speicherFehler } = fehlerZustand();
+  useEffect(() => {
+    if (speicherFehler) melde(speicherFehler, { fehler: true, dauer: 15000 });
+  }, [speicherFehler]);
+
+  let titel = BEREICH_NAMEN[route.bereich] ?? '';
+  if (route.bereich === 'trainer' && route.unter) titel = trainerById(route.unter)?.name ?? titel;
+  if (route.bereich === 'karten' && route.unter === 'sitzung') titel = 'Lernkarten · Sitzung';
+  let bereich;
+  switch (route.bereich) {
+    case 'lernen':
+      bereich = <Lernen raum={raum} params={route.params} />;
+      break;
+    case 'karten':
+      bereich = <Karten raum={raum} unter={route.unter} params={route.params} />;
+      break;
+    case 'pruefung':
+      bereich = <PruefungBereich key={raum} raum={raum} />;
+      break;
+    case 'trainer':
+      bereich = <TrainerBereich raum={raum} trainerId={route.unter} params={route.params} />;
+      break;
+    case 'glossar':
+      bereich = <Glossar raum={raum} params={route.params} />;
+      break;
+    case 'wichtigkeit':
+      bereich = <Wichtigkeit raum={raum} />;
+      break;
+    case 'hilfe':
+      bereich = <Hilfe raum={raum} />;
+      break;
+    default:
+      bereich = <Lernen raum={raum} params={route.params} />;
+  }
+
+  return (
+    <div class="app" data-leiste-offen={leisteOffen}>
+      <Leiste raum={raum} route={route} stand={stand} />
+      <div class="haupt">
+        <header class="kopf">
+          <SymbolKnopf
+            class="kopf__menue"
+            icon={leisteOffen ? 'panel-left-close' : 'panel-left-open'}
+            label={leisteOffen ? 'Menü schließen' : 'Menü öffnen'}
+            tipUnten
+            onClick={() => setLeisteOffen(!leisteOffen)}
+          />
+          <nav class="pfad" aria-label="Pfad">
+            <a class="pfad__raum" href={link(raum)}>
+              {inhalt.raeume.get(raum).name}
+            </a>
+            <span class="pfad__trenner">/</span>
+            <span class="pfad__teil">{titel}</span>
+          </nav>
+          <div class="kopf__rechts">
+            <TimerPille raum={raum} />
+            <button class="kopf__status knopf knopf--geist knopf--s" aria-label="Suchen" onClick={() => window.dispatchEvent(new Event('palette-oeffnen'))}>
+              <Icon name="search" groesse={14} /> <span class="kopf__text">Suchen</span> <kbd class="kbd">Strg K</kbd>
+            </button>
+            <SicherungsKnopf />
+          </div>
+        </header>
+        <main class="inhalt" id="inhalt">
+          {bereich}
+        </main>
+      </div>
+      {leisteOffen && <div class="leiste-schleier" onClick={() => setLeisteOffen(false)} />}
+      <Meldungen />
+      <BestaetigungsDialog />
+      <Feier />
+      <Intro />
+      <Befehlspalette raum={raum} />
+    </div>
+  );
+}
+
+function Leiste({ raum, route, stand }) {
+  const raeume = [...inhalt.raeume.values()];
+  const index = raeume.findIndex((r) => r.id === raum);
+  const kartenIds = inhalt.kartenJeRaum.get(raum) ?? [];
+  const karten = kartenZustand(stand, kartenIds);
+  const faelligeBloecke = inhalt.raeume.get(raum).bloeckeListe.filter((b) => blockZustand(stand, b).faellig).length;
+  // Übersicht und Lernplan sind eine Seite: der Raum-Start gilt als Lernplan
+  const aktiv = (bereich, unter = null) => (route.bereich === bereich || (bereich === 'lernen' && (route.bereich === 'start' || !route.bereich))) && (unter === null || route.unter === unter);
+
+  const navPunkt = ({ bereich, unter, icon, text, zahl, zahlTon }) => (
+    <a key={`${bereich}-${unter}`} class="nav-punkt" href={link(raum, bereich, unter)} aria-current={aktiv(bereich, unter) ? 'page' : undefined}>
+      <Icon name={icon} groesse={17} />
+      <span>{text}</span>
+      {zahl ? <span class={`nav-punkt__zahl ${zahlTon ? `nav-punkt__zahl--${zahlTon}` : ''}`}>{zahl}</span> : null}
+    </a>
+  );
+
+  return (
+    <aside class="leiste" aria-label="Navigation">
+      <a class="marke-logo" href={link(raum)} onClick={spieleIntro} title="Intro abspielen">
+        <span class="marke-logo__bild">
+          <Icon name="layers" groesse={20} strich={2} />
+        </span>
+        <span>
+          <div class="marke-logo__name">Lernstudio</div>
+          <div class="marke-logo__zusatz">Fachinformatik</div>
+        </span>
+      </a>
+
+      <div class="raumwahl" role="group" aria-label="Lernraum" style={{ '--raeume': raeume.length }}>
+        <span class="raumwahl__schieber" style={{ transform: `translateX(calc(${index} * (100% + 2px)))` }} />
+        {raeume.map((r) => (
+          <button
+            key={r.id}
+            class="raumwahl__knopf"
+            aria-pressed={r.id === raum}
+            onClick={() => geheZu(r.id, route.bereich === 'trainer' ? 'start' : route.bereich, null, null)}
+          >
+            {r.name}
+          </button>
+        ))}
+      </div>
+
+      <nav class="nav-gruppe" aria-label="Arbeitsplatz">
+        <div class="nav-gruppe__titel ueberschrift-klein">Dein Arbeitsplatz</div>
+        {navPunkt({ bereich: "lernen", icon: "list-checks", text: "Lernplan", zahl: faelligeBloecke || null, zahlTon: "faellig" })}
+        {navPunkt({ bereich: "karten", icon: "layers", text: "Lernkarten", zahl: karten.faellig || null, zahlTon: "faellig" })}
+        {navPunkt({ bereich: "pruefung", icon: "timer", text: "Probeprüfung" })}
+      </nav>
+
+      <nav class="nav-gruppe" aria-label="Üben">
+        <div class="nav-gruppe__titel ueberschrift-klein">Üben &amp; Verstehen</div>
+        {trainerIn(raum).map((t) => navPunkt({ bereich: 'trainer', unter: t.id, icon: t.icon, text: t.kurz }))}
+      </nav>
+
+      <nav class="nav-gruppe" aria-label="Nachschlagen">
+        <div class="nav-gruppe__titel ueberschrift-klein">Nachschlagen</div>
+        {navPunkt({ bereich: "glossar", icon: "book-open", text: "Glossar" })}
+        {navPunkt({ bereich: "wichtigkeit", icon: "chart-no-axes-column", text: "Wichtigkeit" })}
+        {navPunkt({ bereich: "hilfe", icon: "circle-question-mark", text: "Hilfe" })}
+      </nav>
+
+      <div class="leiste__fuss">
+        <button class="rang-mini" onClick={() => window.dispatchEvent(new CustomEvent('raenge-zeigen'))} aria-label="Rangleiter anzeigen">
+          <div class="rang-mini__kopf">
+            <Icon name="award" groesse={15} />
+            <span class="rang-mini__name">{stand.rang.name}</span>
+            <span class="rang-mini__xp">{stand.xp} XP</span>
+          </div>
+          <Balken wert={stand.rang.anteil} label="Fortschritt zum nächsten Rang" />
+        </button>
+      </div>
+    </aside>
+  );
+}

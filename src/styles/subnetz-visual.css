@@ -1,0 +1,471 @@
+/* Subnetz-Visualizer: kompakt, alles auf einen Blick */
+.snv {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+.snv .flaeche {
+  padding: var(--s-3) var(--s-4);
+}
+.snv-kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px var(--s-3);
+  margin-bottom: var(--s-2);
+}
+.snv-klein {
+  font-size: var(--t-xs);
+}
+
+/* Leiste */
+.snv-leiste {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--s-3) var(--s-5);
+}
+.snv-ip,
+.snv-praefix {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.snv-ip input {
+  width: 190px;
+  font-size: var(--t-l);
+  font-weight: 600;
+}
+.snv-ip--falsch {
+  border-color: var(--fehler) !important;
+}
+.snv-praefix {
+  flex: 1 1 260px;
+}
+.snv-praefix__zeile {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.snv-praefix__zeile input[type='range'] {
+  flex: 1;
+  accent-color: var(--akzent);
+}
+.snv-praefix__wert {
+  min-width: 3.2ch;
+  font-size: var(--t-xl);
+  font-weight: 700;
+  color: var(--akzent);
+}
+.snv-schritt,
+.snv-zufall {
+  height: 32px;
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  color: var(--text);
+  cursor: pointer;
+}
+.snv-schritt {
+  width: 32px;
+  font-size: 18px;
+}
+.snv-zufall {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 var(--s-3);
+  font: inherit;
+  font-size: var(--t-s);
+  font-weight: 600;
+}
+.snv-schritt:hover,
+.snv-zufall:hover {
+  border-color: var(--akzent);
+}
+
+/* Rechenweg */
+.snv-weg {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.snv-weg li {
+  display: flex;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  line-height: 1.5;
+}
+.snv-weg__nr {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--akzent-weich);
+  color: var(--akzent);
+  font: 700 var(--t-xs) var(--mono);
+}
+.snv-weg__titel {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+.snv-weg__text {
+  color: var(--text-2);
+}
+.snv-weg--ziel {
+  box-shadow: inset 0 0 0 1px var(--akzent-linie);
+}
+
+/* Raster */
+.snv-raster {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: var(--s-3);
+}
+.snv-raster--unten {
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: start;
+}
+
+/* Bits */
+.snv-legende {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--t-xs);
+  color: var(--text-2);
+}
+.snv-bits__tabelle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow-x: auto;
+}
+.snv-zeile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.snv-zeile__name {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  width: 112px;
+  font-size: var(--t-xs);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-2);
+}
+.snv-zeile__dez {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+.snv-oktett {
+  display: flex;
+  gap: 1px;
+  padding: 2px;
+  border-radius: 4px;
+}
+.snv-oktett--wichtig {
+  background: var(--akzent-weich);
+  box-shadow: inset 0 0 0 1px var(--akzent-linie);
+}
+.snv-bit {
+  display: inline-grid;
+  place-items: center;
+  width: 14px;
+  height: 20px;
+  border: 0;
+  border-radius: 2px;
+  font: 600 11px var(--mono);
+  font-style: normal;
+}
+button.snv-bit {
+  cursor: pointer;
+}
+button.snv-bit:hover {
+  outline: 2px solid var(--text);
+  outline-offset: -1px;
+}
+.snv-bit--netz {
+  background: var(--akzent);
+  color: var(--akzent-text);
+}
+.snv-bit--host {
+  background: var(--flaeche-3);
+  color: var(--text);
+}
+.snv-bit--grenze {
+  box-shadow: -2px 0 0 var(--warn);
+}
+.snv-zeile--gewichte {
+  margin-top: -2px;
+}
+.snv-gewicht {
+  display: inline-block;
+  width: 14px;
+  font: 8px var(--mono);
+  font-style: normal;
+  text-align: center;
+  color: var(--text-3);
+}
+.snv-hinweis {
+  margin: var(--s-2) 0 0;
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+
+/* Kennzahlen */
+.snv-marke-text {
+  padding: 1px 8px;
+  border-radius: var(--r-rund);
+  background: var(--flaeche-3);
+  font-size: var(--t-xs);
+  font-weight: 600;
+}
+.snv-marke-text--privat {
+  background: var(--akzent-weich);
+  color: var(--akzent);
+}
+.snv-kacheln {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+}
+.snv-kachel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 5px 8px;
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+}
+.snv-kachel__name {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+.snv-kachel__wert {
+  font-size: var(--t-s);
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.snv-kachel__unter {
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+.snv-kachel--wichtig {
+  box-shadow: inset 3px 0 0 var(--akzent);
+}
+
+/* Zahlenstrahl */
+.snv-strahl__info {
+  font-size: var(--t-s);
+  font-weight: 600;
+}
+.snv-strahl__leiste {
+  position: relative;
+  display: flex;
+  gap: 2px;
+  height: 34px;
+  margin: 22px 0 22px;
+}
+.snv-block {
+  position: relative;
+  flex: 1;
+  min-width: 1px;
+  border: 0;
+  border-radius: 3px;
+  background: var(--flaeche-3);
+  cursor: pointer;
+}
+.snv-block--hover {
+  background: var(--linie-3);
+}
+.snv-block--aktiv {
+  background: linear-gradient(90deg, var(--akzent) 0 4px, color-mix(in srgb, var(--akzent) 30%, transparent) 4px calc(100% - 4px), var(--warn) calc(100% - 4px));
+  box-shadow: 0 0 0 2px var(--akzent);
+}
+.snv-block__von,
+.snv-strahl__ende {
+  position: absolute;
+  bottom: -18px;
+  font-size: 10.5px;
+  color: var(--text-3);
+}
+.snv-block__von {
+  left: 0;
+}
+.snv-strahl__ende {
+  right: 0;
+}
+.snv-zeiger {
+  position: absolute;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  background: var(--text);
+  transform: translateX(-1px);
+  pointer-events: none;
+}
+.snv-zeiger span {
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: var(--text);
+  color: var(--bg);
+  font-size: 10.5px;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+.snv-strahl__legende {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px var(--s-4);
+  font-size: var(--t-xs);
+}
+.snv-c {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 4px 0 2px;
+  border-radius: 2px;
+  vertical-align: baseline;
+}
+.snv-c--netz {
+  background: var(--akzent);
+}
+.snv-c--host {
+  background: color-mix(in srgb, var(--akzent) 30%, transparent);
+}
+.snv-c--bc {
+  background: var(--warn);
+}
+
+/* Tabellen */
+.snv-liste__rollen {
+  max-height: 248px;
+  overflow: auto;
+}
+.snv-tab {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-s);
+}
+.snv-tab th {
+  position: sticky;
+  top: 0;
+  padding: 4px 8px;
+  background: var(--flaeche-1);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  text-align: left;
+  color: var(--text-3);
+}
+.snv-tab td {
+  padding: 3px 8px;
+  border-top: 1px solid var(--linie);
+  white-space: nowrap;
+}
+.snv-tab tbody tr {
+  cursor: pointer;
+}
+.snv-tab tbody tr:hover {
+  background: var(--flaeche-2);
+}
+.snv-kurz {
+  display: none;
+}
+.snv-tab--aktiv,
+.snv-tab--aktiv:hover {
+  background: var(--akzent-weich) !important;
+  box-shadow: inset 3px 0 0 var(--akzent);
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .snv-weg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .snv-raster,
+  .snv-raster--unten {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .snv .flaeche {
+    padding: var(--s-3);
+  }
+  .snv-ip,
+  .snv-ip input {
+    width: 100%;
+  }
+  .snv-ip input {
+    font-size: 16px;
+  }
+  .snv-zeile {
+    flex-wrap: wrap;
+    gap: 2px 4px;
+  }
+  .snv-zeile__name {
+    width: 100%;
+  }
+  .snv-zeile--gewichte .snv-zeile__name {
+    display: none;
+  }
+  .snv-zeile__name {
+    flex-direction: row;
+    gap: var(--s-2);
+  }
+  .snv-zeile {
+    gap: 2px 3px;
+  }
+  .snv-oktett {
+    gap: 0;
+    padding: 1px;
+  }
+  .snv-bit,
+  .snv-gewicht {
+    width: 9.5px;
+  }
+  .snv-bit {
+    height: 17px;
+    border-radius: 1px;
+    font-size: 9px;
+  }
+  .snv-gewicht {
+    font-size: 5.5px;
+  }
+  .snv-weg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .snv-weg li {
+    flex-direction: column;
+    gap: 4px;
+    font-size: var(--t-xs);
+  }
+  .snv-lang {
+    display: none;
+  }
+  .snv-kurz {
+    display: inline;
+  }
+  .snv-tab th,
+  .snv-tab td {
+    padding: 3px 5px;
+  }
+}

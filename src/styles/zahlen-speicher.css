@@ -1,0 +1,503 @@
+/* Zahlen-Trainer, Speicherbedarf: Stile der Bilder zum Mitmachen (bilder/speicher.jsx), Präfix zt-speicher- */
+
+/* ---------- Bedienelemente ---------- */
+.zt-speicher-regler {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-3) var(--s-5);
+  max-width: 100%;
+}
+.zt-speicher-wahl,
+.zt-speicher-zaehler {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  max-width: 100%;
+}
+.zt-speicher-wahl__name,
+.zt-speicher-zaehler__name {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-speicher-zaehler__wert {
+  min-width: 52px;
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+.zt-speicher-zaehler__wert small {
+  font-size: var(--t-s);
+  font-weight: 400;
+  color: var(--text-4);
+}
+
+/* Große Zahl mit Erklärzeile */
+.zt-speicher-gross {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  text-align: center;
+}
+.zt-speicher-gross > .mono {
+  font-size: var(--t-l);
+  color: var(--text-3);
+}
+.zt-speicher-gross b {
+  font-size: var(--t-2xl);
+  color: var(--text);
+}
+.zt-speicher-gross__klein {
+  font-size: var(--t-s);
+  color: var(--text-4);
+  max-width: 420px;
+}
+
+/* Rechenweg: Name · Rechnung · Ergebnis */
+.zt-speicher-weg {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: var(--s-1) var(--s-3);
+  align-items: baseline;
+  max-width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+.zt-speicher-weg__zeile {
+  display: contents;
+}
+.zt-speicher-weg__name {
+  font-size: var(--t-s);
+  color: var(--text-4);
+  text-align: right;
+}
+.zt-speicher-weg__rechnung {
+  font-size: var(--t-m);
+  color: var(--text-3);
+}
+.zt-speicher-weg__ergebnis {
+  font-size: var(--t-n);
+  color: var(--text);
+  text-align: right;
+}
+.zt-speicher-weg__zeile--hervor .zt-speicher-weg__ergebnis {
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--akzent-stark);
+}
+
+/* ---------- Stufen: Thermometer-Skala ---------- */
+.zt-speicher-skala {
+  position: relative;
+  width: min(420px, 100%);
+  padding-top: var(--s-2);
+}
+.zt-speicher-skala__band {
+  display: flex;
+  gap: 1px;
+  height: 28px;
+  border-radius: var(--r-1);
+  overflow: hidden;
+  background: var(--linie);
+}
+.zt-speicher-skala__band span {
+  flex: 1;
+  background: var(--flaeche-2);
+  transition: background var(--dauer) var(--kurve);
+}
+.zt-speicher-skala__band span.zt-speicher-skala--an {
+  background: var(--gut);
+}
+.zt-speicher-skala__band--fein {
+  background: linear-gradient(90deg, var(--flaeche-2), var(--linie-3));
+}
+.zt-speicher-skala__messung {
+  position: absolute;
+  top: 0;
+  height: 44px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--warn);
+}
+.zt-speicher-skala__achse {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--s-2);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+
+/* ---------- Werte: Messwerte als Bitkästchen ---------- */
+.zt-speicher-werte {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-3);
+  max-width: 100%;
+}
+.zt-speicher-wert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  padding: var(--s-2);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  animation: einblenden var(--dauer) var(--kurve);
+}
+.zt-speicher-wert__name {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-speicher-wert__bits {
+  display: grid;
+  gap: 2px;
+}
+.zt-speicher-wert__bits span {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 20px;
+  border-radius: 3px;
+  background: var(--flaeche-2);
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-speicher-wert__bits span.zt-speicher-bit--an {
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+}
+
+/* ---------- Treppe: Bit → Byte → KiB → MiB ---------- */
+.zt-speicher-treppe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-1);
+  width: min(360px, 100%);
+}
+.zt-speicher-treppe__stufe {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: calc(var(--stufe) * 12px);
+}
+.zt-speicher-treppe__schritt {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--t-s);
+  color: var(--akzent);
+}
+.zt-speicher-treppe__schritt::before {
+  content: '↓';
+  margin-right: var(--s-1);
+}
+.zt-speicher-treppe__wert {
+  padding: var(--s-1) var(--s-3);
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  font-size: var(--t-l);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.zt-speicher-treppe__wert b {
+  font-weight: 600;
+  color: var(--akzent-stark);
+}
+
+/* ---------- Pixelraster ---------- */
+.zt-speicher-raster {
+  display: grid;
+  gap: 1px;
+  width: min(300px, 100%);
+  padding: 1px;
+  border-radius: var(--r-1);
+  background: var(--linie-2);
+}
+.zt-speicher-raster span {
+  transition: background var(--dauer) var(--kurve);
+}
+
+/* ---------- Scan: Foto in Zoll und Lupe ---------- */
+.zt-speicher-scan {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-6);
+}
+.zt-speicher-scan__foto {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 26px);
+  grid-auto-rows: 26px;
+  gap: 1px;
+  margin: 0 var(--s-6) var(--s-5) 0;
+  padding: 1px;
+  background: var(--linie-2);
+  border-radius: 3px;
+}
+.zt-speicher-scan__zoll {
+  background: var(--flaeche-2);
+}
+.zt-speicher-scan__zoll.zt-speicher-scan--lupe {
+  background: var(--akzent-weich);
+  outline: 1px solid var(--akzent);
+}
+.zt-speicher-scan__mass {
+  position: absolute;
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  white-space: nowrap;
+}
+.zt-speicher-scan__mass--b {
+  left: 0;
+  right: 0;
+  bottom: -20px;
+  text-align: center;
+}
+.zt-speicher-scan__mass--h {
+  top: 50%;
+  left: calc(100% + 6px);
+}
+.zt-speicher-scan__lupe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  max-width: 180px;
+}
+.zt-speicher-scan__punkte {
+  display: grid;
+  gap: 1px;
+  width: 120px;
+  height: 120px;
+  padding: 1px;
+  border-radius: 3px;
+  border: 1px solid var(--akzent);
+  background: var(--linie);
+}
+.zt-speicher-scan__punkte span {
+  background: var(--akzent-weich);
+}
+
+/* ---------- Abtastung: Welle mit Messpunkten ---------- */
+.zt-speicher-welle {
+  width: min(420px, 100%);
+  height: auto;
+}
+.zt-speicher-welle__stufe {
+  stroke: var(--linie);
+  stroke-width: 1;
+}
+.zt-speicher-welle__kurve {
+  fill: none;
+  stroke: var(--text-4);
+  stroke-width: 2;
+}
+.zt-speicher-welle__treppe {
+  fill: none;
+  stroke: var(--gut);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.zt-speicher-welle__punkt {
+  fill: var(--gut);
+}
+
+/* ---------- Hochrechnen: Kette von je Minute bis Jahr ---------- */
+.zt-speicher-kette {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  max-width: 100%;
+}
+.zt-speicher-kette__glied {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 78px;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+}
+.zt-speicher-kette__name {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-speicher-kette__menge {
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text);
+}
+.zt-speicher-kette__faktor {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: var(--t-s);
+  color: var(--akzent);
+  white-space: nowrap;
+}
+
+/* ---------- Balken: vorher/nachher, alt/neu, Bedarf/Karte ---------- */
+.zt-speicher-balken {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  width: min(460px, 100%);
+}
+.zt-speicher-balken__zeile {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-speicher-balken__name {
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-align: right;
+}
+.zt-speicher-balken__spur {
+  display: flex;
+  height: 22px;
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  overflow: hidden;
+}
+.zt-speicher-balken__fuellung {
+  height: 100%;
+  background: var(--info);
+  opacity: 0.75;
+  transition: width var(--dauer-lang) var(--kurve);
+}
+.zt-speicher-balken__fuellung--neu,
+.zt-speicher-balken__fuellung--gut {
+  background: var(--gut);
+}
+.zt-speicher-balken__fuellung--mehr {
+  background: var(--warn);
+}
+.zt-speicher-balken__fuellung--fehler {
+  background: var(--fehler);
+}
+.zt-speicher-balken__wert {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 76px;
+  font-size: var(--t-m);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.zt-speicher-balken__wert small {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+
+.zt-speicher-urteil {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  margin: 0;
+  font-size: var(--t-n);
+  font-weight: 600;
+  text-align: center;
+}
+.zt-speicher-urteil--gut {
+  color: var(--gut);
+}
+.zt-speicher-urteil--fehler {
+  color: var(--fehler);
+}
+
+/* ---------- Lineal: dieselben Byte in GB und GiB ---------- */
+.zt-speicher-lineal {
+  display: flex;
+  flex-direction: column;
+  width: min(440px, calc(100% - 24px));
+  margin: 0 12px;
+}
+.zt-speicher-lineal__skala {
+  position: relative;
+  height: 22px;
+}
+.zt-speicher-lineal__skala span {
+  position: absolute;
+  width: 1px;
+  height: 8px;
+  background: var(--linie-3);
+}
+.zt-speicher-lineal__skala--oben span {
+  bottom: 0;
+}
+.zt-speicher-lineal__skala--unten span {
+  top: 0;
+  background: var(--akzent);
+}
+.zt-speicher-lineal__skala small {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  white-space: nowrap;
+}
+.zt-speicher-lineal__skala--oben small {
+  bottom: 9px;
+}
+.zt-speicher-lineal__skala--unten small {
+  top: 9px;
+  color: var(--akzent);
+}
+.zt-speicher-lineal__band {
+  height: 16px;
+  border-radius: 3px;
+  background: var(--flaeche-2);
+  border: 1px solid var(--linie-2);
+}
+.zt-speicher-lineal__legende {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s-1) var(--s-3);
+  margin-top: var(--s-2);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-speicher-lineal__legende span:last-child {
+  color: var(--akzent);
+}
+
+/* ---------- Handy ---------- */
+@media (max-width: 640px) {
+  .zt-speicher-weg {
+    grid-template-columns: auto 1fr;
+    column-gap: var(--s-2);
+  }
+  .zt-speicher-weg__rechnung {
+    grid-column: 2;
+    font-size: var(--t-s);
+  }
+  .zt-speicher-weg__ergebnis {
+    grid-column: 2;
+    text-align: left;
+  }
+  .zt-speicher-weg__name {
+    grid-row: span 2;
+    align-self: center;
+  }
+  .zt-speicher-balken__zeile {
+    grid-template-columns: 48px 1fr auto;
+  }
+}

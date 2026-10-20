@@ -1,0 +1,897 @@
+/* Lernsystem (Präfix ls-): der Reiter „Verstehen“ als Unterricht in Kapiteln – für alle Trainer gleich.
+   Ansicht: trainer/lernsystem/Unterricht.jsx · Bausteine: lernsystem/bausteine.jsx · Regeln: lernsystem/LEITFADEN.md
+
+   Ein ruhiges Lehrbuch-Layout: links die Lesespalte, rechts das mitlaufende Inhaltsverzeichnis (schmal: oben als
+   wischbare Zeile). Alle Hinweise sind ein Kasten-Typ (ls-kasten) mit festen Farben: Frage blau, Begriff Akzent,
+   Merke und Prüfung neutral. Bilder und Tafeln teilen einen Rahmen. */
+.zu {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  grid-template-areas: 'lesen inhalt';
+  gap: var(--s-10);
+  align-items: start;
+}
+.ls-lesen {
+  grid-area: lesen;
+  min-width: 0;
+  max-width: 760px;
+}
+.ls-ueber {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-xs);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-3);
+}
+.ls-link {
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  color: var(--akzent);
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--akzent-linie);
+  text-underline-offset: 3px;
+}
+.ls-link:hover {
+  text-decoration-color: var(--akzent);
+}
+
+/* Inhaltsverzeichnis */
+.ls-inhalt {
+  grid-area: inhalt;
+  position: sticky;
+  top: calc(var(--kopf-hoehe) + var(--s-5));
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  max-height: calc(100vh - var(--kopf-hoehe) - var(--s-10));
+  overflow-y: auto;
+}
+.ls-inhalt__titel {
+  font-size: var(--t-xs);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-4);
+}
+.ls-inhalt__liste,
+.ls-inhalt__teile {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ls-inhalt__liste {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid var(--linie);
+}
+.ls-inhalt__knopf {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  width: 100%;
+  margin-left: -1px;
+  padding: 6px var(--s-3);
+  border: 0;
+  border-left: 2px solid transparent;
+  background: none;
+  color: var(--text-3);
+  font: inherit;
+  font-size: var(--t-n);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--dauer) var(--kurve);
+}
+.ls-inhalt__knopf:hover {
+  color: var(--text);
+}
+.ls-inhalt__knopf[aria-current='page'] {
+  border-left-color: var(--akzent);
+  color: var(--text);
+  font-weight: 620;
+}
+.ls-inhalt__nr {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  border-radius: var(--r-rund);
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.ls-inhalt__knopf[aria-current='page'] .ls-inhalt__nr {
+  color: var(--akzent);
+}
+.ls-inhalt__nr--ok {
+  background: var(--gut);
+  color: var(--akzent-text) !important;
+}
+.ls-inhalt__name {
+  flex: 1;
+  min-width: 0;
+}
+.ls-inhalt__stand {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.ls-inhalt__teile {
+  display: flex;
+  flex-direction: column;
+  padding: 2px 0 var(--s-2) calc(var(--s-3) + 26px);
+}
+.ls-inhalt__teil button {
+  position: relative;
+  width: 100%;
+  padding: 3px 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-size: var(--t-m);
+  line-height: 1.4;
+  text-align: left;
+  color: var(--text-3);
+  cursor: pointer;
+}
+.ls-inhalt__teil button::before {
+  content: '';
+  position: absolute;
+  left: -14px;
+  top: 0.75em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--linie-3);
+}
+.ls-inhalt__teil--ok button::before {
+  background: var(--gut);
+}
+.ls-inhalt__teil--jetzt button {
+  color: var(--text);
+}
+.ls-inhalt__teil--jetzt button::before {
+  background: var(--akzent);
+  box-shadow: 0 0 0 3px var(--akzent-weich);
+}
+.ls-inhalt__teil--spaeter button {
+  color: var(--text-4);
+  cursor: default;
+}
+.ls-inhalt__teil button:not(:disabled):hover {
+  color: var(--akzent);
+}
+.ls-inhalt__fuss {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--linie);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+
+/* Kapitel und Kopf */
+.ls-kapitel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-8);
+}
+.ls-kopf {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding-bottom: var(--s-6);
+  border-bottom: 1px solid var(--linie);
+}
+.ls-kopf > .ls-ueber {
+  color: var(--akzent);
+}
+.ls-kopf__titel {
+  margin: 0;
+  font-size: var(--t-3xl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.ls-kopf__text {
+  margin: 0;
+  font-size: var(--t-l);
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+/* Baut auf: leise Zeile mit Blase */
+.ls-baut {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--s-1);
+  font-size: var(--t-m);
+  color: var(--text-4);
+}
+.ls-baut__titel {
+  margin-right: var(--s-1);
+}
+.ls-baut__punkt {
+  color: var(--text-4);
+}
+.ls-baut__kapitel {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--text-3);
+  text-decoration: underline dotted var(--linie-3);
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+.ls-baut__kapitel:hover,
+.ls-baut__kapitel[aria-expanded='true'] {
+  color: var(--text);
+}
+.ls-baut__blase {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 6px);
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--s-2);
+  width: min(420px, 100%);
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-3);
+  background: var(--flaeche-4);
+  box-shadow: var(--schatten-2);
+  font-size: var(--t-m);
+  line-height: 1.55;
+  color: var(--text-2);
+}
+
+/* Lernziele und Begriffe */
+.ls-ziele {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+}
+.ls-ziele ul,
+.ls-gelernt__ziele {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ls-ziele li,
+.ls-gelernt__ziele li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  font-size: var(--t-n);
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.ls-ziele li svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--text-4);
+}
+.ls-ziele li svg.ls-ziele--ok,
+.ls-gelernt__ziele li svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--gut);
+}
+.ls-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--s-1);
+}
+.ls-chip {
+  padding: 2px 10px;
+  border-radius: var(--r-rund);
+  border: 1px solid var(--linie-2);
+  background: transparent;
+  color: var(--text-4);
+  font: inherit;
+  font-size: var(--t-s);
+  transition:
+    color var(--dauer) var(--kurve),
+    background var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve);
+}
+.ls-chip--da {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--akzent);
+  cursor: pointer;
+}
+.ls-chip--da:hover {
+  border-color: var(--akzent);
+}
+
+/* Ein Teil */
+.ls-teil {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  scroll-margin-top: calc(var(--kopf-hoehe) + var(--s-4));
+}
+.ls-teil__kopf {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+.ls-teil__ok {
+  color: var(--gut);
+}
+.ls-teil__titel {
+  margin: 0;
+  font-size: var(--t-2xl);
+  font-weight: 680;
+  letter-spacing: -0.01em;
+}
+.ls-teil__inhalt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+.ls-block {
+  scroll-margin: var(--s-16) 0 var(--s-8);
+}
+.ls-teil__weiter {
+  display: flex;
+  align-items: center;
+  gap: var(--s-4);
+  padding-top: var(--s-2);
+}
+.ls-teil__weiter::before,
+.ls-teil__weiter::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--linie);
+}
+
+/* Text */
+.ls-text {
+  margin: 0;
+  font-size: var(--t-l);
+  line-height: 1.75;
+  color: var(--text-2);
+}
+.ls-text strong {
+  color: var(--text);
+  font-weight: 620;
+}
+.ls-text code,
+.ls-kasten code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+  padding: 1px 5px;
+  border-radius: var(--r-1);
+  background: var(--flaeche-3);
+  color: var(--text);
+  white-space: nowrap;
+}
+.ls-zwischentitel {
+  margin: var(--s-2) 0 0;
+  font-size: var(--t-l);
+  font-weight: 650;
+  color: var(--text);
+}
+
+/* Kasten: ein Typ für alle Hinweise */
+.ls-kasten {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  padding: var(--s-4) var(--s-5);
+  border-radius: var(--r-3);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  --kasten: var(--text-3);
+}
+.ls-kasten__titel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-xs);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--kasten);
+}
+.ls-kasten__text {
+  font-size: var(--t-n);
+  line-height: 1.7;
+  color: var(--text-2);
+}
+.ls-kasten strong {
+  color: var(--text);
+}
+.ls-kasten__text code {
+  white-space: normal;
+}
+.ls-kasten--frage {
+  --kasten: var(--info);
+  border-color: color-mix(in srgb, var(--info) 40%, transparent);
+  background: color-mix(in srgb, var(--info) 6%, var(--flaeche-1));
+}
+.ls-kasten--begriff {
+  --kasten: var(--akzent);
+  border-color: var(--akzent-linie);
+  background: color-mix(in srgb, var(--akzent) 5%, var(--flaeche-1));
+}
+.ls-kasten--merke,
+.ls-kasten--pruefung {
+  --kasten: var(--text-3);
+  background: var(--flaeche-2);
+}
+.ls-kasten--pruefung {
+  font-size: var(--t-n);
+  line-height: 1.7;
+  color: var(--text-2);
+}
+
+/* So heißt das */
+.ls-soheisst {
+  scroll-margin: var(--s-16);
+}
+.ls-soheisst__wort {
+  font-size: var(--t-xl);
+  font-weight: 700;
+  color: var(--text);
+}
+.ls-soheisst__auch {
+  font-size: var(--t-n);
+  font-weight: 400;
+  color: var(--text-3);
+}
+.ls-soheisst__text {
+  font-size: var(--t-n);
+  line-height: 1.7;
+  color: var(--text-2);
+}
+.ls-soheisst__glossar {
+  position: absolute;
+  top: var(--s-4);
+  right: var(--s-5);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.ls-soheisst__glossar:hover {
+  color: var(--akzent);
+}
+
+/* Zwischenfrage */
+.ls-frage--ok {
+  --kasten: var(--gut);
+  border-color: var(--linie-2);
+  background: var(--flaeche-1);
+}
+.ls-frage__text {
+  margin: 0;
+  font-size: var(--t-l);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--text);
+}
+.ls-frage__optionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+  margin-top: var(--s-1);
+}
+.ls-option {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: 40px;
+  padding: var(--s-2) var(--s-4);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-2);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--t-n);
+  cursor: pointer;
+  transition:
+    border-color var(--dauer) var(--kurve),
+    background var(--dauer) var(--kurve);
+}
+.ls-option.mono {
+  font-family: var(--mono);
+  font-size: var(--t-l);
+  min-width: 64px;
+  justify-content: center;
+}
+.ls-option:hover:not(:disabled) {
+  border-color: var(--info);
+}
+.ls-option:disabled {
+  cursor: default;
+}
+.ls-option--falsch {
+  border-color: rgba(240, 112, 112, 0.5);
+  background: rgba(240, 112, 112, 0.07);
+  color: var(--text-3);
+  text-decoration: line-through;
+}
+.ls-option--richtig {
+  border-color: rgba(90, 209, 167, 0.6);
+  background: rgba(90, 209, 167, 0.1);
+  color: var(--gut);
+  font-weight: 600;
+}
+.ls-frage__eingabe {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-1);
+}
+.ls-frage__eingabe .feld {
+  width: 200px;
+  height: 40px;
+  font-size: var(--t-l);
+}
+.ls-frage__eingabe .ls-feld--breit {
+  width: 280px;
+}
+.ls-frage__weiss-nicht {
+  align-self: flex-start;
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-decoration-color: var(--linie-3);
+}
+.ls-frage__antwort {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  margin: 0;
+}
+.ls-frage__antwort--falsch {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--s-2);
+  font-size: var(--t-n);
+  line-height: 1.6;
+  color: var(--warn);
+}
+.ls-frage__antwort--falsch svg {
+  flex: none;
+  margin-top: 3px;
+}
+.ls-frage__antwort--ok {
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--linie);
+}
+.ls-frage__antwort--ok p:not(.ls-text) {
+  margin: 0;
+  font-size: var(--t-n);
+  color: var(--text-2);
+}
+.ls-frage__antwort--ok .ls-text {
+  font-size: var(--t-n);
+}
+
+/* Begriff im Text: antippen zeigt die Bedeutung */
+.ls-b {
+  position: relative;
+}
+.ls-b__wort {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: underline dotted var(--akzent);
+  text-underline-offset: 4px;
+  cursor: help;
+}
+.ls-b__blase {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: calc(100% + 6px);
+  width: min(320px, 80vw);
+  padding: var(--s-3);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-3);
+  background: var(--flaeche-4);
+  box-shadow: var(--schatten-2);
+  font-size: var(--t-m);
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.ls-b__blase code,
+.ls-begriffsliste code {
+  font-family: var(--mono);
+  font-size: 0.92em;
+  padding: 0 4px;
+  border-radius: var(--r-1);
+  background: var(--flaeche-3);
+  color: var(--text);
+}
+.ls-b__blase strong {
+  color: var(--akzent);
+}
+
+/* Abbildungen: Bilder zum Mitmachen und Tafeln im selben Rahmen */
+.ls-abbildung,
+.ls-tafel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-6) var(--s-4);
+  border-radius: var(--r-3);
+  border: 1px solid var(--linie);
+  background: var(--bg);
+  overflow-x: auto;
+}
+.ls-abbildung {
+  margin: 0;
+}
+.ls-abbildung__unter {
+  font-size: var(--t-s);
+  color: var(--text-4);
+  text-align: center;
+}
+
+/* Tafel: Rechnung wie an der Tafel */
+.ls-tafel {
+  gap: var(--s-1);
+  font-size: var(--t-l);
+}
+.ls-tafel__zeile {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+}
+.ls-tafel__name {
+  width: 150px;
+  flex: none;
+  font-family: var(--schrift);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-align: right;
+  padding-right: var(--s-3);
+}
+.ls-tafel__zelle {
+  min-width: 56px;
+  padding-left: var(--s-2);
+  text-align: right;
+  white-space: nowrap;
+  color: var(--text);
+}
+.ls-tafel__zeile--oben .ls-tafel__zelle {
+  color: var(--akzent);
+  font-size: var(--t-n);
+}
+.ls-tafel__frei {
+  color: var(--text-2);
+}
+.ls-tafel__frei--summe {
+  margin-top: var(--s-2);
+  padding-top: var(--s-2);
+  border-top: 1px dashed var(--linie-2);
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Tabelle */
+.ls-tabelle-huelle {
+  overflow-x: auto;
+  border: 1px solid var(--linie);
+  border-radius: var(--r-3);
+}
+.ls-tabelle {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-n);
+}
+.ls-tabelle th,
+.ls-tabelle td {
+  padding: var(--s-2) var(--s-3);
+  text-align: left;
+  border-bottom: 1px solid var(--linie);
+  white-space: nowrap;
+}
+.ls-tabelle th {
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-3);
+  background: var(--flaeche-2);
+}
+.ls-tabelle tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Das hast du gelernt */
+.ls-gelernt {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+  padding: var(--s-6);
+  border-radius: var(--r-3);
+  border: 1px solid var(--akzent-linie);
+  background:
+    radial-gradient(600px 200px at 0% 0%, rgba(var(--akzent-rgb), 0.08), transparent 70%),
+    var(--flaeche-1);
+  scroll-margin-top: calc(var(--kopf-hoehe) + var(--s-4));
+}
+.ls-gelernt__titel {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: 0;
+  font-size: var(--t-xl);
+  color: var(--text);
+}
+.ls-gelernt__titel svg {
+  color: var(--akzent);
+}
+.ls-gelernt__text {
+  margin: 0;
+  font-size: var(--t-n);
+  color: var(--text-2);
+}
+.ls-gelernt__ziele li {
+  color: var(--text);
+}
+.ls-gelernt__knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.ls-begriffsliste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.ls-begriffsliste dl {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border-top: 1px solid var(--linie);
+}
+.ls-begriffsliste dl > div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: var(--s-3);
+  padding: var(--s-2) 0;
+  border-bottom: 1px solid var(--linie);
+  font-size: var(--t-m);
+  line-height: 1.5;
+}
+.ls-begriffsliste dt {
+  font-weight: 650;
+  color: var(--akzent);
+}
+.ls-begriffsliste dd {
+  margin: 0;
+  color: var(--text-2);
+}
+
+/* Themen ohne Unterricht: die Erklärung im selben Lesestil */
+.ls-erklaerung {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-8);
+}
+.ls-erklaerung__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+}
+
+/* Mittlere Breite: Inhaltsverzeichnis oben als wischbare Zeile der Kapitel */
+@media (max-width: 1100px) {
+  .zu {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'inhalt' 'lesen';
+    gap: var(--s-6);
+  }
+  .ls-lesen {
+    max-width: none;
+  }
+  .ls-inhalt {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    gap: var(--s-2);
+  }
+  .ls-inhalt__titel,
+  .ls-inhalt__teile,
+  .ls-inhalt__fuss {
+    display: none;
+  }
+  .ls-inhalt__liste {
+    flex-direction: row;
+    gap: var(--s-2);
+    overflow-x: auto;
+    border-left: 0;
+    scrollbar-width: none;
+  }
+  .ls-inhalt__knopf {
+    margin: 0;
+    padding: 5px var(--s-3) 5px 6px;
+    border: 1px solid var(--linie-2);
+    border-radius: var(--r-rund);
+    font-size: var(--t-m);
+    white-space: nowrap;
+  }
+  .ls-inhalt__knopf[aria-current='page'] {
+    border-color: var(--akzent-linie);
+    background: var(--akzent-weich);
+  }
+}
+
+@media (max-width: 640px) {
+  .ls-kopf__titel {
+    font-size: var(--t-2xl);
+  }
+  .ls-teil__titel {
+    font-size: var(--t-xl);
+  }
+  .ls-text,
+  .ls-kopf__text {
+    font-size: var(--t-n);
+  }
+  .ls-kasten {
+    padding: var(--s-3) var(--s-4);
+  }
+  .ls-frage__text {
+    font-size: var(--t-n);
+  }
+  .ls-frage__eingabe .feld,
+  .ls-frage__eingabe .ls-feld--breit {
+    width: 100%;
+    min-width: 0;
+  }
+  .ls-soheisst__glossar {
+    position: static;
+    align-self: flex-start;
+  }
+  .ls-abbildung,
+  .ls-tafel {
+    padding: var(--s-4) var(--s-3);
+  }
+  .ls-tafel__name {
+    width: 88px;
+  }
+  .ls-tafel__zelle {
+    min-width: 36px;
+    padding-left: 6px;
+  }
+  .ls-tabelle th,
+  .ls-tabelle td {
+    white-space: normal;
+  }
+  .ls-gelernt {
+    padding: var(--s-4);
+  }
+  .ls-begriffsliste dl > div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}

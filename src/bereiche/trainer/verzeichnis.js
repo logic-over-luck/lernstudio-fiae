@@ -1,0 +1,173 @@
+// Verzeichnis der Trainer: wer welche Stichpunkte übt.
+//
+// Jeder Trainer hat Modi; jeder Modus nennt die Stichpunkte, die er übt. Daraus folgt:
+// – In einem Lernraum erscheinen nur Trainer (und Modi), die dort Stichpunkte haben.
+// – Der Knopf „Üben" an Block und Stichpunkt führt direkt in den passenden Modus.
+// Ein neuer Trainer braucht nur einen Eintrag hier und eine Komponente in trainer/index.jsx.
+// Rein und ohne Browser-Abhängigkeit (wird in den Tests geprüft).
+
+export const TRAINER = [
+  {
+    id: 'zahlen',
+    name: 'Zahlen & IT-Rechnen',
+    kurz: 'Zahlen',
+    icon: 'binary',
+    text: 'Zahlensysteme, Präfixe, Speicherbedarf, Übertragung, Strom, chmod, Parität',
+    modi: [
+      // Ein Modus je Thema (gleiche IDs wie in zahlen/themen.js); eigener Rahmen in zahlen/Zahlen.jsx.
+      { id: 'zahlensysteme', name: 'Zahlensysteme', sp: ['AP1-4-2-1'] },
+      { id: 'praefixe', name: 'Bit, Byte und Präfixe', sp: ['AP1-4-2-1'] },
+      { id: 'speicher', name: 'Speicherbedarf', sp: ['AP1-4-2-2'] },
+      { id: 'uebertragung', name: 'Übertragungsdauer', sp: ['AP1-4-2-4'] },
+      { id: 'strom', name: 'Leistung und Stromkosten', sp: ['AP1-4-2-3'] },
+      { id: 'rechte', name: 'Dateirechte (chmod)', sp: ['AP1-5-2-3'] },
+      { id: 'paritaet', name: 'Paritätsbit', sp: ['PB1-9-1-2'] },
+    ],
+  },
+  {
+    id: 'subnetz',
+    name: 'Subnetze',
+    kurz: 'Subnetze',
+    icon: 'network',
+    text: 'Netzadresse, Broadcast, Hostbereich, Maske, IPv6',
+    modi: [
+      // Drei Räume (Feld bereich): verstehen (Lernweg), ueben (Aufgaben, nach Themen-Blöcken des Lernwegs: thema),
+      // visualisieren (Visualizer). Eigener Rahmen in subnetz/Subnetz.jsx.
+      { id: 'verstehen', name: 'Lernweg', bereich: 'verstehen', sp: ['AP1-6-2-2', 'AP1-6-2-1', 'AP1-6-2-3', 'AP1-6-2-4'] },
+      { id: 'maske', name: 'Präfix und Subnetzmaske', bereich: 'ueben', thema: 'adresse', sp: ['AP1-6-2-2', 'AP1-6-2-1'] },
+      { id: 'hosts', name: 'Adressen, Hosts, Blockgröße', bereich: 'ueben', thema: 'subnetting', sp: ['AP1-6-2-2'] },
+      { id: 'analyse', name: 'Netz bestimmen', bereich: 'ueben', thema: 'subnetting', sp: ['AP1-6-2-2'] },
+      { id: 'gleich', name: 'Gleiches Netz?', bereich: 'ueben', thema: 'subnetting', sp: ['AP1-6-2-2'] },
+      {
+        id: 'aufteilen',
+        name: 'Netz aufteilen',
+        bereich: 'ueben',
+        thema: 'subnetting',
+        sp: [],
+        zusatzIn: ['AP1'],
+        hinweis: 'Für AP1 laut Rahmen nicht belegt – zum Vertiefen.',
+      },
+      { id: 'privat', name: 'Private Adressen', bereich: 'ueben', thema: 'konfiguration', sp: ['AP1-6-2-1'] },
+      { id: 'konfig', name: 'Konfiguration prüfen', bereich: 'ueben', thema: 'konfiguration', sp: ['AP1-6-2-1', 'AP1-6-2-2'] },
+      { id: 'dhcp', name: 'DHCP und 169.254.x.x', bereich: 'ueben', thema: 'konfiguration', sp: ['AP1-6-2-4', 'AP1-6-2-1'] },
+      { id: 'mac', name: 'MAC-Adresse und ARP', bereich: 'ueben', thema: 'lokal', sp: ['AP1-6-2-4'] },
+      { id: 'ipv6', name: 'IPv6 kürzen & ausschreiben', bereich: 'ueben', thema: 'ipv6', sp: ['AP1-6-2-3'] },
+      { id: 'visual', name: 'Visualizer', bereich: 'visualisieren', sp: ['AP1-6-2-2', 'AP1-6-2-1'] },
+    ],
+  },
+  {
+    id: 'kaufmaennisch',
+    name: 'Kaufmännisches Rechnen',
+    kurz: 'Kaufmännisch',
+    icon: 'receipt-euro',
+    text: 'Rechnung, Kostenvergleich, Nutzwertanalyse, Kennzahlen',
+    modi: [
+      { id: 'rechnung', name: 'Rechnung: Rabatt, USt, Skonto', sp: ['AP1-3-1-4', 'AP1-3-1-2'] },
+      { id: 'nutzungsdauer', name: 'Kosten über die Nutzungsdauer', sp: ['AP1-3-1-2'] },
+      { id: 'kalkulation', name: 'Budget, Vor- und Nachkalkulation', sp: ['AP1-3-1-3'] },
+      { id: 'kostenvergleich', name: 'Kostenvergleich', sp: ['AP1-3-2-1'] },
+      { id: 'tilgung', name: 'Tilgungsplan', sp: ['AP1-3-2-1'] },
+      { id: 'angebot', name: 'Angebotsvergleich', sp: ['AP1-3-2-2'] },
+      { id: 'nutzwert', name: 'Nutzwertanalyse', sp: ['AP1-3-2-3'] },
+      { id: 'sollist', name: 'Soll-Ist-Vergleich', sp: ['PB1-9-1-1', 'AP1-3-1-3'] },
+      { id: 'sv', name: 'Sozialversicherung', sp: ['WISO-1-6-3'] },
+      { id: 'gewinn', name: 'Gewinnverteilung GmbH', sp: ['WISO-2-2-3'] },
+      { id: 'kennzahlen', name: 'Produktivität, Wirtschaftlichkeit, Rentabilität', sp: ['WISO-2-4-1'] },
+    ],
+  },
+  {
+    id: 'netzplan',
+    name: 'Netzplan & Projektplanung',
+    kurz: 'Netzplan',
+    icon: 'workflow',
+    text: 'Vorwärts- und Rückwärtsrechnung, Puffer, kritischer Weg, Gantt',
+    modi: [
+      { id: 'berechnen', name: 'Netzplan berechnen', sp: ['AP1-1-2-2'] },
+      { id: 'aufbauen', name: 'Aus Vorgangsliste aufbauen', sp: ['AP1-1-2-2'] },
+      { id: 'gantt', name: 'Gantt-Diagramm', sp: ['AP1-1-2-1'] },
+      { id: 'psp', name: 'Projektstrukturplan', sp: ['AP1-1-2-1'] },
+    ],
+  },
+  {
+    id: 'code',
+    name: 'Pseudocode',
+    kurz: 'Pseudocode',
+    icon: 'code-xml',
+    text: 'Grundlagen, Visualizer, Schreibtischtest, Puzzle, Fehlersuche',
+    modi: [
+      { id: 'grundlagen', name: 'Grundlagen', sp: ['AP1-8-2-1', 'AP1-8-2-2', 'PB2-1-1-1'] },
+      { id: 'visualizer', name: 'Visualizer', sp: ['AP1-8-2-3', 'PB2-1-1-1', 'PB2-1-1-2'] },
+      { id: 'schreibtisch', name: 'Schreibtischtest', sp: ['AP1-8-2-3', 'PB2-3-1-1'] },
+      { id: 'puzzle', name: 'Code-Puzzle', sp: ['AP1-8-2-2', 'PB2-1-1-1', 'PB2-1-1-2', 'PB1-5-1-5', 'PB1-3-2-2'] },
+      { id: 'fehler', name: 'Fehlersuche', sp: ['AP1-8-2-4', 'AP1-8-2-2', 'PB2-3-1-1'] },
+      { id: 'sortieren', name: 'Suchen & Sortieren', sp: ['PB2-2-1-1'] },
+    ],
+  },
+  {
+    id: 'sql',
+    name: 'SQL-Labor',
+    kurz: 'SQL-Labor',
+    icon: 'database',
+    text: 'Echte Abfragen gegen eine Übungsdatenbank',
+    modi: [
+      { id: 'abfragen', name: 'Abfragen', sp: ['PB2-5-1-1', 'PB2-5-1-2', 'PB2-5-1-3', 'PB2-5-1-4'] },
+      { id: 'aendern', name: 'Daten ändern', sp: ['PB2-6-1-2'] },
+      { id: 'struktur', name: 'Tabellen & Index', sp: ['PB2-6-1-1'] },
+      { id: 'rechte', name: 'Benutzer & Rechte', sp: ['PB2-6-1-3'] },
+      { id: 'frei', name: 'Freies Labor', sp: ['PB2-5-1-1'] },
+    ],
+  },
+  {
+    id: 'modellieren',
+    name: 'Modellieren',
+    kurz: 'Modellieren',
+    icon: 'shapes',
+    text: 'UML, ER-Modell, Normalisierung, Prozesse, Masken',
+    modi: [
+      { id: 'anwendungsfall', name: 'Anwendungsfalldiagramm', sp: ['AP1-8-3-1', 'PB1-4-1-1'] },
+      { id: 'klasse', name: 'Klassendiagramm', sp: ['AP1-8-3-2', 'PB1-4-1-2'] },
+      { id: 'aktivitaet', name: 'Aktivitätsdiagramm', sp: ['AP1-8-3-3', 'PB1-4-1-5'] },
+      { id: 'sequenz', name: 'Sequenzdiagramm', sp: ['PB1-4-1-3'] },
+      { id: 'zustand', name: 'Zustandsdiagramm', sp: ['PB1-4-1-4'] },
+      { id: 'er', name: 'ER-Modell', sp: ['AP1-8-4-1', 'PB1-6-1-1'] },
+      { id: 'relational', name: 'Relationales Modell', sp: ['PB1-6-1-2'] },
+      { id: 'normalisierung', name: 'Normalisierung', sp: ['PB1-6-1-3'] },
+      { id: 'prozess', name: 'EPK & BPMN', sp: ['AP1-8-4-4'] },
+      { id: 'masken', name: 'Masken & Mockups', sp: ['AP1-8-4-3', 'PB1-8-1-3'] },
+      { id: 'dokumente', name: 'Lasten- & Pflichtenheft', sp: ['PB1-1-2-3'] },
+    ],
+  },
+];
+
+// Raum eines Stichpunkts. Ohne Inhalt (Tests) aus dem ID-Präfix; die App setzt beim Start die Auflösung über den
+// Inhalt (src/daten/inhalt.js).
+let raumVon = (id) => (id.startsWith('WISO') ? 'WISO' : id.slice(0, 3));
+export function setzeAufloesung({ raum }) {
+  if (raum) raumVon = raum;
+}
+
+export function trainerById(id) {
+  return TRAINER.find((t) => t.id === id) ?? null;
+}
+
+// Modi eines Trainers, die im Lernraum gebraucht werden
+export function modiIn(trainer, raum) {
+  return trainer.modi.filter((m) => m.sp.some((id) => raumVon(id) === raum) || m.zusatzIn?.includes(raum));
+}
+
+export function trainerIn(raum) {
+  return TRAINER.filter((t) => t.modi.some((m) => m.sp.some((id) => raumVon(id) === raum)));
+}
+
+// Für einen Stichpunkt: [{ trainer, modus }] – wo er geübt werden kann
+export function uebungenFuer(spId) {
+  const ergebnis = [];
+  for (const t of TRAINER) for (const m of t.modi) if (m.sp.includes(spId)) ergebnis.push({ trainer: t, modus: m });
+  return ergebnis;
+}
+
+export function uebungenFuerBlock(spIds) {
+  const gesehen = new Map();
+  for (const id of spIds) for (const u of uebungenFuer(id)) if (!gesehen.has(u.trainer.id + u.modus.id)) gesehen.set(u.trainer.id + u.modus.id, u);
+  return [...gesehen.values()];
+}

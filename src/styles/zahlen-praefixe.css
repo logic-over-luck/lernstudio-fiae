@@ -1,0 +1,336 @@
+/* Zahlen-Trainer, Bit, Byte und Präfixe: Stile der Bilder zum Mitmachen (bilder/praefixe.jsx), Präfix zt-praefixe- */
+
+/* Ergebniszeile unter einem Bild */
+.zt-praefixe-summe {
+  margin: 0;
+  font-size: var(--t-l);
+  line-height: 1.6;
+  color: var(--text-2);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.zt-praefixe-summe b {
+  color: var(--text);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+/* ---------- Zeichen: ein Wort als Bytes ---------- */
+.zt-praefixe-zeichen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2);
+  max-width: 100%;
+}
+.zt-praefixe-byte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-1);
+}
+.zt-praefixe-byte b {
+  font-size: var(--t-xl);
+  color: var(--text);
+}
+.zt-praefixe-byte span {
+  font-size: var(--t-s);
+  color: var(--akzent);
+  white-space: nowrap;
+}
+
+/* ---------- Dreiergruppen: Komma springt je Präfix ---------- */
+.zt-praefixe-gruppen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: var(--s-2);
+}
+.zt-praefixe-gruppe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  transition:
+    opacity var(--dauer) var(--kurve),
+    background var(--dauer) var(--kurve);
+}
+.zt-praefixe-gruppe b {
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  color: var(--text);
+}
+.zt-praefixe-gruppe small {
+  font-family: var(--schrift);
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-3);
+}
+.zt-praefixe-gruppe--hinten {
+  background: none;
+  opacity: 0.45;
+}
+.zt-praefixe-trenner {
+  align-self: flex-start;
+  padding: var(--s-1) 2px 0;
+  font-size: var(--t-2xl);
+  color: var(--text-4);
+}
+.zt-praefixe-trenner--komma {
+  color: var(--akzent);
+  font-weight: 700;
+}
+
+/* ---------- Treppe: Stufen von 1.000 oder 1.024 ---------- */
+.zt-praefixe-treppe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  width: 100%;
+  max-width: 340px;
+}
+.zt-praefixe-stufe {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s-3);
+  width: calc(100% - 4 * var(--treppe-schritt, 16px));
+  margin-left: calc(var(--stufe) * var(--treppe-schritt, 16px));
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-1);
+  color: var(--text-3);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color var(--dauer) var(--kurve),
+    background var(--dauer) var(--kurve);
+}
+.zt-praefixe-stufe b {
+  font-size: var(--t-l);
+  color: var(--text);
+  white-space: nowrap;
+}
+.zt-praefixe-stufe span {
+  font-size: var(--t-m);
+  white-space: nowrap;
+}
+.zt-praefixe-stufe:hover {
+  border-color: var(--linie-3);
+}
+.zt-praefixe-stufe--an {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+}
+.zt-praefixe-stufe--an span {
+  color: var(--akzent);
+}
+
+/* ---------- Familien: dezimal oder binär? ---------- */
+.zt-praefixe-familien {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.zt-praefixe-fall {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--s-1) var(--s-3);
+  width: 100%;
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-1);
+  color: var(--text-2);
+  font: inherit;
+  font-size: var(--t-n);
+  text-align: left;
+  cursor: pointer;
+}
+.zt-praefixe-fall:hover {
+  border-color: var(--linie-3);
+}
+.zt-praefixe-fall > span:first-child {
+  flex: 1 1 12em;
+}
+.zt-praefixe-fall__antwort {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-left: auto;
+  color: var(--text-4);
+  font-size: var(--t-m);
+  white-space: nowrap;
+}
+.zt-praefixe-fall--dez {
+  border-color: var(--akzent-linie);
+}
+.zt-praefixe-fall--dez .zt-praefixe-fall__antwort b {
+  color: var(--akzent);
+}
+.zt-praefixe-fall--bin {
+  border-color: var(--info);
+}
+.zt-praefixe-fall--bin .zt-praefixe-fall__antwort b {
+  color: var(--info);
+}
+.zt-praefixe-fall .zt-praefixe-fall__antwort .mono {
+  color: var(--text-2);
+}
+
+/* ---------- Gleiche Menge und Rate: Rechenweg in Schritten ---------- */
+.zt-praefixe-wahl {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.zt-praefixe-wahl .feld {
+  width: 120px;
+}
+.zt-praefixe-weg {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: var(--s-2) var(--s-3);
+  max-width: 100%;
+  font-size: var(--t-n);
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+.zt-praefixe-weg > span:not(.zt-praefixe-weg__nr) {
+  overflow-wrap: anywhere;
+}
+.zt-praefixe-weg b {
+  color: var(--text);
+  font-weight: 600;
+}
+.zt-praefixe-weg__nr {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--r-rund);
+  background: var(--flaeche-3);
+  color: var(--text-3);
+  font-size: var(--t-xs);
+}
+.zt-praefixe-weg__erg {
+  color: var(--akzent) !important;
+}
+
+/* Größe der beiden Einheiten im Vergleich */
+.zt-praefixe-balken {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--s-2) var(--s-3);
+  width: 100%;
+  max-width: 420px;
+}
+.zt-praefixe-balken__name {
+  font-size: var(--t-m);
+  color: var(--text-3);
+  text-align: right;
+}
+.zt-praefixe-balken__spur {
+  height: 14px;
+  border-radius: var(--r-rund);
+  background: var(--flaeche-2);
+  overflow: hidden;
+}
+.zt-praefixe-balken__wert {
+  display: block;
+  height: 100%;
+  border-radius: var(--r-rund);
+  transition: width var(--dauer-lang) var(--kurve);
+}
+.zt-praefixe-balken__wert--dez {
+  background: var(--akzent);
+}
+.zt-praefixe-balken__wert--bin {
+  background: var(--info);
+}
+
+/* ---------- Takt: Rechteckschwingung über eine Sekunde ---------- */
+.zt-praefixe-takt {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+.zt-praefixe-takt__linie {
+  fill: none;
+  stroke: var(--akzent);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.zt-praefixe-takt__achse {
+  stroke: var(--linie-3);
+  stroke-width: 1.5;
+}
+.zt-praefixe-takt__text {
+  fill: var(--text-3);
+  font-size: 12px;
+  font-family: var(--mono);
+}
+.zt-praefixe-takt__nr {
+  fill: var(--text-2);
+  font-size: 11px;
+  font-family: var(--mono);
+}
+
+/* ---------- Rate: 8 Bit werden ein Byte ---------- */
+.zt-praefixe-acht {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2);
+  color: var(--text-3);
+  font-size: var(--t-s);
+}
+.zt-praefixe-acht__bits {
+  display: flex;
+  gap: 2px;
+}
+.zt-praefixe-acht__bits span {
+  width: 10px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--info);
+}
+.zt-praefixe-acht__byte {
+  width: 30px;
+  height: 18px;
+  border-radius: 3px;
+  background: var(--akzent);
+}
+
+@media (max-width: 520px) {
+  .zt-praefixe-treppe {
+    --treppe-schritt: 8px;
+  }
+  .zt-praefixe-gruppe b,
+  .zt-praefixe-trenner {
+    font-size: var(--t-xl);
+  }
+  .zt-praefixe-weg {
+    font-size: var(--t-m);
+  }
+}

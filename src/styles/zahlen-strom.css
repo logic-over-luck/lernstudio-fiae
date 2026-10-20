@@ -1,0 +1,560 @@
+/* Zahlen-Trainer, Leistung und Stromkosten: Stile der Bilder zum Mitmachen (bilder/strom.jsx), Präfix zt-strom- */
+
+/* ---------- gemeinsam: Regler, Balken, Rechnung, Urteil ---------- */
+.zt-strom-regler-reihe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-3) var(--s-6);
+  width: min(520px, 100%);
+}
+.zt-strom-regler {
+  display: flex;
+  flex: 1 1 200px;
+  flex-direction: column;
+  gap: var(--s-1);
+  min-width: 0;
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-strom-regler__kopf {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+.zt-strom-regler__kopf b {
+  color: var(--text);
+  font-weight: 600;
+}
+.zt-strom-regler input {
+  width: 100%;
+  accent-color: var(--akzent);
+}
+.zt-strom-balken {
+  position: relative;
+  height: 14px;
+  width: 100%;
+  border-radius: var(--r-rund);
+  background: var(--flaeche-3);
+}
+.zt-strom-balken__fuellung {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: var(--r-rund);
+  background: var(--akzent);
+  transition: width var(--dauer) var(--kurve);
+}
+.zt-strom-balken__fuellung--zu {
+  background: var(--info);
+}
+.zt-strom-balken__fuellung--ab {
+  background: var(--gut);
+}
+.zt-strom-balken__fuellung--warn {
+  background: var(--warn);
+}
+.zt-strom-balken__grenze {
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--text);
+}
+.zt-strom-rechnung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.zt-strom-rechnung b {
+  color: var(--text);
+  font-weight: 650;
+}
+.zt-strom-urteil {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  margin: 0;
+  font-size: var(--t-m);
+  text-align: left;
+}
+.zt-strom-urteil svg {
+  flex: none;
+  margin-top: 3px;
+}
+.zt-strom-urteil--ok {
+  color: var(--gut);
+}
+.zt-strom-urteil--warn {
+  color: var(--warn);
+}
+.zt-strom-punkt {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  vertical-align: baseline;
+}
+.zt-strom-punkt--ab {
+  background: var(--gut);
+}
+.zt-strom-punkt--last {
+  background: var(--akzent);
+}
+.zt-strom-punkt--leer {
+  background: color-mix(in srgb, var(--akzent) 30%, var(--flaeche-3));
+}
+.zt-strom-legende {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-1) var(--s-4);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+
+/* ---------- Leitung: Tank (Druck), Rohr (Durchfluss), Wasserrad (Leistung) ---------- */
+.zt-strom-leitung {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-2);
+  width: min(460px, 100%);
+}
+.zt-strom-leitung__teil {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  min-width: 64px;
+}
+.zt-strom-leitung__teil--rohr {
+  flex: 1;
+  min-width: 0;
+}
+.zt-strom-leitung__name {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  white-space: nowrap;
+}
+.zt-strom-leitung__wert {
+  font-size: var(--t-m);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.zt-strom-tank {
+  position: relative;
+  width: 40px;
+  height: 96px;
+  overflow: hidden;
+  border: 2px solid var(--linie-3);
+  border-top: 0;
+  border-radius: 0 0 var(--r-1) var(--r-1);
+}
+.zt-strom-tank__wasser {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: color-mix(in srgb, var(--info) 55%, transparent);
+  transition: height var(--dauer) var(--kurve);
+}
+.zt-strom-rohr {
+  position: relative;
+  width: 100%;
+  height: 22px;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-block: 2px solid var(--linie-3);
+  background: color-mix(in srgb, var(--info) 14%, transparent);
+}
+.zt-strom-rohr__fluss {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--info) 4px, transparent 4.5px);
+  background-size: 22px 100%;
+  animation: zt-strom-fluss linear infinite;
+}
+@keyframes zt-strom-fluss {
+  to {
+    background-position-x: 22px;
+  }
+}
+.zt-strom-auslauf {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--info);
+}
+.zt-strom-rad {
+  width: 48px;
+  height: 48px;
+  animation: zt-strom-drehen linear infinite;
+}
+.zt-strom-rad circle,
+.zt-strom-rad line {
+  fill: none;
+  stroke: var(--akzent);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+.zt-strom-rad .zt-strom-rad__nabe {
+  fill: var(--akzent);
+}
+@keyframes zt-strom-drehen {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .zt-strom-rohr__fluss,
+  .zt-strom-rad {
+    animation: none;
+  }
+}
+
+/* ---------- Formeldreieck ---------- */
+.zt-strom-dreieck {
+  position: relative;
+  width: 220px;
+  height: 180px;
+}
+.zt-strom-dreieck svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.zt-strom-dreieck polygon,
+.zt-strom-dreieck line {
+  fill: none;
+  stroke: var(--linie-3);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+.zt-strom-dreieck__groesse {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  margin: -26px 0 0 -26px;
+  border: 1px solid transparent;
+  border-radius: var(--r-2);
+  background: none;
+  font-family: var(--mono);
+  font-size: var(--t-3xl);
+  font-weight: 650;
+  color: var(--text);
+  cursor: pointer;
+  transition:
+    background var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve);
+}
+.zt-strom-dreieck__groesse:hover {
+  background: var(--flaeche-2);
+}
+.zt-strom-dreieck__groesse--oben {
+  left: 50%;
+  top: 70px;
+}
+.zt-strom-dreieck__groesse--links {
+  left: 30%;
+  top: 140px;
+}
+.zt-strom-dreieck__groesse--rechts {
+  left: 70%;
+  top: 140px;
+}
+.zt-strom-dreieck__groesse--gesucht,
+.zt-strom-dreieck__groesse--gesucht:hover {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+}
+.zt-strom-formel {
+  display: block;
+  margin: 0;
+}
+.zt-strom-formel__worte {
+  display: block;
+  margin-top: var(--s-1);
+  font-family: var(--schrift);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+
+/* ---------- Netzteil wählen ---------- */
+.zt-strom-teile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2);
+  max-width: 520px;
+}
+.zt-strom-teil {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  padding: var(--s-1) var(--s-3);
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-rund);
+  background: var(--flaeche-1);
+  font-size: var(--t-s);
+  color: var(--text-4);
+  text-decoration: line-through;
+  cursor: pointer;
+}
+.zt-strom-teil[aria-pressed='true'] {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--text);
+  text-decoration: none;
+}
+.zt-strom-netzteile {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s-1);
+  width: min(400px, 100%);
+}
+.zt-strom-netzteil {
+  padding: var(--s-1);
+  border: 1px solid var(--linie);
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-align: center;
+}
+.zt-strom-netzteil--klein {
+  color: var(--text-4);
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+.zt-strom-netzteil--passt {
+  border-color: var(--gut);
+  background: color-mix(in srgb, var(--gut) 18%, transparent);
+  color: var(--text);
+  font-weight: 650;
+}
+
+/* ---------- Netzteil: Leistungsfluss mit Wärme ---------- */
+.zt-strom-fluss {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  width: min(420px, 100%);
+}
+.zt-strom-fluss__zeile {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-3);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-strom-fluss__zeile > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-strom-fluss__zeile b {
+  color: var(--text);
+  font-weight: 650;
+  white-space: nowrap;
+}
+.zt-strom-fluss__zeile svg {
+  color: var(--info);
+}
+.zt-strom-fluss__zeile--waerme svg,
+.zt-strom-fluss__zeile--waerme b {
+  color: var(--warn);
+}
+.zt-strom-fluss__balken {
+  display: flex;
+  height: 22px;
+  overflow: hidden;
+  border: 2px solid var(--info);
+  border-radius: var(--r-1);
+}
+.zt-strom-fluss__ab,
+.zt-strom-fluss__waerme {
+  transition: width var(--dauer) var(--kurve);
+}
+.zt-strom-fluss__ab {
+  background: var(--gut);
+}
+.zt-strom-fluss__waerme {
+  background: repeating-linear-gradient(135deg, var(--warn) 0 6px, color-mix(in srgb, var(--warn) 55%, transparent) 6px 12px);
+}
+
+/* ---------- Stufen hintereinander ---------- */
+.zt-strom-kette {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  width: min(420px, 100%);
+}
+.zt-strom-kette__glied {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.zt-strom-kette__glied input {
+  width: 100%;
+  accent-color: var(--akzent);
+}
+.zt-strom-kette__leistung {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr) 72px;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-strom-kette__leistung b {
+  color: var(--text);
+  font-weight: 650;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.zt-strom-kette__stufe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-1) var(--s-2);
+  padding-top: var(--s-1);
+  font-size: var(--t-s);
+  color: var(--text-2);
+}
+.zt-strom-kette__stufe > svg {
+  color: var(--text-4);
+}
+.zt-strom-kette__waerme {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  color: var(--warn);
+}
+
+/* ---------- Zähler ---------- */
+.zt-strom-zaehler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-strom-zaehler__geraet {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-strom-zaehler__anzeige {
+  padding: var(--s-2) var(--s-4);
+  border: 1px solid var(--linie-3);
+  border-radius: var(--r-2);
+  background: var(--flaeche-1);
+  font-size: var(--t-3xl);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.zt-strom-zaehler__anzeige small {
+  font-size: var(--t-m);
+  color: var(--text-3);
+}
+
+/* ---------- Jahr: Tagesstreifen ---------- */
+.zt-strom-tag {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  gap: 2px;
+  width: min(440px, 100%);
+}
+.zt-strom-tag__stunde {
+  height: 22px;
+  border-radius: 2px;
+  transition: background var(--dauer) var(--kurve);
+}
+.zt-strom-tag__stunde--aus {
+  background: var(--flaeche-3);
+}
+.zt-strom-tag__stunde--an,
+.zt-strom-tag__stunde--last {
+  background: var(--akzent);
+}
+.zt-strom-tag__stunde--leer {
+  background: color-mix(in srgb, var(--akzent) 30%, var(--flaeche-3));
+}
+.zt-strom-tag__achse {
+  display: flex;
+  grid-column: 1 / -1;
+  justify-content: space-between;
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+
+/* ---------- Mehrfachsteckdose und USB: Last gegen Grenze ---------- */
+.zt-strom-leiste {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--s-1);
+  width: min(480px, 100%);
+  padding: var(--s-2);
+  border: 1px solid var(--linie-2);
+  border-radius: var(--r-3);
+  background: var(--flaeche-1);
+}
+.zt-strom-dose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+  padding: var(--s-2) 2px;
+  border: 1px dashed var(--linie-3);
+  border-radius: var(--r-2);
+  background: none;
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  cursor: pointer;
+}
+.zt-strom-dose[aria-pressed='true'] {
+  border-style: solid;
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--text);
+}
+.zt-strom-dose__name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zt-strom-last {
+  position: relative;
+  width: min(420px, 100%);
+  padding-bottom: 20px;
+}
+.zt-strom-last__grenze {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: var(--t-xs);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .zt-strom-kette__leistung {
+    grid-template-columns: 80px minmax(0, 1fr) 64px;
+  }
+  .zt-strom-leiste {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

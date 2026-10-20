@@ -1,0 +1,353 @@
+/* Zahlen-Trainer, Paritätsbit: Stile der Bilder zum Mitmachen (bilder/paritaet.jsx), Präfix zt-paritaet- */
+
+/* Sender und Empfänger untereinander, dazwischen die Leitung */
+.zt-paritaet-strecke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-paritaet-seite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-paritaet-seite__name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-3);
+  text-align: center;
+}
+.zt-paritaet-leitung {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  padding: 2px var(--s-3);
+  border-left: 2px dashed var(--linie-3);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-paritaet-info {
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  text-align: center;
+}
+
+/* Bitreihe: Spalten aus Marke (P oder Blitz) und Bit; das Paritätsbit abgesetzt */
+.zt-paritaet-reihe {
+  display: flex;
+  gap: var(--s-1);
+}
+.zt-paritaet-spalte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.zt-paritaet-spalte--p {
+  margin-left: var(--s-3);
+}
+.zt-paritaet-marke {
+  display: grid;
+  place-items: center;
+  height: 14px;
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: var(--info);
+}
+.zt-paritaet-marke--kipp {
+  color: var(--warn);
+}
+.zt-paritaet-p {
+  outline: 2px dashed var(--info);
+  outline-offset: 2px;
+}
+.zt-paritaet-markiert {
+  outline: 2px solid var(--akzent);
+  outline-offset: 2px;
+}
+
+/* Urteil des Empfängers */
+.zt-paritaet-urteil {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  max-width: 460px;
+  margin: 0;
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  font-size: var(--t-s);
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.zt-paritaet-urteil svg {
+  flex: none;
+  margin-top: 2px;
+}
+.zt-paritaet-urteil--gut {
+  border-color: var(--gut);
+}
+.zt-paritaet-urteil--gut svg {
+  color: var(--gut);
+}
+.zt-paritaet-urteil--warn {
+  border-color: var(--warn);
+}
+.zt-paritaet-urteil--warn svg {
+  color: var(--warn);
+}
+.zt-paritaet-urteil--fehler {
+  border-color: var(--fehler);
+}
+.zt-paritaet-urteil--fehler svg {
+  color: var(--fehler);
+}
+
+/* Einsen: Zähler mit gerade/ungerade */
+.zt-paritaet-zaehler {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+}
+.zt-paritaet-zaehler__zahl {
+  font-size: var(--t-3xl);
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.zt-paritaet-zaehler__text {
+  font-size: var(--t-l);
+  color: var(--text-3);
+}
+.zt-paritaet-wort--gerade {
+  color: var(--info);
+}
+.zt-paritaet-wort--ungerade {
+  color: var(--warn);
+}
+
+/* Bilden: Datenbits + Paritätsbit, darunter die Schritte */
+.zt-paritaet-bilden {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-2);
+}
+.zt-paritaet-plus {
+  padding-bottom: 10px;
+  font-family: var(--mono);
+  font-size: var(--t-l);
+  color: var(--text-4);
+}
+.zt-paritaet-schritte {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  margin: 0;
+  padding-left: var(--s-5);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-paritaet-schritte b {
+  color: var(--text);
+}
+.zt-paritaet-pwert {
+  color: var(--info) !important;
+}
+.zt-paritaet-haken {
+  vertical-align: -2px;
+  color: var(--gut);
+}
+
+/* Prüfsumme: Tabelle Sender / Empfänger */
+.zt-paritaet-tabelle-huelle {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.zt-paritaet-tabelle {
+  border-collapse: collapse;
+  font-size: var(--t-s);
+}
+.zt-paritaet-tabelle th,
+.zt-paritaet-tabelle td {
+  padding: var(--s-1) var(--s-2);
+  border-bottom: 1px solid var(--linie);
+  text-align: center;
+  white-space: nowrap;
+}
+.zt-paritaet-tabelle th {
+  font-weight: 600;
+  color: var(--text-3);
+}
+.zt-paritaet-tabelle td {
+  font-size: var(--t-m);
+  color: var(--text);
+}
+.zt-paritaet-tabelle th svg {
+  vertical-align: -2px;
+}
+.zt-paritaet-tabelle__summe th,
+.zt-paritaet-tabelle__summe td {
+  border-top: 2px dashed var(--info);
+  border-bottom: none;
+  color: var(--info);
+}
+.zt-paritaet-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+.zt-paritaet-stepper__knopf {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-2);
+  color: var(--text-3);
+}
+.zt-paritaet-stepper__knopf:hover {
+  border-color: var(--linie-3);
+  color: var(--text);
+}
+.zt-paritaet-stepper .mono {
+  min-width: 2.2em;
+  text-align: center;
+}
+.zt-paritaet-anders {
+  color: var(--warn) !important;
+  font-weight: 600;
+}
+
+/* Prüfziffer: 13 Ziffern einer EAN mit Gewichten */
+.zt-paritaet-ean {
+  display: flex;
+  gap: 3px;
+}
+.zt-paritaet-ean__spalte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.zt-paritaet-ean__gewicht {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-4);
+}
+.zt-paritaet-ean__ziffer {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 36px;
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-2);
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text-2);
+}
+.zt-paritaet-ean__ziffer:hover {
+  border-color: var(--linie-3);
+}
+.zt-paritaet-ean__ziffer--p {
+  margin-left: var(--s-2);
+  outline: 2px dashed var(--info);
+  outline-offset: 2px;
+  color: var(--info);
+}
+
+/* Ethernet-Frame: Felder nebeneinander, FCS hervorgehoben */
+.zt-paritaet-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+}
+.zt-paritaet-feld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+}
+.zt-paritaet-feld--breit {
+  flex: 1 1 120px;
+}
+.zt-paritaet-feld--fcs {
+  border: 2px dashed var(--info);
+}
+.zt-paritaet-feld__name {
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: var(--text-2);
+}
+.zt-paritaet-feld--fcs .zt-paritaet-feld__name {
+  color: var(--info);
+}
+.zt-paritaet-feld__groesse {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-4);
+  white-space: nowrap;
+}
+.zt-paritaet-vergleich {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2) var(--s-6);
+  margin: 0;
+  font-size: var(--t-s);
+}
+.zt-paritaet-vergleich div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.zt-paritaet-vergleich dt {
+  font-family: var(--schrift);
+  color: var(--text-4);
+}
+.zt-paritaet-vergleich dd {
+  margin: 0;
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text);
+}
+
+@media (max-width: 640px) {
+  .zt-paritaet-reihe {
+    gap: 3px;
+  }
+  .zt-paritaet-spalte--p {
+    margin-left: var(--s-2);
+  }
+  .zt-paritaet-ean {
+    gap: 2px;
+  }
+  .zt-paritaet-ean__ziffer {
+    width: 21px;
+    height: 32px;
+    font-size: var(--t-m);
+  }
+  .zt-paritaet-ean__ziffer--p {
+    margin-left: var(--s-1);
+  }
+  .zt-paritaet-tabelle th,
+  .zt-paritaet-tabelle td {
+    padding: var(--s-1);
+  }
+}

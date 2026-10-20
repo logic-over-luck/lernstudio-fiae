@@ -1,0 +1,384 @@
+/* Zahlen-Trainer, Übertragungsdauer: Stile der Bilder zum Mitmachen (bilder/uebertragung.jsx), Präfix zt-uebertragung- */
+
+/* ---------- Leitung: Absender – Rohr – Empfänger ---------- */
+.zt-uebertragung-leitung {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 72px minmax(0, 1fr);
+  align-items: end;
+  gap: var(--s-2);
+  width: min(460px, 100%);
+}
+.zt-uebertragung-ende {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  min-width: 0;
+}
+.zt-uebertragung-ende__name {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-uebertragung-bits {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 3px;
+  width: 100%;
+  max-width: 176px;
+  padding: var(--s-2);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+}
+.zt-uebertragung-bits span {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  background: var(--flaeche-3);
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-2);
+}
+.zt-uebertragung-bits span.zt-uebertragung-bit--weg,
+.zt-uebertragung-bits span.zt-uebertragung-bit--leer {
+  background: transparent;
+  outline: 1px dashed var(--linie-2);
+  outline-offset: -1px;
+}
+.zt-uebertragung-bits span.zt-uebertragung-bit--da {
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+  animation: zt-uebertragung-an var(--dauer-lang) var(--kurve);
+}
+@keyframes zt-uebertragung-an {
+  from {
+    transform: translateX(-6px);
+    opacity: 0;
+  }
+}
+
+.zt-uebertragung-rohr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  margin-bottom: var(--s-6);
+}
+.zt-uebertragung-rohr__strom {
+  width: 100%;
+  height: 12px;
+  border-radius: var(--r-rund);
+  border: 1px solid var(--linie-3);
+  background: repeating-linear-gradient(90deg, var(--linie-2) 0 6px, transparent 6px 12px);
+}
+.zt-uebertragung-rohr--an .zt-uebertragung-rohr__strom {
+  border-color: var(--akzent-linie);
+  background: repeating-linear-gradient(90deg, var(--akzent) 0 6px, transparent 6px 12px);
+  background-size: 12px 100%;
+  animation: zt-uebertragung-fliessen 0.6s linear infinite;
+}
+@keyframes zt-uebertragung-fliessen {
+  to {
+    background-position: 12px 0;
+  }
+}
+.zt-uebertragung-rohr__text {
+  font-size: var(--t-xs);
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.zt-uebertragung-uhr {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: 0;
+  font-size: var(--t-m);
+  color: var(--text-3);
+  text-align: center;
+}
+.zt-uebertragung-uhr b {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ---------- Regler ---------- */
+.zt-uebertragung-regler-gruppe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  width: min(400px, 100%);
+}
+.zt-uebertragung-regler {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  width: min(400px, 100%);
+}
+.zt-uebertragung-regler__name {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-uebertragung-regler__zeile {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-uebertragung-regler__zeile input {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--akzent);
+}
+.zt-uebertragung-regler__wert {
+  min-width: 96px;
+  font-size: var(--t-m);
+  font-weight: 600;
+  color: var(--text);
+  text-align: right;
+}
+
+/* ---------- Eingabe mit Einheit ---------- */
+.zt-uebertragung-kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+}
+.zt-uebertragung-kopf .zt-bild__eingabe .feld {
+  width: 120px;
+}
+
+/* ---------- Leiter: Rechnung Schritt für Schritt ---------- */
+.zt-uebertragung-leiter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  width: min(520px, 100%);
+  font-size: var(--t-m);
+  font-variant-numeric: tabular-nums;
+}
+.zt-uebertragung-leiter__zeile {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: var(--s-3);
+  align-items: baseline;
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-1);
+}
+.zt-uebertragung-leiter__schritt {
+  color: var(--text-4);
+  text-align: right;
+}
+.zt-uebertragung-leiter__wert {
+  color: var(--text-2);
+  overflow-wrap: anywhere;
+}
+.zt-uebertragung-leiter__zeile--ziel {
+  background: var(--akzent-weich);
+}
+.zt-uebertragung-leiter__zeile--ziel .zt-uebertragung-leiter__wert {
+  color: var(--akzent-stark);
+  font-weight: 600;
+}
+
+/* ---------- Lauf: Balken mit Uhr ---------- */
+.zt-uebertragung-lauf {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  width: min(460px, 100%);
+}
+.zt-uebertragung-lauf__ende {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  color: var(--text-2);
+}
+.zt-uebertragung-balken {
+  position: relative;
+  flex: 1;
+  height: 28px;
+  overflow: hidden;
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+}
+.zt-uebertragung-balken__fuellung {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--akzent-weich);
+  border-right: 2px solid var(--akzent);
+}
+.zt-uebertragung-balken__text {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  font-size: var(--t-s);
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.zt-uebertragung-lauf__fuss {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+}
+
+.zt-uebertragung-ziel {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin: 0;
+  font-size: var(--t-m);
+}
+.zt-uebertragung-ziel--gut {
+  color: var(--gut);
+}
+.zt-uebertragung-ziel--warn {
+  color: var(--warn);
+}
+
+/* ---------- Minuten: volle Minuten als Blöcke, Rest angefangen ---------- */
+.zt-uebertragung-minuten {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-1);
+  width: min(460px, 100%);
+}
+.zt-uebertragung-minute {
+  position: relative;
+  width: 56px;
+  height: 32px;
+  overflow: hidden;
+  border-radius: var(--r-1);
+  border: 1px solid var(--akzent-linie);
+  background: var(--flaeche-1);
+}
+.zt-uebertragung-minute__fuellung {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--akzent-weich);
+}
+.zt-uebertragung-minute--rest {
+  border-style: dashed;
+  border-color: var(--linie-3);
+}
+.zt-uebertragung-minute--rest .zt-uebertragung-minute__fuellung {
+  background: var(--akzent-weich);
+}
+.zt-uebertragung-minute__text {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  font-size: var(--t-s);
+  color: var(--text-2);
+}
+
+/* ---------- Dreieck: Formel umstellen ---------- */
+.zt-uebertragung-dreieck {
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 300 / 210;
+}
+.zt-uebertragung-dreieck svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.zt-uebertragung-dreieck polygon,
+.zt-uebertragung-dreieck line {
+  fill: none;
+  stroke: var(--linie-3);
+  stroke-width: 2;
+}
+.zt-uebertragung-dreieck polygon {
+  fill: var(--flaeche-1);
+}
+.zt-uebertragung-ecke {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 2px var(--s-2);
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-3);
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-2);
+  transition:
+    background var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve);
+}
+.zt-uebertragung-ecke:hover {
+  color: var(--text);
+}
+.zt-uebertragung-ecke[aria-pressed='true'] {
+  min-width: 36px;
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+  font-size: var(--t-l);
+}
+.zt-uebertragung-ecke--oben {
+  left: 50%;
+  top: 37%;
+}
+.zt-uebertragung-ecke--links {
+  left: 33%;
+  top: 76%;
+}
+.zt-uebertragung-ecke--rechts {
+  left: 67%;
+  top: 76%;
+}
+.zt-uebertragung-formel {
+  margin: 0;
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .zt-uebertragung-leitung {
+    grid-template-columns: minmax(0, 1fr) 48px minmax(0, 1fr);
+    gap: var(--s-1);
+  }
+  .zt-uebertragung-bits {
+    gap: 2px;
+    padding: var(--s-1);
+  }
+  .zt-uebertragung-bits span {
+    font-size: 9px;
+  }
+  .zt-uebertragung-rohr__text {
+    white-space: normal;
+    text-align: center;
+  }
+  .zt-uebertragung-leiter {
+    font-size: var(--t-s);
+  }
+  .zt-uebertragung-leiter__zeile {
+    grid-template-columns: 76px minmax(0, 1fr);
+    gap: var(--s-2);
+    padding: 2px var(--s-1);
+  }
+  .zt-uebertragung-regler__wert {
+    min-width: 84px;
+  }
+}

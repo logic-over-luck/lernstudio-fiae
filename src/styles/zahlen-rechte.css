@@ -1,0 +1,370 @@
+/* Zahlen-Trainer, Dateirechte (chmod): Stile der Bilder zum Mitmachen (bilder/rechte.jsx), Präfix zt-rechte- */
+
+/* Farbe je Klasse: Besitzer grün, Gruppe blau, andere orange */
+.zt-rechte--k0 {
+  --zt-rechte-farbe: var(--gut);
+}
+.zt-rechte--k1 {
+  --zt-rechte-farbe: var(--info);
+}
+.zt-rechte--k2 {
+  --zt-rechte-farbe: var(--warn);
+}
+.zt-rechte-farbig {
+  color: var(--zt-rechte-farbe);
+}
+
+/* Datei, um die es geht */
+.zt-rechte-datei {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-2);
+  font-size: var(--t-m);
+  color: var(--text-2);
+}
+.zt-rechte-datei__zusatz {
+  font-family: var(--schrift);
+  font-size: var(--t-s);
+  color: var(--text-4);
+}
+
+/* Ein Schalter für ein Recht */
+.zt-rechte-schalter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-1);
+  width: 88px;
+  height: 72px;
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-2);
+  color: var(--text-4);
+  cursor: pointer;
+  transition:
+    background var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve),
+    transform var(--dauer) var(--kurve-feder);
+}
+.zt-rechte-schalter:hover {
+  border-color: var(--linie-3);
+}
+.zt-rechte-schalter:active {
+  transform: scale(0.94);
+}
+.zt-rechte-schalter--an {
+  border-color: color-mix(in srgb, var(--gut) 45%, transparent);
+  background: color-mix(in srgb, var(--gut) 13%, transparent);
+  color: var(--gut);
+}
+.zt-rechte-schalter__b {
+  font-family: var(--mono);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  line-height: 1;
+}
+.zt-rechte-schalter__name {
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+.zt-rechte-schalter--klein {
+  width: 44px;
+  height: 44px;
+}
+.zt-rechte-schalter--klein .zt-rechte-schalter__b {
+  font-size: var(--t-xl);
+}
+
+/* Eine Klasse: drei Schalter nebeneinander */
+.zt-rechte-klasse {
+  display: flex;
+  gap: var(--s-3);
+}
+.zt-rechte-klasse__spalte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-rechte-wert,
+.zt-rechte-bit {
+  font-family: var(--mono);
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text-4);
+}
+.zt-rechte-wert--an,
+.zt-rechte-bit--an {
+  color: var(--gut);
+}
+.zt-rechte-wert:not(.zt-rechte-wert--an) {
+  text-decoration: line-through;
+  text-decoration-color: var(--text-4);
+}
+
+/* Was mit der Datei geht */
+.zt-rechte-tun {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: min(100%, 320px);
+}
+.zt-rechte-tun li {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-m);
+  color: var(--text-2);
+}
+.zt-rechte-tun__wort {
+  margin-left: auto;
+  font-size: var(--t-s);
+}
+.zt-rechte-tun--ja svg,
+.zt-rechte-tun--ja .zt-rechte-tun__wort {
+  color: var(--gut);
+}
+.zt-rechte-tun--nein svg,
+.zt-rechte-tun--nein .zt-rechte-tun__wort {
+  color: var(--fehler);
+}
+.zt-rechte-tun--nein > span:first-of-type {
+  color: var(--text-4);
+}
+
+/* Ergebnis unter dem Bild: rwx → Bits oder Ziffer */
+.zt-rechte-ergebnis {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s-2);
+  font-size: var(--t-l);
+  color: var(--text-3);
+}
+.zt-rechte-ergebnis b {
+  font-size: var(--t-2xl);
+  color: var(--text);
+}
+.zt-rechte-ergebnis__pfeil {
+  color: var(--text-4);
+}
+
+/* Wer gilt? */
+.zt-rechte-wer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+}
+.zt-rechte-wer__frage {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-rechte-drei {
+  display: flex;
+  gap: var(--s-2);
+}
+.zt-rechte-drei__klasse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  min-width: 88px;
+  padding: var(--s-3) var(--s-2);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-1);
+  opacity: 0.55;
+  transition:
+    opacity var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve),
+    background var(--dauer) var(--kurve);
+}
+.zt-rechte-drei__klasse--gilt {
+  opacity: 1;
+  border-color: color-mix(in srgb, var(--zt-rechte-farbe) 55%, transparent);
+  background: color-mix(in srgb, var(--zt-rechte-farbe) 12%, transparent);
+}
+.zt-rechte-drei__name {
+  font-size: var(--t-s);
+  color: var(--zt-rechte-farbe);
+}
+.zt-rechte-drei__rechte {
+  font-size: var(--t-xl);
+  font-weight: 600;
+  color: var(--text);
+}
+.zt-rechte-drei__gilt {
+  text-align: center;
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+.zt-rechte-satz {
+  margin: 0;
+  max-width: 460px;
+  font-size: var(--t-m);
+  line-height: 1.55;
+  color: var(--text-2);
+  text-align: center;
+}
+
+/* ls -l: Befehl und Ausgabezeile mit antippbaren Teilen */
+.zt-rechte-befehl {
+  align-self: stretch;
+  font-size: var(--t-m);
+  color: var(--text-2);
+}
+.zt-rechte-befehl__prompt {
+  color: var(--text-4);
+}
+.zt-rechte-ls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-1) var(--s-2);
+  font-size: var(--t-l);
+}
+.zt-rechte-ls__block {
+  display: inline-flex;
+}
+.zt-rechte-ls__teil {
+  padding: var(--s-1) var(--s-1);
+  border: 1px solid transparent;
+  border-bottom-color: var(--linie-2);
+  border-radius: var(--r-1);
+  background: none;
+  font: inherit;
+  color: var(--text-2);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.zt-rechte-ls__teil[class*='zt-rechte--k'] {
+  color: var(--zt-rechte-farbe);
+  border-bottom-color: color-mix(in srgb, var(--zt-rechte-farbe) 55%, transparent);
+}
+.zt-rechte-ls__teil--rechte {
+  padding-inline: 2px;
+  font-weight: 600;
+}
+.zt-rechte-ls__teil:hover {
+  background: var(--flaeche-2);
+}
+.zt-rechte-ls__teil--wahl {
+  border-color: var(--linie-3);
+  background: var(--flaeche-3);
+}
+.zt-rechte-ls__teil--wahl[class*='zt-rechte--k'] {
+  border-color: color-mix(in srgb, var(--zt-rechte-farbe) 60%, transparent);
+  background: color-mix(in srgb, var(--zt-rechte-farbe) 14%, transparent);
+}
+.zt-rechte-ls__erklaerung {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+  align-self: stretch;
+  min-height: 64px;
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-2);
+  background: var(--flaeche-1);
+  font-size: var(--t-m);
+  line-height: 1.5;
+  color: var(--text-2);
+}
+.zt-rechte-ls__erklaerung strong {
+  color: var(--text);
+}
+.zt-rechte-ls__erklaerung[class*='zt-rechte--k'] strong {
+  color: var(--zt-rechte-farbe);
+}
+
+/* Schaltpult: Zeilen = Klassen, Spalten = r, w, x, rechts die Ziffer */
+.zt-rechte-pult {
+  display: grid;
+  grid-template-columns: auto repeat(3, 44px) 40px;
+  align-items: center;
+  justify-items: center;
+  gap: var(--s-2);
+}
+.zt-rechte-pult__kopf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--mono);
+  font-size: var(--t-m);
+  color: var(--text-3);
+}
+.zt-rechte-pult__wert {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-rechte-pult__klasse {
+  justify-self: end;
+  padding-right: var(--s-2);
+  font-size: var(--t-m);
+  color: var(--zt-rechte-farbe);
+}
+.zt-rechte-pult__ziffer {
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  color: var(--zt-rechte-farbe);
+}
+.zt-rechte-zeilen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.zt-rechte-zeile {
+  display: grid;
+  grid-template-columns: 96px auto;
+  align-items: center;
+  gap: var(--s-3);
+}
+.zt-rechte-zeile__name {
+  font-size: var(--t-s);
+  color: var(--text-4);
+  text-align: right;
+}
+.zt-rechte-zeile__wert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  font-size: var(--t-xl);
+  font-weight: 600;
+  color: var(--text);
+}
+.zt-rechte-zeile__typ {
+  color: var(--text-4);
+}
+.zt-rechte-zahl {
+  width: 76px;
+  height: 40px;
+  margin-left: var(--s-2);
+  font-size: var(--t-xl);
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .zt-rechte-schalter:not(.zt-rechte-schalter--klein) {
+    width: 76px;
+    height: 66px;
+  }
+  .zt-rechte-drei__klasse {
+    min-width: 0;
+    flex: 1;
+    padding-inline: var(--s-1);
+  }
+  .zt-rechte-ls {
+    font-size: var(--t-m);
+  }
+  .zt-rechte-zeile {
+    grid-template-columns: 76px auto;
+  }
+}

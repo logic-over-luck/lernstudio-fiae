@@ -1,0 +1,1552 @@
+/* Zahlen-Trainer (Präfix zt-): Themen-Übersicht, Themenseite mit den Reitern Verstehen, Üben und Visualisieren
+   (Bilder zum Mitmachen, Labor; der Unterricht steht in lernsystem.css), gemischtes Training. Farben, Abstände und Schriften kommen aus tokens.css. */
+
+/* ---------- Übersicht ---------- */
+.zt-kacheln {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--s-4);
+}
+.zt-kachel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  padding: var(--s-5);
+  color: var(--text);
+}
+.zt-kachel__kopf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--s-2);
+}
+.zt-kachel__titel {
+  font-weight: 650;
+  font-size: var(--t-l);
+}
+.zt-kachel__text {
+  font-size: var(--t-m);
+  color: var(--text-3);
+  flex: 1;
+}
+.zt-kachel--misch {
+  grid-column: 1 / -1;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--s-5);
+}
+.zt-kachel__misch-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+.zt-kachel__pfeil {
+  color: var(--akzent);
+  flex: none;
+}
+.zt-stand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-top: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-stand--leer {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-stand strong {
+  color: var(--text);
+}
+
+/* ---------- Themenseite ---------- */
+.zt-kopf {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin-bottom: var(--s-4);
+}
+.zt-zurueck {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  align-self: flex-start;
+  font-size: var(--t-m);
+  color: var(--text-3);
+  transition: color var(--dauer) var(--kurve);
+}
+.zt-zurueck:hover {
+  color: var(--akzent);
+}
+.zt-kopf__titel {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--t-2xl);
+}
+.zt-kopf__text {
+  color: var(--text-2);
+  max-width: 720px;
+}
+.zt-seite__titel {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-bottom: var(--s-3);
+  font-size: var(--t-m);
+  font-weight: 650;
+  color: var(--text-2);
+}
+.zt-seite__titel svg {
+  color: var(--warn);
+}
+.zt-kopf__zeile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2) var(--s-5);
+}
+.zt-kopf__stand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reiter: Verstehen · Üben · Visualisieren – eine schlanke Leiste mit Unterstrich, wie überall im Lernsystem */
+.zt-ansichten {
+  display: flex;
+  gap: var(--s-6);
+  margin-bottom: var(--s-8);
+  border-bottom: 1px solid var(--linie);
+}
+.zt-ansichten__knopf {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-bottom: -1px;
+  padding: var(--s-3) 2px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+  font: inherit;
+  font-size: var(--t-l);
+  font-weight: 600;
+  color: var(--text-3);
+  cursor: pointer;
+  transition:
+    border-color var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve);
+}
+.zt-ansichten__knopf:hover {
+  color: var(--text);
+}
+.zt-ansichten__knopf[aria-selected='true'] {
+  border-bottom-color: var(--akzent);
+  color: var(--text);
+}
+.zt-ansichten__symbol {
+  display: inline-flex;
+  color: inherit;
+}
+.zt-ansichten__knopf[aria-selected='true'] .zt-ansichten__symbol {
+  color: var(--akzent);
+}
+.zt-ansicht {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  margin-bottom: var(--s-6);
+  animation: einblenden var(--dauer) var(--kurve);
+}
+.zt-ansicht[hidden] {
+  display: none;
+}
+.zt-ansicht > .spickzettel {
+  flex: none;
+}
+.zt-ansicht > .zt-werkzeug {
+  max-width: 560px;
+}
+
+/* ---------- Mitmach-Bilder (bilder.jsx) ---------- */
+.zt-bild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-5) var(--s-4);
+  border-radius: var(--r-3);
+  border: 1px solid var(--linie);
+  background: var(--bg);
+  overflow-x: auto;
+}
+.zt-bild__eingabe {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--t-m);
+  color: var(--text-3);
+}
+.zt-bild__eingabe .feld {
+  width: 160px;
+  height: 40px;
+  font-size: var(--t-l);
+  text-align: center;
+}
+.zt-bild__hinweis {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--t-s);
+  color: var(--text-4);
+  text-align: center;
+}
+.zt-bild__hinweis--warn {
+  color: var(--warn);
+}
+.zt-bild__knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2);
+}
+.zt-summe {
+  font-family: var(--mono);
+  font-size: var(--t-m);
+  color: var(--text-3);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.zt-summe b {
+  margin-left: var(--s-2);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Bits und Ziffern als Kästchen; Farben der Gruppen: a grün, b blau, c orange */
+.zt-bit {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 44px;
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-2);
+  font-family: var(--mono);
+  font-size: var(--t-xl);
+  font-weight: 600;
+  color: var(--text-4);
+  transition:
+    background var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve),
+    transform var(--dauer) var(--kurve-feder);
+}
+button.zt-bit:hover:not(:disabled) {
+  border-color: var(--linie-3);
+}
+button.zt-bit:active:not(:disabled) {
+  transform: scale(0.92);
+}
+button.zt-bit:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.zt-bit--a {
+  border-color: rgba(90, 209, 167, 0.45);
+  background: rgba(90, 209, 167, 0.13);
+  color: var(--gut);
+}
+.zt-bit--b {
+  border-color: rgba(126, 166, 255, 0.5);
+  background: rgba(126, 166, 255, 0.13);
+  color: var(--info);
+}
+.zt-bit--c {
+  border-color: rgba(240, 168, 90, 0.5);
+  background: rgba(240, 168, 90, 0.13);
+  color: var(--warn);
+}
+
+/* Stellenwert: Spalten mit Basis hoch n, dazwischen der Faktor */
+.zt-stellen {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-stellen__faktor {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: -40px;
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  white-space: nowrap;
+}
+.zt-stelle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-stelle__potenz {
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--akzent);
+}
+.zt-stelle__wert,
+.zt-stelle__produkt {
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+.zt-stelle__produkt {
+  color: var(--text-2);
+}
+.zt-ziffer {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 56px;
+  border-radius: var(--r-2);
+  border: 1px solid var(--akzent-linie);
+  background: var(--akzent-weich);
+  font-family: var(--mono);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  color: var(--akzent-stark);
+  transition: transform var(--dauer) var(--kurve-feder);
+}
+.zt-ziffer:hover {
+  border-color: var(--akzent);
+}
+.zt-ziffer:active {
+  transform: scale(0.92);
+}
+
+/* Lesen: Spalten mit Potenz, Stellenwert, Ziffer, Produkt */
+.zt-bits {
+  display: flex;
+  gap: var(--s-1);
+}
+.zt-bits__spalte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.zt-bits__potenz {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-4);
+}
+.zt-bits__wert {
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+.zt-bits__produkt {
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: var(--gut);
+}
+.zt-bits__produkt--leer {
+  color: var(--text-4);
+  font-weight: 400;
+}
+
+/* Schreiben: Restwert-Leiter und Ergebnis, das sich von rechts füllt */
+.zt-leiter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: var(--s-1) var(--s-3);
+  font-family: var(--mono);
+  font-size: var(--t-n);
+}
+.zt-leiter__zeile {
+  display: contents;
+}
+.zt-leiter__rechnung {
+  color: var(--text-2);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.zt-leiter__q {
+  color: var(--text);
+}
+.zt-leiter__notiz {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-rest,
+.zt-slot {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-1);
+  border: 1px solid rgba(90, 209, 167, 0.45);
+  background: rgba(90, 209, 167, 0.13);
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--gut);
+}
+.zt-rest small,
+.zt-slot small {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-radius: 8px;
+  background: var(--flaeche-4);
+  font-size: 9px;
+  line-height: 15px;
+  font-weight: 600;
+  color: var(--text-3);
+  text-align: center;
+}
+.zt-leiter__zeile--neu > * {
+  animation: hochgleiten var(--dauer-lang) var(--kurve);
+}
+.zt-leiter__zeile--neu .zt-rest {
+  border-color: var(--gut);
+  box-shadow: 0 0 0 3px rgba(90, 209, 167, 0.18);
+}
+.zt-ergebnis-zeile {
+  display: flex;
+  gap: var(--s-1);
+  padding-top: var(--s-4);
+  border-top: 1px dashed var(--linie-2);
+}
+.zt-slot {
+  width: 38px;
+  height: 44px;
+  font-size: var(--t-xl);
+}
+.zt-slot--leer {
+  border-style: dashed;
+  border-color: var(--linie-3);
+  background: none;
+}
+.zt-slot--neu {
+  animation: plopp var(--dauer-lang) var(--kurve-feder);
+  box-shadow: 0 0 0 3px rgba(90, 209, 167, 0.18);
+}
+.zt-slot--luecke {
+  margin-left: var(--s-2);
+}
+@keyframes plopp {
+  from {
+    transform: translateY(-14px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+/* Gruppen: Gewichte, Bits, Klammer, Rechnung, Ziffer */
+.zt-gruppen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-4);
+}
+.zt-gruppe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+  --gruppe: var(--gut);
+}
+.zt-gruppe--b {
+  --gruppe: var(--info);
+}
+.zt-gruppe--c {
+  --gruppe: var(--warn);
+}
+.zt-gruppe__gewichte,
+.zt-gruppe__bits {
+  display: flex;
+  gap: var(--s-1);
+}
+.zt-gruppe__gewichte span {
+  width: 40px;
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+  text-align: center;
+}
+.zt-gruppe__klammer {
+  align-self: stretch;
+  height: 9px;
+  margin-top: 2px;
+  border: 2px solid var(--gruppe);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  opacity: 0.6;
+}
+.zt-gruppe__rechnung {
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+.zt-gruppe__ziffer {
+  font-family: var(--mono);
+  font-size: var(--t-3xl);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--gruppe);
+}
+.zt-hextafel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-1);
+}
+.zt-hextafel span {
+  padding: 2px var(--s-2);
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-2);
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-hextafel span.zt-hextafel--an {
+  border-color: var(--linie-3);
+  color: var(--text);
+}
+
+/* Zweierpotenzen: große Zahl, Regler, Punkteraster */
+.zt-potenz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-potenz__gross {
+  font-family: var(--mono);
+  font-size: var(--t-3xl);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.zt-potenz__klein {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-potenz__regler {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  width: min(340px, 100%);
+}
+.zt-potenz__regler input {
+  flex: 1;
+  accent-color: var(--akzent);
+}
+.zt-punkte {
+  display: grid;
+  gap: 4px;
+  max-width: 100%;
+}
+.zt-punkte span {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--linie-3);
+  animation: einblenden var(--dauer-lang) var(--kurve);
+}
+.zt-punkte span.zt-punkte--neu {
+  background: var(--akzent);
+}
+.zt-potenzen {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--s-1);
+  width: min(440px, 100%);
+}
+.zt-potenzen button {
+  padding: 2px var(--s-2);
+  border-radius: var(--r-1);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-2);
+  font-family: var(--mono);
+  font-size: var(--t-xs);
+  color: var(--text-3);
+}
+.zt-potenzen button:hover:not(:disabled) {
+  color: var(--text);
+}
+.zt-potenzen button.zt-potenzen--an {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+}
+
+/* ---------- Visualisieren: Zahlen-Labor ---------- */
+.zt-labor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  max-width: 820px;
+}
+.zt-labor__steuerung {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-5);
+}
+.zt-labor__reihe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3);
+}
+.zt-labor__feld {
+  width: min(320px, 100%);
+  height: 52px;
+  background: var(--bg);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.zt-labor__knoepfe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.zt-labor__knoepfe .knopf {
+  font-family: var(--mono);
+}
+.zt-labor__info {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-labor__info svg {
+  flex: none;
+  margin-top: 2px;
+}
+.zt-labor__info strong {
+  color: var(--text);
+}
+.zt-labor__info--fehler {
+  color: var(--warn);
+}
+.zt-labor__tafel {
+  padding: 0;
+  overflow: hidden;
+  transition: opacity var(--dauer) var(--kurve);
+}
+.zt-labor__tafel--blass {
+  opacity: 0.4;
+}
+.zt-labor__kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-5);
+  border-bottom: 1px solid var(--linie);
+  background: var(--flaeche-2);
+}
+.zt-labor__zeilen {
+  margin: 0;
+}
+.zt-labor__zeile {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--s-4);
+  padding: var(--s-4) var(--s-5);
+  border-bottom: 1px solid var(--linie);
+}
+.zt-labor__zeile:last-child {
+  border-bottom: 0;
+}
+.zt-labor__zeile dt {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.zt-labor__zeile dt small {
+  font-size: var(--t-xs);
+  font-weight: 400;
+  color: var(--text-4);
+}
+.zt-labor__zeile dd {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s-1) var(--s-4);
+  min-width: 0;
+  margin: 0;
+}
+.zt-labor__zeile--eingabe dt {
+  color: var(--akzent);
+}
+.zt-labor__zahl {
+  font-family: var(--mono);
+  font-size: var(--t-2xl);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+.zt-labor__zerlegung {
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-labor__ziffer--a {
+  color: var(--gut);
+}
+.zt-labor__ziffer--b {
+  color: var(--info);
+}
+.zt-labor__ziffer--c {
+  color: var(--warn);
+}
+.zt-labor__bits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+.zt-labor__gruppe {
+  display: flex;
+  gap: 3px;
+  padding-bottom: var(--s-1);
+  border-bottom: 2px solid var(--gruppe);
+}
+.zt-labor__bit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.zt-labor__bit .zt-bit {
+  width: 34px;
+  height: 40px;
+  font-size: var(--t-l);
+}
+
+/* Verweis im Lösungsweg auf die erklärende Karte */
+.zt-verweis {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+  padding: var(--s-1) var(--s-3);
+  border-radius: var(--r-rund);
+  border: 1px solid var(--akzent-linie);
+  background: var(--akzent-weich);
+  font-size: var(--t-m);
+  font-weight: 600;
+  color: var(--akzent-stark);
+  transition: background var(--dauer) var(--kurve);
+}
+.zt-verweis:hover {
+  background: rgba(var(--akzent-rgb), 0.2);
+}
+
+/* Aufgabenarten */
+.zt-arten {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-arten__titel {
+  margin-right: var(--s-1);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-art {
+  height: 28px;
+  padding: 0 var(--s-3);
+  border-radius: var(--r-rund);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  color: var(--text-2);
+  font-size: var(--t-s);
+  font-weight: 500;
+  transition:
+    background var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve);
+}
+.zt-art:hover {
+  border-color: var(--linie-3);
+  color: var(--text);
+}
+.zt-art[aria-pressed='true'] {
+  background: var(--akzent-weich);
+  border-color: var(--akzent);
+  color: var(--akzent-stark);
+}
+
+/* ---------- Aufgabe ---------- */
+.zt-aufgabe {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+  animation: hochgleiten var(--dauer-lang) var(--kurve);
+  transition: border-color var(--dauer-lang) var(--kurve);
+}
+.zt-aufgabe--geloest {
+  border-color: var(--akzent-linie);
+}
+.zt-aufgabe__kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3);
+}
+.zt-runde {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  font-size: var(--t-s);
+  color: var(--text-3);
+  font-variant-numeric: tabular-nums;
+}
+.zt-runde strong {
+  color: var(--text);
+}
+.zt-runde__balken {
+  width: 120px;
+}
+.zt-aufgabe__text {
+  font-size: var(--t-l);
+  line-height: 1.55;
+  max-width: 760px;
+}
+.zt-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-4);
+}
+.zt-felder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--s-4);
+  align-items: start;
+}
+.zt-feld {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-1);
+}
+.zt-feld__label {
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-2);
+}
+.zt-feld__eingabe {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-feld__eingabe .feld {
+  flex: 1;
+  min-width: 0;
+}
+.zt-feld__einheit {
+  min-width: 24px;
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-feld__status {
+  display: inline-flex;
+  flex: none;
+}
+.zt-feld__status--ok {
+  color: var(--gut);
+}
+.zt-feld__status--falsch {
+  color: var(--fehler);
+}
+.zt-feld__hinweis {
+  font-size: var(--t-s);
+  color: var(--fehler);
+}
+.zt-feld__hinweis--gut {
+  color: var(--text-3);
+}
+
+/* Segmentknöpfe (Auswahl mit wenigen Möglichkeiten) */
+.zt-segmente {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-2);
+  background: var(--flaeche-1);
+  transition: border-color var(--dauer) var(--kurve);
+}
+.zt-segmente--ok {
+  border-color: rgba(90, 209, 167, 0.6);
+}
+.zt-segmente--falsch {
+  border-color: rgba(240, 112, 112, 0.6);
+}
+.zt-segment {
+  height: 28px;
+  padding: 0 var(--s-3);
+  border-radius: 7px;
+  font-size: var(--t-m);
+  font-weight: 600;
+  color: var(--text-3);
+  transition:
+    background var(--dauer) var(--kurve),
+    color var(--dauer) var(--kurve);
+}
+.zt-segment:hover:not(:disabled) {
+  color: var(--text);
+}
+.zt-segment[aria-pressed='true'] {
+  background: var(--akzent-weich);
+  color: var(--akzent-stark);
+}
+.zt-segment:disabled {
+  cursor: default;
+}
+
+.zt-aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.zt-aktionen .kbd {
+  margin-left: var(--s-1);
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.2);
+  color: inherit;
+}
+.zt-rueck {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  padding: var(--s-3) var(--s-4);
+  border-radius: var(--r-2);
+  font-size: var(--t-m);
+}
+.zt-rueck svg {
+  flex: none;
+  margin-top: 1px;
+}
+.zt-rueck--gut {
+  border: 1px solid rgba(90, 209, 167, 0.3);
+  background: rgba(90, 209, 167, 0.1);
+  color: var(--text-2);
+}
+.zt-rueck--gut svg,
+.zt-rueck--gut strong {
+  color: var(--gut);
+}
+.zt-rueck--fehler {
+  border: 1px solid rgba(240, 112, 112, 0.3);
+  background: rgba(240, 112, 112, 0.08);
+  color: var(--text-2);
+}
+.zt-rueck--fehler svg {
+  color: var(--fehler);
+}
+.zt-loesung {
+  margin-top: var(--s-2);
+  padding: var(--s-4) var(--s-5);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-2);
+}
+.zt-loesung ol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin: var(--s-2) 0 0;
+  padding-left: var(--s-5);
+  font-size: var(--t-m);
+  color: var(--text-2);
+}
+.zt-loesung li::marker {
+  font-family: var(--mono);
+  color: var(--text-3);
+}
+
+/* ---------- Werkzeug ---------- */
+.zt-werkzeug {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-3);
+  padding: var(--s-4) var(--s-5);
+}
+.zt-werkzeug .zt-seite__titel {
+  margin-bottom: 0;
+}
+.zt-werkzeug__felder {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+}
+.zt-wfeld {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--text-2);
+}
+.zt-wfeld .feld {
+  height: 32px;
+}
+.zt-ergebnis {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--linie);
+}
+.zt-ergebnis__zeile {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--s-3);
+  padding: 3px 0;
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-ergebnis__zeile dd {
+  margin: 0;
+  color: var(--text-2);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.zt-ergebnis__zeile--hervor dd {
+  color: var(--akzent-stark);
+  font-weight: 600;
+}
+.zt-werkzeug__fehler {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  font-size: var(--t-s);
+  color: var(--warn);
+}
+.zt-werkzeug__fehler svg {
+  flex: none;
+  margin-top: 2px;
+}
+.zt-werkzeug__weg {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-werkzeug__weg summary {
+  cursor: pointer;
+  color: var(--text-2);
+}
+.zt-werkzeug__weg ol {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: var(--s-2) 0 0;
+  padding-left: var(--s-4);
+  font-family: var(--mono);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Gemischtes Training: Bilanz ---------- */
+.zt-bilanz {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-5);
+}
+.zt-bilanz__kopf {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-6);
+}
+.zt-bilanz__zahl {
+  font-size: var(--t-4xl);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.zt-bilanz__zahl small {
+  margin-left: var(--s-2);
+  font-size: var(--t-l);
+  font-weight: 500;
+  color: var(--text-3);
+  letter-spacing: 0;
+}
+.zt-bilanz__text {
+  flex: 1 1 320px;
+  color: var(--text-2);
+}
+.zt-bilanz__liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.zt-bilanz__zeile {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-2);
+  font-size: var(--t-m);
+}
+.zt-bilanz__name {
+  flex: 1;
+}
+.zt-bilanz__punkte {
+  font-family: var(--mono);
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-bilanz__aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+/* ---------- Bilder zum Mitmachen im Unterricht (bilder/zahlensysteme.jsx) ---------- */
+/* Lampen */
+.zt-lampen {
+  display: flex;
+  gap: var(--s-5);
+}
+.zt-lampe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2);
+  border: 0;
+  background: none;
+  color: var(--text-3);
+  font: inherit;
+  cursor: pointer;
+}
+.zt-lampe__birne {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--linie-3);
+  background: var(--flaeche-3);
+  transition:
+    background var(--dauer) var(--kurve),
+    box-shadow var(--dauer) var(--kurve),
+    border-color var(--dauer) var(--kurve);
+}
+.zt-lampe--an .zt-lampe__birne {
+  border-color: #ffd46b;
+  background: radial-gradient(circle at 40% 35%, #fff4c7, #ffd46b 60%, #e0a93a);
+  box-shadow: 0 0 28px rgba(255, 212, 107, 0.55);
+}
+.zt-lampe__bit {
+  font-size: var(--t-2xl);
+  font-weight: 650;
+  color: var(--text);
+}
+.zt-lampe__text {
+  font-size: var(--t-s);
+}
+
+/* Zählwerk */
+.zt-zaehlwerk {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.zt-rad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-1);
+}
+.zt-rad__wert {
+  font-size: var(--t-s);
+  color: var(--akzent);
+}
+.zt-rad__ziffer {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 68px;
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie-3);
+  background: linear-gradient(var(--flaeche-4), var(--flaeche-2) 48%, var(--flaeche-1) 52%, var(--flaeche-3));
+  font-size: var(--t-3xl);
+  font-weight: 650;
+  color: var(--text);
+}
+.zt-rad__ziffer--neu {
+  animation: zt-drehen var(--dauer-lang) var(--kurve);
+  border-color: var(--akzent);
+}
+@keyframes zt-drehen {
+  from {
+    transform: translateY(-30%);
+    opacity: 0.2;
+  }
+}
+.zt-zaehlwerk__dezimal {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  margin-left: var(--s-3);
+  align-self: center;
+  font-size: var(--t-n);
+  color: var(--text-3);
+}
+.zt-zaehlwerk__dezimal b {
+  font-size: var(--t-2xl);
+  color: var(--akzent);
+}
+.zt-zaehlwerk__meldung {
+  min-height: 1.5em;
+  margin: 0;
+  font-size: var(--t-m);
+  color: transparent;
+  text-align: center;
+}
+.zt-zaehlwerk__meldung--an {
+  color: var(--warn);
+}
+.zt-verlauf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--s-2);
+}
+.zt-verlauf span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 44px;
+  padding: var(--s-1) var(--s-2);
+  border-radius: var(--r-1);
+  background: var(--flaeche-2);
+  color: var(--text-2);
+}
+.zt-verlauf small {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-verlauf--jetzt {
+  outline: 1px solid var(--akzent);
+}
+.zt-verlauf--jetzt b {
+  color: var(--akzent);
+}
+
+/* Passt es noch? */
+.zt-passt {
+  border-collapse: collapse;
+  font-size: var(--t-n);
+}
+.zt-passt {
+  max-width: 100%;
+}
+.zt-passt th,
+.zt-passt td {
+  padding: var(--s-1) var(--s-3);
+  text-align: left;
+  border-bottom: 1px solid var(--linie);
+  white-space: nowrap;
+}
+.zt-passt th {
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-3);
+}
+.zt-passt td {
+  color: var(--text-3);
+}
+.zt-passt--ja td {
+  color: var(--text);
+}
+.zt-passt__bit {
+  font-size: var(--t-l);
+  text-align: center !important;
+}
+.zt-passt--ja .zt-passt__bit {
+  color: var(--akzent);
+  font-weight: 700;
+}
+.zt-passt__ergebnis {
+  font-size: var(--t-xl);
+  color: var(--text);
+}
+
+/* Kombinationen */
+.zt-kombis {
+  display: flex;
+  gap: var(--s-6);
+  align-items: flex-start;
+}
+.zt-kombis__spalte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--s-2);
+}
+.zt-kombis__titel {
+  font-size: var(--t-s);
+  font-weight: 600;
+  color: var(--text-3);
+}
+.zt-kombis__liste {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: var(--t-l);
+  color: var(--text-2);
+}
+.zt-kombis__liste span {
+  padding: 0 var(--s-2);
+  border-radius: var(--r-1);
+}
+.zt-kombis--neu {
+  background: var(--akzent-weich);
+  color: var(--text);
+}
+.zt-kombis__zahl {
+  font-size: var(--t-m);
+  color: var(--text-3);
+}
+.zt-kombis__zahl b {
+  color: var(--akzent);
+  font-size: var(--t-l);
+}
+
+/* Hex-Tabelle */
+.zt-hex {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: var(--s-2);
+  width: 100%;
+  max-width: 640px;
+}
+.zt-hex__feld {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: var(--s-2) var(--s-1);
+  border-radius: var(--r-2);
+  background: var(--flaeche-2);
+  border: 1px solid var(--linie);
+}
+.zt-hex__feld b {
+  font-size: var(--t-xl);
+  color: var(--text);
+}
+.zt-hex__bits {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-hex__feld small {
+  font-size: var(--t-xs);
+  color: var(--text-4);
+}
+.zt-hex__feld--buchstabe {
+  border-color: var(--akzent-linie);
+  background: var(--akzent-weich);
+}
+.zt-hex__feld--buchstabe b {
+  color: var(--akzent);
+}
+
+/* Je Basis: Schreibweise, Name, Rechnung, Wert */
+.zt-jebasis {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-2);
+  width: 100%;
+  max-width: 560px;
+}
+.zt-jebasis__zeile {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr) auto;
+  grid-template-areas:
+    'schreib name wert'
+    'schreib weg wert';
+  align-items: center;
+  column-gap: var(--s-3);
+  padding: var(--s-2) var(--s-3);
+  border-radius: var(--r-2);
+  border: 1px solid var(--linie);
+  background: var(--flaeche-2);
+}
+.zt-jebasis__zeile--nein {
+  opacity: 0.6;
+}
+.zt-jebasis__schreib {
+  grid-area: schreib;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--t-xl);
+  color: var(--text);
+}
+.zt-jebasis__basis {
+  color: var(--akzent);
+}
+.zt-jebasis__schreib small {
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-jebasis__name {
+  grid-area: name;
+  font-size: var(--t-s);
+  color: var(--text-3);
+}
+.zt-jebasis__weg {
+  grid-area: weg;
+  font-size: var(--t-s);
+  color: var(--text-4);
+  overflow-wrap: anywhere;
+}
+.zt-jebasis__wert {
+  grid-area: wert;
+  font-size: var(--t-xl);
+  color: var(--akzent);
+  text-align: right;
+}
+.zt-jebasis__zeile--nein .zt-jebasis__wert {
+  color: var(--text-4);
+}
+
+/* Zählwerk beschriftet */
+.zt-rad__stelle {
+  font-size: var(--t-xs);
+  color: var(--text-3);
+  white-space: nowrap;
+}
+.zt-zaehlwerk__legende {
+  margin: 0;
+  font-size: var(--t-m);
+  color: var(--text-3);
+  text-align: center;
+}
+.zt-zaehlwerk__legende b {
+  color: var(--akzent);
+}
+
+@media (max-width: 640px) {
+  .zt-rad__ziffer {
+    width: 44px;
+    height: 58px;
+    font-size: var(--t-2xl);
+  }
+  .zt-zaehlwerk__dezimal {
+    margin-left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .zt-hex {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .zt-jebasis__zeile {
+    grid-template-columns: 5.5rem minmax(0, 1fr) auto;
+    column-gap: var(--s-2);
+  }
+  .zt-slot {
+    width: 34px;
+  }
+  .zt-kombis {
+    gap: var(--s-4);
+  }
+  .zt-passt th,
+  .zt-passt td {
+    padding: var(--s-1) 6px;
+    font-size: var(--t-m);
+  }
+}
+
+/* ---------- Schmale Fenster ---------- */
+@media (max-width: 640px) {
+  .zt-kachel--misch {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .zt-kachel__pfeil {
+    display: none;
+  }
+  .zt-felder {
+    grid-template-columns: 1fr;
+  }
+  .zt-aufgabe__text {
+    font-size: var(--t-n);
+  }
+  .zt-wfeld {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 640px) {
+  .zt-ansichten {
+    gap: var(--s-4);
+  }
+  .zt-ansichten__knopf {
+    font-size: var(--t-n);
+  }
+  .zt-bit,
+  .zt-gruppe__gewichte span {
+    width: 33px;
+  }
+  .zt-bit {
+    height: 40px;
+    font-size: var(--t-l);
+  }
+  .zt-bits {
+    gap: 3px;
+  }
+  .zt-ziffer {
+    width: 44px;
+    height: 50px;
+  }
+  .zt-labor__steuerung {
+    padding: var(--s-4);
+  }
+  .zt-labor__zeile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--s-2);
+    padding: var(--s-3) var(--s-4);
+  }
+  .zt-labor__zeile dt {
+    flex-direction: row;
+    align-items: baseline;
+    gap: var(--s-2);
+  }
+  .zt-labor__bit .zt-bit {
+    width: 30px;
+    height: 36px;
+  }
+}
