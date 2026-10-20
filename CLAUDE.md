@@ -20,6 +20,8 @@
 1. `inhalt/<RAUM>.json` bearbeiten.
 2. `npm run pruefen` – muss „Keine Fehler.“ melden.
 3. `npm test` und `npm run build`.
+4. Die gebaute `Lernstudio.html` **mit committen** – GitHub Pages zeigt genau diese Datei aus dem Repo. Ohne
+   Commit bleibt die Online-Version auf dem alten Stand.
 
 ## Felder eines Stichpunkts
 
