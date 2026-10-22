@@ -52,7 +52,7 @@ export const THEMEN = [
     name: 'Bit, Byte und Präfixe',
     icon: 'hash',
     kurz: 'Bit und Byte, kB und KiB, GHz und Mbit/s – wann 1.000 gilt, wann 1.024, und wie man sauber umrechnet.',
-    koennen: ['AP1-4-2-1-K3', 'AP1-4-2-1-K4', 'AP1-4-2-1-K5', 'AP1-4-2-1-K7'],
+    koennen: ['AP1-4-2-1-K3', 'AP1-4-2-1-K4', 'AP1-4-2-1-K5', 'AP1-4-2-1-K7', 'AP1-4-2-1-K10'],
     spickzettel:
       '- 8 Bit = 1 Byte · Bit → Byte: ÷ 8 · Byte → Bit: · 8 · kleines b = Bit, großes B = Byte\n' +
       '- **Dezimalpräfixe** (Potenzen von 1.000): kB, MB, GB, TB – Hersteller, Übertragungsraten, physikalische Größen (GHz, MHz)\n' +

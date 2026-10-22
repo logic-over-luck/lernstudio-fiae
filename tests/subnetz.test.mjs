@@ -180,8 +180,9 @@ test('Lernweg: braucht zeigt nur auf frühere Lektionen', () => {
 test('Lernweg: jede Kompetenz von AP1-6-2-1 bis AP1-6-2-4 ist abgedeckt', () => {
   assert.ok(KOMPETENZEN.length >= 20);
   const abgedeckt = new Set(LEKTIONEN.flatMap((l) => l.kompetenzen));
-  // Offen: Aussagen, die der Lernplan hat, der Lernweg aber noch nicht behandelt (NAT, Netzdoku, Teilnetze, IPv6-Vergleich, ARP/NDP, Befehle)
-  const ohneLektion = new Set(['AP1-6-2-1-K7', 'AP1-6-2-1-K9', 'AP1-6-2-1-K10', 'AP1-6-2-2-K7', 'AP1-6-2-3-K6', 'AP1-6-2-3-K7', 'AP1-6-2-4-K6', 'AP1-6-2-4-K7', 'AP1-6-2-4-K8', 'AP1-6-2-4-K9']);
+  // Offen: Aussagen, die der Lernplan hat, der Lernweg aber noch nicht behandelt (NAT, Netzdoku, Teilnetze, IPv6-Vergleich, ARP/NDP, Befehle,
+  // Client anschließen, Netzadresse binär per UND)
+  const ohneLektion = new Set(['AP1-6-2-1-K7', 'AP1-6-2-1-K9', 'AP1-6-2-1-K10', 'AP1-6-2-1-K12', 'AP1-6-2-2-K9', 'AP1-6-2-2-K7', 'AP1-6-2-3-K6', 'AP1-6-2-3-K7', 'AP1-6-2-4-K6', 'AP1-6-2-4-K7', 'AP1-6-2-4-K8', 'AP1-6-2-4-K9']);
   for (const k of KOMPETENZEN) if (!ohneLektion.has(k)) assert.ok(abgedeckt.has(k), `${k} gehört zu keiner Lektion`);
   for (const k of abgedeckt) assert.ok(KOMPETENZEN.includes(k), `${k} gibt es im Lernplan nicht`);
 });

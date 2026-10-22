@@ -119,7 +119,7 @@ const L = [
     begriff: 'Netzadresse',
     leitfrage: 'Mit welcher Adresse beginnt mein Netz?',
     braucht: ['blockgroesse'],
-    kompetenzen: ['AP1-6-2-2-K2'],
+    kompetenzen: ['AP1-6-2-2-K2', 'AP1-6-2-2-K8'],
     definition: 'Die **Netzadresse** ist die erste Adresse eines Netzes: Alle Hostbits sind 0. Sie bezeichnet das Netz selbst und wird keinem Gerät zugewiesen.',
     merksatz: 'Netzadresse = größtes Vielfaches der Blockgröße, das nicht größer als die Zahl ist.',
     fehler: [{ falsch: '192.168.1.100/26 → Netzadresse 192.168.1.100', richtig: '100 liegt im Block 64–127. Netzadresse 192.168.1.64.' }],
@@ -131,7 +131,7 @@ const L = [
     begriff: 'Broadcastadresse',
     leitfrage: 'Wo endet mein Netz?',
     braucht: ['netzadresse'],
-    kompetenzen: ['AP1-6-2-2-K2'],
+    kompetenzen: ['AP1-6-2-2-K2', 'AP1-6-2-2-K8'],
     definition:
       'Die **Broadcastadresse** ist die letzte Adresse eines Netzes: Alle Hostbits sind 1. Was an sie geschickt wird, erreicht alle Geräte im Netz; einem einzelnen Gerät wird sie nicht zugewiesen.',
     merksatz: 'Broadcast = nächste Netzadresse − 1.',
@@ -184,7 +184,7 @@ const L = [
     begriff: 'Rechenweg',
     leitfrage: 'In welcher Reihenfolge rechne ich?',
     braucht: ['oktett3'],
-    kompetenzen: ['AP1-6-2-2-K1', 'AP1-6-2-2-K2', 'AP1-6-2-2-K3'],
+    kompetenzen: ['AP1-6-2-2-K1', 'AP1-6-2-2-K2', 'AP1-6-2-2-K3', 'AP1-6-2-2-K8'],
     definition:
       'Eine Subnetz-Aufgabe löst man immer in derselben Reihenfolge: **1.** Subnetzmaske · **2.** entscheidendes Oktett und Blockgröße · **3.** Netzadresse · **4.** Broadcastadresse · **5.** erste und letzte Hostadresse · **6.** Anzahl der Hosts.',
     merksatz: 'Erst die Blockgröße, dann ist alles andere Abschreiben, Abrunden und ±1.',
@@ -230,7 +230,7 @@ const L = [
     begriff: 'IPv4-Konfiguration',
     leitfrage: 'Was trägt man an einem PC ein?',
     braucht: ['standardgateway'],
-    kompetenzen: ['AP1-6-2-1-K1', 'AP1-6-2-1-K6'],
+    kompetenzen: ['AP1-6-2-1-K1', 'AP1-6-2-1-K6', 'AP1-6-2-1-K11'],
     definition:
       'Zur **IPv4-Konfiguration** eines Geräts gehören **IP-Adresse, Subnetzmaske, Standardgateway und DNS-Server**. Der **DNS-Server** übersetzt Namen wie www.beispiel.de in IP-Adressen. Dokumentiert werden zusätzlich die Art der Vergabe und der Anschluss (z. B. Netzwerkdose oder Switch-Port).',
     merksatz: 'Adresse, Maske, Gateway, DNS – vier Einträge, alle im passenden Netz.',
