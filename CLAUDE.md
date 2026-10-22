@@ -38,4 +38,3 @@
   (AP1-8-4-4). Diese Übungen erscheinen deshalb nirgends.
 - Ohne Trainer: AP1-2-3-3, AP1-3-2-4, AP1-6-1-5, PB1-7-1-2, PB2-1-1-3, PB2-2-1-4, PB2-5-1-5.
 - Der Subnetz-Lernweg deckt 12 Aussagen von AP1-6-2-1 bis -4 nicht ab (Liste in `tests/subnetz.test.mjs`).
-- Neue AP1-Aussagen aus der Überarbeitung (Branch `ap1-lernplan-ueberarbeitet`) haben noch keine Lernkarten.

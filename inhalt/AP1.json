@@ -1198,7 +1198,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Die Vorgänge stehen zeilenweise untereinander, die Zeitachse verläuft waagerecht, jeder Vorgang ist ein Balken von Anfang bis Ende, Abhängigkeiten sind Pfeile, Meilensteine Rauten; es zeigt Termine anschaulich, der Netzplan dagegen Abhängigkeiten, früheste und späteste Zeitpunkte, Puffer und kritischen Weg.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -1453,7 +1453,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "je Vorgang ein Knoten, ein Pfeil von jedem Vorgänger zum Nachfolger; leere Knoten ordnest du über ihre ein- und ausgehenden Pfeile zu (z. B. drei eingehende Pfeile → der Vorgang mit drei Vorgängern).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -2481,7 +2481,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Geplante Werte (Soll) für Termine, Aufwand, Kosten und Leistungsumfang werden an Meilensteinen und zum Abschluss den tatsächlichen Werten (Ist) gegenübergestellt; die Abweichung wird absolut (Ist − Soll) und relativ (Abweichung ÷ Soll × 100 %) angegeben, z. B. Soll 40 h, Ist 46 h → +6 h = +15 %; die Abweichungsanalyse sucht dann Ursachen und leitet Maßnahmen ab.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -2832,7 +2832,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "nach Arbeitsanweisungen und Checklisten aus dem Qualitätshandbuch arbeiten, nach Testprotokoll prüfen, die Konfiguration dokumentieren (Rechnername, IP-Adresse, Netzwerkdose, Betriebssystem), den Arbeitsplatz vom Nutzer mit Unterschrift abnehmen lassen, Fehler melden und Verbesserungsvorschläge einbringen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -3291,7 +3291,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Produkt- und Sortimentspolitik (was angeboten wird, z. B. Hardware plus Installations- und Wartungsservice), Preis- und Konditionenpolitik (Preise, Rabatte, Zahlungsbedingungen, z. B. Mengenrabatt für Firmenkunden), Kommunikationspolitik (Werbung, Verkaufsförderung, Öffentlichkeitsarbeit) und Distributionspolitik (Absatzweg, z. B. Onlineshop oder Außendienst).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -4206,7 +4206,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Systeme erholen sich schnell von Angriffen und Ausfällen).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -4260,7 +4260,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "IR (InfraRed night vision) für Aufnahmen bei Dunkelheit, Heizung (heater) für den Betrieb bei Kälte (kein Beschlagen oder Vereisen); beide erhöhen die Leistungsaufnahme.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -4657,7 +4657,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Kunden verlieren das Vertrauen und wandern zur Konkurrenz ab, dadurch sinken Umsatz und Gewinn; Neukunden sind schwerer zu gewinnen, Folgeaufträge bleiben aus, und das Unternehmen gerät gegenüber Wettbewerbern in Nachteil.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -4693,7 +4693,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Kosten = in Geld bewerteter Verbrauch für die Leistungserstellung; Produktivität = Ausbringungsmenge ÷ Einsatzmenge (z. B. abgefertigte Lkw je Stunde); Wirtschaftlichkeit = Leistung ÷ Kosten; Rentabilität = Gewinn ÷ eingesetztes Kapital × 100 %.",
-            "karten": 0,
+            "karten": 3,
             "neu": null
           }
         ],
@@ -5088,7 +5088,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Er ist über geplante neue technische Anlagen und Arbeitsverfahren rechtzeitig zu unterrichten und bestimmt mit, wenn eine technische Einrichtung Leistung oder Verhalten der Beschäftigten überwachen kann; eine frühe Einbindung, z. B. über eine Betriebsvereinbarung, nimmt die Sorge vor Kontrolle.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -5739,7 +5739,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Arbeitszeit je Auftrag bzw. Ticket über die Zeiterfassung, bewertet mit dem Stundensatz, dazu Material, Fahrtkosten und Fremdleistungen, alles dem Auftrag bzw. der Kostenstelle zugeordnet; im Zeitvergleich stellst du Ist-Werte verschiedener Perioden gegenüber (Entwicklung), im Soll-Ist-Vergleich Plan- und Ist-Werte derselben Periode (Planabweichung), z. B. Supportkosten 12.000 € im Vorquartal und 13.800 € jetzt → +15 %, bei 15.000 € Budget 1.200 € unter Plan.",
-            "karten": 0,
+            "karten": 3,
             "neu": null
           },
           {
@@ -6326,7 +6326,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Einführungs- und Investitionskosten, Abhängigkeit von der IT (bei Systemausfall stockt die Bearbeitung), Risiken für Datenschutz und Datensicherheit, Schulungsaufwand sowie die Pflicht zur revisionssicheren Archivierung nach GoBD.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -6815,7 +6815,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "je Kriterium Rangpunkte vergeben (z. B. 3 = bester, 1 = schlechtester Wert; bei Kostenkriterien wie Preis und Wartungskosten bekommt der niedrigste Wert die meisten Punkte), die Punkte je Alternative summieren und die Alternative mit der höchsten Summe wählen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -6869,7 +6869,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Du kannst bei einem Angebotsvergleich zuerst Ausschlusskriterien (Mindestanforderungen, K.-o.-Kriterien) prüfen und Alternativen ausscheiden, die sie nicht erfüllen, auch wenn sie die meisten Punkte haben; gewählt wird die beste verbleibende Alternative.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -7651,7 +7651,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Schlechtleistung – die Sache hat nicht die vereinbarte oder übliche Beschaffenheit bzw. eignet sich nicht für die vorgesehene Verwendung (z. B. Notebook mit defektem Display, Software ohne vereinbarte Funktion); Falschlieferung – eine andere als die bestellte Sache wird geliefert (z. B. 16-GB- statt 32-GB-Speichermodul); Minderlieferung – weniger als die bestellte Menge (z. B. 18 statt 20 Monitore).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -7862,7 +7862,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Das Urheberrechtsgesetz (UrhG) schützt persönliche geistige Schöpfungen wie Texte, Bilder, Musik und ausdrücklich auch Computerprogramme; der Schutz entsteht automatisch mit der Schöpfung ohne Anmeldung und endet 70 Jahre nach dem Tod des Urhebers; Software darf deshalb nur im Rahmen einer Lizenz genutzt und kopiert werden.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -7875,7 +7875,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "bestimmungsgemäß nutzen und eine Sicherungskopie anfertigen; Weitergabe oder Installation über die Lizenz hinaus ist verboten (Raubkopie) und führt zu Unterlassungs- und Schadensersatzansprüchen, unerlaubte Vervielfältigung kann strafbar sein.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -8329,7 +8329,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Desktop-PC (meist Tower, leistungsstark, gut aufrüstbar), All-in-One-PC (Rechner im Monitorgehäuse, platzsparend, kaum aufrüstbar), Notebook (Akku, Bildschirm und Tastatur integriert, mobil; Varianten wie Ultrabook oder Convertible), Tablet (Touchbedienung, leicht, für Präsentation und mobile Datenerfassung) und Smartphone (immer dabei, Telefonie, Kamera, mobiles Internet).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -9330,7 +9330,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Typ A ist flach und rechteckig mit der Kontaktzunge auf einer Seite und passt nur in einer Richtung; Typ C ist kleiner, oval mit abgerundeten Enden und mittigem Kontaktsteg und lässt sich in beiden Richtungen einstecken.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -9346,7 +9346,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "trapezförmige Öffnung mit zwei abgeschrägten Ecken und drei Kontakten, der mittlere (Schutzleiter) versetzt; sie dient der 230-V-Stromversorgung z. B. von PC-Netzteil, Monitor oder Drucker.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -9362,7 +9362,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "DisplayPort rechteckig mit nur einer abgeschrägten Ecke; HDMI flach und trapezförmig mit zwei abgeschrägten Ecken; DVI breit mit vielen Stiftlöchern; USB-C klein und oval; RJ45 fast quadratisch mit 8 Kontakten und Aussparung für die Rastnase.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -9378,7 +9378,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "DisplayPort – rechteckig mit einer abgeschrägten Ecke; HDMI – flach, beide unteren Ecken abgeschrägt (trapezförmig); USB-A – flach rechteckig (USB 3.x oft blau, SS-Logo); USB-C – klein, oval mit runden Enden (Blitz = Thunderbolt); RJ45 – fast quadratisch, 8 Kontakte, Aussparung für die Rastnase, oft zwei LEDs; dazu Kaltgerätebuchse und DVI.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -10008,7 +10008,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Der Hersteller gibt die Kapazität mit Dezimalpräfix an (1.000 GB = 10¹² Byte), Windows rechnet binär (1 GiB = 2³⁰ Byte) und zeigt 10¹² ÷ 2³⁰ ≈ 931 GiB an, oft mit der Beschriftung „GB“; ebenso entsprechen 512 GB ≈ 476,84 GiB – es fehlt kein Speicher, nur die Einheit ist eine andere.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -11165,7 +11165,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "funktional (Leistungsparameter wie CPU, Arbeitsspeicher, Speicherkapazität; Ergonomie; Kompatibilität), ökonomisch (einmalige und laufende Kosten, Nutzungsdauer, Restwert) und ökologisch (Energieverbrauch, Recyclingfähigkeit, Langlebigkeit und Aufrüstbarkeit).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -11416,7 +11416,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Software, mit der Anwender ihre fachlichen Aufgaben erledigen, z. B. Textverarbeitung, Tabellenkalkulation, ERP- und CRM-System, CAD- und Grafikprogramm; Systemsoftware (Betriebssystem, Treiber, Firmware) ermöglicht dagegen erst den Betrieb des Rechners.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -12067,7 +12067,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "generative KI bzw. Chatbots auf Basis großer Sprachmodelle (Texte entwerfen, zusammenfassen, Fragen beantworten), KI-Programmierassistenten (Code vorschlagen und erklären), Bild- und Objekterkennung (z. B. Kennzeichenerkennung, Qualitätskontrolle) sowie Sprach- und Übersetzungssoftware.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -12596,7 +12596,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Bootreihenfolge, Datum und Uhrzeit, Setup- bzw. Boot-Passwort, Secure Boot, TPM, Virtualisierung (Intel VT-x/AMD-V), SATA-Modus (AHCI/RAID), Speicherprofil (XMP/EXPO), Lüftersteuerung und Onboard-Geräte ein- oder ausschalten; außerdem zeigt das Setup Systeminformationen wie CPU, RAM-Größe und Temperaturen.",
-            "karten": 0,
+            "karten": 3,
             "neu": null
           }
         ],
@@ -13302,7 +13302,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Telnet und die serielle Verbindung übertragen Befehle und Zugangsdaten unverschlüsselt im Klartext, nur SSH verschlüsselt die Verbindung.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -13339,7 +13339,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "HTTPS und DNS zur Anwendungsschicht, IP zur Schicht 3, Ethernet zur Schicht 2; daraus folgt z. B. IMAP statt POP3, wenn mehrere Endgeräte dasselbe Postfach nutzen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -13352,7 +13352,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Das Domain Name System löst Namen (z. B. www.google.de) in IP-Adressen auf (A-Eintrag IPv4, AAAA-Eintrag IPv6); der Client fragt den in seiner IP-Konfiguration eingetragenen DNS-Server; fällt die Namensauflösung aus, sind Ziele nur noch über ihre IP-Adresse erreichbar.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -13706,7 +13706,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Twisted Pair ist günstig und einfach zu verlegen, schafft bis 10 Gbit/s auf höchstens 100 m und ist empfindlicher gegen elektromagnetische Störungen; LWL erreicht sehr hohe Datenraten über große Entfernungen (Multimode einige 100 m, Singlemode km), ist störunempfindlich und schwer abhörbar, aber teurer und knickempfindlich; WLAN braucht keine Kabel, teilt die Datenrate aber unter allen Geräten der Funkzelle, reicht weniger weit und ist störanfälliger.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -13757,7 +13757,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "zuerst ungeeignete ausschließen (z. B. ist Cat 5e UTP ungeschirmt, wenn ein geschirmtes Kabel verlangt ist), dann unter den geeigneten das günstigste wählen (z. B. Cat 6a S/FTP für 3,99 EUR statt Cat 7 S/FTP für 5,99 EUR).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -14300,7 +14300,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "IP-Adresse = freie Hostadresse im Netz (z. B. 172.16.10.254), Subnetzmaske = umgerechnetes Präfix (/24 → 255.255.255.0), Standard-Gateway = Adresse des Routers im selben Netz (172.16.10.1).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -14313,7 +14313,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Rechner aufstellen und mit Patchkabel an die Netzwerkdose anschließen (patchen), IP-Konfiguration automatisch per DHCP beziehen oder statisch eintragen, Verbindung mit ipconfig und ping testen, Konfiguration dokumentieren.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -14551,7 +14551,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Netzadresse = größtes Vielfaches der Blockgröße im angebrochenen Oktett, das ≤ dem Adresswert ist; Broadcast = Netzadresse + Blockgröße − 1; Hosts dazwischen; z. B. 192.168.16.52/25 → Netz 192.168.16.0, Broadcast 192.168.16.127, Hosts .1 bis .126.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -14624,7 +14624,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "z. B. letztes Oktett 52 = 0011 0100, Maske 128 = 1000 0000 → UND 0000 0000 → Netz 192.168.16.0; Hostbits auf 1 → 0111 1111 = 127 → Broadcast 192.168.16.127.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -15826,7 +15826,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Latenz = Verzögerung eines Pakets, Jitter = Schwankung dieser Verzögerung; bei Videoüberwachung, Streaming oder VoIP folgen verzögertes oder ruckelndes Bild, Aussetzer und Verbindungsabbrüche; mögliche Ursachen sind Netzüberlastung, ein defektes Kabel oder eine schwache Funkstrecke.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           }
         ],
@@ -16109,7 +16109,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "technisch – Virenschutz, Firewall, Verschlüsselung, Backup; infrastrukturell – abschließbare Räume, Zutrittskontrolle, USV, Brandschutz; organisatorisch – Berechtigungskonzept, Richtlinien, Besuchsregelung; personell – Schulung, Sensibilisierung, Verpflichtung auf Vertraulichkeit.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -16152,7 +16152,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Schutzbedarf je Schutzziel feststellen (z. B. Kundendaten → Vertraulichkeit hoch), passende Maßnahmen ableiten (Verschlüsselung, Zugriffskontrolle, Backup), mit Vorgesetzten, IT-Sicherheits- und Datenschutzbeauftragtem abstimmen, umsetzen und dokumentieren, danach die Wirksamkeit prüfen (z. B. Rücksicherungstest, Kontrolle der Berechtigungen).",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -16959,7 +16959,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "normal – die Schadensauswirkungen sind begrenzt und überschaubar; hoch – sie können beträchtlich sein; sehr hoch – sie können ein existenziell bedrohliches, katastrophales Ausmaß erreichen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -16992,7 +16992,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Er richtet sich nach dem Maximumprinzip nach den IT-Systemen und Datenträgern im Raum, z. B. Serverraum mit zentralen Servern → hoch bis sehr hoch, Büroraum mit Arbeitsplatzrechnern → meist normal, häuslicher oder mobiler Arbeitsplatz → bei der Vertraulichkeit eher höher, weil Dritte Zugang haben und Geräte leichter verloren gehen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -17009,7 +17009,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Außenverbindungen ins Internet, Verbindungen, über die vertrauliche Daten übertragen werden, und Wege über nicht vertrauenswürdige Netze oder Datenträger (öffentliches WLAN, USB-Stick); z. B. Internetanschluss → Verfügbarkeit hoch, wenn Geschäftsprozesse von Cloud-Diensten abhängen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -18749,7 +18749,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen (Art. 4 Nr. 1 DSGVO), z. B. Name, Anschrift, E-Mail-Adresse, Geburtsdatum, Kundennummer, IP-Adresse, Kfz-Kennzeichen, Foto; besonders geschützt sind z. B. Gesundheits- bzw. Patientendaten (Art. 9 DSGVO); Daten über Unternehmen gehören nicht dazu.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -19075,7 +19075,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "rassische und ethnische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen, Gewerkschaftszugehörigkeit, genetische Daten, biometrische Daten zur eindeutigen Identifizierung, Gesundheitsdaten sowie Daten zum Sexualleben oder zur sexuellen Orientierung.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -19782,7 +19782,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "int bzw. Integer (ganze Zahl, 42), float bzw. double (Gleitkommazahl, 31.5), bool bzw. boolean (true/false), char (einzelnes Zeichen, 'A') und String bzw. str (Zeichenkette, \"Paket\").",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -19807,7 +19807,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Ein Array der Länge n hat die Indizes 0 bis n−1; ein Zugriff mit Index < 0 oder ≥ n ist eine Indexüberschreitung und löst zur Laufzeit eine Ausnahme aus (C#: IndexOutOfRangeException, Java: ArrayIndexOutOfBoundsException, Python: IndexError); Abhilfe: Schleifengrenze i < Länge, bei mehreren Arrays gleiche Länge prüfen.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -20830,7 +20830,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Symbole aus der Legende übernehmen, Vorgegebenes weiterverwenden, jeden Satz einem Element zuordnen (Tätigkeit → Aktion bzw. Anwendungsfall, „falls/ist … nicht ok“ → Entscheidung mit [Bedingung] bzw. «extend», „gleichzeitig“ → Teilung/Synchronisation, „dazu müssen“ → «include») und vorgegebene Klassen-, Attributnamen und Datentypen wörtlich übernehmen.",
-            "karten": 0,
+            "karten": 3,
             "neu": null
           },
           {
@@ -21042,7 +21042,7 @@
             ],
             "vorgegeben": null,
             "erklaerung": "1 = genau eins, 0..1 = höchstens eins, * bzw. 0..* = beliebig viele, 1..* = mindestens eins; die Angabe steht an der Klasse, deren Anzahl sie angibt (Kunde 1 —— 0..* Bestellung: ein Kunde hat beliebig viele Bestellungen); eine offene Pfeilspitze zeigt die Navigierbarkeit.",
-            "karten": 0,
+            "karten": 2,
             "neu": null
           },
           {
@@ -23289,6 +23289,20 @@
       "h": "- Checkliste für die Einrichtung verbindlich machen\n- jeden Arbeitsplatz mit Testprotokoll prüfen\n- Techniker schulen\n- Nachbesserungen regelmäßig auswerten und bei Abweichung gegensteuern"
     },
     {
+      "id": "AP1-1-5-2-K6-1",
+      "sp": "AP1-1-5-2",
+      "k": "AP1-1-5-2-K6",
+      "v": "Wie sicherst du beim Einrichten eines IT-Arbeitsplatzes die Qualität?",
+      "h": "- nach Arbeitsanweisungen und Checklisten arbeiten\n- nach Testprotokoll prüfen\n- Konfiguration dokumentieren\n- vom Nutzer abnehmen lassen\n- Fehler melden, Verbesserungen vorschlagen"
+    },
+    {
+      "id": "AP1-1-5-2-K6-2",
+      "sp": "AP1-1-5-2",
+      "k": "AP1-1-5-2-K6",
+      "v": "Welche Angaben gehören in die Dokumentation eines eingerichteten Arbeitsplatzes?",
+      "h": "Zum Beispiel Rechnername, IP-Adresse, Netzwerkdose bzw. Anschluss und Betriebssystem."
+    },
+    {
       "id": "AP1-1-5-3-K3-1",
       "sp": "AP1-1-5-3",
       "k": "AP1-1-5-3-K3",
@@ -23443,6 +23457,20 @@
       "h": "Andere Teams und spätere Projekte profitieren von den fachlichen und organisatorischen Erkenntnissen; das Wissen bleibt im Unternehmen, und noch nicht umsetzbare Verbesserungsideen gehen nicht verloren."
     },
     {
+      "id": "AP1-1-4-3-K8-1",
+      "sp": "AP1-1-4-3",
+      "k": "AP1-1-4-3-K8",
+      "v": "Wie gibst du eine Abweichung im Soll-Ist-Vergleich absolut und relativ an?",
+      "h": "- absolut: Ist − Soll\n- relativ: Abweichung ÷ Soll × 100 %"
+    },
+    {
+      "id": "AP1-1-4-3-K8-2",
+      "sp": "AP1-1-4-3",
+      "k": "AP1-1-4-3-K8",
+      "v": "Geplant waren 2.000 € Kosten, tatsächlich angefallen sind 2.300 €. Wie groß ist die Abweichung?",
+      "h": "+300 € absolut; 300 ÷ 2.000 × 100 % = +15 %."
+    },
+    {
       "id": "AP1-1-1-2-K7-1",
       "sp": "AP1-1-1-2",
       "k": "AP1-1-1-2-K7",
@@ -23520,6 +23548,20 @@
       "h": "Objektorientiert: Gegliedert wird nach den Bestandteilen des Ergebnisses."
     },
     {
+      "id": "AP1-1-2-1-K8-1",
+      "sp": "AP1-1-2-1",
+      "k": "AP1-1-2-1-K8",
+      "v": "Wie ist ein Gantt-Diagramm aufgebaut?",
+      "h": "- Vorgänge zeilenweise untereinander, Zeitachse waagerecht\n- jeder Vorgang ein Balken von Anfang bis Ende\n- Abhängigkeiten als Pfeile, Meilensteine als Rauten"
+    },
+    {
+      "id": "AP1-1-2-1-K8-2",
+      "sp": "AP1-1-2-1",
+      "k": "AP1-1-2-1-K8",
+      "v": "Was zeigt ein Netzplan, das ein Gantt-Diagramm nicht direkt zeigt?",
+      "h": "Früheste und späteste Zeitpunkte (FAZ, FEZ, SAZ, SEZ), die Puffer und den kritischen Weg. Das Gantt-Diagramm zeigt dagegen die Termine anschaulich auf der Zeitachse."
+    },
+    {
       "id": "AP1-1-2-2-K8-1",
       "sp": "AP1-1-2-2",
       "k": "AP1-1-2-2-K8",
@@ -23539,6 +23581,20 @@
       "k": "AP1-1-2-2-K8",
       "v": "Vorgang D hat FEZ 8. Seine Nachfolger: E liegt auf dem kritischen Weg (FAZ 12, SAZ 12), F nicht (FAZ 8, SAZ 11). Wie groß sind Gesamtpuffer und freier Puffer von D?",
       "h": "- GP: SEZ von D = kleinster SAZ der Nachfolger = 11, also `GP = 11 − 8 = 3`\n- FP: kleinster FAZ der Nachfolger = 8, also `FP = 8 − 8 = 0`\n- Obwohl E kritisch ist, sind beide verschieden: Jede Verzögerung von D verschiebt sofort F."
+    },
+    {
+      "id": "AP1-1-2-2-K9-1",
+      "sp": "AP1-1-2-2",
+      "k": "AP1-1-2-2-K9",
+      "v": "Vorgang D hat die Vorgänger B und C. Wie zeichnest du das im Netzplan?",
+      "h": "D bekommt einen eigenen Knoten; von B und von C führt je ein Pfeil zu D."
+    },
+    {
+      "id": "AP1-1-2-2-K9-2",
+      "sp": "AP1-1-2-2",
+      "k": "AP1-1-2-2-K9",
+      "v": "In einem Netzplan-Entwurf ist ein Knoten leer; in ihn münden drei Pfeile. Wie findest du heraus, welcher Vorgang hineingehört?",
+      "h": "In der Vorgangsliste den Vorgang suchen, der genau diese drei Vorgänger hat; die ausgehenden Pfeile müssen zu seinen Nachfolgern passen."
     },
     {
       "id": "AP1-2-1-1-K1-1",
@@ -24206,6 +24262,34 @@
       "h": "Nein. Das PoE-Budget reicht zwar (8 × 12 W = 96 W, höchstens 120 W erlaubt), aber die zulässige Betriebstemperatur beginnt erst bei 0 °C; bei −10 °C darf der Switch nicht betrieben werden. Lösung: Switch in einen beheizten Raum setzen oder ein Modell für einen erweiterten Temperaturbereich wählen."
     },
     {
+      "id": "AP1-2-3-1-K7-1",
+      "sp": "AP1-2-3-1",
+      "k": "AP1-2-3-1-K7",
+      "v": "Was bedeuten „availability“, „hardware failure“ und „to recover“?",
+      "h": "Verfügbarkeit, Hardwareausfall, sich erholen bzw. wiederherstellen."
+    },
+    {
+      "id": "AP1-2-3-1-K7-2",
+      "sp": "AP1-2-3-1",
+      "k": "AP1-2-3-1-K7",
+      "v": "Was bedeuten „relational database“, „table“, „to refer to“ und „to link“?",
+      "h": "Relationale Datenbank, Tabelle, verweisen auf, verknüpfen."
+    },
+    {
+      "id": "AP1-2-3-1-K8-1",
+      "sp": "AP1-2-3-1",
+      "k": "AP1-2-3-1-K8",
+      "v": "Was bedeutet in einem Kamera-Datenblatt „IR (infrared night vision)“?",
+      "h": "Infrarot-Nachtsicht: Die Kamera nimmt auch bei Dunkelheit Bilder auf."
+    },
+    {
+      "id": "AP1-2-3-1-K8-2",
+      "sp": "AP1-2-3-1",
+      "k": "AP1-2-3-1-K8",
+      "v": "Warum steigt die Leistungsaufnahme einer Außenkamera mit Heizung und Infrarot, und was musst du deshalb prüfen?",
+      "h": "Heizelement und IR-Leuchten sind zusätzliche Verbraucher. Prüfen, ob Stromversorgung bzw. PoE-Budget des Switches für den höheren Bedarf reicht."
+    },
+    {
       "id": "AP1-2-3-2-K1-1",
       "sp": "AP1-2-3-2",
       "k": "AP1-2-3-2-K1",
@@ -24759,6 +24843,20 @@
       "h": "Ausrichtung des ganzen Unternehmens auf Kunden und Markt mit allen Maßnahmen, die den Absatz fördern. Im Käufermarkt übersteigt das Angebot die Nachfrage – die Kunden haben die Wahl und müssen aktiv gewonnen werden."
     },
     {
+      "id": "AP1-2-1-3-K5-1",
+      "sp": "AP1-2-1-3",
+      "k": "AP1-2-1-3-K5",
+      "v": "Nenne die vier Instrumente des Marketing-Mix.",
+      "h": "Produkt- und Sortimentspolitik, Preis- und Konditionenpolitik, Kommunikationspolitik, Distributionspolitik."
+    },
+    {
+      "id": "AP1-2-1-3-K5-2",
+      "sp": "AP1-2-1-3",
+      "k": "AP1-2-1-3-K5",
+      "v": "Ordne zu: a) Mengenrabatt für Firmenkunden, b) Verkauf über einen Onlineshop, c) Messestand, d) Hardware mit Wartungsvertrag.",
+      "h": "a) Preis- und Konditionenpolitik\nb) Distributionspolitik\nc) Kommunikationspolitik\nd) Produkt- und Sortimentspolitik"
+    },
+    {
       "id": "AP1-2-2-1-K7-1",
       "sp": "AP1-2-2-1",
       "k": "AP1-2-2-1-K7",
@@ -24871,6 +24969,41 @@
       "h": "a) operativ: kurzfristig, für eine Abteilung\nb) strategisch: langfristig, von der Unternehmensleitung, betrifft das ganze Unternehmen\nc) taktisch: mittelfristig, setzt die Strategie für einen Bereich um"
     },
     {
+      "id": "AP1-2-4-1-K10-1",
+      "sp": "AP1-2-4-1",
+      "k": "AP1-2-4-1-K10",
+      "v": "Ein Lieferant liefert mehrfach zu spät. Welche Folgen kann der Imageverlust für ihn haben?",
+      "h": "- Kunden verlieren das Vertrauen und wandern ab\n- Umsatz und Gewinn sinken\n- Folgeaufträge bleiben aus, Neukunden sind schwerer zu gewinnen"
+    },
+    {
+      "id": "AP1-2-4-1-K10-2",
+      "sp": "AP1-2-4-1",
+      "k": "AP1-2-4-1-K10",
+      "v": "Warum schadet ein Imageverlust einem Unternehmen auch langfristig?",
+      "h": "Vertrauen lässt sich nur langsam zurückgewinnen; Neukunden bleiben aus und das Unternehmen gerät gegenüber Wettbewerbern dauerhaft in Nachteil."
+    },
+    {
+      "id": "AP1-2-4-1-K11-1",
+      "sp": "AP1-2-4-1",
+      "k": "AP1-2-4-1-K11",
+      "v": "Wie berechnest du Produktivität, Wirtschaftlichkeit und Rentabilität?",
+      "h": "- Produktivität = Ausbringungsmenge ÷ Einsatzmenge\n- Wirtschaftlichkeit = Leistung ÷ Kosten\n- Rentabilität = Gewinn ÷ eingesetztes Kapital × 100 %"
+    },
+    {
+      "id": "AP1-2-4-1-K11-2",
+      "sp": "AP1-2-4-1",
+      "k": "AP1-2-4-1-K11",
+      "v": "Ein Lager fertigt in 8 Stunden 40 Lkw ab. Wie hoch ist die Produktivität?",
+      "h": "40 Lkw ÷ 8 h = 5 Lkw je Stunde."
+    },
+    {
+      "id": "AP1-2-4-1-K11-3",
+      "sp": "AP1-2-4-1",
+      "k": "AP1-2-4-1-K11",
+      "v": "Was versteht man unter Kosten?",
+      "h": "Den in Geld bewerteten Verbrauch von Gütern und Leistungen für die Leistungserstellung."
+    },
+    {
       "id": "AP1-2-4-2-K7-1",
       "sp": "AP1-2-4-2",
       "k": "AP1-2-4-2-K7",
@@ -24911,6 +25044,20 @@
       "k": "AP1-2-5-1-K8",
       "v": "Wann gelingt eine Veränderung nach Lewin? Gib je ein Beispiel für die beteiligten Kräfte.",
       "h": "Wenn die treibenden Kräfte (z. B. neue Technik, Kostendruck) stärker sind als die hemmenden (z. B. Gewohnheit, fehlende Ressourcen)."
+    },
+    {
+      "id": "AP1-2-5-1-K9-1",
+      "sp": "AP1-2-5-1",
+      "k": "AP1-2-5-1-K9",
+      "v": "Warum bindest du den Betriebsrat früh ein, wenn ein neues IT-System eingeführt wird?",
+      "h": "Er ist über neue technische Anlagen und Arbeitsverfahren rechtzeitig zu unterrichten. Kann das System Leistung oder Verhalten der Beschäftigten überwachen, bestimmt er mit. Frühe Einbindung nimmt die Sorge vor Kontrolle."
+    },
+    {
+      "id": "AP1-2-5-1-K9-2",
+      "sp": "AP1-2-5-1",
+      "k": "AP1-2-5-1-K9",
+      "v": "Wie kann die Nutzung von Daten aus einem neuen System verbindlich mit dem Betriebsrat geregelt werden?",
+      "h": "Über eine Betriebsvereinbarung, z. B. dass Auswertungen nicht zur Leistungskontrolle einzelner Beschäftigter genutzt werden."
     },
     {
       "id": "AP1-2-5-3-K5-1",
@@ -26131,6 +26278,20 @@
       "h": "Fat Client: vollständiger Rechner, startet vom eigenen Datenträger und führt Programme lokal aus. Thin Client: oft ohne Massenspeicher, die Programme laufen auf dem Server, er zeigt nur das Bild an."
     },
     {
+      "id": "AP1-4-1-1-K11-1",
+      "sp": "AP1-4-1-1",
+      "k": "AP1-4-1-1-K11",
+      "v": "Was kennzeichnet einen All-in-One-PC?",
+      "h": "Der Rechner ist im Monitorgehäuse verbaut: platzsparend, aber kaum aufrüstbar."
+    },
+    {
+      "id": "AP1-4-1-1-K11-2",
+      "sp": "AP1-4-1-1",
+      "k": "AP1-4-1-1-K11",
+      "v": "Wofür eignet sich ein Tablet besonders?",
+      "h": "Für Präsentationen und mobile Datenerfassung: leicht, Touchbedienung."
+    },
+    {
       "id": "AP1-4-1-2-K7-1",
       "sp": "AP1-4-1-2",
       "k": "AP1-4-1-2-K7",
@@ -26376,6 +26537,62 @@
       "h": "Dockingstation mit mehreren Bildausgängen, Verketten der Monitore über DisplayPort/USB-C (wenn unterstützt) oder ein USB-Grafikadapter."
     },
     {
+      "id": "AP1-4-1-4-K11-1",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K11",
+      "v": "Welcher USB-Stecker lässt sich in beiden Richtungen einstecken?",
+      "h": "USB Typ C."
+    },
+    {
+      "id": "AP1-4-1-4-K11-2",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K11",
+      "v": "Beschreibe die Bauform von USB Typ A.",
+      "h": "Flach und rechteckig, die Kontaktzunge auf einer Seite; passt nur in einer Richtung."
+    },
+    {
+      "id": "AP1-4-1-4-K12-1",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K12",
+      "v": "Wozu dient die Kaltgerätebuchse?",
+      "h": "Zur 230-V-Stromversorgung von Geräten wie PC-Netzteil, Monitor oder Drucker."
+    },
+    {
+      "id": "AP1-4-1-4-K12-2",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K12",
+      "v": "Was ist C13, was C14 bei der Kaltgerätebuchse?",
+      "h": "C14 ist der Stecker am Gerät, C13 die Buchse am Kabel (IEC 60320)."
+    },
+    {
+      "id": "AP1-4-1-4-K13-1",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K13",
+      "v": "Woran unterscheidest du DisplayPort und HDMI an der Buchse?",
+      "h": "DisplayPort: rechteckig, nur eine Ecke abgeschrägt. HDMI: flach und trapezförmig, beide unteren Ecken abgeschrägt."
+    },
+    {
+      "id": "AP1-4-1-4-K13-2",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K13",
+      "v": "Woran erkennst du eine DVI-Buchse?",
+      "h": "Breit mit vielen Stiftlöchern."
+    },
+    {
+      "id": "AP1-4-1-4-K14-1",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K14",
+      "v": "Eine USB-A-Buchse ist innen blau und trägt das SS-Logo. Was bedeutet das?",
+      "h": "Es ist ein USB-3.x-Anschluss (SuperSpeed)."
+    },
+    {
+      "id": "AP1-4-1-4-K14-2",
+      "sp": "AP1-4-1-4",
+      "k": "AP1-4-1-4-K14",
+      "v": "Woran erkennst du eine RJ45-Buchse?",
+      "h": "Fast quadratisch, 8 Kontakte, Aussparung für die Rastnase, oft zwei LEDs."
+    },
+    {
       "id": "AP1-4-1-5-K8-1",
       "sp": "AP1-4-1-5",
       "k": "AP1-4-1-5-K8",
@@ -26409,6 +26626,20 @@
       "k": "AP1-4-2-1-K9",
       "v": "Wie sind 0x1F, 0b1010 und #1F1F1F zu lesen?",
       "h": "0x1F: Hexadezimalzahl (31). 0b1010: Dualzahl (10). #1F1F1F: Farbcode in Hex (je ein Byte für Rot, Grün, Blau)."
+    },
+    {
+      "id": "AP1-4-2-1-K10-1",
+      "sp": "AP1-4-2-1",
+      "k": "AP1-4-2-1-K10",
+      "v": "Ein Kunde reklamiert: Seine 512-GB-SSD zeigt nur etwa 477 „GB“. Was antwortest du?",
+      "h": "Es fehlt kein Speicher. 512 GB = 512 · 10⁹ Byte; das Betriebssystem rechnet binär: ÷ 2³⁰ ≈ 476,84 GiB, oft mit „GB“ beschriftet."
+    },
+    {
+      "id": "AP1-4-2-1-K10-2",
+      "sp": "AP1-4-2-1",
+      "k": "AP1-4-2-1-K10",
+      "v": "Mit welchem Präfix gibt der Hersteller die Kapazität an, mit welchem rechnet Windows?",
+      "h": "Hersteller: Dezimalpräfix (1 GB = 10⁹ Byte). Windows: Binärpräfix (1 GiB = 2³⁰ Byte)."
     },
     {
       "id": "AP1-4-2-5-K1-1",
@@ -26591,6 +26822,20 @@
       "k": "AP1-4-3-3-K11",
       "v": "Was regelt das Elektro- und Elektronikgerätegesetz (ElektroG) für ausgemusterte IT-Geräte?",
       "h": "Altgeräte gehören nicht in den Restmüll. Sie gehen getrennt zurück an Handel, Hersteller oder Sammelstelle und werden verwertet; für gewerbliche Altgeräte müssen Hersteller eine Rücknahme anbieten. Gespeicherte Daten muss der Besitzer vorher löschen."
+    },
+    {
+      "id": "AP1-4-3-3-K12-1",
+      "sp": "AP1-4-3-3",
+      "k": "AP1-4-3-3-K12",
+      "v": "Nenne die drei Gruppen von Gesichtspunkten bei der Beurteilung von IT-Systemen.",
+      "h": "Funktional, ökonomisch und ökologisch."
+    },
+    {
+      "id": "AP1-4-3-3-K12-2",
+      "sp": "AP1-4-3-3",
+      "k": "AP1-4-3-3-K12",
+      "v": "Ordne zu: a) Arbeitsspeicher, b) Restwert, c) Recyclingfähigkeit, d) Ergonomie, e) laufende Kosten.",
+      "h": "a) funktional\nb) ökonomisch\nc) ökologisch\nd) funktional\ne) ökonomisch"
     },
     {
       "id": "AP1-3-1-1-K1-1",
@@ -27018,6 +27263,20 @@
       "k": "AP1-3-1-6-K5",
       "v": "Ab wann müssen Unternehmen in Deutschland E-Rechnungen empfangen und ab wann ausstellen?",
       "h": "- Empfangen: seit 1.1.2025 alle Unternehmen\n- Ausstellen: ab 1.1.2027 bei mehr als 800.000 € Vorjahresumsatz\n- Ausstellen: ab 1.1.2028 alle Unternehmen\n(gilt für Rechnungen an andere Unternehmen; Stand 10/2026)"
+    },
+    {
+      "id": "AP1-3-1-6-K6-1",
+      "sp": "AP1-3-1-6",
+      "k": "AP1-3-1-6-K6",
+      "v": "Nenne Nachteile bzw. Risiken digitaler Rechnungen in einem Rechnungsmanagementsystem.",
+      "h": "- Einführungs- und Investitionskosten\n- Abhängigkeit von der IT\n- Risiken für Datenschutz und Datensicherheit\n- Schulungsaufwand\n- Pflicht zur revisionssicheren Archivierung (GoBD)"
+    },
+    {
+      "id": "AP1-3-1-6-K6-2",
+      "sp": "AP1-3-1-6",
+      "k": "AP1-3-1-6-K6",
+      "v": "Was bedeutet es für die Rechnungsbearbeitung, wenn das Rechnungsmanagementsystem ausfällt?",
+      "h": "Die Bearbeitung stockt; Rechnungen können nicht geprüft, freigegeben oder bezahlt werden, Zahlungsfristen und Skonto sind in Gefahr."
     },
     {
       "id": "AP1-3-2-1-K1-1",
@@ -27839,6 +28098,27 @@
       "h": "48.000 € − 51.500 € = **−3.500 €**. Die Kosten sind nicht gedeckt, das Projekt war nicht wirtschaftlich."
     },
     {
+      "id": "AP1-3-1-3-K9-1",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K9",
+      "v": "Wie erfasst und bewertest du die Kosten eines Support-Tickets?",
+      "h": "Arbeitszeit aus der Zeiterfassung × Stundensatz, dazu Material, Fahrtkosten und Fremdleistungen; alles dem Ticket bzw. der Kostenstelle zuordnen."
+    },
+    {
+      "id": "AP1-3-1-3-K9-2",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K9",
+      "v": "Was unterscheidet Zeitvergleich und Soll-Ist-Vergleich?",
+      "h": "- Zeitvergleich: Ist-Werte verschiedener Zeiträume (Entwicklung)\n- Soll-Ist-Vergleich: Plan- und Ist-Werte desselben Zeitraums (Planabweichung)"
+    },
+    {
+      "id": "AP1-3-1-3-K9-3",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K9",
+      "v": "Supportkosten: Vorquartal 12.000 €, jetzt 13.800 €, Budget 15.000 €. Werte aus.",
+      "h": "Zeitvergleich: +1.800 € = +15 %. Soll-Ist-Vergleich: 1.200 € unter dem Budget."
+    },
+    {
       "id": "AP1-3-1-4-K8-1",
       "sp": "AP1-3-1-4",
       "k": "AP1-3-1-4-K8",
@@ -27949,6 +28229,34 @@
       "k": "AP1-3-2-3-K9",
       "v": "Warum sollten „Rechenleistung“ und „Prozessortakt“ nicht beide Kriterien derselben Nutzwertanalyse sein?",
       "h": "Sie hängen voneinander ab und messen fast dasselbe – die Eigenschaft würde doppelt gewichtet und das Ergebnis verzerrt."
+    },
+    {
+      "id": "AP1-3-2-3-K10-1",
+      "sp": "AP1-3-2-3",
+      "k": "AP1-3-2-3-K10",
+      "v": "Was ist eine ungewichtete Entscheidungsmatrix?",
+      "h": "Je Kriterium bekommen die Alternativen Rangpunkte; alle Kriterien zählen gleich. Gewählt wird die Alternative mit der höchsten Punktsumme."
+    },
+    {
+      "id": "AP1-3-2-3-K10-2",
+      "sp": "AP1-3-2-3",
+      "k": "AP1-3-2-3-K10",
+      "v": "Drei Drucker kosten 800 €, 650 € und 900 €. Vergib Rangpunkte (3 = bester Wert).",
+      "h": "650 € → 3, 800 € → 2, 900 € → 1. Beim Preis bekommt der niedrigste Wert die meisten Punkte."
+    },
+    {
+      "id": "AP1-3-2-3-K11-1",
+      "sp": "AP1-3-2-3",
+      "k": "AP1-3-2-3-K11",
+      "v": "Was ist ein Ausschlusskriterium (K.-o.-Kriterium) beim Angebotsvergleich?",
+      "h": "Eine Mindestanforderung, die jede Alternative erfüllen muss. Wer sie nicht erfüllt, scheidet aus, egal wie viele Punkte er sonst hat."
+    },
+    {
+      "id": "AP1-3-2-3-K11-2",
+      "sp": "AP1-3-2-3",
+      "k": "AP1-3-2-3-K11",
+      "v": "In welcher Reihenfolge gehst du beim Angebotsvergleich mit K.-o.-Kriterien vor?",
+      "h": "Erst Ausschlusskriterien prüfen und Alternativen ausscheiden, dann die übrigen bewerten und die beste verbleibende wählen."
     },
     {
       "id": "AP1-3-2-4-K6-1",
@@ -28119,6 +28427,20 @@
       "h": "Nein. Der Termin ist nach dem Kalender bestimmt, die Mahnung ist entbehrlich: Verzug tritt nach dem 15. März ein, wenn der Lieferant die Verspätung zu vertreten hat. Bei „Lieferung so schnell wie möglich“ müsste der Käufer dagegen erst mahnen."
     },
     {
+      "id": "AP1-3-3-3-K12-1",
+      "sp": "AP1-3-3-3",
+      "k": "AP1-3-3-3-K12",
+      "v": "Bestellt sind 20 Monitore, geliefert werden 18. Welche Mängelart liegt vor?",
+      "h": "Minderlieferung (Zuweniglieferung)."
+    },
+    {
+      "id": "AP1-3-3-3-K12-2",
+      "sp": "AP1-3-3-3",
+      "k": "AP1-3-3-3-K12",
+      "v": "Eine bestellte Software kann eine vertraglich vereinbarte Funktion nicht. Welche Mängelart liegt vor?",
+      "h": "Schlechtleistung: Die Sache hat nicht die vereinbarte Beschaffenheit."
+    },
+    {
       "id": "AP1-3-4-1-K8-1",
       "sp": "AP1-3-4-1",
       "k": "AP1-3-4-1-K8",
@@ -28131,6 +28453,34 @@
       "k": "AP1-3-4-1-K8",
       "v": "Ein Unternehmen will eine Bibliothek in seine kommerzielle, geschlossene Software einbauen. Bei welcher Lizenz der Bibliothek geht das nicht ohne Weiteres?",
       "h": "Bei der GPL: Die gesamte weitergegebene Software müsste dann unter der GPL mit Quelltext stehen. Bei LGPL (eingebunden, unverändert), MIT, BSD oder Apache geht es."
+    },
+    {
+      "id": "AP1-3-4-1-K9-1",
+      "sp": "AP1-3-4-1",
+      "k": "AP1-3-4-1-K9",
+      "v": "Wann entsteht der Urheberrechtsschutz für ein Computerprogramm?",
+      "h": "Automatisch mit der Schöpfung; eine Anmeldung oder Registrierung ist nicht nötig."
+    },
+    {
+      "id": "AP1-3-4-1-K9-2",
+      "sp": "AP1-3-4-1",
+      "k": "AP1-3-4-1-K9",
+      "v": "Wie lange gilt das Urheberrecht?",
+      "h": "Bis 70 Jahre nach dem Tod des Urhebers."
+    },
+    {
+      "id": "AP1-3-4-1-K10-1",
+      "sp": "AP1-3-4-1",
+      "k": "AP1-3-4-1-K10",
+      "v": "Was darfst du mit einer lizenzierten Software machen, auch ohne besondere Erlaubnis?",
+      "h": "Sie bestimmungsgemäß nutzen und eine Sicherungskopie anfertigen."
+    },
+    {
+      "id": "AP1-3-4-1-K10-2",
+      "sp": "AP1-3-4-1",
+      "k": "AP1-3-4-1-K10",
+      "v": "Ein Mitarbeiter installiert eine Einzelplatzlizenz auf fünf Rechnern. Welche Folgen drohen?",
+      "h": "Es ist eine unerlaubte Vervielfältigung (Raubkopie): Unterlassungs- und Schadensersatzansprüche des Rechteinhabers, unter Umständen strafbar."
     },
     {
       "id": "AP1-3-4-2-K6-1",
@@ -29176,6 +29526,20 @@
       "h": "- durchgängige Belege vom Angebot bis zur Rechnung ohne Neuerfassung\n- Auswertungen über alle Unternehmensbereiche\n- Zugriff von jedem berechtigten Arbeitsplatz"
     },
     {
+      "id": "AP1-5-1-1-K12-1",
+      "sp": "AP1-5-1-1",
+      "k": "AP1-5-1-1-K12",
+      "v": "Was ist Anwendungssoftware?",
+      "h": "Software, mit der Anwender ihre fachlichen Aufgaben erledigen."
+    },
+    {
+      "id": "AP1-5-1-1-K12-2",
+      "sp": "AP1-5-1-1",
+      "k": "AP1-5-1-1-K12",
+      "v": "Ordne zu: Tabellenkalkulation, Druckertreiber, CRM-System, Betriebssystem, CAD-Programm.",
+      "h": "Anwendungssoftware: Tabellenkalkulation, CRM-System, CAD-Programm. Systemsoftware: Druckertreiber, Betriebssystem."
+    },
+    {
       "id": "AP1-5-1-3-K8-1",
       "sp": "AP1-5-1-3",
       "k": "AP1-5-1-3-K8",
@@ -29288,6 +29652,20 @@
       "h": "- Haftung für Fehlentscheidungen → Verantwortliche benennen, Ergebnisse von Menschen prüfen\n- Diskriminierung → Kriterien festlegen, sensible Merkmale ausschließen\n- Datenschutz/Urheberrecht an Trainingsdaten → eigene oder anonymisierte Daten, Rechte klären\n- Missbrauch → Zweckbindung, Schutz vor Angriffen, Überwachung"
     },
     {
+      "id": "AP1-5-1-4-K10-1",
+      "sp": "AP1-5-1-4",
+      "k": "AP1-5-1-4-K10",
+      "v": "Nenne Arten von KI-Software mit je einem Einsatzbeispiel.",
+      "h": "- generative KI/Chatbot: Texte entwerfen, zusammenfassen\n- Programmierassistent: Code vorschlagen und erklären\n- Bild-/Objekterkennung: Kennzeichenerkennung, Qualitätskontrolle\n- Sprach- und Übersetzungssoftware"
+    },
+    {
+      "id": "AP1-5-1-4-K10-2",
+      "sp": "AP1-5-1-4",
+      "k": "AP1-5-1-4-K10",
+      "v": "Welche Art von KI-Software erkennt an der Einfahrt eines Logistikzentrums die Kennzeichen der Lkw?",
+      "h": "Bild- bzw. Objekterkennung."
+    },
+    {
       "id": "AP1-5-2-2-K9-1",
       "sp": "AP1-5-2-2",
       "k": "AP1-5-2-2-K9",
@@ -29342,6 +29720,27 @@
       "k": "AP1-5-2-2-K11",
       "v": "Was ist Patchmanagement?",
       "h": "Der geregelte Umgang mit Updates und Sicherheitspatches: erkennen, welche Patches nötig sind, sie testen, zeitnah auf allen Systemen einspielen und den Stand dokumentieren."
+    },
+    {
+      "id": "AP1-5-2-2-K12-1",
+      "sp": "AP1-5-2-2",
+      "k": "AP1-5-2-2-K12",
+      "v": "Nenne typische Einstellungen im BIOS/UEFI-Setup.",
+      "h": "Bootreihenfolge, Datum und Uhrzeit, Setup-/Boot-Passwort, Secure Boot, TPM, Virtualisierung, SATA-Modus, Speicherprofil, Lüftersteuerung, Onboard-Geräte."
+    },
+    {
+      "id": "AP1-5-2-2-K12-2",
+      "sp": "AP1-5-2-2",
+      "k": "AP1-5-2-2-K12",
+      "v": "Wie gelangst du ins BIOS/UEFI-Setup?",
+      "h": "Beim Systemstart eine Taste drücken, meist Entf, F2 oder F10."
+    },
+    {
+      "id": "AP1-5-2-2-K12-3",
+      "sp": "AP1-5-2-2",
+      "k": "AP1-5-2-2-K12",
+      "v": "Ein Rechner soll von einem USB-Stick booten. Was stellst du im UEFI ein?",
+      "h": "Die Bootreihenfolge: den USB-Stick vor die Festplatte setzen."
     },
     {
       "id": "AP1-5-2-4-K6-1",
@@ -29629,6 +30028,48 @@
       "k": "AP1-6-1-2-K6",
       "v": "Ordne den Zweck zu: FTP, SFTP, NTP, LDAP.",
       "h": "- FTP: Dateiübertragung (unverschlüsselt)\n- SFTP: verschlüsselte Dateiübertragung über SSH\n- NTP: Uhrzeit synchronisieren\n- LDAP: Zugriff auf Verzeichnisdienste, z. B. Benutzerverzeichnisse"
+    },
+    {
+      "id": "AP1-6-1-2-K7-1",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K7",
+      "v": "Welche Ports nutzen SSH und Telnet?",
+      "h": "SSH: Port 22. Telnet: Port 23."
+    },
+    {
+      "id": "AP1-6-1-2-K7-2",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K7",
+      "v": "Warum ist Telnet für die Fernwartung eines Servers ungeeignet?",
+      "h": "Telnet überträgt Befehle und Zugangsdaten unverschlüsselt im Klartext; sie können mitgelesen werden."
+    },
+    {
+      "id": "AP1-6-1-2-K8-1",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K8",
+      "v": "Ordne die OSI-Schicht zu: HTTPS, DNS, IP, Ethernet.",
+      "h": "HTTPS und DNS: Schicht 7 (Anwendung), IP: Schicht 3 (Vermittlung), Ethernet: Schicht 2 (Sicherung)."
+    },
+    {
+      "id": "AP1-6-1-2-K8-2",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K8",
+      "v": "Ein Mitarbeiter liest seine E-Mails auf PC, Notebook und Smartphone. IMAP oder POP3?",
+      "h": "IMAP: Die Mails bleiben auf dem Server und sind auf allen Geräten gleich. POP3 lädt sie meist herunter und löscht sie auf dem Server."
+    },
+    {
+      "id": "AP1-6-1-2-K9-1",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K9",
+      "v": "Was ist der Unterschied zwischen einem A- und einem AAAA-Eintrag im DNS?",
+      "h": "Der A-Eintrag ordnet einem Namen eine IPv4-Adresse zu, der AAAA-Eintrag eine IPv6-Adresse."
+    },
+    {
+      "id": "AP1-6-1-2-K9-2",
+      "sp": "AP1-6-1-2",
+      "k": "AP1-6-1-2-K9",
+      "v": "Webseiten sind per IP-Adresse erreichbar, per Name aber nicht. Wo liegt der Fehler?",
+      "h": "Bei der Namensauflösung: Der DNS-Server ist nicht erreichbar oder in der IP-Konfiguration falsch eingetragen."
     },
     {
       "id": "AP1-6-1-3-K1-1",
@@ -30133,6 +30574,34 @@
       "k": "AP1-6-2-2-K7",
       "v": "Ein /24-Netz soll in 8 gleich große Teilnetze aufgeteilt werden. Wie viele Bits brauchst du dafür, und welches Präfix ergibt sich?",
       "h": "3 Bit (2³ = 8), also /27 mit je 32 Adressen und 30 nutzbaren Hosts."
+    },
+    {
+      "id": "AP1-6-2-2-K8-1",
+      "sp": "AP1-6-2-2",
+      "k": "AP1-6-2-2-K8",
+      "v": "Bestimme Netzadresse, Broadcastadresse und Hostbereich von 172.16.5.130/25.",
+      "h": "Blockgröße 128. Netz 172.16.5.128, Broadcast 172.16.5.255, Hosts .129 bis .254."
+    },
+    {
+      "id": "AP1-6-2-2-K8-2",
+      "sp": "AP1-6-2-2",
+      "k": "AP1-6-2-2-K8",
+      "v": "Bestimme Netzadresse, Broadcastadresse und Hostbereich von 10.1.1.70/28.",
+      "h": "Blockgröße 16. Netz 10.1.1.64, Broadcast 10.1.1.79, Hosts .65 bis .78."
+    },
+    {
+      "id": "AP1-6-2-2-K9-1",
+      "sp": "AP1-6-2-2",
+      "k": "AP1-6-2-2-K9",
+      "v": "Wie berechnest du die Netzadresse binär?",
+      "h": "IP-Adresse und Subnetzmaske bitweise UND-verknüpfen. Die Broadcastadresse erhältst du, indem du alle Hostbits auf 1 setzt."
+    },
+    {
+      "id": "AP1-6-2-2-K9-2",
+      "sp": "AP1-6-2-2",
+      "k": "AP1-6-2-2-K9",
+      "v": "Berechne binär die Netzadresse von 192.168.1.200/26.",
+      "h": "200 = 1100 1000, Maske 192 = 1100 0000 → UND = 1100 0000 = 192. Netz 192.168.1.192; Hostbits auf 1 → 1111 1111 = 255, Broadcast 192.168.1.255."
     },
     {
       "id": "AP1-6-2-3-K1-1",
@@ -30765,6 +31234,34 @@
       "h": "Singlemode: Nur sie überbrückt mehrere Kilometer; Multimode reicht nur einige hundert Meter."
     },
     {
+      "id": "AP1-6-1-4-K12-1",
+      "sp": "AP1-6-1-4",
+      "k": "AP1-6-1-4-K12",
+      "v": "Welche Übertragungsrate und Länge schafft Twisted-Pair-Kupferkabel höchstens?",
+      "h": "Bis 10 Gbit/s (z. B. Cat 6a) auf höchstens 100 m."
+    },
+    {
+      "id": "AP1-6-1-4-K12-2",
+      "sp": "AP1-6-1-4",
+      "k": "AP1-6-1-4-K12",
+      "v": "Was unterscheidet Multimode- und Singlemode-LWL in der Reichweite?",
+      "h": "Multimode: einige 100 m. Singlemode: viele Kilometer."
+    },
+    {
+      "id": "AP1-6-1-4-K13-1",
+      "sp": "AP1-6-1-4",
+      "k": "AP1-6-1-4-K13",
+      "v": "Gefordert ist ein geschirmtes Patchkabel. Warum scheidet ein U/UTP-Kabel aus?",
+      "h": "U/UTP ist ungeschirmt: kein Gesamtschirm (U) und keine Schirmung der Adernpaare (UTP)."
+    },
+    {
+      "id": "AP1-6-1-4-K13-2",
+      "sp": "AP1-6-1-4",
+      "k": "AP1-6-1-4-K13",
+      "v": "Nach welchem Schema bestimmst du das kostengünstigste geeignete Kabel?",
+      "h": "Erst alle Kabel ausschließen, die eine Anforderung nicht erfüllen; unter den übrigen das günstigste wählen."
+    },
+    {
       "id": "AP1-6-1-5-K7-1",
       "sp": "AP1-6-1-5",
       "k": "AP1-6-1-5-K7",
@@ -30882,6 +31379,34 @@
       "k": "AP1-6-2-1-K10",
       "v": "Warum ist für einen Netzwerkdrucker eine DHCP-Reservierung oft besser als eine am Gerät eingetragene statische Adresse?",
       "h": "Die Adresse bleibt fest, wird aber zentral verwaltet und dokumentiert; Änderungen wie ein neuer DNS-Server kommen automatisch an, Tippfehler am Gerät entfallen."
+    },
+    {
+      "id": "AP1-6-2-1-K11-1",
+      "sp": "AP1-6-2-1",
+      "k": "AP1-6-2-1-K11",
+      "v": "Ein PC soll eine statische Adresse im Netz 172.16.10.0/24 bekommen; der Router hat 172.16.10.1. Was trägst du ein?",
+      "h": "- IP-Adresse: eine freie Hostadresse, z. B. 172.16.10.254\n- Subnetzmaske: 255.255.255.0\n- Standardgateway: 172.16.10.1"
+    },
+    {
+      "id": "AP1-6-2-1-K11-2",
+      "sp": "AP1-6-2-1",
+      "k": "AP1-6-2-1-K11",
+      "v": "Wie leitest du aus dem Präfix /24 die Subnetzmaske ab?",
+      "h": "24 führende Einsen: 255.255.255.0."
+    },
+    {
+      "id": "AP1-6-2-1-K12-1",
+      "sp": "AP1-6-2-1",
+      "k": "AP1-6-2-1-K12",
+      "v": "In welchen Schritten bindest du einen Client ans Netzwerk an?",
+      "h": "1. Mit Patchkabel an die Netzwerkdose anschließen\n2. IP-Konfiguration per DHCP beziehen oder statisch eintragen\n3. Mit ipconfig und ping testen\n4. Konfiguration dokumentieren"
+    },
+    {
+      "id": "AP1-6-2-1-K12-2",
+      "sp": "AP1-6-2-1",
+      "k": "AP1-6-2-1-K12",
+      "v": "Mit welchen Befehlen prüfst du, ob ein neu angeschlossener Client im Netz funktioniert?",
+      "h": "ipconfig zeigt die eigene IP-Konfiguration; ping prüft, ob Gateway und andere Ziele erreichbar sind."
     },
     {
       "id": "AP1-6-2-4-K8-1",
@@ -31015,6 +31540,20 @@
       "k": "AP1-6-3-4-K5",
       "v": "Wie findest du mit nslookup heraus, ob der eigene DNS-Server die Fehlerursache ist?",
       "h": "Denselben Namen gezielt bei einem anderen DNS-Server abfragen: Antwortet dieser richtig, der eigene aber nicht, liegt der Fehler beim eigenen DNS-Server."
+    },
+    {
+      "id": "AP1-6-3-4-K6-1",
+      "sp": "AP1-6-3-4",
+      "k": "AP1-6-3-4-K6",
+      "v": "Was ist der Unterschied zwischen Latenz und Jitter?",
+      "h": "Latenz: Verzögerung eines Pakets. Jitter: Schwankung dieser Verzögerung."
+    },
+    {
+      "id": "AP1-6-3-4-K6-2",
+      "sp": "AP1-6-3-4",
+      "k": "AP1-6-3-4-K6",
+      "v": "Die Videoüberwachung ruckelt und setzt aus. Welche Netzwerkursachen kommen in Frage?",
+      "h": "Hohe Latenz oder Jitter, z. B. durch Netzüberlastung, ein defektes Kabel oder eine schwache Funkstrecke."
     },
     {
       "id": "AP1-7-1-1-K1-1",
@@ -32487,6 +33026,20 @@
       "h": "Der Auftraggeber bleibt Verantwortlicher. Der Dienstleister darf die Daten nur nach dessen Weisung verarbeiten und muss selbst angemessene Schutzmaßnahmen treffen."
     },
     {
+      "id": "AP1-7-5-3-K7-1",
+      "sp": "AP1-7-5-3",
+      "k": "AP1-7-5-3-K7",
+      "v": "Nenne vier besondere Kategorien personenbezogener Daten nach Art. 9 DSGVO.",
+      "h": "Zum Beispiel Gesundheitsdaten, biometrische Daten zur Identifizierung, religiöse Überzeugungen, Gewerkschaftszugehörigkeit, politische Meinungen, ethnische Herkunft, genetische Daten, Sexualleben."
+    },
+    {
+      "id": "AP1-7-5-3-K7-2",
+      "sp": "AP1-7-5-3",
+      "k": "AP1-7-5-3-K7",
+      "v": "Gehört ein Fingerabdruck, der zur Anmeldung am Rechner dient, zu den besonderen Kategorien nach Art. 9 DSGVO?",
+      "h": "Ja: biometrische Daten zur eindeutigen Identifizierung einer Person."
+    },
+    {
       "id": "AP1-7-1-2-K7-1",
       "sp": "AP1-7-1-2",
       "k": "AP1-7-1-2-K7",
@@ -32548,6 +33101,34 @@
       "k": "AP1-7-1-2-K10",
       "v": "In einem Besprechungsraum liegen Netzwerk- und Stromkabel lose auf dem Boden. Welches Risiko besteht, und welche Maßnahme legst du fest?",
       "h": "Risiko: Jemand stolpert, reißt Kabel heraus und unterbricht Netzwerkverbindungen oder die Stromversorgung; Stecker und Geräte werden beschädigt.\nMaßnahme: geordnete, feste Verkabelung, z. B. in Kabelkanälen oder Bodentanks."
+    },
+    {
+      "id": "AP1-7-1-2-K11-1",
+      "sp": "AP1-7-1-2",
+      "k": "AP1-7-1-2-K11",
+      "v": "Ordne zu: a) USV, b) Berechtigungskonzept, c) Virenschutz, d) Sensibilisierungsschulung.",
+      "h": "a) infrastrukturell\nb) organisatorisch\nc) technisch\nd) personell"
+    },
+    {
+      "id": "AP1-7-1-2-K11-2",
+      "sp": "AP1-7-1-2",
+      "k": "AP1-7-1-2-K11",
+      "v": "Nenne zwei infrastrukturelle Schutzmaßnahmen.",
+      "h": "Zum Beispiel abschließbare Räume, Zutrittskontrolle, USV, Brandschutz."
+    },
+    {
+      "id": "AP1-7-1-2-K12-1",
+      "sp": "AP1-7-1-2",
+      "k": "AP1-7-1-2-K12",
+      "v": "In welchen Schritten leitest du Sicherheitsmaßnahmen für einen Arbeitsplatz ab und setzt sie um?",
+      "h": "Schutzbedarf je Schutzziel feststellen → Maßnahmen ableiten → mit Vorgesetzten, IT-Sicherheits- und Datenschutzbeauftragtem abstimmen → umsetzen und dokumentieren → Wirksamkeit prüfen."
+    },
+    {
+      "id": "AP1-7-1-2-K12-2",
+      "sp": "AP1-7-1-2",
+      "k": "AP1-7-1-2-K12",
+      "v": "Wie prüfst du, ob Backup und Berechtigungen wirksam sind?",
+      "h": "Mit einem Rücksicherungstest und einer Kontrolle der vergebenen Berechtigungen."
     },
     {
       "id": "AP1-7-1-3-K8-1",
@@ -32688,6 +33269,48 @@
       "k": "AP1-7-2-2-K9",
       "v": "Mit welcher Frage stufst du den Schutzbedarf für die Verfügbarkeit ein?",
       "h": "Wie lange darf das System ausfallen, bevor ein spürbarer Schaden entsteht – und gibt es eine Ausweichmöglichkeit?"
+    },
+    {
+      "id": "AP1-7-2-2-K10-1",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K10",
+      "v": "Was bedeutet Schutzbedarf „hoch“ nach BSI?",
+      "h": "Die Schadensauswirkungen können beträchtlich sein."
+    },
+    {
+      "id": "AP1-7-2-2-K10-2",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K10",
+      "v": "Was bedeutet Schutzbedarf „normal“ nach BSI?",
+      "h": "Die Schadensauswirkungen sind begrenzt und überschaubar."
+    },
+    {
+      "id": "AP1-7-2-2-K11-1",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K11",
+      "v": "Nach welchem Prinzip legst du den Schutzbedarf eines Raums fest?",
+      "h": "Nach dem Maximumprinzip: Er richtet sich nach dem höchsten Schutzbedarf der IT-Systeme und Datenträger im Raum."
+    },
+    {
+      "id": "AP1-7-2-2-K11-2",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K11",
+      "v": "Warum hat ein häuslicher oder mobiler Arbeitsplatz bei der Vertraulichkeit oft höheren Schutzbedarf als ein Büro?",
+      "h": "Dritte haben Zugang und Geräte gehen leichter verloren."
+    },
+    {
+      "id": "AP1-7-2-2-K12-1",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K12",
+      "v": "Welche Kommunikationsverbindungen sind bei der Schutzbedarfsanalyse besonders kritisch?",
+      "h": "Außenverbindungen ins Internet, Verbindungen mit vertraulichen Daten und Wege über nicht vertrauenswürdige Netze oder Datenträger (öffentliches WLAN, USB-Stick)."
+    },
+    {
+      "id": "AP1-7-2-2-K12-2",
+      "sp": "AP1-7-2-2",
+      "k": "AP1-7-2-2-K12",
+      "v": "Wann hat der Internetanschluss einen hohen Schutzbedarf bei der Verfügbarkeit?",
+      "h": "Wenn Geschäftsprozesse von Cloud-Diensten abhängen und ohne Internet stillstehen."
     },
     {
       "id": "AP1-7-2-3-K5-1",
@@ -32933,6 +33556,20 @@
       "k": "AP1-7-5-1-K10",
       "v": "Wann und worüber muss ein Betrieb betroffene Personen informieren?",
       "h": "Bei der Erhebung: wer verarbeitet, zu welchem Zweck, auf welcher Rechtsgrundlage, wie lange, und welche Rechte die Person hat – z. B. in der Datenschutzerklärung oder auf einem Aushang."
+    },
+    {
+      "id": "AP1-7-5-1-K11-1",
+      "sp": "AP1-7-5-1",
+      "k": "AP1-7-5-1-K11",
+      "v": "Sind IP-Adresse und Kfz-Kennzeichen personenbezogene Daten?",
+      "h": "Ja, wenn sich darüber eine natürliche Person identifizieren lässt (Art. 4 Nr. 1 DSGVO)."
+    },
+    {
+      "id": "AP1-7-5-1-K11-2",
+      "sp": "AP1-7-5-1",
+      "k": "AP1-7-5-1-K11",
+      "v": "Wie definiert die DSGVO personenbezogene Daten?",
+      "h": "Alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen."
     },
     {
       "id": "AP1-8-1-1-K1-1",
@@ -33901,6 +34538,20 @@
       "h": "Lkw erbt von Fahrzeug: Er hat ebenfalls kennzeichen und fahren(), auch wenn sie bei Lkw nicht noch einmal stehen, und kann eigene Attribute oder Methoden ergänzen, z. B. nutzlast. Ein Lkw „ist ein“ Fahrzeug."
     },
     {
+      "id": "AP1-8-3-2-K8-1",
+      "sp": "AP1-8-3-2",
+      "k": "AP1-8-3-2-K8",
+      "v": "Ein Mitarbeiter hat höchstens einen Dienstwagen, ein Dienstwagen gehört genau einem Mitarbeiter. Welche Multiplizitäten trägst du ein?",
+      "h": "Beim Dienstwagen 0..1, beim Mitarbeiter 1."
+    },
+    {
+      "id": "AP1-8-3-2-K8-2",
+      "sp": "AP1-8-3-2",
+      "k": "AP1-8-3-2-K8",
+      "v": "Was bedeutet die Multiplizität 1..*?",
+      "h": "Mindestens eins, nach oben unbegrenzt."
+    },
+    {
       "id": "AP1-8-3-3-K1-1",
       "sp": "AP1-8-3-3",
       "k": "AP1-8-3-3-K1",
@@ -34447,6 +35098,34 @@
       "h": "2 – beide Bedingungen sind wahr, beide Zuweisungen laufen, die zweite überschreibt die erste. Mit SONST WENN wäre es 1."
     },
     {
+      "id": "AP1-8-2-1-K11-1",
+      "sp": "AP1-8-2-1",
+      "k": "AP1-8-2-1-K11",
+      "v": "Welcher Datentyp passt: 42, 31.5, true, 'A', \"Paket\"?",
+      "h": "int, float/double, bool/boolean, char, String"
+    },
+    {
+      "id": "AP1-8-2-1-K11-2",
+      "sp": "AP1-8-2-1",
+      "k": "AP1-8-2-1-K11",
+      "v": "Warum speicherst du eine Postleitzahl wie 01067 nicht als int?",
+      "h": "Die führende Null ginge verloren; mit einer Postleitzahl wird nicht gerechnet. Deshalb als String."
+    },
+    {
+      "id": "AP1-8-2-1-K12-1",
+      "sp": "AP1-8-2-1",
+      "k": "AP1-8-2-1-K12",
+      "v": "Ein Array hat die Länge 5. Welche Indizes sind gültig?",
+      "h": "0 bis 4."
+    },
+    {
+      "id": "AP1-8-2-1-K12-2",
+      "sp": "AP1-8-2-1",
+      "k": "AP1-8-2-1-K12",
+      "v": "Was passiert bei zahlen[5], wenn zahlen die Länge 5 hat, und wie verhinderst du das in einer Schleife?",
+      "h": "Indexüberschreitung: Zur Laufzeit wird eine Ausnahme ausgelöst (z. B. IndexOutOfRangeException, ArrayIndexOutOfBoundsException, IndexError). Abhilfe: Schleifenbedingung i < Länge."
+    },
+    {
       "id": "AP1-8-2-6-K1-1",
       "sp": "AP1-8-2-6",
       "k": "AP1-8-2-6-K1",
@@ -34641,6 +35320,27 @@
       "k": "AP1-8-3-1-K7",
       "v": "Wie stellt man im Anwendungsfalldiagramm ein externes System als Akteur dar?",
       "h": "Als Rechteck mit dem Schlüsselwort «actor» und dem Namen, außerhalb der Systemgrenze, über eine Assoziation mit dem Anwendungsfall verbunden."
+    },
+    {
+      "id": "AP1-8-3-1-K8-1",
+      "sp": "AP1-8-3-1",
+      "k": "AP1-8-3-1-K8",
+      "v": "Im Text steht: „Dazu müssen sie sich anmelden.“ Welche Beziehung zeichnest du im Anwendungsfalldiagramm?",
+      "h": "«include»: Der Anwendungsfall bindet „anmelden“ jedes Mal ein."
+    },
+    {
+      "id": "AP1-8-3-1-K8-2",
+      "sp": "AP1-8-3-1",
+      "k": "AP1-8-3-1-K8",
+      "v": "Im Text steht: „Falls die Prüfung nicht ok ist, …“. Was zeichnest du im Aktivitätsdiagramm?",
+      "h": "Eine Entscheidung (Raute) mit den Bedingungen in eckigen Klammern, z. B. [ok] und [nicht ok]."
+    },
+    {
+      "id": "AP1-8-3-1-K8-3",
+      "sp": "AP1-8-3-1",
+      "k": "AP1-8-3-1-K8",
+      "v": "Was beachtest du, wenn das Diagramm in der Prüfung schon begonnen und eine Notationshilfe gegeben ist?",
+      "h": "Symbole aus der Legende übernehmen, Vorgegebenes weiterverwenden und vorgegebene Namen und Datentypen wörtlich übernehmen."
     },
     {
       "id": "AP1-8-3-3-K7-1",
