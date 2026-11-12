@@ -81,7 +81,7 @@ Am Beispiel Rechnungsprüfung:
 - Routineprüfung mit KI: K5
 - Grenzen, Risiken und die Prüfung durch den Menschen: K3, K4
 
-**Schon geprüft:** In Prüfungen: K1 (2025F), K5 (2025F, neuere Prüfung) · Noch nicht geprüft: K3, K4
+**Schon geprüft:** In Prüfungen: K1 (2025F), K5 (2025F, 2025H) · Noch nicht geprüft: K3, K4
 
 **Kerngedanken:**
 - Die Probe je Ablaufschritt lautet: Ist das wiederkehrende Arbeit mit viel Text oder Daten, oder eine Entscheidung, für die jemand geradestehen muss? Auch an einem Entscheidungsschritt kann KI vorarbeiten (Unterlagen zusammenfassen, ähnliche Fälle heraussuchen); nur die Entscheidung selbst bleibt beim Menschen.

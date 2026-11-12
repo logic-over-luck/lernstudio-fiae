@@ -147,7 +147,7 @@ In einer Schleife `FOR EACH p IN pakete` ist `p` in jedem Durchlauf **ein** Date
 - Pause möglich nach Teil A.
 - Teil B – dieselbe Methode in anderen Schreibweisen: Rechnen im Code K3 zusammen mit Python K8; C-ähnliche Syntax K7; englischer Pseudocode K9 mit Datensätzen K10
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (2024H), K3 (2025F, neuere Prüfung), K4 (2025F), K6 (2024H), K7 (neuere Prüfung), K8 (2025F), K9 (neuere Prüfung), K10 (neuere Prüfung)
+**Schon geprüft:** In Prüfungen: K1 (2026H), K2 (2024H), K3 (2025F, 2026F), K4 (2025F), K6 (2024H), K7 (2026H), K8 (2025F), K9 (2026F), K10 (2026F)
 
 **Kerngedanken:**
 - Im Schreibtischtest wird ausgeführt, was dasteht, nicht was der Code vermutlich soll.

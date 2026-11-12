@@ -96,7 +96,7 @@ Daraus folgen die Gegenmaßnahmen: Updates gegen Drive-by-Downloads, Makros sper
 - Wege auf den Rechner: K10
 - Empfehlungen zum Schutz, jeweils mit Grund: K8
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K7 (2024F), K8 (2024F) · Noch nicht geprüft: K9, K10
+**Schon geprüft:** In Prüfungen: K1 (2026H), K7 (2024F), K8 (2024F) · Noch nicht geprüft: K9, K10
 
 **Kerngedanken:**
 - Malware und Schadsoftware bedeuten dasselbe und sind der Oberbegriff. „Virus“ ist im Alltag das Wort für alles, in der Prüfung aber nur eine Art davon.

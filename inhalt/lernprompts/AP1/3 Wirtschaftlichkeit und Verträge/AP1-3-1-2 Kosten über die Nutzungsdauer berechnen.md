@@ -97,7 +97,7 @@ Der ROI (Return on Investment) setzt den Gewinn einer Investition ins Verhältni
 - Wann sich ein Mehrpreis bezahlt macht: K6
 - Lohnt sich die Investition: K7
 
-**Schon geprüft:** In Prüfungen: K1 (2024F, 2025F), K2 (2024H, neuere Prüfung), K4 (2025F), K6 (2021H) · Noch nicht geprüft: K7
+**Schon geprüft:** In Prüfungen: K1 (2024F, 2025F), K2 (2024H, 2025H), K4 (2025F), K6 (2021H) · Noch nicht geprüft: K7
 
 **Kerngedanken:**
 - Vor dem Addieren müssen alle Beträge dieselbe Einheit haben: je Monat oder je Jahr, je Stück oder für alle zusammen.- Amortisation und ROI beantworten verschiedene Fragen: Die Amortisation sagt, wann das Geld wieder eingespielt ist; der ROI sagt, wie viel Gewinn im Verhältnis zum Einsatz entsteht.

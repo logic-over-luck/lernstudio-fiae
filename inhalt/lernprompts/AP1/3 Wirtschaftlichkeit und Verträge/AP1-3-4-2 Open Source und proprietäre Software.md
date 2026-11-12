@@ -101,7 +101,7 @@ Merke: „Freeware“ beschreibt den **Preis**, „Open Source“ die **Rechte**
 - Kostenlos heißt nicht offen: K6 – die Umkehrung davon
 - Für einen Einsatzfall begründet wählen: K5 – hier kommt alles zusammen
 
-**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (2025F), K5 (neuere Prüfung) · Noch nicht geprüft: K1, K4, K6
+**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (2025F), K5 (2026H) · Noch nicht geprüft: K1, K4, K6
 
 **Kerngedanken:**
 - Die Vorteile folgen aus dem Unterschied im Quellcode: Offener Code kann von allen geprüft und angepasst werden und macht unabhängig vom Hersteller. Bleibt der Code beim Hersteller, ist dieser allein zuständig – daraus folgen Support, Verantwortung für Updates und abgestimmte Produkte.

@@ -108,7 +108,7 @@ Erklärung:
 - Wie Geräte zu ihrer Adresse kommen: K7
 - IPv4 und IPv6 nebeneinander: K5
 
-**Schon geprüft:** In Prüfungen: K1 (2022H), K2 (2022H), K3 (2022H), K4 (2022H), K5 (neuere Prüfung) · Noch nicht geprüft: K6, K7
+**Schon geprüft:** In Prüfungen: K1 (2022H), K2 (2022H), K3 (2022H), K4 (2022H), K5 (2026F) · Noch nicht geprüft: K6, K7
 
 **Kerngedanken:**
 - Standortpräfix und Teilnetz-ID zusammen sind das /64-Präfix, also das Netz. Das Standortpräfix legt der Provider fest, die Teilnetz-ID der Betrieb. Den Interface-Identifier vergibt der Betrieb (von Hand oder per DHCPv6), oder das Gerät bildet ihn selbst (SLAAC).

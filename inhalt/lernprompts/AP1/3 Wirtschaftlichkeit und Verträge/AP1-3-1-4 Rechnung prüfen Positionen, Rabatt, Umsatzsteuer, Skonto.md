@@ -161,7 +161,7 @@ Dann kann der Lieferant verlangen:
 - Bezahlen mit Skonto: K2, K8
 - Zu spät gezahlt: K10
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K6 (neuere Prüfung), K7 (neuere Prüfung) · Noch nicht geprüft: K3–K5, K8–K10
+**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K6 (2025H), K7 (2025H) · Noch nicht geprüft: K3–K5, K8–K10
 
 **Kerngedanken:**
 - Eine Rechnung wird zweimal geprüft: sachlich (passt sie zu Bestellung und Lieferung?) und rechnerisch (stimmt der Rechenweg?). Eine Rechnung kann richtig gerechnet und trotzdem falsch sein, weil Menge, Preis oder Zahlungsbedingung nicht stimmen.

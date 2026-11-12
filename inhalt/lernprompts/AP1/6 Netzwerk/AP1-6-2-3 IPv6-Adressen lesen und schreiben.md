@@ -119,7 +119,7 @@ Erkennungstipp: Beginnt eine Adresse mit 2 oder 3, ist sie global; mit fe80 loka
 - Die verbindungslokale Adresse: K4
 - Gegenstücke zu den IPv4-Adressarten: K7
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022H, 2024F), K3 (2024F), K4 (2022F, 2022H, 2024F), K5 (2022H), K6 (neuere Prüfung) · Noch nicht geprüft: K7
+**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022H, 2024F), K3 (2024F), K4 (2022F, 2022H, 2024F), K5 (2022H), K6 (2026F) · Noch nicht geprüft: K7
 
 **Kerngedanken:**
 - Eine Hexadezimalziffer steht für 4 Bit. Daraus folgt alles Zählen: vier Ziffern je Block sind 16 Bit (nicht 8 wie ein Oktett), acht Blöcke 128 Bit, vier Blöcke 64 Bit.

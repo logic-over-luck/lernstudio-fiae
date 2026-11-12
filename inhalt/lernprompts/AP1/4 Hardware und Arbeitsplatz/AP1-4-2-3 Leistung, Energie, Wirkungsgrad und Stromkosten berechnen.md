@@ -125,7 +125,7 @@ Brauchen die Server 810 W, nimmt die USV auf: `P_auf = 810 W / 0,81 = 1.000 W` �
 - Wirkungsgrad, eine und mehrere Stufen: K4, K8
 - Energie und Stromkosten: K3, K5
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (2024F), K3 (2021H, 2024F), K4 (2021H, 2024F), K5 (2024F), K6 (2021H), K7 (neuere Prüfung) · Noch nicht geprüft: K8
+**Schon geprüft:** In Prüfungen: K1 (2025H, 2026F), K2 (2024F), K3 (2021H, 2024F), K4 (2021H, 2024F), K5 (2024F), K6 (2021H), K7 (2025H) · Noch nicht geprüft: K8
 
 **Kerngedanken:**
 - Die Wattzahl eines PC-Netzteils ist die Leistung, die es höchstens abgibt. In der Kostenaufgabe der IHK wird daraus eine Kette: Netzteilleistung mal Auslastung ergibt die abgegebene Leistung, geteilt durch den Wirkungsgrad die aufgenommene, mal Stunden die Energie, mal Preis die Kosten.

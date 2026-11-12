@@ -117,7 +117,7 @@ Beispiel: Vor dem Tausch der Festplatte eines Kunden-PCs sicherst du sein Benutz
 - Passt die Komponente zum System: K7
 - Tausch beim Kunden planen: K8
 
-**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K3 (2022F), K4 (2022F), K5 (2022F), K6 (neuere Prüfung) · Noch nicht geprüft: K7, K8
+**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K3 (2022F), K4 (2022F), K5 (2022F), K6 (2026H) · Noch nicht geprüft: K7, K8
 
 **Kerngedanken:**
 - Die Schritte beim CPU-Einbau werden in der Prüfung aus einer oft englischen Einbauanleitung abgelesen. Geübt wird das Ablesen, nicht das Auswendiglernen.

@@ -126,7 +126,7 @@ Beispiel: Eine KI soll Bewerbungen vorsortieren. Lernt sie aus alten Einstellung
 - Auswählen und einrichten: K5, K6
 - Ein eigenes KI-Vorhaben und seine Risiken: K9
 
-**Schon geprüft:** In Prüfungen: K1 (2025F, neuere Prüfung), K2 (2023F, 2025F) · Noch nicht geprüft: K3–K7, K9
+**Schon geprüft:** In Prüfungen: K1 (2025F, 2025H), K2 (2023F, 2025F) · Noch nicht geprüft: K3–K7, K9
 
 **Kerngedanken:**
 - KI-Assistenten sind meist Software as a Service: Alles, was man eingibt, verlässt das Haus. Daraus folgen fast alle Datenschutzpunkte dieses Themas.

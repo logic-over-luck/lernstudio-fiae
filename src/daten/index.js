@@ -1,7 +1,7 @@
 // Baut Nachschlagetabellen über die Inhaltsdaten. Rein, ohne Browser-Abhängigkeit,
 // damit die Tests sie mit Node laden können.
 
-import { wichtigkeitRaum, stufenVerteilung, terminVergleich } from './wichtigkeit.js';
+import { wichtigkeitRaum, stufenVerteilung, terminVergleich, terminText } from './wichtigkeit.js';
 
 export const RAEUME = ['AP1', 'PB1', 'PB2', 'WISO'];
 
@@ -75,6 +75,24 @@ export function baueIndex(daten) {
       const ziel = sp.get(id);
       if (ziel && ziel !== s && !ziel.grundlageFuer.includes(s.id)) ziel.grundlageFuer.push(s.id);
     }
+
+  // Prüfungskürzel in allen angezeigten Texten ausschreiben („2024F“ → „Frühjahr 2024“); die Dateien in inhalt/ behalten die Kürzel
+  for (const s of new Set(sp.values())) {
+    if (s.prioHinweis) s.prioHinweis = terminText(s.prioHinweis);
+    for (const paar of s.koennen ?? []) paar[1] = terminText(paar[1]);
+    if (!s.neu) continue;
+    for (const f of ['ziel', 'kurz', 'hinweis']) s.neu[f] = terminText(s.neu[f]);
+    for (const k of s.neu.koennen ?? []) {
+      k.erklaerung = terminText(k.erklaerung);
+      k.vorgegeben = terminText(k.vorgegeben);
+    }
+    for (const k of s.neu.kuer ?? []) k.text = terminText(k.text);
+  }
+  for (const k of daten.karten) {
+    k.v = terminText(k.v);
+    k.h = terminText(k.h);
+  }
+  for (const id of Object.keys(daten.lernprompts ?? {})) daten.lernprompts[id] = terminText(daten.lernprompts[id]);
 
   const push = (map, key, wert) => {
     let liste = map.get(key);

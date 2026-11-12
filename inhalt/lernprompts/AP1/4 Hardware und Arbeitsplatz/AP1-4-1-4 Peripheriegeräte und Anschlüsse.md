@@ -164,7 +164,7 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 - Teil B – Monitore anschließen: Bildanschlüsse K8; Daisy Chaining K5, danach die Skizze K7; reichen die Bildausgänge K10
 - Teil C – Auswahl nach Einsatz: Scanner K11; Tastaturen K12
 
-**Schon geprüft:** In Prüfungen: K2 (2022F, 2024F, 2025F, neuere Prüfung), K3 (2025F), K5 (neuere Prüfung), K6 (2022F), K7 (neuere Prüfung) · Noch nicht geprüft: K1, K4, K8–K12
+**Schon geprüft:** In Prüfungen: K2 (2022F, 2024F, 2025F, 2026F), K3 (2025F), K5 (2026F), K6 (2022F), K7 (2026F) · Noch nicht geprüft: K1, K4, K8–K12
 
 **Kerngedanken:**
 - Peripherie heißt alles, was außerhalb von Prozessor und Arbeitsspeicher liegt. Die Einteilung folgt dem EVA-Prinzip: Eingabegeräte erfassen Daten, der Rechner verarbeitet sie, Ausgabegeräte geben das Ergebnis aus.

@@ -88,7 +88,7 @@ Beispiel: Ein neues Ticketsystem startet zuerst im Support einer Niederlassung, 
 - Was jeweils schiefgehen kann: K3, K4
 - Wege dazwischen: K5
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K3 (neuere Prüfung) · Noch nicht geprüft: K4, K5
+**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2026F), K3 (2026F) · Noch nicht geprüft: K4, K5
 
 **Kerngedanken:**
 - Hier geht es nur um einen Schritt der Veränderung, das Umstellen: Auf welche Art kommt das neue System in den Betrieb? Wie man die Mitarbeiter informiert und schult, gehört zum Nachbarstichpunkt.

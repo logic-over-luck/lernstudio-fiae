@@ -132,7 +132,7 @@ Vergleich mit der Objektorientierung: Entitätstyp ≈ Klasse, Entität ≈ Obje
 - Attribute an den richtigen Platz: K5, K7
 - Ein Modell erweitern: K6 – hier kommt alles Vorige an einem Stück zusammen
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K3 (neuere Prüfung), K4 (2022H, 2023H), K5 (2022H, 2023H, 2024H), K6 (2024H), K7 (neuere Prüfung) · Noch nicht geprüft: K8, K9
+**Schon geprüft:** In Prüfungen: K1 (2026H), K2 (2026F, 2026H), K3 (2026F, 2026H), K4 (2022H, 2023H), K5 (2022H, 2023H, 2024H), K6 (2024H), K7 (2026F) · Noch nicht geprüft: K8, K9
 
 **Kerngedanken:**
 - Nennt der Text kein Merkmal, das sicher eindeutig ist, ergänzt man selbst eine Nummer als Primärschlüssel; das erwartet die IHK, auch wenn es nicht in der Aufgabe steht.

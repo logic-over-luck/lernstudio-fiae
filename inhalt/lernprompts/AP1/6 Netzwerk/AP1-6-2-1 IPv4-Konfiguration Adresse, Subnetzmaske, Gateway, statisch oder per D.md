@@ -151,7 +151,7 @@ Weitere besondere IPv4-Adressen: 0.0.0.0 steht für eine noch unbekannte eigene 
 - Private Adressen und der Weg ins Internet: K5, K7
 - Besondere Adressen: K12
 
-**Schon geprüft:** In Prüfungen: K1 (2024H), K2 (2024H), K4 (2024H), K5 (neuere Prüfung) · Noch nicht geprüft: K6, K7, K9–K12
+**Schon geprüft:** In Prüfungen: K1 (2024H), K2 (2024H), K4 (2024H), K5 (2026F) · Noch nicht geprüft: K6, K7, K9–K12
 
 **Kerngedanken:**
 - Der Hauptgrund für eine feste Adresse ist, dass andere das Gerät immer unter derselben Adresse finden müssen. Dazu kommen Geräte, die nicht selbst vom DHCP-Server abhängen dürfen: der Router und der DHCP-Server selbst. Die Frage lautet also bei jedem Gerät: Sucht es jemand unter seiner Adresse, oder muss es laufen, bevor DHCP funktioniert?

@@ -126,7 +126,7 @@ Begründe, welche Variante zur Situation in der Aufgabe passt.
 - Formel aus dem Handbuch anwenden: K5
 - Datenblattangabe für eine Situation beurteilen: K6
 
-**Schon geprüft:** In Prüfungen: K1 (2025F, neuere Prüfung), K2 (2021H), K5 (2021H), K6 (neuere Prüfung) · Noch nicht geprüft: K3, K4
+**Schon geprüft:** In Prüfungen: K1 (2025F, 2026H), K2 (2021H), K5 (2021H), K6 (2026F) · Noch nicht geprüft: K3, K4
 
 **Kerngedanken:**
 - Englisch ist hier Werkzeug, nicht Thema: Geprüft wird, ob man eine Angabe aus einem anderen Fachgebiet versteht und anwendet.

@@ -106,7 +106,7 @@ Beispiel Webshop: Der Anwendungsfall „Bestellung bezahlen“ ist mit dem Akteu
 - Generalisierung: K3
 - Beziehungen zwischen Anwendungsfällen, erst immer, dann nur unter einer Bedingung: K4, K5
 
-**Schon geprüft:** In Prüfungen: K1 (2023H, 2024H, neuere Prüfung), K2 (2024H), K3 (2024H, neuere Prüfung), K4 (2024H, neuere Prüfung), K5 (neuere Prüfung) · Noch nicht geprüft: K6, K7
+**Schon geprüft:** In Prüfungen: K1 (2023H, 2024H, 2026H), K2 (2024H), K3 (2024H, 2026H), K4 (2024H, 2026H), K5 (2026H) · Noch nicht geprüft: K6, K7
 
 **Kerngedanken:**
 - Das Diagramm zeigt nur, wer was mit dem System tut – keine Reihenfolge und keinen Ablauf (dafür gibt es das Aktivitätsdiagramm). Das System selbst ist nie ein Akteur, es ist der Rahmen.

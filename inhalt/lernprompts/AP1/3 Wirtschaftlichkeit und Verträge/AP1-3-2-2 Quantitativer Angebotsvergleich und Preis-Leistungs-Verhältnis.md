@@ -125,7 +125,7 @@ Häufigste Falle: Ein Angebot nennt den Preis inklusive USt (1.190 €), ein and
 - Preis je Leistungseinheit: K2; danach die Wahl für den Bedarf: K5
 - Blickwechsel zum Verkäufer, der selbst einen Preis festlegt: K6, K7
 
-**Schon geprüft:** In Prüfungen: K3 (2022H), K4 (2022H, 2023F), K5 (2024H, neuere Prüfung), K6 (2023H), K7 (2023H) · Noch nicht geprüft: K1, K2, K8
+**Schon geprüft:** In Prüfungen: K3 (2022H), K4 (2022H, 2023F), K5 (2024H, 2026H), K6 (2023H), K7 (2023H) · Noch nicht geprüft: K1, K2, K8
 
 **Kerngedanken:**
 - Der Transport hat drei Teile: Rollgeld vom Lieferanten zur Versandstation, Fracht zwischen den Stationen, Rollgeld von der Empfangsstation zum Käufer. „Ab Werk“ trägt der Käufer alle drei, „frachtfrei“ nur den letzten (Entladen und Rollgeld ab der Empfangsstation), „frei Haus“ keinen.

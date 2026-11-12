@@ -113,7 +113,7 @@ So beurteilst du es: Soll der Austausch nur bei bewusstem Hinhalten passieren (B
 - NFC: K7
 - Sensoren und Kameras: K3, K2
 
-**Schon geprüft:** In Prüfungen: K1 (2022H), K2 (neuere Prüfung), K4 (2022H) · Noch nicht geprüft: K3, K5–K7
+**Schon geprüft:** In Prüfungen: K1 (2022H), K2 (2026F), K4 (2022H) · Noch nicht geprüft: K3, K5–K7
 
 **Kerngedanken:**
 - Ausgewählt wird von der Arbeitsaufgabe her: erst klären, was am Platz getan wird, dann die Kenngrößen nennen, die genau dabei helfen. Ein hoher Wert, der für die Aufgabe nichts bringt, ist kein Argument.

@@ -139,7 +139,7 @@ Die qualifizierte elektronische Signatur nach der EU-Verordnung eIDAS ist der ei
 - Teil C – Zertifikat: Zweck K5; Zertifizierungsstelle K6; Website-Zertifikat und Browserwarnung K10; qualifizierte elektronische Signatur K11
 - Teil D – zusammenführen: Mittel je Zweck K7; zweistufige Prüfung K8
 
-**Schon geprüft:** In Prüfungen: K2 (2025F), K4 (neuere Prüfung), K5 (2023H), K10 (2023H) · Noch nicht geprüft: K1, K3, K6–K8, K11
+**Schon geprüft:** In Prüfungen: K2 (2025F), K4 (2025H), K5 (2023H), K10 (2023H) · Noch nicht geprüft: K1, K3, K6–K8, K11
 
 **Kerngedanken:**
 - Signatur und Zertifikat setzen das Schlüsselpaar aus der asymmetrischen Verschlüsselung voraus (öffentlicher und privater Schlüssel). Das vor Teil B kurz wiederholen; dort wird es umgekehrt benutzt: Verschlüsselt wird mit dem öffentlichen Schlüssel des Empfängers, signiert mit dem eigenen privaten.

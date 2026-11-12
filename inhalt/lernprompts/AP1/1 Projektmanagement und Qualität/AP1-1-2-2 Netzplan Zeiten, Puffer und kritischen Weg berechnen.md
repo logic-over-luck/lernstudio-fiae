@@ -130,7 +130,7 @@ Der freie Puffer ist nie größer als der Gesamtpuffer.
 - Einen Netzplan vervollständigen: K6 – hier kommt alles Vorige an einem Stück zusammen
 - Fehler in einem fertigen Netzplan finden: K7
 
-**Schon geprüft:** In Prüfungen: K1 (2021H, 2025F), K2 (2021H, 2025F), K3 (2021H, 2025F), K4 (2021H, 2025F, neuere Prüfung), K5 (2021H, 2025F), K6 (2021H, 2025F), K7 (neuere Prüfung), K8 (neuere Prüfung)
+**Schon geprüft:** In Prüfungen: K1 (2021H, 2025F), K2 (2021H, 2025F), K3 (2021H, 2025F), K4 (2021H, 2025F, 2026F), K5 (2021H, 2025F), K6 (2021H, 2025F), K7 (2026F), K8 (2026F)
 
 **Kerngedanken:**
 - Der Netzplan zählt Zeitpunkte, also abgelaufene Zeit ab 0, nicht Kalendertage. Darum ist der FEZ eines Vorgangs ohne Zuschlag der FAZ seines Nachfolgers.

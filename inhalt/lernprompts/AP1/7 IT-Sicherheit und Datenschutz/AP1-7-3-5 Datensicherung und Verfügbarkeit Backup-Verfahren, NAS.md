@@ -139,7 +139,7 @@ Beispiel: Personalakten sollen nur für die Leitung lesbar sein – am USB-Speic
 - Teil C – Sicherungen aufbewahren: Generationenprinzip K7; 3-2-1-Regel K5; zuverlässige Sicherung K2; Sicherungsziel K9
 - Teil D – Eine bestehende Sicherung beurteilen: K6, hier kommt alles Vorige zusammen
 
-**Schon geprüft:** In Prüfungen: K2 (2021H, 2024F), K3 (neuere Prüfung), K5 (neuere Prüfung), K6 (2021H), K7 (2024F) · Noch nicht geprüft: K1, K4, K9–K11
+**Schon geprüft:** In Prüfungen: K2 (2021H, 2024F), K3 (2026H), K5 (2026H), K6 (2021H), K7 (2024F) · Noch nicht geprüft: K1, K4, K9–K11
 
 **Kerngedanken:**
 - Redundanz hilft gegen den Ausfall eines Geräts, eine Sicherung gegen Löschen, Fehler und Schadsoftware. Der Unterschied ist der ältere Stand: Ein Spiegel schreibt jede Änderung sofort auf beide Laufwerke, nur die Sicherung erlaubt die Rückkehr zu einem Stand von vorher.

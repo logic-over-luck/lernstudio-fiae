@@ -142,7 +142,7 @@ Anfragen muss der Betrieb in der Regel innerhalb eines Monats beantworten.
 - Pause möglich nach Teil B.
 - Teil C – Rechte und Nachweis: Betroffenenrechte K3, K10 (zusammen behandeln, erst nennen, dann zuordnen); Rechenschaftspflicht K8
 
-**Schon geprüft:** In Prüfungen: K1 (2023H, 2025F), K2 (2021H), K5 (neuere Prüfung) · Noch nicht geprüft: K3, K4, K6–K10
+**Schon geprüft:** In Prüfungen: K1 (2023H, 2025F), K2 (2021H), K5 (2026H) · Noch nicht geprüft: K3, K4, K6–K10
 
 **Kerngedanken:**
 - Die DSGVO gilt für jede Verarbeitung personenbezogener Daten im Betrieb, auch wenn er nur in Deutschland arbeitet und nichts ins Ausland schickt. Geschützt wird der Mensch hinter den Daten, nicht die Datei.

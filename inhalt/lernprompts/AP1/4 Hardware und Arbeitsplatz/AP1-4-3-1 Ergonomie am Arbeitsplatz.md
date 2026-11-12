@@ -116,7 +116,7 @@ Ergonomische Tastaturen: geteilte oder V-förmige Bauform, Handballenauflage und
 - Notebook-Platz und Tastatur: K5, K8
 - Einen beschriebenen Platz beurteilen: K3
 
-**Schon geprüft:** In Prüfungen: K2 (neuere Prüfung), K5 (2023H), K7 (2023H) · Noch nicht geprüft: K3, K4, K6, K8
+**Schon geprüft:** In Prüfungen: K2 (2026F), K5 (2023H), K7 (2023H) · Noch nicht geprüft: K3, K4, K6, K8
 
 **Kerngedanken:**
 - Zum Beurteilen gehört nach Abweichung, Folge und Abhilfe noch ein Gesamturteil in einem Satz. Beurteilt wird nur, was in der Beschreibung steht.

@@ -91,7 +91,7 @@ Im Prüfungskatalog heißen die drei Ursachen Angst vor Kompetenzverlust, Wissen
 - Die passende Maßnahme zu Typ und Ursache: K3
 - Promoter gezielt einsetzen: K4
 
-**Schon geprüft:** In Prüfungen: K5 (neuere Prüfung) · Noch nicht geprüft: K1, K3, K4
+**Schon geprüft:** In Prüfungen: K5 (2025H) · Noch nicht geprüft: K1, K3, K4
 
 **Kerngedanken:**
 - Typ und Ursache sind zwei verschiedene Fragen an dieselbe Person: Der Typ sagt, wie sie zur Veränderung steht und sich verhält, die Ursache sagt, warum. Eine Aufgabe kann nach dem einen, dem anderen oder nach beidem fragen.

@@ -96,7 +96,7 @@ Stand 10/2026 – vor der Prüfung kurz gegenprüfen.
 - PDF oder E-Rechnung, und wer was muss: K5
 - Rechnungen im Rechnungsmanagementsystem: K4 (baut auf der E-Rechnung auf)
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K3 (neuere Prüfung), K4 (neuere Prüfung), K5 (neuere Prüfung)
+**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K3 (2025H), K4 (2025H), K5 (2025H)
 
 **Kerngedanken:**
 - Die Themen folgen dem Weg einer Rechnung: Preis festlegen (Rabatt), bezahlen (GiroCode), verarbeiten (E-Rechnung, Rechnungsmanagementsystem). Der GiroCode erspart das Abtippen beim Bezahlen, die E-Rechnung das Abtippen beim Verbuchen.

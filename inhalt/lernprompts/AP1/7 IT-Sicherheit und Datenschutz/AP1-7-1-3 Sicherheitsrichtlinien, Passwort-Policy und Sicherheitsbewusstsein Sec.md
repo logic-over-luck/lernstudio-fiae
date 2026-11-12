@@ -125,7 +125,7 @@ Sicherheitsleitlinie gegen Sicherheitsrichtlinien: Die Leitlinie ist das Grundsa
 - Der Mensch und das Sicherheitsbewusstsein: K8, K6
 - Sichere Technik ab Werk: K4, K7
 
-**Schon geprüft:** In Prüfungen: K3 (2021H, 2023H), K5 (2025F), K7 (neuere Prüfung) · Noch nicht geprüft: K1, K4, K6, K8, K9
+**Schon geprüft:** In Prüfungen: K3 (2021H, 2023H), K5 (2025F), K7 (2026F) · Noch nicht geprüft: K1, K4, K6, K8, K9
 
 **Kerngedanken:**
 - Die Zahl möglicher Passwörter ist Zeichenvorrat hoch Länge. Die Länge steht im Exponenten: Bei 8 Zeichen bringen vier zusätzliche Kleinbuchstaben mehr als der Wechsel von Kleinbuchstaben (26) zu allen Zeichenarten (rund 90). Ein langer Satz ist zudem leichter zu merken – darum schlägt Länge die Komplexität.

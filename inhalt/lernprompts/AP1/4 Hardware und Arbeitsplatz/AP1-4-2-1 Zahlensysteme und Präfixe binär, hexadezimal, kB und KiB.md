@@ -138,7 +138,7 @@ Kennzeichnung:
 - Pause möglich nach Teil A und der Textdatei.
 - Teil B – Einheiten: Bit, Byte und die 1.024er-Stufen K5, K2; welches Präfix wofür K3, K7; zwischen GB und GiB umrechnen K4
 
-**Schon geprüft:** In Prüfungen: K4 (neuere Prüfung), K6 (2024F), K7 (2022F) · Noch nicht geprüft: K1–K3, K5, K8, K9
+**Schon geprüft:** In Prüfungen: K4 (2026H), K6 (2024F), K7 (2022F) · Noch nicht geprüft: K1–K3, K5, K8, K9
 
 **Kerngedanken:**
 - Hexadezimal ist nur eine kürzere Schreibweise für dieselben Bits; Speicher spart sie nicht.

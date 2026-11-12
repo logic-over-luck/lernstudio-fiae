@@ -112,7 +112,7 @@ Beispiel: „Rechnung bezahlen“ und „Bestellung archivieren“ laufen parall
 - Endknoten oder Ablaufende: K6
 - Schwimmbahnen: K5 – zum Schluss, weil sie am Ablauf nichts ändern, sondern nur zeigen, wer welche Aktion ausführt
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K4 (neuere Prüfung) · Noch nicht geprüft: K3, K5–K7
+**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K4 (2025H) · Noch nicht geprüft: K3, K5–K7
 
 **Kerngedanken:**
 - Das Aktivitätsdiagramm zeigt die Reihenfolge eines Ablaufs; wer was mit einem System tut, zeigt das Anwendungsfalldiagramm. Raute und Balken gibt es je zweimal, zum Öffnen und zum Schließen: Was eine Entscheidung trennt, schließt eine Zusammenführung; was eine Teilung trennt, schließt eine Synchronisation.

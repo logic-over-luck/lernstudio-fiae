@@ -112,7 +112,7 @@ Deshalb ist der künstliche Schlüssel in der Praxis der Normalfall.
 - Was einen guten Primärschlüssel ausmacht: K7, K8
 - Phasen des Datenbankentwurfs: K4 – eigenes Teilgebiet, nur die Reihenfolge ist gefragt
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K3 (neuere Prüfung), K4 (2023H) · Noch nicht geprüft: K5, K7, K8
+**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K3 (2025H), K4 (2023H) · Noch nicht geprüft: K5, K7, K8
 
 **Kerngedanken:**
 - Eindeutig sein muss ein Wert nur in der Tabelle, in der er Primärschlüssel ist. Als Fremdschlüssel in einer anderen Tabelle darf derselbe Wert beliebig oft vorkommen.

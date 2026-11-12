@@ -144,7 +144,7 @@ Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, v
 - Teil B – Remote-Desktop: Zweck K4; Abgrenzung zum virtuellen Desktop K5; einrichten und absichern K11
 - Teil C – zwei einzelne Themen: Content-Management-System K12; IT-System zum Einsatzbereich K7
 
-**Schon geprüft:** In Prüfungen: K7 (neuere Prüfung) · Noch nicht geprüft: K1–K5, K8, K10–K13
+**Schon geprüft:** In Prüfungen: K7 (2026F) · Noch nicht geprüft: K1–K5, K8, K10–K13
 
 **Kerngedanken:**
 - Die Domäne ist selbst ein Fall von Client und Server: Bei der Anmeldung fragt der Rechner (Client) beim Domänencontroller (Server) nach. Das Konto liegt also auf dem Server und nicht auf dem einzelnen Rechner – darum funktioniert es an jedem Rechner der Domäne.

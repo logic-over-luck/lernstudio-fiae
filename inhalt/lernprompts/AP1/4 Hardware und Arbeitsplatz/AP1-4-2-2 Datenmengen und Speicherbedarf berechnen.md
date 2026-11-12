@@ -140,7 +140,7 @@ Achte auf die Einheiten: Bit durch 8 ergibt Byte, Datenmengen in KiB/MiB mit Bin
 - Pause möglich nach Bild und Komprimierung.
 - Hochrechnen und beurteilen, ob der Speicher reicht: K8, K9
 
-**Schon geprüft:** In Prüfungen: K1 (2024F, neuere Prüfung), K2 (2024F), K5 (2024F), K6 (2022H), K7 (neuere Prüfung), K8 (2022H, neuere Prüfung) · Noch nicht geprüft: K9–K11
+**Schon geprüft:** In Prüfungen: K1 (2024F, 2025H), K2 (2024F), K5 (2024F), K6 (2022H), K7 (2025H), K8 (2022H, 2026F) · Noch nicht geprüft: K9–K11
 
 **Kerngedanken:**
 - Alle Rechnungen hier folgen einem Muster: Anzahl der Werte mal Bit je Wert, durch 8, dann je Stufe durch 1.024. Bild und Audio unterscheiden sich nur darin, wie man die Anzahl der Werte findet.

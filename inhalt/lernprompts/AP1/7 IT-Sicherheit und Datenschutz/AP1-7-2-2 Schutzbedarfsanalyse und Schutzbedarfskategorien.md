@@ -148,7 +148,7 @@ Ausweichmöglichkeiten senken den Bedarf: Ein Ersatzgerät, ein Papierformular o
 - Wo das Maximum nicht passt: K7
 - Verfügbarkeit beurteilen: K9
 
-**Schon geprüft:** In Prüfungen: K3 (2021H), K4 (neuere Prüfung) · Noch nicht geprüft: K1, K2, K5–K9
+**Schon geprüft:** In Prüfungen: K3 (2021H), K4 (2026H) · Noch nicht geprüft: K1, K2, K5–K9
 
 **Kerngedanken:**
 - Der Schutzbedarf fragt nur: Wie schlimm wäre der Schaden? Wie wahrscheinlich er ist, spielt hier keine Rolle – das kommt erst beim Risiko dazu (Stichpunkt Risikomatrix).

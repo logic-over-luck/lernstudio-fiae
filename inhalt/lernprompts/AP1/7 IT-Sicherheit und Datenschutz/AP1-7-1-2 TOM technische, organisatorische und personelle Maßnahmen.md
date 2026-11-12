@@ -160,7 +160,7 @@ Bei Netzwerkdruckern schützt man vertrauliche Ausdrucke und Druckdaten: Gerät 
 - Pause möglich nach Teil A.
 - Teil B – Maßnahmen prüfen und auswählen: Kontrollziele K8; Pflicht aus der DSGVO K7; Soll-Ist-Vergleich am Schutzbedarf K6; Auswahlkriterien K9
 
-**Schon geprüft:** In Prüfungen: K3 (neuere Prüfung), K4 (2024H, neuere Prüfung), K10 (2024H, neuere Prüfung) · Noch nicht geprüft: K1, K2, K5–K9, K11
+**Schon geprüft:** In Prüfungen: K3 (2026H), K4 (2024H, 2025H), K10 (2024H, 2026H) · Noch nicht geprüft: K1, K2, K5–K9, K11
 
 **Kerngedanken:**
 - Für die Art einer Maßnahme zählt, wodurch geschützt wird, nicht das Thema: Die Regel „Passwörter mindestens so lang“ ist organisatorisch; lehnt die Software kürzere Passwörter selbst ab, ist diese Durchsetzung technisch. Keine Art reicht allein, erst zusammen greifen sie.

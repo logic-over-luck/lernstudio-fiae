@@ -115,7 +115,7 @@ Außerdem: Wie eng ist der Termin? Wie viel Geld ist sofort verfügbar? Welche R
 - Was in keiner Rechnung steht: K2, K3
 - Make-or-Buy über die Kosten hinaus: K6
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (2024H), K3 (2022H), K4 (2022F) · Noch nicht geprüft: K5, K6
+**Schon geprüft:** In Prüfungen: K1 (2026H), K2 (2024H), K3 (2022H), K4 (2022F) · Noch nicht geprüft: K5, K6
 
 **Kerngedanken:**
 - Bei der Grenzmenge steht ein fester Betrag je Jahr (Eigenentwicklung) gegen einen Betrag je Nutzer und Jahr (Lizenz). Die Jahreskosten der Eigenentwicklung entstehen oft erst aus Stunden × Stundensatz: Entwicklung einmal, Wartung für jedes Jahr, die Summe geteilt durch die Nutzungsjahre.

@@ -115,7 +115,7 @@ Du kennst das Zeichen schon vom Anwendungsfalldiagramm (Generalisierung von Akte
 - Teil und Ganzes: K6
 - Vererbung: K7 – hier auch die Umkehrung, eine einfache Klassenhierarchie zu einer Oberklasse aufbauen
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (neuere Prüfung), K3 (neuere Prüfung), K5 (2023F), K7 (2023F) · Noch nicht geprüft: K4, K6
+**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2026F), K3 (2026F), K5 (2023F), K7 (2023F) · Noch nicht geprüft: K4, K6
 
 **Kerngedanken:**
 - Das Klassendiagramm ist ein Bauplan, der für jede Programmiersprache gilt. Darum hat es eine eigene Schreibweise: Der Typ steht hinter dem Namen nach einem Doppelpunkt, nicht davor wie im Code.

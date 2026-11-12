@@ -118,7 +118,7 @@ Beispiel: `k = NEU Kunde("Anna Berg", 4711)` erzeugt ein Kundenobjekt, dessen Na
 - Private Attribute, Getter und Setter: K5
 - Vorteile der Objektorientierung als Rückblick: K6
 
-**Schon geprüft:** In Prüfungen: K6 (neuere Prüfung) · Noch nicht geprüft: K1–K5, K7, K8
+**Schon geprüft:** In Prüfungen: K6 (2026F) · Noch nicht geprüft: K1–K5, K7, K8
 
 **Kerngedanken:**
 - Eine Methode gehört zu ihrem Objekt und arbeitet mit dessen Attributen. Ein Aufruf an einem Objekt ändert nur die Werte dieses einen Objekts, die anderen Objekte derselben Klasse bleiben unberührt.

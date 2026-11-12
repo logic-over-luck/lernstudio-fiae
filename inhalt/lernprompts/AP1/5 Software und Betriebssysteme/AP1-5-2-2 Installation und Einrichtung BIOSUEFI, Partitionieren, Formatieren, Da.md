@@ -150,7 +150,7 @@ Bei vielen Arbeitsplätzen übernimmt das eine **Softwareverteilung**: Programme
 - Teil B – Installieren und einrichten: Reihenfolge der Installation K6; Arbeitsplatz konfigurieren K10
 - Teil B – Software und viele Arbeitsplätze: Softwareinstallation beim Kunden K9; Installationsarten und Verteilung K11
 
-**Schon geprüft:** In Prüfungen: K5 (neuere Prüfung) · Noch nicht geprüft: K1–K3, K6–K11
+**Schon geprüft:** In Prüfungen: K5 (2026H) · Noch nicht geprüft: K1–K3, K6–K11
 
 **Kerngedanken:**
 - Es sind drei Ebenen: Die Partitionstabelle (MBR oder GPT) hält fest, wie der Datenträger aufgeteilt ist; die Partition ist ein Bereich; das Dateisystem ordnet die Dateien in einer Partition. MBR und GPT sind also keine Dateisysteme, und BIOS/UEFI ist keine Partitionstabelle.

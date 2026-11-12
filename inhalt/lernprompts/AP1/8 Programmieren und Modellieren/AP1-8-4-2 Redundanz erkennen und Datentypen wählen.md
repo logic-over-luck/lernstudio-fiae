@@ -92,7 +92,7 @@ Achtung: Der Einzelpreis ist ein Stammdatum des Artikels, auch wenn er in jeder 
 - Teil A, versteckte Redundanz und Datenarten: K6, K7 – der errechenbare Wert und das Rechendatum sind dieselbe Sache
 - Teil B, Datentypen begründen: K3
 
-**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (neuere Prüfung), K5 (2025F) · Noch nicht geprüft: K6, K7
+**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (2026H), K5 (2025F) · Noch nicht geprüft: K6, K7
 
 **Kerngedanken:**
 - Redundanz ist die Mehrfachspeicherung selbst, nicht „falsche Daten“. Der Widerspruch ist erst die mögliche Folge.

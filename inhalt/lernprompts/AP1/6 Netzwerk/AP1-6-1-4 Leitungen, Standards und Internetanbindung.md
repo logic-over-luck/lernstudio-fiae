@@ -153,7 +153,7 @@ Aufbau von innen nach außen: Kern, Mantel, Schutzhülle.
 - Teil B – Glasfaser: Lichtführung K14; die zwei Faserarten K11, K12
 - Teil C – Internetzugang: Router mit zwei Seiten K7; ohne Festnetz K5; PowerLAN K10
 
-**Schon geprüft:** In Prüfungen: K2 (neuere Prüfung), K3 (neuere Prüfung), K4 (neuere Prüfung), K5 (neuere Prüfung), K6 (neuere Prüfung) · Noch nicht geprüft: K1, K7, K10–K14
+**Schon geprüft:** In Prüfungen: K2 (2026H), K3 (2026H), K4 (2026H), K5 (2026H), K6 (2026H) · Noch nicht geprüft: K1, K7, K10–K14
 
 **Kerngedanken:**
 - Die Anforderung an die Schirmung genau lesen: „geschirmt“ erfüllt jedes Kabel, bei dem vor oder hinter dem Schrägstrich S oder F steht. „Jedes Paar geschirmt“ verlangt einen Schirm hinter dem Schrägstrich (z. B. U/FTP, S/FTP); steht dort UTP, sind die Paare ungeschirmt.

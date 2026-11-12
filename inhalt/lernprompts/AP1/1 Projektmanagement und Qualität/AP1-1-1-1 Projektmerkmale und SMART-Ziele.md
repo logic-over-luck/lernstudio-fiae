@@ -107,7 +107,7 @@ Begründe immer mit dem Wort aus dem Ziel: „‚deutlich‘ ist keine Zahl, als
 - Ein fertiges Ziel prüfen: K6
 - Ein unscharfes Ziel neu formulieren: K5 (baut auf dem Prüfen auf)
 
-**Schon geprüft:** In Prüfungen: K2 (2021H), K3 (2021H), K4 (neuere Prüfung) · Noch nicht geprüft: K1, K5, K6
+**Schon geprüft:** In Prüfungen: K2 (2021H), K3 (2021H), K4 (2026H) · Noch nicht geprüft: K1, K5, K6
 
 **Kerngedanken:**
 - Ein fester Termin allein macht kein Projekt: Was regelmäßig wiederkehrt, bleibt eine Daueraufgabe, auch wenn jede einzelne Runde Anfang und Ende hat.

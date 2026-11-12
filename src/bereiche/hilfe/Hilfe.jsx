@@ -51,7 +51,7 @@ export function Hilfe({ raum }) {
             „Lernprompt kopieren" legt einen fertigen Auftrag in die Zwischenablage – zum Einfügen in einen neuen KI-Chat. In allen vier Prüfungsteilen ist das
             für jeden Stichpunkt ein eigener Prompt aus festen Regeln, dem Stoff und einer Lehrnotiz (Kerngedanken, typische Fehler, wie die IHK fragt);
             die KI erklärt, fragt nach und stellt am Ende eine Abschlussaufgabe (eine Sitzung je Stichpunkt; der Knopf am Block nimmt den
-            nächsten offenen). In WiSo ist die Abschlussaufgabe wie in der Prüfung zum Ankreuzen, Zuordnen und Eintragen. Schon abgehakte Stichpunkte und Blöcke bekommen einen kurzen Wiederholungs-Prompt.
+            nächsten offenen). In WiSo ist die Abschlussaufgabe wie in der Prüfung zum Ankreuzen, Zuordnen und Eintragen. Schon abgehakte Stichpunkte und Blöcke bekommen einen Wiederholungs-Prompt: derselbe Stoff und dieselbe Lehrnotiz, aber die KI prüft nur, ob es noch sitzt.
           </p>
         </Abschnitt>
 

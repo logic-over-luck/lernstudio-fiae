@@ -116,7 +116,7 @@ Das BSI empfiehlt Passkeys seit 2024 ausdrücklich. Tipp: Ein Ersatzgerät oder 
 - Passkeys: K8 – vorher das Schlüsselpaar aus der asymmetrischen Verschlüsselung kurz wiederholen
 - Verfahren passend zum Schutzbedarf: K7
 
-**Schon geprüft:** In Prüfungen: K4 (2024H), K6 (neuere Prüfung), K7 (2023F, 2023H) · Noch nicht geprüft: K2, K3, K5, K8
+**Schon geprüft:** In Prüfungen: K4 (2024H), K6 (2025H), K7 (2023F, 2023H) · Noch nicht geprüft: K2, K3, K5, K8
 
 **Kerngedanken:**
 - Ein System erkennt nie die Person, es prüft nur einen Nachweis. Wer das Merkmal vorweisen kann (Passwort kennt, Karte hat), gilt als diese Person – daraus folgen alle Risiken und der Sinn des zweiten Faktors.

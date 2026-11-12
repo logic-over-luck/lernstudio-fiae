@@ -76,7 +76,7 @@ Erklärung:
 - Das Bild des Tunnels: K3
 - Was am Arbeitsplatz eingerichtet wird: K5
 
-**Schon geprüft:** In Prüfungen: K1 (2023H, 2024F, neuere Prüfung), K2 (2024F), K3 (neuere Prüfung) · Noch nicht geprüft: K5
+**Schon geprüft:** In Prüfungen: K1 (2023H, 2024F, 2026H), K2 (2024F), K3 (2026H) · Noch nicht geprüft: K5
 
 **Kerngedanken:**
 - „Virtuell“ heißt: Es gibt keine eigene Leitung. Das VPN nutzt das vorhandene, unsichere Netz und macht den Weg durch Verschlüsselung sicher.

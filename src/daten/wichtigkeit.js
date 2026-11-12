@@ -84,6 +84,11 @@ export function terminName(id) {
   const m = String(id).match(/^(\d{4})([FSHW])$/);
   return m ? `${JAHRESZEIT[m[2]][0]} ${m[1]}` : String(id);
 }
+// Kürzel im Fließtext lesbar machen: „2024F“ → „Frühjahr 2024“, „2023H-A2-e“ → „Herbst 2023, Aufgabe 2 e“,
+// „2025S-WISO-A10“ → „Sommer 2025, Aufgabe 10“. Felder mit Kürzeln als Daten (pruef, ta, herkunft) bleiben unberührt.
+const TERMIN_IM_TEXT = /(?<![\w-])(\d{4})([FSHW])(?:-(?:AP1|PB1|PB2|WISO))?(?:-A(\d+)(?:-([a-z]{1,3}))?)?(?![\w-])/g;
+export const terminText = (text) =>
+  typeof text === 'string' ? text.replace(TERMIN_IM_TEXT, (_, jahr, z, nr, teil) => `${JAHRESZEIT[z][0]} ${jahr}${nr ? `, Aufgabe ${nr}${teil ? ` ${teil}` : ''}` : ''}`) : text;
 const terminSchluessel = (id) => {
   const m = String(id).match(/^(\d{4})([FSHW])$/);
   return m ? Number(m[1]) * 2 + JAHRESZEIT[m[2]][1] : Infinity;

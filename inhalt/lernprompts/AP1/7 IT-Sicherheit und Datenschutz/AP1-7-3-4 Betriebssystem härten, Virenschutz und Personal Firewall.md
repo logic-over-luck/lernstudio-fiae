@@ -141,7 +141,7 @@ Wie streng man sperrt, hängt von der Art der Daten und der Einbindung des Syste
 - Bordmittel als Zusammenfassung: K6
 - Makros in Office-Dokumenten: K9
 
-**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (2023F), K6 (2023F), K7 (neuere Prüfung) · Noch nicht geprüft: K3–K5, K8–K10
+**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (2023F), K6 (2023F), K7 (2025H) · Noch nicht geprüft: K3–K5, K8–K10
 
 **Kerngedanken:**
 - Die beiden Ziele der Härtung haben je eigene Maßnahmen: Entfernen, Abschalten und knappe Rechte verkleinern die Angriffsfläche, Updates schließen Schwachstellen. Eine Erklärung des Begriffs nennt den Grundgedanken (weniger Angriffsmöglichkeiten), ein Beispiel allein ist keine Erklärung.

@@ -164,7 +164,7 @@ Der Abgleich von Ist und Soll zeigt, was geändert oder beschafft werden muss.
 - Pause möglich nach Teil B – bis hier Begriffe, danach wird mit ihnen beurteilt und ausgewählt.
 - Teil C – beurteilen und auswählen: Thin Clients beurteilen K9; Geräteklasse für einen Platz wählen K2; Tablet als Bildschirmarbeitsplatz K6; mobiler Arbeitsplatz K7; Konfiguration K12
 
-**Schon geprüft:** In Prüfungen: K2 (2023F), K5 (2023F), K6 (2023H), K7 (2023H, neuere Prüfung) · Noch nicht geprüft: K1, K3, K4, K8–K12
+**Schon geprüft:** In Prüfungen: K2 (2023F), K5 (2023F), K6 (2023H), K7 (2023H, 2026H) · Noch nicht geprüft: K1, K3, K4, K8–K12
 
 **Kerngedanken:**
 - Drei Fragen ordnen die Geräteklassen grob: Kann man das Gerät tragen? Sitzen Rechner und Bildschirm in einem Gehäuse? Wo laufen die Programme? Bei den tragbaren Geräten trennen dann Bedienung (feste Tastatur oder Touch) und Telefonfunktion Notebook, Tablet und Smartphone.

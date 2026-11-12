@@ -124,7 +124,7 @@ Beispiel: 120 abgerechnete Stunden × 95 € netto = 11.400 € Umsatz; bei 8.90
 - Pause möglich nach Umsatz und Gewinn.
 - Folgen einer Maßnahme, erst als Kette, dann in der Tabelle: K7, K6
 
-**Schon geprüft:** In Prüfungen: K6 (2023F, 2023H, 2024H), K7 (neuere Prüfung) · Noch nicht geprüft: K1–K3, K8–K10
+**Schon geprüft:** In Prüfungen: K6 (2023F, 2023H, 2024H), K7 (2026F) · Noch nicht geprüft: K1–K3, K8–K10
 
 **Kerngedanken:**
 - Ein Ziel aus dem Leitbild wird nach dem Zweck eingeordnet, den der Satz selbst nennt, nicht nach jeder denkbaren Nebenwirkung: Strom sparen bleibt ökologisch, auch wenn es Geld spart. Anders in der Tabelle zu einer Maßnahme: Dort darf ein Argument in beiden Zeilen stehen, wenn die Zuordnung begründet ist.

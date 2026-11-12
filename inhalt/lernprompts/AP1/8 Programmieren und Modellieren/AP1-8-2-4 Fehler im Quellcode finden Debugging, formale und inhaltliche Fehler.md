@@ -106,7 +106,7 @@ Typische Fehler beim Korrigieren: vertauschter Vergleich (`-gt` statt `-lt`) ode
 - Eingabedaten, die Fehler auslösen: K3
 - PowerShell- und Bash-Skripte: K7
 
-**Schon geprüft:** In Prüfungen: K2 (2021H), K3 (neuere Prüfung), K7 (2021H) · Noch nicht geprüft: K1, K5, K6
+**Schon geprüft:** In Prüfungen: K2 (2021H), K3 (2026H), K7 (2021H) · Noch nicht geprüft: K1, K5, K6
 
 **Kerngedanken:**
 - Die Fehlerart richtet sich nach der Wirkung, nicht nach der Ursache: Eine falsche Schleifengrenze mit einer Runde zu wenig ist ein inhaltlicher Fehler, eine Runde über das Array-Ende hinaus ein Laufzeitfehler.

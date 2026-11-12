@@ -8,8 +8,11 @@
 - **Lernprompts (alle vier Räume): `inhalt/lernprompts/<RAUM>/<Ordner>/`**, je Stichpunkt eine Datei `<ID> <Titel>.md`
   (AP1 124, PB1 76, PB2 23, WiSo 70). **Alle vier Räume seit 11.11.2026: Kopf + Regelblock + Stoff + Lehrnotiz** (kein
   Drehbuch mehr). Der Build lädt sie über `tools/inhalt.mjs`;
-  `src/bereiche/lernen/lernprompt-neu.js` wählt aus: neu lernen = feste Datei, abgehakt/Wiederholen = erzeugter Prompt
-  aus `lernprompt.js`. `npm run pruefen` meldet, wenn Titel oder Wortlaut einer Aussage in der Datei nicht mehr zu
+  `src/bereiche/lernen/lernprompt-neu.js` wählt aus: neu lernen = feste Datei; abgehakt/Wiederholen = Kopf, Stoff und
+  Lehrnotiz derselben Datei mit den Wiederholungs-Regeln aus `wiederholRegeln` (seit 12.11.2026; `lernprompt.js` ist
+  nur noch Rückfall). **Prüfungskürzel:** In `inhalt/` stehen Kürzel wie `2024F`; `terminText` in
+  `src/daten/wichtigkeit.js` schreibt sie für Anzeige und kopierte Prompts aus („Frühjahr 2024“). „Schon geprüft“
+  nennt seit 12.11.2026 auch die drei aufgehobenen AP1-Prüfungen mit Termin (ihr Inhalt bleibt ungeöffnet). `npm run pruefen` meldet, wenn Titel oder Wortlaut einer Aussage in der Datei nicht mehr zu
   `inhalt/<RAUM>.json` passen, und verlangt je Raum alle Prompts oder keinen.
   - **Arbeitsmappe `archiv/2026-11-11_lehrnotiz-arbeitsmappe/`** (Stand und Regeln:
     `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md`). **Der Ordner `archiv/` liegt nur lokal, nicht auf GitHub**

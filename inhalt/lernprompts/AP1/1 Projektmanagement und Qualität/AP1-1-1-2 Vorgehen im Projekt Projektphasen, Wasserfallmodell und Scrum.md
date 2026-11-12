@@ -117,7 +117,7 @@ Faustregel: Stehen die Anforderungen fest (30 gleiche Arbeitsplätze einrichten)
 - Scrum, erst der Sprint als Ganzes, dann was darin passiert: K3, K4
 - Vergleich der beiden Modelle: K8
 
-**Schon geprüft:** In Prüfungen: K2 (neuere Prüfung), K6 (2022H) · Noch nicht geprüft: K1, K3, K4, K7, K8
+**Schon geprüft:** In Prüfungen: K2 (2026H), K6 (2022H) · Noch nicht geprüft: K1, K3, K4, K7, K8
 
 **Kerngedanken:**
 - Ein Sprint ist keine Phase, sondern ein kompletter kleiner Durchlauf (Planung, Umsetzung, Test) mit nutzbarem Ergebnis. Im Wasserfallmodell gibt es jede Phase einmal für das ganze Produkt, in Scrum läuft alles viele Male für je einen kleinen Teil.

@@ -105,7 +105,7 @@ Sieben-Phasen-Modell der Veränderung: Auf Schock und Verneinung folgen Einsicht
 - Was man dagegen tut – Bedenken begegnen, Chancen zeigen: K6, K2
 - Qualifizieren: K4
 
-**Schon geprüft:** In Prüfungen: K2 (2025F), K4 (2021H), K6 (neuere Prüfung) · Noch nicht geprüft: K1, K8, K9
+**Schon geprüft:** In Prüfungen: K2 (2025F), K4 (2021H), K6 (2025H) · Noch nicht geprüft: K1, K8, K9
 
 **Kerngedanken:**
 - Lewin beschreibt den Betrieb als Ganzes, das Sieben-Phasen-Modell den einzelnen Menschen.

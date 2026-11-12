@@ -93,7 +93,7 @@ Beispiel: Ein Unternehmen verkauft eine geschlossene Desktop-App. Eine MIT- oder
 - Die GNU GPL und ihr Copyleft: K4
 - Darf fremder Code in ein geschlossenes Produkt? K8 – baut auf dem Copyleft auf
 
-**Schon geprüft:** In Prüfungen: K4 (neuere Prüfung) · Noch nicht geprüft: K1, K2, K7, K8
+**Schon geprüft:** In Prüfungen: K4 (2026H) · Noch nicht geprüft: K1, K2, K7, K8
 
 **Kerngedanken:**
 - Installieren ist Kopieren. Wie oft und wo installiert werden darf, steht deshalb im Lizenztext und nicht auf dem Kaufbeleg.

@@ -132,7 +132,7 @@ In 8 Teilnetze → +3 Bits → /27, Blockgröße 32.
 - Selbes Netz oder nicht: K6
 - Ein Netz in Teilnetze teilen: K7
 
-**Schon geprüft:** In Prüfungen: K1 (neuere Prüfung), K2 (2022F, neuere Prüfung), K3 (2025F, neuere Prüfung), K4 (2025F), K5 (neuere Prüfung), K6 (neuere Prüfung) · Noch nicht geprüft: K7
+**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2022F, 2026F), K3 (2025F, 2025H), K4 (2025F), K5 (2026F), K6 (2025H) · Noch nicht geprüft: K7
 
 **Kerngedanken:**
 - Die Blockgröße ist der Stellenwert des letzten Netzbits in seinem Oktett, z. B. /26 → 64, /28 → 16. Bei Präfixen von /25 bis /32 ist sie zugleich die Zahl der Adressen des Netzes; ein /24-Netz hat 256 Adressen. So hängen Größe und Grenzen zusammen.

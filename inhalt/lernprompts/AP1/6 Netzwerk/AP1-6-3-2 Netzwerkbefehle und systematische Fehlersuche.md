@@ -136,7 +136,7 @@ Beispiel: Eine Kollegin meldet „kein Internet“. `ping www.example.com` antwo
 - Pause möglich nach Teil A.
 - Teil B – am Gerät: LEDs K5; Kabeltester K8; Dose zuordnen K6
 
-**Schon geprüft:** In Prüfungen: K2 (2022H, 2024F), K3 (2022F, neuere Prüfung), K4 (2022F, neuere Prüfung), K5 (2024F), K6 (2024H), K7 (neuere Prüfung) · Noch nicht geprüft: K1, K8, K9
+**Schon geprüft:** In Prüfungen: K2 (2022H, 2024F), K3 (2022F, 2026F, 2026H), K4 (2022F, 2026F), K5 (2024F), K6 (2024H), K7 (2026F) · Noch nicht geprüft: K1, K8, K9
 
 **Kerngedanken:**
 - Die Fehlersuche ist ein Ausschlussverfahren: Der Fehler liegt zwischen dem letzten Test, der klappt, und dem ersten, der scheitert. Ein Fehlerort ist deshalb eine Stelle mit Begründung aus dem Testergebnis; „Netzwerkfehler“ ist keiner.

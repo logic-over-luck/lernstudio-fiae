@@ -107,7 +107,7 @@ Beispiel: Ein IT-Dienstleister wartet per Fernzugriff die Praxissoftware einer A
 - Externe Dienstleister: K6
 - Datenpanne: K5
 
-**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (neuere Prüfung), K3 (neuere Prüfung) · Noch nicht geprüft: K4–K6
+**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (2025H), K3 (2026F) · Noch nicht geprüft: K4–K6
 
 **Kerngedanken:**
 - Protokollierung und Kameras sind weder verboten noch schon deshalb erlaubt, weil Geräte und Räume dem Betrieb gehören. Am festgelegten Zweck misst man, was erfasst wird, wie lange es bleibt und wer es ansehen darf.

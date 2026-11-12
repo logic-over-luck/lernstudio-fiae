@@ -121,7 +121,7 @@ Datenrate gegen Signalgeschwindigkeit: Die Datenrate gibt an, wie viele Bit je S
 - Warum weniger ankommt, als angegeben ist: K7
 - Datenrate gegen Signalgeschwindigkeit: K8
 
-**Schon geprüft:** In Prüfungen: K1 (2022F, 2024F), K2 (2024F), K3 (neuere Prüfung), K4 (2022F, 2024F) · Noch nicht geprüft: K5, K7, K8
+**Schon geprüft:** In Prüfungen: K1 (2022F, 2024F), K2 (2024F), K3 (2026F), K4 (2022F, 2024F) · Noch nicht geprüft: K5, K7, K8
 
 **Kerngedanken:**
 - Die Richtung ergibt sich aus dem Datenfluss, nicht aus dem Vertrag: Was vom eigenen Anschluss weggeht (sichern, einreichen, hochladen), ist Upload; was ankommt, ist Download. Die Aufgabe nennt beide Raten, die Wahl ist Teil der Lösung.

@@ -85,7 +85,7 @@ Beispiel: Statt „Wi-Fi 6 mit OFDMA“ → „schnelleres WLAN, auch wenn viele
 - Wem man glauben kann, erst die drei Kriterien, dann der Sonderfall KI-Chatbot: K3
 - Das Wichtige für den Kunden auswählen und aufbereiten: K2, K6
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022F, 2023H, neuere Prüfung), K3 (2024F) · Noch nicht geprüft: K6
+**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022F, 2023H, 2026F), K3 (2024F) · Noch nicht geprüft: K6
 
 **Kerngedanken:**
 - Ein Urteil über eine Quelle hat zwei Teile: die Einschätzung anhand der Kriterien und die Konsequenz – nutzen, mit einer anderen Quelle abgleichen oder verwerfen.

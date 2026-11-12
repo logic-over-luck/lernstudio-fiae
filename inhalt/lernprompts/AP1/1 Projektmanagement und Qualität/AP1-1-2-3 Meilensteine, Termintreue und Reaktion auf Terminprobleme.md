@@ -131,7 +131,7 @@ Beispiel: 12 Arbeitstage, fertig am Freitag, 20.11. → zurückzählen: 16.–20
 - Meilenstein verfehlt, Möglichkeiten kennen: K3, K4
 - Die passende Maßnahme beurteilen: K2
 
-**Schon geprüft:** In Prüfungen: K2 (neuere Prüfung), K3 (neuere Prüfung), K5 (2021H), K6 (2021H) · Noch nicht geprüft: K1, K4, K7, K8
+**Schon geprüft:** In Prüfungen: K2 (2026H), K3 (2026H), K5 (2021H), K6 (2021H) · Noch nicht geprüft: K1, K4, K7, K8
 
 **Kerngedanken:**
 - Kritischer Weg, Gesamtpuffer und Rückwärtsrechnung stammen aus dem Netzplan (eigener Stichpunkt) und werden hier vorausgesetzt. Für die Wirkung einer Verzögerung wird der Gesamtpuffer aus dem Netzplan abgelesen; für Terminprüfung und Rückwärtsterminierung werden Projektende und späteste Zeitpunkte selbst gerechnet wie im Netzplan.

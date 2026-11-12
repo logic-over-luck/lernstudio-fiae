@@ -104,7 +104,7 @@ Beispiel: Das dienstliche Tablet wird komplett per MDM verwaltet. Auf dem privat
 - Private Geräte im Firmennetz beurteilen: K4
 - Geräte und Apps zentral verwalten: K6
 
-**Schon geprüft:** In Prüfungen: K1 (2024F, neuere Prüfung), K2 (2024F, neuere Prüfung), K3 (2023H) · Noch nicht geprüft: K4–K6
+**Schon geprüft:** In Prüfungen: K1 (2024F, 2026H), K2 (2024F, 2026H), K3 (2023H) · Noch nicht geprüft: K4–K6
 
 **Kerngedanken:**
 - Telearbeit heißt: ein fest eingerichteter Arbeitsplatz in der eigenen Wohnung; dort geht es um den Schutz des Raums vor Mitbewohnern und Besuchern. Mobiles Arbeiten heißt: wechselnde Orte wie Zug, Hotel oder Kunde; dort geht es um Mitlesen, fremde Netze und Verlust des Geräts.

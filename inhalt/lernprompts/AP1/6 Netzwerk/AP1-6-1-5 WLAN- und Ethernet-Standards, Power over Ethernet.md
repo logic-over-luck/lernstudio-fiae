@@ -138,7 +138,7 @@ Beispiel: „IEEE 802.3at“ im Datenblatt eines Access Points heißt: Er kann p
 - Ein Datenblatt gegen die Anforderung prüfen: K3
 - Strom über das Netzwerkkabel: K4, K5
 
-**Schon geprüft:** In Prüfungen: K4 (neuere Prüfung), K5 (neuere Prüfung) · Noch nicht geprüft: K1–K3, K6–K9
+**Schon geprüft:** In Prüfungen: K4 (2026F), K5 (2026F) · Noch nicht geprüft: K1–K3, K6–K9
 
 **Kerngedanken:**
 - Eine Verbindung leistet nur, was beide Enden können: Standard, Band und Datenrate der Gegenstelle (Access Point, Switch-Port) begrenzen mit. Auch Glasfaserport und verlegte Faser müssen zusammenpassen, SR zu Multimode, LR zu Singlemode.

@@ -164,7 +164,7 @@ Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im erst
 - Pause möglich nach Teil A.
 - Teil B – Rechte und Folgen: Gewährleistung, Garantie, Kulanz K8; offene und versteckte Mängel K12; Beweislastumkehr K13; Voraussetzungen des Lieferverzugs K11; Rechte des Käufers K5 – der Teil zum Mangel passt schon zur Gewährleistung, der Teil zum Lieferverzug erst nach den Voraussetzungen; Folgen für den Lieferanten K7; Vorbeugung K4
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (neuere Prüfung), K6 (neuere Prüfung), K7 (neuere Prüfung), K11 (neuere Prüfung) · Noch nicht geprüft: K3, K8–K10, K12, K13
+**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (2026F), K6 (2025H), K7 (2026F), K11 (2026F) · Noch nicht geprüft: K3, K8–K10, K12, K13
 
 **Kerngedanken:**
 - Jede Vertragsstörung ist eine nicht erfüllte Pflicht aus dem Kaufvertrag: rechtzeitig liefern, mangelfrei liefern, abnehmen, bezahlen. Wer Käufer und wer Verkäufer ist, hängt vom einzelnen Vertrag ab: Ein Händler ist gegenüber seinem Lieferanten Käufer, gegenüber seinem Kunden Verkäufer.

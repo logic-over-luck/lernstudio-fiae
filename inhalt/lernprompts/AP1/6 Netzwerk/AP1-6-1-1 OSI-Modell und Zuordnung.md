@@ -114,7 +114,7 @@ Beispiel: Der Browser (7) fordert eine Seite an, TCP (4) schickt die Anfrage an 
 - Statusanzeige einer Verbindung deuten: K5
 - Fehlersuche mit der Tabelle, hier kommt alles zusammen: K3
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022F, 2024F, neuere Prüfung), K3 (2022F, neuere Prüfung), K5 (2022F) · Noch nicht geprüft: K4, K6
+**Schon geprüft:** In Prüfungen: K1 (2024F), K2 (2022F, 2024F, 2026H), K3 (2022F, 2026H), K5 (2022F) · Noch nicht geprüft: K4, K6
 
 **Kerngedanken:**
 - Beim Senden laufen die Daten von Schicht 7 hinunter zu Schicht 1, beim Empfänger von 1 hinauf zu 7. Gezählt wird trotzdem immer von unten.

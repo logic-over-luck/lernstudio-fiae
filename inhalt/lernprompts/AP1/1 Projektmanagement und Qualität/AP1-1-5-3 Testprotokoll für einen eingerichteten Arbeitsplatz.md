@@ -79,7 +79,7 @@ Beispiel mit zwei Speicherriegeln, der Rechner stürzt ab:
 - Testfall fehlgeschlagen, Ursache eingrenzen: K3
 - Fehlersuche durch Austauschen, wenn Nachsehen nicht reicht: K6
 
-**Schon geprüft:** In Prüfungen: K3 (neuere Prüfung), K6 (neuere Prüfung) · Noch nicht geprüft: K5
+**Schon geprüft:** In Prüfungen: K3 (2026H), K6 (2026H) · Noch nicht geprüft: K5
 
 **Kerngedanken:**
 - Das Testprotokoll ist der Nachweis, was genau geprüft wurde; „läuft“ ist kein Nachweis. Darum muss das erwartete Ergebnis so konkret sein, dass ein anderer Techniker beim Test eindeutig „ja“ oder „nein“ sagen kann.

@@ -155,7 +155,7 @@ Ein Repeater frischt das Signal auf und verlängert so eine Leitung, ein Hub ist
 - Pause möglich nach Teil A.
 - Teil B – Plan und Verkabelung: Firewall und Symbole im Netzwerkplan K10, K5; Weg von der Dose zum Switch K8; richtige Dose per Patchplan K6
 
-**Schon geprüft:** In Prüfungen: K6 (neuere Prüfung) · Noch nicht geprüft: K1–K5, K7–K12
+**Schon geprüft:** In Prüfungen: K6 (2025H) · Noch nicht geprüft: K1–K5, K7–K12
 
 **Kerngedanken:**
 - Die Netzwerkgeräte unterscheiden sich darin, was sie von den Daten auswerten: Repeater und Hub nur das Signal (Schicht 1), der Switch die MAC-Adresse (Schicht 2), der Router die IP-Adresse (Schicht 3), die Firewall zusätzlich die Ports (Schicht 4). Daraus folgt, was ein Gerät kann.
