@@ -15,12 +15,6 @@ die Prüfungen meiner Umschulung. Öffentlich ist es, weil die App über GitHub 
   Arbeitsanweisungen für die KI liegen offen in [`CLAUDE.md`](CLAUDE.md).
 - **Von mir:** die Idee, die Anforderungen, die Quellen (Prüfungskatalog, Lehrbücher, alte Prüfungen) und die
   Entscheidungen: was die App können soll, wie gelernt und wiederholt wird, was in den Stoff gehört und was nicht.
-  Ich habe keine Zeile des Codes selbst geschrieben.
-
-Code, den ich selbst geschrieben habe, liegt in meinen anderen Repos auf diesem Profil.
-
-**Hinweis zum Inhalt:** Das ist kein offizielles Material der IHK. Die Inhalte sind KI-erzeugt und nur für mein
-eigenes Lernen geprüft; sie können Fehler enthalten. Rechtsstände in WiSo haben den Stand 2026.
 
 ## Was die App kann
 
