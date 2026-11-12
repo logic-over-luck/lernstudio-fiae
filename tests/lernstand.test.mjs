@@ -6,9 +6,9 @@ import { fileURLToPath } from 'node:url';
 import { ladeDaten } from '../tools/inhalt.mjs';
 import { baueIndex } from '../src/daten/index.js';
 import { blockWert, blockVergleich } from '../src/daten/wichtigkeit.js';
-import { ableiten, blockZustand, kartenZustand, serieBerechnen } from '../src/lernstand/ableiten.js';
+import { ableiten, blockZustand, kartenZustand, serieBerechnen, offeneKarten, istProblemkarte } from '../src/lernstand/ableiten.js';
 import { tagPlus, tageZwischen, tagVon, datumAusTag } from '../src/lernstand/zeit.js';
-import { naechsteStufe, rangFuer, RAENGE, KARTEN_ABSTAND } from '../src/lernstand/regeln.js';
+import { naechsteStufe, rangFuer, RAENGE, KARTEN_ABSTAND, PROBLEM_AB, mitPruefungsrunde } from '../src/lernstand/regeln.js';
 import { migriere, sicherungErstellen, sicherungLesen, zusammenfuehren, laden, speichern, defekteStaende, FORMAT, SicherungsFehler } from '../src/lernstand/speicher.js';
 import { leseRoute } from '../src/router.js';
 import { heuteImFokus, tempo } from '../src/lernstand/empfehlung.js';
@@ -28,10 +28,10 @@ test('Datumsrechnung auf Tagesebene, auch über die Zeitumstellung', () => {
   assert.equal(tagVon(datumAusTag('2026-02-28')), '2026-02-28');
 });
 
-test('Inhalt: 4 Räume, 74 Blöcke, 292 Stichpunkte, jede Karte gehört zu einem Stichpunkt', () => {
+test('Inhalt: 4 Räume, 74 Blöcke, 293 Stichpunkte, jede Karte gehört zu einem Stichpunkt', () => {
   assert.equal(index.raeume.size, 4);
   assert.equal(index.bloecke.size, 74);
-  assert.equal(index.sp.size, 292);
+  assert.equal(index.sp.size, 293);
   for (const k of index.karten.values()) assert.ok(index.sp.has(k.sp), k.id);
 });
 
@@ -46,42 +46,88 @@ test('Stichpunkt abhaken, Block wird erst mit allen Stichpunkten erledigt', () =
   const z = blockZustand(s, b);
   assert.equal(z.fertig, true);
   assert.equal(z.erledigtAm, T0 + 10);
-  assert.deepEqual(z.naechste, { phase: 1, faellig: tagPlus(heute, 1) });
-  assert.equal(z.faellig, false);
 });
 
-test('Wiederholungs-Phasen: 1, 7, 30 Tage; Reihenfolge erzwungen; pausiert bei offenem Block', () => {
+test('Offene Karten: Abhak-Reihenfolge, bewertete fallen heraus, Wieder-Öffnen behält den Stand', () => {
+  const [a, b] = ['AP1-3-1-2', 'AP1-1-1-1'];
+  const kA = index.kartenJeSp.get(a);
+  const kB = index.kartenJeSp.get(b);
+  assert.deepEqual(offeneKarten(ableiten([], index, heute), index, 'AP1'), []);
+  // b vor a abgehakt → b zuerst, jeweils in Karten-Reihenfolge
+  const ev = [
+    { t: T0, e: 'sp', id: b, an: true },
+    { t: T0 + 1, e: 'sp', id: a, an: true },
+  ];
+  let s = ableiten(ev, index, heute);
+  assert.deepEqual(offeneKarten(s, index, 'AP1'), [...kB, ...kA]);
+  assert.deepEqual(offeneKarten(s, index, 'PB1'), []);
+  // eine Karte bewertet → nicht mehr offen
+  ev.push({ t: T0 + 2, e: 'karte', id: kB[0], n: 2 });
+  s = ableiten(ev, index, heute);
+  assert.deepEqual(offeneKarten(s, index, 'AP1'), [...kB.slice(1), ...kA]);
+  // Stichpunkt wieder geöffnet: seine unbewerteten Karten sind nicht mehr offen, die bewertete behält Stufe und Termin
+  ev.push({ t: T0 + 3, e: 'sp', id: b, an: false });
+  s = ableiten(ev, index, heute);
+  assert.deepEqual(offeneKarten(s, index, 'AP1'), kA);
+  assert.equal(s.karten.get(kB[0]).stufe, 2);
+  // Karten eines nicht abgehakten Stichpunkts dürfen trotzdem bewertet werden und laufen normal weiter
+  const fremd = index.kartenJeSp.get('AP1-8-3-1')[0];
+  s = ableiten([...ev, { t: T0 + 4, e: 'karte', id: fremd, n: 2 }], index, heute);
+  assert.equal(s.karten.get(fremd).stufe, 2);
+});
+
+test('Alte Wiederholungs-Phasen: Ereignisse bleiben lesbar und behalten ihre Punkte', () => {
   const b = index.bloecke.get('AP1-2-1');
   const ev = b.sp.map((id) => ({ t: T0, e: 'sp', id, an: true }));
-  let s = ableiten(ev, index, tagPlus(heute, 1));
-  assert.equal(blockZustand(s, b).faellig, true);
-  // Phase 2 vor Phase 1 wird ignoriert
-  ev.push({ t: T0 + TAG, e: 'wdh', id: b.id, p: 2 });
-  ev.push({ t: T0 + TAG, e: 'wdh', id: b.id, p: 1 });
-  s = ableiten(ev, index, tagPlus(heute, 1));
-  let z = blockZustand(s, b);
-  assert.deepEqual(z.phasen, [T0 + TAG, null, null]);
-  assert.equal(z.naechste.faellig, tagPlus(heute, 8));
-  assert.equal(z.faellig, false);
-  // Stichpunkt wieder öffnen: nicht fällig, auch wenn Termin erreicht
-  ev.push({ t: T0 + 2 * TAG, e: 'sp', id: b.sp[0], an: false });
-  s = ableiten(ev, index, tagPlus(heute, 9));
-  z = blockZustand(s, b);
-  assert.equal(z.fertig, false);
-  assert.equal(z.faellig, false);
-  // Wieder abgehakt: Phase 2 fällig, erste Abschluss-Zeit bleibt
-  ev.push({ t: T0 + 3 * TAG, e: 'sp', id: b.sp[0], an: true });
-  s = ableiten(ev, index, tagPlus(heute, 9));
-  z = blockZustand(s, b);
-  assert.equal(z.erledigtAm, T0);
-  assert.equal(z.faellig, true);
-  ev.push({ t: T0 + 9 * TAG, e: 'wdh', id: b.id, p: 2 });
-  s = ableiten(ev, index, tagPlus(heute, 9));
-  assert.equal(blockZustand(s, b).naechste.faellig, tagPlus(heute, 39));
-  ev.push({ t: T0 + 39 * TAG, e: 'wdh', id: b.id, p: 3 });
-  s = ableiten(ev, index, tagPlus(heute, 40));
-  assert.equal(blockZustand(s, b).gefestigt, true);
-  assert.equal(blockZustand(s, b).naechste, null);
+  const ohne = ableiten(ev, index, heute).xp;
+  const s = ableiten([...ev, { t: T0 + TAG, e: 'wdh', id: b.id, p: 1 }], index, heute);
+  assert.equal(s.xp, ohne + 15);
+  assert.equal(Object.keys(blockZustand(s, b)).includes('faellig'), false);
+});
+
+test('Prüfungsrunde: jede Karte einmal in den letzten 6 Wochen, gleichmäßig verteilt', () => {
+  const E = '2027-09-29';
+  // ohne Termin oder rechtzeitig vor dem Fenster: unverändert
+  assert.equal(mitPruefungsrunde('2027-10-20', '2027-08-06', null, 'x'), '2027-10-20');
+  assert.equal(mitPruefungsrunde('2027-09-20', '2027-08-06', E, 'x'), '2027-09-20');
+  // fiele nach Prüfung − 3: kommt im Fenster [E−41, E−3]
+  const ids = [...index.karten.keys()].slice(0, 400);
+  const tage = ids.map((id) => mitPruefungsrunde('2027-10-20', '2027-08-06', E, id));
+  for (const t of tage) assert.ok(t >= tagPlus(E, -41) && t <= tagPlus(E, -3), t);
+  assert.ok(new Set(tage).size > 30, 'verteilt über viele Tage');
+  // schon im Fenster wiederholt: nichts mehr vor der Prüfung
+  assert.equal(mitPruefungsrunde('2027-10-20', '2027-09-10', E, 'x'), '2027-10-20');
+  // nach der Prüfung: unverändert
+  assert.equal(mitPruefungsrunde('2027-12-20', '2027-10-01', E, 'x'), '2027-12-20');
+  // in ableiten: eine Karte erreicht am 20.7.2027 Stufe 6 (75 Tage → 3.10., nach der Prüfung).
+  // Ohne Termin bleibt es beim 3.10.; wird der Termin danach eingetragen, rückt sie ins Fenster.
+  const id = ids[0];
+  const ev = [];
+  let tag = '2027-03-06';
+  for (const abstand of [0, 3, 7, 16, 35, 75]) {
+    tag = tagPlus(tag, abstand);
+    ev.push({ t: datumAusTag(tag).getTime() + 10 * 3600000, e: 'karte', id, n: 2 });
+  }
+  assert.equal(tag, '2027-07-20');
+  let s = ableiten(ev, index, tag);
+  assert.equal(s.karten.get(id).stufe, 6);
+  assert.equal(s.karten.get(id).faellig, '2027-10-03');
+  s = ableiten([...ev, { t: datumAusTag('2027-07-21').getTime(), e: 'termin', r: 'AP1', d: E }], index, '2027-07-21');
+  const f = s.karten.get(id).faellig;
+  assert.ok(f >= tagPlus(E, -41) && f <= tagPlus(E, -3), f);
+});
+
+test('Problemkarten und gleiche Punkte für jede Kartenantwort', () => {
+  const id = [...index.karten.keys()][0];
+  const ev = Array.from({ length: PROBLEM_AB }, (_, i) => ({ t: T0 + i * TAG, e: 'karte', id, n: 0 }));
+  let s = ableiten(ev.slice(0, -1), index, heute);
+  assert.equal(istProblemkarte(s, id), false);
+  s = ableiten(ev, index, heute);
+  assert.equal(istProblemkarte(s, id), true);
+  assert.equal(s.karten.get(id).fehl, PROBLEM_AB);
+  assert.equal(kartenZustand(s, [id]).problem, 1);
+  // Gewusst bringt nicht mehr Punkte als Nicht gewusst
+  assert.equal(ableiten([{ t: T0, e: 'karte', id, n: 2 }], index, heute).xp, ableiten([{ t: T0, e: 'karte', id, n: 0 }], index, heute).xp);
 });
 
 test('XP: Abwählen nimmt die Punkte wieder weg, auch den Block-Bonus', () => {
@@ -99,7 +145,7 @@ test('XP: Abwählen nimmt die Punkte wieder weg, auch den Block-Bonus', () => {
   assert.equal(s.xp, (block.sp.length - 1) * 10);
   // Abwählen ist keine Lernhandlung: der Tag zählt nicht doppelt
   assert.equal(s.tage.get(tagVon(T0)).n, block.sp.length);
-  // wieder fertig → Bonus wieder da, Wiederholungs-Phasen bleiben am ersten Abschluss
+  // wieder fertig → Bonus wieder da, erste Abschluss-Zeit bleibt
   s = ableiten([...an, { t: T0 + 100, e: 'sp', id, an: false }, { t: T0 + 200, e: 'sp', id, an: true }], index, heute);
   assert.equal(s.xp, block.sp.length * 10 + 20);
   assert.equal(s.blockErledigtAm.get(block.id), T0 + block.sp.length - 1);
@@ -179,14 +225,16 @@ test('Ränge: erster Rang Hello World, aufsteigend', () => {
   assert.equal(rangFuer(999999).naechster, null);
 });
 
-test('Heute im Fokus: fällige Wiederholung vor angefangenem Block vor offenem Thema', () => {
+test('Heute im Fokus: angefangener Block vor offenem Thema; offene Karten werden gezählt', () => {
   const fertig = index.bloecke.get('AP1-2-1');
   const angefangen = index.bloecke.get('AP1-3-1');
   const ev = [...fertig.sp.map((id) => ({ t: T0 - 3 * TAG, e: 'sp', id, an: true })), { t: T0, e: 'sp', id: angefangen.sp[0], an: true }];
   let f = heuteImFokus(ableiten(ev, index, heute), index, 'AP1');
-  assert.equal(f.haupt.art, 'wiederholung');
-  assert.equal(f.haupt.block.id, fertig.id);
-  assert.equal(f.weitere[0].block.id, angefangen.id);
+  assert.equal(f.haupt.art, 'weiter');
+  assert.equal(f.haupt.block.id, angefangen.id);
+  assert.ok(!f.weitere.some((v) => v.block.id === fertig.id));
+  const erwartet = [...fertig.sp, angefangen.sp[0]].reduce((n, id) => n + (index.kartenJeSp.get(id) ?? []).length, 0);
+  assert.equal(f.offen, erwartet);
   f = heuteImFokus(ableiten([], index, heute), index, 'AP1');
   assert.equal(f.haupt.art, 'neu');
   // Ohne Lernstand: der Block mit dem wichtigsten Stichpunkt (Reihenfolge-Wert), dann der mit der größeren Summe
@@ -240,7 +288,7 @@ test('Router: kaputte Prozent-Kodierung im Link verhindert den Start nicht', () 
 });
 
 // Offen: Diese Rechen- und Schreib-Stichpunkte haben noch keinen Trainer, der auf sie verweist.
-const OHNE_TRAINER = new Set(['AP1-2-3-3', 'AP1-3-2-4', 'AP1-6-1-5', 'PB1-7-1-2', 'PB2-1-1-3', 'PB2-2-1-4', 'PB2-5-1-5']);
+const OHNE_TRAINER = new Set(['AP1-2-3-3', 'AP1-6-1-5', 'PB1-7-1-2', 'PB2-1-1-3', 'PB2-2-1-4', 'PB2-5-1-5']);
 
 test('Trainer-Zuordnung: jeder Stichpunkt außer „Wissen" wird geübt; SQL nur in PB2', () => {
   for (const sp of index.sp.values()) {

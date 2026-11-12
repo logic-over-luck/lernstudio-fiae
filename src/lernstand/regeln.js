@@ -1,14 +1,26 @@
 // Alle Lernregeln an einer Stelle: Wiederholungs-Abstände, Kartenplanung, Punkte, Ränge.
 // Die Hilfe-Seite liest dieselben Werte, damit Erklärung und Verhalten nie auseinanderlaufen.
 
-// Wiederholungs-Phasen eines Blocks: Tage nach dem Abhaken bzw. nach der vorigen Phase.
-export const PHASEN_ABSTAND = [1, 7, 30];
+import { tagPlus } from './zeit.js';
 
 // Lernkarten: Abstand in Tagen je Stufe. Stufe 0 = neu oder vergessen.
+// (Die früheren Wiederholungs-Phasen eines Blocks gibt es nicht mehr. Alte Ereignisse `wdh` bleiben lesbar,
+// ihre Punkte bleiben gebucht; geplant wird nur noch über die Karten.)
 export const KARTEN_ABSTAND = [0, 1, 3, 7, 16, 35, 75];
 export const KARTEN_MAX_STUFE = KARTEN_ABSTAND.length - 1;
 // Ab dieser Stufe gilt eine Karte als „sicher" (sie hat mindestens eine Woche Abstand gehalten).
 export const KARTE_SICHER_AB = 3;
+
+// Prüfungsrunde: Ist ein Prüfungstermin eingetragen, kommt jede Karte in den letzten PRUEFUNG_FENSTER Tagen
+// vor der Prüfung einmal dran – spätestens PRUEFUNG_PUFFER Tage vorher, gleichmäßig über das Fenster verteilt.
+export const PRUEFUNG_FENSTER = 42;
+export const PRUEFUNG_PUFFER = 3;
+
+// Nach einer Pause: Sind mehr Karten fällig als das, kommen die jüngsten (niedrigste Stufe) zuerst.
+export const RUECKSTAU_AB = 150;
+
+// So oft „nicht gewusst“, dann gilt eine Karte als Problemkarte.
+export const PROBLEM_AB = 4;
 
 export const NOTE = { NICHT: 0, UNSICHER: 1, GEWUSST: 2 };
 
@@ -20,12 +32,34 @@ export function naechsteStufe(stufe, note) {
   return 0;
 }
 
+// Fester, gleichmäßig verteilter Wert je Karte (für die Verteilung im Prüfungsfenster)
+function streuwert(id, n) {
+  let h = 0;
+  for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) >>> 0;
+  return h % n;
+}
+
+// Wendet die Prüfungsrunde auf einen geplanten Termin an. Tage als 'JJJJ-MM-TT'.
+// roh: Termin nach der Leiter · zuletzt: Tag der letzten Antwort · pruefung: Prüfungstag oder null.
+// Fiele die Karte erst nach „Prüfung − Puffer“ und war sie im Fenster noch nicht dran, kommt sie
+// stattdessen an einem festen Tag im Fenster (aber frühestens am Tag nach der letzten Antwort).
+export function mitPruefungsrunde(roh, zuletzt, pruefung, id) {
+  if (!pruefung || zuletzt >= pruefung) return roh;
+  const spaetestens = tagPlus(pruefung, -PRUEFUNG_PUFFER);
+  if (roh <= spaetestens) return roh;
+  if (zuletzt >= tagPlus(pruefung, -PRUEFUNG_FENSTER)) return roh; // im Fenster schon dran gewesen
+  const tag = tagPlus(spaetestens, -streuwert(id, PRUEFUNG_FENSTER - PRUEFUNG_PUFFER));
+  const morgen = tagPlus(zuletzt, 1);
+  return tag > morgen ? tag : morgen;
+}
+
 // Erfahrungspunkte je Lernhandlung
 export const XP = {
   stichpunkt: 10,
   blockGeschafft: 20,
-  wiederholung: 15,
-  karte: [1, 1, 2],
+  wiederholung: 15, // nur noch für alte Ereignisse der früheren Wiederholungs-Phasen
+  // Jede Kartenantwort zählt gleich – die Bewertung soll ehrlich sein, nicht lohnend.
+  karte: [1, 1, 1],
   aufgabeRichtig: 5,
   aufgabeVersucht: 1,
   fokusJeMinuten: 2, // 1 Punkt je 2 Minuten

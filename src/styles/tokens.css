@@ -69,6 +69,10 @@
   /* Wichtigkeit (src/daten/wichtigkeit.js): Top-Thema, Wichtig */
   --stufe-top: #ff8a6b;
   --stufe-wichtig: #f0a85a;
+  /* Lernreihenfolge A / B / C: gleich kräftig, nur die Reihenfolge unterscheidet sie */
+  --klasse-a: #f07070;
+  --klasse-b: #f0a85a;
+  --klasse-c: #e8cc5c;
 
   /* Akzent je Lernraum (wird per data-raum gesetzt) */
   --akzent: #5ad1a7;

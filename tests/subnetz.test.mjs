@@ -6,7 +6,8 @@ import * as aufgaben from '../src/bereiche/trainer/subnetz/ueben/aufgaben.js';
 import { pruefeErzeuger } from './hilfen/erzeuger.mjs';
 import { zufall } from '../src/bereiche/trainer/rahmen/zufall.js';
 import { ladeDaten } from '../tools/inhalt.mjs';
-const WURZEL_INHALT = new URL('..', import.meta.url).pathname;
+// fileURLToPath (Import weiter unten) statt .pathname: sonst entsteht unter Windows „C:\C:\…“
+const WURZEL_INHALT = fileURLToPath(new URL('..', import.meta.url));
 
 test('Netzberechnung Standardfälle', () => {
   const n = ip.netz('192.168.1.130', 26);
@@ -181,7 +182,9 @@ test('Lernweg: jede Kompetenz von AP1-6-2-1 bis AP1-6-2-4 ist abgedeckt', () => 
   assert.ok(KOMPETENZEN.length >= 20);
   const abgedeckt = new Set(LEKTIONEN.flatMap((l) => l.kompetenzen));
   // Offen: Aussagen, die der Lernplan hat, der Lernweg aber noch nicht behandelt (NAT, Netzdoku, Teilnetze, IPv6-Vergleich, ARP/NDP, Befehle)
-  const ohneLektion = new Set(['AP1-6-2-1-K7', 'AP1-6-2-1-K9', 'AP1-6-2-1-K10', 'AP1-6-2-2-K7', 'AP1-6-2-3-K6', 'AP1-6-2-3-K7', 'AP1-6-2-4-K6', 'AP1-6-2-4-K7', 'AP1-6-2-4-K8', 'AP1-6-2-4-K9']);
+  const ohneLektion = new Set(['AP1-6-2-1-K7', 'AP1-6-2-1-K9', 'AP1-6-2-1-K10', 'AP1-6-2-2-K7', 'AP1-6-2-3-K6', 'AP1-6-2-3-K7', 'AP1-6-2-4-K6', 'AP1-6-2-4-K7', 'AP1-6-2-4-K8', 'AP1-6-2-4-K9',
+    // seit 29.10.2026 aus der Kür hochgestuft, noch ohne Lektion: Adressklassen, besondere IPv4-Adressen, MAC-Broadcast
+    'AP1-6-2-1-K11', 'AP1-6-2-1-K12', 'AP1-6-2-4-K10']);
   for (const k of KOMPETENZEN) if (!ohneLektion.has(k)) assert.ok(abgedeckt.has(k), `${k} gehört zu keiner Lektion`);
   for (const k of abgedeckt) assert.ok(KOMPETENZEN.includes(k), `${k} gibt es im Lernplan nicht`);
 });

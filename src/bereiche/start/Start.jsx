@@ -74,7 +74,7 @@ export function Uebersicht({ raum }) {
           t={t}
           onTermin={() => setTerminOffen(true)}
         />
-        <KartenKachel i={1} raum={raum} karten={karten} gemerkt={gemerkt} />
+        <KartenKachel i={1} raum={raum} karten={karten} gemerkt={gemerkt} offen={fokus.offen} />
         <SerieKachel i={2} stand={stand} />
         <FokusTimer i={3} raum={raum} kompakt />
         <Fokus i={4} raum={raum} fokus={fokus} sus={sus} />
@@ -89,7 +89,7 @@ function Fokus({ i, raum, fokus, sus }) {
   const zuBlock = (block) => geheZu(raum, 'lernen', null, { block: block.id });
   const karten = (quelle) => geheZu(raum, 'karten', 'sitzung', { quelle });
   const unten = [
-    ...fokus.weitere.slice(0, 2).map((v) => ({ block: v.block, icon: v.art === 'wiederholung' ? 'refresh-cw' : v.art === 'weiter' ? 'step-forward' : 'circle', vor: 'Danach', nach: v.etikett })),
+    ...fokus.weitere.slice(0, 2).map((v) => ({ block: v.block, icon: v.art === 'weiter' ? 'step-forward' : 'circle', vor: 'Danach', nach: v.etikett })),
     ...sus.schwaechen.slice(0, 2).map((w) => ({ block: w.block, icon: 'target', ton: 'text-warn', vor: 'Wiederholen lohnt' })),
     ...sus.staerken.slice(0, 1).map((w) => ({ block: w.block, icon: 'circle-check', ton: 'text-gut', vor: 'Sitzt gut' })),
   ].slice(0, 4);
@@ -100,23 +100,36 @@ function Fokus({ i, raum, fokus, sus }) {
         <Icon name="sparkles" groesse={14} /> Dein nächster Schritt
         {h && (
           <span class="kachel__marken">
-            <Marke ton={h.art === 'wiederholung' ? 'warn' : 'akzent'} icon={h.art === 'wiederholung' ? 'refresh-cw' : h.art === 'weiter' ? 'step-forward' : 'rocket'}>
+            <Marke ton="akzent" icon={h.art === 'weiter' ? 'step-forward' : 'rocket'}>
               {h.etikett}
             </Marke>
             <BlockMarke w={h.block.wichtig} />
           </span>
         )}
       </div>
-      <h2 class="fokus-karte__titel">{h ? h.block.titel : 'Alles abgehakt und wiederholt.'}</h2>
+      <h2 class="fokus-karte__titel">{h ? h.block.titel : 'Alles abgehakt.'}</h2>
       {h?.block.satz && <p class="fokus-karte__satz">{h.block.satz}</p>}
       <p class="fokus-karte__grund">
         <Icon name="lightbulb" groesse={14} />
-        <span>{h ? h.grund : fokus.karten.faellig ? `${fokus.karten.faellig} Lernkarten warten auf dich.` : 'Halte das Wissen mit Lernkarten und Trainern frisch.'}</span>
+        <span>{h ? h.grund : fokus.karten.faellig ? `${fokus.karten.faellig} Lernkarten warten auf dich.` : 'Halte das Wissen mit Lernkarten und Altprüfungen frisch.'}</span>
       </p>
+      {fokus.offen > 0 && (
+        <p class="fokus-karte__grund">
+          <Icon name="sparkles" groesse={14} />
+          <span>
+            <strong>{fokus.offen} offene Karten</strong> aus abgehakten Stichpunkten. Wann du sie machst, entscheidest du – am nächsten Tag ist ein guter Zeitpunkt.
+          </span>
+        </p>
+      )}
       <div class="fokus-karte__knoepfe">
         <Knopf variante="primaer" iconRechts="arrow-right" onClick={() => (h ? zuBlock(h.block) : karten('faellig'))}>
-          {h ? (h.art === 'wiederholung' ? 'Jetzt wiederholen' : 'Lernen starten') : 'Karten lernen'}
+          {h ? 'Lernen starten' : 'Karten lernen'}
         </Knopf>
+        {fokus.offen > 0 && (
+          <Knopf icon="sparkles" zahl={fokus.offen} onClick={() => karten('neu')}>
+            Offene Karten
+          </Knopf>
+        )}
         <Knopf icon="layers" zahl={fokus.karten.faellig || null} onClick={() => karten('faellig')}>
           Fällige Karten
         </Knopf>
@@ -189,31 +202,28 @@ function Fortschritt({ i, erledigt, gesamt, bloeckeFertig, bloecke, termin, t, o
   );
 }
 
-function KartenKachel({ i, raum, karten, gemerkt }) {
+// Groß: was heute ansteht (fällige Wiederholungen + offene Karten), darunter die Aufteilung
+function KartenKachel({ i, raum, karten, gemerkt, offen }) {
   const sicher = karten.gesamt ? karten.sicher / karten.gesamt : 0;
+  const heute = karten.faellig + offen;
+  const angefangen = karten.gesamt - karten.neu;
   return (
     <a class="flaeche flaeche--klickbar kachel" href={link(raum, 'karten')} aria-label="Lernkarten" style={{ '--i': i }}>
       <div class="kachel__kopf">
         <Icon name="layers" groesse={14} /> Lernkarten
       </div>
       <div class="kachel__wert">
-        {karten.faellig > 0 ? (
-          <>
-            <span class="text-warn">
-              <Zahl wert={karten.faellig} />
-            </span>
-            <small>fällig</small>
-          </>
-        ) : (
-          <>
-            <Zahl wert={sicher * 100} />
-            <small>% sicher</small>
-          </>
-        )}
+        <span class={heute > 0 ? 'text-warn' : ''}>
+          <Zahl wert={heute} />
+        </span>
+        <small>für heute</small>
+      </div>
+      <div class="kachel__aufteilung">
+        {karten.faellig} {karten.faellig === 1 ? 'Wiederholung' : 'Wiederholungen'} · {offen} neu
       </div>
       <Balken wert={sicher} label="Lernkarten sicher" />
       <div class="kachel__fuss gedaempft">
-        {karten.neu} neu · {karten.gesamt - karten.neu} gesehen{gemerkt ? ` · ${gemerkt} gemerkt` : ''}
+        {angefangen} angefangen{gemerkt ? ` · ${gemerkt} gemerkt` : ''}
       </div>
     </a>
   );

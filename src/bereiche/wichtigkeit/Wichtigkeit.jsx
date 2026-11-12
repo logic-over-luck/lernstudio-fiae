@@ -4,7 +4,7 @@
 import { useState } from 'preact/hooks';
 import { inhalt } from '../../daten/inhalt.js';
 import { useLernstand } from '../../lernstand/store.js';
-import { STUFEN, LAMBDA, BEREICH, terminName, wichtigkeitText } from '../../daten/wichtigkeit.js';
+import { STUFEN, KLASSEN, LAMBDA, terminName, wichtigkeitText, zahl } from '../../daten/wichtigkeit.js';
 import { link } from '../../router.js';
 import { Icon, StufenMarke, Aufklapp } from '../../ui/bausteine.jsx';
 
@@ -19,6 +19,189 @@ function grenzeText(nr, g) {
 }
 
 export function Wichtigkeit({ raum }) {
+  const r0 = inhalt.raeume.get(raum);
+  if (r0.wichtig.system === 'klassen') return <WichtigkeitKlassen raum={raum} />;
+  return <WichtigkeitPruefungen raum={raum} />;
+}
+
+function Abschnitt({ icon, titel, children }) {
+  return (
+    <section class="flaeche flaeche--gross hilfe-abschnitt">
+      <h2 class="hilfe-abschnitt__titel">
+        <span class="hilfe-abschnitt__symbol">
+          <Icon name={icon} groesse={18} />
+        </span>
+        {titel}
+      </h2>
+      <div class="hilfe-abschnitt__text">{children}</div>
+    </section>
+  );
+}
+
+// Lernreihenfolge (AP1): drei Stufen in empfohlener Reihenfolge, warum A zuerst, ehrliche Obergrenzen je Prüfung
+const note = (x) => (x >= 92 ? 1 : x >= 81 ? 2 : x >= 67 ? 3 : x >= 50 ? 4 : x >= 30 ? 5 : 6);
+
+function Wert({ x }) {
+  return (
+    <span class="tabellenziffern">
+      {zahl(x)}
+      <span class="gedaempft"> ({note(x)})</span>
+    </span>
+  );
+}
+
+function WichtigkeitKlassen({ raum }) {
+  const stand = useLernstand();
+  const r = inhalt.raeume.get(raum);
+  const w = r.wichtig;
+  const sps = r.bloeckeListe.flatMap((b) => b.sp.map((id) => inhalt.sp.get(id)).filter(Boolean));
+  const jeKlasse = KLASSEN.map((k) => sps.filter((x) => x.wichtig.stufe === k.nr).sort((a, b) => a.wichtig.rang - b.wichtig.rang));
+  const [offen, setOffen] = useState(1);
+  const tabelle = r.lernreihenfolge?.tabelle ?? [];
+  const aufwand = (liste) => liste.reduce((a, x) => a + x.koennen.length, 0);
+  const anteilA = Math.round((aufwand(jeKlasse[0]) / Math.max(1, aufwand(sps))) * 100);
+
+  return (
+    <div class="wichtigkeit">
+      <header class="seitenkopf">
+        <div>
+          <div class="ueberschrift-klein ueberschrift-klein--akzent">Nachschlagen</div>
+          <h1 class="seitenkopf__titel">Lernreihenfolge</h1>
+          <p class="seitenkopf__text">
+            In welcher Reihenfolge du {r.name} lernst: erst A, dann B, dann C. Die Reihenfolge sagt, was zuerst kommt – nicht, was du weglassen kannst.{' '}
+            <strong>Für eine gute Note brauchst du alle drei.</strong>
+          </p>
+        </div>
+      </header>
+
+      <section class="flaeche flaeche--gross wichtigkeit__stufen" aria-label="Die drei Stufen">
+        {KLASSEN.map((k, i) => (
+          <div key={k.nr} class="wichtigkeit__stufe">
+            <button class="wichtigkeit__kopf" aria-expanded={offen === k.nr} onClick={() => setOffen(offen === k.nr ? null : k.nr)}>
+              <span class="wichtigkeit__etikett">
+                <StufenMarke nr={k.nr} system="klassen" />
+              </span>
+              <span class="wichtigkeit__grenze mono">{i === 0 ? 'zuerst' : i === 1 ? 'danach' : 'zum Schluss'}</span>
+              <span class="wichtigkeit__text">
+                <strong>{k.name.split(' · ')[1]}</strong> – {k.text}
+              </span>
+              <span class="wichtigkeit__zahl tabellenziffern">{jeKlasse[i].length}</span>
+              <Icon name="chevron-down" groesse={16} class="wichtigkeit__pfeil" />
+            </button>
+            <Aufklapp offen={offen === k.nr}>
+              <ol class="wichtigkeit__liste">
+                {jeKlasse[i].map((x) => (
+                  <li key={x.id}>
+                    <a class={`wichtigkeit__sp ${stand.spErledigt.has(x.id) ? 'wichtigkeit__sp--erledigt' : ''}`} href={link(raum, 'lernen', null, { sp: x.id })}>
+                      <span class="wichtigkeit__sp-titel">
+                        {x.titel}
+                        {x.wichtig.name !== k.name && <span class="gedaempft"> · Grundlage</span>}
+                      </span>
+                      <span class="gedaempft wichtigkeit__sp-zahl">{x.wichtig.x ? `${x.wichtig.x} von ${x.wichtig.n}${x.wichtig.punkte ? ` · ${zahl(x.wichtig.punkte)} P.` : ''}` : '–'}</span>
+                      <Icon name="arrow-right" groesse={13} />
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </Aufklapp>
+          </div>
+        ))}
+      </section>
+
+      <div class="hilfe-raster">
+        <Abschnitt icon="calculator" titel="Warum A zuerst">
+          <p>
+            In A steht alles, was du in der Prüfung <strong>rechnest oder zeichnest</strong> – Netzplan, Kalkulation, Nutzwertanalyse, Datenmengen, Subnetting,
+            UML, ER-Modell, Schreibtischtest. Das sind etwa {anteilA} % des Stoffs, brachten aber in fast jeder Prüfung ein Drittel bis die Hälfte der
+            Punkte. Und es braucht Übung – je früher du anfängst, desto öfter wiederholst du.
+          </p>
+          <p>
+            Dazu kommen die <strong>Grundlagen</strong>, ohne die A nicht geht (z. B. Pseudocode vor dem Schreibtischtest, IPv4-Konfiguration vor dem
+            Subnetting), und Englisch: Englische Texte und Werte aus dem Material lesen bringen in jeder Prüfung ein paar Punkte – das übst du laufend mit.
+          </p>
+          <p>
+            Welches <strong>Wissensthema</strong> in der nächsten Prüfung drankommt, lässt sich kaum vorhersagen – das haben wir an allen Prüfungen seit
+            2023 nachgeprüft. Deshalb gibt es nur diese grobe Reihenfolge und keine Prozente.
+          </p>
+        </Abschnitt>
+
+        <Abschnitt icon="list-checks" titel="Was du mit A, B und C geschafft hättest">
+          <p>
+            Obergrenze je Prüfung nach neuem Katalog – <strong>wenn alles Gelernte voll sitzt</strong>; in Klammern die Note. In echt rechne lieber mit etwa
+            einer Note schlechter.
+          </p>
+          <div class="ls-tabelle-huelle">
+          <table class="ls-tabelle">
+            <thead>
+              <tr>
+                <th>Prüfung</th>
+                <th>nur A</th>
+                <th>A + B</th>
+                <th>A + B + C</th>
+                <th>+ Englisch, Material</th>
+              </tr>
+            </thead>
+            <tbody>
+              {tabelle.map((z) => (
+                <tr key={z.pruefung}>
+                  <td>
+                    {terminName(z.pruefung)}
+                    {z.erfasst < 100 && <span class="gedaempft">*</span>}
+                  </td>
+                  <td>
+                    <Wert x={z.a} />
+                  </td>
+                  <td>
+                    <Wert x={z.ab} />
+                  </td>
+                  <td>
+                    <Wert x={z.abc} />
+                  </td>
+                  <td>
+                    <Wert x={z.mitTransfer} />
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          </div>
+          <p class="gedaempft">
+            A nach heutiger Einteilung; B und C jeweils nur aus den Prüfungen davor – so, wie du es damals gewusst hättest.
+            {tabelle.some((z) => z.erfasst < 100) &&
+              ` * nicht alle Aufgaben erfasst (${tabelle
+                .filter((z) => z.erfasst < 100)
+                .map((z) => `${terminName(z.pruefung)}: ${zahl(z.erfasst)} von 100 Punkten`)
+                .join(', ')}).`}{' '}
+            Note 1 ab 92 Punkten.
+          </p>
+        </Abschnitt>
+
+        <Abschnitt icon="layers" titel="Reihenfolge im Einzelnen">
+          <p>
+            In A und B steht zuerst, was bisher <strong>pro Lernaufwand</strong> die meisten Punkte brachte – eine grobe Sortierung. Voraussetzungen stehen
+            direkt vor dem Thema, das sie braucht. C folgt dem Lernplan.
+          </p>
+          <p>
+            „Dein nächster Schritt“ geht blockweise vor: Ein angefangener Block wird zuerst fertig gelernt, danach kommt der Block, dessen
+            bester offener Stichpunkt hier am weitesten oben steht. Der Lernplan selbst bleibt nach Themenbereichen sortiert.
+          </p>
+        </Abschnitt>
+
+        <Abschnitt icon="info" titel="Woher die Zahlen kommen">
+          <p>
+            Grundlage sind die Teilaufgaben aus {w.n} ausgewerteten Prüfungen ({w.termine.length ? `${terminName(w.termine[0])} bis ${terminName(w.termine.at(-1))}` : '–'}) mit ihren
+            Punkten. Aufgaben, die laut aktuellem Katalog nicht mehr zu {r.name} gehören (z. B. SQL, RAID, Struktogramme), zählen nicht. Betrifft eine Aufgabe
+            mehrere Themen, werden ihre Punkte geteilt.
+          </p>
+          <p>Kommt eine neue Prüfung dazu, wird alles neu gerechnet.</p>
+        </Abschnitt>
+      </div>
+    </div>
+  );
+}
+
+// Prüfungsteile ohne Klassen: Stufen nach der Zahl der Prüfungen
+function WichtigkeitPruefungen({ raum }) {
   const stand = useLernstand();
   const r = inhalt.raeume.get(raum);
   const w = r.wichtig;
@@ -35,6 +218,7 @@ export function Wichtigkeit({ raum }) {
           <p class="seitenkopf__text">
             Wie wichtig ein Stichpunkt nach den ausgewerteten IHK-Prüfungen von {r.name} ist. Die Stufe sagt, was bisher geprüft wurde – nicht, was sicher kommt. Alles im Lernplan kann drankommen.
           </p>
+          {r.merksatz && <p class="seitenkopf__text"><strong>{r.merksatz}</strong></p>}
         </div>
       </header>
 
@@ -105,8 +289,8 @@ export function Wichtigkeit({ raum }) {
               Hinweis dabei und ändert die Stufe nicht.
             </p>
             <p>
-              <strong>Wahrscheinlich … bis …</strong>: Mit so wenigen Prüfungen ist jede Zahl unsicher. Der Bereich zeigt, wie oft der Stichpunkt bei {w.n} Prüfungen plausibel drankäme ({Math.round((BEREICH[1] - BEREICH[0]) * 100)}-%-Bereich).
-              Die Stufe ist Orientierung, keine Vorhersage: Top-Themen kamen in der jeweils nächsten Prüfung etwa 1,5- bis 2,5-mal so oft wieder dran wie die übrigen.
+              Die Stufe ist Orientierung, keine Vorhersage. Nachgeprüft: In {r.name} kommen Themen, die schon dran waren, beim nächsten Mal deutlich öfter wieder
+              als neue – deshalb taugt die Häufigkeit hier als Reihenfolge.
             </p>
           </div>
         </section>

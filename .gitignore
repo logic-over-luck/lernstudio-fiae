@@ -3,5 +3,8 @@ build/
 *.log
 .DS_Store
 web/
-
 __pycache__/
+
+# Arbeitsmappe und Sicherungen der Lernprompts: nur lokal
+archiv/
+.claude/

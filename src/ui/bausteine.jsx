@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'preact/hooks';
 import icons from 'virtual:icons';
-import { STUFEN, stufe as stufeInfo, wichtigkeitText } from '../daten/wichtigkeit.js';
+import { stufenListe, stufe as stufeInfo, wichtigkeitText } from '../daten/wichtigkeit.js';
 
 export function Icon({ name, groesse = 16, strich = 1.75, class: klasse, ...rest }) {
   const knoten = icons[name];
@@ -80,23 +80,37 @@ export function Haken({ an, teil, onWechsel, label, gross, disabled, class: klas
   );
 }
 
-// Wichtigkeit (src/daten/wichtigkeit.js): Etikett der Stufe – Top-Thema (mit Flamme), Wichtig, Geprüft, Noch nie geprüft.
-// Im Tooltip die Zahlen („In 6 von 11 Prüfungen dran …“).
-export function StufenMarke({ nr, w, tip }) {
-  const st = stufeInfo(w?.stufe ?? nr);
+// Wichtigkeit (src/daten/wichtigkeit.js): Etikett der Stufe.
+// Lernreihenfolge (AP1): dieselbe Marke wie in PB1/PB2/WiSo, Text nur A, B oder C; Bedeutung im Tooltip.
+// Prüfungen (PB1, PB2, WiSo): Top-Thema (mit Flamme), Wichtig, Geprüft, Noch nie geprüft.
+// Im Tooltip die beobachteten Zahlen („In 6 von 11 Prüfungen dran …“).
+export function StufenMarke({ nr, w, tip, system, name }) {
+  const sys = w?.system ?? system ?? 'pruefungen';
+  const st = stufeInfo(w?.stufe ?? nr, sys);
+  const klasse = sys === 'klassen' ? `marke--klasse marke--klasse-${st.kurz}` : `marke--stufe-${st.nr}`;
   return (
-    <span class={`marke marke--stufe-${st.nr}`} data-tip={tip ?? (w ? wichtigkeitText(w) : st.text)}>
-      {st.icon && <Icon name={st.icon} groesse={11} strich={2.2} />}
-      {st.name}
+    <span class={`marke ${klasse}`} data-tip={tip ?? (w ? wichtigkeitText(w) : st.text)}>
+      {sys === 'klassen' ? (
+        st.kurz
+      ) : (
+        <>
+          {st.icon && <Icon name={st.icon} groesse={11} strich={2.2} />}
+          {name ?? w?.name ?? st.name}
+        </>
+      )}
     </span>
   );
 }
 
-// Block: das Etikett seines wichtigsten Stichpunkts, aber nur bei Top-Thema oder Wichtig – sonst nichts
+// Block: das Etikett seines wichtigsten Stichpunkts. Lernreihenfolge: immer; Prüfungen: nur bei Top-Thema oder Wichtig.
 export function BlockMarke({ w }) {
-  if (w.beste > 2) return null;
-  const tip = STUFEN.filter((s) => w.anzahl[s.nr]).map((s) => `${w.anzahl[s.nr]}× ${s.name}`).join(' · ');
-  return <StufenMarke nr={w.beste} tip={tip} />;
+  const sys = w.system ?? 'pruefungen';
+  if (sys !== 'klassen' && w.beste > 2) return null;
+  const tip = stufenListe(sys)
+    .filter((s) => w.anzahl[s.nr])
+    .map((s) => `${w.anzahl[s.nr]}× ${sys === 'klassen' ? s.kurz : s.name}`)
+    .join(' · ');
+  return <StufenMarke nr={w.beste} system={sys} name={sys === 'klassen' ? w.besteName : undefined} tip={tip} />;
 }
 
 export function Marke({ ton = 'neutral', icon, children, tip }) {

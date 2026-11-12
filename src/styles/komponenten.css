@@ -303,6 +303,34 @@
   border-color: var(--linie-2);
   border-style: dashed;
 }
+/* Lernreihenfolge (AP1): dieselbe Marke wie Top-Thema/Wichtig, nur A rot, B orange, C gelb */
+/* Ein einzelner Buchstabe: festes 20×20-Quadrat (ganze Pixel, scharfe Ränder), ohne Buchstabenabstand
+   (der sonst hinter dem Buchstaben landet und ihn nach links schiebt), Höhe ausgeglichen */
+.marke.marke--klasse {
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0 0 0 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.marke--klasse-A {
+  color: var(--klasse-a);
+  background: rgba(240, 112, 112, 0.12);
+  border-color: rgba(240, 112, 112, 0.45);
+}
+.marke--klasse-B {
+  color: var(--klasse-b);
+  background: rgba(240, 168, 90, 0.1);
+  border-color: rgba(240, 168, 90, 0.35);
+}
+.marke--klasse-C {
+  color: var(--klasse-c);
+  background: rgba(232, 204, 92, 0.1);
+  border-color: rgba(232, 204, 92, 0.35);
+}
 .marke--akzent {
   color: var(--akzent);
   background: var(--akzent-weich);

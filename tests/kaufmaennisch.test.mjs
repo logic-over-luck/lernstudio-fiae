@@ -31,6 +31,34 @@ test('Tilgung: Summe der Tilgungen = Darlehen, Zinsen sinken', () => {
   }
 });
 
+test('Eigenleistung: Gleichstand und erste günstigere Menge, Kosten stimmen', () => {
+  const zahl = (t) => Number(t.replace(/\./g, '').replace(',', '.'));
+  const arten = new Set();
+  for (let s = 1; s < 400; s++) {
+    const a = k.eigenleistung(zufall(s));
+    assert.equal(a.sp, 'AP1-3-2-4');
+    arten.add(a.titel);
+    const w = Object.fromEntries(a.felder.map((f) => [f.id, f.erwartet]));
+    if (a.titel === 'Eigenentwicklung oder Lizenzen') {
+      const preis = zahl(a.text.match(/\*\*([\d.,]+) €\*\* je Nutzer/)[1]);
+      const jahr = w.k ?? zahl(a.text.match(/umgerechnet \*\*([\d.,]+) €\*\*/)[1]);
+      assert.equal(w.g * preis, jahr);
+      assert.equal(w.a, w.g + 1);
+    }
+    if (a.titel === 'Intern oder extern') {
+      assert.notEqual(w.i, w.e);
+      assert.equal(w.d, Math.abs(w.i - w.e));
+      assert.equal(w.w, w.i < w.e ? 'intern' : 'extern');
+    }
+    if (a.titel === 'Im Budget machbar?') {
+      assert.ok(w.g < w.e);
+      const budget = zahl(a.text.match(/Budget beträgt \*\*([\d.,]+) €/)[1]);
+      assert.equal(w.m, w.g <= budget ? 'ja' : 'nein');
+    }
+  }
+  assert.equal(arten.size, 4);
+});
+
 test('Sozialversicherung: Beispiel von Hand', () => {
   // 3.000 € brutto, Zusatzbeitrag 2,9 %: 3000 · (7,3 + 1,45) % = 262,50 €
   assert.equal(runde(3000 * (14.6 / 2 + 2.9 / 2) / 100, 2), 262.5);

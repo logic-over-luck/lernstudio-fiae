@@ -613,6 +613,8 @@ mark.treffer {
 .sp__art {
   color: var(--text-3);
   display: inline-flex;
+  justify-content: center;
+  width: 14px;
 }
 .sp__pfeil {
   opacity: 0;
@@ -1150,6 +1152,17 @@ mark.treffer {
 }
 .bewertung--bereit {
   opacity: 1;
+}
+.bewertung__regel {
+  margin: var(--s-3) 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--text-3);
+  text-align: center;
+}
+.bewertung__regel strong {
+  color: var(--text-2);
+  font-weight: 600;
 }
 .bewertung__knopf {
   display: flex;
@@ -1827,6 +1840,11 @@ mark.treffer {
   font-weight: 500;
   color: var(--text-3);
 }
+.kachel__aufteilung {
+  font-size: var(--t-s);
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
 .kachel__neben {
   margin-left: auto;
   font-size: var(--t-xs);
@@ -2343,6 +2361,15 @@ body {
   flex-shrink: 0;
   margin-top: 3px;
 }
+.np-buch {
+  margin-top: var(--s-2);
+}
+.np-buch__stelle {
+  white-space: nowrap;
+}
+.np-buch__fehlt {
+  font-style: italic;
+}
 .np__kopf {
   justify-content: space-between;
 }
@@ -2601,4 +2628,26 @@ body {
 .np__kuer-satz {
   margin: var(--s-2) 0;
   font-size: var(--t-s);
+}
+
+/* Lernreihenfolge: Merksatz im Lernplan, Hinweis am Stichpunkt, Tabelle der Obergrenzen */
+.lernen__merksatz {
+  margin-top: 6px;
+  max-width: 72ch;
+  line-height: 1.5;
+  color: var(--text-2);
+  font-size: 13px;
+}
+.lernen__merksatz svg {
+  vertical-align: -2px;
+  margin-right: 4px;
+}
+.lernen__merksatz a {
+  color: var(--akzent);
+  white-space: nowrap;
+}
+.sp-wichtig__hinweis {
+  flex-basis: 100%;
+  color: var(--text-3);
+  font-style: italic;
 }

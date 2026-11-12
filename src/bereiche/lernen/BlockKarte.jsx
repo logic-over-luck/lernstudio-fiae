@@ -1,19 +1,18 @@
 // Eine Block-Karte im Lernplan: zugeklappt Kopfzeile, aufgeklappt links die Stichpunkte,
-// rechts Wiederholungs-Phasen und die Details des gewählten Stichpunkts.
+// rechts die Details des gewählten Stichpunkts. Wiederholt wird mit den Lernkarten (offene Karten).
 
 import { useState } from 'preact/hooks';
 import { inhalt } from '../../daten/inhalt.js';
 import { erfasse } from '../../lernstand/store.js';
 import { kartenZustand } from '../../lernstand/ableiten.js';
 import { useEinstellung } from '../../lernstand/einstellungen.js';
-import { PHASEN_ABSTAND } from '../../lernstand/regeln.js';
-import { datumMitWochentag, relativ, tagVon } from '../../lernstand/zeit.js';
 import { geheZu, link } from '../../router.js';
 import { Icon, Knopf, SymbolKnopf, Haken, StufenMarke, BlockMarke, Marke, Aufklapp, Ring, Rich, Treffer } from '../../ui/bausteine.jsx';
-import { terminName } from '../../daten/wichtigkeit.js';
+import { pruefungenText, punkteText, terminName } from '../../daten/wichtigkeit.js';
 import { melde, bestaetige } from '../../ui/dialog.jsx';
 import { uebungenFuer, uebungenFuerBlock } from '../trainer/verzeichnis.js';
-import { lernpromptBlock, lernpromptStichpunkt, blockAuswahl, kopiere } from './lernprompt.js';
+import { kopiere } from './lernprompt.js';
+import { promptStichpunkt, promptBlock, hatFesteBlockPrompts } from './lernprompt-neu.js';
 
 export const ART_ICON = { Wissen: 'book-open', Rechnen: 'calculator', Zeichnen: 'shapes', Schreiben: 'code-xml' };
 
@@ -22,11 +21,11 @@ async function promptKopieren(text, was = 'Lernprompt') {
   melde(ok ? `${was} kopiert – füge ihn in deinen KI-Chat ein.` : 'Kopieren hat nicht geklappt. Bitte erneut versuchen.', { icon: 'copy', fehler: !ok });
 }
 
-// Block-Prompt: nur offene Stichpunkte; ist alles abgehakt, ein Wiederholungs-Prompt
+// Block-Prompt: AP1 der feste Prompt des nächsten offenen Stichpunkts, sonst nur offene Stichpunkte;
+// ist alles abgehakt, ein Wiederholungs-Prompt (lernprompt-neu.js)
 function blockPromptKopieren(block, stand) {
-  const { modus, ids } = blockAuswahl(block, stand);
-  const was = modus === 'wiederholen' ? 'Wiederholungs-Prompt' : ids.length === 1 ? 'Lernprompt für den offenen Stichpunkt' : `Lernprompt für ${ids.length} offene Stichpunkte`;
-  promptKopieren(lernpromptBlock(block, inhalt, stand), was);
+  const { text, was } = promptBlock(block, inhalt, stand);
+  promptKopieren(text, was);
 }
 
 export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, auswahl, onAuswahl, suche, treffer, raum }) {
@@ -45,7 +44,7 @@ export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, ausw
     } else {
       const ok = await bestaetige({
         titel: 'Block wieder öffnen?',
-        text: `Alle ${block.sp.length} Stichpunkte von „${block.titel}" werden wieder als offen markiert, die Punkte dafür werden abgezogen. Erledigte Wiederholungen bleiben erhalten.`,
+        text: `Alle ${block.sp.length} Stichpunkte von „${block.titel}" werden wieder als offen markiert, die Punkte dafür werden abgezogen. Schon bewertete Lernkarten behalten ihren Stand.`,
         ja: 'Wieder öffnen',
       });
       if (ok) erfasse(...block.sp.map((id) => ({ e: 'sp', id, an: false })));
@@ -55,7 +54,7 @@ export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, ausw
   return (
     <article
       id={`block-${block.id}`}
-      class={`block ${offen ? 'block--offen' : ''} ${z.fertig ? 'block--fertig' : ''} ${z.faellig ? 'block--faellig' : ''}`}
+      class={`block ${offen ? 'block--offen' : ''} ${z.fertig ? 'block--fertig' : ''}`}
     >
       <div class="block__kopf" onClick={onUmschalten}>
         <Haken an={z.fertig} teil={z.angefangen} gross onWechsel={blockHaken} label={`Block ${block.titel} abhaken`} />
@@ -75,16 +74,6 @@ export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, ausw
               </button>
             </h3>
             <BlockMarke w={block.wichtig} />
-            {z.faellig && (
-              <Marke ton="warn" icon="refresh-cw">
-                Wiederholung fällig
-              </Marke>
-            )}
-            {z.gefestigt && (
-              <Marke ton="gut" icon="award" tip="Alle drei Wiederholungen erledigt">
-                Gefestigt
-              </Marke>
-            )}
           </div>
           {block.satz && <p class="block__satz">{block.satz}</p>}
         </div>
@@ -102,7 +91,7 @@ export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, ausw
           )}
           <SymbolKnopf
             icon="copy"
-            label={z.fertig ? 'Wiederholungs-Prompt kopieren' : 'Lernprompt kopieren (nur offene Stichpunkte)'}
+            label={z.fertig ? 'Wiederholungs-Prompt kopieren' : hatFesteBlockPrompts(block, inhalt) ? 'Lernprompt kopieren (nächster offener Stichpunkt)' : 'Lernprompt kopieren (nur offene Stichpunkte)'}
             onClick={() => blockPromptKopieren(block, stand)}
           />
           <Knopf
@@ -132,7 +121,6 @@ export function BlockKarte({ block, zustand: z, stand, offen, onUmschalten, ausw
             </ul>
           </div>
           <div class="block__rechts">
-            <Phasen block={block} z={z} heute={stand.heute} raum={raum} />
             <SpDetail key={gewaehlt} sp={inhalt.sp.get(gewaehlt)} stand={stand} raum={raum} />
           </div>
         </div>
@@ -145,74 +133,31 @@ function SpZeile({ sp, an, gewaehlt, onWahl, suche, treffer, stand }) {
   const notiz = stand.notizen.has(sp.id);
   return (
     <li class={`sp ${gewaehlt ? 'sp--gewaehlt' : ''} ${an ? 'sp--erledigt' : ''} ${treffer && suche ? 'sp--treffer' : ''}`}>
-      <Haken an={an} onWechsel={(neu) => erfasse({ e: 'sp', id: sp.id, an: neu })} label={`${sp.titel} abhaken`} />
+      <Haken
+        an={an}
+        onWechsel={(neu) => {
+          erfasse({ e: 'sp', id: sp.id, an: neu });
+          const offen = (inhalt.kartenJeSp.get(sp.id) ?? []).filter((k) => !stand.karten.has(k)).length;
+          if (neu && offen) melde(`${offen} Lernkarten sind jetzt offen.`, { icon: 'layers' });
+        }}
+        label={`${sp.titel} abhaken`}
+      />
       <button class="sp__knopf" aria-pressed={gewaehlt} onClick={onWahl}>
         <span class="sp__titel">
           <Treffer text={sp.titel} suche={suche} />
         </span>
         <span class="sp__info">
-          <StufenMarke w={sp.wichtig} />
           {notiz && <Icon name="notebook-pen" groesse={13} />}
-          {sp.art !== 'Wissen' && (
-            <span class="sp__art" data-tip={sp.art}>
-              <Icon name={ART_ICON[sp.art]} groesse={13} />
-            </span>
-          )}
+          <StufenMarke w={sp.wichtig} />
+          {/* fester Platz, auch ohne Symbol – so stehen die Abzeichen aller Zeilen genau untereinander */}
+          <span class="sp__art" data-tip={sp.art !== 'Wissen' ? sp.art : undefined}>
+            {sp.art !== 'Wissen' && <Icon name={ART_ICON[sp.art]} groesse={13} />}
+          </span>
           <Icon name="chevron-right" groesse={14} class="sp__pfeil" />
         </span>
       </button>
-      <SymbolKnopf icon="copy" groesse="s" label={`Lernprompt kopieren: ${sp.titel}`} class="sp__kopie" onClick={() => promptKopieren(lernpromptStichpunkt(sp, inhalt, stand))} />
+      <SymbolKnopf icon="copy" groesse="s" label={`Lernprompt kopieren: ${sp.titel}`} class="sp__kopie" onClick={() => promptKopieren(promptStichpunkt(sp, inhalt, stand))} />
     </li>
-  );
-}
-
-function Phasen({ block, z, heute, raum }) {
-  const markieren = (phase) => {
-    erfasse({ e: 'wdh', id: block.id, p: phase });
-    melde(phase === 3 ? `Alle drei Wiederholungen geschafft – „${block.titel}" ist gefestigt.` : `Wiederholung ${phase} erledigt. Die nächste folgt in ${PHASEN_ABSTAND[phase]} Tagen.`, {
-      icon: phase === 3 ? 'award' : 'refresh-cw',
-    });
-  };
-  let hinweis;
-  if (!z.erledigtAm) hinweis = 'Hake alle Stichpunkte ab. Danach wird der Block nach 1, 7 und 30 Tagen zur Wiederholung fällig.';
-  else if (z.gefestigt) hinweis = 'Alle drei Wiederholungen erledigt. Halte das Wissen mit den Lernkarten frisch.';
-  else if (!z.fertig) hinweis = 'Ein Stichpunkt ist wieder offen. Die Wiederholungen ruhen, bis der Block wieder abgehakt ist.';
-  else if (z.faellig) hinweis = 'Lies die Kurzfassungen und geh die Lernkarten des Blocks durch. Dann die fällige Phase anklicken.';
-  else hinweis = `Nächste Wiederholung ${relativ(z.naechste.faellig, heute)} (${datumMitWochentag(z.naechste.faellig)}).`;
-
-  return (
-    <div class="phasen">
-      <div class="ueberschrift-klein block__spalte-titel">
-        <Icon name="refresh-cw" groesse={13} /> Wiederholungs-Phasen
-      </div>
-      <div class="phasen__reihe">
-        {[1, 2, 3].map((p) => {
-          const erledigt = z.phasen[p - 1];
-          const istNaechste = z.naechste?.phase === p;
-          const faellig = istNaechste && z.faellig;
-          const zustand = erledigt ? 'erledigt' : faellig ? 'faellig' : 'gesperrt';
-          const tip = erledigt
-            ? `Erledigt am ${datumMitWochentag(tagVon(erledigt))}`
-            : faellig
-              ? 'Jetzt fällig – anklicken, wenn du wiederholt hast'
-              : istNaechste && z.fertig
-                ? `Fällig ab ${datumMitWochentag(z.naechste.faellig)}`
-                : 'Noch gesperrt';
-          return (
-            <button key={p} class={`phase phase--${zustand}`} disabled={!faellig} onClick={() => markieren(p)} data-tip={tip} aria-label={`Wiederholung ${p}: ${tip}`}>
-              {erledigt ? <Icon name="check" groesse={13} strich={2.6} /> : !faellig ? <Icon name="lock" groesse={12} /> : null}
-              {p}×
-            </button>
-          );
-        })}
-        {z.faellig && (
-          <Knopf groesse="s" variante="geist" icon="layers" onClick={() => geheZu(raum, 'karten', 'sitzung', { quelle: `block:${block.id}` })}>
-            Mit Karten wiederholen
-          </Knopf>
-        )}
-      </div>
-      <p class="phasen__hinweis">{hinweis}</p>
-    </div>
   );
 }
 
@@ -241,6 +186,7 @@ function SpDetail({ sp, stand, raum }) {
             <Icon name="info" groesse={13} /> {sp.neu.hinweis}
           </p>
         )}
+        <ImBuch neu={sp.neu} />
       </div>
 
       <div class="sp-detail__knoepfe">
@@ -252,7 +198,7 @@ function SpDetail({ sp, stand, raum }) {
             Üben: {u.modus.name}
           </Knopf>
         ))}
-        <Knopf groesse="s" variante="geist" icon="copy" onClick={() => promptKopieren(lernpromptStichpunkt(sp, inhalt, stand))}>
+        <Knopf groesse="s" variante="geist" icon="copy" onClick={() => promptKopieren(promptStichpunkt(sp, inhalt, stand))}>
           Lernprompt
         </Knopf>
         <Knopf groesse="s" variante="geist" icon="notebook-pen" onClick={() => setNotizOffen(!notizOffen)} aria-pressed={notizOffen}>
@@ -307,12 +253,10 @@ function Wichtigkeit({ sp, raum }) {
         <StufenMarke w={w} />
       </a>
       <span class="sp-wichtig__text">
-        {w.x
-          ? `In ${w.x} von ${w.n} Prüfungen dran${w.nurStichwort ? ` (${w.nurStichwort} davon nur laut Themenliste)` : ''}, zuletzt ${terminName(w.zuletzt)}`
-          : w.n
-            ? `Kam in den ${w.n} ausgewerteten Prüfungen bisher nicht dran – kann aber kommen`
-            : 'Keine ausgewerteten Prüfungen'}
+        {pruefungenText(w)}
+        {w.system === 'klassen' && w.punkte ? ` · ${punkteText(w)}` : ''}
       </span>
+      {w.hinweis && <span class="sp-wichtig__text sp-wichtig__hinweis">{w.hinweis}</span>}
       {(w.quer ?? []).map((q) => (
         <Marke key={q.raum} ton="neutral" icon="arrow-left-right" tip={`Der Stoff kam auch in Prüfungen von ${q.name} vor: ${q.termine.map(terminName).join(', ')}. Das zählt nicht zur Stufe hier.`}>
           auch in {q.x} von {q.n} {q.name}
@@ -331,15 +275,49 @@ function Wichtigkeit({ sp, raum }) {
 // Stufe, Herkunft und Begründungen klein zum Aufklappen.
 const STUFE_NAME = { 1: 'Wiedergeben', 2: 'Verstehen', 3: 'Anwenden', 4: 'Beurteilen' };
 
-// Regelwerk v2.0 (D4): buch:GS-2.4.3-S119 → „GS 2.4.3, S. 119“
+// Bücher „IT-Berufe“ (Hrsg. Gratzke): GS = Buch 1, FS = Buch 2, FS2 = Buch 3. Seiten sind Druckseiten.
+const BUCH_NR = { GS: 1, FS: 2, FS2: 3 };
+const BUCH_NAME = { 1: 'IT-Berufe, Grundstufe LF 1–5', 2: 'IT-Berufe, Fachstufe LF 6–9', 3: 'IT-Berufe, Fachstufe LF 10–12' };
+const seitenText = (von, bis) => (bis && bis !== von ? `S. ${von}–${bis}` : `S. ${von}`);
+
+// buch:GS-2.4.3-S119 → „Buch 1, 2.4.3, S. 119“; buch:GS-2.4.3-S119-121 → „…, S. 119–121“
 function buchText(wert) {
-  const m = wert.match(/^(GS|FS2|FS)-([\d.]+?)(?:-S(\d+))?$/);
-  return m ? `${m[1]} ${m[2]}${m[3] ? `, S. ${m[3]}` : ''}` : wert;
+  const m = wert.match(/^(GS|FS2|FS)-([\d.]+?)(?:-S(\d+)(?:-(\d+))?)?$/);
+  return m ? `Buch ${BUCH_NR[m[1]]}, ${m[2]}${m[3] ? `, ${seitenText(m[3], m[4])}` : ''}` : wert;
 }
 
 function herkunftText(h) {
   const [art, wert] = h.split(':');
-  return art === 'katalog' ? `Katalog ${wert}` : art === 'beleg' ? `Prüfung ${wert}` : art === 'regel' ? `Puffer-Regel ${wert}` : art === 'buch' ? `Lehrbuch ${buchText(wert)}` : h;
+  return art === 'katalog' ? `Katalog ${wert}` : art === 'beleg' ? `Prüfung ${wert}` : art === 'regel' ? `Puffer-Regel ${wert}` : art === 'buch' ? buchText(wert) : h;
+}
+
+// „Im Buch“: wo der Stoff des Themas im Lehrbuch steht (neu.buch), sonst was in keinem Buch steht (neu.nichtImBuch)
+function ImBuch({ neu }) {
+  const stellen = neu.buch ?? [];
+  const fehlt = neu.nichtImBuch ?? [];
+  if (!stellen.length && !fehlt.length) return null;
+  return (
+    <p class="np-hinweis np-buch">
+      <Icon name="book-open" groesse={13} />
+      <span>
+        {stellen.length > 0 && (
+          <>
+            Im Buch:{' '}
+            {stellen.map((s, i) => (
+              <span key={i} class="np-buch__stelle" data-tip={`${BUCH_NAME[s.buch]} · ${s.titel}`}>
+                {i > 0 && ' · '}Buch {s.buch}, {s.abschnitt}, {seitenText(s.von, s.bis)}
+              </span>
+            ))}
+          </>
+        )}
+        {fehlt.length > 0 && (
+          <span class="np-buch__fehlt">
+            {stellen.length > 0 ? ' · ' : ''}Nicht im Buch: {fehlt.join(', ')}
+          </span>
+        )}
+      </span>
+    </p>
+  );
 }
 
 
@@ -439,7 +417,7 @@ function KoennenZeile({ k, text, offen, onUmschalten }) {
 
 const KUER_QUELLE = { podcast: 'IT-Berufe-Podcast', lernzettel: 'Lernzettel', gegenpruefung: 'Gegenprüfung', pruefer: 'Prüfer-Hinweis' };
 function kuerQuelle(q) {
-  if (q.startsWith('buch:')) return `Lehrbuch ${buchText(q.slice(5))}`;
+  if (q.startsWith('buch:')) return buchText(q.slice(5));
   return KUER_QUELLE[q.split(':')[0]] ?? q;
 }
 

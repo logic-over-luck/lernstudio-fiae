@@ -9,7 +9,8 @@
 //   weil Räume verschieden dicht geprüft werden (PB2: SQL in 8–9 von 10 Prüfungen; AP1: im Schnitt 2 von 11).
 //   Innerhalb eines Raums gilt: gleiche Zahl, gleiche Stufe. Gemessen: Top-Themen kommen in der nächsten Prüfung
 //   1,5- bis 2,5-mal so oft wieder wie die übrigen; feiner trennen die Daten nicht.
-// – Hauptzahl in den Details: „in x von N Prüfungen“; der plausible Bereich (80-%-Intervall, Jeffreys-Prior) im Tooltip.
+// – Angezeigt wird nur Beobachtetes: „in x von N Prüfungen“. Der plausible Bereich (80-%-Intervall, Jeffreys-Prior)
+//   wird noch berechnet, aber nicht mehr angezeigt – er wirkte wie eine Vorhersage.
 // – Das Fundament (Stichpunkte, die auf diesem aufbauen) zählt nicht zur Stufe, nur zur Lernreihenfolge.
 
 export const STUFEN = [
@@ -47,9 +48,35 @@ export const PAUSE = 0.8;
 // Plausibler Bereich: 80-%-Intervall
 export const BEREICH = [0.1, 0.9];
 
+// Lernreihenfolge A / B / C (für Räume, deren Stichpunkte `klasse`, `punkte` und `rang` tragen; zurzeit AP1).
+// Gerechnet außerhalb der App mit ap1/werkzeuge/klassen_lernstudio.py, geprüft per Rückwärtstest über die Altprüfungen:
+// A = alles, was in der Prüfung gerechnet oder gezeichnet wird, dazu seine Voraussetzungen (`neu.bautAuf`) und
+// Englisch als Fertigkeit; B = übriges Wissen, das schon geprüft wurde; C = Wissen, das noch nie geprüft wurde.
+// `rang` ist die empfohlene Reihenfolge (in A und B nach Punkten je Können-Aussage, Voraussetzungen direkt davor,
+// C in Lernplan-Reihenfolge). Welches Wissensthema drankommt, lässt sich kaum vorhersagen – deshalb nur drei Stufen
+// und keine Prozente. Für eine gute Note braucht man alle drei.
+export const KLASSEN = [
+  { nr: 1, kurz: 'A', name: 'A · Rechnen & Zeichnen', icon: null, text: 'Kommt in jeder Prüfung, bringt viele Punkte und braucht Übung – zuerst lernen.' },
+  { nr: 2, kurz: 'B', name: 'B · Wissen, schon geprüft', icon: null, text: 'Wissensthemen, die schon in Prüfungen dran waren.' },
+  { nr: 3, kurz: 'C', name: 'C · Wissen, noch nie geprüft', icon: null, text: 'Stand bisher nur im Katalog – kann trotzdem kommen.' },
+];
+export const GRUNDLAGE_NAME = 'A · Grundlage';
+export const KLASSE_NR = { A: 1, B: 2, C: 3 };
+// Ein Raum rechnet mit Klassen, wenn alle seine Stichpunkte Klasse, Punkte und Rang tragen
+export const hatKlassen = (spListe) =>
+  spListe.length > 0 && spListe.every((s) => s.klasse in KLASSE_NR && typeof s.punkte === 'number' && Number.isInteger(s.rang));
+// Filter „oft geprüft“ bzw. „Nur A“: bis zu welcher Stufe
+export const oftBis = (system) => (system === 'klassen' ? 1 : OFT_BIS);
+// Name der Seite und des Menüpunkts
+export const seitenName = (system) => (system === 'klassen' ? 'Lernreihenfolge' : 'Wichtigkeit');
+
 // Stufe aus der Zahl der Prüfungen und den Grenzen des Raums
 export const stufeFuer = (anzahl, g) => (anzahl >= g.top ? 1 : anzahl >= g.wichtig ? 2 : anzahl >= 1 ? 3 : NICHT_GEPRUEFT);
-export const stufe = (nr) => STUFEN[nr - 1];
+// Stufen-Liste und Stufe je System: 'klassen' (A, B, C) oder 'pruefungen' (Top-Thema … Noch nie geprüft)
+export const stufenListe = (system) => (system === 'klassen' ? KLASSEN : STUFEN);
+export const stufe = (nr, system) => stufenListe(system)[nr - 1];
+// Zahl mit Komma, höchstens eine Nachkommastelle: 13.25 → „13,3“, 9 → „9“
+export const zahl = (x) => String(Math.round(x * 10) / 10).replace('.', ',');
 
 // Prüfungstermine: 2026H → Herbst 2026, 2025S → Sommer 2025. Reihenfolge nach Jahr, dann Frühjahr/Sommer vor Herbst/Winter.
 const JAHRESZEIT = { F: ['Frühjahr', 0], S: ['Sommer', 0], H: ['Herbst', 1], W: ['Winter', 1] };
@@ -90,29 +117,51 @@ export function wichtigkeitRaum(spListe) {
   const n = pruefungen.size;
   const letzte = [...pruefungen.keys()].sort(terminVergleich).at(-1);
   const anzahlJe = new Map(spListe.map((s) => [s.id, new Set((s.pruef ?? []).map(([p]) => p)).size]));
-  const grenzen = grenzenFuer([...anzahlJe.values()]);
+  const klassen = hatKlassen(spListe);
+  const grenzen = klassen ? null : grenzenFuer([...anzahlJe.values()]);
   const je = new Map();
   for (const s of spListe) {
     const eigene = new Map();
     for (const [p, g] of s.pruef ?? []) eigene.set(p, Math.max(eigene.get(p) ?? 0, g));
     const x = eigene.size;
     const termine = [...eigene.keys()].sort(terminVergleich);
-    je.set(s.id, {
+    const basis = {
       x,
       // Prüfungen, die nur über die Themenliste des Podcasts belegt sind (Gewicht unter 0,6; UMBAU.md P74)
       nurStichwort: [...eigene.values()].filter((g) => g < 0.6).length,
       n,
-      // Anteil der Prüfungen des Raums (für die Reihenfolge)
-      quote: n ? x / n : 0,
-      stufe: stufeFuer(x, grenzen),
       termine,
       zuletzt: termine.at(-1) ?? null,
-      inLetzter: !!letzte && eigene.has(letzte),
-      ...plausiblerBereich(x, n),
-    });
+    };
+    je.set(
+      s.id,
+      klassen
+        ? {
+            ...basis,
+            system: 'klassen',
+            stufe: KLASSE_NR[s.klasse],
+            // In A, aber selbst kein Rechnen/Zeichnen: Voraussetzung oder Fertigkeit
+            name: s.klasse === 'A' && !['Rechnen', 'Zeichnen'].includes(s.art) ? GRUNDLAGE_NAME : KLASSEN[KLASSE_NR[s.klasse] - 1].name,
+            punkte: s.punkte,
+            rang: s.rang,
+            hinweis: s.prioHinweis ?? null,
+            quote: 0,
+            inLetzter: false,
+          }
+        : {
+            ...basis,
+            system: 'pruefungen',
+            // Anteil der Prüfungen des Raums (für die Reihenfolge)
+            quote: n ? x / n : 0,
+            stufe: stufeFuer(x, grenzen),
+            inLetzter: !!letzte && eigene.has(letzte),
+            ...plausiblerBereich(x, n),
+          },
+    );
   }
   return {
     raum: {
+      system: klassen ? 'klassen' : 'pruefungen',
       n,
       grenzen,
       aktuell: [...pruefungen.values()].filter((g) => g >= 1).length,
@@ -124,27 +173,51 @@ export function wichtigkeitRaum(spListe) {
   };
 }
 
-// Zusammenfassung einer Liste von Stichpunkten (Block, Themenbereich): Anzahl je Stufe, beste Stufe
-export function stufenVerteilung(spListe) {
-  const anzahl = Array(STUFEN.length + 1).fill(0);
+// Zusammenfassung einer Liste von Stichpunkten (Block, Themenbereich): Anzahl je Stufe, beste Stufe und ihr Name
+export function stufenVerteilung(spListe, system = spListe[0]?.wichtig?.system ?? 'pruefungen') {
+  const liste = stufenListe(system);
+  const anzahl = Array(liste.length + 1).fill(0);
   for (const s of spListe) anzahl[s.wichtig.stufe]++;
-  return { anzahl, beste: spListe.length ? Math.min(...spListe.map((s) => s.wichtig.stufe)) : NICHT_GEPRUEFT };
+  const beste = spListe.length ? Math.min(...spListe.map((s) => s.wichtig.stufe)) : liste.length;
+  // Name der besten Stufe; in A „Rechnen & Zeichnen“ vor „Grundlage“
+  const namen = spListe.filter((s) => s.wichtig.stufe === beste).map((s) => s.wichtig.name ?? liste[beste - 1].name);
+  const besteName = namen.find((n) => n !== GRUNDLAGE_NAME) ?? namen[0] ?? liste[beste - 1]?.name;
+  return { system, anzahl, beste, besteName };
 }
 
-// Text für Tooltip und Details: „Top-Thema · In 6 von 11 Prüfungen dran, zuletzt Herbst 2026 · wahrscheinlich 4 bis 8 von 11“
-export function wichtigkeitText(w, { kurz = false } = {}) {
-  const teile = [stufe(w.stufe).name];
-  if (w.x) teile.push(`In ${w.x} von ${w.n} Prüfungen dran${w.nurStichwort ? ` (${w.nurStichwort} davon nur laut Themenliste)` : ''}, zuletzt ${terminName(w.zuletzt)}`);
-  else if (w.n) teile.push(`In keiner der ${w.n} ausgewerteten Prüfungen dran – kann trotzdem kommen`);
+// Wie oft geprüft, als Satz: „In 4 von 11 Prüfungen dran, zuletzt Frühjahr 2026“
+export function pruefungenText(w) {
+  if (w.x) return `In ${w.x} von ${w.n} Prüfungen dran${w.nurStichwort ? ` (${w.nurStichwort} davon nur laut Themenliste)` : ''}, zuletzt ${terminName(w.zuletzt)}`;
+  return w.n ? `In keiner der ${w.n} ausgewerteten Prüfungen dran – kann trotzdem kommen` : 'Keine ausgewerteten Prüfungen';
+}
+
+// Punkte als Satzteil: „zusammen 33 Punkte“
+export const punkteText = (w) => (w.punkte ? `zusammen ${zahl(w.punkte)} ${zahl(w.punkte) === '1' ? 'Punkt' : 'Punkte'}` : '');
+
+// Text für Tooltip und Details – nur Beobachtetes, keine Vorhersage.
+// Prüfungen: „Top-Thema · In 6 von 11 Prüfungen dran, zuletzt Herbst 2026“
+// Klassen:   „A · Rechnen & Zeichnen · In 4 von 11 Prüfungen dran, zuletzt Frühjahr 2026 · zusammen 33 Punkte“
+export function wichtigkeitText(w) {
+  const teile = [w.name ?? stufe(w.stufe, w.system).name, pruefungenText(w)];
+  if (w.system === 'klassen' && w.punkte) teile.push(punkteText(w));
   for (const q of w.quer ?? []) teile.push(`auch in ${q.x} von ${q.n} ${q.name}-Prüfungen`);
-  if (!kurz && w.x) teile.push(w.von === w.bis ? `wahrscheinlich ${w.von} von ${w.n}` : `wahrscheinlich ${w.von} bis ${w.bis} von ${w.n}`);
   return teile.join(' · ');
 }
 
-// Reihenfolge-Wert eines offenen Stichpunkts: eigener Anteil plus LAMBDA mal die Anteile der offenen Stichpunkte,
-// die auf ihm aufbauen (Fundament); wer in der letzten Prüfung dran war, mit Abschlag PAUSE. offen(id) sagt, ob ein Stichpunkt noch nicht abgehakt ist.
-const anteilFuerReihenfolge = (w) => (w ? w.quote * (w.inLetzter ? PAUSE : 1) : 0);
+// Kurzer Grund für „Heute im Fokus“
+export function grundText(w) {
+  if (w.system === 'klassen') return `${w.name}, ${w.x ? `in ${w.x} von ${w.n} Prüfungen dran${w.punkte ? `, ${punkteText(w)}` : ''}` : 'bisher nicht geprüft'}`;
+  const name = stufe(w.stufe, w.system).name;
+  return w.x ? `${name}, in ${w.x} von ${w.n} Prüfungen dran (zuletzt ${terminName(w.zuletzt)})` : 'bisher in keiner Prüfung dran';
+}
+
+// Reihenfolge-Wert eines offenen Stichpunkts (größer = früher). offen(id) sagt, ob ein Stichpunkt noch nicht abgehakt ist.
+// – Klassen: die empfohlene Reihenfolge `rang` (Voraussetzungen sind dort schon eingerechnet).
+// – Prüfungen: Quote der Prüfungen plus LAMBDA mal die Quoten der offenen Stichpunkte, die darauf aufbauen (Fundament);
+//   wer in der letzten Prüfung dran war, mit Abschlag PAUSE.
+const anteilFuerReihenfolge = (w) => (w && w.system !== 'klassen' ? w.quote * (w.inLetzter ? PAUSE : 1) : 0);
 export function reihenfolgeWert(s, index, offen = () => true) {
+  if (s.wichtig?.system === 'klassen') return 100000 - s.wichtig.rang;
   const fundament = (s.grundlageFuer ?? []).filter(offen).reduce((a, id) => a + anteilFuerReihenfolge(index.sp.get(id)?.wichtig), 0);
   return anteilFuerReihenfolge(s.wichtig) + LAMBDA * fundament;
 }

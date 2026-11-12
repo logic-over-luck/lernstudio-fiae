@@ -274,7 +274,7 @@ export function kalkulation(r) {
 // ---------- Kostenvergleich ----------
 
 export function kostenvergleich(r) {
-  const art = r.wahl(['beschaffung', 'beschaffung', 'payperuse', 'makeorbuy']);
+  const art = r.wahl(['beschaffung', 'beschaffung', 'payperuse']);
   if (art === 'payperuse') {
     const kauf = r.stufe(1800, 9000, 100);
     const wartungJahr = r.stufe(0, 600, 50);
@@ -292,26 +292,6 @@ export function kostenvergleich(r) {
         { id: 'g', label: 'Kauf ist günstiger ab Nutzungen', erwartet: grenze },
       ],
       loesung: [`Kauf: ${euro(kauf)} + ${jahre} · ${euro(wartungJahr)} = **${euro(fix)}**`, `Gleichstand: ${euro(fix)} ÷ ${euro(jeNutzung)} = ${z(runde(fix / jeNutzung, 2))} Nutzungen`, `Erst wenn Pay-per-Use teurer ist als der Kauf, lohnt sich der Kauf: ab **${grenze}** Nutzungen`],
-    };
-  }
-  if (art === 'makeorbuy') {
-    const stunden = r.stufe(80, 400, 10);
-    const satzIntern = r.wahl([48, 55, 62, 70]);
-    const extern = ct(stunden * satzIntern * r.wahl([0.8, 0.9, 1.1, 1.25, 1.4]) + r.stufe(0, 2000, 250));
-    const betreuung = r.stufe(10, 40, 5);
-    const intern = stunden * satzIntern;
-    const externGes = extern + betreuung * satzIntern;
-    const guenstiger = intern < externGes ? 'Eigenleistung' : 'Fremdvergabe';
-    return {
-      titel: 'Eigenleistung oder Fremdvergabe',
-      sp: 'AP1-3-2-1',
-      text: `Eine Software kann intern entwickelt werden: **${stunden} Stunden** zu **${satzIntern} €**. Ein Dienstleister bietet sie für **${euro(extern)}** an; dabei fallen intern noch **${betreuung} Stunden** für Abstimmung und Abnahme an. Welche Lösung ist günstiger?`,
-      felder: [
-        { id: 'i', label: 'Kosten Eigenleistung', erwartet: intern, ...EUR },
-        { id: 'e', label: 'Kosten Fremdvergabe gesamt', erwartet: externGes, ...EUR },
-        { id: 'w', label: 'Günstiger ist', typ: 'auswahl', erwartet: guenstiger, optionen: ['Eigenleistung', 'Fremdvergabe'] },
-      ],
-      loesung: [`Eigenleistung: ${stunden} h · ${satzIntern} € = **${euro(intern)}**`, `Fremdvergabe: ${euro(extern)} + ${betreuung} h · ${satzIntern} € = **${euro(externGes)}**`, `Günstiger: **${guenstiger}**`, 'Nicht in der Rechnung: Abhängigkeit vom Dienstleister und Know-how, das nach außen geht bzw. im Haus bleibt.'],
     };
   }
   // Kauf, Leasing, Finanzierung über einen Zeitraum
@@ -354,6 +334,123 @@ export function kostenvergleich(r) {
       `Leasing: ${monate} · ${euro(leasing)}${sonder ? ` + ${euro(sonder)}` : ''} = **${euro(kLeasing)}**`,
       `Finanzierung: ${euro(kauf)} + ${euro(finanzZins)} Zinsen${restwert ? ` − ${euro(restwert)}` : ''} = **${euro(kFinanz)}**`,
       `Günstigstes: **${guenstig}**`,
+    ],
+  };
+}
+
+// ---------- Eigenleistung oder Fremdvergabe (Make or Buy) ----------
+
+export function eigenleistung(r) {
+  const art = r.art(['angebot', 'stunden', 'lizenz', 'lizenz', 'budget']);
+  const sp = 'AP1-3-2-4';
+  const NICHT_IN_DER_RECHNUNG = 'Nicht in der Rechnung: Abhängigkeit vom Dienstleister und Know-how, das nach außen geht bzw. im Haus bleibt.';
+
+  if (art === 'angebot') {
+    // Pauschalangebot, dazu interner Aufwand für Abstimmung und Abnahme
+    const stunden = r.stufe(80, 400, 10);
+    const satzIntern = r.wahl([48, 55, 62, 70]);
+    const extern = ct(stunden * satzIntern * r.wahl([0.8, 0.9, 1.1, 1.25, 1.4]) + r.stufe(0, 2000, 250));
+    const betreuung = r.stufe(10, 40, 5);
+    const intern = stunden * satzIntern;
+    const externGes = extern + betreuung * satzIntern;
+    const guenstiger = intern < externGes ? 'Eigenleistung' : 'Fremdvergabe';
+    return {
+      titel: 'Eigenleistung oder Fremdvergabe',
+      sp,
+      text: `Eine Software kann intern entwickelt werden: **${stunden} Stunden** zu **${satzIntern} €**. Ein Dienstleister bietet sie für **${euro(extern)}** an; dabei fallen intern noch **${betreuung} Stunden** für Abstimmung und Abnahme an. Welche Lösung ist günstiger?`,
+      felder: [
+        { id: 'i', label: 'Kosten Eigenleistung', erwartet: intern, ...EUR },
+        { id: 'e', label: 'Kosten Fremdvergabe gesamt', erwartet: externGes, ...EUR },
+        { id: 'w', label: 'Günstiger ist', typ: 'auswahl', erwartet: guenstiger, optionen: ['Eigenleistung', 'Fremdvergabe'] },
+      ],
+      loesung: [`Eigenleistung: ${stunden} h · ${satzIntern} € = **${euro(intern)}**`, `Fremdvergabe: ${euro(extern)} + ${betreuung} h · ${satzIntern} € = **${euro(externGes)}**`, `Günstiger: **${guenstiger}**`, NICHT_IN_DER_RECHNUNG],
+    };
+  }
+
+  if (art === 'stunden') {
+    // Beide Seiten nach Stunden · Stundensatz, extern dazu Reisekosten
+    const hIntern = r.stufe(60, 240, 10);
+    const sIntern = r.wahl([45, 50, 55, 60, 65]);
+    const hExtern = Math.round((hIntern * r.wahl([0.6, 0.7, 0.75, 0.8, 0.9])) / 5) * 5;
+    const sExtern = r.wahl([75, 80, 85, 90, 95, 110]);
+    const intern = hIntern * sIntern;
+    let reise = r.stufe(0, 1200, 150);
+    if (hExtern * sExtern + reise === intern) reise += 50;
+    const extern = hExtern * sExtern + reise;
+    const guenstiger = intern < extern ? 'intern' : 'extern';
+    const diff = Math.abs(intern - extern);
+    return {
+      titel: 'Intern oder extern',
+      sp,
+      text: `Ein Projekt kann von eigenen Mitarbeitern umgesetzt werden: **${hIntern} Stunden** zu **${sIntern} €**. Ein Dienstleister braucht **${hExtern} Stunden** zu **${sExtern} €**${reise ? ` und berechnet **${euro(reise)}** Reisekosten` : ''}. Welche Lösung ist günstiger und um wie viel?`,
+      felder: [
+        { id: 'i', label: 'Kosten intern', erwartet: intern, ...EUR },
+        { id: 'e', label: 'Kosten extern', erwartet: extern, ...EUR },
+        { id: 'w', label: 'Günstiger ist', typ: 'auswahl', erwartet: guenstiger, optionen: ['intern', 'extern'] },
+        { id: 'd', label: 'Unterschied', erwartet: diff, ...EUR },
+      ],
+      loesung: [
+        `Intern: ${hIntern} h · ${sIntern} € = **${euro(intern)}**`,
+        `Extern: ${hExtern} h · ${sExtern} €${reise ? ` + ${euro(reise)}` : ''} = **${euro(extern)}**`,
+        `Günstiger ist **${guenstiger}**, um **${euro(diff)}**`,
+        NICHT_IN_DER_RECHNUNG,
+      ],
+    };
+  }
+
+  if (art === 'lizenz') {
+    // Ab welcher Nutzerzahl ist die Eigenentwicklung günstiger als Lizenzen? Gleichstand ≠ erste günstigere Menge.
+    const preis = r.wahl([60, 80, 96, 120, 150, 180, 240]);
+    const gleich = r.stufe(20, 150, 5);
+    const jahr = gleich * preis;
+    const direkt = r.ja(0.3);
+    const jahre = r.wahl([3, 4, 5]);
+    const wartung = Math.round((jahr * r.wahl([0.2, 0.25, 0.3, 0.4])) / 100) * 100;
+    const entwicklung = (jahr - wartung) * jahre;
+    const kosten = direkt
+      ? `Eine Eigenentwicklung kostet für Entwicklung und Wartung umgerechnet **${euro(jahr)}** im Jahr.`
+      : `Eine Eigenentwicklung kostet einmalig **${euro(entwicklung)}** und soll **${jahre} Jahre** genutzt werden; dazu kommen **${euro(wartung)}** Wartung je Jahr.`;
+    return {
+      titel: 'Eigenentwicklung oder Lizenzen',
+      sp,
+      text: `${kosten} Eine fertige Software kostet **${euro(preis)}** je Nutzer und Jahr. Bei wie vielen Nutzern sind beide gleich teuer, und ab wie vielen Nutzern ist die Eigenentwicklung günstiger?`,
+      felder: [
+        ...(direkt ? [] : [{ id: 'k', label: 'Kosten Eigenentwicklung je Jahr', erwartet: jahr, ...EUR }]),
+        { id: 'g', label: 'Gleich teuer bei Nutzern', erwartet: gleich },
+        { id: 'a', label: 'Eigenentwicklung günstiger ab Nutzern', erwartet: gleich + 1 },
+      ],
+      loesung: [
+        ...(direkt ? [] : [`Je Jahr: ${euro(entwicklung)} ÷ ${jahre} + ${euro(wartung)} = **${euro(jahr)}**`]),
+        `Gleichstand: ${euro(jahr)} ÷ ${euro(preis)} = **${z(gleich)} Nutzer** – dann kosten beide gleich viel`,
+        `Günstiger ist die Eigenentwicklung erst ab **${z(gleich + 1)} Nutzern**`,
+        `IHK-Musterlösungen nennen oft den Gleichstand („ab ${z(gleich)}“) – in der Prüfung beide Werte hinschreiben.`,
+      ],
+    };
+  }
+
+  // Budget: eigene Leute haben nicht genug freie Stunden – gemischt oder ganz extern?
+  const bedarf = r.stufe(120, 400, 10);
+  const frei = r.stufe(40, bedarf - 40, 10);
+  const sIntern = r.wahl([45, 50, 55, 60]);
+  const sExtern = r.wahl([70, 75, 80, 90, 95]);
+  const nurExtern = bedarf * sExtern;
+  const gemischt = frei * sIntern + (bedarf - frei) * sExtern;
+  const budget = r.ja(0.7) ? Math.ceil((gemischt + r.stufe(0, nurExtern - gemischt, 100)) / 500) * 500 : Math.floor((gemischt * 0.95) / 500) * 500;
+  const im = gemischt <= budget;
+  return {
+    titel: 'Im Budget machbar?',
+    sp,
+    text: `Ein Vorhaben braucht **${bedarf} Stunden**. Eigene Mitarbeiter kosten **${sIntern} €** je Stunde, haben aber nur **${frei} Stunden** frei; ein Dienstleister verlangt **${sExtern} €** je Stunde. Das Budget beträgt **${euro(budget)}**. Was kostet es ganz extern, was gemischt (alle freien eigenen Stunden, den Rest extern)? Passt die gemischte Lösung ins Budget?`,
+    felder: [
+      { id: 'e', label: 'Kosten ganz extern', erwartet: nurExtern, ...EUR },
+      { id: 'g', label: 'Kosten gemischt', erwartet: gemischt, ...EUR },
+      { id: 'm', label: 'Gemischt im Budget?', typ: 'auswahl', erwartet: im ? 'ja' : 'nein', optionen: ['ja', 'nein'] },
+    ],
+    loesung: [
+      `Ganz intern geht nicht: nur ${frei} von ${bedarf} Stunden frei`,
+      `Ganz extern: ${bedarf} h · ${sExtern} € = **${euro(nurExtern)}**${nurExtern > budget ? ' – über dem Budget' : ''}`,
+      `Gemischt: ${frei} h · ${sIntern} € + ${bedarf - frei} h · ${sExtern} € = **${euro(gemischt)}**`,
+      im ? `Gemischt passt ins Budget (${euro(budget)}): eigene Leute einsetzen, den Rest vergeben.` : `Auch gemischt über dem Budget (${euro(budget)}): Budget erhöhen oder den Umfang kürzen.`,
     ],
   };
 }
@@ -767,4 +864,4 @@ export function kennzahlen(r) {
   };
 }
 
-export const ERZEUGER = { rechnung, nutzungsdauer, kalkulation, kostenvergleich, tilgung, angebot, nutzwert, sollist, sv, gewinn, kennzahlen };
+export const ERZEUGER = { rechnung, nutzungsdauer, kalkulation, kostenvergleich, eigenleistung, tilgung, angebot, nutzwert, sollist, sv, gewinn, kennzahlen };

@@ -1800,7 +1800,7 @@
   {
     "b": "Customizing",
     "l": null,
-    "e": "Anpassen von Standardsoftware über Einstellungen oder Erweiterungen an betriebliche Abläufe, ohne sie neu zu programmieren.",
+    "e": "Anpassen von Standardsoftware über Einstellungen (Konfiguration und Parametrisierung) an betriebliche Abläufe, ohne den Quellcode zu ändern.",
     "sp": [
       "AP1-5-2-4"
     ]

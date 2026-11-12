@@ -26,6 +26,11 @@ export function initialisiere() {
   ereignisse = geladen.ereignisse;
   ladeFehler = geladen.fehler ?? null;
   berechne();
+  // Den Browser einmal bitten, den Lernstand nicht von sich aus zu räumen (bei Speichermangel).
+  // Schützt nicht vor eigenem Löschen – dafür gibt es die Sicherung. Ohne Unterstützung passiert einfach nichts.
+  try {
+    navigator.storage?.persisted?.().then((ja) => ja || navigator.storage.persist()).catch(() => {});
+  } catch {}
   // Tageswechsel bei offener App erkennen
   const pruefeTag = () => {
     if (stand && stand.heute !== tagVon(Date.now())) {

@@ -18,12 +18,18 @@ import {
   blockWert,
   LAMBDA,
   PAUSE,
+  KLASSEN,
+  KLASSE_NR,
+  hatKlassen,
 } from '../src/daten/wichtigkeit.js';
 
 const wurzel = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const index = baueIndex(ladeDaten(wurzel));
 const RAEUME = ['AP1', 'PB1', 'PB2', 'WISO'];
 const spIn = (raum) => index.raeume.get(raum).bloeckeListe.flatMap((b) => b.sp.map((id) => index.sp.get(id)));
+// AP1 rechnet mit Klassen nach Prüfungspunkten, die übrigen Räume mit Stufen nach der Zahl der Prüfungen
+const MIT_KLASSEN = ['AP1'];
+const OHNE_KLASSEN = RAEUME.filter((r) => !MIT_KLASSEN.includes(r));
 
 test('Vier Stufen: Top-Thema oberstes Viertel, Wichtig obere Hälfte, je Raum', () => {
   assert.deepEqual(STUFEN.map((s) => s.name), ['Top-Thema', 'Wichtig', 'Geprüft', 'Noch nie geprüft']);
@@ -32,13 +38,13 @@ test('Vier Stufen: Top-Thema oberstes Viertel, Wichtig obere Hälfte, je Raum', 
   assert.deepEqual(g, { top: 6, wichtig: 3 }); // ≥ 6: 2 von 10 (≤ 25 %), ≥ 3: 5 von 10 (≤ 50 %)
   assert.deepEqual([7, 6, 5, 3, 2, 1, 0].map((x) => stufeFuer(x, g)), [1, 1, 2, 2, 3, 3, 4]);
   // Grenzen der echten Räume: in jedem Raum höchstens ein Viertel Top, höchstens die Hälfte Top oder Wichtig
-  for (const r of RAEUME) {
+  for (const r of OHNE_KLASSEN) {
     const xs = spIn(r).map((s) => s.wichtig.x);
     assert.ok(xs.filter((x) => x >= index.raeume.get(r).wichtig.grenzen.top).length <= xs.length * 0.25, r);
     assert.ok(xs.filter((x) => x >= index.raeume.get(r).wichtig.grenzen.wichtig).length <= xs.length * 0.5, r);
   }
-  assert.deepEqual(index.raeume.get('AP1').wichtig.grenzen, { top: 4, wichtig: 3 });
-  assert.deepEqual(index.raeume.get('PB2').wichtig.grenzen, { top: 8, wichtig: 4 });
+  // seit 09.11.2026 mit PB2-6-1-7 (Datenmodell, 7 Prüfungen): Grenze für „Wichtig“ 5 statt 4
+  assert.deepEqual(index.raeume.get('PB2').wichtig.grenzen, { top: 8, wichtig: 5 });
 });
 
 test('Prüfungstermine: Namen und Reihenfolge', () => {
@@ -74,12 +80,15 @@ test('Rechnung an einem kleinen Raum von Hand: jede Prüfung zählt gleich', () 
   assert.ok(je.get('a').stufe < je.get('b').stufe);
 });
 
-test('Hand-Beispiel AP1: gleiche Zahl, gleiche Stufe', () => {
-  const p = spIn('AP1').find((x) => x.titel.startsWith('Peripheriegeräte und Anschlüsse'));
-  assert.deepEqual(p.wichtig.termine, ['2022F', '2024F', '2025F', '2026F']);
-  assert.equal(p.wichtig.stufe, 1); // 4 von 11 = oberstes Viertel in AP1
-  assert.equal(wichtigkeitText(p.wichtig), 'Top-Thema · In 4 von 11 Prüfungen dran, zuletzt Frühjahr 2026 · wahrscheinlich 2 bis 6 von 11');
-  for (const r of RAEUME) {
+test('Hand-Beispiel AP1: Netzplan in A mit Fakten; übrige Räume: gleiche Zahl, gleiche Stufe', () => {
+  const p = spIn('AP1').find((x) => x.titel.startsWith('Netzplan'));
+  assert.equal(p.wichtig.system, 'klassen');
+  assert.equal(p.klasse, 'A');
+  assert.equal(p.wichtig.stufe, 1);
+  assert.equal(wichtigkeitText(p.wichtig), 'A · Rechnen & Zeichnen · In 3 von 11 Prüfungen dran, zuletzt Frühjahr 2026 · zusammen 32 Punkte · auch in 1 von 10 PB1-Prüfungen');
+  // keine Vorhersage im Text, auch nicht in den übrigen Räumen
+  for (const r of RAEUME) for (const s of spIn(r)) assert.doesNotMatch(wichtigkeitText(s.wichtig), /wahrscheinlich|%/, s.id);
+  for (const r of OHNE_KLASSEN) {
     const g = index.raeume.get(r).wichtig.grenzen;
     for (const s of spIn(r)) assert.equal(s.wichtig.stufe, stufeFuer(s.wichtig.x, g), s.id);
   }
@@ -87,7 +96,7 @@ test('Hand-Beispiel AP1: gleiche Zahl, gleiche Stufe', () => {
 
 test('Raum: Prüfungen wie in den Zuordnungen', () => {
   // PB1/PB2: Sommer 2026 hat keine Abschrift und ist nur über die Podcast-Themenliste belegt (P74)
-  const erwartet = { AP1: [11, 4, []], PB1: [10, 2, ['2026S']], PB2: [10, 2, ['2026S']], WISO: [8, 2, []] };
+  const erwartet = { AP1: [11, 4, []], PB1: [10, 2, ['2026S']], PB2: [10, 2, ['2026S']], WISO: [9, 3, []] };
   for (const r of RAEUME) {
     const w = index.raeume.get(r).wichtig;
     assert.deepEqual([w.n, w.aktuell, w.nurStichwort], erwartet[r], r);
@@ -95,7 +104,8 @@ test('Raum: Prüfungen wie in den Zuordnungen', () => {
 });
 
 test('Jeder Stichpunkt hat eine Stufe; ohne Beleg genau Stufe 5', () => {
-  for (const r of RAEUME)
+  for (const r of MIT_KLASSEN) for (const s of spIn(r)) assert.equal(s.wichtig.stufe, KLASSE_NR[s.klasse], s.id);
+  for (const r of OHNE_KLASSEN)
     for (const s of spIn(r)) {
       assert.ok(s.wichtig, s.id);
       assert.equal(s.wichtig.stufe === 4, s.wichtig.x === 0, s.id);
@@ -131,7 +141,7 @@ test('Fundament: „Grundlage für“ ist die Umkehrung von „Baut auf“', () 
 });
 
 test('Reihenfolge-Wert: eigener Anteil plus LAMBDA × offene Abhängige', () => {
-  const s = [...new Set(index.sp.values())].find((x) => x.grundlageFuer.length >= 3);
+  const s = [...new Set(index.sp.values())].find((x) => x.wichtig?.system === 'pruefungen' && x.grundlageFuer.length >= 3 && x.grundlageFuer.every((id) => index.sp.get(id).wichtig.system === 'pruefungen'));
   const anteil = (w) => w.quote * (w.inLetzter ? PAUSE : 1);
   const abh = s.grundlageFuer.reduce((a, id) => a + anteil(index.sp.get(id).wichtig), 0);
   assert.equal(reihenfolgeWert(s, index), anteil(s.wichtig) + LAMBDA * abh);
@@ -146,21 +156,64 @@ test('Reihenfolge-Wert: eigener Anteil plus LAMBDA × offene Abhängige', () => 
   assert.equal(blockWert(b, index, () => false).bester, -1);
 });
 
-test('Beispiel AP1: Zahlensysteme und Präfixe in 6 von 11 Prüfungen, Top-Thema', () => {
+test('Beispiel AP1: Zahlensysteme und Präfixe in 6 von 11 Prüfungen, Klasse A', () => {
   const z = spIn('AP1').find((x) => x.titel.startsWith('Zahlensysteme und Präfixe'));
   assert.equal(z.wichtig.x, 6);
-  assert.equal(z.wichtig.stufe, 1);
+  assert.equal(z.klasse, 'A');
 });
 
-test('Themenliste und anderer Prüfungsteil: Stichworte zählen halb, anderer Prüfungsteil nur als Hinweis', () => {
-  // Relationales Modell wohnt in PB1, wurde aber in PB2-Prüfungen abgefragt: Hinweis, keine Stufe
-  const rm = spIn('PB1').find((x) => x.id === 'PB1-6-1-2');
-  const q = rm.wichtig.quer.find((x) => x.raum === 'PB2');
-  assert.ok(q && q.x >= 6 && q.n === 10, JSON.stringify(rm.wichtig.quer));
-  assert.ok(!rm.wichtig.termine.some((t) => q.termine.includes(t) && !rm.pruef.some(([p]) => p === t)));
-  // 2026S zählt in PB2 mit Gewicht 0,5 (aktueller Katalog × Stichwort)
-  const sel = spIn('PB2').find((x) => x.id === 'PB2-5-1-1');
-  assert.deepEqual(sel.pruef.find(([p]) => p === '2026S'), ['2026S', 0.5]);
-  assert.ok(sel.wichtig.nurStichwort >= 1);
-  assert.match(wichtigkeitText(sel.wichtig), /davon nur laut Themenliste/);
+test('Lernreihenfolge: Hand-Beispiel', () => {
+  assert.deepEqual(KLASSEN.map((k) => k.kurz), ['A', 'B', 'C']);
+  const liste = [
+    { id: 'n', klasse: 'A', art: 'Rechnen', punkte: 10, rang: 2, pruef: [['2025F', 1]] },
+    { id: 'p', klasse: 'A', art: 'Schreiben', punkte: 0, rang: 1, pruef: [] },
+    { id: 'w', klasse: 'B', art: 'Wissen', punkte: 3, rang: 3, pruef: [['2024H', 0.6]] },
+    { id: 'c', klasse: 'C', art: 'Wissen', punkte: 0, rang: 4, pruef: [] },
+  ];
+  assert.ok(hatKlassen(liste));
+  assert.ok(!hatKlassen([{ id: 'x', klasse: 'A', punkte: 1, pruef: [] }])); // ohne rang
+  const { raum, je } = wichtigkeitRaum(liste);
+  assert.equal(raum.system, 'klassen');
+  assert.deepEqual(['n', 'p', 'w', 'c'].map((id) => je.get(id).stufe), [1, 1, 2, 3]);
+  assert.equal(je.get('n').name, 'A · Rechnen & Zeichnen');
+  assert.equal(je.get('p').name, 'A · Grundlage');
+  assert.equal(wichtigkeitText(je.get('c')), 'C · Wissen, noch nie geprüft · In keiner der 2 ausgewerteten Prüfungen dran – kann trotzdem kommen');
+  // Reihenfolge folgt dem Rang
+  const ws = ['p', 'n', 'w', 'c'].map((id) => reihenfolgeWert({ wichtig: je.get(id) }, index));
+  assert.deepEqual([...ws].sort((a, b) => b - a), ws);
+});
+
+test('Lernreihenfolge AP1: A = Rechnen/Zeichnen + Grundlagen, B geprüft, C nie geprüft, Rang lückenlos', () => {
+  const sps = spIn('AP1');
+  for (const s of sps) {
+    if (['Rechnen', 'Zeichnen'].includes(s.art)) assert.equal(s.klasse, 'A', s.id);
+    if (s.klasse === 'B') assert.ok(s.punkte > 0, s.id);
+    if (s.klasse === 'C') assert.equal(s.punkte, 0, s.id);
+  }
+  assert.deepEqual(sps.map((s) => s.rang).sort((a, b) => a - b), sps.map((_, i) => i + 1));
+  // A vor B vor C, und in A jede Voraussetzung vor ihrem Thema
+  const max = (k) => Math.max(...sps.filter((s) => s.klasse === k).map((s) => s.rang));
+  const min = (k) => Math.min(...sps.filter((s) => s.klasse === k).map((s) => s.rang));
+  assert.ok(max('A') < min('B') && max('B') < min('C'));
+  const rang = (titel) => sps.find((s) => s.titel.startsWith(titel)).rang;
+  assert.ok(rang('Pseudocode') < rang('Schreibtischtest'));
+  assert.ok(rang('Kostenarten') < rang('Kosten über die Nutzungsdauer'));
+  assert.ok(rang('IPv4-Konfiguration') < rang('IPv4-Subnetting'));
+  assert.ok(rang('Zahlensysteme') < rang('Datenmengen'));
+  // Englisch als Fertigkeit in A, mit Hinweis
+  const engl = sps.find((s) => s.titel.startsWith('Englische Fachtexte'));
+  assert.equal(engl.klasse, 'A');
+  assert.equal(engl.wichtig.name, 'A · Grundlage');
+  assert.ok(engl.wichtig.hinweis);
+  // „Heute im Fokus“ und Blöcke folgen dem Rang
+  const bloecke = index.raeume.get('AP1').bloeckeListe;
+  const erster = [...bloecke].sort((a, b) => blockWert(b, index).bester - blockWert(a, index).bester)[0];
+  assert.ok(erster.sp.some((id) => index.sp.get(id).rang === 1));
+  for (const b of bloecke) assert.equal(b.wichtig.system, 'klassen', b.id);
+  // Tabelle der Obergrenzen liegt im Raum
+  assert.ok(index.raeume.get('AP1').lernreihenfolge.tabelle.length >= 4);
+});
+
+test('Merksatz je Prüfungsteil', () => {
+  for (const r of RAEUME) assert.ok(index.raeume.get(r).merksatz?.length > 20, r);
 });

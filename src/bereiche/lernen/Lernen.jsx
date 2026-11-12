@@ -7,7 +7,7 @@ import { blockZustand } from '../../lernstand/ableiten.js';
 import { useEinstellung } from '../../lernstand/einstellungen.js';
 import { link } from '../../router.js';
 import { Reiter, Suchfeld, Knopf, Leer, Icon } from '../../ui/bausteine.jsx';
-import { OFT_BIS } from '../../daten/wichtigkeit.js';
+import { oftBis, seitenName } from '../../daten/wichtigkeit.js';
 import { BlockKarte } from './BlockKarte.jsx';
 import { Uebersicht } from '../start/Start.jsx';
 
@@ -34,7 +34,8 @@ export function Lernen({ raum, params }) {
   const r = inhalt.raeume.get(raum);
   const [filterGespeichert, setFilter] = useEinstellung(`filter.${raum}`, 'alle');
   // Früherer Filter „Häufig geprüft“ (hoch) heißt jetzt „Oft geprüft“
-  const filter = filterGespeichert === 'hoch' ? 'oft' : filterGespeichert;
+  // 'hoch' = alter Name von 'oft'; 'faellig' gab es bis zum Wegfall der Wiederholungs-Phasen
+  const filter = filterGespeichert === 'hoch' ? 'oft' : filterGespeichert === 'faellig' ? 'alle' : filterGespeichert;
   const [suche, setSuche] = useState('');
   const [offen, setOffen] = useState(() => new Set(params.block ? [params.block] : []));
   const [auswahl, setAuswahl] = useState(() => (params.sp ? { [params.block ?? inhalt.sp.get(params.sp)?.block]: params.sp } : {}));
@@ -63,15 +64,13 @@ export function Lernen({ raum, params }) {
   const zaehler = {
     alle: r.bloeckeListe.length,
     offen: r.bloeckeListe.filter((b) => !zustaende.get(b.id).fertig).length,
-    oft: r.bloeckeListe.filter((b) => b.wichtig.beste <= OFT_BIS).length,
-    faellig: r.bloeckeListe.filter((b) => zustaende.get(b.id).faellig).length,
+    oft: r.bloeckeListe.filter((b) => b.wichtig.beste <= oftBis(r.wichtig.system)).length,
   };
 
   const passtFilter = (b) => {
     const z = zustaende.get(b.id);
     if (filter === 'offen') return !z.fertig;
-    if (filter === 'oft') return b.wichtig.beste <= OFT_BIS;
-    if (filter === 'faellig') return z.faellig;
+    if (filter === 'oft') return b.wichtig.beste <= oftBis(r.wichtig.system);
     return true;
   };
 
@@ -107,6 +106,12 @@ export function Lernen({ raum, params }) {
           <p class="gedaempft">
             {r.ordner.length} Themenbereiche · {r.bloeckeListe.length} Blöcke · {spGesamt} Stichpunkte
           </p>
+          {r.merksatz && (
+            <p class="lernen__merksatz">
+              <Icon name="lightbulb" groesse={14} /> {r.merksatz}{' '}
+              <a href={link(raum, 'wichtigkeit')}>{seitenName(r.wichtig.system)} ansehen</a>
+            </p>
+          )}
         </div>
         <div class="seitenkopf__rechts zeile">
           {offen.size > 0 && (
@@ -129,9 +134,7 @@ export function Lernen({ raum, params }) {
           eintraege={[
             { id: 'alle', text: 'Alle', zahl: zaehler.alle },
             { id: 'offen', text: 'Noch offen', zahl: zaehler.offen },
-            { id: 'oft', text: 'Top & Wichtig', zahl: zaehler.oft },
-            { id: 'faellig', text: 'Fällig', zahl: zaehler.faellig, icon: zaehler.faellig ? 'refresh-cw' : undefined },
-          ]}
+            { id: 'oft', text: r.wichtig.system === 'klassen' ? 'Nur A' : 'Top & Wichtig', zahl: zaehler.oft },          ]}
         />
         <span class="wachsen" />
         <Suchfeld wert={suche} onEingabe={setSuche} platzhalter="Themen durchsuchen …" />
@@ -142,10 +145,6 @@ export function Lernen({ raum, params }) {
           {suche ? (
             <Leer icon="search" titel="Nichts gefunden" aktion={<Knopf onClick={() => setSuche('')}>Suche leeren</Knopf>}>
               Kein Block und kein Stichpunkt enthält „{suche}". Versuch es mit einem anderen Begriff oder schau ins Glossar.
-            </Leer>
-          ) : filter === 'faellig' ? (
-            <Leer icon="circle-check" titel="Keine Wiederholung fällig" aktion={<Knopf onClick={() => setFilter('alle')}>Alle Blöcke zeigen</Knopf>}>
-              Wenn du einen Block abhakst, wird er nach 1, 7 und 30 Tagen zur Wiederholung fällig. Dann erscheint er hier.
             </Leer>
           ) : filter === 'offen' ? (
             <Leer icon="trophy" titel="Alles abgehakt!" aktion={<Knopf onClick={() => setFilter('alle')}>Alle Blöcke zeigen</Knopf>}>
@@ -176,13 +175,15 @@ function OrdnerGruppe({ nummer, gruppe, stand, zustaende, offen, autoOffen, umsc
           </h2>
           <div class="ordner__text">
             {o.bloecke.length} Blöcke · {erledigt} von {o.spIds.length} Stichpunkten erledigt
-            <a
-              class="ordner__wichtig"
-              href={link(raum, 'wichtigkeit')}
-              data-tip={`${Math.round(o.wichtig.anteil * 100)} % der ${o.wichtig.aufgaben} zugeordneten Prüfungsaufgaben des Raums betreffen diesen Themenbereich`}
-            >
-              {Math.round(o.wichtig.anteil * 100)} % der Prüfungsaufgaben
-            </a>
+            {o.wichtig.system !== 'klassen' && (
+              <a
+                class="ordner__wichtig"
+                href={link(raum, 'wichtigkeit')}
+                data-tip={`${Math.round(o.wichtig.anteil * 100)} % der ${o.wichtig.aufgaben} zugeordneten Prüfungsaufgaben des Raums betreffen diesen Themenbereich`}
+              >
+                {Math.round(o.wichtig.anteil * 100)} % der Prüfungsaufgaben
+              </a>
+            )}
           </div>
         </div>
         <div class="ordner__fortschritt">

@@ -3,10 +3,9 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { inhalt } from '../../daten/inhalt.js';
 import { useLernstand, erfasse, aktuellerStand } from '../../lernstand/store.js';
-import { kartenZustand } from '../../lernstand/ableiten.js';
-import { KARTEN_ABSTAND, KARTE_SICHER_AB, naechsteStufe, NOTE } from '../../lernstand/regeln.js';
-import { blockWert, blockVergleich } from '../../daten/wichtigkeit.js';
-import { tageZwischen } from '../../lernstand/zeit.js';
+import { kartenZustand, offeneKarten, istProblemkarte } from '../../lernstand/ableiten.js';
+import { KARTEN_ABSTAND, KARTE_SICHER_AB, RUECKSTAU_AB, naechsteStufe, mitPruefungsrunde, NOTE } from '../../lernstand/regeln.js';
+import { tageZwischen, tagPlus } from '../../lernstand/zeit.js';
 import { geheZu, link } from '../../router.js';
 import { Icon, Knopf, SymbolKnopf, Balken, Leer, Rich, Kbd, BlockMarke, Zahl } from '../../ui/bausteine.jsx';
 
@@ -35,21 +34,26 @@ export function stapelFuer(quelle, raum, stand) {
 
   const [art, id] = quelle.split(':');
   switch (art) {
-    case 'faellig':
-      return { titel: 'Fällige Karten', ids: nachFaelligkeit(raumKarten.filter(faellig)) };
-    case 'neu': {
-      // Neue Karten aus den wichtigsten Blöcken zuerst (src/daten/wichtigkeit.js, alle Stichpunkte zählen), sonst in Lernplan-Reihenfolge
-      const wert = new Map(inhalt.raeume.get(raum).bloeckeListe.map((b) => [b.id, blockWert(b, inhalt)]));
-      const bloecke = [...inhalt.raeume.get(raum).bloeckeListe].sort((a, b) => blockVergleich(wert.get(a.id), wert.get(b.id)));
-      const ids = bloecke.flatMap((b) => (inhalt.kartenJeBlock.get(b.id) ?? []).filter(neu));
-      return { titel: 'Neue Karten', ids: ids.slice(0, NEUE_JE_SITZUNG) };
+    case 'faellig': {
+      // Gemischt, damit Karten desselben Stichpunkts einander nicht verraten; dann nach Fälligkeitstag (stabil).
+      // Bei Rückstau (nach einer Pause) die jüngsten Karten zuerst – sie vergessen sich am schnellsten.
+      const ids = nachFaelligkeit(mische(raumKarten.filter(faellig)));
+      if (ids.length > RUECKSTAU_AB) ids.sort((a, b) => stand.karten.get(a).stufe - stand.karten.get(b).stufe);
+      return { titel: 'Fällige Karten', ids };
     }
+    case 'neu':
+      // Offene Karten: aus abgehakten Stichpunkten, in Abhak-Reihenfolge
+      return { titel: 'Offene Karten', ids: offeneKarten(stand, inhalt, raum).slice(0, NEUE_JE_SITZUNG) };
     case 'mix':
-      return { titel: 'Zufallsmix', ids: mische(raumKarten).slice(0, MIX_GROESSE) };
+      // Nur Karten, die schon bewertet sind – sonst kämen Themen in den Plan, die noch gar nicht gelernt sind
+      return { titel: 'Zufallsmix', ids: mische(raumKarten.filter((k) => stand.karten.has(k))).slice(0, MIX_GROESSE) };
     case 'gemerkt':
       return { titel: 'Gemerkte Karten', ids: mische(raumKarten.filter((k) => stand.gemerkt.has(k))) };
-    case 'schwer':
-      return { titel: 'Schwierige Karten', ids: mische(raumKarten.filter((k) => (stand.karten.get(k)?.note ?? 2) < 2)) };
+    case 'schwer': {
+      // Problemkarten zuerst, dann die übrigen gemischt
+      const ids = mische(raumKarten.filter((k) => (stand.karten.get(k)?.note ?? 2) < 2 || istProblemkarte(stand, k)));
+      return { titel: 'Schwierige Karten', ids: [...ids.filter((k) => istProblemkarte(stand, k)), ...ids.filter((k) => !istProblemkarte(stand, k))] };
+    }
     case 'sp':
       return { titel: inhalt.sp.get(id)?.titel ?? 'Stichpunkt', ids: geordnet(inhalt.kartenJeSp.get(id) ?? []) };
     case 'block':
@@ -72,7 +76,9 @@ function Uebersicht({ raum }) {
   const alle = inhalt.kartenJeRaum.get(raum) ?? [];
   const z = kartenZustand(stand, alle);
   const gemerkt = alle.filter((id) => stand.gemerkt.has(id)).length;
-  const schwer = alle.filter((id) => (stand.karten.get(id)?.note ?? 2) < 2).length;
+  const schwer = alle.filter((id) => (stand.karten.get(id)?.note ?? 2) < 2 || istProblemkarte(stand, id)).length;
+  const offen = offeneKarten(stand, inhalt, raum).length;
+  const gesehen = z.gesamt - z.neu;
   const start = (quelle) => geheZu(raum, 'karten', 'sitzung', { quelle });
 
   const Start = ({ icon, titel, text, zahl, quelle, ton, aus }) => (
@@ -95,7 +101,8 @@ function Uebersicht({ raum }) {
           <div class="ueberschrift-klein ueberschrift-klein--akzent">{r.name} · Lernkarten</div>
           <h1 class="seitenkopf__titel">Lernkarten</h1>
           <p class="seitenkopf__text">
-            Bewerte jede Karte ehrlich: gewusst, unsicher oder nicht gewusst. Davon hängt ab, wann sie wiederkommt.
+            Erst die Antwort im Kopf festlegen, dann aufdecken und ehrlich bewerten. Davon hängt ab, wann die Karte wiederkommt. Hakst du im Lernplan
+            einen Stichpunkt ab, werden seine Karten hier offen.
           </p>
         </div>
       </header>
@@ -103,6 +110,7 @@ function Uebersicht({ raum }) {
       <div class="flaeche flaeche--innen karten-bilanz">
         <div class="karten-bilanz__zahlen">
           <Kennzahl wert={z.gesamt} text="Karten" />
+          <Kennzahl wert={offen} text="offen" ton={offen ? 'akzent' : null} />
           <Kennzahl wert={z.neu} text="neu" />
           <Kennzahl wert={z.lernen} text="im Lernen" />
           <Kennzahl wert={z.sicher} text="sicher" ton="gut" />
@@ -116,11 +124,39 @@ function Uebersicht({ raum }) {
       </div>
 
       <div class="karten-starts">
-        <Start icon="refresh-cw" titel="Fällige Karten" text={z.faellig ? 'Jetzt dran – das bringt am meisten.' : 'Heute nichts fällig. Stark!'} zahl={z.faellig} quelle="faellig" ton={z.faellig ? 'warn' : null} aus={!z.faellig} />
-        <Start icon="sparkles" titel="Neue Karten" text={`Bis zu ${NEUE_JE_SITZUNG} neue, wichtige Themen zuerst.`} zahl={z.neu} quelle="neu" aus={!z.neu} />
-        <Start icon="shuffle" titel="Zufallsmix" text={`${MIX_GROESSE} Karten quer durch alle Themen.`} zahl="∞" quelle="mix" aus={!z.gesamt} />
+        <Start
+          icon="refresh-cw"
+          titel="Fällige Karten"
+          text={
+            z.faellig > RUECKSTAU_AB
+              ? 'Rückstau: die jüngsten Karten kommen zuerst. Mach, so viel du schaffst – neue Stichpunkte am besten erst danach.'
+              : z.faellig
+                ? 'Jetzt dran – das bringt am meisten.'
+                : 'Heute nichts fällig. Stark!'
+          }
+          zahl={z.faellig}
+          quelle="faellig"
+          ton={z.faellig ? 'warn' : null}
+          aus={!z.faellig}
+        />
+        <Start
+          icon="sparkles"
+          titel="Offene Karten"
+          text={offen ? `Karten deiner abgehakten Stichpunkte, bis zu ${NEUE_JE_SITZUNG} je Runde.` : 'Hake im Lernplan einen Stichpunkt ab, dann werden seine Karten hier offen.'}
+          zahl={offen}
+          quelle="neu"
+          aus={!offen}
+        />
+        <Start icon="shuffle" titel="Zufallsmix" text={`${MIX_GROESSE} Karten quer durch alles, was du schon gelernt hast.`} zahl={gesehen ? '∞' : 0} quelle="mix" aus={!gesehen} />
         <Start icon="bookmark" titel="Gemerkte" text="Karten, die du dir markiert hast." zahl={gemerkt} quelle="gemerkt" aus={!gemerkt} />
-        <Start icon="target" titel="Schwierige" text="Zuletzt nicht gewusst oder unsicher." zahl={schwer} quelle="schwer" aus={!schwer} />
+        <Start
+          icon="target"
+          titel="Schwierige"
+          text={z.problem ? `Zuletzt nicht gewusst oder unsicher. ${z.problem} Problemkarte${z.problem === 1 ? '' : 'n'} zuerst.` : 'Zuletzt nicht gewusst oder unsicher.'}
+          zahl={schwer}
+          quelle="schwer"
+          aus={!schwer}
+        />
       </div>
 
       <section class="abschnitt">
@@ -254,7 +290,13 @@ function Sitzung({ raum, quelle }) {
         <SitzungKopf raum={raum} titel={anfang.titel} />
         <div class="flaeche">
           <Leer icon="circle-check" titel="Keine Karten in diesem Stapel" aktion={<Knopf variante="primaer" onClick={() => geheZu(raum, 'karten')}>Zur Übersicht</Knopf>}>
-            {quelle === 'faellig' ? 'Heute ist nichts fällig. Lerne neue Karten oder übe im Zufallsmix.' : quelle === 'gemerkt' ? 'Merke dir Karten mit dem Lesezeichen oder der Taste M.' : 'Hier gibt es gerade nichts zu lernen.'}
+            {quelle === 'faellig'
+              ? 'Heute ist nichts fällig. Mach offene Karten oder übe im Zufallsmix.'
+              : quelle === 'neu'
+                ? 'Keine offenen Karten. Hake im Lernplan einen Stichpunkt ab, dann werden seine Karten hier offen.'
+                : quelle === 'gemerkt'
+                  ? 'Merke dir Karten mit dem Lesezeichen oder der Taste M.'
+                  : 'Hier gibt es gerade nichts zu lernen.'}
           </Leer>
         </div>
       </div>
@@ -297,10 +339,14 @@ function Sitzung({ raum, quelle }) {
   }
 
   const sp = inhalt.sp.get(karte.sp);
+  const block = inhalt.bloecke.get(sp.block);
   const ks = stand.karten.get(id);
   const gemerkt = stand.gemerkt.has(id);
+  const problem = istProblemkarte(stand, id);
   const stufe = ks?.stufe ?? 0;
-  const vorschau = [0, 1, 2].map((n) => KARTEN_ABSTAND[naechsteStufe(stufe, n)]);
+  // Wie in ableiten: Leiter, dazu die Prüfungsrunde, falls ein Termin eingetragen ist
+  const termin = stand.termine[raum] ?? null;
+  const vorschau = [0, 1, 2].map((n) => tageZwischen(stand.heute, mitPruefungsrunde(tagPlus(stand.heute, KARTEN_ABSTAND[naechsteStufe(stufe, n)]), stand.heute, termin, id)));
   // Noch nicht fällig: „Gewusst“ lässt Stufe und Termin stehen (siehe ableiten)
   if (ks?.faellig && stand.heute < ks.faellig) vorschau[NOTE.GEWUSST] = tageZwischen(stand.heute, ks.faellig);
   const tageText = (t) => (t === 0 ? 'gleich' : t === 1 ? '1 Tag' : `${t} Tage`);
@@ -310,9 +356,15 @@ function Sitzung({ raum, quelle }) {
       <SitzungKopf raum={raum} titel={anfang.titel} pos={pos} gesamt={schlange.length} />
       <article class={`flaeche lernkarte ${offen ? 'lernkarte--offen' : ''}`} key={`${id}-${pos}`}>
         <div class="lernkarte__kopf">
+          {/* Vor dem Aufdecken nur der Blocktitel – viele Stichpunkt-Titel zählen die Antworten auf */}
           <a class="lernkarte__thema" href={link(raum, 'lernen', null, { sp: sp.id })}>
-            {sp.titel}
+            {offen ? `${block.titel} › ${sp.titel}` : block.titel}
           </a>
+          {problem && (
+            <span class="lernkarte__status text-fehler" data-tip={`Schon ${ks.fehl}× nicht gewusst. Ursache klären: Ist die Karte unklar, oder verwechselst du sie mit etwas?`}>
+              Problemkarte
+            </span>
+          )}
           <span class="lernkarte__status">
             {!ks ? 'neu' : stufe >= KARTE_SICHER_AB ? 'sicher' : 'im Lernen'}
           </span>
@@ -332,6 +384,17 @@ function Sitzung({ raum, quelle }) {
           </button>
         )}
       </article>
+
+      <p class="bewertung__regel">
+        {offen ? (
+          <>
+            <strong>Gewusst:</strong> alles Verlangte, ohne Zögern („Nenne vier“ = vier richtige) · <strong>Unsicher:</strong> im Kern richtig, aber
+            lückenhaft oder geraten · <strong>Nicht gewusst:</strong> falsch, leer oder weniger als die Hälfte
+          </>
+        ) : (
+          'Erst die Antwort im Kopf festlegen – in ganzen Worten, bei Aufzählungen mitzählen –, dann aufdecken.'
+        )}
+      </p>
 
       <div class={`bewertung ${offen ? 'bewertung--bereit' : ''}`} aria-hidden={!offen}>
         <button class="bewertung__knopf bewertung__knopf--nicht" disabled={!offen} onClick={() => bewerte(0)}>

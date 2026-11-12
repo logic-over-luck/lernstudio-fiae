@@ -4,7 +4,9 @@ import fs from 'node:fs';
 import { note, bewerteFrage, auswerten, stelleZusammen, pruefeSatz, automatischePunkte, TEILE } from '../src/bereiche/pruefung/generator.js';
 import { SAETZE } from '../src/bereiche/pruefung/saetze/index.js';
 import { ladeDaten } from '../tools/inhalt.mjs';
-const WURZEL_INHALT = new URL('..', import.meta.url).pathname;
+import { fileURLToPath } from 'node:url';
+// fileURLToPath statt .pathname: sonst entsteht unter Windows „C:\C:\…“
+const WURZEL_INHALT = fileURLToPath(new URL('..', import.meta.url));
 
 const inhalt = ladeDaten(WURZEL_INHALT);
 const spIds = new Set(Object.keys(inhalt.sp));

@@ -1,0 +1,42 @@
+﻿## Faktencheck WiSo (Meldungen der Nachprüfer, Stand 09.11.2026)
+- WISO-1-8-1-K7 Bildungsurlaub: Bayern ohne Gesetz; Sachsen ab 1.1.2027 drei Arbeitstage (SächsQZG vom 4.2.2026). Nach dem 1.1.2027 auf „nur Bayern ohne Anspruch“ umstellen.
+- WISO-1-8-1-K5 Bildungsgutschein nur von der Agentur für Arbeit (seit 1.1.2025 auch für Jobcenter-Kunden); Aufstiegs-BAföG von Bund und Ländern (78 % / 22 %), keine Altersgrenze.
+- WISO-1-8-1-K8 Assistierte Ausbildung (AsA flex), Berufsausbildungsbeihilfe – nicht online geprüft.
+- WISO-1-8-3-K2 Erasmus+ Programmperiode 2021–2027, ab 2028 Nachfolgeprogramm; Auslandsanteil bis zu einem Viertel (§ 2 Abs. 3 BBiG).
+- WISO-1-8-4-K7 Gewerbesteuer-Freibetrag 24.500 € (nur natürliche Personen und Personengesellschaften).
+- WISO-1-8-4-K1 Altersvorsorgepflicht für Selbstständige politisch geplant.
+- WISO-2-2 (Befund WISO-2_Teil1 B5): Bürgergeld → „Neue Grundsicherung“, geplant ab 1.7.2026; Umsetzung noch nicht bestätigt.
+- WISO-2-5-1-K2 Kartell-Anmeldung entfallen (Jahr 2005 nicht amtlich belegt).
+- WISO-1-3-4-K5 (akut) Arbeitszeitgesetz: 8/10 Stunden werktäglich, 11 Stunden Ruhezeit. Seit Juni 2026 Referentenentwurf für wöchentliche Höchstarbeitszeit; Stand des Verfahrens unklar. Für Sommer 2026 gelten die Tagesgrenzen. Dazu WISO-1-3-4-K1 (Pausen 30/45 Minuten).
+- WISO-1-3-5 Mutterschutz/Elternzeit: Schutzfristen 6/8/12 Wochen, Fehlgeburt-Staffel seit 1.6.2025, Elternzeit 3 Jahre (24 Monate übertragbar), Teilzeit bis 32 Stunden.
+- WISO-1-3-3 Kündigung: KSchG ab mehr als 10 Arbeitnehmern und 6 Monaten, Klagefrist 3 Wochen, Grundfrist 4 Wochen; K9 Beispieljahre 2026/2027 veralten.
+- WISO-1-3-6 Probezeit 6 Monate, Befristung 2 Jahre, Teilzeitanspruch ab 15 Arbeitnehmern, Mindesturlaub 24 Werktage.
+- WISO-1-3-4 Jugendarbeitsschutz (8/40 Stunden, 6–20 Uhr, Pausen 30/60) und § 15 BBiG Freistellung.
+- WISO-1-3-5-K6 Schwerbehinderte: Zusatzurlaub 5 Tage, Quote 5 % ab 20 Arbeitsplätzen; Behördenname Integrations-/Inklusionsamt.
+- WISO-1-3-1-K5, WISO-1-3-5-K3: Prüfungshinweise stützen sich auf einzelne IHK-Lösungen (2022S-A13, 2024S-A27) – bei neuen Prüfungen gegenprüfen.
+- WISO-1-1-4-K4 (jährlich!) Mindestausbildungsvergütung: Beginn 2026 724 / 854 / 977 / 1.014 €; Beginn 2027 764 / 902 / 1.031 / 1.070 €. Neuer Wert jedes Jahr bis 1. November.
+- WISO-1-1-4-K8 Anmeldung zur Berufsschule ist Landesrecht („in der Regel der Betrieb“).
+- WISO-1-1-1 Textform seit 1.8.2024; Kür WISO-1-1-3 elektronisches Zeugnis seit 1.8.2024.
+- Quelle (nicht Stoff): eigene Lösungshinweise in 00_quellen\pruefungen\wiso\2025S_WISO.md (A8, A10) zitieren alte Nummern von § 11 BBiG (heute Nr. 2, 7, 10).
+- WISO-1-6-2-K4 (jährlich!) Beitragsbemessungsgrenzen 2026: KV/PV 5.812,50 €, RV/AV 8.450 € im Monat; Versicherungspflichtgrenze 6.450 € im Monat / 77.400 € im Jahr.
+- WISO-1-6-3 (jährlich!) Beitragssätze 2026: KV 14,6 % + Zusatzbeitrag (Durchschnitt 2,9 %), RV 18,6 %, PV 3,6 % + Kinderlosenzuschlag 0,6 % (Erhöhung auf 0,7 % geplant, Verfahren nicht geprüft).
+- WISO-1-6-2 Kinderlosenzuschlag ab 23, Abschlag für Kinder unter 25; Kurzarbeitergeld 60/67 %; Anwartschaft ALG 12 in 30 Monaten.
+- WISO-1-6-1-K4 Sparzulage: Einkommensgrenzen 40.000 / 80.000 € (im Stoff ohne Zahl).
+- WISO-1-4 Betriebsrat/JAV: Wahlalter 16 (seit 2021), JAV ab 5 (unter 18 / Azubis ohne Altersgrenze seit 2021), Staffeln § 9 und § 62 BetrVG.
+- WISO-1-5 Urabstimmung meist 75 % (Satzung, kein Gesetz); Allgemeinverbindlicherklärung § 5 TVG.
+- Bürgergeld: bis 30.6.2026 „Bürgergeld“, seit 1.7.2026 „Grundsicherungsgeld“ (Gesetz vom 16.4.2026) – WISO-2-1-3-K3, WISO-1-6-2-K8.
+- WISO-2-2-1-K8 Gewinnverteilung nach § 709 Abs. 3 BGB / § 120 HGB (seit 1.1.2024); eGbR/Gesellschaftsregister seit 1.1.2024.
+- WISO-2-2-2 Stammkapital GmbH 25.000 € (12.500 € vor Anmeldung), UG ab 1 €, AG 50.000 €, eG mindestens drei Mitglieder.
+- WISO-2-1-1 KMU-Grenzen: unter 250 Beschäftigte, 50 Mio. € Umsatz oder 43 Mio. € Bilanzsumme.
+- WISO-3-1-2 Kür (geändert!) Sicherheitsbeauftragte: bis 28.5.2026 bei mehr als 20 Beschäftigten, seit 29.5.2026 erst ab 50 (§ 22 Abs. 1 SGB VII, BGBl. 2026 I Nr. 140); DGUV Vorschrift 1 wird laut VBG im Dezember 2026 angepasst. Arbeitsschutzausschuss weiter bei mehr als 20 (§ 11 ASiG).
+- WISO-3-1-1 Unterweisung jährlich / Jugendliche halbjährlich (DGUV Vorschrift 1 steht vor Überarbeitung).
+- WISO-3-4-1 Erste Hilfe: neues DGUV-Plakat ab September 2026 angekündigt.
+- WISO-3-4-2-K6 Unfallanzeige bei mehr als 3 Tagen, binnen 3 Tagen; WISO-3-1-3-K3 Rente ab 20 % Minderung.
+- WISO-4-2-2-K4/K5 (geändert!) Verpackungsrecht: bis 11.8.2026 Verpackungsgesetz, seit 12.8.2026 VerpackDG und EU-Verpackungsverordnung (PPWR); Versandkarton seither Transportverpackung statt Verkaufsverpackung. Weitere Stufen folgen (Pflichtkennzeichnung später).
+- WISO-4-2-1-K4 ElektroG § 3 Nr. 5: Firmen-IT in haushaltsüblicher Art und Menge gilt als Altgerät aus privaten Haushalten (Novelle seit 1.1.2026, Datum aus Sekundärquellen).
+- WISO-4-2-1 Batterierecht: im Stoff ohne Gesetz genannt, nicht amtlich geprüft.
+- WISO-4-1-3 Hinweis / AP1-4-3-3 Energy Star: bei AP1 prüfen (steht dort schon im Faktencheck Frühjahr 2027: EU-Energielabel).
+- WISO-5-2-1-K10 Datenschutz-Bußgelder: Landesbehörden, BfDI nur für Telekommunikation und Post; keine Bußgelder gegen Behörden (§ 43 Abs. 3 BDSG). Neuordnung der Aufsicht wird beraten (BT-Drs. 21/7732 vom 26.8.2026).
+- WISO-5-2-1-K10 BSI: Meldestelle und Aufsicht für wichtige und besonders wichtige Einrichtungen (NIS-2-Umsetzung seit 6.12.2025), erste Meldung binnen 24 Stunden; EU-Digital-Omnibus will Fristen ändern (Datenpanne 72 → evtl. 96 Stunden, nicht beschlossen).
+- WISO-5-2-1-K9 Beschäftigtendatenschutz (§ 26 BDSG): eigenes Gesetz geplant.
+- Kür WISO-5-3-1 KI-Verordnung: Fristen durch KI-Omnibus verschoben (Text nennt keine Fristen).

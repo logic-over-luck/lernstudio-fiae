@@ -51,7 +51,9 @@ test('Themen: Kompetenzen der Stichpunkte sind abgedeckt', () => {
   const abgedeckt = new Set(THEMEN.flatMap((t) => t.koennen));
   // Reines Wissen bleibt dem Lernplan überlassen: ASCII/Binärdatei, analog/digital, Befehlszeile außer chmod.
   // Offen: Übertragung übt nur Dauer und Einheiten, nicht Videostream, Upload-Richtung, Leitung beurteilen, Durchsatz.
-  const nichtImTrainer = new Set(['AP1-4-2-1-K6', 'AP1-4-2-2-K10', 'AP1-5-2-3-K1', 'AP1-5-2-3-K2', 'AP1-5-2-3-K4', 'AP1-5-2-3-K6', 'AP1-5-2-3-K7', 'AP1-5-2-3-K8', 'AP1-4-2-4-K3', 'AP1-4-2-4-K4', 'AP1-4-2-4-K5', 'AP1-4-2-4-K7']);
+  const nichtImTrainer = new Set(['AP1-4-2-1-K6', 'AP1-4-2-2-K10', 'AP1-5-2-3-K1', 'AP1-5-2-3-K2', 'AP1-5-2-3-K4', 'AP1-5-2-3-K6', 'AP1-5-2-3-K7', 'AP1-5-2-3-K8', 'AP1-4-2-4-K3', 'AP1-4-2-4-K4', 'AP1-4-2-4-K5', 'AP1-4-2-4-K7',
+    // seit 29.10.2026 aus der Kür hochgestuft, noch ohne Thema im Trainer: Bitrate gegen Signalgeschwindigkeit
+    'AP1-4-2-4-K8']);
   for (const id of spIds) {
     for (const k of koennenVon(id)) {
       if (nichtImTrainer.has(k)) continue;

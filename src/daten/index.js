@@ -52,12 +52,12 @@ export function baueIndex(daten) {
     for (const b of raum.bloeckeListe) {
       const liste = b.sp.map((id) => sp.get(id)).filter(Boolean);
       const termine = new Set(liste.flatMap((s) => s.wichtig.termine));
-      b.wichtig = { ...stufenVerteilung(liste), x: termine.size, n: w.raum.n };
+      b.wichtig = { ...stufenVerteilung(liste, w.raum.system), x: termine.size, n: w.raum.n, punkte: liste.reduce((a, s) => a + (s.wichtig.punkte ?? 0), 0) };
     }
     for (const o of r.ordner) {
       const ord = ordner.get(o.id);
       const liste = ord.spIds.map((id) => sp.get(id)).filter(Boolean);
-      ord.wichtig = { ...stufenVerteilung(liste), anteil: aufgabenAnteil(liste), aufgaben: teiler.size };
+      ord.wichtig = { ...stufenVerteilung(liste, w.raum.system), anteil: aufgabenAnteil(liste), aufgaben: teiler.size };
     }
   }
 

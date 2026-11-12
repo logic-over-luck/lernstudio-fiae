@@ -6,7 +6,8 @@ const SPICKZETTEL = {
   rechnung: '- Warenwert = Σ Menge · Einzelpreis\n- − Rabatt → Nettobetrag\n- + 19 % Umsatzsteuer → Rechnungsbetrag (brutto)\n- − Skonto (nur bei Zahlung in der Frist) → Zahlbetrag\n- Pflichtangaben: Rechnungsnummer, Datum, Leistung, Steuersatz, Steuerbetrag …',
   nutzungsdauer: '- Kaufpreis je Monat = Kaufpreis ÷ Nutzungsdauer in Monaten\n- + laufende Kosten (Wartung, Lizenzen, Strom)\n- Ausgefallene Arbeitszeit ist auch ein Kostenfaktor (Stunden · Stundensatz)',
   kalkulation: '- Kosten = Stunden · Stundensatz + Material\n- Vorkalkulation: vor dem Auftrag (Soll) · Nachkalkulation: danach (Ist)\n- Abweichung = Ist − Soll · in % = Abweichung ÷ Soll · 100',
-  kostenvergleich: '- Leasing: Rate · Monate + Sonderzahlung\n- Kauf: Preis − Erlös beim Wiederverkauf\n- Finanzierung: Preis + Zinsen\n- Pay-per-Use lohnt bis: Kaufkosten ÷ Preis je Nutzung\n- Make or buy: interne Stunden · Satz gegen Angebot + interner Aufwand',
+  kostenvergleich: '- Leasing: Rate · Monate + Sonderzahlung\n- Kauf: Preis − Erlös beim Wiederverkauf\n- Finanzierung: Preis + Zinsen\n- Pay-per-Use lohnt bis: Kaufkosten ÷ Preis je Nutzung',
+  eigenleistung: '- Intern: Stunden · eigener Satz\n- Extern: Stunden · Satz des Dienstleisters (oder Angebot) + Reisekosten + interner Aufwand\n- Gleichstand Nutzer = Kosten Eigenentwicklung je Jahr ÷ Lizenzpreis je Nutzer und Jahr\n- Günstiger erst ab Gleichstand + 1 – in der Prüfung beide Werte nennen\n- Budget: freie eigene Stunden zuerst, Rest extern\n- Nicht in der Rechnung: Abhängigkeit, Know-how, Kernkompetenz',
   tilgung: '- Ratendarlehen: Tilgung = Darlehen ÷ Laufzeit (gleichbleibend)\n- Zinsen = Restschuld am Jahresanfang · Zinssatz\n- Zahlung = Zinsen + Tilgung (sinkt jedes Jahr)\n- Finanzierungskosten = Summe der Zinsen',
   angebot: '- Listenpreis = Menge · Stückpreis\n- − Rabatt, − Skonto, + Bezugskosten (Versand) = Bezugspreis\n- Vergleich auf gemeinsamer Basis (gleiche Menge, gleicher Zeitraum)',
   nutzwert: '- Gewichtete Punkte = Gewichtung · Punkte, je Gerät summieren\n- Rangpunkte: bester Wert 3, schlechtester 1\n- Bei Kosten, Gewicht, Lautstärke: niedrig ist gut\n- K.-o.-Bedingung schließt aus, auch bei meisten Punkten',
@@ -24,7 +25,16 @@ export function KaufmaennischTrainer({ raum, trainer, modi, params }) {
   );
 }
 
+// Aufgabenarten zum Auswählen (Namen sind die Knöpfe, ids die Arten im Erzeuger)
+const ARTEN = {
+  eigenleistung: [
+    { name: 'Kosten vergleichen', ids: ['angebot', 'stunden'] },
+    { name: 'Eigenentwicklung oder Lizenzen', ids: ['lizenz'] },
+    { name: 'Budget', ids: ['budget'] },
+  ],
+};
+
 function KUebung({ modus }) {
   const erzeuge = useCallback((rng) => ERZEUGER[modus.id](rng), [modus.id]);
-  return <Uebung erzeuge={erzeuge} trainerId="kaufmaennisch" modusId={modus.id} spIds={modus.sp} spickzettel={SPICKZETTEL[modus.id]} />;
+  return <Uebung erzeuge={erzeuge} trainerId="kaufmaennisch" modusId={modus.id} spIds={modus.sp} spickzettel={SPICKZETTEL[modus.id]} arten={ARTEN[modus.id]} />;
 }

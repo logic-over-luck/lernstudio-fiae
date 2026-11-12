@@ -4,7 +4,7 @@
 // übersprungen, ohne etwas zu beschädigen.
 
 import { tagVon, tagPlus, tageZwischen } from './zeit.js';
-import { PHASEN_ABSTAND, KARTEN_ABSTAND, KARTE_SICHER_AB, NOTE, naechsteStufe, XP, rangFuer } from './regeln.js';
+import { KARTEN_ABSTAND, KARTE_SICHER_AB, NOTE, PROBLEM_AB, naechsteStufe, mitPruefungsrunde, XP, rangFuer } from './regeln.js';
 
 export function leererStand() {
   return {
@@ -12,8 +12,8 @@ export function leererStand() {
     spXp: new Map(), // spId → Zeitpunkt, an dem die Punkte fürs Abhaken gebucht wurden
     blockBonus: new Map(), // blockId → Zeitpunkt des gebuchten Block-Bonus
     blockErledigtAm: new Map(), // blockId → Zeitpunkt des ersten Abschlusses
-    phasen: new Map(), // blockId → [t1, t2, t3]
-    karten: new Map(), // kartenId → { stufe, faellig, n, richtig, zuletzt, note }
+    phasen: new Map(), // blockId → [t1, t2, t3] – nur aus alten Ereignissen der früheren Wiederholungs-Phasen
+    karten: new Map(), // kartenId → { stufe, roh, faellig, n, richtig, fehl, zuletzt, note, verlauf }
     gemerkt: new Set(),
     termine: {},
     notizen: new Map(),
@@ -52,10 +52,18 @@ export function ableiten(ereignisse, index, heute = tagVon(Date.now())) {
     } catch {}
   }
 
+  // Prüfungsrunde mit dem zuletzt eingetragenen Termin (er kann nach den Kartenantworten gesetzt worden sein)
+  for (const [id, k] of stand.karten) k.faellig = mitPruefungsrunde(k.roh, tagVon(k.zuletzt), terminFuerKarte(stand, index, id), id);
+
   stand.heute = heute;
   stand.rang = rangFuer(stand.xp);
   stand.serie = serieBerechnen(stand.tage, heute);
   return stand;
+}
+
+function terminFuerKarte(stand, index, id) {
+  const sp = index.sp.get(index.karten.get(id)?.sp);
+  return (sp && stand.termine[sp.raum]) || null;
 }
 
 function verarbeite(stand, spJeBlockErledigt, index, ev) {
@@ -94,6 +102,8 @@ function verarbeite(stand, spJeBlockErledigt, index, ev) {
       break;
     }
     case 'wdh': {
+      // Frühere Wiederholungs-Phasen eines Blocks: werden nicht mehr angeboten. Alte Ereignisse behalten
+      // ihre Punkte, damit kein Rang verloren geht; angezeigt oder geplant wird daraus nichts mehr.
       const block = index.bloecke.get(ev.id);
       if (!block || !stand.blockErledigtAm.has(ev.id)) break;
       const p = stand.phasen.get(ev.id) ?? [null, null, null];
@@ -106,16 +116,19 @@ function verarbeite(stand, spJeBlockErledigt, index, ev) {
     }
     case 'karte': {
       if (!index.karten.has(ev.id)) break;
-      const k = stand.karten.get(ev.id) ?? { stufe: 0, faellig: null, n: 0, richtig: 0, zuletzt: null, note: null, verlauf: '' };
+      const k = stand.karten.get(ev.id) ?? { stufe: 0, roh: null, faellig: null, n: 0, richtig: 0, fehl: 0, zuletzt: null, note: null, verlauf: '' };
       // Vorzeitig gewusst (Zufallsmix, Gemerkte, gleicher Tag): kein Aufstieg, sonst ließe sich eine Karte
       // an einem Tag auf „sicher“ hochklicken, ohne dass ein Abstand gehalten wurde.
-      const vorzeitig = k.faellig !== null && tagVon(ev.t) < k.faellig;
+      const tag = tagVon(ev.t);
+      const vorzeitig = k.faellig !== null && tag < k.faellig;
       if (!(vorzeitig && ev.n === NOTE.GEWUSST)) {
         k.stufe = naechsteStufe(k.stufe, ev.n);
-        k.faellig = tagPlus(tagVon(ev.t), KARTEN_ABSTAND[k.stufe]);
+        k.roh = tagPlus(tag, KARTEN_ABSTAND[k.stufe]);
+        k.faellig = mitPruefungsrunde(k.roh, tag, terminFuerKarte(stand, index, ev.id), ev.id);
       }
       k.n += 1;
-      if (ev.n === 2) k.richtig += 1;
+      if (ev.n === NOTE.GEWUSST) k.richtig += 1;
+      if (ev.n === NOTE.NICHT) k.fehl += 1;
       k.zuletzt = ev.t;
       k.note = ev.n;
       k.verlauf = (k.verlauf + ev.n).slice(-8);
@@ -209,32 +222,28 @@ export function blockZustand(stand, block) {
   const erledigt = block.sp.filter((id) => stand.spErledigt.has(id)).length;
   const gesamt = block.sp.length;
   const fertig = erledigt === gesamt;
-  const erledigtAm = stand.blockErledigtAm.get(block.id) ?? null;
-  const phasen = stand.phasen.get(block.id) ?? [null, null, null];
-
-  // Nächste Phase und ihr Fälligkeitstag
-  let naechste = null;
-  if (erledigtAm !== null) {
-    const p = phasen.findIndex((x) => x === null);
-    if (p !== -1) {
-      const anker = p === 0 ? erledigtAm : phasen[p - 1];
-      naechste = { phase: p + 1, faellig: tagPlus(tagVon(anker), PHASEN_ABSTAND[p]) };
-    }
-  }
-  const faellig = fertig && naechste !== null && naechste.faellig <= stand.heute;
   return {
     erledigt,
     gesamt,
     fertig,
     angefangen: erledigt > 0 && !fertig,
     anteil: gesamt ? erledigt / gesamt : 0,
-    erledigtAm,
-    phasen,
-    naechste,
-    faellig,
-    gefestigt: phasen.every((x) => x !== null),
-    tageUeberfaellig: faellig ? tageZwischen(naechste.faellig, stand.heute) : 0,
+    erledigtAm: stand.blockErledigtAm.get(block.id) ?? null,
   };
+}
+
+// Offene Karten: Karten abgehakter Stichpunkte, die noch nie bewertet wurden – in der Reihenfolge,
+// in der die Stichpunkte abgehakt wurden, innerhalb eines Stichpunkts in Karten-Reihenfolge.
+// Wird ein Stichpunkt wieder geöffnet, fallen seine unbewerteten Karten heraus; bewertete behalten ihren Stand.
+export function offeneKarten(stand, index, raumId) {
+  return [...stand.spErledigt]
+    .filter(([id]) => index.sp.get(id)?.raum === raumId)
+    .sort((a, b) => a[1] - b[1])
+    .flatMap(([id]) => (index.kartenJeSp.get(id) ?? []).filter((k) => !stand.karten.has(k)));
+}
+
+export function istProblemkarte(stand, id) {
+  return (stand.karten.get(id)?.fehl ?? 0) >= PROBLEM_AB;
 }
 
 export function kartenZustand(stand, kartenIds) {
@@ -244,6 +253,7 @@ export function kartenZustand(stand, kartenIds) {
   let faellig = 0;
   let richtig = 0;
   let antworten = 0;
+  let problem = 0;
   for (const id of kartenIds) {
     const k = stand.karten.get(id);
     if (!k) {
@@ -252,11 +262,12 @@ export function kartenZustand(stand, kartenIds) {
     }
     antworten += k.n;
     richtig += k.richtig;
+    if (k.fehl >= PROBLEM_AB) problem++;
     if (k.stufe >= KARTE_SICHER_AB) sicher++;
     else lernen++;
     if (k.faellig <= stand.heute) faellig++;
   }
-  return { gesamt: kartenIds.length, neu, lernen, sicher, faellig, richtig, antworten, quote: antworten ? richtig / antworten : null };
+  return { gesamt: kartenIds.length, neu, lernen, sicher, faellig, problem, richtig, antworten, quote: antworten ? richtig / antworten : null };
 }
 
 export function istKarteFaellig(stand, id) {

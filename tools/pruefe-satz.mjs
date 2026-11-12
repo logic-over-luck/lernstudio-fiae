@@ -7,10 +7,10 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { pruefeSatz, TEILE } from '../src/bereiche/pruefung/generator.js';
 import { ladeDaten } from './inhalt.mjs';
-const WURZEL_INHALT = new URL('..', import.meta.url).pathname;
 
+// fileURLToPath statt .pathname: sonst entsteht unter Windows „C:\C:\…“
 const wurzel = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const inhalt = ladeDaten(WURZEL_INHALT);
+const inhalt = ladeDaten(wurzel);
 const spIds = new Set(Object.keys(inhalt.sp));
 
 let dateien = process.argv.slice(2);

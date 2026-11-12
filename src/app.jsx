@@ -5,7 +5,7 @@ import { inhalt } from './daten/inhalt.js';
 import { useRoute, link, geheZu } from './router.js';
 import { useLernstand, fehlerZustand } from './lernstand/store.js';
 import { setzeEinstellung, einstellung } from './lernstand/einstellungen.js';
-import { kartenZustand, blockZustand } from './lernstand/ableiten.js';
+import { kartenZustand, offeneKarten } from './lernstand/ableiten.js';
 import { Icon, SymbolKnopf, Balken } from './ui/bausteine.jsx';
 import { Meldungen, BestaetigungsDialog, melde } from './ui/dialog.jsx';
 import { trainerIn, trainerById } from './bereiche/trainer/verzeichnis.js';
@@ -14,6 +14,7 @@ import { Karten } from './bereiche/karten/Karten.jsx';
 import { Glossar } from './bereiche/glossar/Glossar.jsx';
 import { Hilfe } from './bereiche/hilfe/Hilfe.jsx';
 import { Wichtigkeit } from './bereiche/wichtigkeit/Wichtigkeit.jsx';
+import { seitenName } from './daten/wichtigkeit.js';
 import { TrainerBereich } from './bereiche/trainer/index.jsx';
 import { PruefungBereich } from './bereiche/pruefung/Pruefung.jsx';
 import { SicherungsKnopf } from './bereiche/sicherung/Sicherung.jsx';
@@ -59,6 +60,7 @@ export function App() {
   let titel = BEREICH_NAMEN[route.bereich] ?? '';
   if (route.bereich === 'trainer' && route.unter) titel = trainerById(route.unter)?.name ?? titel;
   if (route.bereich === 'karten' && route.unter === 'sitzung') titel = 'Lernkarten · Sitzung';
+  if (route.bereich === 'wichtigkeit') titel = seitenName(inhalt.raeume.get(raum)?.wichtig?.system);
   let bereich;
   switch (route.bereich) {
     case 'lernen':
@@ -132,7 +134,8 @@ function Leiste({ raum, route, stand }) {
   const index = raeume.findIndex((r) => r.id === raum);
   const kartenIds = inhalt.kartenJeRaum.get(raum) ?? [];
   const karten = kartenZustand(stand, kartenIds);
-  const faelligeBloecke = inhalt.raeume.get(raum).bloeckeListe.filter((b) => blockZustand(stand, b).faellig).length;
+  // Lernkarten: was heute ansteht – fällige und offene Karten zusammen
+  const anstehend = karten.faellig + offeneKarten(stand, inhalt, raum).length;
   // Übersicht und Lernplan sind eine Seite: der Raum-Start gilt als Lernplan
   const aktiv = (bereich, unter = null) => (route.bereich === bereich || (bereich === 'lernen' && (route.bereich === 'start' || !route.bereich))) && (unter === null || route.unter === unter);
 
@@ -172,8 +175,8 @@ function Leiste({ raum, route, stand }) {
 
       <nav class="nav-gruppe" aria-label="Arbeitsplatz">
         <div class="nav-gruppe__titel ueberschrift-klein">Dein Arbeitsplatz</div>
-        {navPunkt({ bereich: "lernen", icon: "list-checks", text: "Lernplan", zahl: faelligeBloecke || null, zahlTon: "faellig" })}
-        {navPunkt({ bereich: "karten", icon: "layers", text: "Lernkarten", zahl: karten.faellig || null, zahlTon: "faellig" })}
+        {navPunkt({ bereich: "lernen", icon: "list-checks", text: "Lernplan" })}
+        {navPunkt({ bereich: "karten", icon: "layers", text: "Lernkarten", zahl: anstehend || null, zahlTon: "faellig" })}
         {navPunkt({ bereich: "pruefung", icon: "timer", text: "Probeprüfung" })}
       </nav>
 
@@ -185,7 +188,7 @@ function Leiste({ raum, route, stand }) {
       <nav class="nav-gruppe" aria-label="Nachschlagen">
         <div class="nav-gruppe__titel ueberschrift-klein">Nachschlagen</div>
         {navPunkt({ bereich: "glossar", icon: "book-open", text: "Glossar" })}
-        {navPunkt({ bereich: "wichtigkeit", icon: "chart-no-axes-column", text: "Wichtigkeit" })}
+        {navPunkt({ bereich: "wichtigkeit", icon: "chart-no-axes-column", text: seitenName(inhalt.raeume.get(raum)?.wichtig?.system) })}
         {navPunkt({ bereich: "hilfe", icon: "circle-question-mark", text: "Hilfe" })}
       </nav>
 
