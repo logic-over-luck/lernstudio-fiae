@@ -41,7 +41,9 @@ export function Lernen({ raum, params }) {
   const [auswahl, setAuswahl] = useState(() => (params.sp ? { [params.block ?? inhalt.sp.get(params.sp)?.block]: params.sp } : {}));
   const sprungRef = useRef(null);
 
-  // Sprung aus Start, Glossar oder Suche: Block öffnen, Stichpunkt wählen, hinscrollen
+  // Sprung aus Start, Glossar oder Suche: Block öffnen, Stichpunkt wählen, hinscrollen.
+  // Hängt am ganzen params-Objekt: Der Router liefert bei jedem Sprung ein neues, auch wenn Block und
+  // Stichpunkt gleich bleiben – so wirkt „Lernen starten“ auch beim zweiten Klick auf denselben Block.
   useEffect(() => {
     const blockId = params.block ?? (params.sp ? inhalt.sp.get(params.sp)?.block : null);
     if (!blockId) return;
@@ -58,7 +60,7 @@ export function Lernen({ raum, params }) {
         setTimeout(() => el.classList.remove('block--hervor'), 1600);
       }
     }, 80);
-  }, [params.block, params.sp]);
+  }, [params]);
 
   const zustaende = useMemo(() => new Map(r.bloeckeListe.map((b) => [b.id, blockZustand(stand, b)])), [stand, raum]);
   const zaehler = {
