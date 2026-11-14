@@ -20,6 +20,5 @@ diese Datei. Jede Datei besteht aus vier Teilen:
 ## Gut zu wissen
 
 - Länge: im Mittel rund 14.000 Zeichen.
-- Die drei aufgehobenen Prüfungen (2025H, 2026F, 2026H) werden in den Prompts nicht genannt und nicht verwendet.
 - Stoff ändern: immer in `inhalt/AP1.json` **und** in der Datei gleich (`npm run pruefen` meldet Abweichungen).
   Wie das geht, steht in `CLAUDE.md`.

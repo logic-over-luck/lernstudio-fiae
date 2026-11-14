@@ -180,7 +180,8 @@ Ein Repeater frischt das Signal auf und verlängert so eine Leitung, ein Hub ist
 - Patchplan: Liste, welcher Port womit verbunden ist
 
 **So fragt die IHK:**
-- Zu diesem Stichpunkt gibt es keine ausgewertete echte Aufgabe als Vorlage; das Folgende ist aus dem Prüfungskatalog abgeleitet.
+- Echte Aufgabe (2025H, K6), 3 Punkte, „auswählen“ und „begründen“: Ein Kartenterminal soll per Patchkabel angeschlossen werden. Material: ein Foto zweier Doppeldosen mit den Beschriftungen „Verkauf - 3/4“ und „Verkauf - 5/6“ und ein Foto des Netzwerkschranks, in dem am Patchfeld nur die Ports 5 bis 12 mit dem Switch verbunden sind. Richtig ist ein Anschluss der Dose 5/6, weil nur diese Ports gepatcht sind. Lösungshinweise liegen nicht vor.
+- Zu den Geräten selbst gibt es keine echte Aufgabe; das Folgende ist aus dem Prüfungskatalog abgeleitet.
 - Der Katalog führt WLAN-Router, Switch, Gateway und Access Point unter „marktgängige IT-Systeme kennen, unterscheiden und beurteilen“: einordnen und für eine Kundensituation auswählen.
 - Der Katalog-Anhang „IT-Netzwerk-Diagramm“ legt Symbole und Bedeutung fest und erlaubt, dass eine Aufgabe weitere Funktionen (Layer-3-Switch, NAT, Next Generation Firewall) oder weitere Symbole ergänzt.
 - Zu erwarten ist ein Kundennetz, das erweitert oder neu aufgebaut wird, mit Netzwerkplan, bei Verkabelung mit Dosenbeschriftung und Patchplan. Operatoren: nennen (Gerät zum Symbol), erklären oder beschreiben (Aufgabe eines Geräts, Weg von der Dose zum Switch), auswählen und begründen (Gerät, Dose).

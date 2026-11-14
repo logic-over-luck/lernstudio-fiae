@@ -138,6 +138,7 @@ Außerdem: Wie eng ist der Termin? Wie viel Geld ist sofort verfügbar? Welche R
 - Grenzmenge: Lizenzpreis je Lizenz und Jahr, Entwicklungsaufwand in Stunden, jährliche Wartung in Stunden über zehn Jahre, interner Stundensatz. „Ab welcher Lizenzanzahl ist die Eigenentwicklung günstiger?“ ohne Operator, 5 Punkte, Rechenfeld; Lohn- und Preissteigerungen sind laut Aufgabe nicht zu berücksichtigen. Die Lösung nennt den Gleichstand als „ab …“.
 - Nennen: zwei Argumente gegen eine Fremdvergabe bei personellem Engpass (2 Punkte); insgesamt fünf Vor- und/oder Nachteile eines externen Projektberaters, Aufteilung frei (5 Punkte). Gezählt werden u. a. auch höherer Abstimmungsaufwand, Sicherheits- und Datenschutzbedenken, normkonforme Lösungen, bessere Risikoeinschätzung, fehlende Kenntnis interner Abläufe, mehr Schnittstellen in der Kommunikation.
 - Zu Budget und Kapazität und zur Make-or-Buy-Abwägung gibt es keine echte Aufgabe.
+- 2026H (K1), 6 Punkte, „vervollständigen“: Eine Komponente kann intern entwickelt werden (Einarbeitung und Entwicklung in Stunden, interner Stundensatz) oder von einem externen Spezialisten (weniger Stunden, höherer Satz, dazu eine einstündige Übergabe an den internen Mitarbeiter). Tabelle mit den Spalten Einarbeitung, Entwicklung, Übergabe, Summe; sechs Felder sind auszufüllen, zwei durchgestrichen. Die nicht amtliche Lösung lässt bei der Übergabe beide Rechnungen gelten: nur der Externe oder Externer plus interner Mitarbeiter.
 
 **Fallen:**
 - Reisekosten oder Pauschalen eines Angebots vergessen.

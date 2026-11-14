@@ -11,9 +11,12 @@ Sicherung der Drehbuch-Prompts: `archiv/2026-11-11_drehbuch-prompts/` (124 / 76 
 - **Fallen vollständig:** Jede Falle aus dem alten Drehbuch, die nicht schon im Stoff steht, bleibt (gekürzt, ohne das
   alte Beispiel). Was schon als Kerngedanke oder Missverständnis steht, wird nicht wiederholt.
 - **Länge:** bis 3.500 Zeichen, mit Material bis 5.000, ab 10 Aussagen bis 7.000.
-- **„Schon geprüft“ zweiteilig:** „In Prüfungen: K1 (2021H), K2 (neuere Prüfung) · Noch nicht geprüft: …“. Belege aus
-  2025H, 2026F, 2026H zählen als geprüft, aber ohne Jahr; ihr Inhalt wird weiter nicht geöffnet und nicht genannt.
+- **„Schon geprüft“ zweiteilig:** „In Prüfungen: K1 (2021H), K2 (2026F) · Noch nicht geprüft: …“.
   Katalog/Buch/„Ohne Angabe“ entfallen.
+- **Keine Prüfung ist aufgehoben (Entscheidung 14.11.2026, ersetzt die Sperre vom 11.11.):** Alle elf AP1-Prüfungen
+  werden genannt, geöffnet und in den Lehrnotizen verwendet. Am 14.11.2026 wurden 2025H, 2026F und 2026H in
+  „So fragt die IHK“ von 65 Lehrnotizen eingearbeitet (Fassung davor: `vorher_2026-11-14/` in der Arbeitsmappe). Zu 2025H
+  und 2026F gibt es keine Lösungshinweise, die Lösung zu 2026H ist nicht amtlich; die Lehrnotizen sagen das jeweils dazu.
 - **Regelblock:** „Was schon geprüft wurde, übst du gründlicher.“ (der Halbsatz zum Buch ist gestrichen; auch im Plan).
 
 ## Stand
@@ -26,7 +29,7 @@ Nachsehen mit `python ln.py stand AP1`.
   dazu 23 Hinweise zum Stoff. Alle Befunde von einem Fable-Lauf mit Briefing eingearbeitet (`pruef/<BLOCK>_befunde.md`).
   Die drei Pilot-Blöcke wurden nach dem Nachziehen der Fallen ein zweites Mal geprüft.
 - Abnahme: Formprüfung ohne Fehler; Stoff aller 124 Dateien zeichengleich mit der Sicherung; Titel, Abhak-Satz und
-  Wortlaut jeder Aussage passen zu `AP1.json`; keine Nennung von 2025H/2026F/2026H.
+  Wortlaut jeder Aussage passen zu `AP1.json`.
 - Größe: Prompt im Mittel 13.900 Zeichen (vorher 32.400), Lehrnotiz im Mittel 4.100 (3.300–7.100).
 
 **Sprint 2 und 3 (PB1, PB2, WiSo) – Stand 11.11.2026: alle 169 Stichpunkte geschrieben, geprüft und eingebaut, über die Claude-API** (Skript `lb.py` in der Arbeitsmappe;
@@ -87,8 +90,8 @@ Schlüssel in `ANTHROPIC_API_KEY`, setzt nur Sebastian).
   (`stoffpruefung/stoff_geaendert.txt`).
 - Stoff-Meldungen: 514 Zeilen aus allen AP1-Blöcken, gesammelt in `_Stoff-Meldungen_Lehrnotiz_2026-11-11.md`,
   **nicht bearbeitet, nicht nachgeprüft**. Darunter Hinweise auf mögliche Fehler im Stoff (z. B. AP1-5-2-1-K9
-  ESU-Datum, AP1-5-1-4-K2 Rechtsstand KI-Verordnung) und auf Aussagen, die als „neuere Prüfung“ belegt sind, zu denen
-  das alte Drehbuch aber „keine echte Aufgabe“ sagt (dort schreibt die Lehrnotiz, dass die Form nicht bekannt ist).
+  ESU-Datum, AP1-5-1-4-K2 Rechtsstand KI-Verordnung). Die Meldungen zu Aussagen, die nur als „neuere Prüfung“ belegt
+  waren, sind seit 14.11.2026 erledigt: Die Lehrnotizen beschreiben diese Aufgaben jetzt.
 - Probesitzungen (5.7) und Doku (5.8: `LIES_MICH.md`, `CLAUDE.md`, `README.md`, `OFFENE_PUNKTE.md`, Hilfe-Seite).
 - Sprint 2 (PB1, PB2) und Sprint 3 (WiSo): Regelblock-Varianten anlegen (`regelblock_<RAUM>.txt`), `ln.py` nimmt den
   Stoff bisher aus der gesicherten Datei (für PB1/PB2/WiSo gleichwertig, solange das JSON nicht geändert wurde).

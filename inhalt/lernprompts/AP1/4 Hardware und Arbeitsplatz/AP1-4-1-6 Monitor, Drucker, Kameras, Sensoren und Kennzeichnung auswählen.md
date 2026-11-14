@@ -138,6 +138,7 @@ So beurteilst du es: Soll der Austausch nur bei bewusstem Hinhalten passieren (B
 - Gezählt werden beim QR-Code: einfach zu erstellen, kostengünstig, viele Daten / bei Verschmutzung oder Sichtbehinderung nicht lesbar. Beim RFID-Chip: ohne Sichtkontakt auslesbar, viele Daten / aufwendig in der Herstellung, kostenintensiv.
 - Monitor und Multifunktionsgerät kamen nur als Auswahlkriterium vor (gewichtete Bewertungstabelle für CAD-Arbeitsplätze; Anschaffung mit vorgegebener Monatsmenge und Wünschen an Qualität, Wartungskosten und Geschwindigkeit). Zu erwarten sind „auswählen und begründen“, „beurteilen“ und eine Gesamtkostenrechnung.
 - Zu Sensoren und NFC gibt es keine echte Aufgabe; zu erwarten sind kurze Teile mit „nennen“ oder „erklären“.
+- 2026F (K2), 2 Punkte, „nennen“: Das englische Datenblatt einer Außenkamera nennt die Leistungsaufnahme in drei Varianten (typisch, mit IR, mit IR und Heizung); gefragt ist der Zweck der Varianten mit „IR“ und „heater“ (Nachtsicht, Betrieb bei Kälte). Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Hohe Bildwiederholraten als Argument für einen Büro- oder CAD-Platz nehmen.

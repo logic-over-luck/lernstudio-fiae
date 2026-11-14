@@ -186,7 +186,9 @@ Bei Netzwerkdruckern schützt man vertrauliche Ausdrucke und Druckdaten: Gerät 
 - Typisch ist eine Kundensituation, in der ein Raum oder Arbeitsplatz abgesichert werden soll, oft mit Bezug auf das BSI IT-Grundschutz-Kompendium.
 - Echtes Muster: Für einen Besprechungsraum ist eine Tabelle mit Situationen vorgegeben (externe Personen, lose verlegte Kabel, private Geräte), eine Zeile ist als Beispiel ausgefüllt. Verlangt ist, je Zeile das Sicherheitsrisiko zu beschreiben, 3 Punkte.
 - Gezählt wird eine konkrete Folge: Vertrauliche Informationen gelangen an Externe, Netzwerkverbindungen werden durch Stolpern unterbrochen, Malware oder Ausspähung im Firmennetz.
-- Nach dem Prüfungskatalog außerdem zu erwarten, ohne echte Aufgabe: Maßnahmenarten unterscheiden und benennen, für einen Arbeitsplatz oder Raum Maßnahmen festlegen und begründen, vorgegebene Grundschutz-Anforderungen mit einem Ist-Zustand vergleichen.
+- 2026H (K3), Lösung nicht amtlich: zwei IT-Sicherheitsmaßnahmen „nennen“, die den Schutzbedarf aus einer Schutzbedarfstabelle erfüllen (2 Punkte; regelmäßige Backups für die Verfügbarkeit, Verschlüsselung und Zugriffskontrolle für die Vertraulichkeit), und zwei konkrete Maßnahmen für einen IT-Arbeitsplatz im Baucontainer „nennen“ (K3, K10, 2 Punkte; Container abschließen und Laptop anschließen, Geräte vor Staub schützen).
+- 2025H (K4), 2 Punkte, „beschreiben“: Ein Hersteller empfiehlt, auf eine sichere Lieferkette zu achten; verlangt ist ein Risiko manipulierter Geräte für die IT-Sicherheit. Lösungshinweise liegen nicht vor.
+- Nach dem Prüfungskatalog außerdem zu erwarten, ohne echte Aufgabe: Maßnahmenarten unterscheiden und benennen, vorgegebene Grundschutz-Anforderungen mit einem Ist-Zustand vergleichen.
 - Lösungshinweise sind meist beispielhaft: Jede passende Maßnahme mit Begründung zählt.
 
 **Fallen:**

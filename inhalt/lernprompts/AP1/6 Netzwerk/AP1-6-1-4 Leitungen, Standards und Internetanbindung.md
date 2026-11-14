@@ -176,10 +176,13 @@ Aufbau von innen nach außen: Kern, Mantel, Schutzhülle.
 - WAN-Seite: Anschluss des Routers zum Provider
 
 **So fragt die IHK:**
-- Aus den ausgewerteten älteren Prüfungen gibt es keine Aufgabe als Vorlage; was folgt, ist aus dem Prüfungskatalog abgeleitet.
-- Der Katalog nennt Lichtwellenleiter, Ethernet- und WLAN-Standards sowie Leistungsparameter und Kosten marktgängiger Systeme. Zu erwarten ist: Medien vergleichen, Kabelbezeichnungen deuten, aus einer vorgegebenen Produktliste (Schirmung, Kategorie, Preis) das passende günstigste Kabel wählen, ein Schadensbild an Kabel oder Stecker deuten, einen Internetzugang ohne Festnetz nennen.
+- Echte Aufgaben (2026H), Lösung nicht amtlich. Im Testprotokoll eines neuen PCs steht: „nicht mit dem Internet verbunden“.
+- Sichtprüfung (K4), 3 Punkte, „beschreiben“: Foto zweier RJ45-Stecker eines Patchkabels, an denen die Rastnase fehlt. Verlangt ist der Zusammenhang mit der unterbrochenen Verbindung: Der Stecker rastet nicht ein, rutscht heraus, kein Kontakt auf Schicht 1.
+- Kürzel (K2), 3 Punkte, „angeben“: Produkttabelle mit drei Kabeln (Cat 7, Cat 6a, Cat 5e; höchste Datenrate; S/FTP oder UTP; Preis). Bedeutung von S, FTP und UTP: Gesamtschirm aus Geflecht, Folienschirm je Adernpaar, ungeschirmt.
+- Auswahl (K3, K6), 2 Punkte, „auswählen“: Das geschirmte Kabel soll durch ein gleichwertiges oder besseres ersetzt werden, gesucht ist das günstigste geeignete. Lösung: das geschirmte Cat-6a-Kabel – das ungeschirmte fällt weg, das Cat-7-Kabel ist teurer.
+- Internet ohne Festnetz (K5), 2 Punkte, „nennen“: zwei Möglichkeiten, auf einer Baustelle ins Internet zu kommen. Lösung: Mobilfunk-Router mit SIM-Karte, Hotspot über das Smartphone.
+- Zu Lichtwellenleitern und zum Vergleich der Medien gibt es keine echte Aufgabe; der Prüfungskatalog nennt Lichtwellenleiter, Ethernet- und WLAN-Standards sowie Leistungsparameter und Kosten marktgängiger Systeme.
 - Die Anforderungen (Datenrate, Störquelle, Länge) stehen dabei meist in der Situation, nicht in der Frage.
-- Operatoren: nennen, erklären, vergleichen, auswählen und begründen, beurteilen. Als Annahme: 2–5 Punkte je Teilaufgabe; beim Auswählen zählt jedes begründet aussortierte Angebot und die richtige Wahl.
 
 **Fallen:**
 - Teil A: Die 100 m als Grenze für das ganze Netz verstehen; sie gelten für jede einzelne Kupferstrecke.

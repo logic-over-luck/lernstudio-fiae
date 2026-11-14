@@ -193,7 +193,7 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 - Am selben Multifunktionsgerät: zwei aufgedruckte Symbole benennen (WLAN, Bluetooth; 2 Punkte, je Begriff einer).
 - An einer PC-Rückseite mit Typ-A- und Typ-C-Buchse: zwei Vorteile von USB-C gegenüber USB 3 nennen (2 Punkte). Gezählt werden höhere Datenrate, höhere Stromversorgung, beidseitig steckbar.
 - Diese Aufgaben sind kurze Teilaufgaben mit „nennen“, „zuordnen“, „benennen“ beim Einrichten von Arbeitsplätzen.
-- Daisy Chaining und die Skizze dazu kamen in einer neueren Prüfung vor; die Form dieser Aufgabe ist hier nicht bekannt. Nach dem Stoff ist zu erwarten: Voraussetzungen und Nutzen erläutern, die Kette skizzieren.
+- Daisy Chaining (2026F, 6 Punkte): Vier Kamerabilder sollen auf vier Monitoren laufen. Material: ein kurzer englischer Text (Monitore in Reihe an einem Bildausgang, nötig sind Monitore mit MST über DisplayPort oder Thunderbolt) und ein Foto der Anschlussblende des PCs. Einen Vorteil „nennen“ (K5, 1 Punkt), die technische Voraussetzung „erläutern“ (K5, K2, 3 Punkte), dann in einer Skizze mit vier Monitoren die Kette einzeichnen und an eine geeignete Buchse des Fotos anschließen (K7, 2 Punkte). Lösungshinweise liegen nicht vor; geeignet sind DisplayPort oder die USB-C-Buchse mit Blitzsymbol, nicht HDMI.
 - Zu mehreren Monitoren an einem Rechner, Dockingstation, Scannern und Tastaturen gibt es keine echte Aufgabe; nach dem Prüfungskatalog (Peripheriegeräte, bedarfsgerechte Auswahl begründen) sind „beurteilen“ oder „begründen“ zu erwarten.
 
 **Fallen:**

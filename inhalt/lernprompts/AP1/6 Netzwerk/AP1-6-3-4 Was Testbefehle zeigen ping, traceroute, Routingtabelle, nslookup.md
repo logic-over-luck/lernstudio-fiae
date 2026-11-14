@@ -97,7 +97,7 @@ Beispiel: `nslookup intranet.firma.de` liefert nichts, mit dem internen DNS-Serv
 - nslookup-Ausgabe lesen: K5
 - Was ein ping beweist und was nicht: K4
 
-**Schon geprüft:** Noch nicht geprüft: K1–K5
+**Schon geprüft:** In Prüfungen: K1 (2026F) · Noch nicht geprüft: K2–K5
 
 **Kerngedanken:**
 - Welcher Befehl wofür da ist und in welcher Reihenfolge man sucht, gehört zum Nachbarthema „Netzwerkbefehle und systematische Fehlersuche“. Hier geht es darum, wie die Befehle arbeiten und was ihre Ausgabe beweist.
@@ -117,7 +117,8 @@ Beispiel: `nslookup intranet.firma.de` liefert nichts, mit dem internen DNS-Serv
 - Standardroute: Eintrag für alle übrigen Ziele
 
 **So fragt die IHK:**
-- Es gibt keine verwendbare echte Prüfungsaufgabe. Der Prüfungskatalog nennt Test und Troubleshooting von Netzwerkverbindungen und die Befehle ifconfig/ip, iproute2, ping, traceroute, nslookup.
+- Eine echte Aufgabe (2026F, K1), 3 Punkte, „nennen“ und „beschreiben“: Screenshot mit ping auf drei Geräte im selben Netz, jeweils vier Antworten ohne Verlust; ein Gerät antwortet mit stark schwankenden Zeiten bis über 800 ms. Den kritischen Wert nennen und ein Problem beschreiben, das daraus folgen kann. Lösungshinweise liegen nicht vor.
+- Zu traceroute, Routingtabelle und nslookup gibt es keine echte Aufgabe. Der Prüfungskatalog nennt Test und Troubleshooting von Netzwerkverbindungen und die Befehle ifconfig/ip, iproute2, ping, traceroute, nslookup.
 - Zu erwarten ist eine Konsolenausgabe als Material in einer Aufgabe zur Fehlersuche: sie interpretieren, einen Wert benennen (Standardgateway, befragter DNS-Server, Hop, an dem es abbricht) oder einen Schluss beurteilen.
 - Operatoren wie interpretieren, erläutern, beurteilen; je Teilaufgabe meist 2–4 Punkte. Gezählt werden der richtig abgelesene Wert und die Begründung aus der Ausgabe.
 

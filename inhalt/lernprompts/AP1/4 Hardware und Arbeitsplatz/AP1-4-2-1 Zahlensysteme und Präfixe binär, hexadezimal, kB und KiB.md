@@ -162,7 +162,7 @@ Kennzeichnung:
 - Umrechnungen von Größen kommen als Mini-Teilaufgabe mit „angeben“ und 1 Punkt, etwa eine Taktfrequenz in GHz aus einem Screenshot in Hz. Gezählt wird nur die vollständig ausgeschriebene Zahl.
 - Präfixe und Bit/Byte stecken fast immer in größeren Rechenaufgaben (Speicherbedarf, Übertragungsdauer). Die Lösungshinweise geben Teilpunkte je Umrechnungsschritt; wer 1.000 und 1.024 vertauscht, verliert genau diese.
 - Textdatei gegen Binärdatei: „Erläutern Sie den Unterschied …“ an einem unbekannten Dateiformat, das es in beiden Varianten gibt; 4 Punkte, je 2 pro Seite (Zeichen und jeder Texteditor – binäres Format und nur die passende Anwendung).
-- Zur Begründung, warum eine Herstellerangabe im Betriebssystem kleiner erscheint, ist die Aufgabenform nicht bekannt; zu erwarten ist ein Begründen-Teil mit Rechnung über Byte. Zu Umrechnungen dual/hex gibt es keine echte Aufgabe.
+- 2026H (K4), 3 Punkte: Im Testprotokoll steht für eine SSD „erwartet 1.000 GB, angezeigt 931 GiB“. Die Anzeige „begründen“ und die Umrechnung durchführen: Hersteller rechnen mit 10⁹ Byte je GB, das Betriebssystem mit 2³⁰ Byte je GiB; 10¹² Byte geteilt durch 1.024³ ergibt rund 931. Zu Umrechnungen dual/hex gibt es keine echte Aufgabe.
 
 **Fallen:**
 - Teil A: Vierergruppen von links statt von rechts bilden. Kurze Dualzahlen werden links mit Nullen aufgefüllt.

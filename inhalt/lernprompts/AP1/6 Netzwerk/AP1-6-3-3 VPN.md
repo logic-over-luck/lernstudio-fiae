@@ -100,7 +100,8 @@ Erklärung:
 - Ein Außendienstmitarbeiter sichert Daten über VPN auf dem Firmenserver; verlangt war, die Funktionalität des Begriffs VPN zu erklären. Gezählt: Netzwerkverbindung ohne eigene physische Leitung, für Unberechtigte nicht einsehbar, bzw. verschlüsselte Verbindung über das öffentliche Netz zu einem entfernten Netz.
 - Ein Telearbeitsplatz mit Firmen-Laptop und persönlichem Zertifikat; verlangt war, den sicherheitstechnischen Vorteil eines VPN zu beschreiben. Gezählt: sichere Datenübertragung auch über ein unsicheres Netz.
 - In derselben Aufgabe stand „Verwendung eines VPN“ als Beispiel für sichere Datenkommunikation in einer Tabelle technisch-organisatorischer Maßnahmen.
-- Kurze Antworten genügen, aber die Schlüsselwörter „verschlüsselt“ und „unsicheres/öffentliches Netz“ müssen fallen. Das Tunnelbild kommt in diesen beiden Aufgaben nicht vor; zu den einzurichtenden Angaben gibt es keine echte Aufgabe. Beides steht im Prüfungskatalog.
+- 2026H (K1, K3), 3 Punkte, „erklären“: Begriff und Grundprinzip von VPN. Die nicht amtliche Lösung nennt die Langform Virtual Private Network und den verschlüsselten „Tunnel“ über das öffentliche, unsichere Internet, durch den der Client so arbeitet, als wäre er im Firmennetz. In derselben Prüfung zählte „VPN nutzen“ als Maßnahme für mobiles Arbeiten.
+- Kurze Antworten genügen, aber die Schlüsselwörter „verschlüsselt“ und „unsicheres/öffentliches Netz“ müssen fallen. Zu den einzurichtenden Angaben gibt es keine echte Aufgabe; sie stehen im Prüfungskatalog.
 
 **Fallen:**
 - Die Verschlüsselung nicht nennen und nur schreiben, wozu der Zugriff gut ist.

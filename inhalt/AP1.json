@@ -408,7 +408,7 @@
         {
           "pruefung": "2025H",
           "erfasst": 82.0,
-          "a": 33.0,
+          "a": 30.0,
           "ab": 54.0,
           "abc": 73.0,
           "mitTransfer": 82.0
@@ -417,7 +417,7 @@
           "pruefung": "2026F",
           "erfasst": 100.0,
           "a": 53.0,
-          "ab": 88.5,
+          "ab": 87.0,
           "abc": 96.0,
           "mitTransfer": 100.0
         },
@@ -1037,7 +1037,7 @@
       "gewicht": 0.75,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 102,
+      "rang": 103,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -2491,7 +2491,7 @@
       "gewicht": 0.75,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 103,
+      "rang": 104,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -2619,7 +2619,7 @@
       "gewicht": 0.75,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 104,
+      "rang": 105,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -2795,7 +2795,7 @@
       "gewicht": 0.75,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 105,
+      "rang": 106,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -3003,7 +3003,7 @@
       "gewicht": 0.75,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 106,
+      "rang": 107,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -3380,7 +3380,7 @@
       "gewicht": 0.25,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 107,
+      "rang": 108,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -3515,7 +3515,7 @@
       "gewicht": 0.25,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 108,
+      "rang": 109,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -4130,7 +4130,7 @@
       "gewicht": 0.6,
       "klasse": "B",
       "punkte": 6.0,
-      "rang": 74,
+      "rang": 75,
       "pruef": [
         [
           "2023H",
@@ -4681,7 +4681,7 @@
       "gewicht": 2.8,
       "klasse": "B",
       "punkte": 3.0,
-      "rang": 73,
+      "rang": 74,
       "pruef": [
         [
           "2022F",
@@ -5195,7 +5195,7 @@
       "gewicht": 0.25,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 109,
+      "rang": 110,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -5324,7 +5324,7 @@
       "gewicht": 0.25,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 110,
+      "rang": 111,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -6251,7 +6251,7 @@
       "gewicht": 1.8,
       "klasse": "A",
       "punkte": 9.5,
-      "rang": 26,
+      "rang": 25,
       "pruef": [
         [
           "2021H",
@@ -6569,8 +6569,8 @@
       ],
       "gewicht": 1,
       "klasse": "A",
-      "punkte": 8.0,
-      "rang": 25,
+      "punkte": 5.0,
+      "rang": 26,
       "pruef": [
         [
           "2025H",
@@ -6784,7 +6784,7 @@
       "gewicht": 0.63,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 111,
+      "rang": 112,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -7270,6 +7270,10 @@
         [
           "2024H",
           0.6
+        ],
+        [
+          "2026H",
+          1
         ]
       ],
       "ta": [
@@ -7279,7 +7283,8 @@
         "2023H-A1-da",
         "2023H-A1-db",
         "2023H-A1-dc",
-        "2024H-A3-bb"
+        "2024H-A3-bb",
+        "2026H-A2-cc"
       ],
       "quer": null,
       "gegen": [],
@@ -8411,12 +8416,16 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 8.0,
-      "rang": 81,
+      "punkte": 11.0,
+      "rang": 71,
       "pruef": [
         [
           "2024F",
           0.6
+        ],
+        [
+          "2025H",
+          1
         ],
         [
           "2026F",
@@ -8426,6 +8435,7 @@
       "ta": [
         "2024F-A1-fa",
         "2024F-A1-fb",
+        "2025H-A1-b",
         "2026F-A3-ca",
         "2026F-A3-cb"
       ],
@@ -8962,7 +8972,7 @@
       "gewicht": 0.63,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 112,
+      "rang": 113,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -9145,7 +9155,7 @@
       "gewicht": 1.2,
       "klasse": "B",
       "punkte": 10.0,
-      "rang": 71,
+      "rang": 72,
       "pruef": [
         [
           "2023F",
@@ -9154,6 +9164,10 @@
         [
           "2023H",
           0.6
+        ],
+        [
+          "2026H",
+          1
         ]
       ],
       "ta": [
@@ -9161,7 +9175,8 @@
         "2023F-A1-b",
         "2023F-A1-c",
         "2023H-A2-a",
-        "2023H-A2-b"
+        "2023H-A2-b",
+        "2026H-A4-a"
       ],
       "quer": null,
       "gegen": [],
@@ -9582,7 +9597,7 @@
       "gewicht": 2.2,
       "klasse": "B",
       "punkte": 6.75,
-      "rang": 77,
+      "rang": 78,
       "pruef": [
         [
           "2022F",
@@ -9820,7 +9835,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 113,
+      "rang": 114,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -10020,7 +10035,7 @@
       "gewicht": 1.2,
       "klasse": "B",
       "punkte": 5.75,
-      "rang": 78,
+      "rang": 79,
       "pruef": [
         [
           "2022F",
@@ -10670,8 +10685,8 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 8.75,
-      "rang": 59,
+      "punkte": 7.25,
+      "rang": 64,
       "pruef": [
         [
           "2022H",
@@ -10872,8 +10887,8 @@
       ],
       "gewicht": 4.8,
       "klasse": "A",
-      "punkte": 17.0,
-      "rang": 15,
+      "punkte": 16.17,
+      "rang": 17,
       "pruef": [
         [
           "2022F",
@@ -11093,7 +11108,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 114,
+      "rang": 115,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -11212,8 +11227,8 @@
       ],
       "gewicht": 3.2,
       "klasse": "A",
-      "punkte": 17.0,
-      "rang": 16,
+      "punkte": 16.17,
+      "rang": 18,
       "pruef": [
         [
           "2022H",
@@ -11639,8 +11654,8 @@
       ],
       "gewicht": 2.2,
       "klasse": "A",
-      "punkte": 9.0,
-      "rang": 23,
+      "punkte": 10.67,
+      "rang": 21,
       "pruef": [
         [
           "2022F",
@@ -11658,7 +11673,8 @@
       "ta": [
         "2022F-A4-e",
         "2024F-A4-f",
-        "2026F-A1-ad"
+        "2026F-A1-ad",
+        "2026F-A1-b"
       ],
       "quer": null,
       "gegen": [],
@@ -12005,7 +12021,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 115,
+      "rang": 116,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -12674,7 +12690,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 116,
+      "rang": 117,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -13034,7 +13050,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 117,
+      "rang": 118,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -13403,7 +13419,7 @@
       "gewicht": 0.6,
       "klasse": "B",
       "punkte": 6.0,
-      "rang": 76,
+      "rang": 77,
       "pruef": [
         [
           "2023F",
@@ -13607,7 +13623,7 @@
       "gewicht": 1,
       "klasse": "B",
       "punkte": 2.75,
-      "rang": 75,
+      "rang": 76,
       "pruef": [
         [
           "2026H",
@@ -13830,7 +13846,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 118,
+      "rang": 119,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -13968,7 +13984,7 @@
       "gewicht": 0.5,
       "klasse": "C",
       "punkte": 0.0,
-      "rang": 119,
+      "rang": 120,
       "pruef": [],
       "ta": [],
       "quer": null,
@@ -14120,11 +14136,18 @@
         ]
       ],
       "gewicht": 0.5,
-      "klasse": "C",
-      "punkte": 0.0,
-      "rang": 120,
-      "pruef": [],
-      "ta": [],
+      "klasse": "B",
+      "punkte": 1.5,
+      "rang": 102,
+      "pruef": [
+        [
+          "2026F",
+          1
+        ]
+      ],
+      "ta": [
+        "2026F-A3-ba"
+      ],
       "quer": null,
       "gegen": [
         "PB1-11-2-3"
@@ -14510,7 +14533,7 @@
       "gewicht": 1,
       "klasse": "B",
       "punkte": 4.0,
-      "rang": 72,
+      "rang": 73,
       "pruef": [
         [
           "2025F",
@@ -15555,7 +15578,7 @@
       "gewicht": 2.6,
       "klasse": "A",
       "punkte": 11.5,
-      "rang": 21,
+      "rang": 22,
       "pruef": [
         [
           "2024H",
@@ -15792,7 +15815,7 @@
       "gewicht": 3.6,
       "klasse": "A",
       "punkte": 10.5,
-      "rang": 22,
+      "rang": 23,
       "pruef": [
         [
           "2022F",
@@ -17173,6 +17196,7 @@
             "kurz": "Funktionsweise von ping und RTT",
             "stufe": 2,
             "herkunft": [
+              "beleg:2026F-A3-db",
               "buch:GS-3.6.1-S365",
               "buch:GS-3.4.4-S326"
             ],
@@ -17457,7 +17481,7 @@
       "gewicht": 2.6,
       "klasse": "B",
       "punkte": 7.5,
-      "rang": 80,
+      "rang": 81,
       "pruef": [
         [
           "2024H",
@@ -18398,7 +18422,7 @@
       "gewicht": 1.6,
       "klasse": "B",
       "punkte": 10.0,
-      "rang": 63,
+      "rang": 62,
       "pruef": [
         [
           "2021H",
@@ -18927,7 +18951,7 @@
       "gewicht": 3.2,
       "klasse": "B",
       "punkte": 11.0,
-      "rang": 64,
+      "rang": 63,
       "pruef": [
         [
           "2021H",
@@ -19156,6 +19180,10 @@
       "rang": 69,
       "pruef": [
         [
+          "2023F",
+          0.6
+        ],
+        [
           "2023H",
           0.6
         ],
@@ -19169,6 +19197,7 @@
         ]
       ],
       "ta": [
+        "2023F-A3-be",
         "2023H-A3-b",
         "2024H-A1-a",
         "2025H-A3-b"
@@ -19342,7 +19371,7 @@
       "gewicht": 2.8,
       "klasse": "B",
       "punkte": 12.0,
-      "rang": 60,
+      "rang": 59,
       "pruef": [
         [
           "2021H",
@@ -19584,7 +19613,7 @@
       "gewicht": 2.2,
       "klasse": "B",
       "punkte": 7.0,
-      "rang": 79,
+      "rang": 80,
       "pruef": [
         [
           "2021H",
@@ -20834,7 +20863,7 @@
       "gewicht": 0.6,
       "klasse": "B",
       "punkte": 3.0,
-      "rang": 61,
+      "rang": 60,
       "pruef": [
         [
           "2024H",
@@ -21057,7 +21086,7 @@
       "gewicht": 1,
       "klasse": "A",
       "punkte": 2.0,
-      "rang": 17,
+      "rang": 15,
       "pruef": [
         [
           "2026F",
@@ -21246,7 +21275,7 @@
       "gewicht": 1.6,
       "klasse": "B",
       "punkte": 9.0,
-      "rang": 62,
+      "rang": 61,
       "pruef": [
         [
           "2024H",
@@ -22726,7 +22755,7 @@
       "gewicht": 1.6,
       "klasse": "A",
       "punkte": 13.0,
-      "rang": 18,
+      "rang": 16,
       "pruef": [
         [
           "2023F",

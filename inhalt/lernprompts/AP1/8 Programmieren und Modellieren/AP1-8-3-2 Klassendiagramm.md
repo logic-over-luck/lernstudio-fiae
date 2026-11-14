@@ -142,6 +142,7 @@ Du kennst das Zeichen schon vom Anwendungsfalldiagramm (Generalisierung von Akte
 - Als Material lag die UML-Notationsübersicht bei (Schreibweise von Attributen und Methoden, Sichtbarkeitszeichen, Linien für alle Beziehungen).
 - Bewertet wurden 2 Punkte je Klasse und 2 Punkte für die Vererbung. Zusätzliche Methoden, Konstruktoren und Sichtbarkeiten waren ausdrücklich nicht gefordert; die Lösung zeigt nur Namen ohne Typen.
 - Der Prüfungskatalog nennt außerdem Assoziationen mit Multiplizitäten und Navigierbarkeit sowie Aggregation und Komposition.
+- 2026F (K1, K2, K3), 5 Punkte, „ergänzen“: leerer Klassenkasten mit drei Bereichen, in dem nur eine öffentliche Methode mit Parameter und Rückgabetyp steht. Der Text nennt den Klassennamen und vier Attribute, alle vom Typ double und private; einzutragen sind Klassenname und Attribute mit Sichtbarkeit und Datentyp (`- name: double`). Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Den Typ vor den Namen schreiben wie im Code oder den Rückgabetyp weglassen, auch `void`.

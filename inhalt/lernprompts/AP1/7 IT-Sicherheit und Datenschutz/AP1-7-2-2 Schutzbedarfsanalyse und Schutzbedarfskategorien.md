@@ -171,7 +171,7 @@ Ausweichmöglichkeiten senken den Bedarf: Ein Ersatzgerät, ein Papierformular o
 - Echte Vorlage (2021H): Ein Systemhaus betreut eine Arztpraxis. Material sind zwei Tabellen: die Kategorien mit kurzer Beschreibung und eine Tabelle mit IT-Anwendungen, in der Schutzziel und Kategorie schon eingetragen sind. Eine Zeile ist als Beispiel ausgefüllt, drei Begründungen sind leer.
 - Operator: Begründung hinzufügen, 6 Punkte (2 je Begründung). Die Lösungshinweise sind beispielhaft; es zählt eine kurze Beschreibung des Schadens, die zu Schutzziel und Schwere passt.
 - Die Spaltenköpfe wechseln (Schutzziel oder Grundwert).
-- Nach dem Prüfungskatalog sind auch Tabellen mit fehlendem Schutzziel oder fehlender Systemzeile zu erwarten; eine echte Aufgabe dazu gibt es nicht.
+- 2026H (K4), 4 Punkte, „ergänzen“: Tabelle für zwei Anwendungen (CAD-Software, Textverarbeitung für Angebote), je zwei Zeilen mit Kategorie und Begründung; das Schutzziel fehlt in allen vier Zeilen und ist aus der Begründung abzuleiten (personenbezogene Daten → Vertraulichkeit, für die Auftragsabwicklung wichtig → Verfügbarkeit, Fehler im Angebot → Integrität). Lösung nicht amtlich. Eine Tabelle mit fehlender Systemzeile gab es noch nicht.
 
 **Fallen:**
 - Die Kategorie nur am Geldbetrag festmachen: Jedes der sechs Schadensszenarien kann allein eine höhere Einstufung auslösen; ihre Kurznamen in Aufgaben (Gesetzesverstoß, Imageschaden) gelten gleich.

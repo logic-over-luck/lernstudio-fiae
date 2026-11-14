@@ -109,6 +109,7 @@ Beispiel: Statt „Wi-Fi 6 mit OFDMA“ → „schnelleres WLAN, auch wenn viele
 - 2024F, ohne Material (K1): Ein Azubi bekommt Daten in einem unbekannten Dateiformat. „nennen“, drei Möglichkeiten, sich darüber zu informieren, 3 Punkte. Die Lösung ist beispielhaft und nennt ausdrücklich auch einen KI-Chatbot. Gezählt werden verschiedene Quellenarten; eine bestimmte Suchmaschine und „Suchmaschine“ zählen einmal.
 - Zweiter Teil dort: eine praktische Möglichkeit nennen, die Information zu nutzen (Format konvertieren oder importieren), 2 Punkte; das deckt keine Aussage hier ab.
 - Eine Quelle zu beurteilen (K3) oder für den Kunden aufzubereiten (K6) wurde in diesen Aufgaben nicht verlangt. Zu erwarten sind beurteilen, begründen, darstellen, mit Bezug der Kriterien auf den konkreten Fall.
+- 2026F (K2): aus einem englischen Absatz über Change Management drei Beispiele „benennen“, in denen ein Änderungsmanagement nützlich ist (3 Punkte).
 
 **Fallen:**
 - Die drei Kriterien nur aufzählen, statt sie an der vorliegenden Quelle abzuarbeiten.

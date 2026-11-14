@@ -159,6 +159,7 @@ Der freie Puffer ist nie größer als der Gesamtpuffer.
 - Kritischer Pfad: 1 Punkt, „markieren“ oder „nennen“, als Folge der Buchstaben.
 - In beiden Lösungen gibt es Ketten nichtkritischer Vorgänge, bei denen der erste FP = 0 und der letzte FP = GP hat (K8). Genau dort entstehen die typischen Punktverluste.
 - Was eine Verzögerung für das Projektende bedeutet, wird als Folgeaufgabe gefragt und gehört zu einem anderen Stichpunkt.
+- 2026F, Fehlersuche (K7, K8), 6 Punkte, „korrigieren“ und „eintragen“: fertiger Netzplan mit sieben Vorgängen, Legende mit den Formeln für GP und FP und Vorgangstabelle (Dauer, Vorgänger). Ein Fehler ist als Beispiel schon berichtigt; drei weitere falsche Zahlen sind zu finden und in eine Tabelle „Prozessschritt | Fehler bei | Korrektur“ einzutragen. Die Fehler lagen bei SAZ und SEZ eines nichtkritischen Vorgangs und beim GP seines Vorgängers, der zwei Nachfolger hat: Dessen SEZ ist der kleinste SAZ der Nachfolger, sein FP bleibt 0. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Den ersten Vorgang bei 1 statt bei 0 beginnen lassen.

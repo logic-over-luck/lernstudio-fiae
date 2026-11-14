@@ -159,6 +159,8 @@ Vergleich mit der Objektorientierung: Entitätstyp ≈ Klasse, Entität ≈ Obje
 - Dazu kommt ein Text aus der Ausgangssituation. Operatoren: vervollständigen, ergänzen, erweitern, Kardinalitäten angeben; meist 5–6 Punkte.
 - Gezählt wird je ein Punkt für jede Kardinalität (mit Beziehung), für die Kennzeichnung des Primärschlüssels je Entität und je Attribut oder Entität an der richtigen Stelle. „Redundanzfrei“ steht oft ausdrücklich in der Aufgabe.
 - Die Lösungshinweise sagen ausdrücklich, dass Fremdschlüssel weggelassen werden dürfen.
+- 2026F, 8 Punkte, „ergänzen“ und „kennzeichnen“: Vorlage mit einer benannten und einer leeren Entität, sonst nichts. Der Text nennt acht Angaben; zwei davon (Verladezeit, Menge) gehören an die n:m-Beziehung (K7), die Primärschlüssel sind zu kennzeichnen. Lösungshinweise liegen nicht vor.
+- 2026H, 9 Punkte, „ergänzen“: drei Entitäten (eine mit Attributen, eine leer, eine nur benannt) und eine leere Raute; zu ergänzen sind Entitätsname, Attribute, je ein Primärschlüssel (im Text nicht genannt, also selbst als Nummer anzulegen), zwei Beziehungen und die Kardinalitäten. Die nicht amtliche Lösung hat zwei 1:n-Beziehungen.
 
 **Fallen:**
 - Ein Attribut als eigenes Rechteck zeichnen oder eine Beziehung als bloße Linie ohne Raute.

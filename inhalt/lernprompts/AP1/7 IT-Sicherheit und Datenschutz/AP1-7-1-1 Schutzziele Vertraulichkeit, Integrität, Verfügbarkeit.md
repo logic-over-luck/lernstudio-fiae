@@ -106,6 +106,7 @@ Erklärung:
 - „Beschreiben“, 4 Punkte: was Vertraulichkeit und Integrität für verschlüsselte Daten auf einem Datenträger bedeuten. Gezählt wird: Nur Berechtigte können die Daten einsehen; eine Veränderung wird bemerkt.
 - „Nennen“, 1 Punkt: welches Schutzziel die beschriebene Verwendung von Schlüsseln bei E-Mails erreicht (Vertraulichkeit).
 - Gelegentlich dazu eine Frage zum Zweck des Hashwerts beim Software-Download; die Lösung nennt „Integrität“.
+- 2026H, 4 Punkte, „ergänzen“: Schutzbedarfstabelle für zwei Anwendungen mit Kategorie und Begründung; in vier Zeilen fehlt das Schutzziel. Es ergibt sich aus der Begründung: personenbezogene Daten → Vertraulichkeit; Daten für die Auftragsabwicklung wichtig → Verfügbarkeit; Fehler im Angebot → Integrität.
 
 **Fallen:**
 - Nur die Begriffe aufsagen, ohne Bezug zur beschriebenen Lage.

@@ -152,7 +152,8 @@ Beispiel: 12 Arbeitstage, fertig am Freitag, 20.11. → zurückzählen: 16.–20
 **So fragt die IHK:**
 - Wirkung einer Verzögerung (K5): kleine Teilaufgabe hinter einer großen Netzplan-Aufgabe. Ein nichtkritischer Vorgang verzögert sich um einige Stunden; „Beschreiben Sie die Auswirkung auf das Projektende“, 2 Punkte. Gezählt wird das Urteil plus die Begründung mit Zahlen.
 - Dauer aus Aufwand (K6): „ermitteln“, 2 Punkte, der Rechenweg ist anzugeben. Die Lösung rechnet über Personentage (Aufwand durch Stunden je Tag, dann durch die Zahl der Personen) und lässt den Dezimalwert und den aufgerundeten Wert gelten.
-- Zu Meilensteinen, Terminprüfung, Rückwärtsterminierung und Reaktionen ist keine echte Aufgabe beschrieben; zu erwarten sind kleine Teilaufgaben mit „erklären“, „beschreiben“, „nennen“ oder „beurteilen“.
+- 2026H (K2, K3), 4 Punkte, „beschreiben“: Für ein Webseiten-Projekt sind Meilensteine festgelegt; verlangt sind zwei sinnvolle Reaktionen des Projektleiters, wenn ein Meilenstein nicht erreicht wird. Die nicht amtliche Lösung nennt: Ursachen im Team klären; Zeitplan anpassen (Puffer nutzen, Folgetermine verschieben, Personal aufstocken oder Umfang kürzen).
+- Zu Meilensteinen selbst, Terminprüfung und Rückwärtsterminierung ist keine echte Aufgabe beschrieben; zu erwarten sind kleine Teilaufgaben mit „erklären“, „beschreiben“, „nennen“ oder „beurteilen“.
 
 **Fallen:**
 - Dauer: den Dezimalwert stehen lassen, obwohl ganze Arbeitstage verlangt sind; aufrunden, ohne den genauen Wert und den Grund (angefangener Tag ist belegt) zu nennen; den Rechenweg weglassen.

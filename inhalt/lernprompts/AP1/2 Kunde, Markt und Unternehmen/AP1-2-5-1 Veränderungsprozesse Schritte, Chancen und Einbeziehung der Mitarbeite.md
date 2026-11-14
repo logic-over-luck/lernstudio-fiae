@@ -126,6 +126,7 @@ Sieben-Phasen-Modell der Veränderung: Auf Schock und Verneinung folgen Einsicht
 - Muster 1: Vier Wege der Einweisung sind als Überschriften vorgegeben (Schulung am Arbeitsplatz, Webinar, Video-Tutorial, Multiplikatoren-Schulung), drei sind zu beschreiben, 6 Punkte. Gezählt wird je Weg ein treffendes Kennzeichen: vor Ort während der Arbeitszeit; zeitlich festgelegt, online, interaktiv; zeitlich flexibel, keine Interaktion; ausgewählte Mitarbeiter geben ihr Wissen weiter.
 - Muster 2: Mitarbeiter sind skeptisch; einen Vorteil für die Mitarbeiter erläutern, 2 Punkte. Gezählt wird der Vorteil mit seiner Folge für den Mitarbeiter; die Lösungen sind ausdrücklich beispielhaft.
 - Schrittfolge, Lewin und Sieben-Phasen-Modell kamen in den vorliegenden Aufgaben nicht vor; der Prüfungskatalog nennt Veränderungsschritte ausdrücklich, Reihenfolge- und Zuordnungsfragen sind denkbar.
+- 2025H (K6), 4 Punkte, „beschreiben“: Eine automatisierte Rechnungsbearbeitung wird eingeführt, die Beschäftigten haben Bedenken; verlangt sind zwei Maßnahmen, die den Bedenken entgegenwirken. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Die Rückmeldung am Ende der Schrittfolge vergessen oder das Ziel vor den Ist-Zustand setzen.

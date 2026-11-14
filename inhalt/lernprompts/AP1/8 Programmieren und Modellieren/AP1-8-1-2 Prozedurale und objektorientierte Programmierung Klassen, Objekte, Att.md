@@ -140,9 +140,9 @@ Beispiel: `k = NEU Kunde("Anna Berg", 4711)` erzeugt ein Kundenobjekt, dessen Na
 - Konstruktor: läuft beim Erzeugen (Instanziieren) eines Objekts, setzt Anfangswerte
 
 **So fragt die IHK:**
-- Zu diesem Stichpunkt gibt es keine verwendbare echte Aufgabe.
+- Echte Aufgabe (2026F, K6), 2 Punkte, „nennen“: Eine Software kann objektorientiert oder prozedural programmiert werden; verlangt sind zwei Vorteile objektorientierter gegenüber prozeduralen Programmiersprachen. Lösungshinweise liegen nicht vor.
 - Der Prüfungskatalog verlangt, die beiden Herangehensweisen und die Grundbegriffe zu „kennen, einordnen und unterscheiden“.
-- Zu erwarten sind: den Unterschied zwischen prozeduraler und objektorientierter Programmierung erläutern; Vorteile der Objektorientierung nennen; an einem kurzen Pseudocode Klasse, Objekt, Attribut, Methode oder einen unzulässigen Zugriff auf ein privates Attribut benennen und erläutern. Die Sichtbarkeitszeichen im Klassendiagramm gehören zu einem eigenen Stichpunkt.
+- Zu erwarten sind außerdem: den Unterschied zwischen prozeduraler und objektorientierter Programmierung erläutern; an einem kurzen Pseudocode Klasse, Objekt, Attribut, Methode oder einen unzulässigen Zugriff auf ein privates Attribut benennen und erläutern. Die Sichtbarkeitszeichen im Klassendiagramm gehören zu einem eigenen Stichpunkt.
 
 **Fallen:**
 - Den Unterschied nur mit „objektorientiert hat Klassen“ angeben, ohne dass Daten und Methoden im Objekt zusammengefasst sind.

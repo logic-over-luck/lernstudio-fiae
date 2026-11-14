@@ -118,7 +118,7 @@ Achtung: Der Einzelpreis ist ein Stammdatum des Artikels, auch wenn er in jeder 
 - Kurz und offen: In einer Ausgangssituation (zum Beispiel ein übernommener Datenbestand „enthält Redundanzen“) soll man den Begriff Redundanz erklären und ein Problem beschreiben, das daraus entstehen kann. Je etwa 2 Punkte, wenige Zeilen Platz.
 - Die Situation ist dabei nur Verpackung: Verlangt ist das Wissen über Redundanz, es steht nicht in der Aufgabe.
 - Für den Begriff reicht nach den Lösungshinweisen schon „Mehrfachspeicherung von Daten“, auch ohne Bezug auf den Fall. Beim Problem zählen: Änderungen an mehreren Stellen, Inkonsistenz durch eine übersehene Stelle, mehr Aufwand, ungewollte Nebeneffekte beim Einfügen, Ändern und Löschen. Andere sinnvolle Formulierungen gelten auch.
-- Zu Datentypen gibt es keine echte Aufgabe. Nach dem Prüfungskatalog ist zu erwarten: für Attribute einen Typ auswählen und begründen. Liegt eine SQL-Übersicht bei (dort stehen CHARACTER, DECIMAL, DOUBLE, INTEGER, DATE), nimmt man die Typnamen von dort. DOUBLE ist eine Gleitkommazahl – für Geld bleibt es bei DECIMAL.
+- Datentypen (K3, 2026H), 3 Punkte, „bestimmen“: Tabelle mit drei Attributen und je einem Beispielwert (ein Datum, eine Postleitzahl mit führender Null, eine Dauer in Minuten); einzutragen sind Datentyp und Begründung. Die nicht amtliche Lösung: DATE; VARCHAR(5) oder CHAR(5), weil bei einer Zahl die führende Null verloren ginge; INTEGER. Liegt eine SQL-Übersicht bei (dort stehen CHARACTER, DECIMAL, DOUBLE, INTEGER, DATE), nimmt man die Typnamen von dort. DOUBLE ist eine Gleitkommazahl – für Geld bleibt es bei DECIMAL.
 
 **Fallen:**
 - Redundanz mit „falschen Daten“ gleichsetzen.

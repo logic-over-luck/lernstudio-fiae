@@ -119,6 +119,7 @@ Daraus folgen die Gegenmaßnahmen: Updates gegen Drive-by-Downloads, Makros sper
 - Nennen, 3 Punkte: drei Arten von Malware. Zuweisen, 3 Punkte: jeder genannten Art ein spezifisches Merkmal. Neben den sechs Arten aus dem Stoff zählen auch Adware, Hintertür (Backdoor), Keylogger, Riskware, Archivbombe und Dropper.
 - Erläutern, 3 Punkte: Eine Antivirensoftware ist schon installiert, verlangt sind drei weitere organisatorische oder technische Empfehlungen.
 - Zu Infektionswegen, Keylogger und Zwei-Faktor-Anmeldung gibt es keine echte Aufgabe; denkbar ist Beschreiben oder Erklären mit 2–3 Punkten.
+- 2026H (K1), 2 Punkte, „beschreiben“: Mitarbeiter sollen für IT-Gefahren sensibilisiert werden; genannt sind Spyware, Scareware und Ransomware, einer der drei Begriffe ist zu beschreiben. Die nicht amtliche Lösung beschreibt Ransomware: verschlüsselt oder sperrt Daten, die Angreifer fordern Lösegeld.
 
 **Fallen:**
 - Nur den Namen der Art nennen, ohne das Merkmal, oder ein Beispiel bringen, das nicht zum Merkmal passt.

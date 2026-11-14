@@ -171,6 +171,7 @@ Anfragen muss der Betrieb in der Regel innerhalb eines Monats beantworten.
 - Die Lösungshinweise zählen DSGVO und BDSG. Bei „nennen Sie zwei“ gelten auch andere passende Gesetze (Grundgesetz mit Fernmeldegeheimnis, Strafgesetzbuch, Landesdatenschutzgesetz). Als Zweck reicht „Schutz personenbezogener Daten“.
 - Auf die Frage, für welche Daten ein besonderer Schutz vorgeschrieben ist, zählen die Lösungshinweise auch „personenbezogene Daten“ und „Mitarbeiterdaten“ neben Patientendaten. Besondere Kategorien im Sinne der DSGVO sind aber nur Daten wie Gesundheits- und Patientendaten (siehe Stoff K2); Mitarbeiterdaten gehören nicht schon als solche dazu.
 - Zu Betroffenenrechten, Einwilligung und dem Überprüfen eines Vorgehens gibt es keine echte Aufgabe. Der Prüfungskatalog nennt sie; dort ist mit Fallaufgaben („überprüfen Sie …“) zu rechnen.
+- 2026H (K5), 6 Punkte, „erklären“: Die Mitarbeiter wurden auf die Datenschutz- und Datensicherheitsrichtlinie verpflichtet; verlangt ist der Unterschied der beiden Begriffe, jeweils an einem Beispiel. Die nicht amtliche Lösung: Datenschutz schützt Personen und ihre personenbezogenen Daten (Kundendaten nicht ohne Einwilligung weitergeben), Datensicherheit schützt alle Daten und Systeme vor Verlust, Manipulation und Ausfall (tägliche verschlüsselte Backups).
 
 **Fallen:**
 - Teil A: Als Zweck „die Daten schützen“ oder „vor Verlust sichern“ schreiben. Das beschreibt Datensicherheit; verlangt ist der Schutz personenbezogener Daten oder der Person.

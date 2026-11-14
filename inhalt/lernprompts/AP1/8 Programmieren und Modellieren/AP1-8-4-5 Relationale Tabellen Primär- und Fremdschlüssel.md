@@ -135,7 +135,7 @@ Deshalb ist der künstliche Schlüssel in der Praxis der Normalfall.
 **So fragt die IHK:**
 - Zu den Phasen gab es eine echte Aufgabe: eine Liste nummerierter Phasennamen, die Anforderungsanalyse ist als erstes Feld vorgegeben, man trägt die Ziffern in der richtigen Reihenfolge ein. 3 Punkte, je richtiges Feld 0,5 Punkte.
 - Die Namen lauten dort etwas länger als in der Aussage: „Test und Validation“, „Entwurf der Verteilung im Netz“, „Physischer Entwurf/Implementierung“.
-- Zu den Schlüsseln ist keine echte Aufgabe bekannt. Nach dem Prüfungskatalog sind kurze Aufgaben mit „beschreiben“ oder „erläutern“ an Tabellen aus der Ausgangssituation zu erwarten, wenige Punkte je Teil.
+- Schlüssel (K1, K2, K3, 2025H), 6 Punkte: Ein kurzer englischer Fachtext erklärt Primärschlüssel, Fremdschlüssel und das Verknüpfen von Tabellen. Drei Fragen, auf Deutsch und mit Bezug zum Text zu beantworten, je 2 Punkte, „beschreiben“: die Funktion eines Primärschlüssels, der Zweck von Fremdschlüsseln, der Vorteil des Verknüpfens von Tabellen. Die Antworten stehen im Text (eindeutig kennzeichnen; auf den Primärschlüssel einer anderen Tabelle verweisen; Daten gemeinsam abfragen, weniger Redundanz). Lösungshinweise liegen nicht vor.
 - Bei „beschreiben“ zählt die Funktion oder der Zweck. Nur das Wort „Primärschlüssel“ hinzuschreiben, bringt keinen Punkt.
 
 **Fallen:**

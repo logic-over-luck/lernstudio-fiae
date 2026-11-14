@@ -170,6 +170,8 @@ In einer Schleife `FOR EACH p IN pakete` ist `p` in jedem Durchlauf **ein** Date
 - Rückgabewert über ein zweidimensionales Array ermitteln und begründen (6 Punkte): Zeilen unterschiedlich weit belegt, Index ab 0; verschachtelte Schleifen, Bedingung aus zwei UND-verknüpften Vergleichen, Rückgabe `True` mitten in der Schleife, sonst `False`. Es zählt das Ergebnis mit kurzer Begründung.
 - Python-Funktion berechnen (6 Punkte, je Wert 2): drei Rückgabewerte aus Divisionen und Prozentrechnungen, auf zwei Nachkommastellen.
 - Verschachtelte Verzweigungen (8 Punkte, je Aufruf 4): vier Ebenen Wenn, Sonst, Sonst wenn; zwei Aufrufe mit Wahrheitswerten und Zahlen. Verlangt ist nur das Ergebnis, nicht der Weg.
+- 2026F (K3, K9, K10), 10 Punkte, „berechnen“: englischer Pseudocode einer Funktion, die mit FOR EACH über eine Liste von Datensätzen läuft (Zugriff über Schlüssel wie `package["weight"]`), verschachtelte IF mit Fehlerzweig, ein Zuschlag nach einem Wahrheitswert und am Ende ein Rabatt ab einer Summe. Gegeben sind Startwerte und drei Datensätze; einzutragen sind drei Einzelpreise und der Gesamtpreis. Lösungshinweise liegen nicht vor.
+- 2026H (K1, K7), 6 Punkte, „berechnen“: Code in C-ähnlicher Syntax mit zwei gleich langen Arrays (Zahlen und Wahrheitswerte), for-Schleife und Ganzzahldivision; verlangt ist nur der ausgegebene Wert. Die nicht amtliche Lösung führt eine Zeile je Durchlauf. Falle: 19 / 20 ist bei int 0.
 
 **Fallen:**
 - Teil A: Nach der letzten Änderung noch einen Durchlauf rechnen, obwohl die Bedingung mit dem neuen Wert schon falsch ist.

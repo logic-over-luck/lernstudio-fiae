@@ -130,7 +130,7 @@ Beispiel Webshop: Der Anwendungsfall „Bestellung bezahlen“ ist mit dem Akteu
 - Zwei Aufgaben als Muster (2023H, 2024H), beide mit dem Operator „ergänzen“ und einem vorgedruckten Diagramm.
 - Einmal war ein Geschäftsprozess als kurze Spiegelstrichliste gegeben; Systemgrenze, include-Pfeile und Assoziationen waren gezeichnet, vier Ellipsen und zwei Akteurnamen leer. 6 Punkte, 1 je Eintrag; auch knappe Substantive galten als Anwendungsfall.
 - Einmal war die Vorlage fast leer (ein Akteur, ein Anwendungsfall); zwei Anforderungssätze enthielten die Signalwörter für Generalisierung und include. 5 Punkte: neuer Akteur 1, Generalisierung 1 (direkte Linien zu allen Anwendungsfällen zählten alternativ), drei Anwendungsfälle und drei include-Pfeile je 0,5.
-- extend mit Erweiterungspunkt und Notiz steht im Notationsanhang des Prüfungskatalogs und kann ebenso gefragt werden.
+- 2026H, 7 Punkte, „erweitern“: begonnenes Diagramm für eine Webseite mit zwei Akteuren (einer als Spezialisierung des anderen) und zwei Anwendungsfällen, davon einer mit Erweiterungspunkt („EP: …“), dazu die Notationshilfe. Drei Sätze beschreiben die Anwendungsfälle; die Signalwörter „falls gewünscht“ (extend am Erweiterungspunkt, K5) und „dazu müssen sie sich anmelden“ (include, K4) entscheiden. Zu ergänzen: ein dritter Akteur mit Generalisierung, drei Anwendungsfälle, zwei Assoziationen, ein extend- und ein include-Pfeil. Lösung nicht amtlich, ohne Punkteschema.
 - Pfeilrichtung und die Beschriftung «include» oder «extend» zählen, die Zeichenqualität nicht.
 
 **Fallen:**

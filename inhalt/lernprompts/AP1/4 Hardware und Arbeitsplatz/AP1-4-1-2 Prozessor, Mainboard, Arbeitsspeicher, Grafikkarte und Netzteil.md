@@ -158,6 +158,7 @@ Beispiel: Die Sachbearbeitung kommt mit integrierter Grafik aus, die 3D-Visualis
 - Muster 1: Vorgegeben ist ein Taskmanager-Ausschnitt. „Erläutern“ des Begriffs logische Prozessoren (2 Punkte, etwa 3 Zeilen; die Lösung sagt gröber: Teilung der physischen Kerne, um mehrere Threads gleichzeitig in einem Kern auszuführen, Hyperthreading – das zählt ebenso). „Beschreiben“ der Aufgabe eines Cache (2 Punkte: schneller Zwischenspeicher, weniger Zugriffe auf ein langsameres Speichermedium).
 - Muster 2: Eckdaten eines Laptops, ein Steckplatz frei, drei Riegelangebote mit Preis (andere Generation, gleiche Generation schneller, gleich). Kompatibilität je Angebot in einem knappen Satz „erklären“ (3 Punkte), dann eine Empfehlung wirtschaftlich „begründen“ (2 Punkte). Die IHK schreibt dabei „DDR4-3200MHz“; gemeint ist die Datenrate.
 - Chipsatz, Formfaktor, PCIe, Netzteil und Grafik kamen noch nicht vor. Der Prüfungskatalog nennt Netzteil, Grafikkarte, Motherboard, Wirkungsgrad und Gütesiegel; zu erwarten sind „erklären“ und eine begründete Auswahl am Datenblatt, beim Netzteil mit Lastanteil.
+- 2026H, Testprotokoll: Laut Spezifikation 32 GB RAM, angezeigt werden 16 GB. Zwei weitere Wege angeben, die Speichergröße zu prüfen, und beschreiben, wie man den defekten von zwei Riegeln findet (je 2 Punkte).
 
 **Fallen:**
 - Eine Aufgabe nur umschreiben: „Netzteil liefert Strom“ ohne die Umwandlung, „RAM speichert Daten“ ohne „laufende Programme“ – oder Arbeitsspeicher und SSD als „Speicher“ vermengen.

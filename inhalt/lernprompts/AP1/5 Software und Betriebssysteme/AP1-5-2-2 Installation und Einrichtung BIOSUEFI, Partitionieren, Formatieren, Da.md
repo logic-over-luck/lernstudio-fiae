@@ -175,7 +175,9 @@ Bei vielen Arbeitsplätzen übernimmt das eine **Softwareverteilung**: Programme
 - Testprotokoll: was geprüft wurde, mit welchem Ergebnis
 
 **So fragt die IHK:**
-- Es liegt keine verwendbare echte Aufgabe vor. Der Prüfungskatalog nennt Installation und Einrichtung von Systemen (Betriebssysteme, BIOS, UEFI, Partitionierungen/Formatierungen), Einstellungsmöglichkeiten im BIOS/UEFI, Filesysteme (fat32, NTFS, APFS, ext4) sowie Installation und Konfiguration des Betriebssystems.
+- Echte Aufgabe (2026H, K5), 2 Punkte, „nennen“: Auf Baustellen sind verschiedene Betriebssysteme im Einsatz, für eine tragbare Datensicherung sollen USB-Sticks mit FAT32 dienen; verlangt sind ein Vorteil und ein Nachteil von FAT32. Die nicht amtliche Lösung nennt: läuft auf nahezu allen Betriebssystemen und Geräten; höchstens 4 GB je Datei, keine Dateirechte.
+- In derselben Prüfung sollte im Testprotokoll die RAM-Größe auf anderem Weg geprüft werden; als Lösung zählt auch der Blick ins UEFI/BIOS.
+- Sonst gibt es keine echte Aufgabe. Der Prüfungskatalog nennt Installation und Einrichtung von Systemen (Betriebssysteme, BIOS, UEFI, Partitionierungen/Formatierungen), Einstellungsmöglichkeiten im BIOS/UEFI, Filesysteme (fat32, NTFS, APFS, ext4) sowie Installation und Konfiguration des Betriebssystems.
 - Zu erwarten: Ein Kunde lässt Arbeitsplätze neu einrichten oder Datenträger beschaffen, oft als Teil einer größeren Aufgabe zu Hardware oder Arbeitsplätzen. Material kann ein Datenblatt oder eine Tabelle sein (Datenträgergröße, beteiligte Betriebssysteme, Dateigrößen), eine Liste von Installationsschritten in falscher Reihenfolge oder ein Ausschnitt aus einem UEFI-Menü.
 - Operatoren: nennen (Einstellungen im UEFI, Installationsarten), unterscheiden oder erläutern (BIOS/UEFI, Partitionieren/Formatieren, MBR/GPT), in Reihenfolge bringen, beurteilen (Dateisystem für einen Datenträger).
 - Zu erwarten sind kleine Teilaufgaben mit 2–6 Punkten. Beim Beurteilen gibt es volle Punkte nur mit der ausschlaggebenden Eigenschaft; bei FAT32 zählen der Vorteil (fast überall lesbar) und die Nachteile (4 GiB je Datei, keine Rechte).

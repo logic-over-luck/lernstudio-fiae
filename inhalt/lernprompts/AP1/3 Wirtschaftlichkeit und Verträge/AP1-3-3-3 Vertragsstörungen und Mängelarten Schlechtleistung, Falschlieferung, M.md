@@ -192,7 +192,9 @@ Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im erst
 - Echte Aufgabe: Ein Fertigungsbetrieb richtet CAD-Arbeitsplätze ein. Der Vertragsteil ist ein kleiner Anhang hinter einer Nutzwertanalyse, ohne Material, mit dem Hinweis, dass dem Kunden die ordnungsgemäße Abwicklung des Kaufvertrags wichtig ist.
 - „Nennen“ von zwei Kaufvertragsstörungen (2 Punkte), dann „angeben“ je einer Maßnahme, mit der der Kunde die genannte Störung vermeiden kann (2 Punkte). Je Nennung 1 Punkt, eine Zeile reicht.
 - Als Störungen zählen Lieferverzug und mangelhafte Lieferung. Die Maßnahmen sind offen und großzügig bewertet: gegen Lieferverzug auch sofortige Mahnung und Analyse der Lieferkette, gegen mangelhafte Lieferung sofortige Kontrolle, sorgfältige Lieferantenauswahl und Konventionalstrafen. Entscheidend ist, dass die Maßnahme erkennbar zur genannten Störung passt.
-- Aus dem Prüfungskatalog ist außerdem zu erwarten: Mängelarten aus einer Liefer- oder Abnahmekontrolle bestimmen, Rechte des Käufers bei Mangel oder Verzug beschreiben, Folgen für den Lieferanten. Kurze Teilaufgaben mit 2 bis 4 Punkten in einer größeren Projektaufgabe.
+- 2026F: Ein Zulieferer muss pünktlich liefern. Ein Recht „beschreiben“, das seine Kunden bei Lieferverzug in Anspruch nehmen können (K5, K11, 2 Punkte), und eine negative Konsequenz „beschreiben“, die sich aus dem Imageverlust ergibt (K7, 2 Punkte). Lösungshinweise liegen nicht vor; zum Recht gehört seine Bedingung (Nachfrist, Vertretenmüssen).
+- 2025H (K6): beim Abgleich einer Rechnung drei Kontrollvorgänge „beschreiben“ (6 Punkte); dazu gehört der Vergleich mit Bestellung und Lieferschein nach Art, Menge und Zustand.
+- Mängelarten an einer Lieferung zu bestimmen sowie Gewährleistung, Garantie und Rügepflicht kamen noch nicht vor; nach dem Prüfungskatalog sind kurze Teilaufgaben mit 2 bis 4 Punkten zu erwarten.
 
 **Fallen:**
 - Teil A: Bei einer Störung auf der Käuferseite den Zwischenhändler aus Gewohnheit als Verkäufer einordnen.

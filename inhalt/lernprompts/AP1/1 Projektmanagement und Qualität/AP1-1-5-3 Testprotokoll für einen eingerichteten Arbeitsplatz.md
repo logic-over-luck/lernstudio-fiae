@@ -99,9 +99,10 @@ Beispiel mit zwei Speicherriegeln, der Rechner stürzt ab:
 - ESD-Schutz: Schutz der Bauteile vor elektrostatischer Entladung
 
 **So fragt die IHK:**
-- Die Prüfungsaufgaben, in denen K3 und K6 vorkamen, liegen hier nicht als Aufgabe vor. Der Prüfungskatalog nennt das „Testprotokoll für das Einrichten eines Arbeitsplatzes“ als Maßnahme des Qualitätsmanagements für den eigenen Arbeitsbereich.
-- Zu erwarten ist eine Aufgabe in einem Kundenprojekt mit einer Spezifikation oder einem teilweise ausgefüllten Testprotokoll: Testfälle erstellen oder ergänzen, eine Abweichung begründen, weitere Prüfschritte festlegen, eine Fehlersuche durch Austauschen beschreiben.
-- Als richtig dürften zählen: konkrete, aus der Spezifikation abgeleitete erwartete Ergebnisse; Prüfschritte mit konkretem Ort (UEFI, Task-Manager, `ipconfig`); beim Austauschen Sicherheit, nur eine Änderung und Gegenprobe.
+- Echte Aufgabe (2026H): Für einen Kunden wurde ein PC geliefert. Vorgegeben sind die Spezifikation (Prozessor, RAM, SSD, Netzwerk, Schnittstellen) und je Teilaufgabe eine Zeile des Testprotokolls mit Testfall, Beschreibung, erwartetem Ergebnis und abweichendem Ergebnis.
+- Testfall RAM (erwartet 32 GB, angezeigt 16 GB): zwei weitere Möglichkeiten „angeben“, die Speichergröße zu prüfen (K3, 2 Punkte; nicht amtliche Lösung: im UEFI/BIOS nachsehen, Task-Manager oder Systeminformationen). Dann eine Vorgehensweise „beschreiben“, um den defekten von zwei Riegeln zu finden (K6, 2 Punkte; Lösung: ausschalten, vom Stromnetz trennen, ESD-Schutz, einen Riegel ausbauen, starten, Gegenprobe mit dem anderen Riegel im selben Steckplatz).
+- Weitere Testfälle derselben Aufgabe gehören zu anderen Stichpunkten: Eine SSD mit 1.000 GB wird als 931 GiB angezeigt (begründen und umrechnen); das Netzwerk hat keine Verbindung (Sichtprüfung des Patchkabels, Fehlersuche nach OSI).
+- Der Prüfungskatalog nennt das „Testprotokoll für das Einrichten eines Arbeitsplatzes“ als Maßnahme des Qualitätsmanagements für den eigenen Arbeitsbereich. Testfälle selbst zu erstellen oder zu ergänzen kam noch nicht vor, ist danach aber zu erwarten.
 
 **Fallen:**
 - Das erwartete Ergebnis vage schreiben („funktioniert“, „Drucker geht“) oder Werte einsetzen, die nicht aus der Spezifikation stammen.

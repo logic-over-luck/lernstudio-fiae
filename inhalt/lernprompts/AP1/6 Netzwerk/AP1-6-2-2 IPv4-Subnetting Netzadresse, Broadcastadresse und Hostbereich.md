@@ -155,7 +155,9 @@ In 8 Teilnetze → +3 Bits → /27, Blockgröße 32.
 - Muster 1: Konsolenausgabe von ipconfig (IPv4-Adresse, Maske 255.255.255.0, Gateway). Netzadresse, Hostadresse und Broadcastadresse angeben, drei vorgegebene Zeilen, 3 Punkte, je 1. Als Hostadresse zählte 0.0.0.x oder die volle Adresse.
 - Muster 2: Gezeichnete Netzskizze mit der Überschrift „Netzadresse …/26“, zwei PCs mit Adressen und ein Gerät mit leerer Linie. Das Gateway hat die letzte mögliche Adresse, das Gerät soll die vorletzte bekommen; „ergänzen“, 2 Punkte, eindeutige Lösung.
 - Typisch sind kurze Aufgaben mit „angeben“ oder „ergänzen“ und eindeutiger Lösung. Ein Rechenweg wird nicht verlangt, es zählt nur das exakte Ergebnis.
-- Zahl der Hosts, „selbes Netz?“ und Aufteilen sind laut Katalog ebenso prüfbar, meist mit 1–3 Punkten je Angabe.
+- Muster 3 (2026F), 4 Punkte, „errechnen“: zu einer Adresse mit /25 vier Felder ausfüllen – Subnetzmaske, Anzahl nutzbarer IP-Adressen, Netzadresse, Broadcast-Adresse (K1, K2, K5), je 1 Punkt.
+- Muster 4 (2025H), 3 Punkte, „konfigurieren“: Netzplan mit /24-Adressen; ein neues Gerät soll die letzte mögliche Adresse bekommen, dazu Maske und Gateway (K3; dass es im Netz der anderen Geräte liegen muss, ist K6).
+- Aufteilen in Teilnetze ist laut Katalog ebenso prüfbar, kam aber noch nicht vor.
 
 **Fallen:**
 - Eine Maske mit einer Lücke in den Einsen (z. B. 255.255.0.255) oder mit einem Oktettwert außer 0, 128, 192, 224, 240, 248, 252, 254 und 255 für gültig halten.

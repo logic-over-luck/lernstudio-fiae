@@ -150,6 +150,7 @@ Häufigste Falle: Ein Angebot nennt den Preis inklusive USt (1.190 €), ein and
 - Preisbestimmung: englischer Artikel über Preise für Serviceleistungen. Auf Deutsch je eine Gefahr zu hoher und zu niedriger Preise (je 1 Punkt) und die vier Aspekte aus dem Text nennen (4 Punkte).
 - Bedarf: Eckdaten eines Geräts (u. a. RAM-Typ und Takt) und drei Angebote mit Preisen; „begründen“, welches empfohlen wird, rund 2 Punkte. Richtig ist das günstigste, das zum Gerät passt.
 - Zu Preis je Leistungseinheit, Monats- oder Gesamtpreisen und Nettovergleich gibt es keine echte Aufgabe.
+- 2026H (K5), 2 Punkte, „auswählen“: Produkttabelle mit drei Patchkabeln (Kategorie, höchste Datenrate, Schirmung, Preis); gesucht ist das günstigste, das die Vorgabe „gleichwertig oder besser als das bisherige geschirmte Kabel“ erfüllt. Richtig ist das mittlere: Das billigste ist ungeschirmt, das teuerste bietet mehr als verlangt.
 
 **Fallen:**
 - Packungen anteilig rechnen: Es gibt nur ganze, also aufrunden.

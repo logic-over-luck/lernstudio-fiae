@@ -167,6 +167,7 @@ Die qualifizierte elektronische Signatur nach der EU-Verordnung eIDAS ist der ei
 - 2023H: Telearbeitsplatz mit VPN und persönlichem Zertifikat. „Beschreiben Sie die geplante Identifizierung“, 3 Punkte; gezählt: Authentifizierung des Mitarbeiters gegenüber dem Server.
 - 2021H: Tabelle mit Schutzmaßnahmen, je ein Kreuz bei Vertraulichkeit, Integrität oder Verfügbarkeit plus Begründung (0,5 Punkte für das Kreuz, 1 Punkt für die Begründung je Zeile); die Hashwertprüfung bei einer Softwareinstallation gehört zu Integrität.
 - Zu Zertifizierungsstelle, Browserwarnung, zweistufiger Prüfung und qualifizierter elektronischer Signatur gibt es keine echte Aufgabe.
+- 2025H (K4), 4 Punkte, „beschreiben“: Skizze mit zwei Seiten (Absender und Empfänger), je einem privaten und einem öffentlichen Schlüssel und Umschlägen mit und ohne Schloss, ohne Zuordnung der Schlüssel. Verlangt ist das prinzipielle Vorgehen beim Erstellen und Prüfen einer Signatur. Die Skizze sieht aus wie eine Verschlüsselung; für die Signatur zählen aber nur die Schlüssel des Absenders. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Teil A: „Kollisionsfreiheit“ wörtlich nehmen. Weil beliebig viele Daten auf eine feste Länge abgebildet werden, gibt es gleiche Hashwerte für verschiedene Daten; verlangt ist nur, dass sich solche Paare praktisch nicht finden lassen.

@@ -148,6 +148,7 @@ Sicherheitsleitlinie gegen Sicherheitsrichtlinien: Die Leitlinie ist das Grundsa
 - Gezählt werden etwa Mindestlänge (oft „acht Zeichen“), Groß-/Kleinbuchstaben und Sonderzeichen (größerer Zeichenvorrat), keine Wörterbuchbegriffe (erschwert Wörterbuchangriffe), unterschiedliche Passwörter je Zugang (begrenzt das Risiko, wenn eines bekannt wird).
 - Weiteres Muster, 3 Punkte: Alle Benutzer sollen Administratorrechte bekommen, damit sie seltener den Support anrufen; ein Grund dagegen ist zu „erläutern“. Anerkannt: Rechner und Netz werden anfälliger für Malware; missbräuchliche oder unerwünschte Aktionen.
 - Ohne echte Aufgabe, aber im Katalog: Richtlinien bewerten, Sicherheitsbewusstsein, Security by Design und by Default.
+- 2026F (K7), 4 Punkte, „beschreiben“: Im englischen Datenblatt einer Kamera steht „no default passwords“; verlangt sind zwei Konsequenzen dieser Voreinstellung. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Eine Vorgabe mit Zeichenzahl oder Verhaltensregel als Leitlinie einordnen, oder als Grund nur „klingt allgemeiner“ schreiben.

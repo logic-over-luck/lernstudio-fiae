@@ -125,6 +125,7 @@ Merke: „Freeware“ beschreibt den **Preis**, „Open Source“ die **Rechte**
 - Operator „nennen“: je zwei Vorteile pro Lizenzmodell, 1 Punkt je Vorteil, kein Material, Stichworte reichen.
 - Die Lösungshinweise zählen für Open Source: (ggf.) kostenlos; offener Quellcode, den alle prüfen und verbessern können. Für proprietär: (ggf.) bessere Zusammenarbeit mit Software desselben Herstellers, gesicherter Service, Zukunftssicherheit durch einen kommerziellen Hersteller.
 - Im Prüfungskatalog steht das Thema unter der bedarfsgerechten Auswahl von Software; zu erwarten ist deshalb auch „begründen“ oder „beurteilen“, immer mit dem Bedarf aus der Ausgangssituation.
+- 2026H (K5): Die Geschäftsführung bittet um eine Empfehlung, ob Open-Source-Komponenten für eine geplante Software infrage kommen; gefragt waren dann zwei Grundgedanken der GNU GPL (4 Punkte, „beschreiben“), nicht die Empfehlung selbst.
 
 **Fallen:**
 - Den Unterschied nur mit „Quellcode offen oder geschlossen“ erklären, ohne zu sagen, was man damit darf, oder nur eine Seite beschreiben.
