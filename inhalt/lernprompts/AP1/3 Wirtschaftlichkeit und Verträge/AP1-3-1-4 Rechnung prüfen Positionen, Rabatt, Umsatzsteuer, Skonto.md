@@ -161,7 +161,7 @@ Dann kann der Lieferant verlangen:
 - Bezahlen mit Skonto: K2, K8
 - Zu spät gezahlt: K10
 
-**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K6 (2025H), K7 (2025H) · Noch nicht geprüft: K3–K5, K8–K10
+**Schon geprüft:** In Prüfungen: K2 (2025H), K6 (2025H), K7 (2025H) · Noch nicht geprüft: K1, K3–K5, K8–K10
 
 **Kerngedanken:**
 - Eine Rechnung wird zweimal geprüft: sachlich (passt sie zu Bestellung und Lieferung?) und rechnerisch (stimmt der Rechenweg?). Eine Rechnung kann richtig gerechnet und trotzdem falsch sein, weil Menge, Preis oder Zahlungsbedingung nicht stimmen.
@@ -184,7 +184,7 @@ Dann kann der Lieferant verlangen:
 - Lieferschein: Beleg über die tatsächlich gelieferte Menge
 - Zahlungsverzug: Nichtzahlung nach Mahnung; ohne Mahnung bei Kalendertermin oder nach 30 Tagen
 
-**So fragt die IHK:**Echte Aufgabe (2025H): Ein Unternehmen mit Filialen beschafft Kassensysteme und bekommt eine Rechnung als Material. Sie zeigt Bestell-, Liefer- und Rechnungsdatum, drei Positionen mit Menge, Einzel- und Gesamtpreis und einem Kennzeichen für den Steuersatz, den Nettobetrag, die Umsatzsteuer getrennt nach 19 % und 7 %, den Bruttobetrag, das Zahlungsziel („bis … 2 % Skonto oder bis … ohne Abzug“), einen QR-Code und die Bankverbindungen. Dazu drei Teilaufgaben: die Vorgänge, die schon stattgefunden haben, mit Datum „nennen“ (K6, 3 Punkte: Bestellung, Lieferung, Rechnungsstellung – die Zahlungsfristen liegen noch in der Zukunft); drei Kontrollvorgänge beim Abgleich der Rechnungspositionen „beschreiben“ (K1, K7, 6 Punkte); den Skontobetrag „berechnen“ und kaufmännisch auf zwei Nachkommastellen runden (K2, 2 Punkte). Lösungshinweise liegen nicht vor. Der Prüfungskatalog enthält im Anhang eine ähnliche Musterrechnung mit Rabattzeile und dem Satz, ab wann ohne weitere Nachricht Verzug eintritt; zu erwarten sind deshalb auch Zahlbetrag, Rabatt, Pflichtangaben und Verzug, meist 2–6 Punkte je Teilaufgabe.
+**So fragt die IHK:**Echte Aufgabe (2025H): Ein Unternehmen mit Filialen beschafft Kassensysteme und bekommt eine Rechnung als Material. Sie zeigt Bestell-, Liefer- und Rechnungsdatum, drei Positionen mit Menge, Einzel- und Gesamtpreis und einem Kennzeichen für den Steuersatz, den Nettobetrag, die Umsatzsteuer getrennt nach 19 % und 7 %, den Bruttobetrag, das Zahlungsziel („bis … 2 % Skonto oder bis … ohne Abzug“), einen QR-Code und die Bankverbindungen. Dazu drei Teilaufgaben: die Vorgänge, die schon stattgefunden haben, mit Datum „nennen“ (K6, 3 Punkte: Bestellung, Lieferung, Rechnungsstellung – die Zahlungsfristen liegen noch in der Zukunft); drei Kontrollvorgänge beim Abgleich der Rechnungspositionen „beschreiben“ (K7, 6 Punkte); den Skontobetrag „berechnen“ und kaufmännisch auf zwei Nachkommastellen runden (K2, 2 Punkte). Lösungshinweise liegen nicht vor. Der Prüfungskatalog enthält im Anhang eine ähnliche Musterrechnung mit Rabattzeile und dem Satz, ab wann ohne weitere Nachricht Verzug eintritt; zu erwarten sind deshalb auch Zahlbetrag, Rabatt, Pflichtangaben und Verzug, meist 2–6 Punkte je Teilaufgabe.
 
 **Fallen:**
 - Die kaufmännischen Zeitpunkte werden vom Beleg abgelesen, nicht auswendig gelernt.

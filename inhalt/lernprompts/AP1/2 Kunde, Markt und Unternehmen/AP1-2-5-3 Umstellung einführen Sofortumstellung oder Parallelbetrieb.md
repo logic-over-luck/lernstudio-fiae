@@ -88,7 +88,7 @@ Beispiel: Ein neues Ticketsystem startet zuerst im Support einer Niederlassung, 
 - Was jeweils schiefgehen kann: K3, K4
 - Wege dazwischen: K5
 
-**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2026F), K3 (2026F) · Noch nicht geprüft: K4, K5
+**Schon geprüft:** In Prüfungen: K1 (2026F), K3 (2026F) · Noch nicht geprüft: K2, K4, K5
 
 **Kerngedanken:**
 - Hier geht es nur um einen Schritt der Veränderung, das Umstellen: Auf welche Art kommt das neue System in den Betrieb? Wie man die Mitarbeiter informiert und schult, gehört zum Nachbarstichpunkt.
@@ -110,7 +110,7 @@ Beispiel: Ein neues Ticketsystem startet zuerst im Support einer Niederlassung, 
 **So fragt die IHK:**
 - Echte Aufgabe (2026F): Arbeitsplätze werden umorganisiert und digitalisiert, erfahrene Mitarbeiter fürchten, dem nicht gewachsen zu sein; ein Change Management soll die Veränderung ordnen. Material ist ein kurzer englischer Absatz dazu.
 - Drei Beispiele aus dem Text „benennen“, in denen ein Änderungsmanagement nützlich ist (K1, 3 Punkte): Umstrukturierung, Neuverteilung von Ressourcen, geänderte Geschäftsprozesse und Systeme, Einführung digitaler Technik.
-- Der Betrieb will auf ein neues Warenerfassungssystem umsteigen; als Alternative zur Sofortumstellung wird ein befristeter Parallelbetrieb diskutiert. Einen generellen Nachteil der Sofortumstellung gegenüber dem Parallelbetrieb „beschreiben“ (K2, K3, 2 Punkte). Lösungshinweise liegen nicht vor.
+- Der Betrieb will auf ein neues Warenerfassungssystem umsteigen; als Alternative zur Sofortumstellung wird ein befristeter Parallelbetrieb diskutiert. Einen generellen Nachteil der Sofortumstellung gegenüber dem Parallelbetrieb „beschreiben“ (K3, 2 Punkte). Lösungshinweise liegen nicht vor.
 - Der Prüfungskatalog nennt die „Identifizierung und Darstellung von Veränderungsschritten“; die Einführungsart gehört zum Schritt „umstellen“.
 - Zu erwarten ist außerdem die Gegenrichtung: die Einführungsarten beschreiben oder einen Nachteil des Parallelbetriebs nennen.
 

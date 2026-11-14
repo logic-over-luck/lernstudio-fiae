@@ -118,7 +118,7 @@ Beispiel: Statt „Das Notebook hat 32 GB RAM“ sagst du „Damit laufen Ihre E
 - Passende Leistungen auswählen: K4
 - Das Angebot im Beratungsgespräch: K7
 
-**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K3 (2022F), K4 (2022F) · Noch nicht geprüft: K5–K7
+**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K3 (2022F) · Noch nicht geprüft: K4–K7
 
 **Kerngedanken:**
 - Das Lastenheft schreibt der Kunde, die Ist-Analyse macht der Anbieter (beides Nachbarthemen). Hier geht es nur darum, wozu das Angebot sie braucht.

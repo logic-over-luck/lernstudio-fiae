@@ -132,7 +132,7 @@ In 8 Teilnetze → +3 Bits → /27, Blockgröße 32.
 - Selbes Netz oder nicht: K6
 - Ein Netz in Teilnetze teilen: K7
 
-**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2022F, 2026F), K3 (2025F, 2025H), K4 (2025F), K5 (2026F), K6 (2025H) · Noch nicht geprüft: K7
+**Schon geprüft:** In Prüfungen: K1 (2026F), K2 (2022F, 2026F), K3 (2025F, 2025H), K4 (2025F), K5 (2026F) · Noch nicht geprüft: K6, K7
 
 **Kerngedanken:**
 - Die Blockgröße ist der Stellenwert des letzten Netzbits in seinem Oktett, z. B. /26 → 64, /28 → 16. Bei Präfixen von /25 bis /32 ist sie zugleich die Zahl der Adressen des Netzes; ein /24-Netz hat 256 Adressen. So hängen Größe und Grenzen zusammen.
@@ -156,7 +156,7 @@ In 8 Teilnetze → +3 Bits → /27, Blockgröße 32.
 - Muster 2: Gezeichnete Netzskizze mit der Überschrift „Netzadresse …/26“, zwei PCs mit Adressen und ein Gerät mit leerer Linie. Das Gateway hat die letzte mögliche Adresse, das Gerät soll die vorletzte bekommen; „ergänzen“, 2 Punkte, eindeutige Lösung.
 - Typisch sind kurze Aufgaben mit „angeben“ oder „ergänzen“ und eindeutiger Lösung. Ein Rechenweg wird nicht verlangt, es zählt nur das exakte Ergebnis.
 - Muster 3 (2026F), 4 Punkte, „errechnen“: zu einer Adresse mit /25 vier Felder ausfüllen – Subnetzmaske, Anzahl nutzbarer IP-Adressen, Netzadresse, Broadcast-Adresse (K1, K2, K5), je 1 Punkt.
-- Muster 4 (2025H), 3 Punkte, „konfigurieren“: Netzplan mit /24-Adressen; ein neues Gerät soll die letzte mögliche Adresse bekommen, dazu Maske und Gateway (K3; dass es im Netz der anderen Geräte liegen muss, ist K6).
+- Muster 4 (2025H), 3 Punkte, „konfigurieren“: Netzplan mit /24-Adressen; ein neues Gerät soll die letzte mögliche Adresse bekommen, dazu Maske und Gateway (K3).
 - Aufteilen in Teilnetze ist laut Katalog ebenso prüfbar, kam aber noch nicht vor.
 
 **Fallen:**

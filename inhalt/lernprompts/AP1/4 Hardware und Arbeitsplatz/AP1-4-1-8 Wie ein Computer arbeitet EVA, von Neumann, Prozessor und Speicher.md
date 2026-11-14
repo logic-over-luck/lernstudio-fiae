@@ -99,7 +99,7 @@ Abgrenzung:
 - RISC wie ARM gegen x86: K7
 - Pipelining, danach die Abgrenzung zu den anderen Formen der Parallelisierung: K8
 
-**Schon geprüft:** In Prüfungen: K5 (2022F) · Noch nicht geprüft: K1, K4, K7, K8
+**Schon geprüft:** Noch nicht geprüft: K1, K4, K5, K7, K8
 
 **Kerngedanken:**
 - Pipelining lässt sich nachzählen: Ohne Pipelining braucht jeder Befehl alle Phasen für sich, also Befehle mal Phasen Takte. Mit Pipelining braucht der erste Befehl alle Phasen, danach wird im Idealfall je Takt einer fertig: Phasen plus (Befehle minus 1) Takte.

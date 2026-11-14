@@ -127,7 +127,7 @@ Je länger die Schuld stehen bleibt, desto teurer wird es. Dafür ist die gleich
 - Grenzmenge Kauf gegen Pay-per-Use: K6
 - Urteil nach den Kosten: K7; über die Kosten hinaus: K8
 
-**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (2024H), K3 (2024H), K8 (2023F) · Noch nicht geprüft: K6, K7, K9
+**Schon geprüft:** In Prüfungen: K1 (2023F), K2 (2024H), K3 (2024H) · Noch nicht geprüft: K6–K9
 
 **Kerngedanken:**
 - Finanzierung ist ein Kauf mit geliehenem Geld. Was beim Barkauf zusätzlich anfällt (etwa ein Wartungsvertrag), fällt hier genauso an: Gesamtkosten = Kaufpreis + Zinssumme + Gebühren + diese laufenden Kosten.

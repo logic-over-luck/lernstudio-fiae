@@ -86,7 +86,7 @@ Beispiel: Neues Büro-WLAN, ein alter Scanner kann nur WPA2 → Übergangsmodus 
 - Das passende Verfahren empfehlen: K2
 - Welches Sicherheitsverfahren man heute einstellt: K8
 
-**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K6 (2022F), K7 (2022F), K8 (2022F)
+**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2022F), K6 (2022F) · Noch nicht geprüft: K7, K8
 
 **Kerngedanken:**
 - Es sind zwei getrennte Entscheidungen: wie man sich anmeldet (gemeinsames Kennwort oder eigene Zugangsdaten) und welche Generation der Verschlüsselung läuft (WPA2, WPA3). WPA3 ersetzt die erste Entscheidung nicht – es gibt WPA3-Personal und WPA3-Enterprise.

@@ -114,7 +114,7 @@ HDD-Leistung hängt von Zugriffszeit (Kopfbewegung und Drehwartezeit, bis die ge
 - eMMC: K7
 - HDD-Leistung, Bauformen mit Hybridlaufwerk, Flash-Zellen: K8 – drei getrennte Teile, einzeln behandeln
 
-**Schon geprüft:** In Prüfungen: K2 (2024H), K4 (2022F), K5 (2022F) · Noch nicht geprüft: K1, K3, K6–K8
+**Schon geprüft:** In Prüfungen: K2 (2024H), K5 (2022F) · Noch nicht geprüft: K1, K3, K4, K6–K8
 
 **Kerngedanken:**
 - Alle Vorteile der SSD folgen aus einem Punkt: Es bewegt sich nichts. Die HDD muss den Kopf bewegen und warten, bis die gesuchte Stelle unter ihm ankommt.

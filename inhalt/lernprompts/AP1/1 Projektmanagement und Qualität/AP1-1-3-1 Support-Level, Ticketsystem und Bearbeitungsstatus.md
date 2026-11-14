@@ -148,7 +148,7 @@ Ein Ticket wird kategorisiert (fachlich, z. B. Hardware, Netzwerk, Cloud) und kl
 - Teil B – entlasten und verbessern: K9, K6
 - Teil C – Minutenpreis einer Hotline: K5
 
-**Schon geprüft:** In Prüfungen: K1 (2023H), K5 (2023H), K6 (2023H) · Noch nicht geprüft: K2–K4, K7–K10
+**Schon geprüft:** In Prüfungen: K5 (2023H), K6 (2023H) · Noch nicht geprüft: K1–K4, K7–K10
 
 **Kerngedanken:**
 - Die Support-Stufe richtet sich danach, wer den Fall lösen kann, nicht danach, wie dringend er ist. Die Priorität (aus Auswirkung und Dringlichkeit) bestimmt die Reihenfolge der Bearbeitung, nicht die Stufe: Auch ein eiliger Fall geht erst weiter, wenn die Stufe davor ihn nicht lösen kann.

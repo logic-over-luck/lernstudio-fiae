@@ -83,7 +83,7 @@ Beispiel: Ist vereinbart, dass die Rechner beim Kunden installiert werden, ist d
 - Im Einzelfall entscheiden und begründen: K1
 - Was der Kunde vorgibt, mit dem Erfüllungsort als genauem Begriff: K2, K4
 
-**Schon geprüft:** In Prüfungen: K1 (2021H, 2023H), K3 (2021H) · Noch nicht geprüft: K2, K4
+**Schon geprüft:** In Prüfungen: K3 (2021H) · Noch nicht geprüft: K1, K2, K4
 
 **Kerngedanken:**
 - Die Entscheidung braucht zwei Prüfungen nacheinander: Ist Hardware betroffen? Und ist das Gerät überhaupt erreichbar? Erst wenn die erste mit Nein und die zweite mit Ja beantwortet ist, geht es remote.

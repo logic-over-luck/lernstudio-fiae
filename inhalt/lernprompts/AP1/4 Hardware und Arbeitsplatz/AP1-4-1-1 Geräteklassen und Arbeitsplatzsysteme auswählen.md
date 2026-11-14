@@ -164,7 +164,7 @@ Der Abgleich von Ist und Soll zeigt, was geändert oder beschafft werden muss.
 - Pause möglich nach Teil B – bis hier Begriffe, danach wird mit ihnen beurteilt und ausgewählt.
 - Teil C – beurteilen und auswählen: Thin Clients beurteilen K9; Geräteklasse für einen Platz wählen K2; Tablet als Bildschirmarbeitsplatz K6; mobiler Arbeitsplatz K7; Konfiguration K12
 
-**Schon geprüft:** In Prüfungen: K2 (2023F), K5 (2023F), K6 (2023H), K7 (2023H, 2026H) · Noch nicht geprüft: K1, K3, K4, K8–K12
+**Schon geprüft:** In Prüfungen: K2 (2023F), K5 (2023F), K6 (2023H), K7 (2023H) · Noch nicht geprüft: K1, K3, K4, K8–K12
 
 **Kerngedanken:**
 - Drei Fragen ordnen die Geräteklassen grob: Kann man das Gerät tragen? Sitzen Rechner und Bildschirm in einem Gehäuse? Wo laufen die Programme? Bei den tragbaren Geräten trennen dann Bedienung (feste Tastatur oder Touch) und Telefonfunktion Notebook, Tablet und Smartphone.
@@ -191,7 +191,7 @@ Der Abgleich von Ist und Soll zeigt, was geändert oder beschafft werden muss.
 - Muster 2: Ein Systemhaus richtet Telearbeit ein. Zwei weitere Anschaffungen oder Maßnahmen über den PC hinaus „nennen und begründen“ (4 Punkte, 6 Zeilen). Gezählt werden zum Beispiel Headset, Kamera, Telefon, Drucker, ergonomischer Stuhl, blendfreie Beleuchtung, gesicherter Internetanschluss – jeweils mit Zweck. Dann an zwei Aspekten „erläutern“, warum ein Tablet die Anforderungen an einen Bildschirmarbeitsplatz nicht erfüllt (4 Punkte; es zählen Ergonomie, Anschlussmöglichkeiten, Software, Leistung).
 - Bewertet wird die Begründung aus der Situation. Reine Schlagworte bringen bei „begründen“ und „erläutern“ höchstens die Hälfte.
 - Zu Workstation, Fat Client, Zero und Cloud Client und zur Konfiguration gibt es keine echte Aufgabe.
-- 2026H (K7), 2 Punkte, „nennen“: Auf einer Baustelle soll Internet verfügbar sein; verlangt sind zwei Möglichkeiten. Die nicht amtliche Lösung nennt einen Mobilfunk-Router mit SIM-Karte und Tethering über das Dienst-Smartphone.
+- 2026H, 2 Punkte, „nennen“: Auf einer Baustelle soll Internet verfügbar sein; verlangt sind zwei Möglichkeiten. Die nicht amtliche Lösung nennt einen Mobilfunk-Router mit SIM-Karte und Tethering über das Dienst-Smartphone.
 
 **Fallen:**
 - Teil A: Zwei Geräteklassen nur mit „größer“ oder „kleiner“ unterscheiden, ohne ein Merkmal zu nennen (tragbar, Gehäuse, Ort der Verarbeitung, Bedienung, Telefonfunktion).

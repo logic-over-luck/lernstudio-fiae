@@ -101,7 +101,7 @@ Merke: „Freeware“ beschreibt den **Preis**, „Open Source“ die **Rechte**
 - Kostenlos heißt nicht offen: K6 – die Umkehrung davon
 - Für einen Einsatzfall begründet wählen: K5 – hier kommt alles zusammen
 
-**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (2025F), K5 (2026H) · Noch nicht geprüft: K1, K4, K6
+**Schon geprüft:** In Prüfungen: K2 (2025F), K3 (2025F) · Noch nicht geprüft: K1, K4–K6
 
 **Kerngedanken:**
 - Die Vorteile folgen aus dem Unterschied im Quellcode: Offener Code kann von allen geprüft und angepasst werden und macht unabhängig vom Hersteller. Bleibt der Code beim Hersteller, ist dieser allein zuständig – daraus folgen Support, Verantwortung für Updates und abgestimmte Produkte.
@@ -125,7 +125,7 @@ Merke: „Freeware“ beschreibt den **Preis**, „Open Source“ die **Rechte**
 - Operator „nennen“: je zwei Vorteile pro Lizenzmodell, 1 Punkt je Vorteil, kein Material, Stichworte reichen.
 - Die Lösungshinweise zählen für Open Source: (ggf.) kostenlos; offener Quellcode, den alle prüfen und verbessern können. Für proprietär: (ggf.) bessere Zusammenarbeit mit Software desselben Herstellers, gesicherter Service, Zukunftssicherheit durch einen kommerziellen Hersteller.
 - Im Prüfungskatalog steht das Thema unter der bedarfsgerechten Auswahl von Software; zu erwarten ist deshalb auch „begründen“ oder „beurteilen“, immer mit dem Bedarf aus der Ausgangssituation.
-- 2026H (K5): Die Geschäftsführung bittet um eine Empfehlung, ob Open-Source-Komponenten für eine geplante Software infrage kommen; gefragt waren dann zwei Grundgedanken der GNU GPL (4 Punkte, „beschreiben“), nicht die Empfehlung selbst.
+- 2026H: Die Geschäftsführung bittet um eine Empfehlung, ob Open-Source-Komponenten für eine geplante Software infrage kommen; gefragt waren dann zwei Grundgedanken der GNU GPL (4 Punkte, „beschreiben“), nicht die Empfehlung selbst.
 
 **Fallen:**
 - Den Unterschied nur mit „Quellcode offen oder geschlossen“ erklären, ohne zu sagen, was man damit darf, oder nur eine Seite beschreiben.

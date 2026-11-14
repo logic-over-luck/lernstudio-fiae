@@ -126,7 +126,7 @@ Beispiel: Eine KI soll Bewerbungen vorsortieren. Lernt sie aus alten Einstellung
 - Auswählen und einrichten: K5, K6
 - Ein eigenes KI-Vorhaben und seine Risiken: K9
 
-**Schon geprüft:** In Prüfungen: K1 (2025F, 2025H), K2 (2023F, 2025F) · Noch nicht geprüft: K3–K7, K9
+**Schon geprüft:** In Prüfungen: K1 (2025F), K2 (2023F, 2025F) · Noch nicht geprüft: K3–K7, K9
 
 **Kerngedanken:**
 - KI-Assistenten sind meist Software as a Service: Alles, was man eingibt, verlässt das Haus. Daraus folgen fast alle Datenschutzpunkte dieses Themas.
@@ -151,7 +151,7 @@ Beispiel: Eine KI soll Bewerbungen vorsortieren. Lernt sie aus alten Einstellung
 - Chatbot „beschreiben“: je ein Vorteil und Nachteil; gezählt auch Kundengewinnung, Verlust des persönlichen Kontakts.
 - Kosten „errechnen“: Monatspreis je Nutzer, jährliche Pflichtschulung als Pauschale je Person mit fester Stundenzahl, dazu entgangener Umsatz über einen Stundensatz. Benennung im Rechenweg nicht nötig. Muster: (Monatspreis × 12 + Pauschale + Stundensatz × Stunden) × Personen.
 - Auswählen, Einrichten, Risiken: keine echte Aufgabe; zu erwarten „beurteilen“ und „beschreiben“.
-- 2025H (K1), 4 Punkte, „beschreiben“: zwei Argumente für eine automatische Rechnungsprüfung mit KI-Unterstützung. Lösungshinweise liegen nicht vor.
+- 2025H, 4 Punkte, „beschreiben“: zwei Argumente für eine automatische Rechnungsprüfung mit KI-Unterstützung (gehört vor allem zum Thema „KI-Unterstützung in Arbeitsabläufen“). Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Einen Vor- oder Nachteil in die falsche Zeile setzen. Wirtschaftlich heißt: wirkt auf Kosten, Umsatz oder Arbeitsaufwand des Unternehmens (auch die Entlastung der Mitarbeiter); sozial heißt: wirkt auf Menschen, etwa Vertrauen, persönlicher Kontakt, Warteschleife.

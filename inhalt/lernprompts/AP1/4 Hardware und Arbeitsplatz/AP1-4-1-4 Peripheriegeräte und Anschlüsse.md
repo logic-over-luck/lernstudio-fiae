@@ -164,7 +164,7 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 - Teil B – Monitore anschließen: Bildanschlüsse K8; Daisy Chaining K5, danach die Skizze K7; reichen die Bildausgänge K10
 - Teil C – Auswahl nach Einsatz: Scanner K11; Tastaturen K12
 
-**Schon geprüft:** In Prüfungen: K2 (2022F, 2024F, 2025F, 2026F), K3 (2025F), K5 (2026F), K6 (2022F), K7 (2026F) · Noch nicht geprüft: K1, K4, K8–K12
+**Schon geprüft:** In Prüfungen: K2 (2022F, 2024F, 2025F), K3 (2025F), K5 (2026F), K6 (2022F), K7 (2026F) · Noch nicht geprüft: K1, K4, K8–K12
 
 **Kerngedanken:**
 - Peripherie heißt alles, was außerhalb von Prozessor und Arbeitsspeicher liegt. Die Einteilung folgt dem EVA-Prinzip: Eingabegeräte erfassen Daten, der Rechner verarbeitet sie, Ausgabegeräte geben das Ergebnis aus.
@@ -193,7 +193,7 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 - Am selben Multifunktionsgerät: zwei aufgedruckte Symbole benennen (WLAN, Bluetooth; 2 Punkte, je Begriff einer).
 - An einer PC-Rückseite mit Typ-A- und Typ-C-Buchse: zwei Vorteile von USB-C gegenüber USB 3 nennen (2 Punkte). Gezählt werden höhere Datenrate, höhere Stromversorgung, beidseitig steckbar.
 - Diese Aufgaben sind kurze Teilaufgaben mit „nennen“, „zuordnen“, „benennen“ beim Einrichten von Arbeitsplätzen.
-- Daisy Chaining (2026F, 6 Punkte): Vier Kamerabilder sollen auf vier Monitoren laufen. Material: ein kurzer englischer Text (Monitore in Reihe an einem Bildausgang, nötig sind Monitore mit MST über DisplayPort oder Thunderbolt) und ein Foto der Anschlussblende des PCs. Einen Vorteil „nennen“ (K5, 1 Punkt), die technische Voraussetzung „erläutern“ (K5, K2, 3 Punkte), dann in einer Skizze mit vier Monitoren die Kette einzeichnen und an eine geeignete Buchse des Fotos anschließen (K7, 2 Punkte). Lösungshinweise liegen nicht vor; geeignet sind DisplayPort oder die USB-C-Buchse mit Blitzsymbol, nicht HDMI.
+- Daisy Chaining (2026F, 6 Punkte): Vier Kamerabilder sollen auf vier Monitoren laufen. Material: ein kurzer englischer Text (Monitore in Reihe an einem Bildausgang, nötig sind Monitore mit MST über DisplayPort oder Thunderbolt) und ein Foto der Anschlussblende des PCs. Einen Vorteil „nennen“ (K5, 1 Punkt), die technische Voraussetzung „erläutern“ (K5, 3 Punkte), dann in einer Skizze mit vier Monitoren die Kette einzeichnen und an eine geeignete Buchse des Fotos anschließen (K7, 2 Punkte). Lösungshinweise liegen nicht vor; geeignet sind DisplayPort oder die USB-C-Buchse mit Blitzsymbol, nicht HDMI.
 - Zu mehreren Monitoren an einem Rechner, Dockingstation, Scannern und Tastaturen gibt es keine echte Aufgabe; nach dem Prüfungskatalog (Peripheriegeräte, bedarfsgerechte Auswahl begründen) sind „beurteilen“ oder „begründen“ zu erwarten.
 
 **Fallen:**

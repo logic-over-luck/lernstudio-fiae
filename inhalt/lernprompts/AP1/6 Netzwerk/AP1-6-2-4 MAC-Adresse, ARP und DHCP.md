@@ -143,7 +143,7 @@ Beispiel: 01-00-5e-… → erstes Byte 0000 0001, Bit 0 = 1 → Multicast. 02-�
 - ARP, erst die Aufgabe, dann Ziel oder Gateway, dann der Blick auf IPv6: K2, K8, K7
 - Ausgaben lesen und Befehle zur Fehlersuche: K3, K9
 
-**Schon geprüft:** In Prüfungen: K1 (2022F, 2024H), K2 (2024F), K3 (2024F), K4 (2022F, 2024F), K5 (2022F, 2024H), K6 (2024H), K9 (2022F) · Noch nicht geprüft: K7, K8, K10
+**Schon geprüft:** In Prüfungen: K1 (2022F), K2 (2024F), K3 (2024F), K4 (2022F, 2024F), K5 (2022F, 2024H), K6 (2024H) · Noch nicht geprüft: K7–K10
 
 **Kerngedanken:**
 - Ein Gerät hat zwei Adressen mit verschiedenen Aufgaben. Die MAC-Adresse gehört zur Netzwerkkarte, bleibt gleich und gilt nur für die Zustellung im eigenen Netz; die IP-Adresse hängt vom Netz ab und kann wechseln.

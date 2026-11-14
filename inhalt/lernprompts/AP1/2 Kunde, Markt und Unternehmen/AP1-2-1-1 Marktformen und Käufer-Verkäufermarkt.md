@@ -91,7 +91,7 @@ Umgekehrt: Fallen Mitbewerber weg, wächst der Spielraum bei den Preisen.
 - Käufermarkt und Verkäufermarkt, mit der Verhandlungsposition: K2, K3
 - Der Markt verändert sich – Folgen für das eigene Unternehmen: K5
 
-**Schon geprüft:** In Prüfungen: K4 (2022H), K5 (2022H) · Noch nicht geprüft: K1–K3
+**Schon geprüft:** In Prüfungen: K4 (2022H) · Noch nicht geprüft: K1–K3, K5
 
 **Kerngedanken:**
 - Marktform und Marktlage sind zwei verschiedene Fragen. Die Marktform zählt die Anbieter (einer, wenige, viele). Käufer- und Verkäufermarkt vergleichen die Mengen: Gibt es mehr Ware, als gekauft wird, oder weniger? Beides kommt zusammen vor – auch ein Oligopol kann in einer Käufermarkt-Lage stecken.

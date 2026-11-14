@@ -399,35 +399,35 @@
       "tabelle": [
         {
           "pruefung": "2025F",
-          "erfasst": 100.0,
-          "a": 39.0,
-          "ab": 77.0,
-          "abc": 92.0,
-          "mitTransfer": 100.0
+          "erfasst": 100,
+          "a": 39,
+          "ab": 77,
+          "abc": 92,
+          "mitTransfer": 100
         },
         {
           "pruefung": "2025H",
-          "erfasst": 82.0,
-          "a": 33.0,
-          "ab": 54.0,
-          "abc": 73.0,
-          "mitTransfer": 82.0
+          "erfasst": 82,
+          "a": 33,
+          "ab": 54,
+          "abc": 73,
+          "mitTransfer": 82
         },
         {
           "pruefung": "2026F",
-          "erfasst": 100.0,
-          "a": 53.0,
-          "ab": 87.0,
-          "abc": 96.0,
-          "mitTransfer": 100.0
+          "erfasst": 100,
+          "a": 53,
+          "ab": 87,
+          "abc": 96,
+          "mitTransfer": 100
         },
         {
           "pruefung": "2026H",
-          "erfasst": 100.0,
-          "a": 31.0,
-          "ab": 86.0,
-          "abc": 98.0,
-          "mitTransfer": 100.0
+          "erfasst": 100,
+          "a": 31,
+          "ab": 86,
+          "abc": 98,
+          "mitTransfer": 100
         }
       ],
       "pruefungen": 11
@@ -470,7 +470,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 12.0,
+      "punkte": 12,
       "rang": 40,
       "pruef": [
         [
@@ -653,7 +653,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 10.0,
+      "punkte": 10,
       "rang": 51,
       "pruef": [
         [
@@ -861,7 +861,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 88,
       "pruef": [
         [
@@ -1036,7 +1036,7 @@
       ],
       "gewicht": 0.75,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 103,
       "pruef": [],
       "ta": [],
@@ -1180,7 +1180,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "A",
-      "punkte": 12.0,
+      "punkte": 12,
       "rang": 19,
       "pruef": [
         [
@@ -1368,7 +1368,7 @@
       ],
       "gewicht": 2.6,
       "klasse": "A",
-      "punkte": 32.0,
+      "punkte": 32,
       "rang": 4,
       "pruef": [
         [
@@ -1509,8 +1509,7 @@
             "kurz": "Wann Gesamtpuffer und freier Puffer gleich sind",
             "stufe": 2,
             "herkunft": [
-              "buch:GS-2.5.3-S221",
-              "beleg:2026F-A2-e"
+              "buch:GS-2.5.3-S221"
             ],
             "vorgegeben": null,
             "erklaerung": "Zur Erinnerung: Der **Gesamtpuffer (GP)** sagt, wie weit sich ein Vorgang verschieben darf, ohne das **Projektende** zu verschieben; der **freie Puffer (FP)**, wie weit, ohne einen **Nachfolger** zu verschieben.\n`FP = kleinster FAZ der Nachfolger − FEZ` · `GP = SEZ − FEZ = kleinster SAZ der Nachfolger − FEZ`\n- Sind **alle** Nachfolger kritisch, ist bei ihnen FAZ = SAZ – dann sind GP und FP gleich.\n- Hat ein Vorgang **auch einen nichtkritischen Nachfolger**, der früher beginnen kann, ist FP kleiner als GP. Beispiel (wie Vorgang D in der Prüfung 2026F): D hat FEZ 10, Nachfolger E ist kritisch (FAZ = SAZ = 15), Nachfolger F nicht (FAZ 10, SAZ 17). FP = 10 − 10 = **0**, GP = 15 − 10 = **5**. Ein kritischer Nachfolger allein reicht also nicht.\n- Liegen **mehrere nichtkritische Vorgänge hintereinander**, teilen sie sich einen Puffer. Beispiel: A → B → C (kritisch), B beginnt direkt nach A, A und B haben je GP = 3. A hat FP = 0, B als letzter vor C hat FP = 3.\nDer freie Puffer ist nie größer als der Gesamtpuffer.",
@@ -1574,7 +1573,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 5.0,
+      "punkte": 5,
       "rang": 82,
       "pruef": [
         [
@@ -1618,8 +1617,7 @@
             "kurz": "Passende Lösung für ein Terminproblem",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.01.01.2.4",
-              "beleg:2026H-A1-e"
+              "katalog:AP1.01.01.2.4"
             ],
             "vorgegeben": null,
             "erklaerung": "Die Lösung muss zur Ursache und zur Lage passen:\n- Verzögerung kleiner als der Puffer → **Puffer nutzen**, keine teure Maßnahme nötig.\n- Vorgang auf dem kritischen Weg, Arbeit lässt sich aufteilen → **Personal aufstocken** (z. B. ein zweiter Techniker installiert parallel).\n- Kein Personal verfügbar, Termin fest → **Umfang kürzen**, aber nur in Absprache mit dem Auftraggeber.\n- Unabhängige Vorgänge → **parallel legen**.\nBegründe, warum die gewählte Lösung hier passt und eine andere nicht.",
@@ -1791,7 +1789,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 93,
       "pruef": [
         [
@@ -1819,8 +1817,7 @@
             "kurz": "Support-Stufen: First, Second, Third Level",
             "stufe": 2,
             "herkunft": [
-              "katalog:AP1.01.03.6",
-              "beleg:2023H-A2-e"
+              "katalog:AP1.01.03.6"
             ],
             "vorgegeben": null,
             "erklaerung": "- **First Level** (Servicedesk): nimmt alle Anfragen an, erfasst sie als Ticket und löst einfache Standardfälle selbst, z. B. „Passwort vergessen“.\n- **Second Level**: Fachleute oder Administratoren übernehmen, was der First Level nicht lösen kann, z. B. ein Serverdienst startet nicht.\n- **Third Level**: Spezialisten, Entwickler oder der Hersteller, z. B. bei einem Programmfehler in der Software.\nEine Anfrage wird nur weitergereicht, wenn die Stufe darunter sie nicht lösen kann.",
@@ -2031,7 +2028,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 86,
       "pruef": [
         [
@@ -2210,7 +2207,7 @@
       ],
       "gewicht": 2,
       "klasse": "B",
-      "punkte": 5.0,
+      "punkte": 5,
       "rang": 58,
       "pruef": [
         [
@@ -2276,8 +2273,7 @@
             "kurz": "KI-gestützte Prüfung von Routineaufgaben",
             "stufe": 2,
             "herkunft": [
-              "beleg:2025H-A2-bb",
-              "beleg:2025F-A4-b"
+              "beleg:2025H-A2-bb"
             ],
             "vorgegeben": null,
             "erklaerung": "Am Beispiel Rechnungsprüfung:\n- **Schneller:** Die KI liest viele Rechnungen in kurzer Zeit.\n- **Weniger Übertragungsfehler:** Beträge werden nicht mehr von Hand abgetippt.\n- **Auffälligkeiten werden markiert:** abweichende Beträge, doppelte Rechnungen.\n- Die Mitarbeiter konzentrieren sich auf die markierten Fälle statt auf jede einzelne Rechnung.",
@@ -2348,7 +2344,7 @@
       ],
       "gewicht": 1.2,
       "klasse": "B",
-      "punkte": 8.0,
+      "punkte": 8,
       "rang": 39,
       "pruef": [
         [
@@ -2377,9 +2373,7 @@
             "kurz": "Leistung vor Ort oder remote",
             "stufe": 3,
             "herkunft": [
-              "katalog:AP1.07.03.1",
-              "beleg:2021H-A3-c",
-              "beleg:2023H-A2-d"
+              "katalog:AP1.07.03.1"
             ],
             "vorgegeben": null,
             "erklaerung": "Entscheide nach dem Problem:\n- **Remote**, wenn nur Software betroffen ist und eine Verbindung zum Gerät besteht – schneller, keine Anfahrt. Beispiel: Programm neu einrichten.\n- **Vor Ort**, wenn Hardware defekt ist, etwas ein- oder ausgebaut werden muss oder das Gerät bzw. die Verbindung nicht läuft. Beispiel: Netzteil tauschen, Rechner startet nicht.\nBegründe immer mit der Situation aus der Aufgabe.",
@@ -2490,7 +2484,7 @@
       ],
       "gewicht": 0.75,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 104,
       "pruef": [],
       "ta": [],
@@ -2618,7 +2612,7 @@
       ],
       "gewicht": 0.75,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 105,
       "pruef": [],
       "ta": [],
@@ -2794,7 +2788,7 @@
       ],
       "gewicht": 0.75,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 106,
       "pruef": [],
       "ta": [],
@@ -3002,7 +2996,7 @@
       ],
       "gewicht": 0.75,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 107,
       "pruef": [],
       "ta": [],
@@ -3136,7 +3130,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 65,
       "pruef": [
         [
@@ -3246,7 +3240,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 90,
       "pruef": [
         [
@@ -3322,8 +3316,7 @@
             "kurz": "Folgen einer veränderten Marktsituation",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.02.01.1",
-              "beleg:2022H-A1-ab"
+              "katalog:AP1.02.01.1"
             ],
             "vorgegeben": null,
             "erklaerung": "Frag: Wird es für mein Unternehmen leichter oder schwerer, Kunden zu halten und Preise durchzusetzen?\nBeispiel: Aus einem Oligopol wird ein Polypol, weil neue Anbieter auf den Markt kommen.\n- Mehr Wettbewerb, Kunden wechseln leichter.\n- Preisdruck, die Gewinnspanne sinkt.\n- Reaktion: Kosten senken oder sich über Service, Qualität oder Spezialisierung abheben.\nUmgekehrt: Fallen Mitbewerber weg, wächst der Spielraum bei den Preisen.",
@@ -3379,7 +3372,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 108,
       "pruef": [],
       "ta": [],
@@ -3514,7 +3507,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 109,
       "pruef": [],
       "ta": [],
@@ -3686,7 +3679,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 95,
       "pruef": [
         [
@@ -3924,7 +3917,7 @@
       ],
       "gewicht": 1.8,
       "klasse": "B",
-      "punkte": 17.0,
+      "punkte": 17,
       "rang": 37,
       "pruef": [
         [
@@ -4129,7 +4122,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 6.0,
+      "punkte": 6,
       "rang": 74,
       "pruef": [
         [
@@ -4340,7 +4333,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 16.0,
+      "punkte": 16,
       "rang": 33,
       "pruef": [
         [
@@ -4402,8 +4395,7 @@
             "kurz": "Auswahl passender Leistungen für den Kunden",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.02.03.3",
-              "beleg:2022F-A1-b"
+              "katalog:AP1.02.03.3"
             ],
             "vorgegeben": null,
             "erklaerung": "Geh vom Bedarf des Kunden aus und wähle nur, was dazu passt:\n- Kleines Büro ohne eigenen Administrator, Mitarbeiter arbeiten auch von unterwegs → **Cloud-Hosting** statt eigenem Server.\n- Umstieg auf ein neues System steht an → **Migrationsunterstützung** dazu.\n- Begründe jede Auswahl mit einem Satz aus der Situation: „Da Sie keinen eigenen Administrator haben, …“\nLeistungen ohne Bezug zum Bedarf lässt du weg – sie machen das Angebot nur teurer.",
@@ -4504,7 +4496,7 @@
       ],
       "gewicht": 5.8,
       "klasse": "A",
-      "punkte": 1.0,
+      "punkte": 1,
       "rang": 28,
       "prioHinweis": "Fertigkeit statt Einzelthema: Englische Texte und Werte aus dem Material lesen bringen in jeder Prüfung ein paar Punkte – laufend nebenbei üben, nicht einmal abhaken.",
       "pruef": [
@@ -4622,8 +4614,7 @@
             "kurz": "Definition oder Formel aus englischem Handbuch",
             "stufe": 3,
             "herkunft": [
-              "beleg:2021H-A2-a",
-              "beleg:2021H-A2-e"
+              "beleg:2021H-A2-a"
             ],
             "vorgegeben": null,
             "erklaerung": "Übertrage die Formel ins Deutsche und setze die Werte ein:\n„Efficiency = useful power output / total power input“\n→ Wirkungsgrad = abgegebene Leistung ÷ aufgenommene Leistung\nBeispiel Netzteil: Es gibt 450 W ab und nimmt 500 W auf → 450 W ÷ 500 W = 0,9 = **90 %**.\nIst der Wirkungsgrad gegeben und die aufgenommene Leistung gesucht, stellst du um: aufgenommene Leistung = abgegebene Leistung ÷ Wirkungsgrad, z. B. 60 W ÷ 0,75 = 80 W. Steht der Wirkungsgrad in Prozent da, rechnest du mit der Dezimalzahl (75 % = 0,75). In der Prüfung waren danach noch die Stromkosten zu berechnen: Leistung in kW × Stunden × Preis je kWh.\nAchte darauf, was „output“ und was „input“ ist – vertauscht ergibt sich ein Wert über 100 %, das kann nicht stimmen.",
@@ -4680,7 +4671,7 @@
       ],
       "gewicht": 2.8,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 73,
       "pruef": [
         [
@@ -4748,8 +4739,7 @@
             "kurz": "Verlässlichkeit einer Quelle",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.02.04.1",
-              "beleg:2024F-A3-a"
+              "katalog:AP1.02.04.1"
             ],
             "vorgegeben": null,
             "erklaerung": "Prüfe drei Dinge:\n- **Herausgeber:** Wer steht dahinter? Bekannt, fachkundig, unabhängig – oder ein Unbekannter oder ein Händler, der etwas verkaufen will? Ein Hersteller ist verlässlich für die technischen Daten seiner eigenen Produkte, aber nicht unabhängig, wenn es um Vergleiche und Urteile geht.\n- **Aktualität:** Von wann ist die Information? Passt sie zur aktuellen Version?\n- **Belege:** Sind die Aussagen nachprüfbar, gibt es Quellen?\nBeispiel: Ein fünf Jahre alter Forenbeitrag eines Unbekannten ohne Belege → wenig verlässlich, mit Herstellerangaben abgleichen.\n**KI-Chatbots** sind eine Quelle mit besonderem Risiko: Sie formulieren sicher und flüssig, können aber Falsches oder frei Erfundenes liefern (Halluzination) – auch Quellenangaben. Deshalb prüfst du jede KI-Antwort an einer Primärquelle (der Stelle, von der die Information ursprünglich stammt), etwa der Herstellerdokumentation, bevor du sie nutzt oder an Kunden weitergibst.",
@@ -4824,7 +4814,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 9.0,
+      "punkte": 9,
       "rang": 49,
       "pruef": [
         [
@@ -4982,7 +4972,7 @@
       ],
       "gewicht": 2.8,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 96,
       "pruef": [
         [
@@ -5065,8 +5055,7 @@
             "stufe": 3,
             "herkunft": [
               "beleg:2023F-A4-a",
-              "beleg:2023H-A2-d",
-              "beleg:2024H-A4-e"
+              "beleg:2023H-A2-d"
             ],
             "vorgegeben": null,
             "erklaerung": "Lege eine Tabelle an: Zeilen wirtschaftlich und sozial, Spalten Vorteile und Nachteile.\nBeispiel **Homeoffice**:\n- wirtschaftlich +: weniger Bürofläche nötig\n- wirtschaftlich −: Kosten für Geräte und sichere Verbindung\n- sozial +: keine Fahrzeit, Familie und Beruf besser vereinbar\n- sozial −: weniger Kontakt zu Kollegen, Arbeit und Freizeit vermischen sich\nBeispiel **KI-Chatbot**: wirtschaftlich + Anfragen rund um die Uhr ohne Personal, − Einführung und Pflege kosten; sozial + Entlastung von Routinefragen, − Arbeitsplätze fallen weg, kein persönlicher Ansprechpartner.\nManche Argumente wirken doppelt, z. B. die Entlastung der Servicemitarbeiter (weniger Personalkosten und weniger Routine). Sie zählen in beiden Zeilen, wenn du die Zuordnung begründest.\nFragt die Aufgabe auch nach ökologischen Folgen, kommt eine dritte Zeile dazu, z. B. Stromverbrauch, Material und Entsorgung alter Geräte oder weniger Fahrten zur Arbeit.",
@@ -5194,7 +5183,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 110,
       "pruef": [],
       "ta": [],
@@ -5323,7 +5312,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 111,
       "pruef": [],
       "ta": [],
@@ -5445,7 +5434,7 @@
       ],
       "gewicht": 2.6,
       "klasse": "B",
-      "punkte": 10.0,
+      "punkte": 10,
       "rang": 45,
       "pruef": [
         [
@@ -5610,7 +5599,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 66,
       "pruef": [
         [
@@ -5725,7 +5714,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 91,
       "pruef": [
         [
@@ -5762,7 +5751,6 @@
             "kurz": "Sofortumstellung und befristeter Parallelbetrieb",
             "stufe": 2,
             "herkunft": [
-              "beleg:2026F-A3-eb",
               "katalog:AP1.07.05.2"
             ],
             "vorgegeben": null,
@@ -5879,7 +5867,7 @@
       ],
       "gewicht": 0.63,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 1,
       "pruef": [],
       "ta": [],
@@ -6052,7 +6040,7 @@
       ],
       "gewicht": 3.8,
       "klasse": "A",
-      "punkte": 26.0,
+      "punkte": 26,
       "rang": 2,
       "pruef": [
         [
@@ -6569,7 +6557,7 @@
       ],
       "gewicht": 1,
       "klasse": "A",
-      "punkte": 8.0,
+      "punkte": 8,
       "rang": 25,
       "pruef": [
         [
@@ -6596,8 +6584,7 @@
             "stufe": 3,
             "herkunft": [
               "katalog:ANH.rechnung-1",
-              "katalog:ZB.rechnung",
-              "beleg:2025H-A1-b"
+              "katalog:ZB.rechnung"
             ],
             "vorgegeben": null,
             "erklaerung": "So rechnest du eine Position durch:\n- Menge × Einzelpreis\n- minus Rabatt\n- = Nettopreis\n- plus Umsatzsteuer\n- = Rechnungsbetrag (brutto)\nBeispiel: 10 Monitore × 90 € = 900 € − 10 % Rabatt = 810 € netto + 153,90 € USt = **963,90 €**.\n**Zwei Steuersätze:** Regelsatz 19 %, ermäßigt 7 % (z. B. Lebensmittel, Bücher). Stehen beide auf einer Rechnung, summierst du die Nettobeträge je Satz und rechnest die Steuer getrennt: 400 € × 19 % = 76,00 €, 150 € × 7 % = 10,50 € → 550 € + 86,50 € = **636,50 €**.\nTipp: Rabatt von 10 % heißt `× 0,90`, 19 % USt heißt `× 1,19`.",
@@ -6783,7 +6770,7 @@
       ],
       "gewicht": 0.63,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 112,
       "pruef": [],
       "ta": [],
@@ -6923,7 +6910,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 12.0,
+      "punkte": 12,
       "rang": 32,
       "pruef": [
         [
@@ -7000,7 +6987,6 @@
             "kurz": "E-Rechnung: Format, Empfangs- und Ausstellungspflicht",
             "stufe": 2,
             "herkunft": [
-              "beleg:2025H-A2-a",
               "katalog:ZB.rechnung"
             ],
             "vorgegeben": null,
@@ -7166,8 +7152,7 @@
             "kurz": "Kreditkauf oder Leasing über die Kosten hinaus",
             "stufe": 4,
             "herkunft": [
-              "buch:GS-2.7.4-S243",
-              "beleg:2023F-A2-bc"
+              "buch:GS-2.7.4-S243"
             ],
             "vorgegeben": null,
             "erklaerung": "**Kreditkauf**\n- Das Unternehmen wird **Eigentümer**, kann frei über das Gerät verfügen und es beliebig lange nutzen.\n- Das Gerät steht in der Bilanz und wird abgeschrieben.\n- Die Bank verlangt meist **Sicherheiten**, der Kredit belastet den Kreditrahmen.\n**Leasing**\n- Der Leasinggeber bleibt Eigentümer, das Gerät selbst dient als Sicherheit. In der IHK-Lösung zählt auch die Kurzform „keine Sicherheiten nötig, weil der Leasinggeber Eigentümer bleibt“.\n- Feste, **planbare Raten**, die sofort als Betriebsausgabe absetzbar sind.\n- Eigenkapital und Kreditrahmen bleiben frei.\n- Nach Ablauf einfach **erneuern** – passend für schnell veraltende IT; dafür insgesamt meist teurer und an die Vertragsbedingungen gebunden.\nFaustregel: Geräte, die lange genutzt werden → eher Kauf; Geräte, die regelmäßig ersetzt werden sollen → eher Leasing.",
@@ -7337,8 +7322,7 @@
             "kurz": "Bezugspreis-Schema und Lieferbedingungen",
             "stufe": 3,
             "herkunft": [
-              "beleg:2023F-A2-aa",
-              "beleg:2022H-A3-g"
+              "beleg:2023F-A2-aa"
             ],
             "vorgegeben": null,
             "erklaerung": "Das Schema:\n- **Listenpreis**\n- − Rabatt = **Zieleinkaufspreis**\n- − Skonto = **Bareinkaufspreis** (nur wenn in der Frist gezahlt wird)\n- + Bezugskosten = **Bezugspreis**\nDer Transport hat drei Teile: **Rollgeld** (Kosten der kurzen Strecke) vom Lieferanten zur Versandstation (IHK: Verladestation), **Fracht** zwischen den Stationen, Rollgeld von der Empfangsstation (IHK: Entladestation) zum Käufer.\nWer die Bezugskosten trägt, hängt von der Lieferbedingung ab:\n- „ab Werk“: der Käufer trägt alle\n- „frachtfrei“: der Käufer trägt nur die Entladekosten und das Rollgeld ab der Empfangsstation (die Fracht zahlt der Verkäufer)\n- „frei Haus“: der Käufer trägt keine\nRunde jeden Zwischenschritt auf Cent (z. B. 17,136 € → 17,14 €).\nBeispiel: 20 € − 10 % = 18 € − 2 % = 17,64 € + 0,55 € Bezugskosten (55 € je 100 Stück) = **18,19 €**.",
@@ -8116,7 +8100,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 101,
       "pruef": [
         [
@@ -8416,7 +8400,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 8.0,
+      "punkte": 8,
       "rang": 81,
       "pruef": [
         [
@@ -8562,8 +8546,7 @@
             "kurz": "Voraussetzungen des Lieferverzugs",
             "stufe": 2,
             "herkunft": [
-              "katalog:AP1.07.01.6",
-              "beleg:2026F-A3-ca"
+              "katalog:AP1.07.01.6"
             ],
             "vorgegeben": null,
             "erklaerung": "Lieferverzug liegt nicht schon bei jeder Verspätung vor. Es braucht:\n- **Fälligkeit:** Der Liefertermin ist da.\n- **Mahnung:** Der Käufer fordert die Lieferung ausdrücklich an. Sie **entfällt**, wenn der Termin nach dem Kalender bestimmt ist („Lieferung am 15. März“). Bei „so schnell wie möglich“ muss gemahnt werden.\n- **Verschulden:** Der Verkäufer hat die Verspätung zu vertreten (Vorsatz oder Fahrlässigkeit). Bei höherer Gewalt gerät er nicht in Verzug.\nErst dann kann der Käufer neben der Lieferung den Verzögerungsschaden verlangen.",
@@ -8668,7 +8651,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 92,
       "pruef": [
         [
@@ -8813,7 +8796,7 @@
       ],
       "gewicht": 2,
       "klasse": "B",
-      "punkte": 6.0,
+      "punkte": 6,
       "rang": 68,
       "pruef": [
         [
@@ -8892,8 +8875,7 @@
             "stufe": 4,
             "herkunft": [
               "katalog:AP1.04.03.5",
-              "katalog:AP1.04.03.6",
-              "beleg:2026H-A3-a"
+              "katalog:AP1.04.03.6"
             ],
             "vorgegeben": null,
             "erklaerung": "Wäge nach der Situation ab:\n- Wenig Budget, kaum Supportbedarf → **Open Source**.\n- Garantierte Updates und Support nötig, z. B. die Fachsoftware einer Kanzlei → **proprietär**.\n- Eigene Änderungen sollen weitergegeben werden → Open Source möglich, aber die **Lizenzbedingungen** (z. B. Copyleft) beachten.\nBegründe immer mit dem Bedarf aus der Aufgabe.",
@@ -8965,7 +8947,7 @@
       ],
       "gewicht": 0.63,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 113,
       "pruef": [],
       "ta": [],
@@ -9148,7 +9130,7 @@
       ],
       "gewicht": 1.2,
       "klasse": "B",
-      "punkte": 10.0,
+      "punkte": 10,
       "rang": 71,
       "pruef": [
         [
@@ -9158,10 +9140,6 @@
         [
           "2023H",
           0.6
-        ],
-        [
-          "2026H",
-          1
         ]
       ],
       "ta": [
@@ -9169,8 +9147,7 @@
         "2023F-A1-b",
         "2023F-A1-c",
         "2023H-A2-a",
-        "2023H-A2-b",
-        "2026H-A4-a"
+        "2023H-A2-b"
       ],
       "quer": null,
       "gegen": [],
@@ -9261,7 +9238,6 @@
             "stufe": 4,
             "herkunft": [
               "beleg:2023H-A2-a",
-              "beleg:2026H-A4-a",
               "katalog:AP1.04.02.2"
             ],
             "vorgegeben": null,
@@ -9413,7 +9389,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 1.0,
+      "punkte": 1,
       "rang": 99,
       "pruef": [
         [
@@ -9466,8 +9442,7 @@
             "kurz": "Cache-Stufen L1 bis L3",
             "stufe": 2,
             "herkunft": [
-              "buch:GS-2.4.4-S157",
-              "beleg:2022F-A2-gb"
+              "buch:GS-2.4.4-S157"
             ],
             "vorgegeben": null,
             "erklaerung": "Der Prozessor ist viel schneller als der Arbeitsspeicher. Müsste er jedes Mal auf den RAM warten, stünde er die meiste Zeit still. Deshalb gibt es eine **Speicherhierarchie**:\n- **Register** im Rechenwerk – winzig, sofort verfügbar\n- **L1-Cache** je Kern – klein, fast Prozessortempo\n- **L2-Cache** – größer, etwas langsamer\n- **L3-Cache** – noch größer, von allen Kernen gemeinsam genutzt\n- **Arbeitsspeicher**, dann **SSD/HDD** – groß, aber immer langsamer\nDer Prozessor sucht zuerst im schnellsten Speicher. Weil Programme dieselben Daten oft wiederverwenden, findet er sie meist schon dort.",
@@ -9828,7 +9803,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 114,
       "pruef": [],
       "ta": [],
@@ -10093,8 +10068,7 @@
             "kurz": "Anschlüsse SATA und M.2 mit NVMe",
             "stufe": 2,
             "herkunft": [
-              "katalog:AP1.03.03.1",
-              "beleg:2022F-A2-d"
+              "katalog:AP1.03.03.1"
             ],
             "vorgegeben": null,
             "erklaerung": "- **SATA:** Anschluss über Kabel, für HDD und 2,5-Zoll-SSD.\n- **M.2:** kleiner Steckplatz direkt auf dem Mainboard, die SSD wird eingesteckt und verschraubt.\n- **NVMe:** das Übertragungsprotokoll über PCI Express (die schnelle Direktanbindung ans Mainboard über eigene Leitungen), das M.2-SSDs besonders schnell macht.\nMerke: M.2 ist die Bauform, NVMe oder SATA das Protokoll.",
@@ -10226,7 +10200,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "B",
-      "punkte": 20.0,
+      "punkte": 20,
       "rang": 46,
       "pruef": [
         [
@@ -10283,8 +10257,7 @@
             "herkunft": [
               "beleg:2024F-A1-c",
               "beleg:2025F-A1-b",
-              "beleg:2022F-A2-e",
-              "beleg:2026F-A1-cb"
+              "beleg:2022F-A2-e"
             ],
             "vorgegeben": null,
             "erklaerung": "- **RJ45:** rechteckig mit Rastnase, acht Kontakte – Netzwerkkabel.\n- **USB Typ A:** flach-rechteckig, passt nur in einer Richtung.\n- **USB Typ C:** klein, abgerundet, beidseitig steckbar.\n- **HDMI:** flach, an einer Längsseite **beide** Ecken abgeschrägt.\n- **DisplayPort:** flach, nur **eine** Ecke abgeschrägt.\n- **DVI:** breit, viele Kontakte in drei Reihen, wird verschraubt.\n- **Kaltgerätebuchse:** dreipolig, rechteckig mit abgeschrägten Ecken – Stromkabel von PC, Monitor, Drucker.\nAufgedruckte Zeichen helfen beim Erkennen:\n- **Blitz** neben einer USB-C-Buchse: **Thunderbolt** (Daten, Bild und Strom, z. B. zum Verketten von Monitoren).\n- **„SS“ mit Pfeil**: SuperSpeed-USB, „SS“ = 5 Gbit/s, **„SS10“** = 10 Gbit/s; neuere Logos nennen die Rate direkt („USB 40Gbps“).",
@@ -10490,7 +10463,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 8.0,
+      "punkte": 8,
       "rang": 70,
       "pruef": [
         [
@@ -10745,8 +10718,7 @@
             "kurz": "Passende Kennzeichnung für eine Aufgabe",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.03.01.2",
-              "beleg:2022H-A2-e"
+              "katalog:AP1.03.01.2"
             ],
             "vorgegeben": null,
             "erklaerung": "Frag: Muss **ohne Sicht** gelesen werden? Wie viele Daten? Was darf es kosten?\n- Paletten sollen beim Durchfahren des Lagertors erfasst werden, ohne sie auszurichten → **RFID**.\n- Günstige Inventaraufkleber, Erfassung per Smartphone, z. B. mit Link zur Geräteakte → **QR-Code**.\n- Nur eine Artikelnummer, sehr viele Etiketten, sehr günstig → **Barcode**.",
@@ -10881,8 +10853,8 @@
       ],
       "gewicht": 4.8,
       "klasse": "A",
-      "punkte": 16.17,
-      "rang": 17,
+      "punkte": 17,
+      "rang": 15,
       "pruef": [
         [
           "2022F",
@@ -11101,7 +11073,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 115,
       "pruef": [],
       "ta": [],
@@ -11221,8 +11193,8 @@
       ],
       "gewicht": 3.2,
       "klasse": "A",
-      "punkte": 16.17,
-      "rang": 18,
+      "punkte": 17,
+      "rang": 16,
       "pruef": [
         [
           "2022H",
@@ -11456,7 +11428,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "A",
-      "punkte": 24.0,
+      "punkte": 24,
       "rang": 12,
       "pruef": [
         [
@@ -11575,8 +11547,7 @@
             "kurz": "Störungen durch zu schwachen USB-Anschluss",
             "stufe": 4,
             "herkunft": [
-              "beleg:2025H-A3-eb",
-              "beleg:2025H-A3-ea"
+              "beleg:2025H-A3-eb"
             ],
             "vorgegeben": null,
             "erklaerung": "Ein USB-Anschluss liefert nur eine begrenzte Stromstärke (USB 2.0 z. B. 0,5 A bei 5 V).\n- Benötigte Stromstärke berechnen: `I = P ÷ U`\n- mit dem Maximum des Anschlusses vergleichen\nBeispiel: Eine externe Festplatte braucht 4,5 W → 4,5 W ÷ 5 V = 0,9 A > 0,5 A. Der Anschluss liefert zu wenig, die Platte läuft gestört oder gar nicht.\nAbhilfe: ein Anschluss, der mehr Strom liefert (z. B. USB 3.x mit bis zu 0,9 A oder USB-C mit Power Delivery), oder ein eigenes Netzteil.",
@@ -11648,8 +11619,8 @@
       ],
       "gewicht": 2.2,
       "klasse": "A",
-      "punkte": 10.67,
-      "rang": 21,
+      "punkte": 9,
+      "rang": 23,
       "pruef": [
         [
           "2022F",
@@ -11667,8 +11638,7 @@
       "ta": [
         "2022F-A4-e",
         "2024F-A4-f",
-        "2026F-A1-ad",
-        "2026F-A1-b"
+        "2026F-A1-ad"
       ],
       "quer": null,
       "gegen": [],
@@ -11713,7 +11683,6 @@
             "stufe": 3,
             "herkunft": [
               "beleg:2026F-A1-ad",
-              "beleg:2026F-A1-b",
               "katalog:AP1.03.03.4.1"
             ],
             "vorgegeben": null,
@@ -11840,7 +11809,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 14.0,
+      "punkte": 14,
       "rang": 41,
       "pruef": [
         [
@@ -11936,7 +11905,6 @@
             "kurz": "Bildschirmgeräte nach ArbStättV Anhang 6",
             "stufe": 2,
             "herkunft": [
-              "beleg:2023H-A2-b",
               "katalog:AP1.03.01.1"
             ],
             "vorgegeben": null,
@@ -12014,7 +11982,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 116,
       "pruef": [],
       "ta": [],
@@ -12185,7 +12153,7 @@
       ],
       "gewicht": 1.2,
       "klasse": "B",
-      "punkte": 7.0,
+      "punkte": 7,
       "rang": 84,
       "pruef": [
         [
@@ -12451,7 +12419,7 @@
       ],
       "gewicht": 1.2,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 100,
       "pruef": [
         [
@@ -12683,7 +12651,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 117,
       "pruef": [],
       "ta": [],
@@ -12824,7 +12792,7 @@
       ],
       "gewicht": 1.2,
       "klasse": "B",
-      "punkte": 6.0,
+      "punkte": 6,
       "rang": 83,
       "pruef": [
         [
@@ -13043,7 +13011,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 118,
       "pruef": [],
       "ta": [],
@@ -13191,7 +13159,7 @@
       ],
       "gewicht": 2.6,
       "klasse": "B",
-      "punkte": 13.0,
+      "punkte": 13,
       "rang": 47,
       "pruef": [
         [
@@ -13228,7 +13196,6 @@
             "stufe": 1,
             "herkunft": [
               "beleg:2025F-A4-a",
-              "beleg:2025H-A2-bb",
               "buch:FS2-3.1.1-S218"
             ],
             "vorgegeben": null,
@@ -13412,7 +13379,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 6.0,
+      "punkte": 6,
       "rang": 76,
       "pruef": [
         [
@@ -13839,7 +13806,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 119,
       "pruef": [],
       "ta": [],
@@ -13977,7 +13944,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 120,
       "pruef": [],
       "ta": [],
@@ -14363,7 +14330,7 @@
       ],
       "gewicht": 2.2,
       "klasse": "B",
-      "punkte": 18.0,
+      "punkte": 18,
       "rang": 29,
       "pruef": [
         [
@@ -14526,7 +14493,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 72,
       "pruef": [
         [
@@ -14700,7 +14667,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 97,
       "pruef": [
         [
@@ -14959,7 +14926,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 7.0,
+      "punkte": 7,
       "rang": 85,
       "pruef": [
         [
@@ -15061,8 +15028,7 @@
             "kurz": "Kabelkategorien Cat 5e bis Cat 8",
             "stufe": 2,
             "herkunft": [
-              "katalog:AP1.03.03.1",
-              "beleg:2026H-A2-cc"
+              "katalog:AP1.03.03.1"
             ],
             "vorgegeben": null,
             "erklaerung": "- **Cat 5e:** bis 1 Gbit/s (nach Norm auch 2,5 Gbit/s)\n- **Cat 6:** 1 Gbit/s, 10 Gbit/s nur auf kurzen Strecken bis etwa 55 m\n- **Cat 6a:** bis 10 Gbit/s auf 100 m\n- **Cat 7:** bis 10 Gbit/s, immer geschirmt (Angebote werben teils mit mehr)\n- **Cat 8:** 25 bzw. 40 Gbit/s, nur bis 30 m, etwa im Rechenzentrum\nJe höher die Kategorie, desto höher die mögliche Datenrate. Für ein neues Netz mit 10 Gbit/s also mindestens Cat 6a. Manche Bücher und Angebote nennen dafür Cat 7 – nach Norm reicht Cat 6a.",
@@ -15216,7 +15182,7 @@
       ],
       "gewicht": 1,
       "klasse": "B",
-      "punkte": 2.0,
+      "punkte": 2,
       "rang": 98,
       "pruef": [
         [
@@ -15276,7 +15242,7 @@
             "kurz": "Power over Ethernet (PoE)",
             "stufe": 2,
             "herkunft": [
-              "beleg:2026F-A1-ac"
+              "katalog:AP1.03.03.1"
             ],
             "vorgegeben": null,
             "erklaerung": "Bei Power over Ethernet versorgt ein **PoE-Switch** (oder ein PoE-Injektor) Geräte **über das Netzwerkkabel mit Strom**.\nTypische Geräte: IP-Kameras, Access Points, IP-Telefone.\nVorteil: Am Gerät ist kein Netzteil und keine Steckdose nötig – praktisch z. B. für eine Kamera unter der Decke.",
@@ -15411,7 +15377,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 121,
       "pruef": [],
       "ta": [],
@@ -15572,7 +15538,7 @@
       "gewicht": 2.6,
       "klasse": "A",
       "punkte": 11.5,
-      "rang": 22,
+      "rang": 21,
       "pruef": [
         [
           "2024H",
@@ -15633,8 +15599,7 @@
             "stufe": 4,
             "herkunft": [
               "katalog:AP1.04.05.5",
-              "katalog:AP1.04.01.3",
-              "beleg:2024H-A1-db"
+              "katalog:AP1.04.01.3"
             ],
             "vorgegeben": null,
             "erklaerung": "- **Statisch:** Die Adresse wird von Hand fest eingetragen.\n- **Automatisch:** Ein DHCP-Server teilt die Adresse zu.\n**Feste Adresse** für Geräte, die **immer unter derselben Adresse erreichbar** sein müssen: Server, Drucker, Router, Access Points, Geräte für Fernwartung. Würde sich die Adresse des Druckers ändern, fänden ihn die PCs nicht mehr.\n**DHCP** für Arbeitsplätze: weniger Aufwand, keine Tippfehler, keine doppelten Adressen, Änderungen zentral.",
@@ -15809,7 +15774,7 @@
       "gewicht": 3.6,
       "klasse": "A",
       "punkte": 10.5,
-      "rang": 23,
+      "rang": 22,
       "pruef": [
         [
           "2022F",
@@ -15912,7 +15877,7 @@
             "kurz": "Zwei Adressen im selben Netz",
             "stufe": 3,
             "herkunft": [
-              "beleg:2025H-A3-f"
+              "katalog:AP1.04.05.5"
             ],
             "vorgegeben": null,
             "erklaerung": "Bestimme für **beide** Adressen mit derselben Maske die Netzadresse:\n- gleich → selbes Netz → direkt erreichbar\n- verschieden → verschiedene Netze → nur über einen Router\nBeispiel: 192.168.1.60/26 und 192.168.1.70/26\n- .60 liegt im Block .0–.63 → Netz .0\n- .70 liegt im Block .64–.127 → Netz .64\n→ **verschiedene Netze**, obwohl die Adressen nah beieinander liegen.",
@@ -15992,7 +15957,7 @@
       ],
       "gewicht": 2.8,
       "klasse": "B",
-      "punkte": 17.0,
+      "punkte": 17,
       "rang": 31,
       "pruef": [
         [
@@ -16187,7 +16152,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 14.0,
+      "punkte": 14,
       "rang": 42,
       "pruef": [
         [
@@ -16421,7 +16386,7 @@
       ],
       "gewicht": 1.8,
       "klasse": "B",
-      "punkte": 19.0,
+      "punkte": 19,
       "rang": 43,
       "pruef": [
         [
@@ -16463,8 +16428,7 @@
             "kurz": "Aufbau einer MAC-Adresse",
             "stufe": 2,
             "herkunft": [
-              "beleg:2022F-A3-ea",
-              "beleg:2024H-A1-dd"
+              "beleg:2022F-A3-ea"
             ],
             "vorgegeben": null,
             "erklaerung": "- **48 Bit** lang\n- geschrieben als **sechs Bytes hexadezimal**, z. B. 00:1A:2B:3C:4D:5E oder 00-1A-2B-3C-4D-5E\n- vom **Hersteller fest** in die Netzwerkkarte eingetragen\n- die **vordere Hälfte** (3 Bytes) ist die **Herstellerkennung**, die hintere die Seriennummer des Herstellers",
@@ -16563,8 +16527,7 @@
             "kurz": "Befehle: IP erneuern, DNS-Cache, ip neigh",
             "stufe": 1,
             "herkunft": [
-              "katalog:AP1.04.05.6",
-              "beleg:2022F-A3-fa"
+              "katalog:AP1.04.05.6"
             ],
             "vorgegeben": null,
             "erklaerung": "Ein paar Befehle braucht man bei der Fehlersuche immer wieder:\n- `ipconfig /release` gibt die per DHCP bezogene Adresse frei, `ipconfig /renew` fordert beim DHCP-Server eine **neue** an – nützlich nach einer Änderung im Netz oder bei einer 169.254-Adresse.\n- `ipconfig /flushdns` leert den **DNS-Zwischenspeicher**; danach fragt der PC Namen neu beim DNS-Server an.\n- Linux (iproute2): `ip a` zeigt die eigenen Adressen (wie `ipconfig`), `ip neigh` die Zuordnung IP ↔ MAC (wie `arp -a`).\nBeispiel: Ein Server hat eine neue IP-Adresse, ein PC landet aber noch bei der alten → `ipconfig /flushdns`, dann erneut aufrufen.",
@@ -16650,7 +16613,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 5.0,
+      "punkte": 5,
       "rang": 67,
       "pruef": [
         [
@@ -16715,7 +16678,6 @@
             "kurz": "RADIUS-Server beim Enterprise-Verfahren",
             "stufe": 2,
             "herkunft": [
-              "beleg:2022F-A3-b",
               "katalog:AP1.04.05.5"
             ],
             "vorgegeben": null,
@@ -16728,8 +16690,7 @@
             "kurz": "WLAN-Verschlüsselung heute: WPA2 und WPA3",
             "stufe": 2,
             "herkunft": [
-              "katalog:AP1.04.05.5",
-              "beleg:2022F-A3-a"
+              "katalog:AP1.04.05.5"
             ],
             "vorgegeben": null,
             "erklaerung": "Beim Einrichten eines WLANs stellst du heute **WPA3** ein – oder den **Übergangsmodus WPA2/WPA3**, solange ältere Geräte nur WPA2 können.\n- **WEP** und **WPA** (mit TKIP) gelten als **unsicher** und werden nicht mehr verwendet.\n- **WPA3-Personal** nutzt weiter ein **gemeinsames Kennwort**; der Anmeldevorgang (Handshake; bei WPA3 heißt er SAE) verhindert aber, dass ein Angreifer ein mitgeschnittenes Anmelden in Ruhe durchprobiert.\n- Im **6-GHz-Band** (Wi-Fi 6E/7) ist WPA3 vorgeschrieben.\nDen technischen Vergleich der Verfahren brauchst du für AP1 nicht.\nBeispiel: Neues Büro-WLAN, ein alter Scanner kann nur WPA2 → Übergangsmodus WPA2/WPA3, neue Geräte nutzen WPA3.",
@@ -16792,7 +16753,7 @@
       ],
       "gewicht": 2.2,
       "klasse": "B",
-      "punkte": 12.0,
+      "punkte": 12,
       "rang": 56,
       "pruef": [
         [
@@ -16844,7 +16805,7 @@
             "kurz": "Einsatzfall für ein VPN",
             "stufe": 1,
             "herkunft": [
-              "beleg:2024F-A4-b"
+              "katalog:AP1.04.05.5"
             ],
             "vorgegeben": null,
             "erklaerung": "- **Daten von unterwegs** auf dem Firmenserver sichern.\n- Aus dem **Homeoffice** auf Firmenlaufwerke und Anwendungen zugreifen.\n- Im **öffentlichen WLAN** (Hotel, Bahn, Café) sicher arbeiten.",
@@ -17023,9 +16984,7 @@
             "kurz": "Reihenfolge der Fehlersuche",
             "stufe": 3,
             "herkunft": [
-              "beleg:2026H-A2-cd",
-              "beleg:2026F-A2-b",
-              "beleg:2022F-A3-d"
+              "katalog:AP1.04.05.5"
             ],
             "vorgegeben": null,
             "erklaerung": "Von unten nach oben – von einfach zu aufwendig:\n- **Kabel und LED:** ohne physische Verbindung geht nichts, und die Prüfung dauert Sekunden.\n- **Eigene Konfiguration:** `ipconfig` – hat der PC eine passende Adresse?\n- **Gateway:** `ping` auf den Router.\n- optional: `ping` auf eine externe IP-Adresse – klappt das, aber Namen gehen nicht, liegt es an der Namensauflösung.\n- **Namensauflösung:** `nslookup`.\n- **Zielserver:** `ping` oder Aufruf im Browser.\nJeder bestandene Schritt schließt eine Fehlerquelle aus. Auch umgekehrt – vom Browser abwärts – ist zulässig, wenn du Schicht für Schicht vorgehst.",
@@ -17300,7 +17259,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "B",
-      "punkte": 11.0,
+      "punkte": 11,
       "rang": 30,
       "pruef": [
         [
@@ -17631,7 +17590,6 @@
             "stufe": 3,
             "herkunft": [
               "beleg:2026H-A4-bb",
-              "beleg:2024H-A1-b",
               "katalog:AP1.06.04.3",
               "katalog:AP1.06.02.1.3"
             ],
@@ -17711,7 +17669,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "B",
-      "punkte": 13.0,
+      "punkte": 13,
       "rang": 48,
       "pruef": [
         [
@@ -17944,7 +17902,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 87,
       "pruef": [
         [
@@ -18155,7 +18113,7 @@
       ],
       "gewicht": 1.8,
       "klasse": "B",
-      "punkte": 4.0,
+      "punkte": 4,
       "rang": 94,
       "pruef": [
         [
@@ -18415,7 +18373,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 10.0,
+      "punkte": 10,
       "rang": 62,
       "pruef": [
         [
@@ -18607,7 +18565,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 122,
       "pruef": [],
       "ta": [],
@@ -18742,7 +18700,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 11.0,
+      "punkte": 11,
       "rang": 53,
       "pruef": [
         [
@@ -18944,7 +18902,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "B",
-      "punkte": 11.0,
+      "punkte": 11,
       "rang": 63,
       "pruef": [
         [
@@ -19082,8 +19040,7 @@
             "kurz": "Website-Zertifikat und Browserwarnung",
             "stufe": 3,
             "herkunft": [
-              "katalog:AP1.06.04.9",
-              "beleg:2023H-A3-db"
+              "katalog:AP1.06.04.9"
             ],
             "vorgegeben": null,
             "erklaerung": "Ein Website-Zertifikat ist ihr **digitaler Ausweis**. Es enthält:\n- **Inhaber** (Domain, z. B. `www.meinebank.de`)\n- **öffentlichen Schlüssel** des Inhabers\n- **Aussteller** (Zertifizierungsstelle, CA)\n- **Gültigkeitszeitraum**\n- **Signatur der CA**, die alles bestätigt\n**Vertrauenskette:** Der Browser prüft die Signatur und verfolgt die Kette bis zu einem **Stammzertifikat** zurück, das in Browser oder Betriebssystem als vertrauenswürdig hinterlegt ist.\n**Warnung beurteilen:** Der Browser warnt, wenn das Zertifikat **abgelaufen** ist, der **Name nicht zur Adresse passt** oder es **selbst signiert** bzw. von einer unbekannten Stelle ist. Dann ist die Echtheit nicht bestätigt → nicht fortfahren, keine Zugangsdaten eingeben, Adresse prüfen und die IT informieren.",
@@ -19170,13 +19127,9 @@
       ],
       "gewicht": 2.2,
       "klasse": "B",
-      "punkte": 7.0,
+      "punkte": 7,
       "rang": 69,
       "pruef": [
-        [
-          "2023F",
-          0.6
-        ],
         [
           "2023H",
           0.6
@@ -19191,7 +19144,6 @@
         ]
       ],
       "ta": [
-        "2023F-A3-be",
         "2023H-A3-b",
         "2024H-A1-a",
         "2025H-A3-b"
@@ -19271,9 +19223,7 @@
             "kurz": "Zugangs- und Zugriffskontrolle passend zum Schutzbedarf",
             "stufe": 4,
             "herkunft": [
-              "katalog:AP1.06.04.7",
-              "beleg:2023F-A3-be",
-              "beleg:2023H-A3-b"
+              "katalog:AP1.06.04.7"
             ],
             "vorgegeben": null,
             "erklaerung": "Je höher der Schutzbedarf, desto stärker die Kontrolle:\n- **Zugang** bei hohem Schutzbedarf: **Zwei-Faktor-Anmeldung**.\n- **Zugriff:** Rechte **nur nach Bedarf** – jeder sieht nur, was er braucht.\n- **Durchsetzung:** zentral über Berechtigungen und **Gruppenrichtlinien** – Einstellungen, die der Administrator zentral für viele Rechner vorgibt und die Benutzer nicht ändern können.\nBeispiel: Personalabteilung mit Gesundheitsdaten → Zwei-Faktor-Anmeldung, Zugriff auf den Personalordner nur für die Personalabteilung.",
@@ -19364,7 +19314,7 @@
       ],
       "gewicht": 2.8,
       "klasse": "B",
-      "punkte": 12.0,
+      "punkte": 12,
       "rang": 59,
       "pruef": [
         [
@@ -19606,7 +19556,7 @@
       ],
       "gewicht": 2.2,
       "klasse": "B",
-      "punkte": 7.0,
+      "punkte": 7,
       "rang": 79,
       "pruef": [
         [
@@ -19695,7 +19645,7 @@
             "kurz": "3-2-1-Regel der Datensicherung",
             "stufe": 2,
             "herkunft": [
-              "beleg:2026H-A2-db"
+              "katalog:AP1.06.04.5"
             ],
             "vorgegeben": null,
             "erklaerung": "- **3** Kopien der Daten (das Original und zwei Sicherungen)\n- auf **2** verschiedenen Medien (z. B. NAS und externe Festplatte)\n- **1** Kopie **außer Haus** (z. B. in der Cloud oder im Bankschließfach)\nSo überleben die Daten auch einen Brand oder Einbruch.\nZusätzlich: Mindestens eine Sicherung **offline** (getrennt) oder **unveränderbar** aufbewahren – sonst verschlüsselt Ransomware sie gleich mit.",
@@ -19707,8 +19657,7 @@
             "kurz": "Bewertung einer bestehenden Datensicherung",
             "stufe": 4,
             "herkunft": [
-              "beleg:2021H-A4-fa",
-              "beleg:2021H-A4-fb"
+              "beleg:2021H-A4-fa"
             ],
             "vorgegeben": null,
             "erklaerung": "Prüfe die bestehende Sicherung gegen die Regeln:\n- **Zu selten?** Wird nur einmal pro Woche gesichert, kann im ungünstigsten Fall die Arbeit einer ganzen Woche verloren gehen.\n- **Nicht räumlich getrennt?** Liegt die Sicherung neben dem Server, trifft ein Brand beides; liegt sie sogar auf derselben Festplatte (andere Partition), geht sie schon bei einem Plattendefekt mit verloren.\n- **Dauerhaft angeschlossen?** Ransomware verschlüsselt dann auch die Sicherung.\n- **Nie getestet?** Ob die Wiederherstellung klappt, ist unklar.\nNenne jede Schwachstelle mit ihrer Folge und einer Verbesserung.",
@@ -19720,7 +19669,7 @@
             "kurz": "Generationenprinzip bei Sicherungsdatenträgern",
             "stufe": 2,
             "herkunft": [
-              "beleg:2024F-A4-c"
+              "katalog:AP1.06.04.5"
             ],
             "vorgegeben": null,
             "erklaerung": "Beim Generationenprinzip werden **mehrere nummerierte Datenträger reihum** genutzt – z. B. fünf Festplatten für Montag bis Freitag.\nDadurch bleiben **ältere Sicherungsstände erhalten**. Wird ein Fehler erst nach Tagen bemerkt (z. B. eine versehentlich gelöschte Datei), gibt es noch eine Sicherung von vor dem Fehler.\nBekanntes Schema: Großvater – Vater – Sohn. Tagessicherungen (Sohn) werden jede Woche wieder überschrieben, Wochensicherungen (Vater) erst nach mehreren Wochen, Monatssicherungen (Großvater) erst nach Monaten.",
@@ -19825,7 +19774,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 11.0,
+      "punkte": 11,
       "rang": 36,
       "pruef": [
         [
@@ -19980,7 +19929,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 9.0,
+      "punkte": 9,
       "rang": 34,
       "pruef": [
         [
@@ -20316,7 +20265,7 @@
       ],
       "gewicht": 3.2,
       "klasse": "B",
-      "punkte": 13.0,
+      "punkte": 13,
       "rang": 57,
       "pruef": [
         [
@@ -20547,7 +20496,7 @@
       ],
       "gewicht": 0.25,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 123,
       "pruef": [],
       "ta": [],
@@ -20671,7 +20620,7 @@
       ],
       "gewicht": 2.6,
       "klasse": "B",
-      "punkte": 9.0,
+      "punkte": 9,
       "rang": 50,
       "pruef": [
         [
@@ -20856,7 +20805,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 60,
       "pruef": [
         [
@@ -21079,8 +21028,8 @@
       ],
       "gewicht": 1,
       "klasse": "A",
-      "punkte": 2.0,
-      "rang": 15,
+      "punkte": 2,
+      "rang": 17,
       "pruef": [
         [
           "2026F",
@@ -21268,7 +21217,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 9.0,
+      "punkte": 9,
       "rang": 61,
       "pruef": [
         [
@@ -21487,7 +21436,7 @@
       ],
       "gewicht": 0.6,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 5,
       "pruef": [
         [
@@ -21697,7 +21646,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 6,
       "pruef": [],
       "ta": [],
@@ -21885,7 +21834,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 7,
       "pruef": [],
       "ta": [],
@@ -22007,7 +21956,7 @@
       ],
       "gewicht": 1.7,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 8,
       "pruef": [
         [
@@ -22179,7 +22128,7 @@
       ],
       "gewicht": 4.1,
       "klasse": "A",
-      "punkte": 36.0,
+      "punkte": 36,
       "rang": 9,
       "pruef": [
         [
@@ -22406,7 +22355,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 11.0,
+      "punkte": 11,
       "rang": 44,
       "pruef": [
         [
@@ -22573,7 +22522,7 @@
       ],
       "gewicht": 2.2,
       "klasse": "A",
-      "punkte": 18.0,
+      "punkte": 18,
       "rang": 13,
       "pruef": [
         [
@@ -22748,8 +22697,8 @@
       ],
       "gewicht": 1.6,
       "klasse": "A",
-      "punkte": 13.0,
-      "rang": 16,
+      "punkte": 13,
+      "rang": 18,
       "pruef": [
         [
           "2023F",
@@ -22924,7 +22873,7 @@
       ],
       "gewicht": 1,
       "klasse": "A",
-      "punkte": 9.0,
+      "punkte": 9,
       "rang": 24,
       "pruef": [
         [
@@ -23097,7 +23046,7 @@
       ],
       "gewicht": 4.3,
       "klasse": "A",
-      "punkte": 34.0,
+      "punkte": 34,
       "rang": 10,
       "pruef": [
         [
@@ -23308,7 +23257,7 @@
       ],
       "gewicht": 2,
       "klasse": "B",
-      "punkte": 7.0,
+      "punkte": 7,
       "rang": 52,
       "pruef": [
         [
@@ -23367,7 +23316,7 @@
             "kurz": "Einfüge-, Änderungs- und Löschanomalie",
             "stufe": 2,
             "herkunft": [
-              "beleg:2025F-A4-fb"
+              "buch:GS-5.8.3-S605"
             ],
             "vorgegeben": null,
             "erklaerung": "Alle drei entstehen durch Redundanz:\n- **Einfügeanomalie:** Ein Datensatz lässt sich nicht anlegen, weil andere Angaben fehlen. Beispiel: Ein neuer Kunde kann nicht gespeichert werden, solange er nichts bestellt hat.\n- **Änderungsanomalie:** Eine mehrfach gespeicherte Angabe wird **nicht überall** geändert – die Daten widersprechen sich.\n- **Löschanomalie:** Beim Löschen gehen **ungewollt andere Informationen** verloren. Beispiel: Die einzige Bestellung eines Kunden wird gelöscht – damit ist auch seine Adresse weg.",
@@ -23469,7 +23418,7 @@
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 3.0,
+      "punkte": 3,
       "rang": 89,
       "pruef": [
         [
@@ -23640,7 +23589,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "A",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 27,
       "pruef": [],
       "ta": [],
@@ -23799,7 +23748,7 @@
       ],
       "gewicht": 0.5,
       "klasse": "C",
-      "punkte": 0.0,
+      "punkte": 0,
       "rang": 124,
       "pruef": [],
       "ta": [],

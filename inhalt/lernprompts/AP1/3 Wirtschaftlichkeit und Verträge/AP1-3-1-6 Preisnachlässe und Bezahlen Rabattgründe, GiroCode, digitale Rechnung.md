@@ -96,7 +96,7 @@ Stand 10/2026 – vor der Prüfung kurz gegenprüfen.
 - PDF oder E-Rechnung, und wer was muss: K5
 - Rechnungen im Rechnungsmanagementsystem: K4 (baut auf der E-Rechnung auf)
 
-**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K3 (2025H), K4 (2025H), K5 (2025H)
+**Schon geprüft:** In Prüfungen: K1 (2025H), K2 (2025H), K3 (2025H), K4 (2025H) · Noch nicht geprüft: K5
 
 **Kerngedanken:**
 - Die Themen folgen dem Weg einer Rechnung: Preis festlegen (Rabatt), bezahlen (GiroCode), verarbeiten (E-Rechnung, Rechnungsmanagementsystem). Der GiroCode erspart das Abtippen beim Bezahlen, die E-Rechnung das Abtippen beim Verbuchen.
@@ -118,7 +118,7 @@ Stand 10/2026 – vor der Prüfung kurz gegenprüfen.
 - XRechnung / ZUGFeRD: Formate für E-Rechnungen
 - Rechnungsmanagementsystem: Software, die Rechnungen verarbeitet und archiviert
 
-**So fragt die IHK:**Echte Aufgaben (2025H), alle an einer Rechnung mit QR-Code und in einem Betrieb, der ein digitales Rechnungsmanagement prüft: zwei Gründe für einen Rabatt „beschreiben“ (K1, 4 Punkte; Einstieg: „Neben Skonto gibt es als Preisnachlass auch noch den Rabatt“); zwei Informationen „nennen“, die in einem GiroCode stecken können (K2, 2 Punkte); zwei Erleichterungen „nennen“, die der Code beim Bezahlen bietet (K3, 2 Punkte); in einer Tabelle zwei Vorteile und zwei Nachteile der digitalen Rechnung in einem automatischen Rechnungsmanagementsystem „nennen“ (K4, K5, 4 Punkte). Je Nennung 1 Punkt, beim Beschreiben 2. Lösungshinweise liegen nicht vor; es zählt, was zur Situation passt und genau benannt ist. Zu Format und Pflichten der E-Rechnung (K5) gibt es keine eigene Aufgabe; nach dem Prüfungskatalog sind „beschreiben“ oder „erläutern“ zu erwarten (PDF gegen E-Rechnung, Empfangs- und Ausstellungspflicht).
+**So fragt die IHK:**Echte Aufgaben (2025H), alle an einer Rechnung mit QR-Code und in einem Betrieb, der ein digitales Rechnungsmanagement prüft: zwei Gründe für einen Rabatt „beschreiben“ (K1, 4 Punkte; Einstieg: „Neben Skonto gibt es als Preisnachlass auch noch den Rabatt“); zwei Informationen „nennen“, die in einem GiroCode stecken können (K2, 2 Punkte); zwei Erleichterungen „nennen“, die der Code beim Bezahlen bietet (K3, 2 Punkte); in einer Tabelle zwei Vorteile und zwei Nachteile der digitalen Rechnung in einem automatischen Rechnungsmanagementsystem „nennen“ (K4, 4 Punkte). Je Nennung 1 Punkt, beim Beschreiben 2. Lösungshinweise liegen nicht vor; es zählt, was zur Situation passt und genau benannt ist. Zu Format und Pflichten der E-Rechnung (K5) gibt es keine eigene Aufgabe; nach dem Prüfungskatalog sind „beschreiben“ oder „erläutern“ zu erwarten (PDF gegen E-Rechnung, Empfangs- und Ausstellungspflicht).
 
 **Fallen:**
 - Angaben im GiroCode genau benennen (Empfänger, IBAN), nicht „Kontodaten“. Im GiroCode steht nur, was der Zahlungsempfänger vorgibt: nicht die IBAN des Zahlers und kein Fälligkeitsdatum. Die BIC ist ein Zusatz und ersetzt keine der vier Angaben.

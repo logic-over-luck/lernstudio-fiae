@@ -131,7 +131,7 @@ Beispiel: 12 Arbeitstage, fertig am Freitag, 20.11. → zurückzählen: 16.–20
 - Meilenstein verfehlt, Möglichkeiten kennen: K3, K4
 - Die passende Maßnahme beurteilen: K2
 
-**Schon geprüft:** In Prüfungen: K2 (2026H), K3 (2026H), K5 (2021H), K6 (2021H) · Noch nicht geprüft: K1, K4, K7, K8
+**Schon geprüft:** In Prüfungen: K3 (2026H), K5 (2021H), K6 (2021H) · Noch nicht geprüft: K1, K2, K4, K7, K8
 
 **Kerngedanken:**
 - Kritischer Weg, Gesamtpuffer und Rückwärtsrechnung stammen aus dem Netzplan (eigener Stichpunkt) und werden hier vorausgesetzt. Für die Wirkung einer Verzögerung wird der Gesamtpuffer aus dem Netzplan abgelesen; für Terminprüfung und Rückwärtsterminierung werden Projektende und späteste Zeitpunkte selbst gerechnet wie im Netzplan.
@@ -152,7 +152,7 @@ Beispiel: 12 Arbeitstage, fertig am Freitag, 20.11. → zurückzählen: 16.–20
 **So fragt die IHK:**
 - Wirkung einer Verzögerung (K5): kleine Teilaufgabe hinter einer großen Netzplan-Aufgabe. Ein nichtkritischer Vorgang verzögert sich um einige Stunden; „Beschreiben Sie die Auswirkung auf das Projektende“, 2 Punkte. Gezählt wird das Urteil plus die Begründung mit Zahlen.
 - Dauer aus Aufwand (K6): „ermitteln“, 2 Punkte, der Rechenweg ist anzugeben. Die Lösung rechnet über Personentage (Aufwand durch Stunden je Tag, dann durch die Zahl der Personen) und lässt den Dezimalwert und den aufgerundeten Wert gelten.
-- 2026H (K2, K3), 4 Punkte, „beschreiben“: Für ein Webseiten-Projekt sind Meilensteine festgelegt; verlangt sind zwei sinnvolle Reaktionen des Projektleiters, wenn ein Meilenstein nicht erreicht wird. Die nicht amtliche Lösung nennt: Ursachen im Team klären; Zeitplan anpassen (Puffer nutzen, Folgetermine verschieben, Personal aufstocken oder Umfang kürzen).
+- 2026H (K3), 4 Punkte, „beschreiben“: Für ein Webseiten-Projekt sind Meilensteine festgelegt; verlangt sind zwei sinnvolle Reaktionen des Projektleiters, wenn ein Meilenstein nicht erreicht wird. Die nicht amtliche Lösung nennt: Ursachen im Team klären; Zeitplan anpassen (Puffer nutzen, Folgetermine verschieben, Personal aufstocken oder Umfang kürzen).
 - Zu Meilensteinen selbst, Terminprüfung und Rückwärtsterminierung ist keine echte Aufgabe beschrieben; zu erwarten sind kleine Teilaufgaben mit „erklären“, „beschreiben“, „nennen“ oder „beurteilen“.
 
 **Fallen:**

@@ -165,7 +165,7 @@ Entscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn mel
 - Pause möglich nach Teil A.
 - Teil B – Rechte und Folgen: Gewährleistung, Garantie, Kulanz K8; offene und versteckte Mängel K12; Beweislastumkehr K13; Voraussetzungen des Lieferverzugs K11; Rechte des Käufers K5 – der Teil zum Mangel passt schon zur Gewährleistung, der Teil zum Lieferverzug erst nach den Voraussetzungen; Folgen für den Lieferanten K7; Vorbeugung K4
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (2026F), K7 (2026F), K11 (2026F) · Noch nicht geprüft: K3, K6, K8–K10, K12, K13
+**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (2026F), K7 (2026F) · Noch nicht geprüft: K3, K6, K8–K13
 
 **Kerngedanken:**
 - Jede Vertragsstörung ist eine nicht erfüllte Pflicht aus dem Kaufvertrag: rechtzeitig liefern, mangelfrei liefern, abnehmen, bezahlen. Wer Käufer und wer Verkäufer ist, hängt vom einzelnen Vertrag ab: Ein Händler ist gegenüber seinem Lieferanten Käufer, gegenüber seinem Kunden Verkäufer.
@@ -193,7 +193,7 @@ Entscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn mel
 - Echte Aufgabe: Ein Fertigungsbetrieb richtet CAD-Arbeitsplätze ein. Der Vertragsteil ist ein kleiner Anhang hinter einer Nutzwertanalyse, ohne Material, mit dem Hinweis, dass dem Kunden die ordnungsgemäße Abwicklung des Kaufvertrags wichtig ist.
 - „Nennen“ von zwei Kaufvertragsstörungen (2 Punkte), dann „angeben“ je einer Maßnahme, mit der der Kunde die genannte Störung vermeiden kann (2 Punkte). Je Nennung 1 Punkt, eine Zeile reicht.
 - Als Störungen zählen Lieferverzug und mangelhafte Lieferung. Die Maßnahmen sind offen und großzügig bewertet: gegen Lieferverzug auch sofortige Mahnung und Analyse der Lieferkette, gegen mangelhafte Lieferung sofortige Kontrolle, sorgfältige Lieferantenauswahl und Konventionalstrafen. Entscheidend ist, dass die Maßnahme erkennbar zur genannten Störung passt.
-- 2026F: Ein Zulieferer muss pünktlich liefern. Ein Recht „beschreiben“, das seine Kunden bei Lieferverzug in Anspruch nehmen können (K5, K11, 2 Punkte), und eine negative Konsequenz „beschreiben“, die sich aus dem Imageverlust ergibt (K7, 2 Punkte). Lösungshinweise liegen nicht vor; zum Recht gehört seine Bedingung (Nachfrist, Vertretenmüssen).
+- 2026F: Ein Zulieferer muss pünktlich liefern. Ein Recht „beschreiben“, das seine Kunden bei Lieferverzug in Anspruch nehmen können (K5, 2 Punkte), und eine negative Konsequenz „beschreiben“, die sich aus dem Imageverlust ergibt (K7, 2 Punkte). Lösungshinweise liegen nicht vor; zum Recht gehört seine Bedingung (Nachfrist, Vertretenmüssen).
 - Mängelarten an einer Lieferung zu bestimmen sowie Gewährleistung, Garantie und Rügepflicht kamen noch nicht vor. Der Prüfungskatalog nennt diese Inhalte; eine Punktzahl lässt sich daraus nicht ableiten.
 
 **Fallen:**
