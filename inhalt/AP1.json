@@ -408,7 +408,7 @@
         {
           "pruefung": "2025H",
           "erfasst": 82.0,
-          "a": 30.0,
+          "a": 33.0,
           "ab": 54.0,
           "abc": 73.0,
           "mitTransfer": 82.0
@@ -4130,7 +4130,7 @@
       "gewicht": 0.6,
       "klasse": "B",
       "punkte": 6.0,
-      "rang": 75,
+      "rang": 74,
       "pruef": [
         [
           "2023H",
@@ -4681,7 +4681,7 @@
       "gewicht": 2.8,
       "klasse": "B",
       "punkte": 3.0,
-      "rang": 74,
+      "rang": 73,
       "pruef": [
         [
           "2022F",
@@ -6251,7 +6251,7 @@
       "gewicht": 1.8,
       "klasse": "A",
       "punkte": 9.5,
-      "rang": 25,
+      "rang": 26,
       "pruef": [
         [
           "2021H",
@@ -6569,8 +6569,8 @@
       ],
       "gewicht": 1,
       "klasse": "A",
-      "punkte": 5.0,
-      "rang": 26,
+      "punkte": 8.0,
+      "rang": 25,
       "pruef": [
         [
           "2025H",
@@ -8411,21 +8411,17 @@
         ],
         [
           "AP1-3-3-3-K13",
-          "Du kannst die Beweislastumkehr beim Verbrauchsgüterkauf erklären: Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel im ersten Jahr nach Übergabe vermutet, dass er schon bei Übergabe bestand."
+          "Du kannst die Beweislastumkehr beim Verbrauchsgüterkauf erklären: Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel, der sich im ersten Jahr nach Übergabe zeigt, vermutet, dass er schon bei Übergabe bestand."
         ]
       ],
       "gewicht": 1.6,
       "klasse": "B",
-      "punkte": 11.0,
-      "rang": 71,
+      "punkte": 8.0,
+      "rang": 81,
       "pruef": [
         [
           "2024F",
           0.6
-        ],
-        [
-          "2025H",
-          1
         ],
         [
           "2026F",
@@ -8435,7 +8431,6 @@
       "ta": [
         "2024F-A1-fa",
         "2024F-A1-fb",
-        "2025H-A1-b",
         "2026F-A3-ca",
         "2026F-A3-cb"
       ],
@@ -8504,8 +8499,7 @@
             "herkunft": [
               "katalog:AP1.07.06.2.1",
               "katalog:AP1.07.06.2.2",
-              "katalog:AP1.07.06.2.3",
-              "beleg:2025H-A1-b"
+              "katalog:AP1.07.06.2.3"
             ],
             "vorgegeben": null,
             "erklaerung": "- Lieferung mit der Bestellung vergleichen: Artikel, Menge, Zustand.\n- Jeden Mangel einordnen: falsch (Falschlieferung), zu wenig (Minderlieferung), fehlerhaft (Schlechtleistung).\n- Art und Anzahl festhalten, auf dem Lieferschein (dem Begleitpapier des Lieferanten) vermerken und dem Lieferanten schriftlich melden.\nBeispiel: Bestellt 10 Tastaturen mit deutschem Layout. Geliefert 9, davon 2 mit US-Layout und 1 mit defekter Taste → Minderlieferung (1 fehlt), Falschlieferung (2), Schlechtleistung (1).",
@@ -8533,7 +8527,7 @@
               "katalog:AP1.07.01.6"
             ],
             "vorgegeben": null,
-            "erklaerung": "Drei Gründe, warum eine Reparatur für den Kunden kostenlos sein kann:\n- **Gewährleistung:** steht im Gesetz, richtet sich gegen den **Verkäufer** und betrifft Mängel, die schon bei der Übergabe da waren. Beim Kauf gilt sie in der Regel **zwei Jahre ab Übergabe**, beim Werkvertrag beginnt die Frist mit der Abnahme. Gegenüber Verbrauchern kann sie nicht ausgeschlossen werden.\n- **Garantie:** freiwilliges Versprechen, meist vom **Hersteller**, z. B. Vor-Ort-Austausch für drei Jahre. Inhalt und Dauer bestimmt der Garantiegeber; sie gilt **zusätzlich** zur Gewährleistung.\n- **Kulanz:** Der Händler hilft, obwohl kein Anspruch mehr besteht – um den Kunden zu halten.\nBeispiel: Ein Akku fällt kurz nach Ende der Gewährleistung aus. Gibt es eine Herstellergarantie, greift diese; sonst kann der Händler nur noch aus Kulanz helfen.",
+            "erklaerung": "Drei Gründe, warum eine Reparatur für den Kunden kostenlos sein kann:\n- **Gewährleistung:** steht im Gesetz, richtet sich gegen den **Verkäufer** und betrifft Mängel, die schon bei der Übergabe da waren. Beim Kauf gilt sie in der Regel **zwei Jahre ab Übergabe**, beim Werkvertrag beginnt die Frist mit der Abnahme. Verkauft ein Unternehmer an einen Verbraucher (Verbrauchsgüterkauf), kann er sie nicht im Voraus ausschließen; ein privater Verkäufer darf sie vertraglich ausschließen (außer er verschweigt einen Mangel arglistig).\n- **Garantie:** freiwilliges Versprechen, meist vom **Hersteller**, z. B. Vor-Ort-Austausch für drei Jahre. Inhalt und Dauer bestimmt der Garantiegeber; sie gilt **zusätzlich** zur Gewährleistung.\n- **Kulanz:** Der Händler hilft, obwohl kein Anspruch mehr besteht – um den Kunden zu halten.\nBeispiel: Ein Akku fällt kurz nach Ende der Gewährleistung aus. Gibt es eine Herstellergarantie, greift diese; sonst kann der Händler nur noch aus Kulanz helfen.",
             "karten": 3,
             "neu": null
           },
@@ -8589,7 +8583,7 @@
               "katalog:AP1.07.06.2.3"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Offener Mangel:** bei der Prüfung der Ware sofort erkennbar. **Versteckter Mangel:** trotz ordnungsgemäßer Prüfung zunächst nicht erkennbar, zeigt sich erst später.\n- **Verbrauchsgüterkauf** (Unternehmer verkauft an Verbraucher) und **einseitiger Handelskauf** (nur eine Seite ist Kaufmann): keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit von 2 Jahren geltend machen. Die Beweislastumkehr im ersten Jahr gilt nur beim Verbrauchsgüterkauf.\n- **Zweiseitiger Handelskauf** (beide sind Kaufleute, betreiben also ein Handelsgewerbe): Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen (dem Verkäufer melden), spätestens innerhalb von 2 Jahren – sonst gilt die Ware als genehmigt. Keine Beweislastumkehr.",
+            "erklaerung": "- **Offener Mangel:** bei der Prüfung der Ware sofort erkennbar. **Versteckter Mangel:** trotz ordnungsgemäßer Prüfung zunächst nicht erkennbar, zeigt sich erst später.\n- **Verbrauchsgüterkauf** (Unternehmer verkauft an Verbraucher) und **einseitiger Handelskauf** (nur eine Seite ist Kaufmann): keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit geltend machen (Verjährung, in der Regel 2 Jahre). Die Beweislastumkehr im ersten Jahr gilt nur beim Verbrauchsgüterkauf.\n- **Zweiseitiger Handelskauf** (beide sind Kaufleute, betreiben also ein Handelsgewerbe): Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen (dem Verkäufer melden) – sonst gilt die Ware als genehmigt (§ 377 HGB). Eine feste Höchstfrist für die Rüge gibt es nicht; davon getrennt verjähren die Mängelansprüche in der Regel 2 Jahre nach der Ablieferung. Keine Beweislastumkehr.",
             "karten": 3,
             "neu": null
           },
@@ -8607,7 +8601,7 @@
               "buch:GS-2.10.1-S266-268"
             ],
             "vorgegeben": null,
-            "erklaerung": "Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im ersten Jahr nach der Übergabe vermutet, dass ein auftretender Mangel schon bei der Übergabe bestand (Beweislastumkehr). Danach gilt die Gewährleistung bis zum Ende der zwei Jahre weiter, aber der Käufer muss beweisen, dass der Mangel schon bei der Übergabe bestand.",
+            "erklaerung": "Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf) und **zeigt sich** ein Mangel im ersten Jahr nach der Übergabe, wird vermutet, dass er schon bei der Übergabe bestand (Beweislastumkehr); der Verkäufer muss das Gegenteil beweisen.\nEntscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn meldet. Zeigt er sich erst nach dem ersten Jahr, gilt die Gewährleistung bis zum Ende der zwei Jahre weiter, aber der Käufer muss beweisen, dass der Mangel schon bei der Übergabe bestand.",
             "karten": 2,
             "neu": null
           }
@@ -9155,7 +9149,7 @@
       "gewicht": 1.2,
       "klasse": "B",
       "punkte": 10.0,
-      "rang": 72,
+      "rang": 71,
       "pruef": [
         [
           "2023F",
@@ -9597,7 +9591,7 @@
       "gewicht": 2.2,
       "klasse": "B",
       "punkte": 6.75,
-      "rang": 78,
+      "rang": 77,
       "pruef": [
         [
           "2022F",
@@ -10035,7 +10029,7 @@
       "gewicht": 1.2,
       "klasse": "B",
       "punkte": 5.75,
-      "rang": 79,
+      "rang": 78,
       "pruef": [
         [
           "2022F",
@@ -13419,7 +13413,7 @@
       "gewicht": 0.6,
       "klasse": "B",
       "punkte": 6.0,
-      "rang": 77,
+      "rang": 76,
       "pruef": [
         [
           "2023F",
@@ -13623,7 +13617,7 @@
       "gewicht": 1,
       "klasse": "B",
       "punkte": 2.75,
-      "rang": 76,
+      "rang": 75,
       "pruef": [
         [
           "2026H",
@@ -14533,7 +14527,7 @@
       "gewicht": 1,
       "klasse": "B",
       "punkte": 4.0,
-      "rang": 73,
+      "rang": 72,
       "pruef": [
         [
           "2025F",
@@ -17481,7 +17475,7 @@
       "gewicht": 2.6,
       "klasse": "B",
       "punkte": 7.5,
-      "rang": 81,
+      "rang": 80,
       "pruef": [
         [
           "2024H",
@@ -19613,7 +19607,7 @@
       "gewicht": 2.2,
       "klasse": "B",
       "punkte": 7.0,
-      "rang": 80,
+      "rang": 79,
       "pruef": [
         [
           "2021H",
@@ -30846,7 +30840,7 @@
       "sp": "AP1-3-3-3",
       "k": "AP1-3-3-3-K12",
       "v": "Vergleiche Verbrauchsgüterkauf bzw. einseitigen Handelskauf und zweiseitigen Handelskauf bei Prüfpflicht, Anzeigefrist, Gewährleistungszeit und Beweislastumkehr.",
-      "h": "- Verbrauchsgüterkauf/einseitiger Handelskauf: keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit von 2 Jahren anzeigen; Beweislastumkehr im ersten Jahr (beim Verbrauchsgüterkauf)\n- zweiseitiger Handelskauf: Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen, spätestens innerhalb von 2 Jahren; keine Beweislastumkehr"
+      "h": "- Verbrauchsgüterkauf/einseitiger Handelskauf: keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit geltend machen (in der Regel 2 Jahre); Beweislastumkehr im ersten Jahr (beim Verbrauchsgüterkauf)\n- zweiseitiger Handelskauf: Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen (keine feste Höchstfrist; die Ansprüche verjähren davon getrennt in der Regel nach 2 Jahren); keine Beweislastumkehr"
     },
     {
       "id": "AP1-3-3-3-K12-3",
@@ -30860,7 +30854,7 @@
       "sp": "AP1-3-3-3",
       "k": "AP1-3-3-3-K13",
       "v": "Was bedeutet die Beweislastumkehr beim Verbrauchsgüterkauf?",
-      "h": "Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel im ersten Jahr nach der Übergabe vermutet, dass er schon bei der Übergabe bestand. Der Verkäufer muss das Gegenteil beweisen."
+      "h": "Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel, der sich im ersten Jahr nach der Übergabe zeigt, vermutet, dass er schon bei der Übergabe bestand. Der Verkäufer muss das Gegenteil beweisen."
     },
     {
       "id": "AP1-3-3-3-K13-2",

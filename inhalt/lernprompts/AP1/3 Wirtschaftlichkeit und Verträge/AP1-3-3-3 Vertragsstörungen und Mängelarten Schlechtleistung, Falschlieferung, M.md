@@ -101,7 +101,7 @@ Du kannst Gewährleistung (gesetzlicher Anspruch des Käufers gegen den Verkäuf
 
 Erklärung:
 Drei Gründe, warum eine Reparatur für den Kunden kostenlos sein kann:
-- **Gewährleistung:** steht im Gesetz, richtet sich gegen den **Verkäufer** und betrifft Mängel, die schon bei der Übergabe da waren. Beim Kauf gilt sie in der Regel **zwei Jahre ab Übergabe**, beim Werkvertrag beginnt die Frist mit der Abnahme. Gegenüber Verbrauchern kann sie nicht ausgeschlossen werden.
+- **Gewährleistung:** steht im Gesetz, richtet sich gegen den **Verkäufer** und betrifft Mängel, die schon bei der Übergabe da waren. Beim Kauf gilt sie in der Regel **zwei Jahre ab Übergabe**, beim Werkvertrag beginnt die Frist mit der Abnahme. Verkauft ein Unternehmer an einen Verbraucher (Verbrauchsgüterkauf), kann er sie nicht im Voraus ausschließen; ein privater Verkäufer darf sie vertraglich ausschließen (außer er verschweigt einen Mangel arglistig).
 - **Garantie:** freiwilliges Versprechen, meist vom **Hersteller**, z. B. Vor-Ort-Austausch für drei Jahre. Inhalt und Dauer bestimmt der Garantiegeber; sie gilt **zusätzlich** zur Gewährleistung.
 - **Kulanz:** Der Händler hilft, obwohl kein Anspruch mehr besteht – um den Kunden zu halten.
 Beispiel: Ein Akku fällt kurz nach Ende der Gewährleistung aus. Gibt es eine Herstellergarantie, greift diese; sonst kann der Händler nur noch aus Kulanz helfen.
@@ -148,14 +148,15 @@ Du kannst offene und versteckte Mängel unterscheiden und Prüfpflicht, Anzeigef
 
 Erklärung:
 - **Offener Mangel:** bei der Prüfung der Ware sofort erkennbar. **Versteckter Mangel:** trotz ordnungsgemäßer Prüfung zunächst nicht erkennbar, zeigt sich erst später.
-- **Verbrauchsgüterkauf** (Unternehmer verkauft an Verbraucher) und **einseitiger Handelskauf** (nur eine Seite ist Kaufmann): keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit von 2 Jahren geltend machen. Die Beweislastumkehr im ersten Jahr gilt nur beim Verbrauchsgüterkauf.
-- **Zweiseitiger Handelskauf** (beide sind Kaufleute, betreiben also ein Handelsgewerbe): Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen (dem Verkäufer melden), spätestens innerhalb von 2 Jahren – sonst gilt die Ware als genehmigt. Keine Beweislastumkehr.
+- **Verbrauchsgüterkauf** (Unternehmer verkauft an Verbraucher) und **einseitiger Handelskauf** (nur eine Seite ist Kaufmann): keine Prüfpflicht des Käufers; Mängel innerhalb der Gewährleistungszeit geltend machen (Verjährung, in der Regel 2 Jahre). Die Beweislastumkehr im ersten Jahr gilt nur beim Verbrauchsgüterkauf.
+- **Zweiseitiger Handelskauf** (beide sind Kaufleute, betreiben also ein Handelsgewerbe): Ware unverzüglich prüfen; offene Mängel unverzüglich nach Lieferung, versteckte unverzüglich nach Entdeckung rügen (dem Verkäufer melden) – sonst gilt die Ware als genehmigt (§ 377 HGB). Eine feste Höchstfrist für die Rüge gibt es nicht; davon getrennt verjähren die Mängelansprüche in der Regel 2 Jahre nach der Ablieferung. Keine Beweislastumkehr.
 
 ### K13 – Beweislastumkehr beim Verbrauchsgüterkauf (Stufe 4 Beurteilen)
-Du kannst die Beweislastumkehr beim Verbrauchsgüterkauf erklären: Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel im ersten Jahr nach Übergabe vermutet, dass er schon bei Übergabe bestand.
+Du kannst die Beweislastumkehr beim Verbrauchsgüterkauf erklären: Kauft ein Verbraucher von einem Unternehmer, wird bei einem Mangel, der sich im ersten Jahr nach Übergabe zeigt, vermutet, dass er schon bei Übergabe bestand.
 
 Erklärung:
-Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im ersten Jahr nach der Übergabe vermutet, dass ein auftretender Mangel schon bei der Übergabe bestand (Beweislastumkehr). Danach gilt die Gewährleistung bis zum Ende der zwei Jahre weiter, aber der Käufer muss beweisen, dass der Mangel schon bei der Übergabe bestand.
+Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf) und **zeigt sich** ein Mangel im ersten Jahr nach der Übergabe, wird vermutet, dass er schon bei der Übergabe bestand (Beweislastumkehr); der Verkäufer muss das Gegenteil beweisen.
+Entscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn meldet. Zeigt er sich erst nach dem ersten Jahr, gilt die Gewährleistung bis zum Ende der zwei Jahre weiter, aber der Käufer muss beweisen, dass der Mangel schon bei der Übergabe bestand.
 
 ## Lehrnotiz: Vertragsstörungen und Mängelarten: Schlechtleistung, Falschlieferung, Minderlieferung
 
@@ -164,18 +165,18 @@ Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im erst
 - Pause möglich nach Teil A.
 - Teil B – Rechte und Folgen: Gewährleistung, Garantie, Kulanz K8; offene und versteckte Mängel K12; Beweislastumkehr K13; Voraussetzungen des Lieferverzugs K11; Rechte des Käufers K5 – der Teil zum Mangel passt schon zur Gewährleistung, der Teil zum Lieferverzug erst nach den Voraussetzungen; Folgen für den Lieferanten K7; Vorbeugung K4
 
-**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (2026F), K6 (2025H), K7 (2026F), K11 (2026F) · Noch nicht geprüft: K3, K8–K10, K12, K13
+**Schon geprüft:** In Prüfungen: K1 (2024F), K4 (2024F), K5 (2026F), K7 (2026F), K11 (2026F) · Noch nicht geprüft: K3, K6, K8–K10, K12, K13
 
 **Kerngedanken:**
 - Jede Vertragsstörung ist eine nicht erfüllte Pflicht aus dem Kaufvertrag: rechtzeitig liefern, mangelfrei liefern, abnehmen, bezahlen. Wer Käufer und wer Verkäufer ist, hängt vom einzelnen Vertrag ab: Ein Händler ist gegenüber seinem Lieferanten Käufer, gegenüber seinem Kunden Verkäufer.
 - Schlechtleistung, Falschlieferung und Minderlieferung sind alle drei Sachmängel. Die Frage „falsch, zu wenig oder kaputt?“ bestimmt die Mängelart, die Frage „Sache selbst oder Recht eines Dritten?“ trennt Sachmangel und Rechtsmangel.
 - Bei der Nacherfüllung im Kauf wählt der Käufer zwischen Nachbesserung und Ersatzlieferung.
-- Gewährleistungszeit und Beweislastumkehr sind zwei verschiedene Fristen. Nach dem ersten Jahr besteht der Anspruch des Verbrauchers bis zum Ende der zwei Jahre weiter; nur muss jetzt er beweisen, dass der Mangel schon bei der Übergabe bestand.
+- Gewährleistungszeit und Beweislastumkehr sind zwei verschiedene Fristen. Für die Beweislastumkehr zählt, wann sich der Mangel zeigt. Zeigt er sich erst nach dem ersten Jahr, besteht der Anspruch des Verbrauchers bis zum Ende der zwei Jahre weiter; nur muss jetzt er beweisen, dass der Mangel schon bei der Übergabe bestand.
 - Beim Mangel schließen sich Minderung und Rücktritt gegenseitig aus. Schadensersatz kann in beiden Fällen (Mangel und Lieferverzug) zum Rücktritt dazukommen, wenn der Verkäufer den Mangel oder die Verspätung zu vertreten hat. Der Verzögerungsschaden ist ein eigener Posten: Er kommt neben der Lieferung dazu und bleibt auch bestehen, wenn der Käufer später zurücktritt.
 
 **Typische Missverständnisse:**
 - Viele denken, Software ohne gültige Lizenz sei kein Mangel, solange sie läuft. Richtig ist: Es ist ein Rechtsmangel, weil der Rechteinhaber die Nutzung untersagen kann.
-- Viele denken, unter Kaufleuten habe man für die Mängelrüge zwei Jahre Zeit. Richtig ist: Gerügt wird unverzüglich; die zwei Jahre sind nur die äußerste Grenze für versteckte Mängel.
+- Viele denken, unter Kaufleuten habe man für die Mängelrüge zwei Jahre Zeit. Richtig ist: Gerügt wird unverzüglich – offene Mängel nach der Lieferung, versteckte nach ihrer Entdeckung. Die zwei Jahre sind keine Rügefrist, sondern die Verjährung der Mängelansprüche.
 - Viele denken, zu wenig gelieferte Ware sei ein Lieferverzug für den Rest. Richtig ist: Pünktlich, aber zu wenig ist eine mangelhafte Lieferung (Minderlieferung).
 
 **Fachwörter:**
@@ -193,8 +194,7 @@ Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im erst
 - „Nennen“ von zwei Kaufvertragsstörungen (2 Punkte), dann „angeben“ je einer Maßnahme, mit der der Kunde die genannte Störung vermeiden kann (2 Punkte). Je Nennung 1 Punkt, eine Zeile reicht.
 - Als Störungen zählen Lieferverzug und mangelhafte Lieferung. Die Maßnahmen sind offen und großzügig bewertet: gegen Lieferverzug auch sofortige Mahnung und Analyse der Lieferkette, gegen mangelhafte Lieferung sofortige Kontrolle, sorgfältige Lieferantenauswahl und Konventionalstrafen. Entscheidend ist, dass die Maßnahme erkennbar zur genannten Störung passt.
 - 2026F: Ein Zulieferer muss pünktlich liefern. Ein Recht „beschreiben“, das seine Kunden bei Lieferverzug in Anspruch nehmen können (K5, K11, 2 Punkte), und eine negative Konsequenz „beschreiben“, die sich aus dem Imageverlust ergibt (K7, 2 Punkte). Lösungshinweise liegen nicht vor; zum Recht gehört seine Bedingung (Nachfrist, Vertretenmüssen).
-- 2025H (K6): beim Abgleich einer Rechnung drei Kontrollvorgänge „beschreiben“ (6 Punkte); dazu gehört der Vergleich mit Bestellung und Lieferschein nach Art, Menge und Zustand.
-- Mängelarten an einer Lieferung zu bestimmen sowie Gewährleistung, Garantie und Rügepflicht kamen noch nicht vor; nach dem Prüfungskatalog sind kurze Teilaufgaben mit 2 bis 4 Punkten zu erwarten.
+- Mängelarten an einer Lieferung zu bestimmen sowie Gewährleistung, Garantie und Rügepflicht kamen noch nicht vor. Der Prüfungskatalog nennt diese Inhalte; eine Punktzahl lässt sich daraus nicht ableiten.
 
 **Fallen:**
 - Teil A: Bei einer Störung auf der Käuferseite den Zwischenhändler aus Gewohnheit als Verkäufer einordnen.
@@ -206,7 +206,7 @@ Kauft ein Verbraucher von einem Unternehmer (Verbrauchsgüterkauf), wird im erst
 - Teil B: Schadensersatz zusagen, ohne die Bedingung zu nennen, dass der Verkäufer den Mangel oder die Verspätung zu vertreten hat.
 - Teil B: Gelieferte Ware ungeöffnet ins Lager stellen. Ein sichtbarer Schaden, der erst Wochen später beim Auspacken auffällt, ist unter Kaufleuten ein zu spät gerügter offener Mangel.
 - Teil B: Die Rügepflicht auf Privatkunden übertragen oder unter Kaufleuten eine Beweislastumkehr annehmen. Der Lieferant darf dort den Nachweis verlangen, dass der Mangel schon bei Lieferung bestand.
-- Teil B: Für die Zeit nach dem ersten Jahr „kein Anspruch mehr“ antworten.
+- Teil B: Für einen Mangel, der sich erst nach dem ersten Jahr zeigt, „kein Anspruch mehr“ antworten. Der Anspruch besteht weiter, nur trägt jetzt der Käufer die Beweislast.
 - Teil B: Den Lieferverzug bejahen, ohne alle drei Voraussetzungen am Fall zu prüfen. Bei einem Kalendertermin gehört der Satz dazu, dass die Mahnung entfällt.
 - Teil B: Folgen für den Lieferanten nur als Schlagworte nennen oder eine im Vertrag stehende Konventionalstrafe übersehen.
 - Teil B: Eine Maßnahme nennen, die nicht zur genannten Störung passt (Skonto hilft gegen Zahlungsverzug, nicht gegen Lieferverzug), oder statt einer Maßnahme ein Recht nennen, das erst die Folgen der Störung regelt (Rücktritt, Schadensersatz). Sofortige Kontrolle der Lieferung und sofortige Mahnung zählen dagegen als Vorbeugung.
