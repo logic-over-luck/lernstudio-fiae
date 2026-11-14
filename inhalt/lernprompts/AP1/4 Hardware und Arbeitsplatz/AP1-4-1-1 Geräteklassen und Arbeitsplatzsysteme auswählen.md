@@ -191,6 +191,7 @@ Der Abgleich von Ist und Soll zeigt, was geändert oder beschafft werden muss.
 - Muster 2: Ein Systemhaus richtet Telearbeit ein. Zwei weitere Anschaffungen oder Maßnahmen über den PC hinaus „nennen und begründen“ (4 Punkte, 6 Zeilen). Gezählt werden zum Beispiel Headset, Kamera, Telefon, Drucker, ergonomischer Stuhl, blendfreie Beleuchtung, gesicherter Internetanschluss – jeweils mit Zweck. Dann an zwei Aspekten „erläutern“, warum ein Tablet die Anforderungen an einen Bildschirmarbeitsplatz nicht erfüllt (4 Punkte; es zählen Ergonomie, Anschlussmöglichkeiten, Software, Leistung).
 - Bewertet wird die Begründung aus der Situation. Reine Schlagworte bringen bei „begründen“ und „erläutern“ höchstens die Hälfte.
 - Zu Workstation, Fat Client, Zero und Cloud Client und zur Konfiguration gibt es keine echte Aufgabe.
+- 2026H (K7), 2 Punkte, „nennen“: Auf einer Baustelle soll Internet verfügbar sein; verlangt sind zwei Möglichkeiten. Die nicht amtliche Lösung nennt einen Mobilfunk-Router mit SIM-Karte und Tethering über das Dienst-Smartphone.
 
 **Fallen:**
 - Teil A: Zwei Geräteklassen nur mit „größer“ oder „kleiner“ unterscheiden, ohne ein Merkmal zu nennen (tragbar, Gehäuse, Ort der Verarbeitung, Bedienung, Telefonfunktion).

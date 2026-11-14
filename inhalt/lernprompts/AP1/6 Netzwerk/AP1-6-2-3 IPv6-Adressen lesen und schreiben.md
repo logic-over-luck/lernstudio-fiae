@@ -146,7 +146,7 @@ Erkennungstipp: Beginnt eine Adresse mit 2 oder 3, ist sie global; mit fe80 loka
 - Dieselbe Art Ausgabe oder `ip addr`: „Beschreiben Sie die Herkunft“ oder „Geben Sie den Grund an und benennen Sie die Adressart“, je 2 Punkte. Gezählt: link-lokale Adresse, vom Rechner unabhängig vom Netz automatisch selbst vergeben.
 - „Nennen Sie zwei technologische Vorteile von IPv6 gegenüber IPv4“, 2 Punkte, beispielhaft. Die Lösungshinweise ließen neben Adresszahl und weltweiter Erreichbarkeit auch integrierte Sicherheit (IPsec) und einen schlankeren Protokollkopf gelten: nicht lehren, aber nicht als falsch werten.
 - Eine gekürzte globale Adresse in Teilen ungekürzt hexadezimal angeben, je Teil 2 Punkte.
-- Der Vergleich mit IPv4 ist laut Katalog Prüfstoff, typisch „beschreiben“, 2–3 Punkte.
+- Vergleich mit IPv4 (K6, 2026F), 4 Punkte, „beschreiben“: zwei Unterschiede zwischen den Protokollen IPv4 und IPv6, je 2 Punkte. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Beim Ausschreiben die vorhandenen Blöcke nicht zählen und :: mit zu vielen oder zu wenigen Nullblöcken füllen.

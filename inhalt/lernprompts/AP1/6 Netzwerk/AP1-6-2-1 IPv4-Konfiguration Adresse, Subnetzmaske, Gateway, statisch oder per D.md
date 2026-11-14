@@ -178,7 +178,9 @@ Weitere besondere IPv4-Adressen: 0.0.0.0 steht für eine noch unbekannte eigene 
 - Echte Aufgabe: Ein Rechner soll statisch eingerichtet werden; der Grund (spätere Fernwartung) steht schon im Aufgabentext. Vorgegeben sind eine kleine Tabelle des Administrators (Netz mit /24, DHCP-Bereich, Router) und eine gezeichnete Eingabemaske mit den Optionsfeldern „IP-Adresse automatisch beziehen“ und „Folgende IP-Adresse verwenden“ sowie den Feldern IP-Adresse, Subnetzmaske, Standardgateway (ohne DNS).
 - Operatoren „markieren“ und „anpassen“, 4 Punkte. Als richtig zählten: Umstellen auf „Folgende IP-Adresse verwenden“, eine Adresse aus dem freien Rest, die Maske 255.255.255.0, das Gateway gleich dem Router. Die Adresse in der Lösung ist ausdrücklich beispielhaft, jede zulässige zählt.
 - Ein Beurteilen von statisch gegen DHCP oder der Reservierung ist nicht als eigene Teilaufgabe belegt. Der Prüfungskatalog nennt die Konfiguration von Clients mit statischer und automatischer Vergabe; denkbar ist „begründen“ oder „beurteilen“ mit 2–4 Punkten.
-- Zu privaten Bereichen, NAT und PAT, Dokumentation, Klassen und CIDR sowie besonderen Adressen gibt es keine echte Aufgabe. Zu erwarten sind kurze Fragen mit „nennen“, „erläutern“ oder Zuordnen (Adresse zu privat oder öffentlich, Klasse, Bedeutung), je 1–3 Punkte.
+- Private Bereiche (K5, 2026F), 2 Punkte, „beschreiben“: Drei Kameras haben statische Adressen aus 192.168.178.0/24; verlangt ist, wie sich diese Adressen zur öffentlichen Erreichbarkeit im Internet verhalten. Lösungshinweise liegen nicht vor.
+- 2025H, 3 Punkte, „konfigurieren“: Netzplan mit Router, PC und einem weiteren Gerät in einem /24-Netz; für ein neues Gerät sind in ein Formular die Adresse (die letzte mögliche), die Subnetzmaske und das Standard-Gateway einzutragen.
+- Zu NAT und PAT, Dokumentation, Klassen und CIDR sowie besonderen Adressen gibt es keine echte Aufgabe. Zu erwarten sind kurze Fragen mit „nennen“, „erläutern“ oder Zuordnen, je 1–3 Punkte.
 
 **Fallen:**
 - Maske: Das Umstellen des Optionsfelds auf „Folgende IP-Adresse verwenden“ vergessen. Es gehört zur Lösung und wird mitbewertet.

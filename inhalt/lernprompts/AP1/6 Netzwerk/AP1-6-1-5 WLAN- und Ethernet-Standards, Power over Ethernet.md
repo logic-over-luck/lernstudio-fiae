@@ -160,7 +160,8 @@ Beispiel: „IEEE 802.3at“ im Datenblatt eines Access Points heißt: Er kann p
 - PoE-Injektor: speist Strom ein, wo der Switch kein PoE hat
 
 **So fragt die IHK:**
-- Aus den ausgewerteten älteren Prüfungen gibt es keine Aufgabe als Vorlage; was folgt, ist aus dem Prüfungskatalog abgeleitet.
+- Echte Aufgabe (2026F, K4, K5), 4 Punkte, „auswählen“ und „berechnen“: Eine Kamera soll mit Heizung und Infrarot über PoE versorgt werden; laut englischem Datenblatt braucht sie dann höchstens 24 W. Vorgegeben ist eine Tabelle mit zwei Zeilen (6,49–12,95 W: IEEE 802.3af; 12,95–25,50 W: IEEE 802.3at). Den passenden Standard für den Switch wählen und die maximale Stromstärke in mA bei 48 V berechnen; die Formel P = U · I ist angegeben. Lösungshinweise liegen nicht vor.
+- Zu WLAN- und Ethernet-Standards gibt es keine echte Aufgabe; was folgt, ist aus dem Prüfungskatalog abgeleitet.
 - Der Katalog nennt Ethernet-Standards, WLAN-Standards, Netzwerkkarte, Switch, Router, Übertragungsraten und elektrische Leistung. Zu erwarten sind Datenblattauszüge (IEEE-Nummern, Bezeichnungen wie 1000BASE-T), die gegen eine Anforderung aus der Situation zu prüfen sind, und eine vorgegebene PoE-Tabelle, aus der der passende Standard zu wählen ist.
 - Operatoren: zuordnen, erklären, auswählen und begründen, beurteilen. Als Annahme: 2–4 Punkte je Teilaufgabe; beim Beurteilen zählen Urteil und Begründung mit dem konkreten Datenblattwert.
 

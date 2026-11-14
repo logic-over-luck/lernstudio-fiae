@@ -128,8 +128,9 @@ Typische Fehler beim Korrigieren: vertauschter Vergleich (`-gt` statt `-lt`) ode
 **So fragt die IHK:**
 - Eine echte Aufgabe (8 Punkte, Operator „korrigieren“): ein kurzes PowerShell-Skript, das warnen soll, wenn der freie Platz eines Laufwerks unter einen Prozentwert fällt. Es steht zeilenweise in einer Tabelle mit der leeren Spalte „Falsche Zeilen korrigieren“; das Symptom ist genannt. Als Material liegt eine englische Anleitung mit den Vergleichsoperatoren und den benutzten Befehlen bei.
 - Gesucht waren genau zwei Fehler: ein falscher Faktor in der Prozentrechnung und ein vertauschter Vergleich. Nur diese Zeilen werden berichtigt, die übrigen bleiben leer.
-- Aus dem Katalog ableitbar, ohne echte Vorlage: Fehlerart benennen, Fehlerquellen nennen, problematische Eingabedaten erläutern; üblich sind 2–4 Punkte, je Element einer.
+- Aus dem Katalog ableitbar, ohne echte Vorlage: Fehlerart benennen, Fehlerquellen nennen; üblich sind 2–4 Punkte, je Element einer.
 - In selbst geschriebenem Pseudocode toleriert die IHK Syntaxfehler; in gegebenem Code zählen die Regeln der Sprache.
+- 2026H (K3), 3 Punkte, „erläutern“: Dem Code aus dem Schreibtischtest werden zwei Arrays mit ungleicher Länge übergeben; verlangt ist das Problem, das dabei entsteht. Nicht amtliche Lösung: Im letzten Durchlauf greift der Code auf einen Index zu, den das kürzere Array nicht hat – das Programm bricht zur Laufzeit ab.
 
 **Fallen:**
 - Nach dem ersten gefundenen Fehler aufhören, statt nach jeder Korrektur erneut mit dem Testwert zu prüfen.

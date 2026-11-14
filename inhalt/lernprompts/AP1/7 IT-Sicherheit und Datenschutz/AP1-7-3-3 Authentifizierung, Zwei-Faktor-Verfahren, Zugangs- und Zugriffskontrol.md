@@ -138,6 +138,7 @@ Das BSI empfiehlt Passkeys seit 2024 ausdrücklich. Tipp: Ein Ersatzgerät oder 
 - 2023H, Telearbeitsplatz: Tabelle mit vorgegebenen Bereichen (Zutrittsschutz am Telearbeitsplatz, sichere Anmeldung am Laptop, sichere Datenkommunikation, Transport von Datenträgern; eine Zeile vorbelegt). Je Zeile eine technisch-organisatorische Maßnahme nennen, 4 Punkte; Lösungen beispielhaft (Raum abschließen, sichere Passwörter oder Zwei-Faktor, VPN).
 - 2024H: drei technische Möglichkeiten einer automatischen Zutrittskontrolle für einen Raum nennen.
 - Kurze Stichworte reichen, wenn sie zur Situation passen. Zu Zwei-Faktor-Authentifizierung und Passkeys gibt es keine echte Aufgabe.
+- 2025H (K6), 4 Punkte, „ergänzen“: Tabelle mit den Spalten Fingerabdrucksensor, Passwort, Chipkarte und den Zeilen Methode (vorgegeben: Biometrie, Wissen, Besitz), Vorteil und Sicherheitsrisiko; die Spalte Fingerabdruck ist ausgefüllt, je ein Vorteil und ein Risiko für Passwort und Chipkarte fehlen. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - In einer Tabelle nach Bereichen eine Maßnahme aus der falschen Hürde eintragen, etwa beim Zutritt zum Raum die Anmeldung am Laptop. Es zählt, wo die Maßnahme wirkt: Ein Zahlencode an der Tür gehört zum Zutritt, ein Passwort bei der Anmeldung zum Zugang.

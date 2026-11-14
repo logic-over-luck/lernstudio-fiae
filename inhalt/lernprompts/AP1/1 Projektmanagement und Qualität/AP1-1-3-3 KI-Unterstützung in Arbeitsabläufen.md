@@ -105,6 +105,7 @@ Am Beispiel Rechnungsprüfung:
 - Wählen und beschreiben, 6 Punkte: drei Stellen des Ablaufs wählen und je beschreiben, wie KI sinnvoll eingesetzt werden kann (2 Punkte je Stelle).
 - Die Lösung ist beispielhaft und großzügig, etwa Übersetzungshilfe, Vorab-Dialog rund um die Uhr, freie Termine zuweisen, Texte suchen und zusammenfassen. Auch am Beratungsschritt zählen unterstützende Tätigkeiten. Ausdrücklich erlaubt: ein weiteres Beispiel für den Schritt, der schon ausgefüllt ist.
 - Zu Grenzen, Risiken und menschlicher Prüfung gibt es in den ausgewerteten Prüfungen keine Aufgabe. Laut Prüfungskatalog sind kurze Aufgaben zum Nennen von Grenzen und Risiken und zum Begründen oder Beurteilen der menschlichen Prüfung zu erwarten.
+- 2025H (K5), 4 Punkte, „beschreiben“: Ein Unternehmen prüft ein digitales Rechnungsmanagement; verlangt sind zwei Argumente für eine automatische Rechnungsprüfung mit KI-Unterstützung. Lösungshinweise liegen nicht vor; zu jedem Argument gehört der Nutzen im Fall.
 
 **Fallen:**
 - Zu einem Ablaufschritt nur „hier kann KI helfen“ schreiben, ohne die Tätigkeit zu nennen.

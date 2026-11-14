@@ -138,6 +138,7 @@ Beispiel: Der Browser (7) fordert eine Seite an, TCP (4) schickt die Anfrage an 
 - Statusfenster: Schicht-1-Werte „benennen“ und „interpretieren“, 4 Punkte (je Wert 1, Deutung 2). Gezählt haben Medienstatus, Signalqualität, Übertragungsrate und Aktivität; Deutung: Schicht 1 fehlerfrei, der Fehler liegt höher.
 - Begriffe aus einer ipconfig-Ausgabe und einem Foto der Buchse Schichten zuordnen, Name deutsch oder englisch; vier Begriffe gaben 4 Punkte (Physische Adresse zu 2, DHCP zu 7, verbindungslokale IPv6-Adresse zu 3, Buchse mit LED zu 1).
 - Als Fehler zählten etwa „Serverkonfiguration fehlerhaft“ (7), „falsche IP-Adresse vergeben“ (3), „Netzwerkkarte defekt“ (2), „Medium getrennt“ (1). Die Lösungen sind beispielhaft, andere passende Einträge zählen auch.
+- 2026H (K2, K3), 4 Punkte, „vervollständigen“: Tabelle zur Fehlersuche mit den Spalten OSI-Schicht (englisch), Protokoll, Test, erwartetes Ergebnis; vier Felder sind leer: der Test für HTTPS (Seite im Browser aufrufen), das erwartete Ergebnis von nslookup (Name wird in eine IP-Adresse aufgelöst), die Schicht zu IP und ping (Network Layer) und das Protokoll der Sicherungsschicht (Ethernet). Lösung nicht amtlich und beispielhaft.
 
 **Fallen:**
 - In der Spalte „Adressen“ bei Schicht 4 eine IP-Adresse eintragen; dort stehen die Ports.

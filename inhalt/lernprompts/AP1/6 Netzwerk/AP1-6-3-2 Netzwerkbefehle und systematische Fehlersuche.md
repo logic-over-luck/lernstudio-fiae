@@ -156,6 +156,9 @@ Beispiel: Eine Kollegin meldet „kein Internet“. `ping www.example.com` antwo
 - Befehl angeben, um eine Adresse aus einer Ausgabe (z. B. `arp`), Loopback oder Gateway zu prüfen: gezählt wird `ping <Adresse>`, auch `tracert`; bei IPv6 z. B. `ping ::1`.
 - Unbeschriftete Doppeldose, zwei getrennte Netze, Router-Adresse im Material: Vorgehen beschreiben (Patchkabel an eine Buchse, ping auf den Router, bei Erfolg beschriften, sonst umstecken), um 5 Punkte.
 - Gezählt werden der Befehl mit der konkreten Adresse aus dem Material (nicht ohne Ziel) und die Begründung aus dem Testergebnis.
+- 2026F (K3, K7), 8 Punkte, „angeben“: Eine Webseite lässt sich nicht aufrufen. Tabelle „Möglicher Fehler | Mögliche Überprüfung | Fehlerbehebung“, eine Zeile als Beispiel ausgefüllt (falsches Gateway – ipconfig /all – richtige Adresse zuweisen), vier Fehler vorgegeben: Patchkabel defekt, Adresse nicht im richtigen Bereich, Dose nicht gepatcht, Namensauflösung gestört. Je Fehler eine Prüfung und eine Behebung. Lösungshinweise liegen nicht vor.
+- 2026F (K4), 3 Punkte: Screenshot mit ping auf drei Kameras, alle ohne Paketverlust, eine mit stark schwankenden Antwortzeiten bis über 800 ms. Den kritischen Wert „nennen“ und ein mögliches Problem „beschreiben“.
+- 2026H (K3), 4 Punkte: Tabelle zur Fehlersuche nach OSI mit Protokoll, Test und erwartetem Ergebnis je Schicht, vier Felder zu ergänzen.
 
 **Fallen:**
 - Teil A: Provider anrufen oder Router neu starten, bevor die schnellen Prüfungen am PC gemacht sind; in der Reihenfolge springen.

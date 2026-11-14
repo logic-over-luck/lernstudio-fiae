@@ -114,9 +114,9 @@ Im Prüfungskatalog heißen die drei Ursachen Angst vor Kompetenzverlust, Wissen
 - persönliche Historie: schlechte Erfahrungen mit früheren Veränderungen
 
 **So fragt die IHK:**
-- Zu diesem Stichpunkt liegt keine verwendbare echte Aufgabe vor.
+- Echte Aufgabe (2025H): Ein neues, automatisiertes Verfahren zur Rechnungsbearbeitung soll die Beschäftigten entlasten, trotzdem gibt es Bedenken. Zwei mögliche Ursachen für die Ablehnung „nennen“ (K5, 2 Punkte), danach zwei Maßnahmen gegen die Bedenken „beschreiben“ (4 Punkte). Kein Material; Lösungshinweise liegen nicht vor.
 - Der Prüfungskatalog nennt wörtlich das „Erkennen von Promoter, Bremser, Skeptiker und Widerständler“ und als Ursachen von Widerständen „Angst vor Kompetenzverlust, Wissenslücken, persönliche Historie“.
-- Zu erwarten sind kleine Teilaufgaben im Stil der Nachbarthemen: Eine Person oder Aussage wird beschrieben, der Typ ist zu bestimmen oder die Ursache zu nennen oder zu erläutern, dazu ist eine passende Maßnahme zu beschreiben. Operatoren nennen, erläutern, beschreiben; etwa 2 Punkte je Fall.
+- Zu den vier Typen gibt es keine echte Aufgabe. Zu erwarten ist: Eine Person oder Aussage wird beschrieben, der Typ ist zu bestimmen und eine passende Maßnahme zu beschreiben; Operatoren nennen, erläutern, beschreiben, etwa 2 Punkte je Fall.
 - Gezählt wird vermutlich der Fachbegriff aus dem Katalog plus eine schlüssige Begründung am Fall; bei Maßnahmen zählen auch andere schlüssige Antworten.
 
 **Fallen:**

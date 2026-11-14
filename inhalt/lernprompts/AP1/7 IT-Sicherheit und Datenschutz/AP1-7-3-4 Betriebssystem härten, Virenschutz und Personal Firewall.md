@@ -170,6 +170,7 @@ Wie streng man sperrt, hängt von der Art der Daten und der Einbindung des Syste
 - Besprechungsraum mit Präsentationsrechner nach BSI-Grundschutz: zwei vorgegebene Maßnahmen begründen, darunter die Minimalkonfiguration mit festgelegter Anwendungssoftware. Gezählt wurden: einfacher zu pflegen, weniger fehleranfällig, weniger Angriffsmöglichkeiten.
 - Arztpraxis, Basisanforderungen des BSI an PC-Clients: je eine Maßnahme nennen zu „Autoupdate aktivieren“ (Betriebssystem-Updates und Virensignaturen automatisch laden) und zu „Benutzerrollen trennen“ (keine normale Arbeit mit Administratorrechten).
 - Zu Personal Firewall, Erkennungsverfahren, Makros und fremden Datenträgern gibt es keine echte Aufgabe.
+- 2025H (K7), 2 Punkte, „beschreiben“: Der Hersteller eines Kartenterminals empfiehlt vor der Inbetriebnahme ein Softwareupdate; verlangt ist ein Grund dafür. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Minimalkonfiguration: nur „sicherer“ begründen und „leichter zu pflegen“ vergessen oder umgekehrt; die IHK zählt beide Seiten.

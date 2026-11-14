@@ -126,6 +126,7 @@ Beispiel: Das dienstliche Tablet wird komplett per MDM verwaltet. Auf dem privat
 - Telearbeit: Tabelle mit Bereichen, erste Zeile vorgegeben, je Bereich ein Beispiel, 4 × 1 Punkt: Zutrittsschutz am Arbeitsplatz, sichere Anmeldung, sichere Datenkommunikation, Transport von Datenträgern. Gezählt wurden auch Fenster und Türen schließen, sichere Passwörter, sichere Protokolle, Übergabe nur an Berechtigte.
 - Situation und Sicherheitsrisiko: Tabelle mit mehreren Situationen, Beispielzeile vorgegeben, je 1 Punkt. Eine Zeile war BYOD; gezählt wurde die Gefährdung des Firmennetzes durch Malware oder Ausspähung.
 - Datenträgeraustausch und MDM/MAM kamen bisher nicht als eigene Teilaufgabe vor; denkbar sind Nennen-Aufgaben und Beurteilen oder Beschreiben im Fall.
+- 2026H (K1, K2), 6 Punkte, „erläutern“: Mitarbeiter arbeiten auf Baustellen mit Smartphone und Laptop. Leere Tabelle „Maßnahme | Grund | Folge bei Nichtbeachtung“, zwei Zeilen. Die nicht amtliche Lösung nennt die Verschlüsselung des Datenträgers (bei Verlust kann sonst jeder die Daten lesen) und VPN in fremden Netzen (sonst kann mitgelesen werden).
 
 **Fallen:**
 - Bei „erläutern“ die Maßnahme ohne Grund nennen.

@@ -127,7 +127,9 @@ Beispiel: Ein IT-Dienstleister wartet per Fernzugriff die Praxissoftware einer A
 **So fragt die IHK:**
 - Das Thema steckt in größeren Aufgaben zu Datenschutz und Datensicherheit, oft mit einem Kunden aus dem Finanzsektor oder einer Arztpraxis.
 - Echte Aufgabe (2023F): Ausgangslage sind BSI-Empfehlungen zur Protokollierung von Aktivitäten an Arbeitsplatzrechnern. Operator „beschreiben“, 4 Punkte, 6 Zeilen. Die Lösungshinweise zählen: Daten nur begrenzt speichern und auswerten; Beispiele wie der Grundsatz der Datensparsamkeit gelten ebenfalls; das Wort sollte in der Antwort fallen.
-- Denkbar sind kurze Teilaufgaben mit „begründen“ (erhöhter Schutz für Gesundheitsdaten) und „beschreiben“ (eine Pflicht beim Einsatz von Videokameras). Datenpanne und Auftragsverarbeitung können als Beratung eines Kunden auftauchen; eine echte Aufgabe dazu gibt es nicht.
+- 2025H (K2), 3 Punkte, „begründen“ und „nennen“: Ein Kartenterminal liest Patientendaten von der elektronischen Gesundheitskarte; verlangt sind die Begründung, warum das erhöhten Sicherheitsanforderungen unterliegt, und eine rechtliche Grundlage.
+- 2026F (K3), 2 Punkte, „beschreiben“: Kameras überwachen einen Parkplatz auf dem Betriebsgelände; verlangt ist eine Verpflichtung, die mit Kameraaufnahmen verbunden ist. Zu beiden Aufgaben liegen keine Lösungshinweise vor.
+- Datenpanne und Auftragsverarbeitung können als Beratung eines Kunden auftauchen; eine echte Aufgabe dazu gibt es nicht.
 
 **Fallen:**
 - Gesundheitsdaten: Nur „die sind sensibel“ schreiben. Verlangt sind besondere Kategorie, möglicher Schaden und Folge.

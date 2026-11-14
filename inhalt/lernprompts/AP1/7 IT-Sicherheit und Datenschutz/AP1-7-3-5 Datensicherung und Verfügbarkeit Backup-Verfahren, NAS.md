@@ -166,6 +166,7 @@ Beispiel: Personalakten sollen nur für die Leitung lesbar sein – am USB-Speic
 - 2021H, Arztpraxis: Die Abrechnungssoftware sichert einmal in der Woche beim Herunterfahren auf eine eigene Partition derselben Festplatte. Verlangt waren zwei Risiken (2 Punkte; gezählt: keine zeitliche und räumliche Trennung, wöchentlicher Zyklus zu lang) und ein konkreter Verbesserungsvorschlag (2 Punkte; externe Sicherung, mindestens täglich, Medium abmelden und an einem anderen Ort verwahren).
 - 2024F, Laptop im Außendienst ohne stabile Internetverbindung, laut Richtlinie Tagesvollsicherungen auf mehrere nummerierte externe Festplatten: drei Punkte nennen, die die Sicherung zuverlässig machen. Gezählt wurden: verschlüsseln, feste Reihenfolge der Datenträger und danach wieder von vorn (Generationenprinzip); andere Lösungen waren zulässig.
 - Zu Sicherungsarten, NAS, Image und Sicherungsziel gibt es keine echte Aufgabe; der Prüfungskatalog nennt Backup-Verfahren und die Sicherung der Verfügbarkeit, z. B. NAS.
+- 2026H: Als Sicherheitsmaßnahme zu einer Schutzbedarfstabelle nennt die nicht amtliche Lösung regelmäßige automatische Backups nach der 3-2-1-Regel (K5; 2 Punkte für zwei Maßnahmen). Aus zwei englischen Sätzen über Ausfallsicherheit waren die zwei genannten Lösungen auf Deutsch zu nennen (K3, 2 Punkte): verfügbare Datensicherungen und Redundanz.
 
 **Fallen:**
 - Teil A: gegen den USB-Speicher am Router nur einen Grund nennen oder die Gründe nicht auf den Betrieb beziehen (wer darf was sehen, was passiert bei einem Defekt, wie viele greifen gleichzeitig zu).

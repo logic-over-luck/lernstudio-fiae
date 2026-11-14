@@ -146,6 +146,7 @@ Beispiel: 120 abgerechnete Stunden × 95 € netto = 11.400 € Umsatz; bei 8.90
 - Die Lösungshinweise sind beispielhaft und lassen andere sinnvolle Antworten zu; die Zuordnung zu den Zeilen ist nicht streng.
 - Weitere Form: zwei ökologische Aspekte einer neu angeschafften Maschine beschreiben, 4 Punkte. Es zählten Energieverbrauch, Materialverbrauch durch weniger Ausschuss, Emissionen, Ressourcen für die Herstellung und die Entsorgung des Altgeräts.
 - Leitbild, Zielebenen sowie Umsatz und Gewinn stehen im Prüfungskatalog, kamen in den vorliegenden Aufgaben aber nicht eigens vor.
+- 2026F (K7): zwei wirtschaftliche Vorteile „nennen“, die ein verbesserter Ablauf der An- und Ablieferungen dem Betrieb bringt (2 Punkte), und eine negative Konsequenz „beschreiben“, die aus dem Imageverlust nach einem Lieferverzug folgt (2 Punkte). Lösungshinweise liegen nicht vor; gefragt ist die Folge in Geld oder Aufträgen.
 
 **Fallen:**
 - Beim Leitbild nur eine Wirkrichtung nennen (nur innen oder nur außen).

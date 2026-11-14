@@ -132,7 +132,7 @@ Begründe immer mit dem Wort aus dem Ziel: „‚deutlich‘ ist keine Zahl, als
 - Die echten Teilaufgaben standen am Anfang einer großen Planungsaufgabe (25 Punkte, danach folgte ein Netzplan): Ein Systemhaus plant für einen Kunden einen Umzug mit teilweiser Erneuerung der IT.
 - Verlangt waren vier Projektmerkmale, Operator „nennen“, 4 Punkte, je Merkmal 1 Punkt. Die Begriffe reichen, eine Erklärung ist nicht nötig.
 - Zweite Teilaufgabe: S war vorgegeben, die übrigen vier SMART-Kriterien waren zu nennen, deutsch oder englisch, 4 Punkte. Beim A galten akzeptiert, erreichbar und attraktiv.
-- Das Zuordnen von Zielteilen zu den SMART-Kriterien (K4) kam in einer neueren Prüfung vor; bei Zuordnungen sind die fünf Begriffe vorgegeben, entscheidend ist der Bezug auf das konkrete Ziel.
+- 2026H, Zuordnen (K4), 4 Punkte: Ein Systemhaus erstellt für einen Kunden eine Webseite. Die fünf SMART-Begriffe stehen in der Aufgabe (A = akzeptiert). Eine Tabelle enthält fünf Sätze einer Zielbeschreibung, eine Zeile ist als Beispiel ausgefüllt, zu vier Sätzen ist das Kriterium einzutragen; jedes kommt genau einmal vor. Signalwörter: ein Datum → terminiert; „nach Erfahrungen ausreichend, mit Puffer“ → realistisch; „allen Projektmitgliedern wichtig“ → akzeptiert; genau benannter Inhalt → spezifisch.
 - Beurteilen und Umformulieren kamen bisher nicht vor, sind nach dem Prüfungskatalog aber möglich.
 
 **Fallen:**

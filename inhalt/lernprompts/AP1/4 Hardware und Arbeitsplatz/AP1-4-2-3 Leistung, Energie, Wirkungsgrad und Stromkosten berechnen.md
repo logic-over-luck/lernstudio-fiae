@@ -147,7 +147,8 @@ Brauchen die Server 810 W, nimmt die USV auf: `P_auf = 810 W / 0,81 = 1.000 W` �
 - Netzteil auswählen: Tabelle mit Leistung je Stück und Anzahl, Puffer von 10 % oder ähnlich, Netzteile in 50-W-Schritten; „Berechnen Sie … und benennen Sie das ausgewählte Netzteil“, 4 Punkte (3 für die Summe mit Puffer, 1 für die Wahl).
 - Stromkosten: Folgeaufgabe mit Ersatzwert, 3 Punkte: Arbeitstage mal Stunden mal (Netzteil in kW durch Wirkungsgrad) mal Auslastung mal Preis je kWh. In einer anderen Aufgabe zwei PCs mit verschiedenen Wirkungsgraden, Tabelle teils vorgegeben, die Definition „Efficiency = output/input“ stand englisch daneben; Energiekosten je Monat „errechnen“ (6 Punkte), danach Amortisation des teureren Netzteils in Monaten.
 - Mehrfachsteckdose: Geräteliste mit maximaler Leistungsaufnahme und „maximal 16 A“; „Weisen Sie durch eine Rechnung nach, dass …“, 4 Punkte.
-- Zu P = U · I und USB ist die Aufgabenform nicht bekannt; zu erwarten ist eine kleine Teilaufgabe (Stromstärke oder Spannung berechnen, eine Störung begründen).
+- P = U · I (K1), Formel jeweils angegeben: 2025H ein Gerät mit Netzteil 24 V/0,5 A, das auch über einen USB-Port mit 5 V laufen kann – „ermitteln“, welcher Strom dort für dieselbe Leistung nötig wäre (2 Punkte: erst die Leistung, dann durch 5 V). 2026F die maximale Stromstärke in mA für eine Kamera mit 24 W an 48 V über PoE (mit der Wahl des PoE-Standards 4 Punkte).
+- USB-Störung (K7, 2025H), 3 Punkte, „begründen“: Am selben PC hängen weitere USB-Geräte; verlangt ist der Zusammenhang zwischen den Störungen und der Stromversorgung über den USB-Port. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Beim Umstellen der Formel falsch herum teilen (U durch P).

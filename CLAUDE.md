@@ -11,8 +11,9 @@
   `src/bereiche/lernen/lernprompt-neu.js` wählt aus: neu lernen = feste Datei; abgehakt/Wiederholen = Kopf, Stoff und
   Lehrnotiz derselben Datei mit den Wiederholungs-Regeln aus `wiederholRegeln` (seit 12.11.2026; `lernprompt.js` ist
   nur noch Rückfall). **Prüfungskürzel:** In `inhalt/` stehen Kürzel wie `2024F`; `terminText` in
-  `src/daten/wichtigkeit.js` schreibt sie für Anzeige und kopierte Prompts aus („Frühjahr 2024“). „Schon geprüft“
-  nennt seit 12.11.2026 auch die drei aufgehobenen AP1-Prüfungen mit Termin (ihr Inhalt bleibt ungeöffnet). `npm run pruefen` meldet, wenn Titel oder Wortlaut einer Aussage in der Datei nicht mehr zu
+  `src/daten/wichtigkeit.js` schreibt sie für Anzeige und kopierte Prompts aus („Frühjahr 2024“). **Keine Prüfung
+  ist aufgehoben** (seit 14.11.2026): Alle elf AP1-Prüfungen werden genannt, geöffnet und in Lehrnotizen, Stoff und
+  Lernplan verwendet. `npm run pruefen` meldet, wenn Titel oder Wortlaut einer Aussage in der Datei nicht mehr zu
   `inhalt/<RAUM>.json` passen, und verlangt je Raum alle Prompts oder keinen.
   - **Arbeitsmappe `archiv/2026-11-11_lehrnotiz-arbeitsmappe/`** (Stand und Regeln:
     `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md`). **Der Ordner `archiv/` liegt nur lokal, nicht auf GitHub**

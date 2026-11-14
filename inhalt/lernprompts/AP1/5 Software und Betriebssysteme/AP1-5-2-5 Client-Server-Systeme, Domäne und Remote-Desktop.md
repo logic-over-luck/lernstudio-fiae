@@ -168,7 +168,8 @@ Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, v
 - Templates: Vorlagen für einheitliches Aussehen der Website
 
 **So fragt die IHK:**
-- Über die Form echter Aufgaben zu diesem Stichpunkt ist nichts bekannt. Das Folgende ist aus dem Prüfungskatalog abgeleitet (typische IT-Systeme und deren Einsatzbereiche zuordnen: Client-Server-Systeme, Einbindung in einer Domäne; Installation und Einrichtung von Systemen, z. B. Remote-Desktop).
+- Echte Aufgabe (2026F, K7), 3 Punkte, „erläutern“: Kameras erfassen die LKW auf dem Parkplatz vor dem Tor; verlangt ist eine Möglichkeit, wie die Video-Erfassung die An- und Ablieferungen unterstützen kann. Lösungshinweise liegen nicht vor.
+- Zu Client-Server, Domäne und Remote-Desktop gibt es keine echte Aufgabe. Das Folgende ist aus dem Prüfungskatalog abgeleitet (typische IT-Systeme und deren Einsatzbereiche zuordnen: Client-Server-Systeme, Einbindung in einer Domäne; Installation und Einrichtung von Systemen, z. B. Remote-Desktop).
 - Zu erwarten: Ein Kunde mit mehreren Standorten oder Homeoffice erweitert sein Netz um Server, Domäne oder Fernzugriff. Als Material ein Netzplan oder eine Liste von Geräten und Diensten, ein Ausschnitt aus Einstellungen oder der Vorschlag eines Kollegen.
 - Operatoren: nennen (Vorteile einer Domäne, Eigenschaften von Serverhardware), zuordnen (Server zu Dienst, System zu Einsatzbereich), erklären oder erläutern (Client-Server, Domäne, Remote-Desktop gegen virtuellen Desktop, CMS), beschreiben (Remote-Desktop einrichten), beurteilen (Absicherung eines Fernzugriffs).
 - Zu erwarten sind kleine Teilaufgaben mit 2–6 Punkten; bei Zuordnungen ein Punkt je richtiger Zuordnung, beim Erläutern zählt der Nutzen für den konkreten Fall.

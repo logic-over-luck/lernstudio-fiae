@@ -141,6 +141,7 @@ Beispiel: Vor dem Tausch der Festplatte eines Kunden-PCs sicherst du sein Benutz
 - „Erläutern“: zwei Riegel für Dual-Channel einsetzen, mit einem Bild der Steckplätze in der Reihenfolge B1, B2, A1, A2 (3 Punkte); gezählt werden die beiden Bedingungen aus dem Stoff.
 - „Beschreiben“: Besonderheit eines umrahmten USB-Anschlusses mit Aufdruck „BIOS“ und einem Knopf daneben (2 Punkte).
 - Zu Kompatibilität und Hardwaretausch gibt es keine echte Aufgabe; zu erwarten sind „beurteilen“ und „planen“ an einem Datenblatt.
+- 2026H (K6): Beim Beschreiben, wie man den defekten von zwei Speicherriegeln findet (2 Punkte), beginnt die nicht amtliche Lösung mit den Schutzmaßnahmen: ausschalten, vom Stromnetz trennen, ESD-Schutz anlegen.
 
 **Fallen:**
 - Bei der Wärmeleitpaste nur „verbessert die Kühlung“ schreiben. Gezählt werden beide Teile: Unebenheiten ausgleichen und Luft leitet Wärme schlecht.

@@ -137,7 +137,8 @@ Erklärung:
 - „Angeben“, wie viele Teilnetze sich bilden lassen, 2 Punkte. Die Lösung lautet „2^16“; die Potenz reicht.
 - „Vergeben“: Netzplan mit Router, Switch und Endgeräten, einzelne Adressen vorgegeben, leere Felder für Adresse und Gateway; 6 Punkte, beispielhaft. Gezählt: Adressen im richtigen /64, Gateway gleich Routeradresse bei allen Geräten einschließlich Switch.
 - „Angeben“: Befehle für Loopback und Gateway, 2 Punkte.
-- Dual Stack, Tunnel und die Vergabearten sind laut Katalog prüfbar, typisch „erläutern“ oder „beschreiben“ mit 2–4 Punkten.
+- Kombinierter Betrieb (K5, 2026F), 3 Punkte, „erläutern“: eine Möglichkeit, IPv4 und IPv6 kombiniert zu betreiben. Eine genügt (Dual Stack oder Tunnel), aber mit Erklärung, wie sie arbeitet. Lösungshinweise liegen nicht vor.
+- Die Vergabearten sind laut Katalog prüfbar, typisch „erläutern“ oder „beschreiben“ mit 2–4 Punkten.
 
 **Fallen:**
 - Das Standortpräfix mit vier Blöcken angeben. Es sind drei.

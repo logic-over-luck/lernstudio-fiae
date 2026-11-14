@@ -137,6 +137,7 @@ Ergonomische Tastaturen: geteilte oder V-förmige Bauform, Handballenauflage und
 - Verlangt und gezählt: zwei weitere Anschaffungen oder Maßnahmen nennen und begründen (Bürostuhl, blendfreie Lichtquelle, auch Headset, Kamera, sicherer Internetanschluss); erläutern, warum ein Tablet die Anforderungen an einen Bildschirmarbeitsplatz nicht erfüllt (Ergonomie, auch Anschlüsse, Software, Leistung); zwei Ergänzungen beschreiben, die die Arbeit am Notebook ergonomischer machen (ergonomische Tastatur oder Maus, zusätzlicher Bildschirm, Dockingstation).
 - Weitere sinnvolle Antworten zählen. Ein Aspekt ohne Begründung oder Wirkung bringt nur einen Teil der Punkte.
 - Typische Kette: Vorschlag (Tablet) – Ablehnung begründen – Kompromiss (Notebook) – ergonomisch ergänzen.
+- 2026F (K2), 4 Punkte, „nennen“: Foto eines Arbeitsplatzes mit Notebook auf einem kleinen Tisch, einfachem Stuhl und einem Kabel in Schlingen am Boden; verlangt sind vier Maßnahmen, die den Arbeitsplatz ergonomischer machen. Lösungshinweise liegen nicht vor; die Maßnahmen ergeben sich aus dem Bild.
 
 **Fallen:**
 - Bei „beurteilen“ nur Mängel aufzählen oder nur Maßnahmen nennen.

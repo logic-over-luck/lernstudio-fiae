@@ -111,8 +111,9 @@ Beispiel: Ein Unternehmen verkauft eine geschlossene Desktop-App. Eine MIT- oder
 - Copyleft: weitergegebene Abwandlung bleibt unter derselben Lizenz
 
 **So fragt die IHK:**
-- Zur GPL (K4) gab es in einer neueren Prüfung eine Teilaufgabe; ihr Wortlaut liegt nicht vor. Der Prüfungskatalog nennt die Grundlagen des Urheberschutzes und Lizenzarten wie EULA, OEM und GNU.
-- Als Erwartung, nicht belegt: kurze Teilaufgaben in einer Kundensituation, auch angehängt an ein anderes Thema wie Softwareauswahl. Operatoren „nennen“, „beschreiben“, „erläutern“: eine Lizenzart erläutern, die Grundgedanken der GPL beschreiben oder erläutern, ob ein Vorhaben des Kunden mit der Lizenz vereinbar ist. Beim Erläutern zählt der Bezug auf den Fall.
+- 2026H (K4), 4 Punkte, „beschreiben“: Die Geschäftsführung fragt, ob Open-Source-Komponenten für eine geplante Software infrage kommen; verlangt sind zwei Grundgedanken der GNU GPL. Die nicht amtliche Lösung nennt Copyleft (Geändertes oder Abgeleitetes muss bei Weitergabe wieder unter der GPL stehen) und den offenen Quellcode mit den Freiheiten, die Software auszuführen, zu ändern und weiterzugeben.
+- Der Prüfungskatalog nennt außerdem die Grundlagen des Urheberschutzes und Lizenzarten wie EULA und OEM; dazu gibt es keine echte Aufgabe.
+- Zu erwarten sind dort kurze Teilaufgaben in einer Kundensituation, auch angehängt an ein anderes Thema wie Softwareauswahl: eine Lizenzart erläutern oder erläutern, ob ein Vorhaben des Kunden mit der Lizenz vereinbar ist. Beim Erläutern zählt der Bezug auf den Fall.
 
 **Fallen:**
 - Eine weitere Installation pauschal als verboten bezeichnen: Es gilt, was die Lizenz erlaubt, manche erlauben ausdrücklich eine Zweitinstallation.

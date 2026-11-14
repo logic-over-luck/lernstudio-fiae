@@ -135,10 +135,11 @@ Beispiel: „Rechnung bezahlen“ und „Bestellung archivieren“ laufen parall
 - Schwimmbahnen: Bahnen, eine je Beteiligtem
 
 **So fragt die IHK:**
-- Eine Aufgabe aus einer neueren Prüfung gab es schon (siehe „Schon geprüft“), sie kann hier aber nicht als Muster beschrieben werden; eine andere echte Aufgabe gibt es nicht.
+- Echte Aufgabe (2025H, K1, K2, K4), 9 Punkte, „erstellen“: Ein Prozess nach Rechnungseingang ist in sieben Spiegelstrichen beschrieben: automatische Prüfung, bei „nicht ok“ Ablehnung und Ende; sonst Entscheidung nach dem Betrag, darüber eine manuelle Prüfung mit eigener Ablehnung; am Schluss werden zwei Aktionen „gleichzeitig“ ausgeführt. Als Material die Notationshilfe (Startknoten, Endknoten, Ablaufende, Schwimmbahnen, Konnektor, Teilung und Synchronisation, Entscheidung und Zusammenführung) und eine Vorlage, in der nur Startknoten und erste Aktion stehen. Lösungshinweise liegen nicht vor.
+- Das Signalwort „gleichzeitig“ verlangt Teilung und Synchronisation mit Balken; zwei Wege, die zur selben Aktion führen, brauchen eine Zusammenführung; jede ausgehende Kante einer Entscheidung trägt ihre Bedingung in eckigen Klammern.
 - Der Prüfungskatalog nennt das Aktivitätsdiagramm zweimal: als Mittel, Kontrollstrukturen abzubilden, und als UML-Diagramm mit Notationsanhang (Start, Endknoten, Ablaufende, Aktion, Schwimmbahnen, Teilung und Synchronisation, Entscheidung mit Bedingungen, Zusammenführung, Konnektor).
-- Zu erwarten ist wie bei den anderen UML-Aufgaben der Operator „ergänzen“: Ein beschriebener Ablauf mit Verzweigung, eventuell mit Schleife, Parallelität und Schwimmbahnen, wird in eine begonnene Vorlage eingetragen; Punkte je richtig gesetztem Element (Punktzahl nicht belegt).
-- Zu erwarten ist, dass Symbol, Bedingung in eckigen Klammern, richtige Bahn und Anschluss der Kanten zählen, nicht die Zeichenqualität.
+- Zu erwarten ist daneben wie bei den anderen UML-Aufgaben der Operator „ergänzen“ mit einer weiter ausgefüllten Vorlage, eventuell mit Schleife und Schwimmbahnen.
+- Es dürften Symbol, Bedingung in eckigen Klammern und Anschluss der Kanten zählen, nicht die Zeichenqualität.
 - Daneben sind kurze Erläuterungen denkbar (Raute gegen Balken, Endknoten gegen Ablaufende).
 
 **Fallen:**

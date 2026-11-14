@@ -165,6 +165,8 @@ Achte auf die Einheiten: Bit durch 8 ergibt Byte, Datenmengen in KiB/MiB mit Bin
 - Teilpunkte gibt es je Zeile: Pixel, mal Farbtiefe, durch 8, durch 1.024, durch 1.024. Folgefehler werden mit Ersatzwerten aufgefangen.
 - Ebenso „berechnen“, je 2–3 Punkte: Speicherbedarf von Datenpunkten (Anzahl mal Koordinaten mal Bit je Wert) in KiB, Farbanzahl aus 3 × 8 Bit, Mehrbedarf in Prozent durch zusätzliche Farbwerte je Punkt.
 - „Reicht der Speicher“ ist nach dem Prüfungskatalog eine naheliegende Ergänzung derselben Kette. Zu Audio und analog/digital gab es keine eigene Aufgabe.
+- 2025H (K1, K7), je 3 Punkte, „ermitteln“ mit Rechenweg: Aus Rechnungen je Stunde rund um die Uhr und der Größe je Rechnung in kB den Tagesbedarf in KiB (auf ganze KiB runden); danach den Jahresbedarf in GiB bei einer Komprimierung, die den Bedarf um 30 % senkt (zwei Nachkommastellen, Ersatzwert vorgegeben). Falle: kB sind 1.000 Byte, KiB 1.024.
+- 2026F (K8), 5 Punkte: Speicher in TiB für vier Kameras über 72 Stunden aus der Datenrate in Mbit/s (Ersatzwert vorgegeben), aufrunden.
 
 **Fallen:**
 - Anzahl und Höchstwert verwechseln: n Bit haben 2ⁿ Werte, der größte ist 2ⁿ − 1.

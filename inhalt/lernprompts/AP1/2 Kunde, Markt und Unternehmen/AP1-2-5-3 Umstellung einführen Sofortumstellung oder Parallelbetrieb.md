@@ -108,9 +108,11 @@ Beispiel: Ein neues Ticketsystem startet zuerst im Support einer Niederlassung, 
 - Pilot- oder Probeeinführung: zuerst nur eine kleine Gruppe
 
 **So fragt die IHK:**
-- Zu diesem Stichpunkt liegt keine verwendbare echte Aufgabe vor.
+- Echte Aufgabe (2026F): Arbeitsplätze werden umorganisiert und digitalisiert, erfahrene Mitarbeiter fürchten, dem nicht gewachsen zu sein; ein Change Management soll die Veränderung ordnen. Material ist ein kurzer englischer Absatz dazu.
+- Drei Beispiele aus dem Text „benennen“, in denen ein Änderungsmanagement nützlich ist (K1, 3 Punkte): Umstrukturierung, Neuverteilung von Ressourcen, geänderte Geschäftsprozesse und Systeme, Einführung digitaler Technik.
+- Der Betrieb will auf ein neues Warenerfassungssystem umsteigen; als Alternative zur Sofortumstellung wird ein befristeter Parallelbetrieb diskutiert. Einen generellen Nachteil der Sofortumstellung gegenüber dem Parallelbetrieb „beschreiben“ (K2, K3, 2 Punkte). Lösungshinweise liegen nicht vor.
 - Der Prüfungskatalog nennt die „Identifizierung und Darstellung von Veränderungsschritten“; die Einführungsart gehört zum Schritt „umstellen“.
-- Zu erwarten sind kleine Teilaufgaben im Stil der Nachbarthemen: Einführungsarten beschreiben und je einen Nachteil beschreiben, vermutlich etwa 2 Punkte je Teil, mit beispielhaften Lösungen.
+- Zu erwarten ist außerdem die Gegenrichtung: die Einführungsarten beschreiben oder einen Nachteil des Parallelbetriebs nennen.
 
 **Fallen:**
 - Beim Beschreiben des Parallelbetriebs die Befristung oder das gleichzeitige Laufen beider Systeme weglassen; bei der Sofortumstellung das Abschalten des alten Systems.

@@ -141,7 +141,8 @@ Faustregel: Stehen die Anforderungen fest (30 gleiche Arbeitsplätze einrichten)
 - Echte Vorlage: Ein Betrieb automatisiert seine Produktion – ein Organisationsprojekt, keine Softwareentwicklung.
 - Vorgegeben war eine Tabelle mit den Projektschritten Projektinitiierung, Istzustand, Sollkonzept, Planung, Umsetzung, Überprüfung der Zielerreichung, Ausblick. Die erste Zeile war als Beispiel ausgefüllt, sechs Zellen blieben leer.
 - Operator „beschreiben“ in Stichpunkten, 6 Punkte (1 je Zeile). Die Lösungshinweise sind beispielhaft: Jeder konkrete, zum Schritt passende Inhalt mit Bezug zur Situation zählt.
-- Vor- und Nachteile des Wasserfallmodells (K2) kamen in einer neueren Prüfung vor. Zu Scrum gibt es noch keine echte Aufgabe; der Prüfungskatalog nennt beide Modelle. Zu erwarten sind dort Ablauf beschreiben und Vergleich mit dem Wasserfallmodell.
+- 2026H (K2), 4 Punkte, „beschreiben“: Der Abteilungsleiter schlägt für ein Webseiten-Projekt das Wasserfallmodell vor; verlangt sind ein Vorteil und ein Nachteil. Die nicht amtliche Lösung nennt die klare Phasentrennung mit hoher Planungs- und Kostensicherheit und als Nachteil die geringe Flexibilität bei geänderten Anforderungen und das erst spät lauffähige Ergebnis.
+- Zu Scrum gibt es noch keine echte Aufgabe; der Prüfungskatalog nennt beide Modelle. Zu erwarten sind dort Ablauf beschreiben und Vergleich mit dem Wasserfallmodell.
 
 **Fallen:**
 - Den Namen des Projektschritts nur umschreiben statt einen Inhalt zu nennen.

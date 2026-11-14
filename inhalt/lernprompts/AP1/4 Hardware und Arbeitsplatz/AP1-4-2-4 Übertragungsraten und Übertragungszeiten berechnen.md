@@ -144,6 +144,7 @@ Datenrate gegen Signalgeschwindigkeit: Die Datenrate gibt an, wie viele Bit je S
 - Operatoren: „berechnen“, „aufrunden auf volle Sekunden“, „in Minuten und Sekunden darstellen“, der Rechenweg ist anzugeben; 4–6 Punkte.
 - Teilpunkte je Schritt: Datenmenge in Byte, Byte in Bit, Rate in Bit/s, Teilen, Ergebnis in Sekunden, Umrechnung in Minuten und Sekunden. Wer mit dem Download rechnet, verliert das Ergebnis.
 - Zu „reicht die Leitung“ und Brutto gegen Durchsatz gibt es keine verwendbare echte Aufgabe; sie sind aus dem Prüfungskatalog abgeleitet.
+- 2026F (K3), 4 Punkte, „berechnen“ mit Rechenweg: Datenrate eines Live-Streams in Mbit/s aus Auflösung, Bildern je Sekunde und Farbtiefe 24 Bit bei „Komprimierung auf 30 %“, auf volle Mbit/s gerundet. „Auf 30 %“ heißt mal 0,3, „um 30 %“ mal 0,7. Folgeaufgabe (5 Punkte): Speicher in TiB für vier Kameras und 72 Stunden, aufgerundet, mit Ersatzwert.
 
 **Fallen:**
 - Reicht die Leitung: das Zeitfenster nicht in Sekunden oder die Datenmenge nicht in Bit umrechnen, oder mit der falschen Richtung vergleichen.

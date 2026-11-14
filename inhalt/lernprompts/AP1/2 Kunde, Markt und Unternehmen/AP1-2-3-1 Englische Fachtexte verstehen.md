@@ -149,7 +149,8 @@ Begründe, welche Variante zur Situation in der Aufgabe passt.
 - „beschreiben“ (2 Punkte): zwei Dinge, auf die man laut Anleitung bei einem Schritt achten muss.
 - „errechnen“ (6 Punkte): Die englische Formel für den Wirkungsgrad steht im Aufgabentext. Aus Wirkungsgrad und benötigter Leistung ist die Leistung aus dem Netz zu bestimmen, daraus die Kosten. Gewertet wird der vollständige Rechenweg.
 - „korrigieren“ (8 Punkte): Ein PowerShell-Skript soll warnen, wenn der freie Platz unter einen Grenzwert fällt; eine englische Tabelle der Vergleichsoperatoren ist gegeben. Zwei Fehler: falscher Vergleichsoperator und falscher Faktor bei der Prozentrechnung.
-- Zum Beurteilen einer Datenblattangabe (K6) liegt hier keine genaue Aufgabenform vor; zu erwarten sind Urteil, Bezug auf den Einsatzort und Begründung aus dem Datenblatt.
+- Neuere Aufgaben (2025H, 2026F, 2026H) geben einen kurzen englischen Fachtext und stellen dazu Fragen auf Deutsch: drei Funktionen aus einem Text über Datenbankschlüssel „beschreiben“ (je 2 Punkte), drei Beispiele aus einem Text über Change Management „benennen“ (3 Punkte), zwei Lösungen aus zwei Sätzen über Ausfallsicherheit „in deutscher Sprache nennen“ (2 Punkte), Vorteil und Voraussetzung aus einem Text über Daisy Chaining.
+- Datenblatt beurteilen (K6, 2026F): englische Spezifikation einer Überwachungskamera. Zwei Konsequenzen der Angabe „no default passwords“ beschreiben (4 Punkte); den Zweck der Varianten „with IR“ und „with heater“ bei der Leistungsaufnahme nennen (2 Punkte). Verlangt ist die Bedeutung für den Einsatz, nicht die Übersetzung. Lösungshinweise liegen nicht vor.
 
 **Fallen:**
 - Etwas nennen, das nicht im Text steht, oder mehr, als die Frage verlangt.
