@@ -38,6 +38,22 @@ export function ladeLernprompts(wurzel) {
   return { prompts, doppelt };
 }
 
+// Text unter „Erklärung:“ im Abschnitt „### K3 – …“ eines Lernprompts, bis zur nächsten Überschrift („### “ oder „## “).
+// Leerzeilen am Ende zählen nicht mit. Fehlt der Abschnitt oder die Zeile „Erklärung:“: null.
+export function erklaerungImPrompt(text, nr) {
+  const zeilen = text.split('\n');
+  const start = zeilen.findIndex((z) => z.startsWith(`### ${nr} – `));
+  if (start < 0) return null;
+  let ende = zeilen.findIndex((z, i) => i > start && /^###? /.test(z));
+  if (ende < 0) ende = zeilen.length;
+  const ab = zeilen.indexOf('Erklärung:', start + 1);
+  if (ab < 0 || ab >= ende) return null;
+  return zeilen
+    .slice(ab + 1, ende)
+    .join('\n')
+    .replace(/\n+$/, '');
+}
+
 export function ladeDaten(wurzel) {
   const teile = RAEUME.map((r) => lies(wurzel, `${r}.json`));
   const { prompts } = ladeLernprompts(wurzel);

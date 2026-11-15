@@ -187,7 +187,7 @@ Dann kann der Lieferant verlangen:
 - Skontofrist: Zeit, in der Skonto gilt
 - Zahlungsziel: späteste Zahlung ohne Abzug
 - Lieferschein: Beleg über die tatsächlich gelieferte Menge
-- Zahlungsverzug: Nichtzahlung trotz Fälligkeit und Mahnung; ohne Mahnung nach Ablauf eines Kalendertermins oder spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung (bei Verbrauchern nur mit Hinweis auf der Rechnung)
+- Zahlungsverzug: Nichtzahlung trotz Fälligkeit und Mahnung; ohne Mahnung nach Ablauf eines vereinbarten Kalendertermins oder spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung (bei Verbrauchern nur mit Hinweis auf der Rechnung)
 
 **So fragt die IHK:**Echte Aufgabe (2025H): Ein Unternehmen mit Filialen beschafft Kassensysteme und bekommt eine Rechnung als Material. Sie zeigt Bestell-, Liefer- und Rechnungsdatum, drei Positionen mit Menge, Einzel- und Gesamtpreis und einem Kennzeichen für den Steuersatz, den Nettobetrag, die Umsatzsteuer getrennt nach 19 % und 7 %, den Bruttobetrag, das Zahlungsziel („bis … 2 % Skonto oder bis … ohne Abzug“), einen QR-Code und die Bankverbindungen. Dazu drei Teilaufgaben: die Vorgänge, die schon stattgefunden haben, mit Datum „nennen“ (K6, 3 Punkte: Bestellung, Lieferung, Rechnungsstellung – die Zahlungsfristen liegen noch in der Zukunft); drei Kontrollvorgänge beim Abgleich der Rechnungspositionen „beschreiben“ (K7, 6 Punkte); den Skontobetrag „berechnen“ und kaufmännisch auf zwei Nachkommastellen runden (K2, 2 Punkte). Lösungshinweise liegen nicht vor. Der Prüfungskatalog enthält im Anhang eine ähnliche Musterrechnung mit Rabattzeile und dem Satz, ab wann ohne weitere Nachricht Verzug eintritt; zu erwarten sind deshalb auch Zahlbetrag, Rabatt, Pflichtangaben und Verzug, meist 2–6 Punkte je Teilaufgabe.
 

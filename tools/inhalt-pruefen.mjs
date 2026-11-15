@@ -2,7 +2,7 @@
 // Prüft die Lerninhalte in inhalt/ auf Stimmigkeit. Aufruf: npm run pruefen
 // Nach jeder Änderung an inhalt/*.json laufen lassen – 0 Fehler, sonst nicht committen.
 
-import { ladeDaten, ladeLernprompts, RAEUME } from './inhalt.mjs';
+import { ladeDaten, ladeLernprompts, erklaerungImPrompt, RAEUME } from './inhalt.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -116,7 +116,8 @@ for (const [id, s] of sp)
   for (const x of JSON.stringify(s.neu).matchAll(ID)) if (!bekannt(x[1])) f(`${id}: Text verweist auf ${x[1]}, das gibt es nicht`);
 
 // Feste Lernprompts (inhalt/lernprompts/): ganz oder gar nicht je Prüfungsteil, und passend zum Stoff in inhalt/*.json.
-// Fängt ab, dass eine Aussage in der JSON geändert wird, der Prompt aber noch den alten Wortlaut lehrt.
+// Fängt ab, dass eine Aussage in der JSON geändert wird, der Prompt aber noch den alten Wortlaut lehrt –
+// und umgekehrt: Können-Satz und Erklärung müssen in Datei und JSON Zeichen für Zeichen gleich sein.
 const { prompts, doppelt } = ladeLernprompts(wurzel);
 for (const [id, a, b] of doppelt) f(`Lernprompt ${id} doppelt: ${a} und ${b}`);
 for (const [id, p] of Object.entries(prompts)) {
@@ -131,7 +132,11 @@ for (const [id, p] of Object.entries(prompts)) {
   for (const [k, text] of s.koennen) {
     const nr = k.slice(id.length + 1);
     if (!p.text.includes(`\n### ${nr} – `)) f(`${p.datei}: Abschnitt „### ${nr} – …“ fehlt`);
-    else if (!p.text.includes(`\n${text}\n`)) f(`${p.datei}: Wortlaut von ${k} weicht von inhalt/${s.raum}.json ab`);
+    else {
+      if (!p.text.includes(`\n${text}\n`)) f(`${p.datei}: Wortlaut von ${k} weicht von inhalt/${s.raum}.json ab`);
+      const erklaerung = s.neu?.koennen?.find((x) => x.id === k)?.erklaerung ?? '';
+      if ((erklaerungImPrompt(p.text, nr) ?? '') !== erklaerung) f(`${p.datei}: Erklärung von ${k} weicht von inhalt/${s.raum}.json ab`);
+    }
   }
 }
 for (const r of RAEUME) {
