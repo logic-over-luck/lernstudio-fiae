@@ -13,31 +13,30 @@
   nur noch Rückfall). **Prüfungskürzel:** In `inhalt/` stehen Kürzel wie `2024F`; `terminText` in
   `src/daten/wichtigkeit.js` schreibt sie für Anzeige und kopierte Prompts aus („Frühjahr 2024“). **Keine Prüfung
   ist aufgehoben** (seit 14.11.2026): Alle elf AP1-Prüfungen werden genannt, geöffnet und in Lehrnotizen, Stoff und
-  Lernplan verwendet. `npm run pruefen` meldet, wenn Titel oder Wortlaut einer Aussage in der Datei nicht mehr zu
-  `inhalt/<RAUM>.json` passen, und verlangt je Raum alle Prompts oder keinen.
-  - **Arbeitsmappe `archiv/2026-11-11_lehrnotiz-arbeitsmappe/`** (Stand und Regeln:
-    `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md`). **Der Ordner `archiv/` liegt nur lokal, nicht auf GitHub**
-    (`.gitignore`). Er enthält genau zwei Ordner, beide werden gebraucht: die Arbeitsmappe und
-    `2026-11-11_drehbuch-prompts/` – die Sicherung, gegen die `ln.py install` Kopf und Stoff jeder Datei prüft (nicht
-    löschen, nicht ändern). Alles Ältere liegt seit 12.11.2026 außerhalb des Repos in
-    `Desktop\lernstudio_archiv\2026-11-12\`. Regelblock ändern: `regelblock_<RAUM>.txt` dort ändern (PB1, PB2,
-    WISO entstehen aus AP1 über `regel_varianten.py`), dann `python ln.py install <RAUM>` (setzt alle Dateien neu
-    zusammen; Lehrnotizen liegen in `out/<ID>.md`). Die Lehrnotiz in der Datei und in `out/` gleich halten.
-  - **Stoff ändern:** AP1 über eine Ersetzungsliste in `stoffpruefung/` und `python stoff_aendern.py anwenden …`
-    (ändert JSON, Datei und Lehrnotiz gleich) – oder in jedem Raum Datei und JSON von Hand gleich ändern und die ID in
-    `stoffpruefung/stoff_geaendert.txt` eintragen (sonst bricht `ln.py install` ab, weil der Stoff nicht mehr zur
-    Sicherung passt).
-  - **SQL-Stichpunkte in PB2** (PB2-5-1-1 bis -5, PB2-6-1-1, -2, -3, -6): ein festes Tabellenmodell
-    `material_PB2_sql.txt`, das `ln.py` als „Material“ anhängt. Ändern: Datei ändern, `python ln.py install PB2`.
+  Lernplan verwendet. `npm run pruefen` meldet, wenn Titel, Wortlaut oder Erklärung einer Aussage in der Datei nicht
+  mehr zu `inhalt/<RAUM>.json` passen oder der Regelblock nicht mehr zu `_regelblock.md`, und verlangt je Raum alle
+  Prompts oder keinen.
+  - **Das Repo ist die einzige Quelle** (seit 15.11.2026): Prompts und `inhalt/<RAUM>.json` werden direkt hier
+    geändert. Die frühere Arbeitsmappe mit ihren Skripten und der Sicherung der Drehbuch-Prompts gibt es nicht mehr;
+    `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md` ist nur noch das Protokoll dazu.
+  - **Stoff ändern:** Datei und `inhalt/<RAUM>.json` von Hand gleich ändern – Können-Satz und Erklärung stehen in
+    beiden wortgleich, das prüft `npm run pruefen`. Die Lehrnotiz steht nur in der Datei und wird dort geändert.
+  - **Regelblock ändern** (Abschnitt „## So läuft unsere Sitzung“ bis vor „## Stoff“, in allen Prompts eines Raums
+    gleich): `inhalt/lernprompts/<RAUM>/_regelblock.md` ändern, dann `npm run regelblock einsetzen <RAUM>` – schreibt
+    ihn in alle Prompts des Raums; Kopf, Stoff, Lehrnotiz und Material bleiben zeichengleich.
+    `npm run regelblock pruefen [RAUM]` nennt Prompts, die abweichen (ohne Raum oder mit `ALLE`: alle vier). Die vier
+    Fassungen sind eigenständig: Was für alle Räume gelten soll, in allen vier `_regelblock.md` ändern.
+  - **SQL-Stichpunkte in PB2** (PB2-5-1-1 bis -5, PB2-6-1-1, -2, -3, -6): ein festes Tabellenmodell, das in allen neun
+    Dateien zeichengleich als „Material“ am Ende der Lehrnotiz steht. Ändern: in allen neun Dateien gleich.
   - In WiSo ist die Abschlussrunde gebunden (Auswahl, Zuordnung, Reihenfolge, Zahl eintragen) wie in der Prüfung.
-  - Lehrnotizen für PB1, PB2, WiSo kamen über die Claude-API (`lb.py`: Schreiber Fable 5.2, Prüfer Opus 5.5,
-    Einarbeiten Fable 5.2). Den Schlüssel `ANTHROPIC_API_KEY` setzt nur Sebastian.
-  - Dateien mit `_` und `LIES_MICH.md` dort sind Arbeitslisten und Hinweise, kein Inhalt; der Build lädt sie nicht.
-    Geblieben sind nur die, die noch gebraucht werden: `_Buch-Abweichungen_2026-11-10.md`,
-    `_Stoff-Meldungen_Drehbuch_2026-11-10.md` (offen, vor der AP2), `_FORTSCHRITT_LEHRNOTIZ.md`,
-    `WISO/_Faktencheck_2026-11-09.md`. Die Protokolle der Stoffprüfungen liegen im Archiv außerhalb des Repos.
-- **Prüfen vor jedem Hochladen:** `npm run pruefen`, `npm test`, `npm run saetze`, `npm run build`; in der
-  Arbeitsmappe `python ln.py check <RAUM>`.
+  - Lehrnotizen für PB1, PB2, WiSo kamen über die Claude-API (Schreiber Fable 5.2, Prüfer Opus 5.5, Einarbeiten
+    Fable 5.2). Den Schlüssel `ANTHROPIC_API_KEY` setzt nur Sebastian.
+  - Dateien mit `_` und `LIES_MICH.md` dort lädt der Build nicht: `<RAUM>/_regelblock.md` ist die Vorlage des
+    Regelblocks, alles andere sind Arbeitslisten und Hinweise, kein Inhalt. Geblieben sind nur die, die noch gebraucht
+    werden: `_Buch-Abweichungen_2026-11-10.md`, `_Stoff-Meldungen_Drehbuch_2026-11-10.md` (offen, vor der AP2),
+    `_FORTSCHRITT_LEHRNOTIZ.md` (historisch), `WISO/_Faktencheck_2026-11-09.md`. Die Protokolle der Stoffprüfungen
+    und alles Ältere liegen außerhalb des Repos in `Desktop\lernstudio_archiv\2026-11-12\`.
+- **Prüfen vor jedem Hochladen:** `npm run pruefen`, `npm test`, `npm run saetze`, `npm run build`.
 - **Trainer-Aufgaben und Probeprüfungen** stehen im Code unter `src/bereiche/trainer/` und `src/bereiche/pruefung/saetze/`
   und verweisen über Stichpunkt-IDs auf `inhalt/`.
 - **Build:** `tools/build.mjs` liest `inhalt/` über `tools/inhalt.mjs` und schreibt alles in eine Datei `Lernstudio.html`.

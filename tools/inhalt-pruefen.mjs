@@ -3,6 +3,7 @@
 // Nach jeder Änderung an inhalt/*.json laufen lassen – 0 Fehler, sonst nicht committen.
 
 import { ladeDaten, ladeLernprompts, erklaerungImPrompt, RAEUME } from './inhalt.mjs';
+import { pruefeRegelblock, regelblockPfad } from './regelblock.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -143,6 +144,14 @@ for (const r of RAEUME) {
   const liste = [...sp.values()].filter((s) => s.raum === r);
   const mit = liste.filter((s) => prompts[s.id]);
   if (mit.length && mit.length < liste.length) f(`${r}: ${liste.length - mit.length} Stichpunkte ohne Lernprompt, z. B. ${liste.find((s) => !prompts[s.id]).id}`);
+}
+
+// Regelblock („## So läuft unsere Sitzung“ bis vor „## Stoff“): in jedem Prompt wie in <RAUM>/_regelblock.md.
+// Ändern: _regelblock.md bearbeiten, dann `npm run regelblock einsetzen <RAUM>` (tools/regelblock.mjs).
+for (const e of pruefeRegelblock(wurzel)) {
+  for (const t of e.fehler) f(t);
+  if (e.abweichler.length <= 5) for (const datei of e.abweichler) f(`${datei}: Regelblock weicht von ${regelblockPfad(e.raum)} ab`);
+  else f(`${e.raum}: Regelblock von ${e.abweichler.length} Prompts weicht von ${regelblockPfad(e.raum)} ab, z. B. ${e.abweichler[0]} (alle: npm run regelblock pruefen ${e.raum})`);
 }
 
 const zahl = (n, wort) => `${n} ${wort}`;

@@ -19,5 +19,6 @@ diese Datei. Jede Datei besteht aus Kopf, Regelblock (in allen Dateien gleich), 
 - Fester Fall für PB1 und PB2: **Nordlicht Software GmbH** entwickelt die Werkstatt- und Verleihsoftware **VeloPlan**.
 - Wo es keine Prüfungsaufgabe zum Stichpunkt gibt, sagt „So fragt die IHK“ das offen.
 - Stoff ändern: in `inhalt/PB1.json` **und** in der Datei gleich (siehe `CLAUDE.md`).
+- Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen PB1` (siehe `CLAUDE.md`).
 - Offene Meldungen zum Stoff: `../_Stoff-Meldungen_Drehbuch_2026-11-10.md`. Wo das Buch dem Stoff widerspricht:
   `../_Buch-Abweichungen_2026-11-10.md` (dort gilt der Stoff).

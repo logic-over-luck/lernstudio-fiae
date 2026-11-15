@@ -1,5 +1,7 @@
 # Fortschritt: Lernprompts neu (Regelblock + Stoff + Lehrnotiz)
 
+**Historisch. Die Arbeitsmappe (archiv/, ln.py) gibt es seit 15.11.2026 nicht mehr; Änderungen direkt im Repo.**
+
 Plan: `PLAN_LERNPROMPTS_NEU.md`. Arbeitsmappe: `archiv/2026-11-11_lehrnotiz-arbeitsmappe/`
 (`ln.py` mit `brief`, `check`, `pruefpaket`, `install`, `meldungen`, `stand`; Aufträge `AUFTRAG_SCHREIBER.md`,
 `AUFTRAG_PRUEFER.md`; Muster in `muster/`; Lehrnotizen in `out/<ID>.md`, Meldungen zum Stoff in

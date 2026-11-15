@@ -22,3 +22,4 @@ diese Datei. Jede Datei besteht aus vier Teilen:
 - Länge: im Mittel rund 14.000 Zeichen.
 - Stoff ändern: immer in `inhalt/AP1.json` **und** in der Datei gleich (`npm run pruefen` meldet Abweichungen).
   Wie das geht, steht in `CLAUDE.md`.
+- Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen AP1` (siehe `CLAUDE.md`).

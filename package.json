@@ -9,6 +9,7 @@
     "watch": "node tools/build.mjs --watch",
     "test": "node --test tests/*.test.mjs",
     "pruefen": "node tools/inhalt-pruefen.mjs",
+    "regelblock": "node tools/regelblock.mjs",
     "saetze": "node tools/pruefe-satz.mjs"
   },
   "devDependencies": {

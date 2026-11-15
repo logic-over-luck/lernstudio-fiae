@@ -20,3 +20,4 @@ diese Datei. Jede Datei besteht aus Kopf, Regelblock (in allen Dateien gleich), 
 - **SQL:** Die neun SQL-Stichpunkte (PB2-5-1-1 bis -5, PB2-6-1-1, -2, -3, -6) arbeiten alle mit demselben
   Tabellenmodell; es steht als „Material“ am Ende der Lehrnotiz.
 - Stoff ändern: in `inhalt/PB2.json` **und** in der Datei gleich (siehe `CLAUDE.md`).
+- Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen PB2` (siehe `CLAUDE.md`).

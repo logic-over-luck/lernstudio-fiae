@@ -23,3 +23,4 @@ diese Datei. Jede Datei besteht aus Kopf, Regelblock (in allen Dateien gleich), 
 - Schilder und Zeichen sind in Worten beschrieben, weil der Chat keine Bilder zeigt – dafür Karten und Buch nutzen.
 - Länge: im Mittel 14.000–18.000 Zeichen.
 - Wo das Buch dem Stoff widerspricht: `../_Buch-Abweichungen_2026-11-10.md` (dort gilt der Stoff).
+- Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen WISO` (siehe `CLAUDE.md`).
