@@ -88,32 +88,11 @@ Begründe dein Urteil immer mit dem Prozentwert.
 Du kannst einen effektiven Stundensatz berechnen: Jahreskosten geteilt durch die tatsächlichen Arbeitsstunden (Arbeitstage ohne Urlaub, Krankheit und Feiertage mal Stunden je Tag).
 
 Erklärung:
-Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K7, K15).
+Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K15).
 `effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`
 Tatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.
 Beispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.
 52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.
-
-### K7 – Stundenverrechnungssatz für Kunden (Stufe 2 Verstehen)
-Du kannst erklären, wie sich ein Stundenverrechnungssatz für Kunden zusammensetzt: Personalkosten (Bruttolohn und Arbeitgeberanteil zur Sozialversicherung) plus Gemeinkostenanteil ergeben die Selbstkosten, geteilt durch die abrechenbaren Stunden den Selbstkostensatz, mit dem Gewinnzuschlag den Netto-Stundensatz; abrechenbar sind nur Stunden für Kunden, nicht Urlaub, Krankheit oder Zeiten für Akquise, Vorbereitung, Warten und interne Aufgaben.
-
-Erklärung:
-Ein Dienstleister muss mit jeder **verkauften Stunde** auch die Zeit bezahlen, die er nicht verkaufen kann.
-- `Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten` (Gemeinkosten: Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören, z. B. Miete, Verwaltung, Versicherungen)
-- `Selbstkostensatz = Selbstkosten ÷ abrechenbare Stunden`
-- `Netto-Stundensatz = Selbstkostensatz + Gewinnzuschlag`; auf der Rechnung kommt die Umsatzsteuer dazu.
-**Abrechenbar** sind nur Stunden, die ein Kunde bezahlt. Urlaub, Krankheit und Feiertage fallen heraus, aber auch Akquise, Angebote schreiben, Rüst-, Warte- und Verteilzeiten – von gut 2.000 bezahlten Stunden im Jahr bleiben oft nur rund 1.500.
-Beispiel: Kosten 90.000 € im Jahr, 1.500 abrechenbare Stunden → 60 € Selbstkostensatz; + 15 % Gewinn → **69 € netto** je Stunde.
-
-### K8 – Wirtschaftliches Ergebnis eines Projekts (Stufe 3 Anwenden)
-Du kannst das wirtschaftliche Ergebnis eines Projekts berechnen: Ertrag minus Kosten, wobei der Ertrag bei einem Kundenauftrag der Erlös und bei einem internen Projekt die erreichte Kostenersparnis ist; liegt das Ergebnis bei null oder darüber, war das Projekt wirtschaftlich.
-
-Erklärung:
-`Projektergebnis = Ertrag − Kosten`
-- **Kundenprojekt:** Der Ertrag ist der Verkaufserlös (netto).
-- **Internes Projekt:** Es gibt keinen Verkaufserlös. Der Ertrag ist, was das Projekt **einspart**, z. B. Arbeitszeit, Lizenz- oder Wartungskosten.
-- Ergebnis ≥ 0: Die Kosten sind gedeckt, das Projekt hat sich gelohnt; < 0: Verlust.
-Beispiel: Ein internes Ticketsystem kostet 18.000 €. Es spart im betrachteten Zeitraum 600 Arbeitsstunden zu je 35 €, also 21.000 € → Ergebnis **+3.000 €**.
 
 ### K9 – Vom Barverkaufspreis zum Listenverkaufspreis (Stufe 4 Beurteilen)
 Du kannst vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis (zuzüglich Umsatzsteuer) rechnen und begründen, warum Skonto und Rabatt im Hundert vom höheren Preis berechnet werden.
@@ -155,7 +134,13 @@ Angebotspreis vom Bezugspreis aus (Vorwärtskalkulation im Handel): Bezugspreis 
 Du kannst einen Stundenverrechnungssatz berechnen: Selbstkosten im Jahr geteilt durch die abrechenbaren Stunden ergibt den Selbstkostensatz, mal (1 + Gewinnzuschlag) den Netto-Stundensatz und mit 19 % Umsatzsteuer den Brutto-Stundensatz.
 
 Erklärung:
-Stundenverrechnungssatz an einem Beispiel rechnen: Selbstkosten im Jahr geteilt durch die abrechenbaren Stunden ergibt den Selbstkostensatz, mal (1 + Gewinnzuschlag) den Netto-Stundensatz, z. B. 72.000 € ÷ 1.600 h = 45 € und mit 20 % Gewinnzuschlag 54 € netto je Stunde; mit 19 % Umsatzsteuer 54 € × 1,19 = 64,26 € brutto.
+Ein Dienstleister muss mit jeder **verkauften Stunde** auch die Zeit bezahlen, die er nicht verkaufen kann.
+- `Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten` (Gemeinkosten: Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören, z. B. Miete, Verwaltung, Versicherungen)
+- `Selbstkostensatz = Selbstkosten ÷ abrechenbare Stunden`
+- `Netto-Stundensatz = Selbstkostensatz × (1 + Gewinnzuschlag)`
+- `Brutto-Stundensatz = Netto-Stundensatz × 1,19` (19 % Umsatzsteuer)
+**Abrechenbar** sind nur Stunden, die ein Kunde bezahlt. Urlaub, Krankheit und Feiertage fallen heraus, aber auch Akquise, Angebote schreiben, Rüst-, Warte- und Verteilzeiten – von gut 2.000 bezahlten Stunden im Jahr bleiben oft nur rund 1.500.
+Beispiel: 72.000 € Selbstkosten im Jahr ÷ 1.600 abrechenbare Stunden = 45 € Selbstkostensatz; mit 20 % Gewinnzuschlag 54 € netto je Stunde; mit 19 % Umsatzsteuer 54 € × 1,19 = **64,26 € brutto**.
 
 ### K16 – Kostendeckender Preis je Einheit (Stufe 3 Anwenden)
 Du kannst den kostendeckenden Preis je Einheit berechnen: alle Kosten zusammenzählen (feste Kosten wie eine Bereitschaft und Kosten, die mit der Menge steigen), durch die Zahl der verkauften Einheiten teilen, zum Beispiel Gesprächsminuten, und, wenn verlangt, auf den nächsten Cent aufrunden.
@@ -172,13 +157,13 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 ## Lehrnotiz: Machbarkeit mit Budgetvorgabe, Vor- und Nachkalkulation
 
 **Aufteilung:**
-- Teil A – Projekt kalkulieren und bewerten: Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5; Projektergebnis K8
+- Teil A – Projekt kalkulieren und bewerten: Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5
 - Pause möglich nach Teil A.
-- Teil B – Stundensätze: gearbeitete Stunde K6; verkaufte Stunde K7, K15; kostendeckender Preis je Einheit K16
+- Teil B – Stundensätze: gearbeitete Stunde K6; verkaufte Stunde K15; kostendeckender Preis je Einheit K16
 - Pause möglich nach Teil B.
 - Teil C – Handelskalkulation: vor dem Angebot K13; vorwärts K10, K14, K9; rückwärts, Differenz und Spanne K11
 
-**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K7–K15
+**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K9–K15
 
 **Kerngedanken:**
 - Gemeinkosten sind Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören (Miete, Verwaltung, Büro). Beim Dienstleister werden sie über den Stundensatz auf alle Aufträge verteilt. Im Handel gehört nur der Wareneinsatz direkt zur Ware; alle übrigen Kosten, auch die Personalkosten, sind Handlungskosten und kommen als Zuschlag auf die Ware.

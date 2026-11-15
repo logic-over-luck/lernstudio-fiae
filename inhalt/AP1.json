@@ -6196,14 +6196,6 @@
           "Du kannst einen effektiven Stundensatz berechnen: Jahreskosten geteilt durch die tatsächlichen Arbeitsstunden (Arbeitstage ohne Urlaub, Krankheit und Feiertage mal Stunden je Tag)."
         ],
         [
-          "AP1-3-1-3-K7",
-          "Du kannst erklären, wie sich ein Stundenverrechnungssatz für Kunden zusammensetzt: Personalkosten (Bruttolohn und Arbeitgeberanteil zur Sozialversicherung) plus Gemeinkostenanteil ergeben die Selbstkosten, geteilt durch die abrechenbaren Stunden den Selbstkostensatz, mit dem Gewinnzuschlag den Netto-Stundensatz; abrechenbar sind nur Stunden für Kunden, nicht Urlaub, Krankheit oder Zeiten für Akquise, Vorbereitung, Warten und interne Aufgaben."
-        ],
-        [
-          "AP1-3-1-3-K8",
-          "Du kannst das wirtschaftliche Ergebnis eines Projekts berechnen: Ertrag minus Kosten, wobei der Ertrag bei einem Kundenauftrag der Erlös und bei einem internen Projekt die erreichte Kostenersparnis ist; liegt das Ergebnis bei null oder darüber, war das Projekt wirtschaftlich."
-        ],
-        [
           "AP1-3-1-3-K9",
           "Du kannst vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis (zuzüglich Umsatzsteuer) rechnen und begründen, warum Skonto und Rabatt im Hundert vom höheren Preis berechnet werden."
         ],
@@ -6339,32 +6331,7 @@
               "beleg:2022H-A1-e"
             ],
             "vorgegeben": null,
-            "erklaerung": "Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K7, K15).\n`effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`\nTatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.\nBeispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.\n52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.",
-            "karten": 2,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-3-K7",
-            "kurz": "Stundenverrechnungssatz für Kunden",
-            "stufe": 2,
-            "herkunft": [
-              "buch:FS-4.4.1-S365",
-              "buch:GS-2.8.3-S252"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Ein Dienstleister muss mit jeder **verkauften Stunde** auch die Zeit bezahlen, die er nicht verkaufen kann.\n- `Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten` (Gemeinkosten: Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören, z. B. Miete, Verwaltung, Versicherungen)\n- `Selbstkostensatz = Selbstkosten ÷ abrechenbare Stunden`\n- `Netto-Stundensatz = Selbstkostensatz + Gewinnzuschlag`; auf der Rechnung kommt die Umsatzsteuer dazu.\n**Abrechenbar** sind nur Stunden, die ein Kunde bezahlt. Urlaub, Krankheit und Feiertage fallen heraus, aber auch Akquise, Angebote schreiben, Rüst-, Warte- und Verteilzeiten – von gut 2.000 bezahlten Stunden im Jahr bleiben oft nur rund 1.500.\nBeispiel: Kosten 90.000 € im Jahr, 1.500 abrechenbare Stunden → 60 € Selbstkostensatz; + 15 % Gewinn → **69 € netto** je Stunde.",
-            "karten": 2,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-3-K8",
-            "kurz": "Wirtschaftliches Ergebnis eines Projekts",
-            "stufe": 3,
-            "herkunft": [
-              "buch:FS2-4.2.2-S270"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "`Projektergebnis = Ertrag − Kosten`\n- **Kundenprojekt:** Der Ertrag ist der Verkaufserlös (netto).\n- **Internes Projekt:** Es gibt keinen Verkaufserlös. Der Ertrag ist, was das Projekt **einspart**, z. B. Arbeitszeit, Lizenz- oder Wartungskosten.\n- Ergebnis ≥ 0: Die Kosten sind gedeckt, das Projekt hat sich gelohnt; < 0: Verlust.\nBeispiel: Ein internes Ticketsystem kostet 18.000 €. Es spart im betrachteten Zeitraum 600 Arbeitsstunden zu je 35 €, also 21.000 € → Ergebnis **+3.000 €**.",
+            "erklaerung": "Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K15).\n`effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`\nTatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.\nBeispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.\n52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.",
             "karten": 2,
             "neu": null
           },
@@ -6462,8 +6429,8 @@
               "buch:GS-2.8.3-S251-252"
             ],
             "vorgegeben": null,
-            "erklaerung": "Stundenverrechnungssatz an einem Beispiel rechnen: Selbstkosten im Jahr geteilt durch die abrechenbaren Stunden ergibt den Selbstkostensatz, mal (1 + Gewinnzuschlag) den Netto-Stundensatz, z. B. 72.000 € ÷ 1.600 h = 45 € und mit 20 % Gewinnzuschlag 54 € netto je Stunde; mit 19 % Umsatzsteuer 54 € × 1,19 = 64,26 € brutto.",
-            "karten": 1,
+            "erklaerung": "Ein Dienstleister muss mit jeder **verkauften Stunde** auch die Zeit bezahlen, die er nicht verkaufen kann.\n- `Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten` (Gemeinkosten: Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören, z. B. Miete, Verwaltung, Versicherungen)\n- `Selbstkostensatz = Selbstkosten ÷ abrechenbare Stunden`\n- `Netto-Stundensatz = Selbstkostensatz × (1 + Gewinnzuschlag)`\n- `Brutto-Stundensatz = Netto-Stundensatz × 1,19` (19 % Umsatzsteuer)\n**Abrechenbar** sind nur Stunden, die ein Kunde bezahlt. Urlaub, Krankheit und Feiertage fallen heraus, aber auch Akquise, Angebote schreiben, Rüst-, Warte- und Verteilzeiten – von gut 2.000 bezahlten Stunden im Jahr bleiben oft nur rund 1.500.\nBeispiel: 72.000 € Selbstkosten im Jahr ÷ 1.600 abrechenbare Stunden = 45 € Selbstkostensatz; mit 20 % Gewinnzuschlag 54 € netto je Stunde; mit 19 % Umsatzsteuer 54 € × 1,19 = **64,26 € brutto**.",
+            "karten": 3,
             "neu": null
           },
           {
@@ -30272,34 +30239,6 @@
       "h": "Er wird von den Gesamtkosten abgezogen. Ein Gerät mit hohem Restwert kann deshalb trotz höheren Kaufpreises günstiger sein."
     },
     {
-      "id": "AP1-3-1-3-K7-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K7",
-      "v": "In welchen Schritten berechnest du einen Stundenverrechnungssatz?",
-      "h": "1. Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten\n2. ÷ abrechenbare Stunden = Selbstkostensatz\n3. + Gewinnzuschlag = Netto-Stundensatz (auf der Rechnung + USt)"
-    },
-    {
-      "id": "AP1-3-1-3-K7-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K7",
-      "v": "Warum teilt man die Kosten durch die abrechenbaren und nicht durch alle bezahlten Arbeitsstunden?",
-      "h": "Zeiten ohne Kunden – Urlaub, Krankheit, Akquise, Vorbereitung, Warte- und Verteilzeiten – werden trotzdem bezahlt. Sie müssen über die verkauften Stunden mitverdient werden."
-    },
-    {
-      "id": "AP1-3-1-3-K8-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K8",
-      "v": "Was ist der Ertrag eines internen Softwareprojekts?",
-      "h": "Die erreichte Kostenersparnis, z. B. eingesparte Arbeitszeit oder wegfallende Lizenz- und Wartungskosten – einen Verkaufserlös gibt es nicht."
-    },
-    {
-      "id": "AP1-3-1-3-K8-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K8",
-      "v": "Ein Kundenprojekt bringt 48.000 € netto und kostet 51.500 €. Wie lautet das Ergebnis, und war es wirtschaftlich?",
-      "h": "48.000 € − 51.500 € = **−3.500 €**. Die Kosten sind nicht gedeckt, das Projekt war nicht wirtschaftlich."
-    },
-    {
       "id": "AP1-3-1-3-K9-1",
       "sp": "AP1-3-1-3",
       "k": "AP1-3-1-3-K9",
@@ -30396,6 +30335,20 @@
       "k": "AP1-3-1-3-K15",
       "v": "Ein Betrieb hat 90.000 € Selbstkosten im Jahr und 1.500 abrechenbare Stunden. Er kalkuliert 25 % Gewinn. Berechne den Netto- und den Brutto-Stundensatz.",
       "h": "- Selbstkostensatz: 90.000 € ÷ 1.500 h = 60 €/h\n- netto: 60 € · 1,25 = 75 €/h\n- brutto: 75 € · 1,19 = 89,25 €/h"
+    },
+    {
+      "id": "AP1-3-1-3-K15-3",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K15",
+      "v": "In welchen Schritten berechnest du einen Stundenverrechnungssatz?",
+      "h": "1. Selbstkosten = Bruttolöhne + Arbeitgeberanteil + Gemeinkosten\n2. ÷ abrechenbare Stunden = Selbstkostensatz\n3. + Gewinnzuschlag = Netto-Stundensatz (auf der Rechnung + USt)"
+    },
+    {
+      "id": "AP1-3-1-3-K15-4",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K15",
+      "v": "Warum teilt man die Kosten durch die abrechenbaren und nicht durch alle bezahlten Arbeitsstunden?",
+      "h": "Zeiten ohne Kunden – Urlaub, Krankheit, Akquise, Vorbereitung, Warte- und Verteilzeiten – werden trotzdem bezahlt. Sie müssen über die verkauften Stunden mitverdient werden."
     },
     {
       "id": "AP1-3-1-3-K16-1",
