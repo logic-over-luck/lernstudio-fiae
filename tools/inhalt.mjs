@@ -38,6 +38,14 @@ export function ladeLernprompts(wurzel) {
   return { prompts, doppelt };
 }
 
+// Überschrift einer Aussage im Stoff eines Lernprompts, gebaut aus neu.koennen[] in inhalt/<RAUM>.json:
+// „### K3 – <kurz> (Stufe 2 Verstehen)“, bei vorgegebenem Material „… (Stufe 1 Wiedergeben · in der Prüfung vorgegeben: Rechnung)“
+export const STUFE_NAME = { 1: 'Wiedergeben', 2: 'Verstehen', 3: 'Anwenden', 4: 'Beurteilen' };
+export function aussageUeberschrift(nr, k) {
+  const vorgegeben = k.vorgegeben ? ` · in der Prüfung vorgegeben: ${k.vorgegeben}` : '';
+  return `### ${nr} – ${k.kurz} (Stufe ${k.stufe} ${STUFE_NAME[k.stufe]}${vorgegeben})`;
+}
+
 // Text unter „Erklärung:“ im Abschnitt „### K3 – …“ eines Lernprompts, bis zur nächsten Überschrift („### “ oder „## “).
 // Leerzeilen am Ende zählen nicht mit. Fehlt der Abschnitt oder die Zeile „Erklärung:“: null.
 export function erklaerungImPrompt(text, nr) {

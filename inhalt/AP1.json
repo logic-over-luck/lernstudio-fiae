@@ -539,7 +539,7 @@
             "herkunft": [
               "beleg:2026H-A1-b"
             ],
-            "vorgegeben": "die fünf SMART-Begriffe (2026H)",
+            "vorgegeben": "die fünf SMART-Begriffe",
             "erklaerung": "Zerlege das Ziel in seine Teile und frag bei jedem, welche Frage er beantwortet: was genau? (spezifisch), wie viel? (messbar), bis wann? (terminiert).\nBeispiel: „Bis 31.12. werden 80 % der Tickets innerhalb von 4 Stunden gelöst.“\n- „Bis 31.12.“ → terminiert\n- „80 %“ und „4 Stunden“ → messbar\n- „Tickets lösen“ → spezifisch\nAkzeptiert und realistisch erkennst du meist am Zusatz, z. B. „mit dem Team abgestimmt“ oder „mit dem vorhandenen Personal“.",
             "karten": 6,
             "neu": null
@@ -30005,7 +30005,7 @@
       "sp": "AP1-3-3-3",
       "k": "AP1-3-3-3-K1",
       "v": "Was unterscheidet Lieferverzug, Zahlungsverzug und Annahmeverzug?",
-      "h": "- Lieferverzug: Der Verkäufer liefert eine fällige Ware trotz Mahnung (oder nach einem festen Kalendertermin) nicht und hat die Verspätung zu vertreten\n- Zahlungsverzug: Der Käufer zahlt trotz Fälligkeit und Mahnung nicht (ohne Mahnung nach einem Kalendertermin oder 30 Tage nach Rechnungszugang – gegenüber Verbrauchern nur, wenn die Rechnung darauf hinweist)\n- Annahmeverzug: Der Käufer nimmt die ordnungsgemäß angebotene Ware nicht an"
+      "h": "- Lieferverzug: Der Verkäufer liefert eine fällige Ware trotz Mahnung (oder nach einem festen Kalendertermin) nicht und hat die Verspätung zu vertreten\n- Zahlungsverzug: Der Käufer zahlt trotz Fälligkeit und Mahnung nicht (ohne Mahnung nach einem vereinbarten Kalendertermin oder 30 Tage nach Fälligkeit und Zugang der Rechnung – gegenüber Verbrauchern nur, wenn die Rechnung darauf hinweist)\n- Annahmeverzug: Der Käufer nimmt die ordnungsgemäß angebotene Ware nicht an"
     },
     {
       "id": "AP1-3-3-3-K1-7",

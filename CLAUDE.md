@@ -13,19 +13,24 @@
   nur noch Rückfall). **Prüfungskürzel:** In `inhalt/` stehen Kürzel wie `2024F`; `terminText` in
   `src/daten/wichtigkeit.js` schreibt sie für Anzeige und kopierte Prompts aus („Frühjahr 2024“). **Keine Prüfung
   ist aufgehoben** (seit 14.11.2026): Alle elf AP1-Prüfungen werden genannt, geöffnet und in Lehrnotizen, Stoff und
-  Lernplan verwendet. `npm run pruefen` meldet, wenn Titel, Wortlaut oder Erklärung einer Aussage in der Datei nicht
-  mehr zu `inhalt/<RAUM>.json` passen oder der Regelblock nicht mehr zu `_regelblock.md`, und verlangt je Raum alle
-  Prompts oder keinen.
+  Lernplan verwendet. `npm run pruefen` meldet, wenn in der Datei die Zeile „Thema:“, die Zeile „Ziel:“ oder bei
+  einer Aussage Überschrift (Kurztitel, Stufe, „in der Prüfung vorgegeben“), Wortlaut oder Erklärung nicht mehr zu
+  `inhalt/<RAUM>.json` passen oder der Regelblock nicht mehr zu `_regelblock.md`, und verlangt je Raum alle Prompts
+  oder keinen.
   - **Das Repo ist die einzige Quelle** (seit 15.11.2026): Prompts und `inhalt/<RAUM>.json` werden direkt hier
     geändert. Die frühere Arbeitsmappe mit ihren Skripten und der Sicherung der Drehbuch-Prompts gibt es nicht mehr;
     `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md` ist nur noch das Protokoll dazu.
-  - **Stoff ändern:** Datei und `inhalt/<RAUM>.json` von Hand gleich ändern – Können-Satz und Erklärung stehen in
-    beiden wortgleich, das prüft `npm run pruefen`. Die Lehrnotiz steht nur in der Datei und wird dort geändert.
+  - **Stoff ändern:** Datei und `inhalt/<RAUM>.json` von Hand gleich ändern – Ziel, Überschrift, Können-Satz und
+    Erklärung jeder Aussage stehen in beiden wortgleich, das prüft `npm run pruefen`. Die Lehrnotiz steht nur in der
+    Datei und wird dort geändert.
   - **Regelblock ändern** (Abschnitt „## So läuft unsere Sitzung“ bis vor „## Stoff“, in allen Prompts eines Raums
     gleich): `inhalt/lernprompts/<RAUM>/_regelblock.md` ändern, dann `npm run regelblock einsetzen <RAUM>` – schreibt
     ihn in alle Prompts des Raums; Kopf, Stoff, Lehrnotiz und Material bleiben zeichengleich.
     `npm run regelblock pruefen [RAUM]` nennt Prompts, die abweichen (ohne Raum oder mit `ALLE`: alle vier). Die vier
-    Fassungen sind eigenständig: Was für alle Räume gelten soll, in allen vier `_regelblock.md` ändern.
+    Fassungen sind eigenständig: Was für alle Räume gelten soll, in allen vier `_regelblock.md` ändern. Die Regeln
+    für die Wiederholung stehen nicht dort, sondern im Code (`wiederholRegeln` in
+    `src/bereiche/lernen/lernprompt-neu.js`) und wiederholen einzelne Sätze des Regelblocks – bei Bedarf dort
+    mit ändern.
   - **SQL-Stichpunkte in PB2** (PB2-5-1-1 bis -5, PB2-6-1-1, -2, -3, -6): ein festes Tabellenmodell, das in allen neun
     Dateien zeichengleich als „Material“ am Ende der Lehrnotiz steht. Ändern: in allen neun Dateien gleich.
   - In WiSo ist die Abschlussrunde gebunden (Auswahl, Zuordnung, Reihenfolge, Zahl eintragen) wie in der Prüfung.

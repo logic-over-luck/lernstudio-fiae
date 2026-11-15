@@ -55,6 +55,7 @@ npm install
 npm run build      # baut Lernstudio.html
 npm test           # Tests
 npm run pruefen    # prüft inhalt/ auf Stimmigkeit
+npm run regelblock # Regelblock der Lernprompts: pruefen | einsetzen <Prüfungsteil>
 npm run saetze     # prüft die Probeprüfungen
 ```
 

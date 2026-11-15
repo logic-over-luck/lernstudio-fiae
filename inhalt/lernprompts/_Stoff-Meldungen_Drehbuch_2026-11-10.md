@@ -1,7 +1,7 @@
 # Stoff-Meldungen der Drehbuch-Agenten (Paket 6, 10.11.2026)
 
 Was den Agenten beim Schreiben der Lernprompts am Stoff aufgefallen ist. **39 Klarstellungen in Erklärungen sind eingetragen**
-(Liste: archiv/2026-11-09_nachzug-arbeitsmappe/p6/_meldungen_eingetragen.jsonl). Alles andere hier ist **noch offen** oder nur
+(die Liste dazu, `_meldungen_eingetragen.jsonl`, lag in der Nachzug-Arbeitsmappe vom 09.11.2026 und nicht im Repo). Alles andere hier ist **noch offen** oder nur
 zur Kenntnis: Zuschnitt der Aussagen, Belegzuordnung, Karten an der Nachbar-Aussage, Lücken, die eine Quelle brauchen.
 Die Liste ist eine Arbeitsliste (Umlaute teils als ae/oe/ue), kein Inhalt.
 

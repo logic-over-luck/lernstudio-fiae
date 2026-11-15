@@ -1,10 +1,10 @@
-// Tests für erklaerungImPrompt (tools/inhalt.mjs): Damit vergleicht `npm run pruefen` die Erklärung jeder Aussage
-// im Lernprompt mit stichpunkte[id].neu.koennen[].erklaerung in inhalt/<RAUM>.json.
+// Tests für erklaerungImPrompt und aussageUeberschrift (tools/inhalt.mjs): Damit vergleicht `npm run pruefen`
+// Überschrift und Erklärung jeder Aussage im Lernprompt mit stichpunkte[id].neu.koennen[] in inhalt/<RAUM>.json.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ladeDaten, ladeLernprompts, erklaerungImPrompt } from '../tools/inhalt.mjs';
+import { ladeDaten, ladeLernprompts, erklaerungImPrompt, aussageUeberschrift } from '../tools/inhalt.mjs';
 
 const prompt = [
   '## Stoff: Beispiel',
@@ -61,4 +61,25 @@ test('In allen Lernprompts steht die Erklärung jeder Aussage genau so wie in in
       zahl++;
     }
   assert.ok(zahl > 1000);
+});
+
+test('Überschrift einer Aussage: Kurztitel, Stufe und „in der Prüfung vorgegeben“', () => {
+  assert.equal(aussageUeberschrift('K1', { kurz: 'Erste Aussage', stufe: 1, vorgegeben: null }), '### K1 – Erste Aussage (Stufe 1 Wiedergeben)');
+  assert.equal(aussageUeberschrift('K2', { kurz: 'Zweite Aussage', stufe: 2 }), '### K2 – Zweite Aussage (Stufe 2 Verstehen)');
+  assert.equal(
+    aussageUeberschrift('K6', { kurz: 'Zeitpunkte auf einem Beleg', stufe: 3, vorgegeben: 'Rechnung' }),
+    '### K6 – Zeitpunkte auf einem Beleg (Stufe 3 Anwenden · in der Prüfung vorgegeben: Rechnung)',
+  );
+  assert.equal(aussageUeberschrift('K9', { kurz: 'X', stufe: 4 }), '### K9 – X (Stufe 4 Beurteilen)');
+});
+
+test('In allen Lernprompts stehen Ziel und die Überschrift jeder Aussage genau so wie in inhalt/<RAUM>.json', () => {
+  const wurzel = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+  const { sp } = ladeDaten(wurzel);
+  const { prompts } = ladeLernprompts(wurzel);
+  for (const [id, p] of Object.entries(prompts)) {
+    const zeilen = p.text.split('\n');
+    assert.ok(zeilen.includes(`Ziel: ${sp[id].neu.ziel}`), id);
+    for (const k of sp[id].neu.koennen) assert.ok(zeilen.includes(aussageUeberschrift(k.id.slice(id.length + 1), k)), k.id);
+  }
 });
