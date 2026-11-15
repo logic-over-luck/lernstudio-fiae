@@ -110,6 +110,12 @@ Daraus folgen die Gegenmaßnahmen: Updates gegen Drive-by-Downloads, Makros sper
 
 **Fachwörter:**
 - Malware: Oberbegriff für Schadsoftware
+- Virus: verbreitet sich über ausgeführte Wirtsdateien
+- Wurm: verbreitet sich selbstständig ohne Wirtsdatei
+- Trojaner: tarnt sich als nützliche Software
+- Spyware: späht Daten aus
+- Ransomware: sperrt oder verschlüsselt Daten und erpresst Lösegeld
+- Scareware: täuscht eine Bedrohung vor
 - Keylogger: zeichnet Tastatureingaben heimlich auf, als Programm oder Zwischenstecker
 - Drive-by-Download: Infektion beim bloßen Aufruf einer Webseite
 - Zwei-Faktor-Anmeldung: Passwort plus zweiter Nachweis nötig

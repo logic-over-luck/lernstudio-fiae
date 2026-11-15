@@ -83,7 +83,7 @@ Du kannst erklären, wozu ein Zertifikat dient: Es bestätigt, dass ein öffentl
 Erklärung:
 Ein Zertifikat ist wie ein **digitaler Ausweis**: Es bestätigt, dass ein **öffentlicher Schlüssel** zu einer **bestimmten Person, Organisation oder Website** gehört.
 Ohne Zertifikat könnte ein Angreifer seinen eigenen öffentlichen Schlüssel als den der Bank ausgeben.
-Beispiel im Betrieb: Ein Mitarbeiter weist sich mit seinem Zertifikat gegenüber dem Firmenserver aus. Der Server prüft das Zertifikat und dass der Mitarbeiter den passenden privaten Schlüssel besitzt.
+Beispiel im Betrieb: Ein Mitarbeiter weist sich mit seinem Zertifikat gegenüber dem Firmenserver aus. Diesen Nachweis der Identität nennt man **Authentifizierung**. Der Server prüft das Zertifikat und dass der Mitarbeiter den passenden privaten Schlüssel besitzt.
 
 ### K6 – Zertifizierungsstelle als Aussteller (Stufe 2 Verstehen)
 Du kannst erklären, dass eine Zertifizierungsstelle das Zertifikat ausstellt und beglaubigt.
@@ -151,11 +151,13 @@ Die qualifizierte elektronische Signatur nach der EU-Verordnung eIDAS ist der ei
 - Viele denken, Hashen sei eine Art Verschlüsseln oder Packen; richtig ist: Es gibt keinen Schlüssel und keinen Weg zurück.
 - Viele denken, das Schloss im Browser zeige eine seriöse Seite; richtig ist: Das Zertifikat bestätigt nur, dass Domain und Schlüssel zusammengehören – auch eine Betrugsseite unter eigener Domain kann ein gültiges Zertifikat haben.
 - Viele denken, eine signierte Nachricht sei geheim; richtig ist: Sie bleibt für jeden lesbar, die Signatur belegt nur Herkunft und Unversehrtheit.
+- Viele denken, Authentizität und Authentifizierung seien dasselbe; richtig ist: Authentizität ist die Echtheit, etwa die Herkunft einer Nachricht. Authentifizierung ist der Vorgang, mit dem eine Identität nachgewiesen und geprüft wird – bei der Anmeldung des Mitarbeiters mit Zertifikat heißt es deshalb Authentifizierung.
 
 **Fachwörter:**
 - Hashwert: Prüfwert fester Länge, digitaler Fingerabdruck
 - Integrität: Daten sind unverändert
 - Authentizität: Daten stammen vom angegebenen Absender
+- Authentifizierung: Vorgang, bei dem eine behauptete Identität nachgewiesen und geprüft wird, z. B. mit Zertifikat
 - digitale Signatur: mit privatem Schlüssel verschlüsselter Hashwert
 - Zertifikat: digitaler Ausweis für einen öffentlichen Schlüssel
 - Zertifizierungsstelle: stellt Zertifikate aus und beglaubigt sie

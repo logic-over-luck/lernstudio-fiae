@@ -113,6 +113,11 @@ Achtung: Der Einzelpreis ist ein Stammdatum des Artikels, auch wenn er in jeder 
 - Stammdaten: ändern sich selten
 - Bewegungsdaten: entstehen mit jedem Vorgang
 - Rechendaten: berechnet das Programm
+- DATE: Datum
+- INTEGER: Ganzzahl
+- CHAR(n): Text fester Länge
+- VARCHAR(n): Text variabler Länge
+- DECIMAL(p,s): Festkommazahl, geeignet für Geldbeträge
 
 **So fragt die IHK:**
 - Kurz und offen: In einer Ausgangssituation (zum Beispiel ein übernommener Datenbestand „enthält Redundanzen“) soll man den Begriff Redundanz erklären und ein Problem beschreiben, das daraus entstehen kann. Je etwa 2 Punkte, wenige Zeilen Platz.

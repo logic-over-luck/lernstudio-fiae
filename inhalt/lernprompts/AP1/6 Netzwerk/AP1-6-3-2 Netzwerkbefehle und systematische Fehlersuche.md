@@ -148,6 +148,10 @@ Beispiel: Eine Kollegin meldet „kein Internet“. `ping www.example.com` antwo
 - Gateway: Router, der aus dem eigenen Netz hinausführt
 - Namensauflösung: DNS macht aus dem Namen eine Adresse
 - Paketverlust: ein Teil der Anfragen bleibt unbeantwortet
+- ipconfig: eigene Netzwerkkonfiguration unter Windows anzeigen
+- ping: Erreichbarkeit eines Ziels und Antwortzeit prüfen
+- tracert/traceroute: Router auf dem Weg zum Ziel ermitteln
+- nslookup: DNS-Namensauflösung prüfen
 **So fragt die IHK:**
 - Regelmäßig, meist als Kette zur Fehlersuche. Operatoren: benennen, interpretieren, angeben, beschreiben.
 - Statusfenster einer WLAN-Verbindung (Medienstatus, Signalqualität, Übertragungsrate, aber „kein Netzwerkzugriff“): Werte der untersten Schicht benennen (je 1 Punkt) und deuten (2 Punkte: Schicht 1 fehlerfrei, Fehler liegt höher).

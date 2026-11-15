@@ -64,9 +64,9 @@ Du kannst aus einem Gantt-Diagramm das früheste Projektende und den Vorgang mit
 
 Erklärung:
 - **Frühestes Projektende:** das Ende des Balkens, der am weitesten rechts endet.
-- **Puffer eines Vorgangs:** die freien Tage zwischen seinem Balkenende und dem Balkenbeginn seines frühesten Nachfolgers; hat er keinen Nachfolger, die freien Tage bis zum Projektende.
+- **Freier Puffer eines Vorgangs:** die freien Tage zwischen seinem Balkenende und dem Balkenbeginn seines frühesten Nachfolgers; hat er keinen Nachfolger, die freien Tage bis zum Projektende.
 Beispiel: Der Balken von C endet in der Spalte Tag 4, der Balken seines Nachfolgers E beginnt erst in der Spalte Tag 7 → frei sind Tag 5 und 6 → C hat 2 Tage Puffer (im Netzplan: FEZ von C = 4, FAZ von E = 6).
-Das ist der freie Puffer. Bei einer Kette nichtkritischer Vorgänge hat der erste Vorgang oft keine Lücke, aber trotzdem Puffer: Ist der „größte Puffer“ gefragt, zählt der Gesamtpuffer – vom Ende des letzten Balkens der Kette bis zum Beginn des nächsten kritischen Vorgangs (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende) bzw. bis zum Projektende; er gilt für jeden Vorgang der Kette.
+Das ist der freie Puffer. Bei einer Kette nichtkritischer Vorgänge hat der erste Vorgang oft keine Lücke, aber trotzdem Puffer: Ist der „größte Puffer“ gefragt, zählt der **Gesamtpuffer** – vom Ende des letzten Balkens der Kette bis zum Beginn des nächsten kritischen Vorgangs (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende) bzw. bis zum Projektende; er gilt für jeden Vorgang der Kette.
 Vergleiche alle Puffer – der größte ist gesucht.
 
 ### K4 – Projektstrukturplan gegenüber Gantt-Diagramm (Stufe 2 Verstehen)

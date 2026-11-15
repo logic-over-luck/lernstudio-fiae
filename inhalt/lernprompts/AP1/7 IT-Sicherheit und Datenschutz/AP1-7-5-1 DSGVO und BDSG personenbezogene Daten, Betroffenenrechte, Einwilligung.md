@@ -156,6 +156,10 @@ Anfragen muss der Betrieb in der Regel innerhalb eines Monats beantworten.
 - Viele denken, wer ein Formular freiwillig ausfüllt, habe damit in alles eingewilligt; richtig ist: Das Ausfüllen ersetzt weder die Rechtsgrundlage für jeden einzelnen Zweck noch die Grundsätze.
 
 **Fachwörter:**
+- DSGVO: Datenschutz-Grundverordnung, unmittelbar geltendes EU-Recht
+- BDSG: Bundesdatenschutzgesetz, ergänzt die DSGVO in Deutschland
+- Datenschutz: schützt Personen bei der Verarbeitung ihrer Daten
+- Datensicherheit: schützt Daten und Systeme vor Verlust, Manipulation und Ausfall
 - personenbezogene Daten: Informationen über eine bestimmte oder bestimmbare Person
 - Rechtsgrundlage: Erlaubnis, die eine Verarbeitung zulässig macht
 - Einwilligung: freiwillige, eindeutige Zustimmung für einen Zweck

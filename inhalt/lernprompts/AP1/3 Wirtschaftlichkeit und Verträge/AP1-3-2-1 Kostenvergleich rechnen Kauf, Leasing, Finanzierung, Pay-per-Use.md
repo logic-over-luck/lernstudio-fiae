@@ -66,10 +66,10 @@ Weil die Restschuld sinkt, sinken Zinsen und Zahlung jedes Jahr.
 Steht die Laufzeit in Monaten da (z. B. 36 Monate) und wird jährlich getilgt, rechne sie zuerst in Jahre um (3 Jahre).
 
 ### K3 – Zinssumme als Finanzierungskosten (Stufe 1 Wiedergeben)
-Du kannst die Summe der Zinsen als Finanzierungskosten angeben.
+Du kannst die Finanzierungskosten eines Darlehens aus der Zinssumme und den angegebenen Gebühren bestimmen; fallen keine weiteren Gebühren an, entsprechen sie der Zinssumme.
 
 Erklärung:
-Die Finanzierungskosten sind die **Summe aller Zinsen** über die Laufzeit.
+Die **Finanzierungskosten** umfassen die Zinsen und gegebenenfalls Gebühren für das Darlehen. Im Beispiel sind keine Gebühren angegeben; hier entsprechen sie deshalb der **Summe aller Zinsen** über die Laufzeit.
 Im Beispiel: 600 € + 400 € + 200 € = **1.200 €**.
 Kontrolle: Summe aller Zahlungen − Darlehensbetrag = 13.200 € − 12.000 € = 1.200 €.
 
@@ -140,7 +140,7 @@ Je länger die Schuld stehen bleibt, desto teurer wird es. Dafür ist die gleich
 
 **Fachwörter:**
 - Tilgung: Rückzahlung des geliehenen Betrags, ohne Zinsen
-- Finanzierungskosten: Summe aller Zinsen über die Laufzeit
+- Finanzierungskosten: Zinsen und gegebenenfalls Gebühren für das Darlehen; ohne Gebühren die Zinssumme
 - Sonderzahlung: einmaliger Betrag am Anfang des Leasings
 - Grenzmenge: Nutzungsmenge, bei der beide Wege gleich teuer sind
 

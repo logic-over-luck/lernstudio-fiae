@@ -112,7 +112,7 @@ Für größere Probleme gibt es den DMAIC-Zyklus aus Six Sigma (einem Ansatz zur
 - Qualitätsplanung: Ist-Zustand ermitteln, Ziel-Zustand festlegen
 - Qualitätslenkung: Maßnahmen durchführen, überwachen, gegensteuern
 - PDCA-Zyklus: Plan, Do, Check, Act als Kreislauf
-- DMAIC-Zyklus: fünf Phasen aus Six Sigma
+- DMAIC-Zyklus: Define (Problem beschreiben), Measure (messen), Analyze (Ursachen finden), Improve (verbessern), Control (Verbesserung sichern); aus Six Sigma
 
 **So fragt die IHK:**
 - Es gibt keine verwendbare echte Prüfungsaufgabe. Der Prüfungskatalog nennt Qualitätsplanung und Qualitätsziele (Ist-Zustand ermitteln, Ziel-Zustand festlegen), Qualitätslenkung (Umsetzung der Planphase) und PDCA als Qualitätsmanagementzyklus.

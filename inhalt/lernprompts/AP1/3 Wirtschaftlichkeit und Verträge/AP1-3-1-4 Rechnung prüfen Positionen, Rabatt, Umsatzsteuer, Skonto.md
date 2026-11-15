@@ -103,8 +103,9 @@ Erklärung:
 Auf einer Rechnung findest du drei kaufmännische Zeitpunkte:
 - **Bestellung:** wann bestellt wurde („Ihre Bestellung vom 03.03.“)
 - **Lieferung:** wann geliefert bzw. geleistet wurde („Lieferdatum 10.03.“)
-- **Rechnungsstellung:** wann die Rechnung erstellt wurde (Rechnungsdatum)
-Das Rechnungsdatum ist wichtig, weil von ihm aus meist die Zahlungs- und Skontofrist läuft.
+- **Rechnungsstellung:** wann der Lieferant die Rechnung erstellt hat – das **Rechnungsdatum** auf der Rechnung
+Nicht verwechseln: **Rechnungseingang** heißt, der Käufer erhält die Rechnung – das kann an einem anderen Tag sein. Rechnungsstellung (beim Lieferanten) und Rechnungseingang (beim Käufer) sind zwei verschiedene Vorgänge.
+Ab wann eine Zahlungs- oder Skontofrist läuft, liest du an den vereinbarten Zahlungsbedingungen ab. Die gesetzliche 30-Tage-Regel für den Zahlungsverzug (K10) setzt Fälligkeit und Zugang der Rechnung voraus – das Rechnungsdatum allein setzt sie nicht in Gang.
 
 ### K7 – Kontrollvorgänge mit Lieferschein, Angebot und Nachrechnen (Stufe 2 Verstehen)
 Du kannst Kontrollvorgänge beim Abgleich der Rechnungspositionen beschreiben: Menge mit Lieferschein, Preis mit Angebot oder Bestellung, Rechenweg und Steuer nachrechnen.
@@ -134,9 +135,9 @@ Einkauf beim Käufer und Auftragsbearbeitung beim Verkäufer laufen spiegelbildl
 - **Anfrage** → Lieferant erstellt ein **Angebot**
 - **Bestellung** → Lieferant schickt eine **Auftragsbestätigung**
 - **Wareneingang** prüfen → Lieferant hat mit Lieferschein **versendet**
-- **Rechnungseingang** prüfen (gegen Bestellung und Lieferschein) → Lieferant hat die **Rechnung** gestellt
+- **Rechnungseingang** beim Käufer: Rechnung erhalten und gegen Bestellung und Lieferschein prüfen → **Rechnungsstellung** beim Lieferanten: Rechnung erstellen und ausstellen
 - **Zahlung** → Lieferant überwacht den **Zahlungseingang**
-Zu jedem Schritt gibt es einen Beleg mit Datum – daraus liest du die kaufmännischen Zeitpunkte ab.
+Der Beschaffungsablauf beschreibt die Schritte beider Geschäftspartner. Welche Vorgänge bereits stattgefunden haben, belegst du mit den Angaben im Material: Stehen auf einer Rechnung Bestell-, Liefer- und Rechnungsdatum, nennst du Bestellung, Lieferung und Rechnungsstellung. Rechnungseingang oder Zahlung leitest du daraus nicht automatisch ab; eine Zahlungsfrist in der Zukunft ist noch keine erfolgte Zahlung.
 
 ### K10 – Zahlungsverzug ohne Mahnung und seine Folgen (Stufe 2 Verstehen)
 Du kannst erklären, wann ein Kunde auch ohne Mahnung in Zahlungsverzug gerät und was der Lieferant dann verlangen kann: mit Ablauf eines nach dem Kalender vereinbarten Zahlungstermins, sonst spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung (bei Verbrauchern nur, wenn die Rechnung darauf hinweist) – deshalb nennen Rechnungen oft das Datum, ab dem Verzug eintritt; der Lieferant kann dann neben dem Rechnungsbetrag Verzugszinsen und Ersatz weiterer Verzugsschäden verlangen, etwa der Kosten eines Inkassos.
@@ -175,6 +176,10 @@ Dann kann der Lieferant verlangen:
 - Viele denken, Lieferschein und Rechnung seien derselbe Beleg; richtig ist: zwei Belege zu zwei Schritten mit je eigenem Datum.
 
 **Fachwörter:**
+- Bestellung: Käufer erteilt den Auftrag zur Lieferung
+- Lieferung: Lieferant liefert die Ware bzw. erbringt die Leistung
+- Rechnungsstellung: Lieferant erstellt die Rechnung und stellt sie aus
+- Rechnungseingang: Käufer erhält die Rechnung; anderer Vorgang als Rechnungsstellung
 - Nettopreis: Preis nach Rabatt, vor Umsatzsteuer
 - Rechnungsbetrag: Endbetrag brutto, mit Umsatzsteuer
 - Skontobetrag: Nachlass in Euro bei schneller Zahlung
@@ -182,7 +187,7 @@ Dann kann der Lieferant verlangen:
 - Skontofrist: Zeit, in der Skonto gilt
 - Zahlungsziel: späteste Zahlung ohne Abzug
 - Lieferschein: Beleg über die tatsächlich gelieferte Menge
-- Zahlungsverzug: Nichtzahlung nach Mahnung; ohne Mahnung bei Kalendertermin oder nach 30 Tagen
+- Zahlungsverzug: Nichtzahlung trotz Fälligkeit und Mahnung; ohne Mahnung nach Ablauf eines Kalendertermins oder spätestens 30 Tage nach Fälligkeit und Zugang der Rechnung (bei Verbrauchern nur mit Hinweis auf der Rechnung)
 
 **So fragt die IHK:**Echte Aufgabe (2025H): Ein Unternehmen mit Filialen beschafft Kassensysteme und bekommt eine Rechnung als Material. Sie zeigt Bestell-, Liefer- und Rechnungsdatum, drei Positionen mit Menge, Einzel- und Gesamtpreis und einem Kennzeichen für den Steuersatz, den Nettobetrag, die Umsatzsteuer getrennt nach 19 % und 7 %, den Bruttobetrag, das Zahlungsziel („bis … 2 % Skonto oder bis … ohne Abzug“), einen QR-Code und die Bankverbindungen. Dazu drei Teilaufgaben: die Vorgänge, die schon stattgefunden haben, mit Datum „nennen“ (K6, 3 Punkte: Bestellung, Lieferung, Rechnungsstellung – die Zahlungsfristen liegen noch in der Zukunft); drei Kontrollvorgänge beim Abgleich der Rechnungspositionen „beschreiben“ (K7, 6 Punkte); den Skontobetrag „berechnen“ und kaufmännisch auf zwei Nachkommastellen runden (K2, 2 Punkte). Lösungshinweise liegen nicht vor. Der Prüfungskatalog enthält im Anhang eine ähnliche Musterrechnung mit Rabattzeile und dem Satz, ab wann ohne weitere Nachricht Verzug eintritt; zu erwarten sind deshalb auch Zahlbetrag, Rabatt, Pflichtangaben und Verzug, meist 2–6 Punkte je Teilaufgabe.
 

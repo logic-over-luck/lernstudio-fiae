@@ -163,7 +163,7 @@ Beispiel: 01-00-5e-… → erstes Byte 0000 0001, Bit 0 = 1 → Multicast. 02-�
 - ARP: findet zur IP-Adresse die MAC-Adresse
 - ARP-Cache: gespeicherte Paare aus IP und MAC
 - Broadcast: Anfrage an alle im lokalen Netz
-- DHCP-Server: teilt die Netzwerkeinstellungen automatisch zu
+- DHCP-Server: kann IP-Adresse, Subnetzmaske, Standardgateway und DNS-Server automatisch zuteilen; bei Bezug auf eine Abbildung nur die dort gezeigten Angaben nennen
 - APIPA: selbst vergebene Adresse aus 169.254.x.x
 - Multicast: an eine Gruppe von Geräten
 

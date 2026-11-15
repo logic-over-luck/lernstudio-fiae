@@ -528,7 +528,7 @@
               "beleg:2021H-A1-b"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **S**pezifisch: eindeutig beschrieben, was erreicht werden soll.\n- **M**essbar: eine Zahl oder ein Zielwert zeigt, ob das Ziel erreicht ist.\n- **A**kzeptiert: Auftraggeber und Team tragen das Ziel mit (in manchen Büchern steht „erreichbar“ oder „attraktiv“ – alle drei gelten).\n- **R**ealistisch: mit den vorhandenen Mitteln in der Zeit zu schaffen.\n- **T**erminiert: es steht fest, bis wann.\nIn der Prüfung zählen auch die englischen Wörter: specific, measurable, accepted (oder attainable, attractive), reasonable, time-bound.",
+            "erklaerung": "- **Spezifisch**: eindeutig beschrieben, was erreicht werden soll.\n- **Messbar**: eine Zahl oder ein Zielwert zeigt, ob das Ziel erreicht ist.\n- **Akzeptiert**: Auftraggeber und Team tragen das Ziel mit (in manchen Büchern steht „erreichbar“ oder „attraktiv“ – alle drei gelten).\n- **Realistisch**: mit den vorhandenen Mitteln in der Zeit zu schaffen.\n- **Terminiert**: es steht fest, bis wann.\nIn der Prüfung zählen auch die englischen Wörter: specific, measurable, accepted (oder attainable, attractive), reasonable, time-bound.",
             "karten": 1,
             "neu": null
           },
@@ -1236,7 +1236,7 @@
               "beleg:2023H-A4-bc"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Frühestes Projektende:** das Ende des Balkens, der am weitesten rechts endet.\n- **Puffer eines Vorgangs:** die freien Tage zwischen seinem Balkenende und dem Balkenbeginn seines frühesten Nachfolgers; hat er keinen Nachfolger, die freien Tage bis zum Projektende.\nBeispiel: Der Balken von C endet in der Spalte Tag 4, der Balken seines Nachfolgers E beginnt erst in der Spalte Tag 7 → frei sind Tag 5 und 6 → C hat 2 Tage Puffer (im Netzplan: FEZ von C = 4, FAZ von E = 6).\nDas ist der freie Puffer. Bei einer Kette nichtkritischer Vorgänge hat der erste Vorgang oft keine Lücke, aber trotzdem Puffer: Ist der „größte Puffer“ gefragt, zählt der Gesamtpuffer – vom Ende des letzten Balkens der Kette bis zum Beginn des nächsten kritischen Vorgangs (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende) bzw. bis zum Projektende; er gilt für jeden Vorgang der Kette.\nVergleiche alle Puffer – der größte ist gesucht.",
+            "erklaerung": "- **Frühestes Projektende:** das Ende des Balkens, der am weitesten rechts endet.\n- **Freier Puffer eines Vorgangs:** die freien Tage zwischen seinem Balkenende und dem Balkenbeginn seines frühesten Nachfolgers; hat er keinen Nachfolger, die freien Tage bis zum Projektende.\nBeispiel: Der Balken von C endet in der Spalte Tag 4, der Balken seines Nachfolgers E beginnt erst in der Spalte Tag 7 → frei sind Tag 5 und 6 → C hat 2 Tage Puffer (im Netzplan: FEZ von C = 4, FAZ von E = 6).\nDas ist der freie Puffer. Bei einer Kette nichtkritischer Vorgänge hat der erste Vorgang oft keine Lücke, aber trotzdem Puffer: Ist der „größte Puffer“ gefragt, zählt der **Gesamtpuffer** – vom Ende des letzten Balkens der Kette bis zum Beginn des nächsten kritischen Vorgangs (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende) bzw. bis zum Projektende; er gilt für jeden Vorgang der Kette.\nVergleiche alle Puffer – der größte ist gesucht.",
             "karten": 4,
             "neu": null
           },
@@ -2808,7 +2808,7 @@
               "katalog:AP1.05.01.1"
             ],
             "vorgegeben": null,
-            "erklaerung": "Ein Qualitätsmanagementsystem (QMS) sind die im Unternehmen **festgelegten und dokumentierten** Abläufe, Zuständigkeiten und Mittel, mit denen Qualität geplant, gesichert und verbessert wird.\nBeispiel: Es ist schriftlich geregelt, wie ein neuer Arbeitsplatz eingerichtet und geprüft wird und wer dafür zuständig ist.",
+            "erklaerung": "Ein **Qualitätsmanagementsystem (QMS)** sind die im Unternehmen **festgelegten und dokumentierten** Abläufe, Zuständigkeiten und Mittel, mit denen Qualität geplant, gesichert und verbessert wird.\nBeispiel: Es ist schriftlich geregelt, wie ein neuer Arbeitsplatz eingerichtet und geprüft wird und wer dafür zuständig ist.",
             "karten": 1,
             "neu": null
           },
@@ -2832,7 +2832,7 @@
               "katalog:AP1.05.01.3"
             ],
             "vorgegeben": null,
-            "erklaerung": "Eine Zertifizierung ist die Bestätigung einer unabhängigen Stelle, dass ein Unternehmen die Anforderungen einer Norm erfüllt.\nNutzen:\n- Vertrauen bei Kunden und Partnern\n- Wettbewerbsvorteil – manche Auftraggeber verlangen ein Zertifikat\n- klarere Abläufe und weniger Fehler\nAchtung: Bescheinigt wird das QM-System, **nicht** dass jedes einzelne Produkt fehlerfrei ist.",
+            "erklaerung": "Eine **Zertifizierung** ist die Bestätigung einer unabhängigen Stelle, dass ein Unternehmen die Anforderungen einer Norm erfüllt.\nNutzen:\n- Vertrauen bei Kunden und Partnern\n- Wettbewerbsvorteil – manche Auftraggeber verlangen ein Zertifikat\n- klarere Abläufe und weniger Fehler\nAchtung: Bescheinigt wird das QM-System, **nicht** dass jedes einzelne Produkt fehlerfrei ist.",
             "karten": 3,
             "neu": null
           },
@@ -4617,7 +4617,7 @@
               "beleg:2021H-A2-a"
             ],
             "vorgegeben": null,
-            "erklaerung": "Übertrage die Formel ins Deutsche und setze die Werte ein:\n„Efficiency = useful power output / total power input“\n→ Wirkungsgrad = abgegebene Leistung ÷ aufgenommene Leistung\nBeispiel Netzteil: Es gibt 450 W ab und nimmt 500 W auf → 450 W ÷ 500 W = 0,9 = **90 %**.\nIst der Wirkungsgrad gegeben und die aufgenommene Leistung gesucht, stellst du um: aufgenommene Leistung = abgegebene Leistung ÷ Wirkungsgrad, z. B. 60 W ÷ 0,75 = 80 W. Steht der Wirkungsgrad in Prozent da, rechnest du mit der Dezimalzahl (75 % = 0,75). In der Prüfung waren danach noch die Stromkosten zu berechnen: Leistung in kW × Stunden × Preis je kWh.\nAchte darauf, was „output“ und was „input“ ist – vertauscht ergibt sich ein Wert über 100 %, das kann nicht stimmen.",
+            "erklaerung": "Übertrage die Formel ins Deutsche und setze die Werte ein:\n„Efficiency = useful power output / total power input“\n→ **Wirkungsgrad (efficiency)** = **abgegebene Leistung (useful power output)** ÷ **aufgenommene Leistung (total power input)**\nBeispiel Netzteil: Es gibt 450 W ab und nimmt 500 W auf → 450 W ÷ 500 W = 0,9 = **90 %**.\nIst der Wirkungsgrad gegeben und die aufgenommene Leistung gesucht, stellst du um: aufgenommene Leistung = abgegebene Leistung ÷ Wirkungsgrad, z. B. 60 W ÷ 0,75 = 80 W. Steht der Wirkungsgrad in Prozent da, rechnest du mit der Dezimalzahl (75 % = 0,75). In der Prüfung waren danach noch die Stromkosten zu berechnen: Leistung in kW × Stunden × Preis je kWh.\nAchte darauf, was „output“ und was „input“ ist – vertauscht ergibt sich ein Wert über 100 %, das kann nicht stimmen.",
             "karten": 1,
             "neu": null
           },
@@ -6339,7 +6339,7 @@
               "beleg:2022H-A1-e"
             ],
             "vorgegeben": null,
-            "erklaerung": "`effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`\nTatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.\nBeispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.\n52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.",
+            "erklaerung": "Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K7, K15).\n`effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`\nTatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.\nBeispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.\n52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.",
             "karten": 2,
             "neu": null
           },
@@ -6647,7 +6647,7 @@
               "beleg:2025H-A1-a"
             ],
             "vorgegeben": "Rechnung",
-            "erklaerung": "Auf einer Rechnung findest du drei kaufmännische Zeitpunkte:\n- **Bestellung:** wann bestellt wurde („Ihre Bestellung vom 03.03.“)\n- **Lieferung:** wann geliefert bzw. geleistet wurde („Lieferdatum 10.03.“)\n- **Rechnungsstellung:** wann die Rechnung erstellt wurde (Rechnungsdatum)\nDas Rechnungsdatum ist wichtig, weil von ihm aus meist die Zahlungs- und Skontofrist läuft.",
+            "erklaerung": "Auf einer Rechnung findest du drei kaufmännische Zeitpunkte:\n- **Bestellung:** wann bestellt wurde („Ihre Bestellung vom 03.03.“)\n- **Lieferung:** wann geliefert bzw. geleistet wurde („Lieferdatum 10.03.“)\n- **Rechnungsstellung:** wann der Lieferant die Rechnung erstellt hat – das **Rechnungsdatum** auf der Rechnung\nNicht verwechseln: **Rechnungseingang** heißt, der Käufer erhält die Rechnung – das kann an einem anderen Tag sein. Rechnungsstellung (beim Lieferanten) und Rechnungseingang (beim Käufer) sind zwei verschiedene Vorgänge.\nAb wann eine Zahlungs- oder Skontofrist läuft, liest du an den vereinbarten Zahlungsbedingungen ab. Die gesetzliche 30-Tage-Regel für den Zahlungsverzug (K10) setzt Fälligkeit und Zugang der Rechnung voraus – das Rechnungsdatum allein setzt sie nicht in Gang.",
             "karten": 1,
             "neu": null
           },
@@ -6683,7 +6683,7 @@
               "buch:GS-2.9.1-S255"
             ],
             "vorgegeben": null,
-            "erklaerung": "Einkauf beim Käufer und Auftragsbearbeitung beim Verkäufer laufen spiegelbildlich:\n- **Anfrage** → Lieferant erstellt ein **Angebot**\n- **Bestellung** → Lieferant schickt eine **Auftragsbestätigung**\n- **Wareneingang** prüfen → Lieferant hat mit Lieferschein **versendet**\n- **Rechnungseingang** prüfen (gegen Bestellung und Lieferschein) → Lieferant hat die **Rechnung** gestellt\n- **Zahlung** → Lieferant überwacht den **Zahlungseingang**\nZu jedem Schritt gibt es einen Beleg mit Datum – daraus liest du die kaufmännischen Zeitpunkte ab.",
+            "erklaerung": "Einkauf beim Käufer und Auftragsbearbeitung beim Verkäufer laufen spiegelbildlich:\n- **Anfrage** → Lieferant erstellt ein **Angebot**\n- **Bestellung** → Lieferant schickt eine **Auftragsbestätigung**\n- **Wareneingang** prüfen → Lieferant hat mit Lieferschein **versendet**\n- **Rechnungseingang** beim Käufer: Rechnung erhalten und gegen Bestellung und Lieferschein prüfen → **Rechnungsstellung** beim Lieferanten: Rechnung erstellen und ausstellen\n- **Zahlung** → Lieferant überwacht den **Zahlungseingang**\nDer Beschaffungsablauf beschreibt die Schritte beider Geschäftspartner. Welche Vorgänge bereits stattgefunden haben, belegst du mit den Angaben im Material: Stehen auf einer Rechnung Bestell-, Liefer- und Rechnungsdatum, nennst du Bestellung, Lieferung und Rechnungsstellung. Rechnungseingang oder Zahlung leitest du daraus nicht automatisch ab; eine Zahlungsfrist in der Zukunft ist noch keine erfolgte Zahlung.",
             "karten": 2,
             "neu": null
           },
@@ -7038,7 +7038,7 @@
         ],
         [
           "AP1-3-2-1-K3",
-          "Du kannst die Summe der Zinsen als Finanzierungskosten angeben."
+          "Du kannst die Finanzierungskosten eines Darlehens aus der Zinssumme und den angegebenen Gebühren bestimmen; fallen keine weiteren Gebühren an, entsprechen sie der Zinssumme."
         ],
         [
           "AP1-3-2-1-K6",
@@ -7118,7 +7118,7 @@
               "katalog:AP1.03.04.5"
             ],
             "vorgegeben": null,
-            "erklaerung": "Die Finanzierungskosten sind die **Summe aller Zinsen** über die Laufzeit.\nIm Beispiel: 600 € + 400 € + 200 € = **1.200 €**.\nKontrolle: Summe aller Zahlungen − Darlehensbetrag = 13.200 € − 12.000 € = 1.200 €.",
+            "erklaerung": "Die **Finanzierungskosten** umfassen die Zinsen und gegebenenfalls Gebühren für das Darlehen. Im Beispiel sind keine Gebühren angegeben; hier entsprechen sie deshalb der **Summe aller Zinsen** über die Laufzeit.\nIm Beispiel: 600 € + 400 € + 200 € = **1.200 €**.\nKontrolle: Summe aller Zahlungen − Darlehensbetrag = 13.200 € − 12.000 € = 1.200 €.",
             "karten": 2,
             "neu": null
           },
@@ -11475,7 +11475,7 @@
               "beleg:2026F-A1-ac"
             ],
             "vorgegeben": null,
-            "erklaerung": "`P = U · I` – Leistung (Watt) = Spannung (Volt) × Stromstärke (Ampere)\nUmgestellt:\n- `I = P ÷ U`\n- `U = P ÷ I`\nBeispiel: 230 V × 0,5 A = **115 W**. Ein 60-W-Gerät an 230 V zieht 60 ÷ 230 ≈ **0,26 A**.",
+            "erklaerung": "`P = U · I` – **Leistung P** (Watt) = **Spannung U** (Volt) × **Stromstärke I** (Ampere)\nUmgestellt:\n- `I = P ÷ U`\n- `U = P ÷ I`\nBeispiel: 230 V × 0,5 A = **115 W**. Ein 60-W-Gerät an 230 V zieht 60 ÷ 230 ≈ **0,26 A**.",
             "karten": 3,
             "neu": null
           },
@@ -11514,7 +11514,7 @@
               "beleg:2024F-A3-f"
             ],
             "vorgegeben": null,
-            "erklaerung": "Kein Netzteil arbeitet verlustfrei – ein Teil wird zu Wärme.\n- `Wirkungsgrad η = abgegebene Leistung ÷ aufgenommene Leistung` (immer kleiner als 1)\n- `aufgenommene Leistung = abgegebene Leistung ÷ η`\nBeispiel: Die Komponenten brauchen 400 W, das Netzteil hat 80 % Wirkungsgrad → aus der Steckdose kommen 400 W ÷ 0,8 = **500 W**.\nFür die Stromkosten zählt die **aufgenommene** Leistung.",
+            "erklaerung": "Kein Netzteil arbeitet verlustfrei – ein Teil wird zu Wärme.\n- `Wirkungsgrad η = abgegebene Leistung ÷ aufgenommene Leistung` (immer kleiner als 1)\n- `aufgenommene Leistung = abgegebene Leistung ÷ η`\nBeispiel: Die Komponenten brauchen 400 W, das Netzteil hat 80 % Wirkungsgrad → aus der Steckdose kommen 400 W ÷ 0,8 = **500 W**.\nFür die Stromkosten zählt die **aufgenommene Leistung**.",
             "karten": 3,
             "neu": null
           },
@@ -15831,7 +15831,7 @@
               "beleg:2026F-A2-a"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Netzadresse:** alle Hostbits 0 – die erste Adresse des Netzes.\n- **Broadcastadresse:** alle Hostbits 1 – die letzte Adresse des Netzes.\n- **Hostanteil:** Adresse minus Netzadresse; im Netzanteil stehen Nullen.\nSchneller Weg über die **Blockgröße** = 256 − Maskenwert im betroffenen Oktett:\n- /26 → Maske .192 → Blockgröße 256 − 192 = **64**\n- Netze beginnen bei Vielfachen: .0, .64, .128, .192\nBeispiel: 192.168.1.100/26 → 100 liegt zwischen 64 und 127 → Netz **192.168.1.64**, Broadcast **192.168.1.127** (nächstes Netz − 1), Hostanteil 100 − 64 = 36 → **0.0.0.36**.",
+            "erklaerung": "- **Netzadresse:** alle Hostbits 0 – die erste Adresse des Netzes.\n- **Broadcastadresse:** alle Hostbits 1 – die letzte Adresse des Netzes.\n- **Hostanteil:** Adresse minus Netzadresse; im Netzanteil stehen Nullen.\nSchneller Weg über die **Blockgröße** = 256 − Maskenwert im betroffenen Oktett:\n- /26 → Maske .192 → Blockgröße 256 − 192 = **64**\n- Netze beginnen bei Vielfachen: .0, .64, .128, .192\nBeispiel: 192.168.1.100/26 → 100 liegt zwischen 64 und 127 → Netz **192.168.1.64**, Broadcast **192.168.1.127** (nächstes Netz − 1), Hostanteil 100 − 64 = 36 → **0.0.0.36**.\nHostanteil: Bits hinter dem Netzpräfix, im Beispiel 0.0.0.36. **Hostadresse:** beim Konfigurieren die vollständige Geräteadresse, im Beispiel 192.168.1.100. In einer älteren Prüfungsaufgabe wurden im Feld „Hostadresse“ beide Darstellungen akzeptiert.",
             "karten": 4,
             "neu": null
           },
@@ -18679,7 +18679,7 @@
         ],
         [
           "AP1-7-3-1-K4",
-          "Du kannst hybride Verschlüsselung erklären: Ein symmetrischer Sitzungsschlüssel wird asymmetrisch geschützt übertragen, die Daten selbst werden symmetrisch verschlüsselt, zum Beispiel bei TLS (HTTPS)."
+          "Du kannst hybride Verschlüsselung erklären: Ein symmetrischer Sitzungsschlüssel wird asymmetrisch geschützt übertragen, die Daten selbst werden symmetrisch verschlüsselt."
         ],
         [
           "AP1-7-3-1-K6",
@@ -18777,7 +18777,7 @@
               "katalog:AP1.06.01.2.4"
             ],
             "vorgegeben": null,
-            "erklaerung": "Hybride Verschlüsselung verbindet die Vorteile beider:\n- Die **Daten** werden **symmetrisch** mit einem zufälligen **Sitzungsschlüssel** verschlüsselt – schnell.\n- Der **Sitzungsschlüssel** wird **asymmetrisch** mit dem öffentlichen Schlüssel des Empfängers verschlüsselt und mitgeschickt – sicherer Austausch.\n- Der Empfänger entschlüsselt mit seinem privaten Schlüssel den Sitzungsschlüssel und damit die Daten.\nNach diesem Prinzip (vereinfacht) arbeitet z. B. HTTPS mit **TLS**.",
+            "erklaerung": "Hybride Verschlüsselung verbindet die Vorteile beider:\n- Die **Daten** werden **symmetrisch** mit einem zufälligen **Sitzungsschlüssel** verschlüsselt – schnell.\n- Der **Sitzungsschlüssel** wird **asymmetrisch** mit dem öffentlichen Schlüssel des Empfängers verschlüsselt und mitgeschickt – sicherer Austausch.\n- Der Empfänger entschlüsselt mit seinem privaten Schlüssel den Sitzungsschlüssel und damit die Daten.\nAuch HTTPS mit **TLS** verbindet beide Verfahren. Modernes TLS (ab Version 1.3) schickt den Sitzungsschlüssel allerdings nicht verschlüsselt mit: Beide Seiten vereinbaren das Schlüsselmaterial per Diffie-Hellman, das Zertifikat bestätigt dabei die Echtheit des Servers. Gleich bleibt: Die Nutzdaten werden symmetrisch verschlüsselt.",
             "karten": 2,
             "neu": null
           },
@@ -18995,7 +18995,7 @@
               "beleg:2023H-A3-db"
             ],
             "vorgegeben": null,
-            "erklaerung": "Ein Zertifikat ist wie ein **digitaler Ausweis**: Es bestätigt, dass ein **öffentlicher Schlüssel** zu einer **bestimmten Person, Organisation oder Website** gehört.\nOhne Zertifikat könnte ein Angreifer seinen eigenen öffentlichen Schlüssel als den der Bank ausgeben.\nBeispiel im Betrieb: Ein Mitarbeiter weist sich mit seinem Zertifikat gegenüber dem Firmenserver aus. Der Server prüft das Zertifikat und dass der Mitarbeiter den passenden privaten Schlüssel besitzt.",
+            "erklaerung": "Ein Zertifikat ist wie ein **digitaler Ausweis**: Es bestätigt, dass ein **öffentlicher Schlüssel** zu einer **bestimmten Person, Organisation oder Website** gehört.\nOhne Zertifikat könnte ein Angreifer seinen eigenen öffentlichen Schlüssel als den der Bank ausgeben.\nBeispiel im Betrieb: Ein Mitarbeiter weist sich mit seinem Zertifikat gegenüber dem Firmenserver aus. Diesen Nachweis der Identität nennt man **Authentifizierung**. Der Server prüft das Zertifikat und dass der Mitarbeiter den passenden privaten Schlüssel besitzt.",
             "karten": 2,
             "neu": null
           },
@@ -29550,7 +29550,7 @@
       "sp": "AP1-3-2-1",
       "k": "AP1-3-2-1-K3",
       "v": "Wie ermittelt man aus einem Tilgungsplan die Finanzierungskosten des Darlehens?",
-      "h": "Als Summe der Zinsen über die gesamte Laufzeit. Das entspricht der Summe aller Zahlungen minus dem Darlehensbetrag."
+      "h": "Zinsen über die gesamte Laufzeit plus angegebene Gebühren. Ohne Gebühren ist das die Summe der Zinsen – also die Summe aller Zahlungen minus dem Darlehensbetrag."
     },
     {
       "id": "AP1-3-2-1-K3-2",

@@ -103,6 +103,9 @@ Beispiel: Eine Entwicklerin arbeitet drei Tage pro Woche im Projekt „Neues Kun
 - Viele denken, in der Matrix sei die Abteilungsleitung der eigentliche Chef. Richtig ist: Beide Linien sind gleichberechtigt, keine überstimmt die andere einfach.
 
 **Fachwörter:**
+- Einliniensystem: genau ein weisungsbefugter Vorgesetzter
+- Mehrliniensystem: mehrere fachliche Vorgesetzte, je für ihr Fachgebiet
+- Matrixorganisation: zwei sich kreuzende Gliederungen mit zwei Weisungslinien
 - Organigramm: Schaubild der Stellen und Weisungswege
 - Dienstweg: vorgeschriebener Weg über die Vorgesetzten
 - disziplinarisch: zuständig für Urlaub, Beurteilung, Gehalt

@@ -113,6 +113,10 @@ Erklärung:
 **Fachwörter:**
 - Protokoll: vereinbarte Regeln für den Datenaustausch
 - Standardport: übliche Portnummer eines Dienstes
+- IMAP: Postfach bleibt auf dem Server, für mehrere Geräte
+- POP3: Nachrichten abrufen, keine vollständige Postfachsynchronisation wie IMAP
+- SSH: verschlüsselter Fernzugriff, Standardport 22
+- Telnet: unverschlüsselter Fernzugriff
 - Klartext: unverschlüsselt, für Mitlesende lesbar
 - Verzeichnisdienst: zentrale Ablage für Benutzer und Gruppen
 

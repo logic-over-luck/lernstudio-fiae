@@ -61,11 +61,11 @@ Erklärung:
 Du kannst die fünf SMART-Kriterien nennen: spezifisch, messbar, akzeptiert (auch: erreichbar, attraktiv), realistisch, terminiert.
 
 Erklärung:
-- **S**pezifisch: eindeutig beschrieben, was erreicht werden soll.
-- **M**essbar: eine Zahl oder ein Zielwert zeigt, ob das Ziel erreicht ist.
-- **A**kzeptiert: Auftraggeber und Team tragen das Ziel mit (in manchen Büchern steht „erreichbar“ oder „attraktiv“ – alle drei gelten).
-- **R**ealistisch: mit den vorhandenen Mitteln in der Zeit zu schaffen.
-- **T**erminiert: es steht fest, bis wann.
+- **Spezifisch**: eindeutig beschrieben, was erreicht werden soll.
+- **Messbar**: eine Zahl oder ein Zielwert zeigt, ob das Ziel erreicht ist.
+- **Akzeptiert**: Auftraggeber und Team tragen das Ziel mit (in manchen Büchern steht „erreichbar“ oder „attraktiv“ – alle drei gelten).
+- **Realistisch**: mit den vorhandenen Mitteln in der Zeit zu schaffen.
+- **Terminiert**: es steht fest, bis wann.
 In der Prüfung zählen auch die englischen Wörter: specific, measurable, accepted (oder attainable, attractive), reasonable, time-bound.
 
 ### K4 – Zielbeschreibung den SMART-Kriterien zuordnen (Stufe 2 Verstehen · in der Prüfung vorgegeben: die fünf SMART-Begriffe)
@@ -125,7 +125,12 @@ Begründe immer mit dem Wort aus dem Ziel: „‚deutlich‘ ist keine Zahl, als
 - Zeitliche Begrenzung: Anfang und Ende stehen fest
 - Begrenzte Ressourcen: Budget, Personal, Sachmittel sind begrenzt
 - Eigene Projektorganisation: Projektleitung und Team, getrennt vom Tagesgeschäft
+- Zielvorgabe: klar festgelegtes Ergebnis des Projekts
+- Komplexität: voneinander abhängige Aufgaben und Beteiligte
+- spezifisch: eindeutig beschrieben, was erreicht werden soll
 - messbar: Zahl oder Zielwert zeigt die Zielerreichung
+- akzeptiert: Auftraggeber und Team tragen das Ziel mit (auch: erreichbar, attraktiv)
+- realistisch: mit vorhandenen Mitteln in der Zeit erreichbar
 - terminiert: es steht fest, bis wann
 
 **So fragt die IHK:**

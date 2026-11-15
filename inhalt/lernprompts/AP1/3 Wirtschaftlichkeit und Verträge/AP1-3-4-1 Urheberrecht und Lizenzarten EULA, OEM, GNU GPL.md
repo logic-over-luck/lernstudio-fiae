@@ -109,6 +109,8 @@ Beispiel: Ein Unternehmen verkauft eine geschlossene Desktop-App. Eine MIT- oder
 - EULA: Endbenutzer-Lizenzvertrag, Zustimmung bei der Installation
 - OEM-Lizenz: mit einem Gerät verkauft, an dieses gebunden
 - Copyleft: weitergegebene Abwandlung bleibt unter derselben Lizenz
+- GNU GPL: Lizenz für freie Software mit Copyleft bei Weitergabe abgeleiteter Versionen
+- Quellcode: menschenlesbarer Programmtext; ermöglicht Untersuchen und Ändern
 
 **So fragt die IHK:**
 - 2026H (K4), 4 Punkte, „beschreiben“: Die Geschäftsführung fragt, ob Open-Source-Komponenten für eine geplante Software infrage kommen; verlangt sind zwei Grundgedanken der GNU GPL. Die nicht amtliche Lösung nennt Copyleft (Geändertes oder Abgeleitetes muss bei Weitergabe wieder unter der GPL stehen) und den offenen Quellcode mit den Freiheiten, die Software auszuführen, zu ändern und weiterzugeben.

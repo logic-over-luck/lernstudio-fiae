@@ -181,6 +181,7 @@ Entscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn mel
 
 **Fachwörter:**
 - Lieferverzug: schuldhaft verspätete Lieferung trotz Fälligkeit
+- mangelhafte Lieferung: Ware entspricht nicht dem Vereinbarten; Oberbegriff für Schlechtleistung, Falschlieferung und Minderlieferung
 - Schlechtleistung / Falschlieferung / Minderlieferung: fehlerhafte Ware / andere Ware / zu geringe Menge
 - unverzüglich: ohne schuldhaftes Zögern, keine feste Tageszahl
 - einseitiger Handelskauf: nur eine Seite ist Kaufmann

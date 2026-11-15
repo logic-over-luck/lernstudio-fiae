@@ -127,6 +127,13 @@ Beispiel: Der Browser (7) fordert eine Seite an, TCP (4) schickt die Anfrage an 
 - Viele denken, bei „Kein Internetzugriff“ sei das Kabel verdächtig; richtig ist: Die Meldung ist nur das Symptom. Zeigen Medienstatus und Übertragungsrate eine stehende Verbindung, liegt die Ursache höher.
 
 **Fachwörter:**
+- 1 Bitübertragung (Physical): Signale und Medium
+- 2 Sicherung (Data Link): Frames und MAC-Adressen
+- 3 Vermittlung (Network): IP-Adressen und Routing
+- 4 Transport (Transport): Verbindung zwischen Anwendungen, Ports
+- 5 Sitzung (Session): Sitzungen steuern
+- 6 Darstellung (Presentation): Daten darstellen und umwandeln
+- 7 Anwendung (Application): Netzwerkdienste für Anwendungen
 - MAC-Adresse: Hardwareadresse der Netzwerkkarte, Schicht 2
 - Frame: Datenpaket der Schicht 2, z. B. Ethernet
 - Port: Nummer für das richtige Programm, Schicht 4

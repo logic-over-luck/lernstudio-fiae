@@ -181,6 +181,14 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 **Fachwörter:**
 - Peripheriegeräte: Geräte außerhalb von Prozessor und Arbeitsspeicher
 - Kaltgerätebuchse: dreipoliger Anschluss für das Stromkabel
+- RJ45: Netzwerkanschluss mit acht Kontakten
+- USB Typ A: flach-rechteckige Steckerform
+- USB Typ C: beidseitig steckbare Steckerform
+- HDMI: digitaler Bild- und Tonanschluss
+- DisplayPort: digitaler Bild- und Tonanschluss, mit MST auch für Monitorketten
+- DVI: digitaler Bildanschluss, nur Bild, kein Ton
+- WLAN: drahtloses lokales Netzwerk
+- Bluetooth: Kurzstreckenfunk für Geräte in der Nähe
 - Thunderbolt: USB-C-Buchse mit Blitz, Daten, Bild, Strom
 - Power Delivery: hohe Ladeleistung über Typ-C
 - Daisy Chaining: Monitore hintereinander an einem Bildausgang

@@ -41,7 +41,7 @@ Das muss ich können:
 Du kannst mit P = U · I jede der drei Größen berechnen (Leistung in Watt = Spannung in Volt mal Stromstärke in Ampere).
 
 Erklärung:
-`P = U · I` – Leistung (Watt) = Spannung (Volt) × Stromstärke (Ampere)
+`P = U · I` – **Leistung P** (Watt) = **Spannung U** (Volt) × **Stromstärke I** (Ampere)
 Umgestellt:
 - `I = P ÷ U`
 - `U = P ÷ I`
@@ -73,7 +73,7 @@ Kein Netzteil arbeitet verlustfrei – ein Teil wird zu Wärme.
 - `Wirkungsgrad η = abgegebene Leistung ÷ aufgenommene Leistung` (immer kleiner als 1)
 - `aufgenommene Leistung = abgegebene Leistung ÷ η`
 Beispiel: Die Komponenten brauchen 400 W, das Netzteil hat 80 % Wirkungsgrad → aus der Steckdose kommen 400 W ÷ 0,8 = **500 W**.
-Für die Stromkosten zählt die **aufgenommene** Leistung.
+Für die Stromkosten zählt die **aufgenommene Leistung**.
 
 ### K5 – Stromkosten aus Energie und kWh-Preis (Stufe 3 Anwenden)
 Du kannst Stromkosten aus Energie und Preis je kWh berechnen, auch bei nur teilweiser Auslastung.

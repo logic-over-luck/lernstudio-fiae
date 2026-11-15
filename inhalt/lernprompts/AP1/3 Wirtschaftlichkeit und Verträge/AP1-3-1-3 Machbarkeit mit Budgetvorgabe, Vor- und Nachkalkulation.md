@@ -88,6 +88,7 @@ Begründe dein Urteil immer mit dem Prozentwert.
 Du kannst einen effektiven Stundensatz berechnen: Jahreskosten geteilt durch die tatsächlichen Arbeitsstunden (Arbeitstage ohne Urlaub, Krankheit und Feiertage mal Stunden je Tag).
 
 Erklärung:
+Der **effektive Stundensatz** verteilt die Jahreskosten auf die tatsächlichen Arbeitsstunden. Den **Stundenverrechnungssatz** für Kunden berechnest du dagegen mit den abrechenbaren Stunden und dem Gewinnzuschlag (K7, K15).
 `effektiver Stundensatz = Jahreskosten ÷ tatsächliche Arbeitsstunden`
 Tatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, mal Stunden je Tag.
 Beispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.

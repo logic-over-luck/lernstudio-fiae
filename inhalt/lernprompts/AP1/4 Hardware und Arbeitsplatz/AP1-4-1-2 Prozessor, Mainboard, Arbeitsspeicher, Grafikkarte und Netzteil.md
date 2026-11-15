@@ -152,6 +152,7 @@ Beispiel: Die Sachbearbeitung kommt mit integrierter Grafik aus, die 3D-Visualis
 - Formfaktor: Norm für Maße und Anschlusslage
 - Lanes: eigene Leitungspaare einer PCIe-Karte
 - VRAM: eigener Speicher der Grafikkarte
+- Cache: schneller Zwischenspeicher; verringert Zugriffe auf langsameren Speicher
 
 **So fragt die IHK:**
 - Kleine Teilaufgaben (2–3 Punkte) im Hardware-Block.

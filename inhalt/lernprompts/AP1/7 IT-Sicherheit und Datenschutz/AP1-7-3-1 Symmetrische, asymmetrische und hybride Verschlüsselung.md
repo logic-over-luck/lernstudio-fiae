@@ -66,14 +66,14 @@ Erklärung:
 Bei symmetrisch ist es umgekehrt: schnell, aber der Schlüsseltausch ist das Problem.
 
 ### K4 – Hybride Verschlüsselung mit Sitzungsschlüssel (Stufe 2 Verstehen)
-Du kannst hybride Verschlüsselung erklären: Ein symmetrischer Sitzungsschlüssel wird asymmetrisch geschützt übertragen, die Daten selbst werden symmetrisch verschlüsselt, zum Beispiel bei TLS (HTTPS).
+Du kannst hybride Verschlüsselung erklären: Ein symmetrischer Sitzungsschlüssel wird asymmetrisch geschützt übertragen, die Daten selbst werden symmetrisch verschlüsselt.
 
 Erklärung:
 Hybride Verschlüsselung verbindet die Vorteile beider:
 - Die **Daten** werden **symmetrisch** mit einem zufälligen **Sitzungsschlüssel** verschlüsselt – schnell.
 - Der **Sitzungsschlüssel** wird **asymmetrisch** mit dem öffentlichen Schlüssel des Empfängers verschlüsselt und mitgeschickt – sicherer Austausch.
 - Der Empfänger entschlüsselt mit seinem privaten Schlüssel den Sitzungsschlüssel und damit die Daten.
-Nach diesem Prinzip (vereinfacht) arbeitet z. B. HTTPS mit **TLS**.
+Auch HTTPS mit **TLS** verbindet beide Verfahren. Modernes TLS (ab Version 1.3) schickt den Sitzungsschlüssel allerdings nicht verschlüsselt mit: Beide Seiten vereinbaren das Schlüsselmaterial per Diffie-Hellman, das Zertifikat bestätigt dabei die Echtheit des Servers. Gleich bleibt: Die Nutzdaten werden symmetrisch verschlüsselt.
 
 ### K6 – Datenträgerverschlüsselung bei Laptop-Diebstahl (Stufe 4 Beurteilen)
 Du kannst beurteilen, ob eine Datenträgerverschlüsselung die Daten bei Diebstahl des Laptops schützt; dabei berücksichtigst du, dass der Schlüssel im TPM-Chip des Geräts liegt, ein Ausbau der SSD dem Dieb also nicht hilft, und dass „TPM ohne PIN“ beim Start automatisch entsperrt und daher schwächer schützt als TPM mit Passwort oder PIN.

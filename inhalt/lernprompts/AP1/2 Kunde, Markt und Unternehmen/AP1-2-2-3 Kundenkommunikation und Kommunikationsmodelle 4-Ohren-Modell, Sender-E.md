@@ -140,7 +140,10 @@ Ein Servicegespräch folgt einem Ablauf: vorbereiten, freundlich einsteigen, mit
 
 **Fachwörter:**
 - Rückmeldung: zeigt, ob richtig verstanden wurde
-- Selbstkundgabe: was der Sender von sich zeigt
+- Sachinhalt/Sachaspekt: worüber informiert wird
+- Selbstkundgabe/Selbstaussage/Selbstoffenbarung: was der Sender von sich zeigt
+- Beziehung/Beziehungsaspekt: Haltung zum Gegenüber
+- Appell: wozu das Gegenüber gebracht werden soll
 - Metakommunikation: Sprechen über die Art der Kommunikation
 
 **So fragt die IHK:**

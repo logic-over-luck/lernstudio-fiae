@@ -161,6 +161,9 @@ Die Norm teilt Software nach ihrer Aufgabe in drei Arten ein: Systemsoftware lä
 - Unterstützungssoftware: Werkzeuge zum Entwickeln, z. B. Compiler
 - Standardsoftware: fertig am Markt, für viele Anwender
 - Branchensoftware: auf Abläufe einer Branche zugeschnitten
+- ERP: Ressourcen des gesamten Unternehmens planen und steuern
+- SCM: Lieferkette vom Lieferanten bis zum Kunden steuern
+- CRM: Kundenbeziehungen verwalten
 - Firmware: Software, fest im Gerät gespeichert
 - gemeinsame Datenbasis: alle Bereiche nutzen dieselben Daten
 - Konverter: wandelt Daten in anderes Format um

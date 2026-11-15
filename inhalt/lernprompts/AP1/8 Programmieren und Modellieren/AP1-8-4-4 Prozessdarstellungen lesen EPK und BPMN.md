@@ -111,8 +111,8 @@ Beispiel: „Der Vertrieb prüft die Bestellung. Ist sie vollständig, packt das
 - Ereignis: ein Zustand, in der EPK ein Sechseck
 - Funktion: eine Tätigkeit in der EPK
 - Organisationseinheit: wer die Funktion ausführt
-- Konnektoren: Verzweigungen der EPK im Kreis
-- Gateways: Verzweigungen in BPMN als Raute
+- Konnektoren: Kreise zum Verzweigen und Zusammenführen; beim Verzweigen UND = alle Zweige, XOR (exklusives Oder) = genau einer, OR (offenes Oder) = einer oder mehrere
+- Gateways: Rauten zum Verzweigen und Zusammenführen; beim Verzweigen parallel = alle Zweige, exklusiv = genau einer, inklusiv = einer oder mehrere
 - Sequenzfluss: Reihenfolge innerhalb eines Pools
 - Nachrichtenfluss: Nachricht zwischen zwei Pools
 - Lane: Bahn für eine Rolle oder Abteilung

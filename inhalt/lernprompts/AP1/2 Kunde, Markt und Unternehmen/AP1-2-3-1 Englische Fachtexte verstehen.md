@@ -102,7 +102,7 @@ Du kannst eine Definition oder Formel aus einem englischen Handbuch anwenden, zu
 Erklärung:
 Übertrage die Formel ins Deutsche und setze die Werte ein:
 „Efficiency = useful power output / total power input“
-→ Wirkungsgrad = abgegebene Leistung ÷ aufgenommene Leistung
+→ **Wirkungsgrad (efficiency)** = **abgegebene Leistung (useful power output)** ÷ **aufgenommene Leistung (total power input)**
 Beispiel Netzteil: Es gibt 450 W ab und nimmt 500 W auf → 450 W ÷ 500 W = 0,9 = **90 %**.
 Ist der Wirkungsgrad gegeben und die aufgenommene Leistung gesucht, stellst du um: aufgenommene Leistung = abgegebene Leistung ÷ Wirkungsgrad, z. B. 60 W ÷ 0,75 = 80 W. Steht der Wirkungsgrad in Prozent da, rechnest du mit der Dezimalzahl (75 % = 0,75). In der Prüfung waren danach noch die Stromkosten zu berechnen: Leistung in kW × Stunden × Preis je kWh.
 Achte darauf, was „output“ und was „input“ ist – vertauscht ergibt sich ein Wert über 100 %, das kann nicht stimmen.
@@ -140,6 +140,7 @@ Begründe, welche Variante zur Situation in der Aufgabe passt.
 
 **Fachwörter:**
 - Leistungsaufnahme (power consumption): was das Gerät aus dem Netz zieht
+- Wirkungsgrad (efficiency): abgegebene Nutzleistung geteilt durch aufgenommene Leistung
 - Betriebstemperatur (operating temperature): zulässiger Temperaturbereich
 - Schutzart (ingress protection): Schutz gegen Staub und Wasser
 

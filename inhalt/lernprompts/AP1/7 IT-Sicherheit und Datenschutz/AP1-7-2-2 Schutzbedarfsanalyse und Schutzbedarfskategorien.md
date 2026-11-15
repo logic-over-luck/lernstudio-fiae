@@ -161,6 +161,9 @@ Ausweichmöglichkeiten senken den Bedarf: Ein Ersatzgerät, ein Papierformular o
 - Viele denken, ein Objekt bekomme einen Gesamtwert oder den Durchschnitt. Richtig ist: je Schutzziel ein eigener Wert; beim System können die drei Höchstwerte aus verschiedenen Anwendungen stammen.
 
 **Fachwörter:**
+- Vertraulichkeit: Schutz vor unbefugter Kenntnisnahme
+- Integrität: Schutz vor unbemerkter oder unbefugter Veränderung
+- Verfügbarkeit: bei Bedarf nutzbar
 - Schadensszenarien: sechs Arten von Schäden nach BSI
 - Maximumprinzip: System übernimmt den höchsten Bedarf
 - Kumulationseffekt: viele kleine Schäden ergeben großen

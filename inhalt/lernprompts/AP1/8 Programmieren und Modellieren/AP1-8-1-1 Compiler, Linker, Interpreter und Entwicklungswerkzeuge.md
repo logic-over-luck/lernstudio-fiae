@@ -142,11 +142,17 @@ Interpretierte Sprachen bieten oft einen interaktiven Modus: eine Anweisung eing
 - Viele denken, der Debugger finde und behebe den Fehler. Richtig ist: Er macht den Zustand des Programms sichtbar, den Fehler erkennt der Mensch. Debugger ist das Werkzeug, Debugging die Tätigkeit.
 
 **Fachwörter:**
+- Compiler: übersetzt Quellcode vor der Ausführung in Zielcode
+- Interpreter: führt Quell- oder Zwischencode zur Laufzeit schrittweise aus; im einfachen Prüfungsmodell den Quelltext Anweisung für Anweisung
+- Linker: verbindet übersetzte Programmteile und Bibliotheken
 - Maschinencode: Befehle, die der Prozessor direkt ausführt
 - Zwischencode: Ergebnis des Java-Compilers, noch kein Maschinencode
 - Bibliothek: fertige Programmteile zum Einbinden
 - Laufzeitumgebung: virtuelle Maschine und Standardbibliothek zum Ausführen
+- Debugger: Werkzeug zum Anhalten, schrittweisen Ausführen und Beobachten
+- Debugging: systematische Fehlersuche und -behebung
 - Haltepunkt: Stelle, an der der Debugger anhält
+- IDE: integrierte Entwicklungsumgebung mit mehreren Werkzeugen
 - Plug-in: Erweiterung, die eine IDE ergänzt
 - interaktiver Modus: Anweisung eingeben, Ergebnis sofort sehen
 

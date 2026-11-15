@@ -169,7 +169,11 @@ Beispiel: Vorgefunden werden PCs mit 8 GB RAM und HDD (Ist); damit die neue Soft
 - Ist-Analyse: Ziele und Bestand vor der Beschaffung erfassen
 - Primärerhebung: Daten eigens für die Frage gewinnen
 - Sekundärerhebung: vorhandene Daten auswerten
+- Interview: persönliches Gespräch mit Rückfragen
+- schriftliche Befragung/Fragebogen: standardisierte Fragen an viele Personen
+- Beobachtung am Arbeitsplatz: tatsächliche Abläufe erfassen
 - Fokusgruppe: kleine Gruppe diskutiert gemeinsam ihre Wünsche
+- Beschwerdeauswertung: vorhandene Beschwerden als Sekundärdaten auswerten
 - Muss-Anforderung: unverzichtbar, sonst Lösung unbrauchbar
 - Kann-Anforderung: wünschenswert, wenn Budget und Zeit reichen
 - Abgrenzungskriterien: was ausdrücklich nicht geliefert wird

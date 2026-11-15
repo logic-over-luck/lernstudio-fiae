@@ -108,6 +108,7 @@ Eine eigene (private) Cloud läuft auf einem Server im eigenen Netz oder auf ein
 - mandantenfähig: viele Kunden, eine Plattform, getrennte Daten
 - Public Cloud: Plattform eines Anbieters für viele Kunden
 - Private Cloud: Cloud nur für eine Organisation
+- Hybrid Cloud: Public und Private Cloud verbunden genutzt
 - Versionierung: ältere und gelöschte Stände zurückholen
 - DynDNS: fester Name für wechselnde IP-Adresse
 

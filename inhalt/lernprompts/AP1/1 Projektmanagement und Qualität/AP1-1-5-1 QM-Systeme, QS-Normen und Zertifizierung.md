@@ -41,7 +41,7 @@ Das muss ich können:
 Du kannst erklären, was ein betriebliches Qualitätsmanagementsystem ist.
 
 Erklärung:
-Ein Qualitätsmanagementsystem (QMS) sind die im Unternehmen **festgelegten und dokumentierten** Abläufe, Zuständigkeiten und Mittel, mit denen Qualität geplant, gesichert und verbessert wird.
+Ein **Qualitätsmanagementsystem (QMS)** sind die im Unternehmen **festgelegten und dokumentierten** Abläufe, Zuständigkeiten und Mittel, mit denen Qualität geplant, gesichert und verbessert wird.
 Beispiel: Es ist schriftlich geregelt, wie ein neuer Arbeitsplatz eingerichtet und geprüft wird und wer dafür zuständig ist.
 
 ### K2 – Zweck von Normen der Qualitätssicherung (Stufe 2 Verstehen)
@@ -57,7 +57,7 @@ Die bekannteste Norm für Qualitätsmanagementsysteme ist die **ISO 9001**.
 Du kannst erklären, was eine Zertifizierung ist und welchen Nutzen sie für ein Unternehmen hat.
 
 Erklärung:
-Eine Zertifizierung ist die Bestätigung einer unabhängigen Stelle, dass ein Unternehmen die Anforderungen einer Norm erfüllt.
+Eine **Zertifizierung** ist die Bestätigung einer unabhängigen Stelle, dass ein Unternehmen die Anforderungen einer Norm erfüllt.
 Nutzen:
 - Vertrauen bei Kunden und Partnern
 - Wettbewerbsvorteil – manche Auftraggeber verlangen ein Zertifikat
@@ -130,6 +130,7 @@ Bausteine des Total Quality Management (TQM, „allumfassendes Qualitätsmanagem
 - Viele denken, ein QM-System sei eine Software, eine Abteilung oder die Endkontrolle. Richtig ist: Es sind die festgelegten und dokumentierten Abläufe und Zuständigkeiten des Betriebs; das andere sind höchstens Teile oder Hilfsmittel davon.
 
 **Fachwörter:**
+- Qualitätsmanagementsystem (QMS): festgelegte und dokumentierte Abläufe, mit denen Qualität geplant, gesichert und verbessert wird
 - DIN EN ISO 9001: bekannteste Norm für Qualitätsmanagement
 - Zertifizierung: unabhängige Stelle bestätigt Erfüllung der Norm
 - Audit: systematische Prüfung, ob Vorgaben eingehalten werden

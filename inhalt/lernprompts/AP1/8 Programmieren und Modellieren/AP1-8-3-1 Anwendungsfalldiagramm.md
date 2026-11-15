@@ -125,6 +125,9 @@ Beispiel Webshop: Der Anwendungsfall „Bestellung bezahlen“ ist mit dem Akteu
 - Generalisierung: das Speziellere kann alles und mehr
 - Basis-Anwendungsfall: der Anwendungsfall, der erweitert wird
 - Erweiterungspunkt: Stelle im Basis-Anwendungsfall, an der erweitert wird
+- include: immer eingeschlossen; Pfeil zum eingeschlossenen Anwendungsfall
+- extend: bedingte Erweiterung; Pfeil zum Basis-Anwendungsfall
+- Systemgrenze: Rahmen um die Anwendungsfälle des betrachteten Systems
 
 **So fragt die IHK:**
 - Zwei Aufgaben als Muster (2023H, 2024H), beide mit dem Operator „ergänzen“ und einem vorgedruckten Diagramm.

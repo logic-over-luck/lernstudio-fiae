@@ -61,6 +61,7 @@ Schneller Weg über die **Blockgröße** = 256 − Maskenwert im betroffenen Okt
 - /26 → Maske .192 → Blockgröße 256 − 192 = **64**
 - Netze beginnen bei Vielfachen: .0, .64, .128, .192
 Beispiel: 192.168.1.100/26 → 100 liegt zwischen 64 und 127 → Netz **192.168.1.64**, Broadcast **192.168.1.127** (nächstes Netz − 1), Hostanteil 100 − 64 = 36 → **0.0.0.36**.
+Hostanteil: Bits hinter dem Netzpräfix, im Beispiel 0.0.0.36. **Hostadresse:** beim Konfigurieren die vollständige Geräteadresse, im Beispiel 192.168.1.100. In einer älteren Prüfungsaufgabe wurden im Feld „Hostadresse“ beide Darstellungen akzeptiert.
 
 ### K3 – Erste, letzte und vorletzte Hostadresse (Stufe 3 Anwenden)
 Du kannst die erste, die letzte und die vorletzte nutzbare Hostadresse bestimmen.
@@ -147,7 +148,10 @@ In 8 Teilnetze → +3 Bits → /27, Blockgröße 32.
 **Fachwörter:**
 - Präfixlänge: Zahl der Netzbits von links
 - Subnetzmaske: Präfix als vier Dezimalzahlen geschrieben
-- Hostanteil: Teil der Adresse hinter dem Netzanteil
+- Hostanteil: nur die Bits hinter dem Netzpräfix; nicht die vollständige IP-Adresse des Hosts
+- Netzadresse: erste Adresse des Subnetzes, alle Hostbits 0
+- Broadcastadresse: letzte Adresse des Subnetzes, alle Hostbits 1
+- nutzbare Hostadresse: vollständige Adresse zwischen Netz- und Broadcastadresse
 - Blockgröße: Abstand zwischen zwei Netzadressen
 - Teilnetz: gleich großes Stück eines größeren Netzes
 
