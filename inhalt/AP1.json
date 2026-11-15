@@ -6196,12 +6196,20 @@
           "Du kannst einen effektiven Stundensatz berechnen: Jahreskosten geteilt durch die tatsächlichen Arbeitsstunden (Arbeitstage ohne Urlaub, Krankheit und Feiertage mal Stunden je Tag)."
         ],
         [
+          "AP1-3-1-3-K8",
+          "Du kannst das wirtschaftliche Ergebnis eines Projekts berechnen: Ertrag minus Kosten, wobei der Ertrag bei einem Kundenauftrag der Erlös und bei einem internen Projekt die erreichte Kostenersparnis ist; liegt das Ergebnis bei null oder darüber, war das Projekt wirtschaftlich."
+        ],
+        [
           "AP1-3-1-3-K12",
           "Du kannst die Abrechnung einer Dienstleistung nach Aufwand (Stunden mal Stundensatz) von der Pauschale unterscheiden und Fahrt-, Reise- und Fremdkosten als Sondereinzelkosten getrennt berechnen."
         ],
         [
           "AP1-3-1-3-K13",
           "Du kannst vor einem Angebot Lieferfähigkeit (Menge, Termin, Personal) und Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis) prüfen."
+        ],
+        [
+          "AP1-3-1-3-K14",
+          "Du kannst im Handel vorwärts kalkulieren: Bezugspreis plus Handlungskostenzuschlag ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto), darauf kommt ohne Kundenskonto und -rabatt die Umsatzsteuer."
         ],
         [
           "AP1-3-1-3-K15",
@@ -6320,6 +6328,18 @@
             "neu": null
           },
           {
+            "id": "AP1-3-1-3-K8",
+            "kurz": "Wirtschaftliches Ergebnis eines Projekts",
+            "stufe": 3,
+            "herkunft": [
+              "buch:FS2-4.2.2-S270"
+            ],
+            "vorgegeben": null,
+            "erklaerung": "`Projektergebnis = Ertrag − Kosten`\n- **Kundenprojekt:** Der Ertrag ist der Verkaufserlös (netto).\n- **Internes Projekt:** Es gibt keinen Verkaufserlös. Der Ertrag ist, was das Projekt **einspart**, z. B. Arbeitszeit, Lizenz- oder Wartungskosten.\n- Ergebnis ≥ 0: Die Kosten sind gedeckt, das Projekt hat sich gelohnt; < 0: Verlust.\nBeispiel: Ein internes Ticketsystem kostet 18.000 €. Es spart im betrachteten Zeitraum 600 Arbeitsstunden zu je 35 €, also 21.000 € → Ergebnis **+3.000 €**.",
+            "karten": 2,
+            "neu": null
+          },
+          {
             "id": "AP1-3-1-3-K12",
             "kurz": "Abrechnung nach Aufwand oder Pauschale",
             "stufe": 3,
@@ -6346,6 +6366,19 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Vor einem Angebot prüft der Anbieter seine Lieferfähigkeit (Menge, Termin, Personal) und seine Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis).",
+            "karten": 2,
+            "neu": null
+          },
+          {
+            "id": "AP1-3-1-3-K14",
+            "kurz": "Vorwärtskalkulation bis zum Barverkaufspreis",
+            "stufe": 3,
+            "herkunft": [
+              "katalog:AP1.01.02.2",
+              "buch:GS-2.8.2-S247-251"
+            ],
+            "vorgegeben": null,
+            "erklaerung": "Angebotspreis vom Bezugspreis aus (Vorwärtskalkulation im Handel): Bezugspreis (Einkaufspreis nach Nachlässen plus Bezugskosten) plus Zuschlag für Handlungskosten ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto); ohne Kundenskonto und -rabatt kommt darauf die Umsatzsteuer, sonst erst auf den Listenverkaufspreis netto.",
             "karten": 2,
             "neu": null
           },
@@ -6386,6 +6419,13 @@
             "titel": "Stundensatzkalkulationen bei Dienstleistungen durchführen",
             "von": 251,
             "bis": 252
+          },
+          {
+            "buch": 1,
+            "abschnitt": "2.8.2",
+            "titel": "Handelskalkulationen durchführen",
+            "von": 247,
+            "bis": 250
           },
           {
             "buch": 2,
@@ -29135,6 +29175,20 @@
       "h": "210 Tage × 8 h = 1.680 h. 52.000 € ÷ 1.680 h ≈ 30,95 € je Stunde."
     },
     {
+      "id": "AP1-3-1-3-K8-1",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K8",
+      "v": "Was ist der Ertrag eines internen Softwareprojekts?",
+      "h": "Die erreichte Kostenersparnis, z. B. eingesparte Arbeitszeit oder wegfallende Lizenz- und Wartungskosten – einen Verkaufserlös gibt es nicht."
+    },
+    {
+      "id": "AP1-3-1-3-K8-2",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K8",
+      "v": "Ein Kundenprojekt bringt 48.000 € netto und kostet 51.500 €. Wie lautet das Ergebnis, und war es wirtschaftlich?",
+      "h": "48.000 € − 51.500 € = **−3.500 €**. Die Kosten sind nicht gedeckt, das Projekt war nicht wirtschaftlich."
+    },
+    {
       "id": "AP1-3-1-4-K1-1",
       "sp": "AP1-3-1-4",
       "k": "AP1-3-1-4-K1",
@@ -30190,6 +30244,20 @@
       "k": "AP1-3-1-3-K13",
       "v": "Ein IT-Dienstleister könnte 50 PCs termingerecht liefern, der anfragende Kunde hat aber schon mehrere Rechnungen nicht bezahlt. Welcher Prüfpunkt spricht gegen das Angebot?",
       "h": "Die Lieferwilligkeit: Die Bonität des Kunden ist zweifelhaft. Die Lieferfähigkeit (Menge, Termin) ist gegeben."
+    },
+    {
+      "id": "AP1-3-1-3-K14-1",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K14",
+      "v": "Nenne die Schritte der Vorwärtskalkulation im Handel vom Bezugspreis bis zum Bruttopreis.",
+      "h": "- Bezugspreis\n- + Handlungskostenzuschlag = Selbstkosten\n- + Gewinnzuschlag = Barverkaufspreis (netto)\n- + Umsatzsteuer = Bruttopreis (ohne Kundenskonto und -rabatt; sonst kommt sie erst auf den Listenverkaufspreis netto)"
+    },
+    {
+      "id": "AP1-3-1-3-K14-2",
+      "sp": "AP1-3-1-3",
+      "k": "AP1-3-1-3-K14",
+      "v": "Bezugspreis 500 €, Handlungskostenzuschlag 30 %, Gewinnzuschlag 10 %, Umsatzsteuer 19 %. Berechne den Bruttoverkaufspreis.",
+      "h": "- Selbstkosten: 500 € · 1,30 = 650 €\n- Barverkaufspreis netto: 650 € · 1,10 = 715 €\n- brutto: 715 € · 1,19 = 850,85 €"
     },
     {
       "id": "AP1-3-1-3-K15-2",

@@ -94,6 +94,16 @@ Tatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, m
 Beispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.
 52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.
 
+### K8 – Wirtschaftliches Ergebnis eines Projekts (Stufe 3 Anwenden)
+Du kannst das wirtschaftliche Ergebnis eines Projekts berechnen: Ertrag minus Kosten, wobei der Ertrag bei einem Kundenauftrag der Erlös und bei einem internen Projekt die erreichte Kostenersparnis ist; liegt das Ergebnis bei null oder darüber, war das Projekt wirtschaftlich.
+
+Erklärung:
+`Projektergebnis = Ertrag − Kosten`
+- **Kundenprojekt:** Der Ertrag ist der Verkaufserlös (netto).
+- **Internes Projekt:** Es gibt keinen Verkaufserlös. Der Ertrag ist, was das Projekt **einspart**, z. B. Arbeitszeit, Lizenz- oder Wartungskosten.
+- Ergebnis ≥ 0: Die Kosten sind gedeckt, das Projekt hat sich gelohnt; < 0: Verlust.
+Beispiel: Ein internes Ticketsystem kostet 18.000 €. Es spart im betrachteten Zeitraum 600 Arbeitsstunden zu je 35 €, also 21.000 € → Ergebnis **+3.000 €**.
+
 ### K12 – Abrechnung nach Aufwand oder Pauschale (Stufe 3 Anwenden)
 Du kannst die Abrechnung einer Dienstleistung nach Aufwand (Stunden mal Stundensatz) von der Pauschale unterscheiden und Fahrt-, Reise- und Fremdkosten als Sondereinzelkosten getrennt berechnen.
 
@@ -105,6 +115,12 @@ Du kannst vor einem Angebot Lieferfähigkeit (Menge, Termin, Personal) und Liefe
 
 Erklärung:
 Vor einem Angebot prüft der Anbieter seine Lieferfähigkeit (Menge, Termin, Personal) und seine Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis).
+
+### K14 – Vorwärtskalkulation bis zum Barverkaufspreis (Stufe 3 Anwenden)
+Du kannst im Handel vorwärts kalkulieren: Bezugspreis plus Handlungskostenzuschlag ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto), darauf kommt ohne Kundenskonto und -rabatt die Umsatzsteuer.
+
+Erklärung:
+Angebotspreis vom Bezugspreis aus (Vorwärtskalkulation im Handel): Bezugspreis (Einkaufspreis nach Nachlässen plus Bezugskosten) plus Zuschlag für Handlungskosten ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto); ohne Kundenskonto und -rabatt kommt darauf die Umsatzsteuer, sonst erst auf den Listenverkaufspreis netto.
 
 ### K15 – Stundenverrechnungssatz netto und brutto berechnen (Stufe 3 Anwenden)
 Du kannst einen Stundenverrechnungssatz berechnen: Selbstkosten im Jahr geteilt durch die abrechenbaren Stunden ergibt den Selbstkostensatz, mal (1 + Gewinnzuschlag) den Netto-Stundensatz und mit 19 % Umsatzsteuer den Brutto-Stundensatz.
@@ -133,14 +149,16 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 ## Lehrnotiz: Machbarkeit mit Budgetvorgabe, Vor- und Nachkalkulation
 
 **Aufteilung:**
-- Teil A – Projekt kalkulieren und bewerten: vor dem Angebot K13; Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5
+- Teil A – Projekt kalkulieren und bewerten: Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5; Projektergebnis K8
 - Pause möglich nach Teil A.
 - Teil B – Stundensätze: gearbeitete Stunde K6; verkaufte Stunde K15; kostendeckender Preis je Einheit K16
+- Pause möglich nach Teil B.
+- Teil C – Angebot im Handel: vor dem Angebot K13; vorwärts kalkulieren K14
 
-**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K12, K13, K15
+**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K8, K12–K15
 
 **Kerngedanken:**
-- Gemeinkosten sind Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören (Miete, Verwaltung, Büro). Beim Dienstleister werden sie über den Stundensatz auf alle Aufträge verteilt.
+- Gemeinkosten sind Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören (Miete, Verwaltung, Büro). Beim Dienstleister werden sie über den Stundensatz auf alle Aufträge verteilt. Im Handel gehört nur der Wareneinsatz direkt zur Ware; alle übrigen Kosten, auch die Personalkosten, sind Handlungskosten und kommen als Zuschlag auf die Ware.
 - Der effektive Stundensatz sagt nur, was eine tatsächlich gearbeitete Stunde eines Mitarbeiters den Betrieb kostet. Der Stundenverrechnungssatz ist der Preis für Kunden: Er deckt zusätzlich die Gemeinkosten, die gearbeitete, aber nicht abrechenbare Zeit (Akquise, Warten, interne Aufgaben) und den Gewinn.
 - Eine Abweichung bewerten heißt drei Dinge liefern: den Prozentwert, das Urteil (üblich oder deutlich) und einen Satz, was daraus folgt – Ursache klären, künftig genauer planen. Wer die Mehrkosten trägt, hängt von der Abrechnungsart ab: bei Festpreis oder Pauschale der Anbieter (nur dann sinkt sein Gewinn, wie es der Stoff sagt), nach Aufwand der Kunde. Das gehört nur dazu, wenn die Aufgabe die Abrechnungsart nennt.
 
@@ -152,8 +170,11 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 - Gemeinkosten: Betriebskosten, die keinem einzelnen Auftrag gehören
 - Selbstkosten: alle eigenen Kosten ohne Gewinn
 - Sondereinzelkosten: nur für einen Auftrag angefallen, getrennt berechnet
+- Bezugspreis: Einstandspreis; Listeneinkaufspreis minus Liefererrabatt und Liefererskonto plus Bezugskosten
+- Handlungskosten: alle Kosten des Händlers außer Wareneinsatz
+- Barverkaufspreis: Nettopreis nach Abzug von Rabatt und Skonto
 
-**So fragt die IHK:** Kurze Rechenaufgaben in einer Kundensituation, Operator „berechnen“, Rechenweg angeben. Vorgekommen sind Projektkosten (2021H, 2 Punkte), ein effektiver Stundensatz (2022H, 5 Punkte, krumme Stunden je Tag) und ein kostendeckender Preis je Einheit (2023H, 5 Punkte: Kosten summieren, durch die Menge teilen, auf den nächsten Cent aufrunden – dieselbe Logik wie der Selbstkostensatz). Der Stundenverrechnungssatz kam in den ausgewerteten Prüfungen nicht vor. Zu Budgetvergleich und Abweichung gibt es keine echte Aufgabe; zu erwarten ist: Kosten berechnen, mit Budget oder Plan vergleichen und mit Zahlen begründet urteilen.
+**So fragt die IHK:** Kurze Rechenaufgaben in einer Kundensituation, Operator „berechnen“, Rechenweg angeben. Vorgekommen sind Projektkosten (2021H, 2 Punkte), ein effektiver Stundensatz (2022H, 5 Punkte, krumme Stunden je Tag) und ein kostendeckender Preis je Einheit (2023H, 5 Punkte: Kosten summieren, durch die Menge teilen, auf den nächsten Cent aufrunden – dieselbe Logik wie der Selbstkostensatz). Stundenverrechnungssatz und Handelskalkulation kamen in den ausgewerteten Prüfungen nicht vor. Zu Budgetvergleich und Abweichung gibt es keine echte Aufgabe; zu erwarten ist: Kosten berechnen, mit Budget oder Plan vergleichen und mit Zahlen begründet urteilen.
 
 **Fallen:**
 - Teil A: Nur mit Angaben rechnen und bewerten, die in der Aufgabe stehen: Ist keine Abrechnungsart genannt, darf weder Aufgabe noch Lösung einen Pauschalpreis voraussetzen.
@@ -162,3 +183,4 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 - Teil A: Fahrtkosten werden getrennt ausgewiesen, aber mitgerechnet: Alle Posten müssen in der Summe stehen, bevor mit dem Budget verglichen wird.
 - Teil A: Abweichung immer als Nach − Vor rechnen, sonst kippt das Vorzeichen; der Prozentwert bezieht sich auf die geplanten, nicht auf die tatsächlichen Kosten.
 - Teil B: Beim effektiven Stundensatz die Stunden je Tag aus der Aufgabe nehmen, nicht automatisch acht.
+- Teil C: Der Gewinn bezieht sich immer auf die Selbstkosten, weder auf den Bezugspreis noch auf den Verkaufspreis.
