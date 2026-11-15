@@ -6196,28 +6196,12 @@
           "Du kannst einen effektiven Stundensatz berechnen: Jahreskosten geteilt durch die tatsächlichen Arbeitsstunden (Arbeitstage ohne Urlaub, Krankheit und Feiertage mal Stunden je Tag)."
         ],
         [
-          "AP1-3-1-3-K9",
-          "Du kannst vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis (zuzüglich Umsatzsteuer) rechnen und begründen, warum Skonto und Rabatt im Hundert vom höheren Preis berechnet werden."
-        ],
-        [
-          "AP1-3-1-3-K10",
-          "Du kannst den Handlungskostenzuschlagssatz berechnen: Handlungskosten (alle Kosten außer dem Wareneinsatz) geteilt durch den Wareneinsatz, mal 100."
-        ],
-        [
-          "AP1-3-1-3-K11",
-          "Du kannst Rückwärtskalkulation (höchster tragbarer Einkaufspreis zum vorgegebenen Verkaufspreis) und Differenzkalkulation (Gewinn bei festen Preisen) durchrechnen sowie Kalkulationszuschlag (auf den Bezugspreis) und Handelsspanne (auf den Verkaufspreis) berechnen."
-        ],
-        [
           "AP1-3-1-3-K12",
           "Du kannst die Abrechnung einer Dienstleistung nach Aufwand (Stunden mal Stundensatz) von der Pauschale unterscheiden und Fahrt-, Reise- und Fremdkosten als Sondereinzelkosten getrennt berechnen."
         ],
         [
           "AP1-3-1-3-K13",
           "Du kannst vor einem Angebot Lieferfähigkeit (Menge, Termin, Personal) und Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis) prüfen."
-        ],
-        [
-          "AP1-3-1-3-K14",
-          "Du kannst im Handel vorwärts kalkulieren: Bezugspreis plus Handlungskostenzuschlag ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto), darauf kommt ohne Kundenskonto und -rabatt die Umsatzsteuer."
         ],
         [
           "AP1-3-1-3-K15",
@@ -6336,45 +6320,6 @@
             "neu": null
           },
           {
-            "id": "AP1-3-1-3-K9",
-            "kurz": "Vom Barverkaufspreis zum Listenverkaufspreis",
-            "stufe": 4,
-            "herkunft": [
-              "katalog:AP1.01.02.2",
-              "buch:FS-4.4.1-S362-369"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Vollständige Handelskalkulation: vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis; Skonto und Rabatt rechnet man dabei vom höheren Endpreis aus (im Hundert), weil der Kunde sie später von diesem höheren Preis abzieht – du teilst also durch 1 minus Satz.",
-            "karten": 2,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-3-K10",
-            "kurz": "Zuschlagssatz für Handlungskosten",
-            "stufe": 3,
-            "herkunft": [
-              "katalog:AP1.01.02.2",
-              "buch:GS-2.8.1-S245-247"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Den Zuschlagssatz für Handlungskosten ermittelt ein Händler aus seinen Handlungskosten (alle Kosten außer dem Wareneinsatz) geteilt durch den Wareneinsatz (was die verkauften Waren im Einkauf gekostet haben), mal 100.",
-            "karten": 2,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-3-K11",
-            "kurz": "Rückwärts-, Differenzkalkulation, Handelsspanne",
-            "stufe": 4,
-            "herkunft": [
-              "katalog:AP1.01.02.2",
-              "buch:GS-2.8.2-S247-251"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Weitere Rechenwege im Handel: Die Rückwärtskalkulation sucht zum vorgegebenen Verkaufspreis den höchsten tragbaren Einkaufspreis (meist den Bezugspreis; für den Listeneinkaufspreis noch die Bezugskosten abziehen, dann durch 1 minus Liefererskonto und durch 1 minus Liefererrabatt teilen), die Differenzkalkulation den Gewinn bei festen Ein- und Verkaufspreisen; Kalkulationszuschlag (bezogen auf den Bezugspreis) und Handelsspanne (bezogen auf den Nettoverkaufspreis, also den Listenverkaufspreis netto) beschreiben denselben Rohgewinn aus zwei Richtungen. Kundenskonto, Provision (Anteil für den Vermittler des Verkaufs) und Kundenrabatt werden im Hundert, also vom späteren höheren Preis aus, eingerechnet.",
-            "karten": 3,
-            "neu": null
-          },
-          {
             "id": "AP1-3-1-3-K12",
             "kurz": "Abrechnung nach Aufwand oder Pauschale",
             "stufe": 3,
@@ -6401,19 +6346,6 @@
             ],
             "vorgegeben": null,
             "erklaerung": "Vor einem Angebot prüft der Anbieter seine Lieferfähigkeit (Menge, Termin, Personal) und seine Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis).",
-            "karten": 2,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-3-K14",
-            "kurz": "Vorwärtskalkulation bis zum Barverkaufspreis",
-            "stufe": 3,
-            "herkunft": [
-              "katalog:AP1.01.02.2",
-              "buch:GS-2.8.2-S247-251"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Angebotspreis vom Bezugspreis aus (Vorwärtskalkulation im Handel): Bezugspreis (Einkaufspreis nach Nachlässen plus Bezugskosten) plus Zuschlag für Handlungskosten ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto); ohne Kundenskonto und -rabatt kommt darauf die Umsatzsteuer, sonst erst auf den Listenverkaufspreis netto.",
             "karten": 2,
             "neu": null
           },
@@ -6454,13 +6386,6 @@
             "titel": "Stundensatzkalkulationen bei Dienstleistungen durchführen",
             "von": 251,
             "bis": 252
-          },
-          {
-            "buch": 1,
-            "abschnitt": "2.8.2",
-            "titel": "Handelskalkulationen durchführen",
-            "von": 247,
-            "bis": 250
           },
           {
             "buch": 2,
@@ -30239,55 +30164,6 @@
       "h": "Er wird von den Gesamtkosten abgezogen. Ein Gerät mit hohem Restwert kann deshalb trotz höheren Kaufpreises günstiger sein."
     },
     {
-      "id": "AP1-3-1-3-K9-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K9",
-      "v": "Barverkaufspreis 980 €, Kundenskonto 2 %, Kundenrabatt 20 %, Umsatzsteuer 19 %. Berechne Zielverkaufspreis, Listenverkaufspreis netto und brutto. Gib den Rechenweg an.",
-      "h": "- Zielverkaufspreis: 980 € = 98 % → 980 € ÷ 0,98 = 1.000 € (Skonto 20 €)\n- Listenverkaufspreis netto: 1.000 € = 80 % → 1.000 € ÷ 0,8 = 1.250 € (Rabatt 250 €)\n- brutto: 1.250 € · 1,19 = 1.487,50 €"
-    },
-    {
-      "id": "AP1-3-1-3-K9-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K9",
-      "v": "Warum werden Kundenskonto und Kundenrabatt bei der Vorwärtskalkulation im Hundert gerechnet?",
-      "h": "Der Kunde zieht Rabatt und Skonto später vom höheren Preis ab (Listenverkaufspreis bzw. Zielverkaufspreis). Dieser höhere Preis ist daher 100 %, der bekannte niedrigere Preis entspricht z. B. 98 %. Man teilt also durch (100 % − Satz), statt den Satz aufzuschlagen."
-    },
-    {
-      "id": "AP1-3-1-3-K10-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K10",
-      "v": "Wie berechnet ein Händler den Handlungskostenzuschlagssatz?",
-      "h": "`Handlungskostenzuschlag in % = Handlungskosten ÷ Wareneinsatz × 100`\nHandlungskosten = alle Kosten außer dem Wareneinsatz."
-    },
-    {
-      "id": "AP1-3-1-3-K10-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K10",
-      "v": "Ein Händler hat im Jahr einen Wareneinsatz von 200.000 € und Handlungskosten von 60.000 €. Wie hoch ist der Handlungskostenzuschlagssatz?",
-      "h": "60.000 € ÷ 200.000 € × 100 = 30 %"
-    },
-    {
-      "id": "AP1-3-1-3-K11-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K11",
-      "v": "Ein Notebook soll für 1.320 € netto (Barverkaufspreis) verkauft werden. Der Händler rechnet mit 20 % Handlungskosten und 10 % Gewinn. Welchen Bezugspreis darf das Notebook höchstens kosten? Gib den Rechenweg an.",
-      "h": "Rückwärtskalkulation:\n- Selbstkosten: 1.320 € ÷ 1,10 = 1.200 €\n- Bezugspreis: 1.200 € ÷ 1,20 = 1.000 €\nHöchstens 1.000 € Bezugspreis."
-    },
-    {
-      "id": "AP1-3-1-3-K11-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K11",
-      "v": "Bezugspreis 800 €, Handlungskostenzuschlag 25 %, der Markt erlaubt nur einen Barverkaufspreis von 1.080 €. Wie hoch ist der Gewinn in Euro und Prozent?",
-      "h": "Differenzkalkulation:\n- Selbstkosten: 800 € · 1,25 = 1.000 €\n- Gewinn: 1.080 € − 1.000 € = 80 €\n- in %: 80 € ÷ 1.000 € × 100 = 8 % der Selbstkosten"
-    },
-    {
-      "id": "AP1-3-1-3-K11-3",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K11",
-      "v": "Bezugspreis 800 €, Verkaufspreis (netto) 1.000 €. Berechne Kalkulationszuschlag und Handelsspanne.",
-      "h": "Rohgewinn: 1.000 € − 800 € = 200 €\n- Kalkulationszuschlag (bezogen auf den Bezugspreis): 200 € ÷ 800 € × 100 = 25 %\n- Handelsspanne (bezogen auf den Verkaufspreis): 200 € ÷ 1.000 € × 100 = 20 %"
-    },
-    {
       "id": "AP1-3-1-3-K12-1",
       "sp": "AP1-3-1-3",
       "k": "AP1-3-1-3-K12",
@@ -30314,20 +30190,6 @@
       "k": "AP1-3-1-3-K13",
       "v": "Ein IT-Dienstleister könnte 50 PCs termingerecht liefern, der anfragende Kunde hat aber schon mehrere Rechnungen nicht bezahlt. Welcher Prüfpunkt spricht gegen das Angebot?",
       "h": "Die Lieferwilligkeit: Die Bonität des Kunden ist zweifelhaft. Die Lieferfähigkeit (Menge, Termin) ist gegeben."
-    },
-    {
-      "id": "AP1-3-1-3-K14-1",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K14",
-      "v": "Nenne die Schritte der Vorwärtskalkulation im Handel vom Bezugspreis bis zum Bruttopreis.",
-      "h": "- Bezugspreis\n- + Handlungskostenzuschlag = Selbstkosten\n- + Gewinnzuschlag = Barverkaufspreis (netto)\n- + Umsatzsteuer = Bruttopreis (ohne Kundenskonto und -rabatt; sonst kommt sie erst auf den Listenverkaufspreis netto)"
-    },
-    {
-      "id": "AP1-3-1-3-K14-2",
-      "sp": "AP1-3-1-3",
-      "k": "AP1-3-1-3-K14",
-      "v": "Bezugspreis 500 €, Handlungskostenzuschlag 30 %, Gewinnzuschlag 10 %, Umsatzsteuer 19 %. Berechne den Bruttoverkaufspreis.",
-      "h": "- Selbstkosten: 500 € · 1,30 = 650 €\n- Barverkaufspreis netto: 650 € · 1,10 = 715 €\n- brutto: 715 € · 1,19 = 850,85 €"
     },
     {
       "id": "AP1-3-1-3-K15-2",

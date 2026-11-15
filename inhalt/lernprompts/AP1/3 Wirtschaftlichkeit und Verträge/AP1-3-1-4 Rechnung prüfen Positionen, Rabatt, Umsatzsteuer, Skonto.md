@@ -158,7 +158,7 @@ Dann kann der Lieferant verlangen:
 - Eine Rechnung wird zweimal geprüft: sachlich (passt sie zu Bestellung und Lieferung?) und rechnerisch (stimmt der Rechenweg?). Eine Rechnung kann richtig gerechnet und trotzdem falsch sein, weil Menge, Preis oder Zahlungsbedingung nicht stimmen.
 - Berechnet werden darf nur, was geliefert wurde. Die Menge wird deshalb mit dem Lieferschein verglichen, nicht nur mit der Bestellung.
 - Skonto steht auf der Rechnung nur als Hinweis, weil beim Schreiben der Rechnung noch nicht feststeht, ob der Kunde rechtzeitig zahlt.
-- Abgrenzung: Rabattgründe, GiroCode und E-Rechnung gehören zum Nachbarstichpunkt „Preisnachlässe und Bezahlen“; wie ein Verkäufer Skonto und Rabatt in seinen Preis einrechnet, gehört zur Kalkulation.
+- Abgrenzung: Rabattgründe, GiroCode und E-Rechnung gehören zum Nachbarstichpunkt „Preisnachlässe und Bezahlen“.
 
 **Typische Missverständnisse:**
 - Viele denken, Skonto werde vom Nettobetrag gerechnet; richtig ist: vom Rechnungsbetrag (brutto), denn der wird überwiesen.

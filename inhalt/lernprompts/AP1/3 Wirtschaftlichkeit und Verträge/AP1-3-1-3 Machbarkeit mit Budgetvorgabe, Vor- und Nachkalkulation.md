@@ -94,24 +94,6 @@ Tatsächliche Stunden: Arbeitstage abzüglich Urlaub, Krankheit und Feiertage, m
 Beispiel: Ein Mitarbeiter kostet im Jahr 52.000 €. Von 260 Arbeitstagen gehen 10 Feiertage, 30 Urlaubstage und 10 Krankheitstage ab → 210 Tage × 8 h = 1.680 h.
 52.000 € ÷ 1.680 h ≈ **30,95 € je Stunde**.
 
-### K9 – Vom Barverkaufspreis zum Listenverkaufspreis (Stufe 4 Beurteilen)
-Du kannst vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis (zuzüglich Umsatzsteuer) rechnen und begründen, warum Skonto und Rabatt im Hundert vom höheren Preis berechnet werden.
-
-Erklärung:
-Vollständige Handelskalkulation: vom Barverkaufspreis mit Kundenskonto zum Zielverkaufspreis und mit Kundenrabatt zum Listenverkaufspreis; Skonto und Rabatt rechnet man dabei vom höheren Endpreis aus (im Hundert), weil der Kunde sie später von diesem höheren Preis abzieht – du teilst also durch 1 minus Satz.
-
-### K10 – Zuschlagssatz für Handlungskosten (Stufe 3 Anwenden)
-Du kannst den Handlungskostenzuschlagssatz berechnen: Handlungskosten (alle Kosten außer dem Wareneinsatz) geteilt durch den Wareneinsatz, mal 100.
-
-Erklärung:
-Den Zuschlagssatz für Handlungskosten ermittelt ein Händler aus seinen Handlungskosten (alle Kosten außer dem Wareneinsatz) geteilt durch den Wareneinsatz (was die verkauften Waren im Einkauf gekostet haben), mal 100.
-
-### K11 – Rückwärts-, Differenzkalkulation, Handelsspanne (Stufe 4 Beurteilen)
-Du kannst Rückwärtskalkulation (höchster tragbarer Einkaufspreis zum vorgegebenen Verkaufspreis) und Differenzkalkulation (Gewinn bei festen Preisen) durchrechnen sowie Kalkulationszuschlag (auf den Bezugspreis) und Handelsspanne (auf den Verkaufspreis) berechnen.
-
-Erklärung:
-Weitere Rechenwege im Handel: Die Rückwärtskalkulation sucht zum vorgegebenen Verkaufspreis den höchsten tragbaren Einkaufspreis (meist den Bezugspreis; für den Listeneinkaufspreis noch die Bezugskosten abziehen, dann durch 1 minus Liefererskonto und durch 1 minus Liefererrabatt teilen), die Differenzkalkulation den Gewinn bei festen Ein- und Verkaufspreisen; Kalkulationszuschlag (bezogen auf den Bezugspreis) und Handelsspanne (bezogen auf den Nettoverkaufspreis, also den Listenverkaufspreis netto) beschreiben denselben Rohgewinn aus zwei Richtungen. Kundenskonto, Provision (Anteil für den Vermittler des Verkaufs) und Kundenrabatt werden im Hundert, also vom späteren höheren Preis aus, eingerechnet.
-
 ### K12 – Abrechnung nach Aufwand oder Pauschale (Stufe 3 Anwenden)
 Du kannst die Abrechnung einer Dienstleistung nach Aufwand (Stunden mal Stundensatz) von der Pauschale unterscheiden und Fahrt-, Reise- und Fremdkosten als Sondereinzelkosten getrennt berechnen.
 
@@ -123,12 +105,6 @@ Du kannst vor einem Angebot Lieferfähigkeit (Menge, Termin, Personal) und Liefe
 
 Erklärung:
 Vor einem Angebot prüft der Anbieter seine Lieferfähigkeit (Menge, Termin, Personal) und seine Lieferwilligkeit (Bonität des Kunden, eigene Liquidität, erzielbarer Preis).
-
-### K14 – Vorwärtskalkulation bis zum Barverkaufspreis (Stufe 3 Anwenden)
-Du kannst im Handel vorwärts kalkulieren: Bezugspreis plus Handlungskostenzuschlag ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto), darauf kommt ohne Kundenskonto und -rabatt die Umsatzsteuer.
-
-Erklärung:
-Angebotspreis vom Bezugspreis aus (Vorwärtskalkulation im Handel): Bezugspreis (Einkaufspreis nach Nachlässen plus Bezugskosten) plus Zuschlag für Handlungskosten ergibt die Selbstkosten, plus Gewinnzuschlag den Barverkaufspreis (netto); ohne Kundenskonto und -rabatt kommt darauf die Umsatzsteuer, sonst erst auf den Listenverkaufspreis netto.
 
 ### K15 – Stundenverrechnungssatz netto und brutto berechnen (Stufe 3 Anwenden)
 Du kannst einen Stundenverrechnungssatz berechnen: Selbstkosten im Jahr geteilt durch die abrechenbaren Stunden ergibt den Selbstkostensatz, mal (1 + Gewinnzuschlag) den Netto-Stundensatz und mit 19 % Umsatzsteuer den Brutto-Stundensatz.
@@ -157,34 +133,27 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 ## Lehrnotiz: Machbarkeit mit Budgetvorgabe, Vor- und Nachkalkulation
 
 **Aufteilung:**
-- Teil A – Projekt kalkulieren und bewerten: Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5
+- Teil A – Projekt kalkulieren und bewerten: vor dem Angebot K13; Kosten K1, K12; Budget K2; Vor- und Nachkalkulation K3, K4, K5
 - Pause möglich nach Teil A.
 - Teil B – Stundensätze: gearbeitete Stunde K6; verkaufte Stunde K15; kostendeckender Preis je Einheit K16
-- Pause möglich nach Teil B.
-- Teil C – Handelskalkulation: vor dem Angebot K13; vorwärts K10, K14, K9; rückwärts, Differenz und Spanne K11
 
-**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K9–K15
+**Schon geprüft:** In Prüfungen: K1 (2021H), K6 (2022H), K16 (2023H) · Noch nicht geprüft: K2–K5, K12, K13, K15
 
 **Kerngedanken:**
-- Gemeinkosten sind Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören (Miete, Verwaltung, Büro). Beim Dienstleister werden sie über den Stundensatz auf alle Aufträge verteilt. Im Handel gehört nur der Wareneinsatz direkt zur Ware; alle übrigen Kosten, auch die Personalkosten, sind Handlungskosten und kommen als Zuschlag auf die Ware.
+- Gemeinkosten sind Kosten des Betriebs, die zu keinem einzelnen Auftrag gehören (Miete, Verwaltung, Büro). Beim Dienstleister werden sie über den Stundensatz auf alle Aufträge verteilt.
 - Der effektive Stundensatz sagt nur, was eine tatsächlich gearbeitete Stunde eines Mitarbeiters den Betrieb kostet. Der Stundenverrechnungssatz ist der Preis für Kunden: Er deckt zusätzlich die Gemeinkosten, die gearbeitete, aber nicht abrechenbare Zeit (Akquise, Warten, interne Aufgaben) und den Gewinn.
 - Eine Abweichung bewerten heißt drei Dinge liefern: den Prozentwert, das Urteil (üblich oder deutlich) und einen Satz, was daraus folgt – Ursache klären, künftig genauer planen. Wer die Mehrkosten trägt, hängt von der Abrechnungsart ab: bei Festpreis oder Pauschale der Anbieter (nur dann sinkt sein Gewinn, wie es der Stoff sagt), nach Aufwand der Kunde. Das gehört nur dazu, wenn die Aufgabe die Abrechnungsart nennt.
-- Im Handel bezieht sich jeder Prozentsatz auf einen bestimmten Wert: Zuschläge (Handlungskosten, Gewinn) auf den kleineren Wert davor, Abzüge des Kunden (Skonto, Rabatt) auf den größeren danach. Ist der Bezugswert bekannt, multipliziert man; ist er gesucht, teilt man. Vorwärts: Zuschläge aufschlagen, Skonto und Rabatt „im Hundert“ durch Teilen einrechnen. Rückwärts: Rabatt und Skonto abziehen, Gewinn und Handlungskosten herausteilen.
 
 **Typische Missverständnisse:**
-- Viele denken, vorwärts schlage man das Kundenskonto auf den Barverkaufspreis auf; richtig ist: Man teilt durch (1 − Skontosatz). Die Probe aus Kundensicht zeigt es.
-- Viele denken, Kalkulationszuschlag und Handelsspanne seien verschiedene Beträge; richtig ist: derselbe Rohgewinn in Euro, einmal durch den Bezugspreis, einmal durch den Verkaufspreis geteilt – der Zuschlag ist darum immer der größere Prozentwert.
+- Viele denken, der effektive Stundensatz sei schon der Preis für den Kunden; richtig ist: Er zeigt nur, was eine gearbeitete Stunde den Betrieb kostet – im Stundenverrechnungssatz kommen Gemeinkosten, nicht abrechenbare Zeit und Gewinn dazu.
+- Viele denken, der Prozentwert einer Abweichung beziehe sich auf die tatsächlichen Kosten; richtig ist: auf die geplanten Kosten aus der Vorkalkulation (Abweichung = Nach − Vor).
 
 **Fachwörter:**
 - Gemeinkosten: Betriebskosten, die keinem einzelnen Auftrag gehören
 - Selbstkosten: alle eigenen Kosten ohne Gewinn
 - Sondereinzelkosten: nur für einen Auftrag angefallen, getrennt berechnet
-- Bezugspreis: Einstandspreis; Listeneinkaufspreis minus Liefererrabatt und Liefererskonto plus Bezugskosten
-- Handlungskosten: alle Kosten des Händlers außer Wareneinsatz
-- Barverkaufspreis: Nettopreis nach Abzug von Rabatt und Skonto
-- Rohgewinn: Verkaufspreis netto minus Bezugspreis
 
-**So fragt die IHK:** Kurze Rechenaufgaben in einer Kundensituation, Operator „berechnen“, Rechenweg angeben. Vorgekommen sind Projektkosten (2021H, 2 Punkte), ein effektiver Stundensatz (2022H, 5 Punkte, krumme Stunden je Tag) und ein kostendeckender Preis je Einheit (2023H, 5 Punkte: Kosten summieren, durch die Menge teilen, auf den nächsten Cent aufrunden – dieselbe Logik wie der Selbstkostensatz). Stundenverrechnungssatz und Handelskalkulation kamen in den ausgewerteten Prüfungen nicht vor. Zu Budgetvergleich und Abweichung gibt es keine echte Aufgabe; zu erwarten ist: Kosten berechnen, mit Budget oder Plan vergleichen und mit Zahlen begründet urteilen.
+**So fragt die IHK:** Kurze Rechenaufgaben in einer Kundensituation, Operator „berechnen“, Rechenweg angeben. Vorgekommen sind Projektkosten (2021H, 2 Punkte), ein effektiver Stundensatz (2022H, 5 Punkte, krumme Stunden je Tag) und ein kostendeckender Preis je Einheit (2023H, 5 Punkte: Kosten summieren, durch die Menge teilen, auf den nächsten Cent aufrunden – dieselbe Logik wie der Selbstkostensatz). Der Stundenverrechnungssatz kam in den ausgewerteten Prüfungen nicht vor. Zu Budgetvergleich und Abweichung gibt es keine echte Aufgabe; zu erwarten ist: Kosten berechnen, mit Budget oder Plan vergleichen und mit Zahlen begründet urteilen.
 
 **Fallen:**
 - Teil A: Nur mit Angaben rechnen und bewerten, die in der Aufgabe stehen: Ist keine Abrechnungsart genannt, darf weder Aufgabe noch Lösung einen Pauschalpreis voraussetzen.
@@ -193,17 +162,3 @@ In der Prüfung zählte jeder Rechenschritt einen Punkt – schreib also jede Zw
 - Teil A: Fahrtkosten werden getrennt ausgewiesen, aber mitgerechnet: Alle Posten müssen in der Summe stehen, bevor mit dem Budget verglichen wird.
 - Teil A: Abweichung immer als Nach − Vor rechnen, sonst kippt das Vorzeichen; der Prozentwert bezieht sich auf die geplanten, nicht auf die tatsächlichen Kosten.
 - Teil B: Beim effektiven Stundensatz die Stunden je Tag aus der Aufgabe nehmen, nicht automatisch acht.
-- Teil C: Der Gewinn bezieht sich immer auf die Selbstkosten, weder auf den Bezugspreis noch auf den Verkaufspreis – auch in der Differenzkalkulation.
-- Teil C: Vorwärts erst Skonto, dann Rabatt einrechnen; rückwärts genau umgekehrt: erst Rabatt, dann Skonto abziehen, dann Gewinn, dann Handlungskosten herausteilen.
-- Teil C: Rückwärts werden Gewinn und Handlungskosten durch (1 + Satz) herausgeteilt, nicht als Prozent vom Verkaufspreis abgezogen.
-- Teil C: Rückwärts endet die Rechnung beim höchsten Bezugspreis, solange die Aufgabe weder Bezugskosten noch Nachlässe des Lieferers nennt. Nennt sie welche, geht es weiter bis zum Listeneinkaufspreis: Bezugskosten abziehen, dann erst Liefererskonto, danach Liefererrabatt herausteilen (÷ (1 − Satz)), weil sich beide auf den höheren Preis davor beziehen.
-
-**Material:** Schema der Handelskalkulation (Bezug jeder Prozentzeile in Klammern)
-- Bezugspreis
-- + Handlungskosten (vom Bezugspreis) = Selbstkosten
-- + Gewinn (von den Selbstkosten) = Barverkaufspreis
-- + Kundenskonto, ggf. Provision (vom Zielverkaufspreis) = Zielverkaufspreis
-- + Kundenrabatt (vom Listenverkaufspreis netto) = Listenverkaufspreis netto
-- + Umsatzsteuer (vom Listenverkaufspreis netto) = Listenverkaufspreis brutto
-
-Ohne Kundenskonto und Kundenrabatt ist der Barverkaufspreis schon der Listenverkaufspreis netto; nur dann kommt die Umsatzsteuer direkt auf ihn.
