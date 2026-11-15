@@ -66,7 +66,10 @@ Erklärung:
 - **Frühestes Projektende:** das Ende des Balkens, der am weitesten rechts endet.
 - **Freier Puffer eines Vorgangs:** die freien Tage zwischen seinem Balkenende und dem Balkenbeginn seines frühesten Nachfolgers; hat er keinen Nachfolger, die freien Tage bis zum Projektende.
 Beispiel: Der Balken von C endet in der Spalte Tag 4, der Balken seines Nachfolgers E beginnt erst in der Spalte Tag 7 → frei sind Tag 5 und 6 → C hat 2 Tage Puffer (im Netzplan: FEZ von C = 4, FAZ von E = 6).
-Das ist der freie Puffer. Bei einer Kette nichtkritischer Vorgänge hat der erste Vorgang oft keine Lücke, aber trotzdem Puffer: Ist der „größte Puffer“ gefragt, zählt der **Gesamtpuffer** – vom Ende des letzten Balkens der Kette bis zum Beginn des nächsten kritischen Vorgangs (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende) bzw. bis zum Projektende; er gilt für jeden Vorgang der Kette.
+Das ist der freie Puffer. Ein Vorgang ohne Lücke kann trotzdem Puffer haben, wenn weiter hinten eine Lücke liegt: Ist der „größte Puffer“ gefragt, zählt der **Gesamtpuffer** – so viele Tage darf sich der Vorgang verschieben, ohne dass sich das Projektende verschiebt (kritisch = ohne Puffer: Jede Verzögerung verschiebt das Projektende).
+- **Gesamtpuffer ablesen**, von hinten nach vorn: eigene Lücke bis zum Nachfolger plus Gesamtpuffer dieses Nachfolgers (ein kritischer Nachfolger hat 0). Bei mehreren Nachfolgern rechnest du das für jeden und nimmst den kleinsten Wert; ohne Nachfolger zählt die Lücke bis zum Projektende.
+- **Einfache Kette** (jeder Vorgang hat nur einen Nachfolger, dazwischen keine Lücken): Alle Vorgänge der Kette haben denselben Gesamtpuffer – die Lücke hinter dem letzten Balken der Kette.
+- **Achtung bei Verzweigungen:** Wartet ein Nachfolger noch auf einen anderen Vorgang, entsteht vor ihm eine weitere Lücke, und die Puffer sind verschieden. Beispiel: B wartet auf A (endet Tag 2) und E (endet Tag 6) und hat danach 2 Tage Lücke bis zum kritischen Nachfolger → B hat Gesamtpuffer 2, A hat 4 + 2 = 6.
 Vergleiche alle Puffer – der größte ist gesucht.
 
 ### K4 – Projektstrukturplan gegenüber Gantt-Diagramm (Stufe 2 Verstehen)
@@ -150,6 +153,7 @@ In der Praxis werden die Arten auch gemischt, z. B. oben nach Phasen, darunter n
 - Gantt: die Balken zeichnen, aber die Abhängigkeiten nicht einzeichnen.
 - Ablesen: Spaltennummern voneinander abziehen, statt die freien Tage zwischen den Balken zu zählen; das Ergebnis ist dann um 1 zu groß.
 - Ablesen: bei einem Vorgang mit Nachfolger bis zum Projektende zählen statt bis zum Nachfolger.
+- Ablesen: allen Vorgängen eines Wegs denselben Gesamtpuffer geben, obwohl vor einem von ihnen noch eine Lücke liegt, weil er auf einen anderen Vorgang wartet.
 - Werkzeugwahl: allgemein begründen („ist übersichtlicher“) oder beim Beurteilen nicht sagen, wofür das abgelehnte Werkzeug das richtige wäre.
 
 **Material:**

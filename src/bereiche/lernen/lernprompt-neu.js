@@ -16,8 +16,16 @@ function zerlege(fest) {
   return m ? { kopf: m[1].trim(), stoff: m[2].trim(), notiz: m[3].trim() } : null;
 }
 
-// Regeln für die Wiederholung; in WiSo sind die Aufgaben gebunden wie in der Prüfung
-export function wiederholRegeln(raum, mehrere) {
+// Regeln für die Wiederholung; in WiSo sind die Aufgaben gebunden wie in der Prüfung.
+// Bei mehreren Stichpunkten wächst die Zahl der Aufgaben mit (mindestens zwei je Stichpunkt, zusammen mindestens 10),
+// damit das Urteil je Stichpunkt eine Grundlage hat.
+export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
+  const auswertung = mehrere
+    ? `- Stell zu jedem Stichpunkt mindestens zwei Aufgaben, zusammen etwa ${Math.max(10, 2 * anzahl)}. Danach wertest du aus, was sitzt und was wackelt – je Stichpunkt. Was wackelt, erklärst du kurz noch einmal und stellst dazu eine weitere Aufgabe.`
+    : '- Nach etwa 5 Aufgaben wertest du aus, was sitzt und was wackelt. Was wackelt, erklärst du kurz noch einmal und stellst dazu eine weitere Aufgabe.';
+  const urteil = mehrere
+    ? '- Zum Schluss schreibst du je Stichpunkt entweder „✅ Sitzt noch: <Titel des Stichpunkts>“ oder „🔁 Noch einmal lernen: <Titel des Stichpunkts>“ – dann öffne ich ihn in meinem Lernplan wieder. Ein Urteil gibst du nur zu Stichpunkten ab, zu denen ich mindestens zwei Aufgaben beantwortet habe; fehlt eine, stell sie vorher.'
+    : '- Zum Schluss schreibst du entweder „✅ Sitzt noch: <Titel des Stichpunkts>“ oder „🔁 Noch einmal lernen: <Titel des Stichpunkts>“ – dann öffne ich ihn in meinem Lernplan wieder.';
   const was = mehrere ? 'Diese Stichpunkte' : 'Diesen Stichpunkt';
   const aufgaben =
     raum === 'WISO'
@@ -32,8 +40,8 @@ export function wiederholRegeln(raum, mehrere) {
     aufgaben,
     '- Nach meiner Antwort: sag kurz, was richtig war, wo der Fehler liegt und wie die richtige Antwort lautet. Zeig Lösungen nie, bevor ich geantwortet habe. Stimmt der Inhalt und fehlt nur das Fachwort, zählt die Antwort als richtig: Nenn mir das Wort und geh weiter.',
     '- Der Stoff ist verbindlich. Hältst du etwas darin für falsch oder veraltet, sag es offen mit „⚠️ Hinweis zum Stoff: …“. Steht bei einer Aussage „in der Prüfung vorgegeben“, muss ich das nur anwenden.',
-    `- Nach etwa ${mehrere ? 10 : 5} Aufgaben wertest du aus, was sitzt und was wackelt${mehrere ? ' – je Stichpunkt' : ''}. Was wackelt, erklärst du kurz noch einmal und stellst dazu eine weitere Aufgabe.`,
-    `- Zum Schluss schreibst du ${mehrere ? 'je Stichpunkt' : ''} entweder „✅ Sitzt noch: <Titel des Stichpunkts>“ oder „🔁 Noch einmal lernen: <Titel des Stichpunkts>“ – dann öffne ich ihn in meinem Lernplan wieder.`.replace('  ', ' '),
+    auswertung,
+    urteil,
     '- Schreibe ich „Pause“, fass in zwei Zeilen zusammen, wo wir stehen; später mache ich im selben Chat weiter.',
     '',
     'Antworte auf Deutsch.',
@@ -63,7 +71,7 @@ function wiederholBlock(block, ids, index, stand) {
     const notiz = stand.notizen.get(sp.id);
     return [`# Stichpunkt ${i + 1} von ${sps.length}: ${sp.titel}`, '', teile[i].stoff, '', teile[i].notiz, notiz ? `\n## Meine eigene Notiz dazu\n\n${notiz}` : null].filter((z) => z !== null).join('\n');
   });
-  return [kopf, '', wiederholRegeln(block.raum, sps.length > 1), '', abschnitte.join('\n\n'), ''].join('\n');
+  return [kopf, '', wiederholRegeln(block.raum, sps.length > 1, sps.length), '', abschnitte.join('\n\n'), ''].join('\n');
 }
 
 // { text, was } – `was` ist der Name für die Meldung nach dem Kopieren

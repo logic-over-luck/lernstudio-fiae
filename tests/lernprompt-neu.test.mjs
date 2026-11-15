@@ -100,3 +100,21 @@ test('Block in AP1: fester Prompt des nächsten offenen Stichpunkts, alles abgeh
     assert.ok(fertig.text.includes(fest.slice(fest.indexOf('## Lehrnotiz: ')).trim()), id);
   }
 });
+
+test('Wiederholung: Die Zahl der Aufgaben wächst mit der Zahl der Stichpunkte, Urteil nur nach zwei Aufgaben je Stichpunkt', () => {
+  const einzeln = promptStichpunkt(index.sp.get('AP1-1-1-1'), index, stand(['AP1-1-1-1']));
+  assert.ok(einzeln.includes('- Nach etwa 5 Aufgaben wertest du aus, was sitzt und was wackelt.'));
+  assert.ok(einzeln.includes('- Zum Schluss schreibst du entweder „✅ Sitzt noch:'));
+  assert.ok(!einzeln.includes('mindestens zwei Aufgaben'));
+  const groessen = new Set();
+  for (const block of index.bloecke.values()) {
+    if (block.raum !== 'AP1' || block.sp.length < 2) continue;
+    const { text, was } = promptBlock(block, index, stand(block.sp));
+    assert.equal(was, 'Wiederholungs-Prompt', block.id);
+    const zahl = Math.max(10, 2 * block.sp.length);
+    assert.ok(text.includes(`- Stell zu jedem Stichpunkt mindestens zwei Aufgaben, zusammen etwa ${zahl}. Danach`), block.id);
+    assert.ok(text.includes('Ein Urteil gibst du nur zu Stichpunkten ab, zu denen ich mindestens zwei Aufgaben beantwortet habe'), block.id);
+    groessen.add(zahl);
+  }
+  assert.ok(groessen.has(10) && groessen.has(16), [...groessen].join(','));
+});
