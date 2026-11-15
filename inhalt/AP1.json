@@ -6543,10 +6543,6 @@
           "Du kannst Kontrollvorgänge beim Abgleich der Rechnungspositionen beschreiben: Menge mit Lieferschein, Preis mit Angebot oder Bestellung, Rechenweg und Steuer nachrechnen."
         ],
         [
-          "AP1-3-1-4-K8",
-          "Du kannst erklären, warum sich das Ausnutzen von Skonto fast immer lohnt: Der Nachlass von meist 2 bis 3 % für eine nur wenige Tage oder Wochen frühere Zahlung entspricht auf das Jahr umgerechnet einem Zinssatz, der weit über den Zinsen eines Kredits liegt."
-        ],
-        [
           "AP1-3-1-4-K9",
           "Du kannst den Ablauf einer Beschaffung beschreiben: Anfrage, Angebot, Bestellung, Wareneingang mit Prüfung, Rechnungseingang mit Prüfung, Zahlung – wobei jeder Schritt beim Lieferanten ein Gegenstück hat, etwa Auftragsbestätigung, Versand mit Lieferschein und Rechnungsstellung."
         ],
@@ -6661,18 +6657,6 @@
             "vorgegeben": null,
             "erklaerung": "- **Artikel und Menge** mit dem Lieferschein vergleichen: Wurde wirklich so viel geliefert?\n- **Einzelpreis und Rabatt** mit Angebot oder Bestellung vergleichen: Stimmt der vereinbarte Preis?\n- **Rechenweg** nachrechnen: Menge × Preis, Rabatt, Summe.\n- **Steuer** nachrechnen: richtiger Satz, richtiger Betrag.\n- **Zahlungsziel und Skonto** mit der Bestellung vergleichen.",
             "karten": 1,
-            "neu": null
-          },
-          {
-            "id": "AP1-3-1-4-K8",
-            "kurz": "Skontoausnutzung gegen Kreditzinsen",
-            "stufe": 2,
-            "herkunft": [
-              "buch:GS-2.8.2-S248"
-            ],
-            "vorgegeben": null,
-            "erklaerung": "Beispiel: „Zahlbar in 30 Tagen netto, bei Zahlung in 10 Tagen 2 % Skonto.“\n- Wer Skonto nutzt, zahlt **20 Tage früher** (30 − 10) und spart 2 %.\n- Aufs Jahr hochgerechnet (Näherung): `2 % × 360 ÷ 20 = 36 %`.\n- Ein Kontokorrentkredit (der Überziehungskredit auf dem Geschäftskonto) kostet deutlich weniger.\nDeshalb lohnt es sich sogar, die frühere Zahlung kurz mit einem Kredit zu überbrücken. Skonto **nicht** zu nutzen, ist wie ein sehr teurer Kredit beim Lieferanten.",
-            "karten": 2,
             "neu": null
           },
           {
@@ -30426,20 +30410,6 @@
       "k": "AP1-3-1-3-K16",
       "v": "Eine Nacht-Hotline kostet 550 € Bereitschaft, dazu 0,50 € je Gesprächsminute; erwartet werden 300 Minuten. Welcher einheitliche Minutenpreis deckt die Kosten genau? Runde auf den nächsten Cent auf.",
       "h": "- Kosten: 550 € + 300 min · 0,50 € = 700 €\n- 700 € ÷ 300 min = 2,3333… €\n- aufgerundet: 2,34 € je Minute (2,33 € brächten nur 699 €)"
-    },
-    {
-      "id": "AP1-3-1-4-K8-1",
-      "sp": "AP1-3-1-4",
-      "k": "AP1-3-1-4-K8",
-      "v": "Zahlungsbedingung: 30 Tage netto, 10 Tage 2 % Skonto. Welchem Jahreszins entspricht das ungefähr?",
-      "h": "Man zahlt 20 Tage früher und spart 2 %: 2 % × 360 ÷ 20 ≈ **36 %** im Jahr."
-    },
-    {
-      "id": "AP1-3-1-4-K8-2",
-      "sp": "AP1-3-1-4",
-      "k": "AP1-3-1-4-K8",
-      "v": "Warum lohnt es sich, Skonto notfalls mit einem Kontokorrentkredit zu bezahlen?",
-      "h": "Die Kreditzinsen für die wenigen Tage sind viel geringer als der eingesparte Skonto – aufs Jahr gerechnet liegt Skonto weit über üblichen Kreditzinsen."
     },
     {
       "id": "AP1-3-1-4-K9-1",

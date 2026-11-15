@@ -117,16 +117,6 @@ Erklärung:
 - **Steuer** nachrechnen: richtiger Satz, richtiger Betrag.
 - **Zahlungsziel und Skonto** mit der Bestellung vergleichen.
 
-### K8 – Skontoausnutzung gegen Kreditzinsen (Stufe 2 Verstehen)
-Du kannst erklären, warum sich das Ausnutzen von Skonto fast immer lohnt: Der Nachlass von meist 2 bis 3 % für eine nur wenige Tage oder Wochen frühere Zahlung entspricht auf das Jahr umgerechnet einem Zinssatz, der weit über den Zinsen eines Kredits liegt.
-
-Erklärung:
-Beispiel: „Zahlbar in 30 Tagen netto, bei Zahlung in 10 Tagen 2 % Skonto.“
-- Wer Skonto nutzt, zahlt **20 Tage früher** (30 − 10) und spart 2 %.
-- Aufs Jahr hochgerechnet (Näherung): `2 % × 360 ÷ 20 = 36 %`.
-- Ein Kontokorrentkredit (der Überziehungskredit auf dem Geschäftskonto) kostet deutlich weniger.
-Deshalb lohnt es sich sogar, die frühere Zahlung kurz mit einem Kredit zu überbrücken. Skonto **nicht** zu nutzen, ist wie ein sehr teurer Kredit beim Lieferanten.
-
 ### K9 – Ablauf einer Beschaffung mit Gegenstücken beim Lieferanten (Stufe 2 Verstehen)
 Du kannst den Ablauf einer Beschaffung beschreiben: Anfrage, Angebot, Bestellung, Wareneingang mit Prüfung, Rechnungseingang mit Prüfung, Zahlung – wobei jeder Schritt beim Lieferanten ein Gegenstück hat, etwa Auftragsbestätigung, Versand mit Lieferschein und Rechnungsstellung.
 
@@ -159,10 +149,10 @@ Dann kann der Lieferant verlangen:
 - Mit Bestellung und Lieferschein abgleichen: K3, K7, K5
 - Pause möglich nach dem Abgleich.
 - Nachrechnen und Reihenfolge: K1, K4
-- Bezahlen mit Skonto: K2, K8
+- Bezahlen mit Skonto: K2
 - Zu spät gezahlt: K10
 
-**Schon geprüft:** In Prüfungen: K2 (2025H), K6 (2025H), K7 (2025H) · Noch nicht geprüft: K1, K3–K5, K8–K10
+**Schon geprüft:** In Prüfungen: K2 (2025H), K6 (2025H), K7 (2025H) · Noch nicht geprüft: K1, K3–K5, K9, K10
 
 **Kerngedanken:**
 - Eine Rechnung wird zweimal geprüft: sachlich (passt sie zu Bestellung und Lieferung?) und rechnerisch (stimmt der Rechenweg?). Eine Rechnung kann richtig gerechnet und trotzdem falsch sein, weil Menge, Preis oder Zahlungsbedingung nicht stimmen.
@@ -172,7 +162,6 @@ Dann kann der Lieferant verlangen:
 
 **Typische Missverständnisse:**
 - Viele denken, Skonto werde vom Nettobetrag gerechnet; richtig ist: vom Rechnungsbetrag (brutto), denn der wird überwiesen.
-- Viele denken, beim Jahreszins des Skontos zähle die Skontofrist; richtig ist: Es zählen die Tage, die man früher zahlt (Zahlungsziel minus Skontofrist).
 - Viele denken, Lieferschein und Rechnung seien derselbe Beleg; richtig ist: zwei Belege zu zwei Schritten mit je eigenem Datum.
 
 **Fachwörter:**
