@@ -103,12 +103,12 @@ Erklärung:
 Deshalb: Für einen Fernzugriff über ein Netz immer SSH.
 
 ### K10 – Passendes Verschlüsselungsverfahren auswählen (Stufe 4 Beurteilen)
-Du kannst für einen Fall begründet auswählen, welches Verschlüsselungsverfahren passt: symmetrisch (zum Beispiel AES) für die eigene Festplatte oder große Datenmengen, weil es schnell ist und kein Schlüssel an andere gelangen muss; hybrid für E-Mails an Partner und für Webseiten (HTTPS mit TLS), weil der Sitzungsschlüssel asymmetrisch (zum Beispiel RSA) sicher übertragen und die Daten schnell symmetrisch verschlüsselt werden.
+Du kannst für einen Fall begründet auswählen, welches Verschlüsselungsverfahren passt: symmetrisch (zum Beispiel AES) für die eigene Festplatte oder große Datenmengen, weil es schnell ist und kein Schlüssel an andere gelangen muss; hybrid für E-Mails an Partner und für Webseiten (HTTPS mit TLS), weil der Sitzungsschlüssel asymmetrisch (zum Beispiel RSA) sicher ausgetauscht und die Daten schnell symmetrisch verschlüsselt werden.
 
 Erklärung:
 Frag: **Wer** muss die Daten entschlüsseln, und **wie viele** Daten sind es?
 - **Eigene Festplatte, Backup, große Datenmengen:** **symmetrisch (z. B. AES)** – schnell, und der Schlüssel bleibt bei dir, es muss nichts ausgetauscht werden.
-- **E-Mail an Partner, Webseite (HTTPS):** **hybrid** – die Daten werden schnell symmetrisch verschlüsselt, der Sitzungsschlüssel asymmetrisch (z. B. **RSA**) mit dem öffentlichen Schlüssel des Empfängers geschützt. So braucht es keinen geheimen Schlüsseltausch vorab. Bei Webseiten heißt das Verfahren **TLS**.
+- **E-Mail an Partner, Webseite (HTTPS):** **hybrid** – die Daten werden schnell symmetrisch verschlüsselt, der Sitzungsschlüssel wird asymmetrisch geschützt: bei der E-Mail mit dem öffentlichen Schlüssel des Empfängers verschlüsselt (z. B. **RSA**), bei Webseiten mit **TLS** per Diffie-Hellman vereinbart (K4). So braucht es keinen geheimen Schlüsseltausch vorab.
 - **Rein asymmetrisch** verschlüsselt man große Daten nicht – das wäre zu langsam.
 
 ## Lehrnotiz: Symmetrische, asymmetrische und hybride Verschlüsselung

@@ -9706,7 +9706,7 @@
         ],
         [
           "PB1-10-1-3-K2",
-          "Du kannst die Art der Transportverschlüsselung bei TLS und bei der E-Mail-Übertragung nennen und erläutern: hybrid, also Sitzungsschlüssel asymmetrisch ausgehandelt (bei TLS 1.3 per Diffie-Hellman), Server per Zertifikat geprüft, Daten symmetrisch mit dem Sitzungsschlüssel verschlüsselt."
+          "Du kannst die Art der Transportverschlüsselung bei TLS und bei der E-Mail-Übertragung nennen und erläutern: hybrid, also Sitzungsschlüssel asymmetrisch ausgehandelt (bei heute üblichem TLS per Diffie-Hellman), Server per Zertifikat geprüft, Daten symmetrisch mit dem Sitzungsschlüssel verschlüsselt."
         ],
         [
           "PB1-10-1-3-K3",
@@ -9794,7 +9794,7 @@
               "buch:GS-3.4.4-S328"
             ],
             "vorgegeben": null,
-            "erklaerung": "TLS und E-Mail-Transport sind **hybrid**:\n- Sitzungsschlüssel wird **asymmetrisch ausgehandelt** (TLS 1.3: Diffie-Hellman)\n- der **Server** wird per **Zertifikat** geprüft\n- die Daten werden **symmetrisch** mit dem Sitzungsschlüssel verschlüsselt\n**Warum hybrid?** Asymmetrische Verfahren sind sehr rechenaufwendig, symmetrische schnell; hybrid vereint die Vorteile beider.\n**Vorteil gegenüber rein symmetrisch:** Die Partner brauchen kein vorher vereinbartes gemeinsames Geheimnis (Pre-Shared-Secret); der Sitzungsschlüssel entsteht je Verbindung neu.\nAchtung: Gefragt ist die **Art** des Verfahrens, richtig ist nur „hybrid“. Die Antwort „asymmetrisch“ oder der Protokollname „TLS“ gibt in der Prüfung 0 Punkte.",
+            "erklaerung": "TLS und E-Mail-Transport sind **hybrid**:\n- Sitzungsschlüssel wird **asymmetrisch ausgehandelt** (heute übliches TLS: Diffie-Hellman)\n- der **Server** wird per **Zertifikat** geprüft\n- die Daten werden **symmetrisch** mit dem Sitzungsschlüssel verschlüsselt\n**Warum hybrid?** Asymmetrische Verfahren sind sehr rechenaufwendig, symmetrische schnell; hybrid vereint die Vorteile beider.\n**Vorteil gegenüber rein symmetrisch:** Die Partner brauchen kein vorher vereinbartes gemeinsames Geheimnis (Pre-Shared-Secret); der Sitzungsschlüssel entsteht je Verbindung neu.\nAchtung: Gefragt ist die **Art** des Verfahrens, richtig ist nur „hybrid“. Die Antwort „asymmetrisch“ oder der Protokollname „TLS“ gibt in der Prüfung 0 Punkte.",
             "karten": 2,
             "neu": null
           },

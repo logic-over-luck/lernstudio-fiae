@@ -49,11 +49,11 @@ Die Verfahren selbst kennst du aus AP1-7-3-1.
 Achtung: Gefragt ist die Art des Verfahrens (symmetrisch). Wer nur einen Algorithmus wie AES nennt, verliert Punkte; schreib deshalb „symmetrisch, z. B. AES“.
 
 ### K2 – Hybride Transportverschlüsselung bei TLS und E-Mail (Stufe 2 Verstehen)
-Du kannst die Art der Transportverschlüsselung bei TLS und bei der E-Mail-Übertragung nennen und erläutern: hybrid, also Sitzungsschlüssel asymmetrisch ausgehandelt (bei TLS 1.3 per Diffie-Hellman), Server per Zertifikat geprüft, Daten symmetrisch mit dem Sitzungsschlüssel verschlüsselt.
+Du kannst die Art der Transportverschlüsselung bei TLS und bei der E-Mail-Übertragung nennen und erläutern: hybrid, also Sitzungsschlüssel asymmetrisch ausgehandelt (bei heute üblichem TLS per Diffie-Hellman), Server per Zertifikat geprüft, Daten symmetrisch mit dem Sitzungsschlüssel verschlüsselt.
 
 Erklärung:
 TLS und E-Mail-Transport sind **hybrid**:
-- Sitzungsschlüssel wird **asymmetrisch ausgehandelt** (TLS 1.3: Diffie-Hellman)
+- Sitzungsschlüssel wird **asymmetrisch ausgehandelt** (heute übliches TLS: Diffie-Hellman)
 - der **Server** wird per **Zertifikat** geprüft
 - die Daten werden **symmetrisch** mit dem Sitzungsschlüssel verschlüsselt
 **Warum hybrid?** Asymmetrische Verfahren sind sehr rechenaufwendig, symmetrische schnell; hybrid vereint die Vorteile beider.
