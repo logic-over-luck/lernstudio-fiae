@@ -120,7 +120,7 @@ Beispiel: „Der Vertrieb prüft die Bestellung. Ist sie vollständig, packt das
 **So fragt die IHK:**
 - Zu diesem Stichpunkt gibt es keine echte Aufgabe. Der Prüfungskatalog führt EPK und BPMN im Anhang „Notationen“ mit genau den Sinnbildern des Stoffs.
 - Zu erwarten ist ein vorgegebenes Diagramm aus der Ausgangssituation. Daran benennt man Sinnbilder (wenige Punkte), beschreibt den Ablauf mit Zuständigkeiten (mehrere Punkte) oder ergänzt eine Stelle, etwa das passende Gateway. Eine Punkteverteilung ist nicht belegt.
-- Operatoren: benennen, beschreiben, ergänzen, erläutern. Selbst zeichnen ist nicht zu erwarten.
+- Operatoren: benennen, beschreiben, ergänzen, erläutern. Ein Diagramm selbst zu erstellen ist für EPK und BPMN nicht belegt; beim UML-Aktivitätsdiagramm wurde es im Herbst 2025 verlangt (9 Punkte, mit Notationshilfe und Vorlage).
 - Bei einer Ablaufbeschreibung zählt, dass Reihenfolge, Bedingungen und Zuständige stimmen, nicht die Formulierung.
 
 **Fallen:**

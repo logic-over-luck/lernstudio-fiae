@@ -126,7 +126,7 @@ Mehrere Sinne und Aufnahmefähigkeit der Zuhörer: Was man hört, sieht, bespric
 - „vermerken“: drei inhaltliche Botschaften aus der Situationsbeschreibung im Notizbereich, 6 Punkte (je 2). Die Lösung ist beispielhaft, etwa Größe und Personal, Niederlassungen, Erfahrung, Referenzen, Zertifizierungen.
 - In der Situation stehen Ablenker wie ein Wechsel der Geschäftsführung oder eine Neuausrichtung nach einer Krise. Sie gelten als ungeeignet oder nur mit überzeugender Begründung eines Kundennutzens.
 - „ergänzen“: drei zu den Botschaften passende Aufzählungspunkte im Folienbereich, 3 Punkte (je 1).
-- Regeln, Medienwahl, Behaltensquote und Medienkompetenz kamen in echten Aufgaben nicht vor, stehen aber im Prüfungskatalog; zu erwarten sind nennen, erklären und beurteilen.
+- Regeln, Medienwahl und Medienkompetenz kamen in echten Aufgaben nicht vor; der Prüfungskatalog nennt dazu „Präsentation und Medienkompetenz“. Die Behaltensquote steht nur im Lehrbuch. Zu erwarten sind nennen, erklären und beurteilen.
 
 **Fallen:**
 - Eine Information auswählen oder streichen, ohne den Grund zu nennen.
