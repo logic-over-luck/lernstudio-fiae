@@ -48,16 +48,16 @@ Beispiel:
 → Intern ist um 1.650 € günstiger. Der Dienstleister braucht zwar weniger Stunden, ist aber pro Stunde teurer.
 
 ### K2 – Gründe gegen Fremdvergabe außerhalb der Rechnung (Stufe 1 Wiedergeben)
-Du kannst Gründe gegen eine Fremdvergabe nennen, die nicht in der Rechnung stehen, zum Beispiel Abhängigkeit und Weitergabe von Know-how.
+Du kannst Gründe gegen eine Fremdvergabe nennen, die nicht in der Rechnung stehen, zum Beispiel Abhängigkeit, Weitergabe von Know-how sowie Sicherheits- und Datenschutzbedenken, weil interne und personenbezogene Daten an Dritte gehen.
 
 Erklärung:
 - **Abhängigkeit** vom Dienstleister – ohne ihn geht es nicht mehr.
 - **Know-how** wandert ab bzw. wird im eigenen Haus nicht aufgebaut.
-- Vertrauliche Informationen gehen an **Dritte**.
+- **Sicherheits- und Datenschutzbedenken:** Vertrauliche und personenbezogene Daten gehen an **Dritte**.
 - Weniger **Kontrolle** über Qualität und Termine.
 
 ### K3 – Vor- und Nachteile eines externen Beraters (Stufe 1 Wiedergeben)
-Du kannst Vor- und Nachteile eines externen Beraters nennen: Erfahrung, Methodenkompetenz und Entlastung des Personals gegenüber zusätzlichen Kosten und Know-how außerhalb des Unternehmens.
+Du kannst Vor- und Nachteile eines externen Beraters nennen: Erfahrung, Methodenkompetenz und Entlastung des Personals gegenüber zusätzlichen Kosten, Know-how außerhalb des Unternehmens und zusätzlichem Aufwand für den Datenschutz, weil ein Externer an interne Daten kommt.
 
 Erklärung:
 **Vorteile**
@@ -67,7 +67,8 @@ Erklärung:
 **Nachteile**
 - zusätzliche Kosten
 - das Know-how bleibt beim Berater, nicht im Unternehmen
-Außerdem anerkannt: Nachteile wie Abstimmungsaufwand, fehlende Kenntnis interner Abläufe und Datenschutzfragen beim Zugriff auf interne Daten; Vorteile wie bessere Risikoeinschätzung und normgerechte Lösungen.
+- zusätzlicher Aufwand für den **Datenschutz**: Der Berater kommt an interne Daten, Zutritt und Zugriff müssen geregelt werden
+Außerdem anerkannt: Nachteile wie Abstimmungsaufwand und fehlende Kenntnis interner Abläufe; Vorteile wie bessere Risikoeinschätzung und normgerechte Lösungen.
 
 ### K4 – Eigenentwicklung gegen Lizenzkauf: ab welcher Menge (Stufe 3 Anwenden)
 Du kannst berechnen, ab welcher Menge eine Eigenentwicklung günstiger ist als der Kauf von Lizenzen, zum Beispiel Entwicklungs- und Wartungskosten je Jahr geteilt durch den Lizenzpreis, und dabei die Menge beim Gleichstand von der ersten günstigeren Menge unterscheiden.

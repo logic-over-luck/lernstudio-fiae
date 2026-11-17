@@ -51,7 +51,7 @@ Protokolle enthalten oft personenbezogene Daten – wer hat wann was gemacht. De
 Du kannst begründen, warum Gesundheitsdaten als besondere personenbezogene Daten erhöhten Schutzanforderungen nach der DSGVO unterliegen.
 
 Erklärung:
-Gesundheitsdaten gehören zu den **besonderen Kategorien** personenbezogener Daten.
+Gesundheitsdaten gehören zu den **besonderen Kategorien** personenbezogener Daten (**Art. 9 DSGVO**).
 - Ihr Bekanntwerden kann den Betroffenen **schwer schaden** – z. B. Benachteiligung beim Arbeitgeber oder bei einer Versicherung.
 - Deshalb ist ihre Verarbeitung **nur ausnahmsweise erlaubt** (z. B. mit ausdrücklicher Einwilligung oder gesetzlicher Grundlage).
 - Und sie brauchen **stärkere Schutzmaßnahmen**: Verschlüsselung, eng begrenzte Zugriffsrechte.

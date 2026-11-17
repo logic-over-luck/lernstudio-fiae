@@ -7523,11 +7523,11 @@
         ],
         [
           "AP1-3-2-4-K2",
-          "Du kannst Gründe gegen eine Fremdvergabe nennen, die nicht in der Rechnung stehen, zum Beispiel Abhängigkeit und Weitergabe von Know-how."
+          "Du kannst Gründe gegen eine Fremdvergabe nennen, die nicht in der Rechnung stehen, zum Beispiel Abhängigkeit, Weitergabe von Know-how sowie Sicherheits- und Datenschutzbedenken, weil interne und personenbezogene Daten an Dritte gehen."
         ],
         [
           "AP1-3-2-4-K3",
-          "Du kannst Vor- und Nachteile eines externen Beraters nennen: Erfahrung, Methodenkompetenz und Entlastung des Personals gegenüber zusätzlichen Kosten und Know-how außerhalb des Unternehmens."
+          "Du kannst Vor- und Nachteile eines externen Beraters nennen: Erfahrung, Methodenkompetenz und Entlastung des Personals gegenüber zusätzlichen Kosten, Know-how außerhalb des Unternehmens und zusätzlichem Aufwand für den Datenschutz, weil ein Externer an interne Daten kommt."
         ],
         [
           "AP1-3-2-4-K4",
@@ -7605,7 +7605,7 @@
               "beleg:2024H-A2-a"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Abhängigkeit** vom Dienstleister – ohne ihn geht es nicht mehr.\n- **Know-how** wandert ab bzw. wird im eigenen Haus nicht aufgebaut.\n- Vertrauliche Informationen gehen an **Dritte**.\n- Weniger **Kontrolle** über Qualität und Termine.",
+            "erklaerung": "- **Abhängigkeit** vom Dienstleister – ohne ihn geht es nicht mehr.\n- **Know-how** wandert ab bzw. wird im eigenen Haus nicht aufgebaut.\n- **Sicherheits- und Datenschutzbedenken:** Vertrauliche und personenbezogene Daten gehen an **Dritte**.\n- Weniger **Kontrolle** über Qualität und Termine.",
             "karten": 1,
             "neu": null
           },
@@ -7617,7 +7617,7 @@
               "beleg:2022H-A1-d"
             ],
             "vorgegeben": null,
-            "erklaerung": "**Vorteile**\n- Erfahrung aus vielen ähnlichen Projekten\n- Methodenkompetenz\n- entlastet das eigene Personal\n**Nachteile**\n- zusätzliche Kosten\n- das Know-how bleibt beim Berater, nicht im Unternehmen\nAußerdem anerkannt: Nachteile wie Abstimmungsaufwand, fehlende Kenntnis interner Abläufe und Datenschutzfragen beim Zugriff auf interne Daten; Vorteile wie bessere Risikoeinschätzung und normgerechte Lösungen.",
+            "erklaerung": "**Vorteile**\n- Erfahrung aus vielen ähnlichen Projekten\n- Methodenkompetenz\n- entlastet das eigene Personal\n**Nachteile**\n- zusätzliche Kosten\n- das Know-how bleibt beim Berater, nicht im Unternehmen\n- zusätzlicher Aufwand für den **Datenschutz**: Der Berater kommt an interne Daten, Zutritt und Zugriff müssen geregelt werden\nAußerdem anerkannt: Nachteile wie Abstimmungsaufwand und fehlende Kenntnis interner Abläufe; Vorteile wie bessere Risikoeinschätzung und normgerechte Lösungen.",
             "karten": 1,
             "neu": null
           },
@@ -20585,7 +20585,7 @@
               "beleg:2025H-A3-a"
             ],
             "vorgegeben": null,
-            "erklaerung": "Gesundheitsdaten gehören zu den **besonderen Kategorien** personenbezogener Daten.\n- Ihr Bekanntwerden kann den Betroffenen **schwer schaden** – z. B. Benachteiligung beim Arbeitgeber oder bei einer Versicherung.\n- Deshalb ist ihre Verarbeitung **nur ausnahmsweise erlaubt** (z. B. mit ausdrücklicher Einwilligung oder gesetzlicher Grundlage).\n- Und sie brauchen **stärkere Schutzmaßnahmen**: Verschlüsselung, eng begrenzte Zugriffsrechte.",
+            "erklaerung": "Gesundheitsdaten gehören zu den **besonderen Kategorien** personenbezogener Daten (**Art. 9 DSGVO**).\n- Ihr Bekanntwerden kann den Betroffenen **schwer schaden** – z. B. Benachteiligung beim Arbeitgeber oder bei einer Versicherung.\n- Deshalb ist ihre Verarbeitung **nur ausnahmsweise erlaubt** (z. B. mit ausdrücklicher Einwilligung oder gesetzlicher Grundlage).\n- Und sie brauchen **stärkere Schutzmaßnahmen**: Verschlüsselung, eng begrenzte Zugriffsrechte.",
             "karten": 1,
             "neu": null
           },
@@ -29711,14 +29711,14 @@
       "sp": "AP1-3-2-4",
       "k": "AP1-3-2-4-K2",
       "v": "Nenne Gründe gegen eine Fremdvergabe, die in der Kostenrechnung nicht auftauchen.",
-      "h": "- Abhängigkeit vom Dienstleister\n- Know-how wandert nach außen bzw. wird intern nicht aufgebaut\n- vertrauliche Informationen gehen an Dritte\n- weniger Kontrolle über Qualität und Termine"
+      "h": "- Abhängigkeit vom Dienstleister\n- Know-how wandert nach außen bzw. wird intern nicht aufgebaut\n- Sicherheits- und Datenschutzbedenken: vertrauliche und personenbezogene Daten gehen an Dritte\n- weniger Kontrolle über Qualität und Termine"
     },
     {
       "id": "AP1-3-2-4-K3-1",
       "sp": "AP1-3-2-4",
       "k": "AP1-3-2-4-K3",
       "v": "Nenne Vor- und Nachteile eines externen Beraters.",
-      "h": "- Vorteile: Erfahrung, Methodenkompetenz, Entlastung des eigenen Personals\n- Nachteile: zusätzliche Kosten, das Know-how bleibt außerhalb des Unternehmens"
+      "h": "- Vorteile: Erfahrung, Methodenkompetenz, Entlastung des eigenen Personals\n- Nachteile: zusätzliche Kosten, das Know-how bleibt außerhalb des Unternehmens, zusätzlicher Aufwand für den Datenschutz (Externer kommt an interne Daten)"
     },
     {
       "id": "AP1-3-2-4-K4-1",
@@ -35276,7 +35276,7 @@
       "sp": "AP1-7-5-3",
       "k": "AP1-7-5-3-K2",
       "v": "Warum unterliegen Gesundheitsdaten nach der DSGVO erhöhten Schutzanforderungen? Begründe.",
-      "h": "Sie gehören zu den besonderen Kategorien personenbezogener Daten: Ihr Bekanntwerden kann den Betroffenen schwer schaden, z. B. durch Benachteiligung bei Arbeitgeber oder Versicherung. Ihre Verarbeitung ist deshalb nur ausnahmsweise erlaubt und braucht stärkere Schutzmaßnahmen."
+      "h": "Sie gehören zu den besonderen Kategorien personenbezogener Daten (Art. 9 DSGVO): Ihr Bekanntwerden kann den Betroffenen schwer schaden, z. B. durch Benachteiligung bei Arbeitgeber oder Versicherung. Ihre Verarbeitung ist deshalb nur ausnahmsweise erlaubt und braucht stärkere Schutzmaßnahmen."
     },
     {
       "id": "AP1-7-5-3-K3-1",
