@@ -58,7 +58,11 @@ function konfetti(canvas, staerke = 1) {
     else ctx.clearRect(0, 0, innerWidth, innerHeight);
   };
   frame = requestAnimationFrame(schritt);
-  return () => cancelAnimationFrame(frame);
+  // Beim Abbrechen auch die Fläche leeren, sonst bleibt das letzte Bild stehen.
+  return () => {
+    cancelAnimationFrame(frame);
+    ctx.clearRect(0, 0, innerWidth, innerHeight);
+  };
 }
 
 export function Feier() {
@@ -72,15 +76,17 @@ export function Feier() {
     window.addEventListener('raenge-zeigen', h);
     return () => window.removeEventListener('raenge-zeigen', h);
   }, []);
+  // Das Konfetti läuft unabhängig vom Dialog bzw. Banner zu Ende: Schließen („Weiter so“) hält es nicht an.
+  // Abgebrochen wird es nur, wenn ein neuer Moment kommt oder die Feier verschwindet.
+  const stoppKonfetti = useRef(() => {});
+  useEffect(() => () => stoppKonfetti.current(), []);
   useEffect(() => {
     if (!moment) return;
-    const stopp = konfetti(canvas.current, moment.art === 'rang' ? 1.4 : 0.7);
-    let t;
-    if (moment.art !== 'rang') t = setTimeout(() => setMoment(null), 5500);
-    return () => {
-      stopp();
-      clearTimeout(t);
-    };
+    stoppKonfetti.current();
+    stoppKonfetti.current = konfetti(canvas.current, moment.art === 'rang' ? 1.4 : 0.7);
+    if (moment.art === 'rang') return;
+    const t = setTimeout(() => setMoment(null), 5500);
+    return () => clearTimeout(t);
   }, [moment?.id]);
 
   return (
