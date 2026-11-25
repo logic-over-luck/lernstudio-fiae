@@ -29,20 +29,22 @@ export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
   const was = mehrere ? 'Diese Stichpunkte' : 'Diesen Stichpunkt';
   const aufgaben =
     raum === 'WISO'
-      ? '- Die Aufgaben denkst du dir selbst aus und stellst sie gebunden wie in der Prüfung: Auswahl 1 aus 5, Zuordnung, Reihenfolge oder Zahl eintragen, mit plausiblen falschen Antworten. Gewertet wird jede ganz oder gar nicht.'
-      : '- Die Aufgaben denkst du dir selbst aus. Sie lassen anwenden (eine neue Lage, einen Fehler finden, einen Vorschlag beurteilen), nicht nachsagen. Bei Rechnungen glatte Werte; rechne deine Lösung nach, bevor du meine Antwort bewertest. Zeichnen: Ich zeichne auf Papier und lade ein Foto hoch.';
+      ? '- Stell die Aufgaben gebunden wie in der Prüfung: Auswahl 1 aus 5, Zuordnung, Reihenfolge oder Zahl eintragen, mit plausiblen falschen Antworten. Jede zählt ganz oder gar nicht.'
+      : '- Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest. Zeichnungen mache ich auf Papier und lade ein Foto hoch.';
   return [
     '## So läuft die Wiederholung',
     '',
-    `Du bist mein Prüfer für die IHK-Prüfung. ${was} habe ich schon gelernt und abgehakt; prüfe, ob ${mehrere ? 'sie noch sitzen' : 'er noch sitzt'}. Unten stehen der **Stoff** (meine Aussagen „Das muss ich können“ mit Erklärungen) und ${mehrere ? 'je Stichpunkt eine **Lehrnotiz**' : 'eine **Lehrnotiz**'} mit typischen Fehlern und dem, was schon geprüft wurde.`,
+    `Hey! ${was} habe ich schon gelernt und abgehakt – jetzt schauen wir, ob ${mehrere ? 'sie noch sitzen' : 'er noch sitzt'}. Du bist dabei mein Prüfer für die IHK-Prüfung. Unten stehen der **Stoff** (was ich können muss, mit Erklärungen) und ${mehrere ? 'je Stichpunkt eine **Lehrnotiz**' : 'eine **Lehrnotiz**'} mit typischen Fehlern und dem, was schon geprüft wurde.`,
     '',
-    `- Keine Erklärung vorweg. Stell mir Aufgaben zu den Aussagen${mehrere ? ', gemischt quer durch alle Stichpunkte' : ''}, immer nur eine pro Nachricht. Fang mit dem an, was schon in einer Prüfung vorkam (Lehrnotiz „Schon geprüft“), und nimm die typischen Fehler aus der Lehrnotiz hinein.`,
+    'Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:',
+    '',
+    `- Keine Erklärung vorweg, wir legen direkt mit Aufgaben zu den Aussagen los${mehrere ? ', gemischt quer durch alle Stichpunkte' : ''}. Immer nur eine Aufgabe pro Nachricht. Fang mit dem an, was schon in einer Prüfung dran war (Lehrnotiz „Schon geprüft“), und bau die typischen Fehler aus der Lehrnotiz ein.`,
     aufgaben,
-    '- Nach meiner Antwort: sag kurz, was richtig war, wo der Fehler liegt und wie die richtige Antwort lautet. Zeig Lösungen nie, bevor ich geantwortet habe. Stimmt der Inhalt und fehlt nur das Fachwort, zählt die Antwort als richtig: Nenn mir das Wort und geh weiter.',
-    '- Der Stoff ist verbindlich. Hältst du etwas darin für falsch oder veraltet, sag es offen mit „⚠️ Hinweis zum Stoff: …“. Steht bei einer Aussage „in der Prüfung vorgegeben“, muss ich das nur anwenden.',
+    '- Lass mich erst antworten, bevor du die Lösung zeigst. Danach sag mir kurz, was gepasst hat und wo es hakt. Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.',
+    '- Der Stoff ist die Grundlage. Hältst du etwas darin für falsch oder veraltet, sag es offen mit „⚠️ Hinweis zum Stoff: …“. Steht „in der Prüfung vorgegeben“ dabei, muss ich das nur anwenden.',
     auswertung,
     urteil,
-    '- Schreibe ich „Pause“, fass in zwei Zeilen zusammen, wo wir stehen; später mache ich im selben Chat weiter.',
+    '- „Pause“ heißt: Fass kurz zusammen, wo wir stehen; später mache ich im selben Chat weiter.',
     '',
     'Antworte auf Deutsch.',
   ].join('\n');
