@@ -31,6 +31,15 @@
     für die Wiederholung stehen nicht dort, sondern im Code (`wiederholRegeln` in
     `src/bereiche/lernen/lernprompt-neu.js`) und wiederholen einzelne Sätze des Regelblocks – bei Bedarf dort
     mit ändern.
+  - **Abläufe in der Lehrnotiz** (seit 25.11.2026): Der Abschnitt „**Abläufe zum Verstehen (Hintergrund, mehr als die
+    IHK verlangt):**“ hinter den Kerngedanken beschreibt Schritt für Schritt, was der Stoff nur aufzählt. Er kommt aus
+    `tools/ablauf-ergaenzen.mjs`: `npm run ablauf start [ALLE|RAUM|Ordner wie AP1-4|Stichpunkt] [neu]`, dann
+    `npm run ablauf weiter warten`, Bericht ansehen, dann `npm run ablauf einarbeiten`. Für Tests mit wenigen
+    Stichpunkten `npm run ablauf direkt <FILTER>` (ohne Batch: sofort fertig, voller Preis). Sonst läuft es über die Batch-API
+    (Schreiber Fable 5.2, Prüfer Opus 5.5, braucht `ANTHROPIC_API_KEY`); eingearbeitet wird nur, was der Prüfer
+    freigibt. Der Bericht mit Abgelehntem, übersehenen Stellen und Stoff-Meldungen liegt als
+    `_Ablauf-Bericht_<Datum>_<Filter>.md` in `inhalt/lernprompts/`, Zwischenstände in `.ablauf/` (nicht im Repo).
+    Von Hand ändern geht auch: Zeilen im Abschnitt bearbeiten oder löschen; Stoff und JSON sind nicht betroffen.
   - **SQL-Stichpunkte in PB2** (PB2-5-1-1 bis -5, PB2-6-1-1, -2, -3, -6): ein festes Tabellenmodell, das in allen neun
     Dateien zeichengleich als „Material“ am Ende der Lehrnotiz steht. Ändern: in allen neun Dateien gleich.
   - In WiSo ist die Abschlussrunde gebunden (Auswahl, Zuordnung, Reihenfolge, Zahl eintragen) wie in der Prüfung.

@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -96,6 +98,9 @@ Beispiel: Ein Server mit zwei Netzteilen meldet häufiger ein defektes Netzteil 
 - RTO (Recovery Time Objective) ist eine Zeit bis zum Wiederanlauf. RPO (Recovery Point Objective) ist ein Datenverlust, gemessen als Zeitraum seit der letzten Sicherung. Aus dem RPO folgt, wie oft mindestens gesichert werden muss.
 - Zum Notfallkonzept gehören auch die Reihenfolge des Wiederanlaufs nach Wichtigkeit (die Datenbank vor den Anwendungen, die sie brauchen) und die Wiederherstellung aus Backups, die nicht am betroffenen Ort liegen.
 - PDCA am Notfallkonzept: Das Konzept ist Plan, die Übung Do, der Vergleich der gemessenen Zeit mit dem RTO Check. Act heißt Ursache beheben, Ablauf anpassen und erneut üben.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K2 – Von der MTBF zur erwarteten Zahl der Ausfälle pro Jahr: (1) Die MTBF ist definiert als Summe der Betriebsstunden vieler Geräte geteilt durch die Zahl der Ausfälle in dieser Zeit. (2) Für die Planung rechnet man rückwärts: Ein Gerät im Dauerbetrieb läuft 8.760 Stunden im Jahr. (3) Die Geräteanzahl mal 8.760 Stunden ergibt die Betriebsstunden des ganzen Bestands pro Jahr, bei 200 Platten also 1.752.000 Stunden. (4) Diese Betriebsstunden geteilt durch die MTBF ergeben die erwarteten Ausfälle pro Jahr, bei einer MTBF von 438.000 Stunden also 4. (5) Die erwarteten Ausfälle geteilt durch die Geräteanzahl ergeben die AFR, kurz 8.760 ÷ MTBF, hier 2 %. (6) Die erwartete Zahl der Ausfälle legt fest, wie viele Ersatzteile bereitliegen müssen und wo sich Redundanz lohnt. Vereinfacht: Die Rechnung setzt Dauerbetrieb und eine gleichbleibende Ausfallrate voraus; tatsächlich fallen Geräte am Anfang und am Ende ihrer Nutzungszeit häufiger aus.
 
 **Typische Missverständnisse:**
 - Viele denken, eine MTBF von mehreren hunderttausend Stunden heiße, ein Gerät halte Jahrzehnte; richtig ist: Die MTBF ist ein statistischer Mittelwert über viele Geräte, keine Lebensdauerzusage für ein einzelnes.

@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -150,6 +152,10 @@ Beispiel: Ein Aktienkurs benachrichtigt Chart, Depotansicht und Kursalarm. Ein n
 - Der private Konstruktor ist der Kern des Singletons: Er verhindert, dass jemand von außen mit `new` ein zweites Objekt anlegt. Ohne ihn hätte jede Klasse ihr eigenes Objekt, und eine Änderung in einem käme bei den anderen nicht an.
 - Bei „begründen“ und „beurteilen“ zählt der Bezug zur Situation: Das Wissen über das Muster steht nicht in der Aufgabe, es wird auf die Lage des Kunden angewandt. Eine Beurteilung endet mit einem Ergebnis (passt, passt nicht, passt unter einer Bedingung).
 - Abgrenzung: Vor- und Nachteile von Schichten und MVC und die Ereignisbehandlung gehören zum Stichpunkt Architekturmuster. Methoden wie `notifyObservers` oder eine statische Fabrikmethode in Pseudocode zu schreiben gehört zum Stichpunkt Pseudocode.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K6 – MVC: Weg einer Benutzereingabe: (1) Der Benutzer löst in der Oberfläche eine Eingabe aus, und die View gibt dieses Ereignis an den Controller weiter. (2) Der Controller wertet die Eingabe aus und ruft die passende Methode des Models auf. (3) Das Model wendet die Fachlogik an, also Prüfungen und Berechnungen, und ändert seine Daten. (4) Der Controller veranlasst anschließend die View, sich zu aktualisieren. (5) Die View liest die aktuellen Daten aus dem Model und stellt sie dar; sie enthält selbst keine Fachlogik. Vereinfacht: In der klassischen Variante meldet sich die View als Observer beim Model an und wird von ihm direkt benachrichtigt, statt vom Controller angestoßen zu werden.
+- K8 – Singleton: zwei Objekte bei parallelem Erstzugriff: (1) Die Methode getInstance prüft, ob das statische Attribut instanz noch leer (null) ist, und erzeugt nur dann das Objekt. (2) Thread A ruft getInstance auf, stellt fest, dass instanz leer ist, und wird unterbrochen, bevor er das Objekt erzeugt hat. (3) Thread B ruft getInstance auf, findet instanz ebenfalls leer, erzeugt ein Objekt und speichert es in instanz. (4) Thread A läuft weiter, erzeugt ein zweites Objekt und überschreibt damit instanz. (5) Beide Threads arbeiten nun mit verschiedenen Objekten, die Zusicherung „genau ein Objekt“ ist verletzt. (6) Zur Absicherung wird der Abschnitt aus Prüfung und Erzeugung gesperrt (synchronisiert), sodass ihn immer nur ein Thread gleichzeitig ausführt.
 
 **Typische Missverständnisse:**
 - Viele denken, MVC müsse in eine der drei Kategorien passen; richtig ist: MVC ist kein Erzeugungs-, Struktur- oder Verhaltensmuster, sondern ein Architekturmuster für eine ganze Anwendung.

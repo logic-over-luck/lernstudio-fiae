@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP1 – und am Ende auch mein Pr�
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -137,6 +139,10 @@ Beispiel: „IEEE 802.3at“ im Datenblatt eines Access Points heißt: Er kann p
 - Die Brutto-Höchstrate gehört zum Standard. Das einzelne Gerät hat eine eigene, meist viel niedrigere Nennrate im Datenblatt. Mit ihr wird gerechnet: erst auf die reale Rate kürzen, dann durch die Zahl der aktiven Geräte teilen.
 - Bei PoE wird der Bedarf des Geräts mit dem Wert am Gerät verglichen. Der Wert am Switch-Port ist höher, weil im Kabel Leistung verloren geht; ein Bedarf zwischen beiden Werten ist von diesem Standard nicht gedeckt.
 - Hier geht es um die Anschlüsse der Geräte. Kabelkategorien und Schirmung sowie das PoE-Budget eines ganzen Switches sind eigene Stichpunkte.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K4 – Wie der PoE-Switch ein Gerät erkennt und versorgt: (1) Der PoE-Switch legt nach dem Einstecken zunächst nur eine kleine Prüfspannung an die Adernpaare des Ports. (2) Ein PoE-fähiges Endgerät gibt sich durch einen festgelegten Signaturwiderstand von etwa 25 kΩ zu erkennen; ohne diese Signatur bleibt der Port stromlos. (3) Der Switch ermittelt anschließend die Leistungsklasse des Endgeräts und weiß damit, wie viel Leistung er an diesem Port bereitstellen muss. (4) Erst danach schaltet der Switch die Versorgungsspannung von etwa 48 V Gleichspannung auf die Adernpaare des Netzwerkkabels. (5) Das Endgerät entnimmt die Gleichspannung getrennt vom Datensignal und setzt sie mit einem Spannungswandler auf seine Betriebsspannung herab. (6) Der Switch überwacht den Strom am Port und schaltet die Versorgung ab, wenn das Gerät abgezogen wird oder zu viel Strom zieht. Vereinfacht: Der Strom fließt je nach Standard über zwei oder alle vier Adernpaare, entweder zusammen mit den Daten oder über ungenutzte Paare.
+- K7 – Kanalzugriff im WLAN (CSMA/CA): (1) Alle Geräte einer Funkzelle und der Access Point senden auf demselben Kanal; zur selben Zeit kann dort nur eine Übertragung gelingen. (2) Ein Gerät, das senden will, hört zuerst den Kanal ab und wartet, solange ein anderes Gerät sendet (CSMA/CA). (3) Ist der Kanal frei, wartet das Gerät zusätzlich eine zufällig gewählte Zeit, damit nicht mehrere wartende Geräte gleichzeitig beginnen. (4) Dann sendet das Gerät seinen Datenrahmen, und der Empfänger bestätigt den fehlerfreien Empfang mit einer Quittung (ACK). (5) Bleibt die Quittung aus, etwa nach einer Kollision oder Störung, wiederholt das Gerät den Rahmen nach einer längeren Wartezeit. (6) Wartezeiten, Quittungen und Wiederholungen verbrauchen Sendezeit; mit jedem weiteren aktiven Gerät kommt jedes einzelne seltener an die Reihe. Vereinfacht: Wi-Fi 6 kann mit OFDMA und MU-MIMO mehrere Geräte gleichzeitig bedienen, die Gesamtkapazität des Kanals bleibt aber geteilt.
 
 **Typische Missverständnisse:**
 - Viele denken, 5 GHz sei immer besser. Richtig ist: Bei großem Abstand oder mehreren Wänden kommt 2,4 GHz stabiler an.

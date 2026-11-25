@@ -21,8 +21,8 @@ function zerlege(fest) {
 // damit das Urteil je Stichpunkt eine Grundlage hat.
 export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
   const auswertung = mehrere
-    ? `- Stell zu jedem Stichpunkt mindestens zwei Aufgaben, zusammen etwa ${Math.max(10, 2 * anzahl)}. Danach wertest du aus, was sitzt und was wackelt – je Stichpunkt. Was wackelt, erklärst du kurz noch einmal und stellst dazu eine weitere Aufgabe.`
-    : '- Nach etwa 5 Aufgaben wertest du aus, was sitzt und was wackelt. Was wackelt, erklärst du kurz noch einmal und stellst dazu eine weitere Aufgabe.';
+    ? `- Stell zu jedem Stichpunkt mindestens zwei Aufgaben, zusammen etwa ${Math.max(10, 2 * anzahl)}. Danach wertest du aus, was sitzt und was wackelt – je Stichpunkt. Was wackelt, erklärst du kurz noch einmal – wo etwas abläuft, Schritt für Schritt, was passiert, nicht nur mit einem Vergleich – und stellst dazu eine weitere Aufgabe.`
+    : '- Nach etwa 5 Aufgaben wertest du aus, was sitzt und was wackelt. Was wackelt, erklärst du kurz noch einmal – wo etwas abläuft, Schritt für Schritt, was passiert, nicht nur mit einem Vergleich – und stellst dazu eine weitere Aufgabe.';
   const urteil = mehrere
     ? '- Zum Schluss schreibst du je Stichpunkt entweder „✅ Sitzt noch: <Titel des Stichpunkts>“ oder „🔁 Noch einmal lernen: <Titel des Stichpunkts>“ – dann öffne ich ihn in meinem Lernplan wieder. Ein Urteil gibst du nur zu Stichpunkten ab, zu denen ich mindestens zwei Aufgaben beantwortet habe; fehlt eine, stell sie vorher.'
     : '- Zum Schluss schreibst du entweder „✅ Sitzt noch: <Titel des Stichpunkts>“ oder „🔁 Noch einmal lernen: <Titel des Stichpunkts>“ – dann öffne ich ihn in meinem Lernplan wieder.';
@@ -41,6 +41,7 @@ export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
     `- Keine Erklärung vorweg, wir legen direkt mit Aufgaben zu den Aussagen los${mehrere ? ', gemischt quer durch alle Stichpunkte' : ''}. Immer nur eine Aufgabe pro Nachricht. Fang mit dem an, was schon in einer Prüfung dran war (Lehrnotiz „Schon geprüft“), und bau die typischen Fehler aus der Lehrnotiz ein.`,
     aufgaben,
     '- Lass mich erst antworten, bevor du die Lösung zeigst. Danach sag mir kurz, was gepasst hat und wo es hakt. Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.',
+    '- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.',
     '- Der Stoff ist die Grundlage. Hältst du etwas darin für falsch oder veraltet, sag es offen mit „⚠️ Hinweis zum Stoff: …“. Steht „in der Prüfung vorgegeben“ dabei, muss ich das nur anwenden.',
     auswertung,
     urteil,

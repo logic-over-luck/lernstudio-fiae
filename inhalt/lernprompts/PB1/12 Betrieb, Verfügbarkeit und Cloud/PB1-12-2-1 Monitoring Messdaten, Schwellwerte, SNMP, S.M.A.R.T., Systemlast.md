@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -125,6 +127,9 @@ Je weiter unten in der Liste, desto mehr Messung und Auswertung – und desto we
 - Das Symptom zeigt nicht, wo der Engpass liegt: Langsame Antworten können an der CPU des Anwendungsservers oder am RAM des Datenbankservers liegen. Man sucht den Wert, der sich gleichzeitig mit dem Symptom ändert.
 - Präventiv/proaktiv reagiert auf einen aktuellen Messwert; prädiktiv liest aus dem Trend, wann der Ausfall kommt. Gegenüber dem Tausch nach Kalender hat Predictive Maintenance einen weiteren Vorteil: Intakte Teile werden nicht zu früh ersetzt.
 - Abgrenzung: Baseline, Flussdaten, Logs und die Reaktion auf einen Alarm gehören zu PB1-12-2-4, korrektive Maßnahmen und Skalierung zu PB1-12-2-2. Hier reicht je Engpass eine passende Maßnahme.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K3 – SNMP: Abfrage durch den Manager und Trap vom Agenten: (1) Auf dem Netzwerkgerät läuft ein SNMP-Agent, der Zustandswerte wie Portauslastung und Fehlerzähler laufend bereithält. (2) Jeder Wert hat eine eindeutige Kennung, die OID; die MIB des Geräts beschreibt, welche OIDs es gibt und was sie bedeuten. (3) Das Monitoringsystem schickt als SNMP-Manager in festen Abständen eine GET-Anfrage mit der gewünschten OID an den Agenten (UDP-Port 161). (4) Der Agent liest den aktuellen Wert aus und schickt ihn als Antwort zurück; der Manager speichert ihn und vergleicht ihn mit den Schwellwerten. (5) Tritt auf dem Gerät ein Ereignis wie ein Linkausfall ein, schickt der Agent von sich aus einen Trap an den Manager (UDP-Port 162). (6) Der Manager nimmt den Trap sofort entgegen und löst die Meldung aus, ohne auf die nächste Abfrage zu warten. Vereinfacht: In Wirklichkeit werden die Nachrichten abgesichert: Bei SNMPv1/v2c geschieht das über einen unverschlüsselt übertragenen Community-String, bei SNMPv3 über Benutzer und Authentifizierung, auf Wunsch auch mit Verschlüsselung.
 
 **Typische Missverständnisse:**
 - Viele denken, ein vorbeugend gemeinter Tausch in festen Abständen sei präventiv oder prädiktiv; richtig ist: Was nach Kalender geschieht, ist periodisch.

@@ -8,3 +8,6 @@ __pycache__/
 # Arbeitsmappe und Sicherungen der Lernprompts: nur lokal
 archiv/
 .claude/
+
+# Zwischenstände von tools/ablauf-ergaenzen.mjs (Batch-IDs, Rohantworten): nur lokal
+.ablauf/

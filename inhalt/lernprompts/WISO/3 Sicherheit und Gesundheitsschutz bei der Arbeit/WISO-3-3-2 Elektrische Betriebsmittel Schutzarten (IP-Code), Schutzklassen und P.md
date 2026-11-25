@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 in Wirtschafts- und Sozialkun
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder aufeinander folgt (wer muss was wann tun, und was folgt daraus), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -72,6 +74,9 @@ Typische Verwechslung: nicht „Prüfsiegel einer unabhängigen Stelle“, nicht
 - Die Schutzart sagt, was von außen ins Gehäuse hineinkommen kann. Die Schutzklasse sagt, was den Menschen vor einem elektrischen Schlag schützt. Beide Angaben können auf demselben Gerät stehen und haben nichts miteinander zu tun.
 - Das CE-Zeichen bringt der Hersteller selbst an. Keine Behörde und kein Prüfinstitut vergibt es.
 - Nur auf Nachfrage, nicht abfragen: Ein unabhängig vergebenes Zeichen ist das GS-Zeichen („geprüfte Sicherheit“). Es ist freiwillig und kommt von einer anerkannten Prüfstelle.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K2 – Was im Fehlerfall bei Schutzklasse I, II und III passiert: (1) Durch einen Isolationsfehler berührt im Gerät ein spannungsführender Leiter das Metallgehäuse, das ohne Schutzmaßnahme nun unter Netzspannung stünde. (2) Bei Schutzklasse I verbindet der Schutzleiter das Metallgehäuse über den Schutzkontaktstecker mit der Erdung der Elektroinstallation. (3) Der Fehlerstrom fließt deshalb sofort über den Schutzleiter zur Erde ab, noch bevor ein Mensch das Gehäuse berührt. (4) Dieser Fehlerstrom löst die Sicherung oder den Fehlerstrom-Schutzschalter aus, und der Stromkreis wird abgeschaltet. (5) Bei Schutzklasse II liegt um die Basisisolierung eine zusätzliche Isolierung, oder eine verstärkte Isolierung ersetzt beide. Deshalb gelangt bei einem Isolationsfehler keine Spannung an berührbare Teile. (6) Bei Schutzklasse III arbeitet das Gerät mit so niedriger Spannung, dass auch bei direkter Berührung kein gefährlicher Strom durch den Körper fließt.
 
 **Typische Missverständnisse:**
 - Viele denken, eine größere IP-Zahl bedeute immer mehr Schutz, etwa IP 67 sei in allem besser als IP 66; richtig ist: Jede Ziffer wird einzeln gelesen, und bei der Wasserziffer ist 7 (zeitweiliges Untertauchen) etwas anderes als 6 (Strahlwasser).

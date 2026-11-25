@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP1 – und am Ende auch mein Pr�
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -143,6 +145,9 @@ Beispiel: 01-00-5e-… → erstes Byte 0000 0001, Bit 0 = 1 → Multicast. 02-�
 - Es gibt zwei Zwischenspeicher, die leicht verwechselt werden: Der DNS-Zwischenspeicher merkt sich Name zu IP-Adresse, der ARP-Cache IP-Adresse zu MAC-Adresse. „ARP-Cache“ und „ARP-Tabelle“ meinen dasselbe.
 - Für die Kennbits genügt die zweite Hexadezimalziffer des ersten Bytes: binär schreiben und die beiden Bits ganz rechts ansehen.
 - Wann eine feste Adresse oder eine DHCP-Reservierung sinnvoll ist, gehört zur IPv4-Konfiguration, nicht hierher.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K5 – DHCP-Ablauf und Rückfall auf 169.254.x.x: (1) Der auf DHCP eingestellte Client hat beim Start noch keine IP-Adresse und sendet deshalb ein DHCP-Discover als Broadcast ins lokale Netz. (2) Ein erreichbarer DHCP-Server mit freien Adressen antwortet mit einem DHCP-Offer, das eine IP-Adresse samt Subnetzmaske, Standardgateway und DNS-Server anbietet. (3) Der Client fordert die angebotene Adresse mit einem DHCP-Request an. (4) Der Server bestätigt mit einem DHCP-Acknowledge, und der Client übernimmt die Konfiguration für eine begrenzte Zeit (Lease). (5) Kommt auf das Discover kein Offer zurück, wiederholt der Client die Anfrage einige Male und gibt dann vorerst auf. (6) Der Client wählt selbst eine Adresse aus 169.254.x.x und prüft per ARP, dass kein anderes Gerät im Netz sie schon benutzt. (7) Mit der 169.254-Adresse sucht der Client im Hintergrund regelmäßig weiter nach einem DHCP-Server und übernimmt dessen Adresse, sobald einer antwortet.
 
 **Typische Missverständnisse:**
 - Viele denken, eine 169.254-Adresse komme vom Router oder sei von Hand falsch eingetragen. Richtig ist: Der Rechner hat sie sich selbst gegeben, gerade weil kein DHCP-Server geantwortet hat.

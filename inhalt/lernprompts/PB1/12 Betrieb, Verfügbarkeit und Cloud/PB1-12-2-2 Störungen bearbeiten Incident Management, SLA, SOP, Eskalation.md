@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -114,6 +116,9 @@ Beispiel: Ein Webshop bricht im Weihnachtsgeschäft ein → weitere Webserver hi
 - Ein SLA regelt auch, wann die Uhr läuft: meist ab Eingang der Meldung und oft nur innerhalb der Servicezeit. Was als Reaktion und was als Lösung zählt (etwa auch eine vorübergehende Umgehung), steht ebenfalls im SLA.
 - Der richtige Zeitpunkt der Eskalation liegt früh. Fachlich wird eskaliert, sobald die bekannte Lösung erfolglos war, und hierarchisch, sobald absehbar ist, dass die Frist nicht hält oder eine Entscheidung nötig wird. Erst nach dem Fristbruch ist es zu spät.
 - Abgrenzung: Den Engpass aus Messwerten erkennen ist Thema von PB1-12-2-1; hier geht es um die Maßnahme danach und den Weg der Skalierung.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K8 – Anfrageweg bei horizontaler Skalierung und Sitzungsproblem: (1) Der Client schickt seine Anfrage an die Adresse des Load Balancers, nicht direkt an einen der Server. (2) Der Load Balancer wählt nach einem Verteilverfahren, zum Beispiel reihum (Round Robin), eine Instanz aus und leitet die Anfrage dorthin weiter. (3) Die Instanz bearbeitet die Anfrage und schickt die Antwort über den Load Balancer an den Client zurück. (4) Die nächste Anfrage desselben Clients kann der Load Balancer an eine andere Instanz weiterleiten. (5) Liegen Sitzungsdaten wie Anmeldung oder Warenkorb nur im Arbeitsspeicher der ersten Instanz, kennt die zweite sie nicht, und die Sitzung ist für den Benutzer verloren. (6) Liegen die Sitzungsdaten stattdessen in einem gemeinsamen Speicher (Datenbank oder Cache-Server), kann jede Instanz jede Anfrage bearbeiten; neue Instanzen lassen sich im Betrieb zuschalten. Vereinfacht: Ein Load Balancer kann einen Client auch dauerhaft derselben Instanz zuordnen (Sticky Sessions); dann gehen die Sitzungen aber verloren, wenn diese Instanz ausfällt.
 
 **Typische Missverständnisse:**
 - Viele denken, wer ein Ticket schnell annimmt, habe das SLA eingehalten; richtig ist: Reaktionszeit und Lösungszeit sind zwei Fristen und werden getrennt geprüft.

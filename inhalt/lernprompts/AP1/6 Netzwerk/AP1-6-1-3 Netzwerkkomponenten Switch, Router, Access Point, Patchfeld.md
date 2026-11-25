@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP1 – und am Ende auch mein Pr�
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -155,6 +157,9 @@ Ein Repeater frischt das Signal auf und verlängert so eine Leitung, ein Hub ist
 - Der Switch lernt seine Zuordnung selbst: Er liest in jedem ankommenden Frame die MAC-Adresse des Absenders und merkt sich den Anschluss dazu.
 - Ein Access Point ersetzt nur das Kabel durch Funk. Er verbindet keine Netze und bringt kein Internet; das Netz, in dem die WLAN-Geräte landen, ist das Netz der Dose, an der er hängt.
 - Welches Netz an einer Dose anliegt, entscheidet nicht die Dose selbst, sondern der Weg im Verteilerschrank: Die Beschriftung führt zum Port am Patchfeld, das Patchkabel legt den Switch-Port fest, und der Switch-Port gehört zu einem Netz. Deshalb wechselt man das Netz durch Umstecken, ohne an der Dose etwas zu ändern.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K2 – Weg eines Pakets über den Router in ein anderes Netz: (1) Der sendende Host prüft mit seiner Subnetzmaske, ob die Ziel-IP-Adresse im eigenen Netz liegt, und stellt fest, dass sie zu einem anderen Netz gehört. (2) Der Host sendet das Paket deshalb in einem Frame an die MAC-Adresse des Standardgateways. Die Ziel-IP-Adresse im Paket bleibt die des eigentlichen Empfängers. (3) Der Router nimmt den Frame an, entfernt den Schicht-2-Rahmen und liest die Ziel-IP-Adresse im IP-Paket. (4) Der Router sucht in seiner Routingtabelle den genauesten Eintrag, dessen Zielnetz zur Ziel-IP-Adresse passt. Daraus entnimmt er die Ausgangsschnittstelle und, falls das Zielnetz nicht direkt an ihm angeschlossen ist, den nächsten Router. (5) Passt kein genauerer Eintrag, gilt die Standardroute der Tabelle, beim Router im LAN meist die Richtung zum Internetanbieter. Gibt es auch keine Standardroute, verwirft der Router das Paket. (6) Der Router verpackt das Paket in einen neuen Frame und sendet ihn über die Ausgangsschnittstelle ins nächste Netz. Der Vorgang wiederholt sich, bis ein Router das Zielnetz direkt erreicht und das Paket an den Empfänger zustellt. Vereinfacht: Weggelassen sind das Erfragen der MAC-Adressen per ARP und das Herabsetzen der TTL in jedem Router.
 
 **Typische Missverständnisse:**
 - Viele denken, ein Hub sei ein kleiner Switch; richtig ist: Ein Hub wertet keine Adressen aus und gibt alles an alle Anschlüsse.

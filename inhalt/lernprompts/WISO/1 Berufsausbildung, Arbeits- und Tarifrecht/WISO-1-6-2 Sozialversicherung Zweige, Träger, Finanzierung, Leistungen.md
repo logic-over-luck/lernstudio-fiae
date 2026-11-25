@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 in Wirtschafts- und Sozialkun
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder aufeinander folgt (wer muss was wann tun, und was folgt daraus), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -144,6 +146,9 @@ Beispiel: Ein Softwarehaus und ein Betrieb, der Netzwerkkabel in Rohbauten verle
 - Welcher Zweig zuständig ist, entscheidet die Ursache, nicht die Art der Leistung: Dieselbe Behandlung zahlt nach einer gewöhnlichen Krankheit die Krankenkasse, nach einem Arbeitsunfall die Berufsgenossenschaft.
 - Merkhilfe für die zwei Grenzen: „Kein Beitrag auf den Teil darüber“ gehört zur Beitragsbemessungsgrenze, „wechseln oder freiwillig bleiben“ zur Versicherungspflichtgrenze.
 - Das Rechnen mit Beitragssätzen ist ein eigener Stichpunkt.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K12 – Berechnung des Unfallversicherungsbeitrags: (1) Die Berufsgenossenschaft ordnet den Betrieb nach seinem Gewerbezweig einer Gefahrklasse ihres Gefahrtarifs zu. Ein hohes Unfallrisiko des Gewerbezweigs bedeutet eine hohe Gefahrklasse. (2) Nach Ablauf des Kalenderjahres meldet der Arbeitgeber der Berufsgenossenschaft die Lohnsumme, also die Summe der Arbeitsentgelte seiner Beschäftigten. (3) Die Berufsgenossenschaft stellt ihre Ausgaben des abgelaufenen Jahres fest und legt sie nachträglich auf alle Mitgliedsbetriebe um. Dazu teilt sie diese Ausgaben durch die Summe aller Lohnsummen, wobei jede Lohnsumme mit der Gefahrklasse ihres Betriebs gewichtet ist. Daraus ergibt sich ein einheitlicher Beitragsfuß, angegeben je 1.000 Euro gewichteter Lohnsumme. (4) Der Beitrag des Betriebs errechnet sich aus Lohnsumme mal Gefahrklasse mal Beitragsfuß, geteilt durch 1.000. (5) Ein Zuschlag erhöht oder ein Nachlass mindert diesen Beitrag, je nachdem, wie viele und wie schwere Arbeitsunfälle der einzelne Betrieb hatte. (6) Der Arbeitgeber erhält einen Beitragsbescheid und zahlt den Betrag allein. Vom Entgelt der Beschäftigten wird nichts abgezogen. Vereinfacht: In Wirklichkeit erheben die Berufsgenossenschaften unterjährig Vorschüsse und regeln Zuschläge und Nachlässe in ihrer Satzung unterschiedlich.
 
 **Typische Missverständnisse:**
 - Viele denken, ein Streit um einen Arbeitsunfall gehöre vor das Arbeitsgericht, weil er bei der Arbeit geschah; richtig ist: Es entscheidet der Gegner, und Streit mit der Berufsgenossenschaft geht vor das Sozialgericht.

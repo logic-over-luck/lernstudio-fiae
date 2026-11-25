@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -146,6 +148,9 @@ Beispiel: Eine Bank-App mit 60 Entwicklern muss die Arbeit auf mehrere Teams ver
 - Im Anwendungsfalldiagramm bekommt jeder Anwendungsfall, der direkt mit dem Akteur verbunden ist, eine Story. Ein Fall, der nur über include oder extend angehängt ist, wird ein Zusatzsatz in dieser Story.
 - Der Nutzen steht nicht im Diagramm; man ergänzt ihn selbst sinnvoll.
 - Die Ideallinie lässt sich rechnen: Startwert geteilt durch die Zahl der Sprinttage ergibt den Abbau je Tag. Der Idealwert nach einer Zahl vergangener Sprinttage ist der Startwert minus vergangene Tage mal Abbau je Tag. Erst der Vergleich mit dem Ist-Wert desselben Tages zeigt Verzug oder Vorsprung.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K1 – Weg eines Eintrags vom Product Backlog zum Inkrement: (1) Der Product Owner hält alle Anforderungen als Einträge im Product Backlog und ordnet sie; was als Nächstes umgesetzt werden soll, steht oben. (2) Im Sprint Planning wählen die Developers von oben so viele Einträge aus dem Product Backlog aus, wie sie im Sprint voraussichtlich schaffen. (3) Die ausgewählten Einträge und der Plan für ihre Umsetzung bilden das Sprint Backlog; alle übrigen Einträge bleiben im Product Backlog. (4) Während des Sprints setzen die Developers die Einträge des Sprint Backlogs um und gleichen im Daily Scrum Fortschritt und Plan ab. (5) Die fertig umgesetzten Einträge ergeben zusammen mit dem bisherigen Produktstand das Inkrement, also das nutzbare Ergebnis des Sprints. (6) Im Sprint Review wird das Inkrement den Stakeholdern vorgestellt; neue Erkenntnisse und nicht fertig gewordene Einträge kommen zurück ins Product Backlog. Vereinfacht: Zum Sprint Backlog gehört nach dem Scrum Guide außerdem ein Sprint-Ziel, das im Sprint Planning festgelegt wird.
 
 **Typische Missverständnisse:**
 - Viele denken, der Scrum Master verteile die Aufgaben; richtig ist: Die Developers verteilen sie untereinander, und die Reihenfolge im Product Backlog bestimmt der Product Owner (nicht der Kunde direkt).

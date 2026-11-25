@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP1 – und am Ende auch mein Pr�
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -104,6 +106,10 @@ Beispiel: Das dienstliche Tablet wird komplett per MDM verwaltet. Auf dem privat
 - Ein Anmeldepasswort ist keine Verschlüsselung: Den ausgebauten Datenträger kann ein Dieb an einem anderen Rechner auslesen.
 - Verschlüsselung verhindert das Lesen, zeigt aber keine Veränderung; dafür ist die Prüfsumme oder Signatur da.
 - MDM passt zu Geräten, die der Betrieb stellt, MAM besonders zu privaten Geräten: Wer ein privates Gerät als Ganzes verwaltet, greift in private Daten ein, und das darf der Betrieb nicht einfach.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K1 – So schützt der VPN-Tunnel im offenen WLAN: (1) Der VPN-Client auf dem Notebook baut über das offene WLAN eine Verbindung zum VPN-Gateway des Betriebs auf. (2) Client und Gateway authentifizieren sich, zum Beispiel mit Zertifikat oder Zugangsdaten, und handeln einen Sitzungsschlüssel aus. (3) Der Client verschlüsselt jedes ausgehende Datenpaket und verpackt es in ein neues Paket, das an das VPN-Gateway adressiert ist. (4) Wer im WLAN mitliest, sieht nur verschlüsselte Pakete an das Gateway, aber weder den Inhalt noch das eigentliche Ziel. (5) Das Gateway prüft, ob die Pakete unverändert sind, entschlüsselt sie und leitet sie ins Firmennetz weiter. (6) Antworten aus dem Firmennetz verschlüsselt das Gateway und schickt sie durch denselben Tunnel zurück an den Client. Vereinfacht: In Wirklichkeit legt die VPN-Konfiguration fest, ob der gesamte Datenverkehr oder nur der zum Firmennetz durch den Tunnel läuft.
+- K6 – Wie MDM Vorgaben auf dem Gerät durchsetzt (und was MAM davon betrifft): (1) Die Administration registriert das Gerät am MDM-Server; dabei wird auf dem Gerät ein Verwaltungsprofil oder ein Agent eingerichtet. (2) Die Administration legt am Server zentral Richtlinien fest, zum Beispiel Bildschirmsperre, Verschlüsselung und einen Mindest-Updatestand. (3) Der Server überträgt die Richtlinien an das Gerät, und das Gerät setzt sie um. Der Nutzer kann sie nicht einzeln ändern. Entfernt er die Verwaltung, verliert er den Zugriff auf Firmendaten. (4) Das Gerät meldet regelmäßig seinen Zustand an den Server, etwa Updatestand und installierte Apps. (5) Erfüllt ein Gerät die Vorgaben nicht, kann der Server den Zugriff auf Firmendaten sperren, bis der Verstoß behoben ist. (6) Bei Verlust sendet der Server einen Sperr- oder Löschbefehl; bei MAM betrifft er nur die dienstlichen Apps und ihre Daten. Vereinfacht: Bei MAM auf privaten Geräten wird oft nicht das ganze Gerät registriert, sondern nur die dienstliche App oder ein dienstlicher Bereich an die Verwaltung angebunden.
 
 **Typische Missverständnisse:**
 - Viele denken, ein WLAN mit Anmeldung (Hotel, Zug) sei sicher. Richtig ist: Viele Fremde sind im selben Netz und können mitlesen; erst das VPN verschlüsselt die Verbindung.

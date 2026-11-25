@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 2) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -104,6 +106,9 @@ Manche Werkzeuge beherrschen mehrere Arten.
 - Testdaten ohne erwartetes Ergebnis sind noch kein Testfall. Das erwartete Ergebnis kommt aus der Anforderung.
 - Bei Sonderfällen wie einem leeren Array legt die Anforderung fest, was richtig ist. Schweigt sie dazu, macht der Testfall diese Lücke sichtbar.
 - Abgrenzung: Hier entstehen Testdaten aus Anforderung, Wertebereichen und Randfällen. Testdaten, die eine bestimmte Überdeckung des Codes erreichen sollen, gehören zum Nachbarthema Testabdeckung.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K3 – Warum der Startwert 0 bei der Maximum-Suche nur mit negativen Werten auffällt: (1) Die Maximum-Suche setzt die Variable max vor der Schleife auf den Startwert 0. (2) Die Schleife vergleicht jedes Element mit max und überschreibt max nur, wenn das Element größer ist. (3) Bei [−4, −2, −9] sind die Vergleiche −4 > 0, −2 > 0 und −9 > 0 alle falsch, also wird max nie überschrieben. (4) Die Funktion gibt den Startwert 0 zurück, obwohl 0 gar nicht im Array steht; richtig wäre −2. (5) Enthält das Array mindestens einen positiven Wert, überschreibt dieser den Startwert, und der Fehler bleibt im Test unsichtbar. (6) Bei der Minimum-Suche mit Startwert 0 ist es umgekehrt: Nur ein Array aus ausschließlich positiven Werten deckt den Fehler auf.
 
 **Typische Missverständnisse:**
 - Viele denken, es gebe immer nur eine gültige und eine ungültige Klasse; richtig ist: Behandelt die Funktion gültige Eingaben unterschiedlich (z. B. zwei Tarife), ist jede Behandlung eine eigene Klasse, und ungültige gibt es meist unterhalb und oberhalb.

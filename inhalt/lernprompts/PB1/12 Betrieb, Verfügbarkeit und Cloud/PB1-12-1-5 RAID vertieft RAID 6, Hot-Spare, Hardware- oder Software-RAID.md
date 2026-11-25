@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -74,6 +76,9 @@ Beispiel: Ein NAS mit RAID 5 aus vier Platten und einer fünften als Hot-Spare b
 - Der rote Faden ist die ungeschützte Zeit nach dem ersten Plattenausfall. Sie reicht vom Ausfall über das Bemerken und den Einbau der Ersatzplatte bis zum Ende des Rebuilds. RAID 6 schützt in dieser Zeit weiter, die Hot-Spare-Platte verkürzt sie.
 - Bei Hardware- oder Software-RAID gibt es keine feste richtige Antwort. Abgewogen werden RAID-Level und Last (muss Parität berechnet werden, wird viel geschrieben?) gegen die Kosten. Jede Entscheidung zählt, wenn sie stimmig am Fall begründet ist.
 - RAID 5 und die übrigen Level kommen aus dem Nachbarstichpunkt zu RAID und Backup und werden hier vorausgesetzt. Auch RAID 6 ersetzt kein Backup.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K2 – Schreibvorgang über den gepufferten Controller-Cache: (1) Das Betriebssystem schickt einen Schreibauftrag an den RAID-Controller, der ihm gegenüber wie ein einzelnes Laufwerk auftritt. (2) Der Controller legt die Daten in seinem Cache ab und meldet dem Betriebssystem sofort, dass der Schreibvorgang abgeschlossen ist. (3) Danach berechnet der Prozessor des Controllers die Parität und schreibt Daten und Parität auf die Platten des Verbunds. (4) Fällt vorher der Strom aus, hält die Batterie den Cache-Inhalt, oder ein Kondensator liefert Strom, um ihn in Flash-Speicher zu sichern. (5) Beim nächsten Start schreibt der Controller die gesicherten Daten nachträglich auf die Platten, sodass kein bestätigter Schreibvorgang verloren geht. (6) Bei Software-RAID führt das Betriebssystem Verteilung und Paritätsberechnung mit der CPU des Servers aus; einen batteriegepufferten Controller-Cache gibt es dort nicht. Vereinfacht: Bei kleinen Änderungen muss der Controller für die neue Parität zuerst alte Daten und alte Parität von den Platten lesen, was das Schreiben bei RAID 5 und 6 zusätzlich bremst.
 
 **Typische Missverständnisse:**
 - Viele denken, auf der Hot-Spare-Platte liege schon eine Kopie der Daten oder sie bringe mehr Speicherplatz; richtig ist: Sie ist bis zum Ausfall leer, zählt nicht zur nutzbaren Kapazität und ist auch keine weitere Paritätsplatte.

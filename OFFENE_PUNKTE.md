@@ -32,3 +32,12 @@ Liste mit rund 40 Stellen: `inhalt\lernprompts\WISO\_Faktencheck_2026-11-09.md`.
 ## 3. Vier Stichpunkte ohne Trainer (vor der AP2)
 
 PB1-7-1-2, PB2-1-1-3, PB2-2-1-4, PB2-5-1-5 (PB2-5-1-5 passt ins SQL-Labor).
+
+## 4. Nacharbeit nach dem Ablauf-Lauf vom 25.11.2026
+
+Liste: `inhalt\lernprompts\_Ablauf-Nacharbeit_2026-11-25.md` (aus den drei Berichten `_Ablauf-Bericht_2026-11-25_*.md`).
+
+- **22 mögliche Fehler im Stoff**, gemeldet vom Prüfer (AP1 9, PB1 3, PB2 1, WiSo 9). Jede Meldung erst an der
+  Quelle prüfen, dann Stoff in `inhalt/<RAUM>.json` und im Prompt gleich ändern, bei Bedarf auch die Karten.
+- **14 Stellen, an denen ein Ablauf fehlt** und noch kein Text geschrieben wurde (AP1 6, PB1 6, WiSo 2).
+- Die drei Berichte können weg, sobald beides erledigt ist; dort stehen auch die 21 abgelehnten Vorschläge mit Grund.

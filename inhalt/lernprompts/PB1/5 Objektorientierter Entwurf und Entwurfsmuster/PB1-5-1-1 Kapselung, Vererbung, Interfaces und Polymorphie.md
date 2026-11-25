@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -138,6 +140,9 @@ Beispiel in Pseudocode: `Mitarbeiter(name, gehalt)` ruft zuerst `super(name)` au
 - Eine Klasse wird abstrakt, wenn es kein Objekt „an sich“ von ihr geben soll. Meist kann sie dann mindestens eine Methode nicht sinnvoll selbst umsetzen und gibt sie nur als abstrakte Methode vor.
 - Bei Polymorphie zählt die tatsächliche Klasse des Objekts, nicht der Typ der Variablen. Deshalb kann man eine Liste vom Typ der Oberklasse oder des Interface durchlaufen, ohne nach der Art zu unterscheiden.
 - Wie die Methoden der Unterklassen ausprogrammiert werden und wie ein Setter einen abgelehnten Wert meldet (Ausnahmen), gehört zu anderen Stichpunkten.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K4 – Ablauf des dynamischen Bindens beim Methodenaufruf: (1) Beim Übersetzen prüft der Compiler anhand des Variablentyps, etwa Form, ob dort eine Methode berechneFlaeche() mit passender Signatur vorhanden ist (dort deklariert oder geerbt). (2) Der Compiler legt dabei nicht fest, welche Umsetzung läuft. Er vermerkt im übersetzten Code nur den Aufruf mit Name und Signatur. (3) Beim Erzeugen speichert jedes Objekt einen Verweis auf seine tatsächliche Klasse, etwa Kreis. Das gilt unabhängig vom Typ der Variablen, die später darauf zeigt. (4) Zur Laufzeit folgt das Laufzeitsystem beim Aufruf f.berechneFlaeche() der Referenz zum Objekt und liest dessen tatsächliche Klasse aus. (5) Das Laufzeitsystem sucht die Methode mit dieser Signatur in dieser Klasse. Ist sie dort nicht vorhanden, geht es schrittweise zur Oberklasse weiter. (6) Das Laufzeitsystem führt die zuerst gefundene Umsetzung aus, bei einem Kreis-Objekt also die Fassung aus Kreis. Vereinfacht: In Wirklichkeit durchsucht das Laufzeitsystem die Klassenhierarchie nicht bei jedem Aufruf, sondern schlägt die Methode in einer je Klasse vorab angelegten Methodentabelle nach.
 
 **Typische Missverständnisse:**
 - Viele denken, Polymorphie sei dasselbe wie Überladen. Richtig ist: Polymorphie beruht auf dem Überschreiben in verschiedenen Klassen, und die Auswahl fällt erst zur Laufzeit.

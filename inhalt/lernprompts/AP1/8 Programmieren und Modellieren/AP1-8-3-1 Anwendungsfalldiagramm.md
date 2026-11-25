@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP1 – und am Ende auch mein Pr�
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -105,6 +107,9 @@ Beispiel Webshop: Der Anwendungsfall „Bestellung bezahlen“ ist mit dem Akteu
 - Die Signalwörter im Text entscheiden: „immer“, „bei jeder“ → include; „kann“, „falls“, „nur wenn“ → extend; „kann alles, was … kann“ → Generalisierung. Probe für extend: Der Basis-Anwendungsfall funktioniert auch ohne die Erweiterung.
 - Eine Generalisierung spart Linien: Der speziellere Akteur erbt alle Assoziationen des allgemeinen und bekommt eigene Linien nur zu dem, was er zusätzlich darf. Geerbt wird nur in diese Richtung – der allgemeine Akteur darf das Zusätzliche nicht.
 - Ein eingeschlossener Anwendungsfall braucht keine eigene Linie zu einem Akteur; der Akteur erreicht ihn über den einschließenden. Schließen mehrere Anwendungsfälle dasselbe ein, wird es nur einmal gezeichnet, mit einem Pfeil von jedem.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K5 – Was bei extend im Ablauf des Basis-Anwendungsfalls passiert: (1) Der Akteur startet den Basis-Anwendungsfall, und dessen Ablauf beginnt, ohne dass der Basis-Anwendungsfall den erweiternden Anwendungsfall kennen muss. (2) Der Ablauf erreicht die Stelle, die im Basis-Anwendungsfall als Erweiterungspunkt benannt ist. (3) An dieser Stelle wird die Bedingung geprüft, die in der Notiz am extend-Pfeil steht. (4) Ist die Bedingung erfüllt, wird der Ablauf des erweiternden Anwendungsfalls genau hier eingefügt und vollständig ausgeführt. (5) Danach läuft der Basis-Anwendungsfall hinter dem Erweiterungspunkt weiter; ist die Bedingung nicht erfüllt, läuft er ohne Einschub weiter. (6) Der erweiternde Anwendungsfall bezieht sich also auf den Basis-Anwendungsfall und dessen Erweiterungspunkt, deshalb zeigt der Pfeil von ihm zum Basis-Anwendungsfall.
 
 **Typische Missverständnisse:**
 - Viele denken, ein fremdes Programm gehöre gar nicht ins Diagramm oder als Ellipse in den Rahmen; richtig ist: Es wird nicht mitentwickelt, arbeitet aber von außen mit, also ist es ein Akteur.

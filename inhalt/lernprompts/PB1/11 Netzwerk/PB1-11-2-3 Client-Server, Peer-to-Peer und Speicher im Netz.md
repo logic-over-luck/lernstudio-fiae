@@ -7,8 +7,10 @@ Hey! Du bist mein Lehrer für die IHK-Prüfung AP2 (Prüfungsbereich 1) – und 
 
 Wie du mir das beibringst, überlasse ich dir. Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:
 
-- Ich will es verstehen, nicht auswendig lernen: gern mit Beispielen aus dem Alltag und dem Warum dahinter.
-- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
+- Ich will es verstehen, nicht auswendig lernen. Wo etwas abläuft oder funktioniert (Technik, Verfahren, Protokoll, Rechenweg), erklär zuerst Schritt für Schritt, was passiert, mit den richtigen Begriffen und dem Warum dahinter. Ein Beispiel aus dem Alltag gern danach als Eselsbrücke – sag dazu, wo es hinkt.
+- Die Erklärungen im Stoff sind das Minimum für die Prüfung, nicht die Grenze. Wo dort nur steht, was es gibt, erklär mir auch, wie es funktioniert, und trenn sichtbar, was die IHK lesen will und was nur Hintergrund zum Verstehen ist. Stehen in der Lehrnotiz „Abläufe zum Verstehen“, bau sie in deine Erklärung ein.
+- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.
+- Lieber kleine Häppchen mit einer Übungsaufgabe zwischendurch als ein langer Vortrag – klein heißt wenig auf einmal, nicht oberflächlich. Immer nur eine Aufgabe pro Nachricht, und lass mich erst antworten, bevor du die Lösung zeigst.
 - Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest.
 - Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.
 - Fachwörter, die die IHK lesen will, mach mir ruhig deutlich.
@@ -125,6 +127,10 @@ Beispiel: Das kleine Büro nimmt ein NAS für gemeinsame Dateien, ein einzelner 
 - Bewerten und beurteilen heißt: Merkmale auf die Lage beziehen (Zahl der Rechner, gemeinsame Daten, Rechte, Sicherung, Betreuung), entscheiden und auch den Nachteil der gewählten Lösung nennen.
 - Leitfrage beim Speicher: Greifen Menschen auf Dateien zu oder Server auf Speicher wie auf eine eigene Platte, und wie viele? iSCSI und Fibre Channel sind keine weiteren Speicherarten, sondern zwei Wege, den Blockspeicher eines SAN anzubinden.
 - Bei HTTP sendet der Client eine Anfrage an eine URL, der Server antwortet mit Statuscode und Daten (z. B. JSON). Das passt, wenn fremde Geräte von außen zugreifen. ODBC passt, wenn eine Anwendung direkt mit einer oder mehreren Datenbanken arbeitet.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K4 – Weg eines Zugriffs bei NAS und bei SAN: (1) Beim NAS schickt der Client über SMB oder NFS eine Anfrage nach einer Datei mit Pfad und Namen an das NAS. (2) Das NAS ermittelt in seinem eigenen Dateisystem, in welchen Blöcken die Datei auf seinen Platten liegt, und liest diese Blöcke. (3) Das NAS schickt den Dateiinhalt über das LAN an den Client zurück; der Client sieht nur Dateien und Ordner, nie Blöcke. (4) Beim SAN weist das Speichersystem dem Server ein Stück Speicher als logisches Laufwerk (LUN) zu, das dessen Betriebssystem als Festplatte erkennt. (5) Der Server legt auf diesem Laufwerk selbst ein Dateisystem an und ermittelt bei jedem Dateizugriff selbst die betroffenen Blocknummern. (6) Der Server schickt Lese- und Schreibbefehle für diese Blöcke über das Speichernetz; das Speichersystem liefert Blöcke, ohne die Dateien darin zu kennen.
+- K5 – Wie ein Blockzugriff über iSCSI und Fibre Channel läuft: (1) Im Server arbeitet ein iSCSI-Initiator (Software oder eigene Karte), im Speichersystem ein iSCSI-Target, das logische Laufwerke (LUNs) anbietet. (2) Der Initiator baut über das IP-Netz eine TCP-Verbindung zum Target auf und meldet sich dort an. (3) Das Betriebssystem des Servers sieht das LUN danach als Festplatte und erzeugt für jeden Zugriff SCSI-Befehle zum Lesen oder Schreiben von Blöcken. (4) Der Initiator verpackt jeden SCSI-Befehl in TCP/IP-Pakete und schickt sie über Ethernet zum Target. (5) Das Target packt den Befehl aus, führt ihn auf dem LUN aus und schickt Daten oder Bestätigung auf demselben Weg zurück. (6) Bei Fibre Channel werden dieselben SCSI-Befehle stattdessen in Fibre-Channel-Frames über eigene Adapter (HBAs) und eigene FC-Switches transportiert.
 
 **Typische Missverständnisse:**
 - Viele denken, Client-Server sei immer die bessere Antwort; richtig ist: Für wenige Rechner ohne Administrator genügt Peer-to-Peer.
