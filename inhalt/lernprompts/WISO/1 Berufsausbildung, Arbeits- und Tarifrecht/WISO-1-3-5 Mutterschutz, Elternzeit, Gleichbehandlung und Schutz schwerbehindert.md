@@ -155,6 +155,9 @@ Beispiel: Ein IT-Unternehmen mit 100 Arbeitsplätzen muss 5 Stellen mit schwerbe
 - Mutterschutz und Elternzeit sind zwei verschiedene Dinge aus zwei Gesetzen. Mutterschutz betrifft nur die Mutter, von der Schwangerschaft bis in die ersten Monate nach der Geburt. Elternzeit gilt für beide Eltern: Bei der Mutter schließt sie an die Schutzfrist an, der Vater kann sie ab der Geburt nehmen. Sie hat einen eigenen Kündigungsschutz.
 - Nicht jede unterschiedliche Behandlung ist ein Verstoß gegen das AGG. Entscheidend ist, ob der Grund eines der sechs Merkmale ist.
 
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K1 – Frühesten Wiedereinstieg nach der Entbindung bestimmen: (1) Ausgangspunkt ist der Tag der tatsächlichen Entbindung, nicht der errechnete Termin. (2) Ab diesem Tag zählst du acht Wochen weiter, bei Früh- oder Mehrlingsgeburten zwölf Wochen. (3) Kam das Kind vor dem errechneten Termin, zählst du die Tage der sechswöchigen Schutzfrist vor der Entbindung, die dadurch weggefallen sind. (4) Diese Tage hängst du an das Ende der Schutzfrist nach der Entbindung an. (5) Der Tag nach dem Ende der so verlängerten Frist ist der früheste Tag, an dem die Mutter wieder beschäftigt werden darf.
+
 **Typische Missverständnisse:**
 - Viele denken, die Schutzfrist nach der Entbindung lasse sich mit ärztlicher Bescheinigung oder mit Erlaubnis des Arbeitgebers verkürzen; richtig ist: Sie ist nie verzichtbar.
 - Viele denken, mit dem Ende der Schutzfrist ende auch der Kündigungsschutz; richtig ist: Er reicht bis vier Monate nach der Entbindung, und in der Elternzeit gilt ein eigener.

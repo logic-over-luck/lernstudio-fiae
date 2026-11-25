@@ -111,6 +111,9 @@ Beispiel Warenkorb: Im Zustand „gefüllt“ führt „Artikel hinzufügen“ p
 - Die drei Teile der Beschriftung haben feste Rollen: Das Ereignis stößt den Übergang an, die Bedingung muss wahr sein, damit er stattfindet, die Aktion wird beim Übergang ausgeführt. Im Text zeigt oft „nur“ auf eine Bedingung und „dabei“ auf eine Aktion.
 - Bei `after(Dauer)` zählt die Zeit ab dem Betreten des Zustands. Tritt vorher ein anderes Ereignis ein, gilt dessen Übergang.
 
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K1 – Von der Beschreibung zum Zustandsdiagramm: (1) Du liest die Beschreibung und sammelst die Zustände des Objekts, erkennbar an Formulierungen wie „ist frei“ oder „befindet sich in Prüfung“. (2) Du legst fest, in welchem Zustand das Objekt beginnt, und führst den Übergang vom Startzustand dorthin. (3) Für jeden Zustand suchst du die Ereignisse, die ihn verlassen, und bestimmst zu jedem Ereignis den Zielzustand; jedes wird ein beschrifteter Übergangspfeil. (4) Hängt ein Übergang von einer Bedingung ab oder löst er eine Aktion aus, schreibst du sie dazu: Ereignis [Bedingung] / Aktion. (5) Endet das Objekt, führst du den letzten Übergang in den Endzustand. (6) Zum Schluss prüfst du, ob jeder Zustand erreichbar ist und jedes Ereignis der Beschreibung im Diagramm vorkommt.
+
 **Typische Missverständnisse:**
 - Viele denken, auch die Statuswechsel eines Objekts seien „ein Ablauf“ und gehörten ins Aktivitätsdiagramm. Richtig ist: Wartet ein Objekt auf Ereignisse und reagiert je nach Zustand anders, ist es ein Zustandsdiagramm; das Aktivitätsdiagramm zeigt eine Folge von Arbeitsschritten.
 - Viele denken, ein Ereignis, bei dem das Objekt im Zustand bleibt, sei immer ein Selbstübergang. Richtig ist: Dürfen exit und entry dabei nicht erneut laufen, weil sonst mitten im Zustand etwas aus- und wieder eingeschaltet würde, ist es eine interne Transition.

@@ -1,6 +1,6 @@
 # Offene Punkte
 
-Stand 12.11.2026. Alles Ältere (Protokolle, Pläne, die frühere lange Fassung dieser Datei) liegt außerhalb des Repos
+Stand 25.11.2026. Alles Ältere (Protokolle, Pläne, die frühere lange Fassung dieser Datei) liegt außerhalb des Repos
 in `Desktop\lernstudio_archiv\2026-11-12\`.
 
 ## 1. Offene Stoff-Meldungen zu PB1 und WiSo (vor der AP2)
@@ -33,11 +33,13 @@ Liste mit rund 40 Stellen: `inhalt\lernprompts\WISO\_Faktencheck_2026-11-09.md`.
 
 PB1-7-1-2, PB2-1-1-3, PB2-2-1-4, PB2-5-1-5 (PB2-5-1-5 passt ins SQL-Labor).
 
-## 4. Nacharbeit nach dem Ablauf-Lauf vom 25.11.2026
+## 4. Nacharbeit nach dem Ablauf-Lauf vom 25.11.2026 – erledigt
 
-Liste: `inhalt\lernprompts\_Ablauf-Nacharbeit_2026-11-25.md` (aus den drei Berichten `_Ablauf-Bericht_2026-11-25_*.md`).
+Liste mit Urteil und Quelle je Meldung: `inhalt\lernprompts\_Ablauf-Nacharbeit_2026-11-25.md`. Die drei Berichte
+`_Ablauf-Bericht_2026-11-25_*.md` sind gelöscht.
 
-- **22 mögliche Fehler im Stoff**, gemeldet vom Prüfer (AP1 9, PB1 3, PB2 1, WiSo 9). Jede Meldung erst an der
-  Quelle prüfen, dann Stoff in `inhalt/<RAUM>.json` und im Prompt gleich ändern, bei Bedarf auch die Karten.
-- **14 Stellen, an denen ein Ablauf fehlt** und noch kein Text geschrieben wurde (AP1 6, PB1 6, WiSo 2).
-- Die drei Berichte können weg, sobald beides erledigt ist; dort stehen auch die 21 abgelehnten Vorschläge mit Grund.
+- **22 Stoff-Meldungen:** 19 bestätigt und korrigiert, 1 teilweise (AP1-5-2-1-K9: Datum stimmte, nur „kostenpflichtig“
+  war zu pauschal), 2 widerlegt bzw. nicht belegt (WISO-1-8-1-K5, WISO-3-4-4-K5), dort bleibt der Stoff.
+- **14 fehlende Abläufe:** geschrieben, gegen Quellen geprüft und in die Lehrnotizen eingesetzt.
+- Noch offen, nebenbei gefunden: Das Glossar nennt beim „Bildungsgutschein“ noch „Agentur für Arbeit oder Jobcenter“;
+  für neue Fälle ist seit 1.1.2025 nur die Agentur zuständig (siehe WISO-1-8-1-K5).

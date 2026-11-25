@@ -77,14 +77,14 @@ Der Mindestlohn soll verhindern, dass Arbeit so schlecht bezahlt wird, dass man 
 Beispiel: Ein Onlinehändler beschäftigt Aushilfen im Versand; auch wenn sie nur zehn Stunden pro Woche arbeiten, muss jede Stunde mindestens mit dem aktuellen Mindestlohn bezahlt werden.
 
 ### K7 – Entgeltfortzahlung: Wartezeit und Dauer (Stufe 2 Verstehen)
-Du kannst die Entgeltfortzahlung im Krankheitsfall erklären: Ist ein Beschäftigter ohne eigenes Verschulden arbeitsunfähig, zahlt der Arbeitgeber das Entgelt bis zu sechs Wochen weiter, sobald das Arbeitsverhältnis vier Wochen ununterbrochen besteht, danach zahlt die Krankenkasse Krankengeld; das gilt auch für Auszubildende und Minijobber, und an gesetzlichen Feiertagen wird das Entgelt ebenfalls fortgezahlt.
+Du kannst die Entgeltfortzahlung im Krankheitsfall erklären: Ist ein Beschäftigter ohne eigenes Verschulden arbeitsunfähig, zahlt der Arbeitgeber das Entgelt bis zu sechs Wochen weiter, sobald das Arbeitsverhältnis vier Wochen ununterbrochen besteht, danach zahlt die Krankenkasse Krankengeld; die Entgeltfortzahlung gilt auch für Auszubildende und Minijobber (Krankengeld bekommen Minijobber nicht), und an gesetzlichen Feiertagen wird das Entgelt ebenfalls fortgezahlt.
 
 Erklärung:
 Wer krank ist, soll nicht sofort ohne Einkommen dastehen. Das Risiko trägt zuerst der Arbeitgeber, danach die Krankenkasse.
 - **Voraussetzung:** Arbeitsunfähigkeit ohne eigenes Verschulden; ein normaler Sportunfall zählt nicht als Verschulden, eine selbst angezettelte Schlägerei schon.
 - **Wartezeit:** Anspruch erst, wenn das Arbeitsverhältnis vier Wochen ununterbrochen besteht
 - **Dauer:** bis zu sechs Wochen je Krankheit, danach Krankengeld der Krankenkasse
-- gilt für alle Beschäftigten einschließlich Azubis und Minijobber; an **Feiertagen** wird das Entgelt ebenso weitergezahlt – dafür gilt die Wartezeit von vier Wochen nicht, sie betrifft nur die Krankheit.
+- die Entgeltfortzahlung gilt für alle Beschäftigten einschließlich Azubis und Minijobber (Minijobber sind über den Minijob nicht krankenversichert und bekommen danach kein Krankengeld); an **Feiertagen** wird das Entgelt ebenso weitergezahlt – dafür gilt die Wartezeit von vier Wochen nicht, sie betrifft nur die Krankheit.
 Beispiel: Ein Programmierer bricht sich beim Fußball das Bein und fällt acht Wochen aus: Sechs Wochen zahlt der Arbeitgeber das volle Gehalt, ab der siebten Woche erhält er Krankengeld.
 
 ## Lehrnotiz: Rechtsquellen zuordnen: welches Gesetz regelt was

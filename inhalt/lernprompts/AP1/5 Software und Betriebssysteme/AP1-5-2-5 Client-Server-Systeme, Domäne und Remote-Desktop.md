@@ -124,10 +124,10 @@ Erklärung:
 Mit einem Content-Management-System pflegen Redakteure die Inhalte einer Website ohne Programmierkenntnisse; Vorlagen (Templates) sorgen für ein einheitliches Aussehen, das sich an das Endgerät anpasst (responsives Design).
 
 ### K13 – Eigenschaften von Serverhardware (Stufe 1 Wiedergeben)
-Du kannst Eigenschaften von Serverhardware nennen: leistungsfähiger und zuverlässiger als ein Arbeitsplatzrechner, um viele gleichzeitige Zugriffe rund um die Uhr zu bedienen, meist im 19-Zoll-Gehäuse im Serverschrank, mit zwei Netzteilen und großen Lüftern.
+Du kannst Eigenschaften von Serverhardware nennen: leistungsfähiger und zuverlässiger als ein Arbeitsplatzrechner, um viele gleichzeitige Zugriffe rund um die Uhr zu bedienen, meist im 19-Zoll-Gehäuse im Serverschrank, mit zwei Netzteilen und mehreren leistungsstarken Lüftern.
 
 Erklärung:
-Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, viele gleichzeitige Zugriffe schnell zu bedienen und rund um die Uhr zuverlässig zu laufen, und steckt meist in einem 19-Zoll-Gehäuse im Serverschrank. Typisch sind zwei Netzteile (fällt eins aus, läuft der Server weiter) und große, leistungsstarke Lüfter.
+Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, viele gleichzeitige Zugriffe schnell zu bedienen und rund um die Uhr zuverlässig zu laufen, und steckt meist in einem 19-Zoll-Gehäuse im Serverschrank. Typisch sind zwei Netzteile (fällt eins aus, läuft der Server weiter) und mehrere leistungsstarke Lüfter.
 
 ## Lehrnotiz: Client-Server-Systeme, Domäne und Remote-Desktop
 

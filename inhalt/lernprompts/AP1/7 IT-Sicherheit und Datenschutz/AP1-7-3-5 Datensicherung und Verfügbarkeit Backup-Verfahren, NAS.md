@@ -109,12 +109,12 @@ Die Sicherung muss **getrennt** vom Original liegen, damit Brand, Wasser oder Ra
 Vor einem Cloud-Backup prüfen: Wie verfügbar ist der Dienst, was passiert bei seinem Ausfall, wie lange dauert die Wiederherstellung großer Datenmengen, wo liegen die Daten (EU, DSGVO), und sind sie vor Zugriff geschützt (z. B. vor dem Hochladen selbst verschlüsseln)?
 
 ### K10 – Image-Sicherung gegen dateibasierte Sicherung (Stufe 2 Verstehen)
-Du kannst Image-Sicherung und dateibasierte Sicherung unterscheiden: Das Image ist ein Abbild aller Datenblöcke eines Datenträgers samt Betriebssystem, Dateisystem und Resten gelöschter Dateien und eignet sich, um ein System komplett wiederherzustellen; die dateibasierte Sicherung kopiert ausgewählte Dateien und Ordner und eignet sich, um einzelne Dateien zurückzuholen.
+Du kannst Image-Sicherung und dateibasierte Sicherung unterscheiden: Das Image ist ein Abbild eines Datenträgers samt Betriebssystem und Dateisystem (als sektorweises Image mit allen Datenblöcken, auch Resten gelöschter Dateien) und eignet sich, um ein System komplett wiederherzustellen; die dateibasierte Sicherung kopiert ausgewählte Dateien und Ordner und eignet sich, um einzelne Dateien zurückzuholen.
 
 Erklärung:
-- **Image-Backup:** Der ganze Datenträger wird blockweise kopiert, egal was darin steht. Nach einem Plattendefekt spielt man das Image zurück und hat ein startfähiges System mit allen Programmen und Einstellungen. Nachteil: groß; einzelne Dateien herauszuholen ist umständlicher.
+- **Image-Backup:** Der ganze Datenträger wird blockweise kopiert, üblicherweise nur die belegten Blöcke; ein sektorweises Image kopiert alle Blöcke, egal was darin steht. Nach einem Plattendefekt spielt man das Image zurück und hat ein startfähiges System mit allen Programmen und Einstellungen. Nachteil: groß; einzelne Dateien herauszuholen ist umständlicher.
 - **Dateibasierte Sicherung:** Nur ausgewählte Dateien und Ordner, z. B. die Projektdaten. Klein und flexibel, aber nach einem Totalausfall muss das System erst neu installiert werden.
-Weil das Image auch Reste gelöschter Dateien enthält, nutzt man es in der **Forensik**, um Beweise zu sichern.
+Weil ein sektorweises Image auch Reste gelöschter Dateien enthält, nutzt man es in der **Forensik**, um Beweise zu sichern.
 In der Praxis kombiniert man oft: ein Image des Systems und regelmäßige Dateisicherungen der Daten.
 
 ### K11 – USB-Speicher am Router statt NAS (Stufe 3 Anwenden)

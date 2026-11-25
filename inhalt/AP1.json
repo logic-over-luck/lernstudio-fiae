@@ -3904,7 +3904,7 @@
         ],
         [
           "AP1-2-2-2-K6",
-          "Du kannst erklären, warum Anforderungen schriftlich in Lasten- und Pflichtenheft festgehalten werden statt mündlich oder pauschal: Beide Seiten arbeiten auf derselben verbindlichen Grundlage, und was dort nicht steht, kann der Auftraggeber später nicht einfordern."
+          "Du kannst erklären, warum Anforderungen schriftlich in Lasten- und Pflichtenheft festgehalten werden statt mündlich oder pauschal: Beide Seiten arbeiten auf derselben verbindlichen Grundlage, und was dort nicht steht, kann der Auftraggeber später grundsätzlich nicht einfordern."
         ],
         [
           "AP1-2-2-2-K7",
@@ -4021,7 +4021,7 @@
               "buch:GS-2.6.2-S224"
             ],
             "vorgegeben": null,
-            "erklaerung": "Mündliche Absprachen wie „ein schnelles System“ versteht jeder anders. Am Ende streiten Kunde und Dienstleister darüber, was eigentlich bestellt war.\nSchriftliche, konkrete Anforderungen\n- schaffen eine **gemeinsame Grundlage** für Planung, Angebot und Abnahme,\n- verhindern **Fehlplanung**, weil Unklarheiten vorher auffallen,\n- legen fest, **was geschuldet ist**: Was nicht spezifiziert ist, kann der Auftraggeber später nicht verlangen – Zusatzwünsche werden gesondert vereinbart und berechnet.\nBeispiel: Steht im Pflichtenheft nichts von einer Datenübernahme aus dem Altsystem, muss der Dienstleister sie nicht kostenlos erledigen.",
+            "erklaerung": "Mündliche Absprachen wie „ein schnelles System“ versteht jeder anders. Am Ende streiten Kunde und Dienstleister darüber, was eigentlich bestellt war.\nSchriftliche, konkrete Anforderungen\n- schaffen eine **gemeinsame Grundlage** für Planung, Angebot und Abnahme,\n- verhindern **Fehlplanung**, weil Unklarheiten vorher auffallen,\n- legen fest, **was geschuldet ist**: Was nicht spezifiziert ist, kann der Auftraggeber später grundsätzlich nicht verlangen (ohne Absprache geschuldet ist nur, was für die übliche Verwendung nötig ist, § 633 Abs. 2 BGB) – Zusatzwünsche werden gesondert vereinbart und berechnet.\nBeispiel: Steht im Pflichtenheft nichts von einer Datenübernahme aus dem Altsystem, muss der Dienstleister sie nicht kostenlos erledigen.",
             "karten": 1,
             "neu": null
           },
@@ -5381,7 +5381,7 @@
               "buch:GS-1.3.4-S65-80"
             ],
             "vorgegeben": null,
-            "erklaerung": "Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), Art- (bestimmte wiederkehrende Geschäfte) und Einzelvollmacht (ein einzelnes Geschäft); sie wird formlos erteilt und nicht ins Handelsregister eingetragen. Grundstücke veräußern oder belasten, Wechselverbindlichkeiten eingehen, Darlehen aufnehmen und Prozesse führen darf der Handlungsbevollmächtigte nur mit besonderer Befugnis (§ 54 Abs. 2 HGB). Der Prokurist zeichnet mit „ppa.“ (§ 51 HGB); Handlungsbevollmächtigte zeichnen üblicherweise mit „i. V.“, bei Art- und Einzelvollmacht oft „i. A.“ (Konvention, nicht gesetzlich geregelt).",
+            "erklaerung": "Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), Art- (bestimmte wiederkehrende Geschäfte) und Einzelvollmacht (ein einzelnes Geschäft); sie wird formlos erteilt und nicht ins Handelsregister eingetragen. Grundstücke veräußern oder belasten, Wechselverbindlichkeiten eingehen, Darlehen aufnehmen und Prozesse führen darf der Handlungsbevollmächtigte nur mit besonderer Befugnis (§ 54 Abs. 2 HGB). Der Prokurist zeichnet mit einem Zusatz, der die Prokura andeutet, üblich ist „ppa.“ (§ 51 HGB); Handlungsbevollmächtigte müssen mit einem Zusatz zeichnen, der das Vollmachtsverhältnis ausdrückt und nicht auf Prokura hindeutet (§ 57 HGB), üblich ist „i. V.“, bei Art- und Einzelvollmacht oft „i. A.“ (die Kürzel selbst sind Konvention).",
             "karten": 3,
             "neu": null
           }
@@ -11526,7 +11526,7 @@
         ],
         [
           "AP1-4-2-4-K7",
-          "Du kannst begründen, warum der tatsächliche Durchsatz unter der angegebenen Rate einer Schnittstelle liegt: Die Angabe ist eine Bruttorate, von der Protokoll-Overhead und Leitungscodierung abgehen; vor einem Vergleich musst du außerdem bit/s und Byte/s auf eine Einheit bringen."
+          "Du kannst begründen, warum der tatsächliche Durchsatz unter der angegebenen Rate einer Schnittstelle liegt: Die Angabe ist eine Bruttorate, von der Protokoll-Overhead und je nach Schnittstelle die Leitungscodierung abgehen; vor einem Vergleich musst du außerdem bit/s und Byte/s auf eine Einheit bringen."
         ],
         [
           "AP1-4-2-4-K8",
@@ -11639,7 +11639,7 @@
               "buch:GS-3.3.1-S302"
             ],
             "vorgegeben": null,
-            "erklaerung": "Datenblätter nennen die **Bruttorate** – alles, was über die Leitung geht. Nutzdaten sind weniger:\n- **Leitungscodierung:** zusätzliche Bits, damit der Empfänger das Signal sicher erkennt\n- **Protokoll-Overhead:** Kopfdaten, Prüfsummen, Bestätigungen\nDazu kommt die Einheitenfalle: Schnittstellen in **bit/s**, Kopierprogramme in **Byte/s** – Faktor 8.\nBeispiel: 1 Gbit/s ÷ 8 = 125 MB/s brutto; über eine 1-Gbit/s-Verbindung kommen beim Kopieren davon etwa 110–118 MB/s an, nicht 1.000 – und erst recht nicht 1 GB/s.",
+            "erklaerung": "Datenblätter nennen die **Bruttorate** – alles, was über die Leitung geht. Nutzdaten sind weniger:\n- **Leitungscodierung:** zusätzliche Bits, damit der Empfänger das Signal sicher erkennt (z. B. bei SATA und USB 3.0 in der angegebenen Rate enthalten, bei Ethernet schon herausgerechnet)\n- **Protokoll-Overhead:** Kopfdaten, Prüfsummen, Bestätigungen\nDazu kommt die Einheitenfalle: Schnittstellen in **bit/s**, Kopierprogramme in **Byte/s** – Faktor 8.\nBeispiel: 1 Gbit/s ÷ 8 = 125 MB/s brutto; über eine 1-Gbit/s-Verbindung kommen beim Kopieren davon etwa 110–118 MB/s an (bei Ethernet fehlt der Rest nur wegen des Protokoll-Overheads), nicht 1.000 – und erst recht nicht 1 GB/s.",
             "karten": 2,
             "neu": null
           },
@@ -13290,7 +13290,7 @@
         ],
         [
           "AP1-5-2-1-K9",
-          "Du kannst beurteilen, ob ein Rechner ein Betriebssystem bekommen kann und ob das Betriebssystem noch Sicherheitsupdates erhält, zum Beispiel ob ein PC die Mindestanforderungen von Windows 11 erfüllt (freigegebener 64-Bit-Prozessor mit mindestens 2 Kernen und 1 GHz, 4 GB RAM, 64 GB Speicher, UEFI mit Secure Boot, TPM 2.0) und dass Windows 10 seit dem 14. Oktober 2025 nur noch über das kostenpflichtige ESU-Programm Sicherheitsupdates bekommt."
+          "Du kannst beurteilen, ob ein Rechner ein Betriebssystem bekommen kann und ob das Betriebssystem noch Sicherheitsupdates erhält, zum Beispiel ob ein PC die Mindestanforderungen von Windows 11 erfüllt (freigegebener 64-Bit-Prozessor mit mindestens 2 Kernen und 1 GHz, 4 GB RAM, 64 GB Speicher, UEFI mit Secure Boot, TPM 2.0) und dass Windows 10 seit dem 14. Oktober 2025 nur noch über das ESU-Programm Sicherheitsupdates bekommt, für Firmen kostenpflichtig."
         ]
       ],
       "gewicht": 0.6,
@@ -13411,7 +13411,7 @@
               "katalog:AP1.04.03.2"
             ],
             "vorgegeben": null,
-            "erklaerung": "**Windows 11** setzt voraus (Stand 10/2026, Microsoft Learn):\n- UEFI mit Secure Boot und **TPM 2.0** (Sicherheitschip auf dem Mainboard oder im Prozessor, der Schlüssel sicher speichert)\n- freigegebener 64-Bit-Prozessor (steht auf Microsofts Liste der unterstützten Prozessoren), mindestens 2 Kerne, 1 GHz\n- 4 GB RAM, 64 GB Speicher\n**Windows 10** hat seit dem **14.10.2025** keinen Support mehr. Sicherheitsupdates gibt es nur noch über das kostenpflichtige **ESU**-Programm (Firmen jahresweise, höchstens drei Jahre; Privatkunden bis 12.10.2027).\nBeurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – taugliche PCs umstellen, andere ersetzen oder übergangsweise ESU kaufen.",
+            "erklaerung": "**Windows 11** setzt voraus (Stand 10/2026, Microsoft Learn):\n- UEFI mit Secure Boot und **TPM 2.0** (Sicherheitschip auf dem Mainboard oder im Prozessor, der Schlüssel sicher speichert)\n- freigegebener 64-Bit-Prozessor (steht auf Microsofts Liste der unterstützten Prozessoren), mindestens 2 Kerne, 1 GHz\n- 4 GB RAM, 64 GB Speicher\n**Windows 10** hat seit dem **14.10.2025** keinen Support mehr. Sicherheitsupdates gibt es nur noch über das **ESU**-Programm (Firmen kostenpflichtig und jahresweise, höchstens drei Jahre; Privatkunden bis 12.10.2027, auch ohne Zusatzkosten).\nBeurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – taugliche PCs umstellen, andere ersetzen oder übergangsweise ESU kaufen.",
             "karten": 4,
             "neu": null
           }
@@ -14009,7 +14009,7 @@
         ],
         [
           "AP1-5-2-5-K13",
-          "Du kannst Eigenschaften von Serverhardware nennen: leistungsfähiger und zuverlässiger als ein Arbeitsplatzrechner, um viele gleichzeitige Zugriffe rund um die Uhr zu bedienen, meist im 19-Zoll-Gehäuse im Serverschrank, mit zwei Netzteilen und großen Lüftern."
+          "Du kannst Eigenschaften von Serverhardware nennen: leistungsfähiger und zuverlässiger als ein Arbeitsplatzrechner, um viele gleichzeitige Zugriffe rund um die Uhr zu bedienen, meist im 19-Zoll-Gehäuse im Serverschrank, mit zwei Netzteilen und mehreren leistungsstarken Lüftern."
         ]
       ],
       "gewicht": 0.5,
@@ -14166,7 +14166,7 @@
               "buch:GS-3.2.4-S293-295"
             ],
             "vorgegeben": null,
-            "erklaerung": "Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, viele gleichzeitige Zugriffe schnell zu bedienen und rund um die Uhr zuverlässig zu laufen, und steckt meist in einem 19-Zoll-Gehäuse im Serverschrank. Typisch sind zwei Netzteile (fällt eins aus, läuft der Server weiter) und große, leistungsstarke Lüfter.",
+            "erklaerung": "Serverhardware gegen Arbeitsplatzrechner: Serverhardware ist darauf ausgelegt, viele gleichzeitige Zugriffe schnell zu bedienen und rund um die Uhr zuverlässig zu laufen, und steckt meist in einem 19-Zoll-Gehäuse im Serverschrank. Typisch sind zwei Netzteile (fällt eins aus, läuft der Server weiter) und mehrere leistungsstarke Lüfter.",
             "karten": 2,
             "neu": null
           }
@@ -19288,7 +19288,7 @@
               "beleg:2023F-A3-bc"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Updates** einspielen, am besten automatisch\n- nicht benötigte **Dienste** abschalten\n- nicht benötigte **Programme** deinstallieren\n- nicht benötigte **Konten** löschen (z. B. Gastkonto)\n- nicht benötigte **Ports** schließen\n- **Rechte** auf das Nötige beschränken – keine normale Arbeit mit Administratorrechten",
+            "erklaerung": "- **Updates** einspielen, am besten automatisch\n- nicht benötigte **Dienste** abschalten\n- nicht benötigte **Programme** deinstallieren\n- nicht benötigte **Konten** löschen oder deaktivieren (z. B. Gastkonto deaktivieren, löschen lässt es sich nicht)\n- nicht benötigte **Ports** schließen\n- **Rechte** auf das Nötige beschränken – keine normale Arbeit mit Administratorrechten",
             "karten": 1,
             "neu": null
           },
@@ -19463,7 +19463,7 @@
         ],
         [
           "AP1-7-3-5-K10",
-          "Du kannst Image-Sicherung und dateibasierte Sicherung unterscheiden: Das Image ist ein Abbild aller Datenblöcke eines Datenträgers samt Betriebssystem, Dateisystem und Resten gelöschter Dateien und eignet sich, um ein System komplett wiederherzustellen; die dateibasierte Sicherung kopiert ausgewählte Dateien und Ordner und eignet sich, um einzelne Dateien zurückzuholen."
+          "Du kannst Image-Sicherung und dateibasierte Sicherung unterscheiden: Das Image ist ein Abbild eines Datenträgers samt Betriebssystem und Dateisystem (als sektorweises Image mit allen Datenblöcken, auch Resten gelöschter Dateien) und eignet sich, um ein System komplett wiederherzustellen; die dateibasierte Sicherung kopiert ausgewählte Dateien und Ordner und eignet sich, um einzelne Dateien zurückzuholen."
         ],
         [
           "AP1-7-3-5-K11",
@@ -19613,7 +19613,7 @@
               "buch:GS-3.8.2-S384"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Image-Backup:** Der ganze Datenträger wird blockweise kopiert, egal was darin steht. Nach einem Plattendefekt spielt man das Image zurück und hat ein startfähiges System mit allen Programmen und Einstellungen. Nachteil: groß; einzelne Dateien herauszuholen ist umständlicher.\n- **Dateibasierte Sicherung:** Nur ausgewählte Dateien und Ordner, z. B. die Projektdaten. Klein und flexibel, aber nach einem Totalausfall muss das System erst neu installiert werden.\nWeil das Image auch Reste gelöschter Dateien enthält, nutzt man es in der **Forensik**, um Beweise zu sichern.\nIn der Praxis kombiniert man oft: ein Image des Systems und regelmäßige Dateisicherungen der Daten.",
+            "erklaerung": "- **Image-Backup:** Der ganze Datenträger wird blockweise kopiert, üblicherweise nur die belegten Blöcke; ein sektorweises Image kopiert alle Blöcke, egal was darin steht. Nach einem Plattendefekt spielt man das Image zurück und hat ein startfähiges System mit allen Programmen und Einstellungen. Nachteil: groß; einzelne Dateien herauszuholen ist umständlicher.\n- **Dateibasierte Sicherung:** Nur ausgewählte Dateien und Ordner, z. B. die Projektdaten. Klein und flexibel, aber nach einem Totalausfall muss das System erst neu installiert werden.\nWeil ein sektorweises Image auch Reste gelöschter Dateien enthält, nutzt man es in der **Forensik**, um Beweise zu sichern.\nIn der Praxis kombiniert man oft: ein Image des Systems und regelmäßige Dateisicherungen der Daten.",
             "karten": 2,
             "neu": null
           },
@@ -22842,7 +22842,7 @@
               "katalog:AP1.04.07.2"
             ],
             "vorgegeben": null,
-            "erklaerung": "Eine Wiederholung zeichnest du als **Rücksprung**:\n- Eine Kante der Entscheidung führt **zurück** zu einer früheren Aktion (meist über eine Zusammenführung).\n- Die andere Kante **verlässt** die Schleife.\nBeispiel: „Passwort eingeben“ → Entscheidung `[falsch]` zurück zu „Passwort eingeben“, `[richtig]` weiter zu „Anmelden“.",
+            "erklaerung": "Eine Wiederholung zeichnest du als **Rücksprung**:\n- Eine Kante der Entscheidung führt **zurück** zu einer früheren Aktion (über eine Zusammenführung vor dieser Aktion).\n- Die andere Kante **verlässt** die Schleife.\nBeispiel: „Passwort eingeben“ → Entscheidung `[falsch]` zurück in eine Zusammenführung vor „Passwort eingeben“, `[richtig]` weiter zu „Anmelden“.",
             "karten": 1,
             "neu": null
           },
@@ -26981,7 +26981,7 @@
       "sp": "AP1-2-4-3",
       "k": "AP1-2-4-3-K5",
       "v": "Mit welchem Zusatz unterschreiben Prokurist und Handlungsbevollmächtigte üblicherweise?",
-      "h": "- Prokurist: „ppa.“ (§ 51 HGB)\n- allgemeine Handlungsvollmacht: „i. V.“\n- Art- und Einzelvollmacht: oft „i. A.“\nBei der Handlungsvollmacht ist das Konvention, nicht gesetzlich geregelt."
+      "h": "- Prokurist: „ppa.“ (§ 51 HGB)\n- allgemeine Handlungsvollmacht: „i. V.“\n- Art- und Einzelvollmacht: oft „i. A.“\nGesetzlich vorgeschrieben ist nur ein passender Zusatz (§§ 51, 57 HGB), die Kürzel selbst sind Konvention."
     },
     {
       "id": "AP1-2-5-1-K8-1",
@@ -28745,7 +28745,7 @@
       "sp": "AP1-4-2-4",
       "k": "AP1-4-2-4-K7",
       "v": "Warum erreicht eine Datenübertragung nie die angegebene Schnittstellenrate?",
-      "h": "Die Angabe ist brutto. Protokoll-Overhead (Kopfdaten, Prüfsummen) und Leitungscodierung kosten Kapazität; nur der Rest sind Nutzdaten."
+      "h": "Die Angabe ist brutto. Protokoll-Overhead (Kopfdaten, Prüfsummen) und je nach Schnittstelle die Leitungscodierung kosten Kapazität; nur der Rest sind Nutzdaten."
     },
     {
       "id": "AP1-4-2-4-K7-2",
@@ -32098,7 +32098,7 @@
       "sp": "AP1-5-2-5",
       "k": "AP1-5-2-5-K13",
       "v": "Nenne Eigenschaften von Serverhardware im Vergleich zu einem Arbeitsplatzrechner.",
-      "h": "- leistungsfähiger, bedient viele gleichzeitige Zugriffe schnell\n- zuverlässiger, für Betrieb rund um die Uhr ausgelegt\n- meist im 19-Zoll-Gehäuse im Serverschrank\n- zwei Netzteile und große Lüfter"
+      "h": "- leistungsfähiger, bedient viele gleichzeitige Zugriffe schnell\n- zuverlässiger, für Betrieb rund um die Uhr ausgelegt\n- meist im 19-Zoll-Gehäuse im Serverschrank\n- zwei Netzteile und mehrere leistungsstarke Lüfter"
     },
     {
       "id": "AP1-5-2-5-K13-2",
@@ -35689,7 +35689,7 @@
       "sp": "AP1-7-3-5",
       "k": "AP1-7-3-5-K10",
       "v": "Was unterscheidet ein Image-Backup von einer dateibasierten Sicherung?",
-      "h": "- Image: alle Datenblöcke des Datenträgers, mit System, Dateisystem und Resten gelöschter Dateien\n- dateibasiert: nur ausgewählte Dateien und Ordner"
+      "h": "- Image: Abbild des ganzen Datenträgers mit System und Dateisystem (sektorweise auch mit Resten gelöschter Dateien)\n- dateibasiert: nur ausgewählte Dateien und Ordner"
     },
     {
       "id": "AP1-7-3-5-K10-2",
@@ -36886,7 +36886,7 @@
       "sp": "AP1-8-3-3",
       "k": "AP1-8-3-3-K3",
       "v": "Wie stellst du im Aktivitätsdiagramm eine Wiederholung dar?",
-      "h": "Eine Entscheidung prüft die Bedingung: Eine ausgehende Kante führt zurück zu einer früheren Aktion (meist über eine Zusammenführung), die andere verlässt die Wiederholung."
+      "h": "Eine Entscheidung prüft die Bedingung: Eine ausgehende Kante führt zurück zu einer früheren Aktion (über eine Zusammenführung vor dieser Aktion), die andere verlässt die Wiederholung."
     },
     {
       "id": "AP1-8-3-3-K4-1",

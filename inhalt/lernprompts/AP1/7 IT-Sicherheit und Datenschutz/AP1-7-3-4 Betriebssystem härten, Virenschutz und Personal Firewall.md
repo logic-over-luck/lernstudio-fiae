@@ -45,7 +45,7 @@ Erklärung:
 - **Updates** einspielen, am besten automatisch
 - nicht benötigte **Dienste** abschalten
 - nicht benötigte **Programme** deinstallieren
-- nicht benötigte **Konten** löschen (z. B. Gastkonto)
+- nicht benötigte **Konten** löschen oder deaktivieren (z. B. Gastkonto deaktivieren, löschen lässt es sich nicht)
 - nicht benötigte **Ports** schließen
 - **Rechte** auf das Nötige beschränken – keine normale Arbeit mit Administratorrechten
 

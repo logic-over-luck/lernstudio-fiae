@@ -82,14 +82,14 @@ Schreibe aus Sicht des Kunden, was er braucht – **ohne Lösung und ohne Modell
 - Nicht ins Lastenheft: „Wir richten ein VPN mit FortiClient ein.“ – das ist schon die Umsetzung, also Pflichtenheft.
 
 ### K6 – Schriftliche statt mündliche Anforderungen (Stufe 2 Verstehen)
-Du kannst erklären, warum Anforderungen schriftlich in Lasten- und Pflichtenheft festgehalten werden statt mündlich oder pauschal: Beide Seiten arbeiten auf derselben verbindlichen Grundlage, und was dort nicht steht, kann der Auftraggeber später nicht einfordern.
+Du kannst erklären, warum Anforderungen schriftlich in Lasten- und Pflichtenheft festgehalten werden statt mündlich oder pauschal: Beide Seiten arbeiten auf derselben verbindlichen Grundlage, und was dort nicht steht, kann der Auftraggeber später grundsätzlich nicht einfordern.
 
 Erklärung:
 Mündliche Absprachen wie „ein schnelles System“ versteht jeder anders. Am Ende streiten Kunde und Dienstleister darüber, was eigentlich bestellt war.
 Schriftliche, konkrete Anforderungen
 - schaffen eine **gemeinsame Grundlage** für Planung, Angebot und Abnahme,
 - verhindern **Fehlplanung**, weil Unklarheiten vorher auffallen,
-- legen fest, **was geschuldet ist**: Was nicht spezifiziert ist, kann der Auftraggeber später nicht verlangen – Zusatzwünsche werden gesondert vereinbart und berechnet.
+- legen fest, **was geschuldet ist**: Was nicht spezifiziert ist, kann der Auftraggeber später grundsätzlich nicht verlangen (ohne Absprache geschuldet ist nur, was für die übliche Verwendung nötig ist, § 633 Abs. 2 BGB) – Zusatzwünsche werden gesondert vereinbart und berechnet.
 Beispiel: Steht im Pflichtenheft nichts von einer Datenübernahme aus dem Altsystem, muss der Dienstleister sie nicht kostenlos erledigen.
 
 ### K7 – Ablauf von der Kundenanfrage bis zur Abnahme (Stufe 2 Verstehen)

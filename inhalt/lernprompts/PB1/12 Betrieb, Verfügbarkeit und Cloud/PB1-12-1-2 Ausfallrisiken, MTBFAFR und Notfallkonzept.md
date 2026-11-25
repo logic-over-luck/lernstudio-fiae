@@ -63,11 +63,11 @@ Erklärung:
 Danach im **PDCA-Zyklus** verbessern.
 
 ### K4 – MTTR und Verfügbarkeit aus MTBF (Stufe 2 Verstehen)
-Du kannst die MTTR erklären – die mittlere Zeit von der Störungsmeldung über Diagnose, Reparatur und Test, bis das System wieder verfügbar ist – und wie sie zusammen mit der MTBF die Verfügbarkeit bestimmt: Verfügbarkeit = MTBF ÷ (MTBF + MTTR).
+Du kannst die MTTR erklären – die mittlere Zeit vom Ausfall über Erkennen, Diagnose, Reparatur und Test, bis das System wieder verfügbar ist – und wie sie zusammen mit der MTBF die Verfügbarkeit bestimmt: Verfügbarkeit = MTBF ÷ (MTBF + MTTR).
 
 Erklärung:
 Die **MTBF** sagt, wie lange ein System im Mittel zwischen zwei Ausfällen läuft (Zuverlässigkeit). Die **MTTR** (Mean Time To Repair bzw. Restore) sagt, wie lange es nach einem Ausfall im Mittel dauert, bis es wieder läuft.
-- Die MTTR läuft ab der Störungsmeldung und umfasst: Ursache diagnostizieren, reparieren, testen, wieder freigeben. Die Zeit bis zur Meldung zählt nicht dazu; sie wird mit Monitoring-Alarmen kürzer.
+- Die MTTR läuft ab dem Ausfall und umfasst: Störung erkennen, Ursache diagnostizieren, reparieren, testen, wieder freigeben. Auch die Zeit, bis die Störung bemerkt ist, zählt dazu; Monitoring-Alarme verkürzen sie.
 - `Verfügbarkeit = MTBF ÷ (MTBF + MTTR)`
 Verfügbarkeit steigt also nicht nur durch seltenere Ausfälle, sondern auch durch schnellere Wiederherstellung – etwa mit Ersatzteilen vor Ort, Monitoring-Alarmen und eingeübten Abläufen.
 Beispiel: MTBF 999 h, MTTR 1 h → 999 ÷ 1000 = 99,9 %. Halbiert ein Ersatzteillager die MTTR auf 0,5 h, steigt die Verfügbarkeit auf rund 99,95 %.
@@ -126,7 +126,7 @@ Beispiel: Ein Server mit zwei Netzteilen meldet häufiger ein defektes Netzteil 
 - Zweimal dasselbe Risiko mit anderen Worten beschreiben oder Risiken nennen, die nicht zur Lage passen.
 - Die Richtung verwechseln: Bei der MTBF ist der höhere Wert besser, bei der AFR der niedrigere.
 - Beim zuverlässigeren Modell keine Ersatzgeräte einplanen; auch dort fallen Geräte aus.
-- Die Zeit, bis die Störung bemerkt und gemeldet ist, zur MTTR zählen; sie läuft erst ab der Störungsmeldung.
+- Die Zeit, bis die Störung bemerkt und gemeldet ist, aus der MTTR herauslassen; die MTTR läuft ab dem Ausfall, sonst wird die Verfügbarkeit zu hoch berechnet.
 - Im Nenner der Verfügbarkeitsformel nur die MTBF schreiben statt MTBF + MTTR.
 - Als Weg zu kürzerer MTTR nur „schneller reparieren“ schreiben statt einer konkreten Maßnahme.
 - Bei redundanten Teilen die Wahrscheinlichkeiten addieren statt multiplizieren.

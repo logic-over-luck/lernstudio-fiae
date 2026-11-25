@@ -102,14 +102,14 @@ Beispiele:
 So sind alle Rechner einheitlich eingerichtet, ohne jeden einzeln anzufassen.
 
 ### K9 – Windows-11-Tauglichkeit und Windows-10-Supportende (Stufe 4 Beurteilen)
-Du kannst beurteilen, ob ein Rechner ein Betriebssystem bekommen kann und ob das Betriebssystem noch Sicherheitsupdates erhält, zum Beispiel ob ein PC die Mindestanforderungen von Windows 11 erfüllt (freigegebener 64-Bit-Prozessor mit mindestens 2 Kernen und 1 GHz, 4 GB RAM, 64 GB Speicher, UEFI mit Secure Boot, TPM 2.0) und dass Windows 10 seit dem 14. Oktober 2025 nur noch über das kostenpflichtige ESU-Programm Sicherheitsupdates bekommt.
+Du kannst beurteilen, ob ein Rechner ein Betriebssystem bekommen kann und ob das Betriebssystem noch Sicherheitsupdates erhält, zum Beispiel ob ein PC die Mindestanforderungen von Windows 11 erfüllt (freigegebener 64-Bit-Prozessor mit mindestens 2 Kernen und 1 GHz, 4 GB RAM, 64 GB Speicher, UEFI mit Secure Boot, TPM 2.0) und dass Windows 10 seit dem 14. Oktober 2025 nur noch über das ESU-Programm Sicherheitsupdates bekommt, für Firmen kostenpflichtig.
 
 Erklärung:
 **Windows 11** setzt voraus (Stand 10/2026, Microsoft Learn):
 - UEFI mit Secure Boot und **TPM 2.0** (Sicherheitschip auf dem Mainboard oder im Prozessor, der Schlüssel sicher speichert)
 - freigegebener 64-Bit-Prozessor (steht auf Microsofts Liste der unterstützten Prozessoren), mindestens 2 Kerne, 1 GHz
 - 4 GB RAM, 64 GB Speicher
-**Windows 10** hat seit dem **14.10.2025** keinen Support mehr. Sicherheitsupdates gibt es nur noch über das kostenpflichtige **ESU**-Programm (Firmen jahresweise, höchstens drei Jahre; Privatkunden bis 12.10.2027).
+**Windows 10** hat seit dem **14.10.2025** keinen Support mehr. Sicherheitsupdates gibt es nur noch über das **ESU**-Programm (Firmen kostenpflichtig und jahresweise, höchstens drei Jahre; Privatkunden bis 12.10.2027, auch ohne Zusatzkosten).
 Beurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – taugliche PCs umstellen, andere ersetzen oder übergangsweise ESU kaufen.
 
 ## Lehrnotiz: Betriebssysteme: Einsatzzweck, Dateiverwaltung, Freigaben und Gruppenrichtlinien
@@ -133,6 +133,7 @@ Beurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – tauglic
 
 **Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
 - K6 – Wie eine Gruppenrichtlinie auf den Rechner gelangt und dort wirkt: (1) Der Administrator legt auf dem Domänencontroller ein Gruppenrichtlinienobjekt (GPO) an und trägt darin die gewünschten Einstellungen ein. (2) Er verknüpft das GPO im Active Directory mit der Domäne oder einer Organisationseinheit; es gilt dann für alle Rechner und Benutzer darin. (3) Beim Hochfahren holt jeder Rechner die Computereinstellungen vom Domänencontroller, bei der Anmeldung eines Benutzers kommen dessen Benutzereinstellungen dazu. (4) Der Rechner legt die Vorgaben so ab, dass normale Benutzer sie nicht ändern können; die meisten landen in einem geschützten Bereich der Registry, in den nur Administratoren schreiben dürfen. (5) Windows und Programme lesen die Einstellung von dort; die betroffene Option ist in der Oberfläche für den Anwender gesperrt. (6) Der Rechner fragt im Hintergrund regelmäßig erneut beim Domänencontroller nach und übernimmt geänderte Richtlinien automatisch.
+- K8 – Wirksame Rechte bei mehreren Gruppen bestimmen: (1) Du sammelst die Freigabeberechtigungen, die der Benutzer selbst und über jede seiner Gruppen bekommt; die Erlaubnisse addieren sich, es gilt die weitestgehende. (2) Steht bei einer dieser Gruppen für ein Recht ein ausdrückliches „Verweigern“, hat es Vorrang vor allen Erlaubnissen für dieses Recht. (3) Genauso bestimmst du das Ergebnis der NTFS-Berechtigungen: Erlaubnisse aus allen Gruppen addieren sich, ein ausdrückliches Verweigern geht vor. (4) Greift der Benutzer am Rechner selbst zu, gilt nur das NTFS-Ergebnis. (5) Greift er über das Netz zu, vergleichst du das Ergebnis der Freigabe mit dem der NTFS-Berechtigungen, und es gilt das restriktivere. Vereinfacht: Bei NTFS hat ein vom übergeordneten Ordner geerbtes Verweigern keinen Vorrang vor einem direkt am Ordner gesetzten Erlauben.
 
 **Typische Missverständnisse:**
 - Viele denken, Linux sei entweder Desktop- oder Server-Betriebssystem. Richtig ist: beides, entscheidend ist der Einsatz.
@@ -143,7 +144,7 @@ Beurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – tauglic
 - NTFS-Berechtigungen: Rechte am Ordner, gelten immer
 - Prinzip der geringsten Rechte: nur so viel wie nötig
 - Gruppenrichtlinien: zentral vorgegebene, nicht änderbare Einstellungen
-- ESU: kostenpflichtige, befristete Sicherheitsupdates für Windows 10
+- ESU: befristete Sicherheitsupdates für Windows 10, für Firmen kostenpflichtig
 
 **So fragt die IHK:**
 - Zwei echte Teilaufgaben (2023F).

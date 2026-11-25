@@ -114,7 +114,7 @@ Erklärung:
 **Prinzip:** Logik, die eng an den Daten hängt, wird in der Datenbank gespeichert und dort ausgeführt, statt Anweisung für Anweisung von der Anwendung geschickt zu werden.
 - **Ablaufsteuerung:** Neben SELECT, INSERT, UPDATE sind Variablen, Bedingungen (IF) und Schleifen möglich – eine Prozedur kann also selbst entscheiden, was zu tun ist
 - **Geschwindigkeit:** Die Schritte laufen ohne Hin und Her über das Netz, die Datenbank kann die Prozedur vorbereitet halten
-- **Sicherheit:** Der Anwendungsbenutzer bekommt nur das Recht, die Prozedur auszuführen, aber keine direkten Schreibrechte auf die Tabellen; freies SQL von außen ist dann gar nicht möglich
+- **Sicherheit:** Der Anwendungsbenutzer bekommt nur das Recht, die Prozedur auszuführen, aber keine direkten Schreibrechte auf die Tabellen; eigene SQL-Anweisungen, die die Tabellen direkt ändern, scheitern dann an den fehlenden Rechten
 Beispiel: Eine Prozedur `Bestellung_stornieren(nr)` prüft den Status, bucht den Bestand zurück und setzt die Bestellung auf „storniert“ – die Web-Anwendung ruft nur diese Prozedur auf.
 
 ## Lehrnotiz: Tabellenstruktur, Index und Datenbankobjekte: CREATE TABLE, ALTER TABLE, CREATE INDEX, Prozedur, Trigger

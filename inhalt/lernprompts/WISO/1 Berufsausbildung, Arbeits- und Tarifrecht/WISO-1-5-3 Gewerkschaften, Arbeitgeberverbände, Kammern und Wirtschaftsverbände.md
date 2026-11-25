@@ -68,7 +68,7 @@ Die IHK tut **nicht**:
 - **Arbeitnehmer vertreten** (das tun Gewerkschaften und Betriebsrat)
 - **Tarifverträge schließen**
 - das **Handelsregister führen** (das führt das Amtsgericht)
-- **Bilanzen prüfen** (Wirtschaftsprüfer) oder **Steuern festlegen** (Gesetzgeber; den Hebesatz der Gewerbesteuer bestimmt die Gemeinde, das Finanzamt setzt die Steuer nur im Einzelfall fest)
+- **Bilanzen prüfen** (Wirtschaftsprüfer) oder **Steuern festlegen** (Gesetzgeber; den Hebesatz der Gewerbesteuer bestimmt die Gemeinde, das Finanzamt setzt nur den Steuermessbetrag fest, die Steuer selbst die Gemeinde)
 - **Arbeitsschutzgesetze überwachen** (Gewerbeaufsicht, Berufsgenossenschaft)
 - **Unfallmeldungen entgegennehmen** (die Unfallanzeige geht an die Berufsgenossenschaft)
 - in **Arbeitsgerichtsverfahren** mitwirken (sie wird dort nicht angehört)
@@ -82,7 +82,7 @@ Erklärung:
 - **Pflicht:** die Mitgliedschaft in der **Kammer**: **Gewerbebetriebe** gehören der **IHK** an, **Handwerksbetriebe** der **Handwerkskammer**; sie zahlen Beiträge
 - **Rechtsform der Kammern:** **Körperschaften des öffentlichen Rechts** mit **Selbstverwaltung** – die Mitglieder wählen eine Vollversammlung; sie sind **keine Vereine** und keine Behörden im engeren Sinn
 Beispiel: Eine neu gegründete IT-Beratungs-GmbH wird automatisch Mitglied der IHK, muss aber keinem Arbeitgeberverband beitreten.
-Typische Verwechslung: Freiberufler (zum Beispiel Ärzte, Rechtsanwälte) gehören nicht der IHK an, sondern eigenen Kammern.
+Typische Verwechslung: Freiberufler gehören nicht der IHK an (außer zum Beispiel als GmbH im Handelsregister); manche haben eigene Kammern (zum Beispiel Ärzte, Rechtsanwälte), andere wie Journalisten gar keine.
 
 ### K5 – Wirtschaftsverbände gegen Kammern und Arbeitgeberverbände (Stufe 2 Verstehen)
 Du kannst Wirtschaftsverbände (freiwillige Interessenvertretung einer Branche gegenüber Politik und Öffentlichkeit) von den Kammern (IHK, Handwerkskammer) als gesetzlicher Vertretung aller Betriebe ihres Bezirks und von den Arbeitgeberverbänden als Tarifpartnern unterscheiden.

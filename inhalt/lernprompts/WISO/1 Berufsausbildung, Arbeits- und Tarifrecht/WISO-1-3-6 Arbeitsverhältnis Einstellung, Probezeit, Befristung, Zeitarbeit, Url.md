@@ -157,6 +157,9 @@ Beispiel: Ein Entwickler in einem Unternehmen mit 60 Beschäftigten möchte nach
 - Die Zeugnissprache hat zwei Stellschrauben: das Wort „stets“ und die Steigerung von „voll“. Fehlt eine, sinkt die Note um eine Stufe.
 - Abgrenzung: Probezeit in der Ausbildung und Urlaub Jugendlicher gehören zu Nachbarstichpunkten und dienen hier nur zum Vergleich.
 
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K9 – Vom Teilzeitantrag bis zur Entscheidung: (1) Der Arbeitnehmer beantragt die Verringerung in Textform spätestens drei Monate vor dem gewünschten Beginn und nennt den Umfang, möglichst auch die gewünschte Verteilung. (2) Der Arbeitgeber erörtert den Wunsch mit ihm, um zu einer Vereinbarung zu kommen. (3) Der Arbeitgeber teilt seine Entscheidung spätestens einen Monat vor dem gewünschten Beginn in Textform mit. (4) Lehnt er nicht oder nicht rechtzeitig ab, gilt die Verringerung im gewünschten Umfang und mit der gewünschten Verteilung als festgelegt. (5) Hat der Arbeitgeber zugestimmt oder berechtigt abgelehnt, kann der Arbeitnehmer eine erneute Verringerung frühestens nach zwei Jahren verlangen.
+
 **Typische Missverständnisse:**
 - Viele denken, eine Probezeit müsse im Arbeitsverhältnis eine Mindestdauer haben; richtig ist: Sie kann ganz entfallen.
 - Viele denken, Zeitarbeitnehmer hätten keinen Urlaub oder würden nur für ein fertiges Werk bezahlt; richtig ist: Sie sind normale Arbeitnehmer des Verleihers.

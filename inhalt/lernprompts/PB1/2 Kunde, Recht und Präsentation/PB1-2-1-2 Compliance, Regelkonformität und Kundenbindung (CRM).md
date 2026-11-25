@@ -56,7 +56,7 @@ Du kannst beschreiben, wozu eine App, die Benutzerdaten speichert, Datenschutzer
 
 Erklärung:
 - **Datenschutzerklärung:** erfüllt die **Informationspflicht** – welche Daten, wofür, wie lange, welche Rechte der Nutzer hat. Sie ist immer nötig, sobald die App personenbezogene Daten verarbeitet – auch ohne Einwilligung.
-- **Einwilligung:** eine von **sechs Rechtsgrundlagen** (Art. 6 DSGVO). Nötig, wenn keine andere greift – z. B. für Werbung oder Analyse. Für die Vertragserfüllung (Bestellung abwickeln) braucht es keine Einwilligung.
+- **Einwilligung:** eine von **sechs Rechtsgrundlagen** (Art. 6 DSGVO). Nötig, wenn keine andere greift – z. B. oft für Werbung (bei E-Mail-Werbung meist) oder Analyse. Für die Vertragserfüllung (Bestellung abwickeln) braucht es keine Einwilligung.
 - **Grundsatz:** Die Verarbeitung personenbezogener Daten ist verboten, außer eine Rechtsgrundlage erlaubt sie (Verbot mit Erlaubnisvorbehalt).
 - **Wirksame Einwilligung:** freiwillig, für einen bestimmten Zweck, informiert, unmissverständlich (aktives Ankreuzen, kein vorangekreuztes Kästchen), jederzeit widerrufbar.
 Achtung: Eine IHK-Lösung sagt „Einwilligung immer nötig“ – fachlich ungenau.
@@ -99,7 +99,7 @@ Ziel: Kunden binden und Verkaufschancen erkennen.
 - Lizenzprüfung und Datenschutz sind zwei Fälle, an denen Compliance im Softwareprojekt konkret wird; dazu kommen interne Vorgaben. Die Themen zu K2 und K3 sind also Anwendungen von K1.
 - Auf die Frage, ob jede Open-Source-Bibliothek ohne Einschränkung eingesetzt werden darf, lautet die Antwort immer nein. Jede steht unter einer Lizenz, und auch die üblichen freizügigen Lizenzen (MIT, Apache, BSD) verlangen etwas (Lizenzhinweis).
 - Copyleft greift erst bei der Weitergabe: Entscheidend ist, ob das eigene Produkt verkauft oder verteilt wird.
-- Datenschutzerklärung und Einwilligung sind zwei verschiedene Dinge: Die Erklärung informiert und ist immer nötig, auch wenn die Daten nur für die Vertragserfüllung gebraucht werden. Die Einwilligung erlaubt eine Verarbeitung und ist nur nötig, wenn keine andere Rechtsgrundlage greift – also nicht für die Vertragserfüllung, wohl aber z. B. für Werbung oder Analyse.
+- Datenschutzerklärung und Einwilligung sind zwei verschiedene Dinge: Die Erklärung informiert und ist immer nötig, auch wenn die Daten nur für die Vertragserfüllung gebraucht werden. Die Einwilligung erlaubt eine Verarbeitung und ist nur nötig, wenn keine andere Rechtsgrundlage greift – also nicht für die Vertragserfüllung, wohl aber oft für Werbung oder Analyse.
 - Bei „beschreiben“ stehen Vorteile und Maßnahmen nicht im Aufgabentext. Verlangt ist das Wissen über Portal oder CRM, angewandt auf den Kunden: Stichwort plus ein Satz, was es in dieser Situation bringt.
 
 **Typische Missverständnisse:**
@@ -127,9 +127,9 @@ Ziel: Kunden binden und Verkaufschancen erkennen.
 - Bei „begründen“ nur „nein, wegen der Lizenz“ schreiben, ohne die Lizenzart zu nennen.
 - Bei Copyleft die Folge für das eigene Produkt weglassen: Weitergabe unter derselben Lizenz mit Quellcode passt nicht zu einem geschlossenen Produkt.
 - Zwei Gründe für Datenschutzerklärung und Einwilligung nennen, die in Wahrheit derselbe sind.
-- Die Einwilligung der falschen Verarbeitung zuordnen: Nötig ist sie für Werbung oder Analyse, nicht für die Abwicklung des Vertrags.
+- Die Einwilligung der falschen Verarbeitung zuordnen: Nötig ist sie oft für Werbung oder Analyse, nicht für die Abwicklung des Vertrags.
 - In der Prüfung nur „Einwilligung“ schreiben; sicher sind Informationspflicht und die passende Rechtsgrundlage.
 - Einen Vorteil des Portals nur als Stichwort nennen („Kosten sparen“) statt mit Grund (keine Druck- und Portokosten, weil Rechnungen digital bereitstehen).
 - „Schnell“ und „rund um die Uhr“ als zwei Vorteile zählen; es ist einer.
 - Beim CRM nur die Definition oder „Kundendaten speichern“ nennen statt Maßnahmen mit Bezug zur Situation.
-- Übersehen, dass ein Werbeangebot aus dem CRM selbst eine Verarbeitung für Werbung ist; dafür gilt die Regel zur Einwilligung.
+- Übersehen, dass ein Werbeangebot aus dem CRM selbst eine Verarbeitung für Werbung ist; dafür braucht es eine passende Rechtsgrundlage, bei E-Mail-Werbung meist eine Einwilligung.

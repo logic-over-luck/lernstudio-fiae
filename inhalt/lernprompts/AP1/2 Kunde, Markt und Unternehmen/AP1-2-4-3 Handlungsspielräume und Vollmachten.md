@@ -79,7 +79,7 @@ Grundstücke verkaufen oder belasten darf der Prokurist nur mit **besonderer Bef
 Du kannst die Arten der Handlungsvollmacht unterscheiden – allgemeine, Art- und Einzelvollmacht –, Geschäfte nennen, die nur mit besonderer Befugnis erlaubt sind (Grundstücke, Wechsel, Darlehen, Prozesse), und die Zeichnung mit ppa. bzw. i. V. oder i. A. zuordnen.
 
 Erklärung:
-Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), Art- (bestimmte wiederkehrende Geschäfte) und Einzelvollmacht (ein einzelnes Geschäft); sie wird formlos erteilt und nicht ins Handelsregister eingetragen. Grundstücke veräußern oder belasten, Wechselverbindlichkeiten eingehen, Darlehen aufnehmen und Prozesse führen darf der Handlungsbevollmächtigte nur mit besonderer Befugnis (§ 54 Abs. 2 HGB). Der Prokurist zeichnet mit „ppa.“ (§ 51 HGB); Handlungsbevollmächtigte zeichnen üblicherweise mit „i. V.“, bei Art- und Einzelvollmacht oft „i. A.“ (Konvention, nicht gesetzlich geregelt).
+Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), Art- (bestimmte wiederkehrende Geschäfte) und Einzelvollmacht (ein einzelnes Geschäft); sie wird formlos erteilt und nicht ins Handelsregister eingetragen. Grundstücke veräußern oder belasten, Wechselverbindlichkeiten eingehen, Darlehen aufnehmen und Prozesse führen darf der Handlungsbevollmächtigte nur mit besonderer Befugnis (§ 54 Abs. 2 HGB). Der Prokurist zeichnet mit einem Zusatz, der die Prokura andeutet, üblich ist „ppa.“ (§ 51 HGB); Handlungsbevollmächtigte müssen mit einem Zusatz zeichnen, der das Vollmachtsverhältnis ausdrückt und nicht auf Prokura hindeutet (§ 57 HGB), üblich ist „i. V.“, bei Art- und Einzelvollmacht oft „i. A.“ (die Kürzel selbst sind Konvention).
 
 ## Lehrnotiz: Handlungsspielräume und Vollmachten
 
@@ -97,6 +97,9 @@ Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), A
 - Was „gewöhnlich“ ist, richtet sich nach der Art des Betriebs: Für ein Systemhaus ist der Verkauf von Hardware gewöhnlich.
 - Ein Geschäft beurteilen heißt drei Dinge liefern: das Urteil, den Bezug auf die konkrete Vollmacht und bei „so nicht“ den Ausweg – wer die Befugnis erteilen oder das Geschäft selbst abschließen kann.
 - Die Liste „nur mit besonderer Befugnis“ ist bei Prokura und Handlungsvollmacht verschieden: Ein Darlehen aufnehmen darf der Prokurist ohne Weiteres, der Handlungsbevollmächtigte nicht.
+
+**Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
+- K5 – Prüfen, ob eine Person ein Geschäft abschließen darf: (1) Zuerst stellst du fest, welche Vollmacht die Person hat: Prokura, allgemeine Handlungsvollmacht, Artvollmacht oder Einzelvollmacht. (2) Bei einer Art- oder Einzelvollmacht prüfst du, ob das Geschäft zu der Art von Geschäften oder zu dem einzelnen Geschäft gehört, für das sie erteilt wurde. (3) Bei der allgemeinen Handlungsvollmacht prüfst du, ob das Geschäft in einem solchen Betrieb gewöhnlich vorkommt; außergewöhnliche Geschäfte deckt nur die Prokura. (4) Dann prüfst du, ob das Geschäft eine besondere Befugnis braucht (beim Handlungsbevollmächtigten Grundstücke, Wechsel, Darlehen und Prozesse, beim Prokuristen Grundstücke veräußern oder belasten) und ob diese Befugnis erteilt wurde. (5) Ist die Handlung dem Inhaber vorbehalten, etwa Bilanz unterschreiben oder Prokura erteilen, darf sie keine bevollmächtigte Person vornehmen. (6) Reicht die Vollmacht nicht, holt die Person vor dem Abschluss die Freigabe einer Person mit ausreichender Vollmacht oder der Geschäftsleitung ein.
 
 **Typische Missverständnisse:**
 - Viele denken, die Prokura entstehe erst durch den Eintrag ins Handelsregister. Richtig ist: Sie entsteht mit der ausdrücklichen Erteilung; der Eintrag ist Pflicht, macht sie aber nur bekannt.

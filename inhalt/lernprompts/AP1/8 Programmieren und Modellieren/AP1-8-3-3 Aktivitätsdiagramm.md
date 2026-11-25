@@ -61,9 +61,9 @@ Du kannst eine Wiederholung als Rücksprung von einer Entscheidung darstellen.
 
 Erklärung:
 Eine Wiederholung zeichnest du als **Rücksprung**:
-- Eine Kante der Entscheidung führt **zurück** zu einer früheren Aktion (meist über eine Zusammenführung).
+- Eine Kante der Entscheidung führt **zurück** zu einer früheren Aktion (über eine Zusammenführung vor dieser Aktion).
 - Die andere Kante **verlässt** die Schleife.
-Beispiel: „Passwort eingeben“ → Entscheidung `[falsch]` zurück zu „Passwort eingeben“, `[richtig]` weiter zu „Anmelden“.
+Beispiel: „Passwort eingeben“ → Entscheidung `[falsch]` zurück in eine Zusammenführung vor „Passwort eingeben“, `[richtig]` weiter zu „Anmelden“.
 
 ### K4 – Parallele Abläufe mit Teilung und Synchronisation (Stufe 3 Anwenden)
 Du kannst parallele Abläufe mit Teilung und Synchronisation (Balken) darstellen.

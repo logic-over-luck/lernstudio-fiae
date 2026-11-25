@@ -81,7 +81,7 @@ Erklärung:
 In gemischten Teams entstehen Missverständnisse oft aus:
 - **Fachsprache:** „Deployment“ oder „Ticket“ sagt dem Vertrieb wenig.
 - **unterschiedlichen Sprachkenntnissen:** Wer in einer Fremdsprache arbeitet, versteht Redewendungen und Ironie schwerer.
-- **Zeitzonen:** Eine Mail um 17 Uhr kommt beim Kollegen in Indien mitten in der Nacht an; Antworten verzögern sich.
+- **Zeitzonen:** Eine Mail um 17 Uhr kommt beim Kollegen in Indien erst nach Feierabend an (dort 21:30 Uhr, im Sommer 20:30 Uhr); Antworten verzögern sich.
 - **anderen Gewohnheiten im Umgang mit Kritik:** Direkte Kritik wirkt in manchen Kulturen unhöflich, indirekte wird in anderen überhört.
 Beispiel: Ein Kollege sagt „Das ist eine interessante Idee“ und meint „Das machen wir nicht“.
 Typische Verwechslung: Missverständnisse sind meist keine böse Absicht, sondern entstehen aus unterschiedlichen Voraussetzungen.

@@ -579,7 +579,7 @@
               "beleg:2022S-WISO-A8"
             ],
             "vorgegeben": null,
-            "erklaerung": "Jede Kündigung des Ausbildungsverhältnisses muss **schriftlich** erfolgen – eine E-Mail oder mündliche Kündigung ist unwirksam.\n- **in der Probezeit:** ohne Begründung\n- **nach der Probezeit:** mit **Angabe der Kündigungsgründe** (beim wichtigen Grund und bei der Kündigung wegen Berufswechsel)\n- **Minderjährige:** Kündigen sie selbst, müssen die gesetzlichen Vertreter zustimmen; kündigt der Betrieb, muss die Kündigung den Eltern zugehen\nFall: Der 17-jährige Tim kündigt nach der Probezeit per WhatsApp, weil er Koch werden will. Die Kündigung ist unwirksam: nicht schriftlich, ohne Mitwirkung der Eltern.\nTypische Verwechslung: Die Frist allein macht eine Kündigung nicht wirksam – Form, Gründe und Mitwirkung der Eltern gehören dazu.",
+            "erklaerung": "Jede Kündigung des Ausbildungsverhältnisses muss **schriftlich** erfolgen – eine E-Mail oder mündliche Kündigung ist unwirksam.\n- **in der Probezeit:** ohne Begründung\n- **nach der Probezeit:** mit **Angabe der Kündigungsgründe** (beim wichtigen Grund und bei der Kündigung durch Auszubildende, die die Ausbildung aufgeben oder einen anderen Beruf lernen wollen)\n- **Minderjährige:** Kündigen sie selbst, müssen die gesetzlichen Vertreter zustimmen; kündigt der Betrieb, muss die Kündigung den Eltern zugehen\nFall: Der 17-jährige Tim kündigt nach der Probezeit per WhatsApp, weil er Koch werden will. Die Kündigung ist unwirksam: nicht schriftlich, ohne Mitwirkung der Eltern.\nTypische Verwechslung: Die Frist allein macht eine Kündigung nicht wirksam – Form, Gründe und Mitwirkung der Eltern gehören dazu.",
             "karten": 3,
             "neu": null
           }
@@ -1642,7 +1642,7 @@
         ],
         [
           "WISO-1-3-2-K7",
-          "Du kannst die Entgeltfortzahlung im Krankheitsfall erklären: Ist ein Beschäftigter ohne eigenes Verschulden arbeitsunfähig, zahlt der Arbeitgeber das Entgelt bis zu sechs Wochen weiter, sobald das Arbeitsverhältnis vier Wochen ununterbrochen besteht, danach zahlt die Krankenkasse Krankengeld; das gilt auch für Auszubildende und Minijobber, und an gesetzlichen Feiertagen wird das Entgelt ebenfalls fortgezahlt."
+          "Du kannst die Entgeltfortzahlung im Krankheitsfall erklären: Ist ein Beschäftigter ohne eigenes Verschulden arbeitsunfähig, zahlt der Arbeitgeber das Entgelt bis zu sechs Wochen weiter, sobald das Arbeitsverhältnis vier Wochen ununterbrochen besteht, danach zahlt die Krankenkasse Krankengeld; die Entgeltfortzahlung gilt auch für Auszubildende und Minijobber (Krankengeld bekommen Minijobber nicht), und an gesetzlichen Feiertagen wird das Entgelt ebenfalls fortgezahlt."
         ]
       ],
       "gewicht": 3.2,
@@ -1751,7 +1751,7 @@
               "buch:GS-1.2.2-S29"
             ],
             "vorgegeben": null,
-            "erklaerung": "Wer krank ist, soll nicht sofort ohne Einkommen dastehen. Das Risiko trägt zuerst der Arbeitgeber, danach die Krankenkasse.\n- **Voraussetzung:** Arbeitsunfähigkeit ohne eigenes Verschulden; ein normaler Sportunfall zählt nicht als Verschulden, eine selbst angezettelte Schlägerei schon.\n- **Wartezeit:** Anspruch erst, wenn das Arbeitsverhältnis vier Wochen ununterbrochen besteht\n- **Dauer:** bis zu sechs Wochen je Krankheit, danach Krankengeld der Krankenkasse\n- gilt für alle Beschäftigten einschließlich Azubis und Minijobber; an **Feiertagen** wird das Entgelt ebenso weitergezahlt – dafür gilt die Wartezeit von vier Wochen nicht, sie betrifft nur die Krankheit.\nBeispiel: Ein Programmierer bricht sich beim Fußball das Bein und fällt acht Wochen aus: Sechs Wochen zahlt der Arbeitgeber das volle Gehalt, ab der siebten Woche erhält er Krankengeld.",
+            "erklaerung": "Wer krank ist, soll nicht sofort ohne Einkommen dastehen. Das Risiko trägt zuerst der Arbeitgeber, danach die Krankenkasse.\n- **Voraussetzung:** Arbeitsunfähigkeit ohne eigenes Verschulden; ein normaler Sportunfall zählt nicht als Verschulden, eine selbst angezettelte Schlägerei schon.\n- **Wartezeit:** Anspruch erst, wenn das Arbeitsverhältnis vier Wochen ununterbrochen besteht\n- **Dauer:** bis zu sechs Wochen je Krankheit, danach Krankengeld der Krankenkasse\n- die Entgeltfortzahlung gilt für alle Beschäftigten einschließlich Azubis und Minijobber (Minijobber sind über den Minijob nicht krankenversichert und bekommen danach kein Krankengeld); an **Feiertagen** wird das Entgelt ebenso weitergezahlt – dafür gilt die Wartezeit von vier Wochen nicht, sie betrifft nur die Krankheit.\nBeispiel: Ein Programmierer bricht sich beim Fußball das Bein und fällt acht Wochen aus: Sechs Wochen zahlt der Arbeitgeber das volle Gehalt, ab der siebten Woche erhält er Krankengeld.",
             "karten": 1,
             "neu": null
           }
@@ -1832,7 +1832,7 @@
         ],
         [
           "WISO-1-3-3-K9",
-          "Du kannst den besonderen Kündigungsschutz von Betriebsratsmitgliedern erklären: Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen; eine außerordentliche Kündigung aus wichtigem Grund braucht die Zustimmung des Betriebsrats, die ersatzweise das Arbeitsgericht erteilen kann."
+          "Du kannst den besonderen Kündigungsschutz von Betriebsratsmitgliedern erklären: Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen; eine außerordentliche Kündigung aus wichtigem Grund braucht während der Amtszeit die Zustimmung des Betriebsrats, die ersatzweise das Arbeitsgericht erteilen kann."
         ]
       ],
       "gewicht": 5,
@@ -1999,7 +1999,7 @@
               "buch:GS-1.2.2-S32"
             ],
             "vorgegeben": null,
-            "erklaerung": "Betriebsratsmitglieder vertreten die Belegschaft oft gegen den Willen des Arbeitgebers. Damit sie das ohne Angst um ihren Arbeitsplatz tun können, sind sie besonders geschützt.\n- **ordentliche Kündigung:** während der Amtszeit ausgeschlossen und noch ein Jahr danach (nachwirkender Schutz)\n- **außerordentliche Kündigung** aus wichtigem Grund bleibt möglich, braucht aber die **Zustimmung des Betriebsrats**; verweigert er sie, kann das Arbeitsgericht sie ersetzen.\n- Ähnlich geschützt sind Mitglieder der JAV und Wahlbewerber.\n- Ausnahme: Wird der Betrieb ganz stillgelegt, ist eine Kündigung zum Zeitpunkt der Stilllegung möglich.\nBeispiel: Die Amtszeit einer Betriebsrätin in einem Softwarehaus endet am 31. Mai 2026; eine ordentliche Kündigung darf ihr frühestens am 1. Juni 2027 zugehen.",
+            "erklaerung": "Betriebsratsmitglieder vertreten die Belegschaft oft gegen den Willen des Arbeitgebers. Damit sie das ohne Angst um ihren Arbeitsplatz tun können, sind sie besonders geschützt.\n- **ordentliche Kündigung:** während der Amtszeit ausgeschlossen und noch ein Jahr danach (nachwirkender Schutz)\n- **außerordentliche Kündigung** aus wichtigem Grund bleibt möglich, braucht aber während der Amtszeit die **Zustimmung des Betriebsrats**; verweigert er sie, kann das Arbeitsgericht sie ersetzen. Im Jahr danach genügt die normale Anhörung.\n- Ähnlich geschützt sind Mitglieder der JAV und Wahlbewerber.\n- Ausnahme: Wird der Betrieb ganz stillgelegt, ist eine Kündigung zum Zeitpunkt der Stilllegung möglich.\nBeispiel: Die Amtszeit einer Betriebsrätin in einem Softwarehaus endet am 31. Mai 2026; eine ordentliche Kündigung darf ihr frühestens am 1. Juni 2027 zugehen.",
             "karten": 1,
             "neu": null
           }
@@ -2983,7 +2983,7 @@
               "beleg:2023W-WISO-A7"
             ],
             "vorgegeben": "§§ 7 und 9 BetrVG (Auszug) im Aufgabentext",
-            "erklaerung": "§ 7 und § 9 BetrVG stehen in der Aufgabe. So rechnest du:\n- **Wahlberechtigte zählen** (§ 7): alle Arbeitnehmer ab 16 Jahren – **Auszubildende** und **befristet Beschäftigte** zählen mit, Teilzeitkräfte voll; Leiharbeitnehmer, wenn sie länger als drei Monate im Betrieb eingesetzt werden (in der Prüfung zählte, wer erst „seit einem Monat eingesetzt“ war, nicht mit); **leitende Angestellte** und Geschäftsführer zählen **nicht**\n- **Größe ablesen** (§ 9): in der Staffel des Auszugs die passende Zeile suchen (5 bis 20 Wahlberechtigte: 1 Person, 21 bis 50: 3 Mitglieder, 51 bis 100: 5, 101 bis 200: 7)\nBeispiel: Ein Systemhaus hat 38 Angestellte (davon zwei leitende), 6 Auszubildende (zwei davon 15 Jahre alt) und 4 befristet Beschäftigte. Wahlberechtigt sind 36 + 4 + 4 = **44**; laut Auszug hat der Betriebsrat bei 21 bis 50 Wahlberechtigten **drei Mitglieder**.\nTypische Verwechslung: Auszubildende und Befristete nicht weglassen, aber leitende Angestellte und unter 16-Jährige nicht mitzählen.",
+            "erklaerung": "§ 7 und § 9 BetrVG stehen in der Aufgabe. So rechnest du:\n- **Wahlberechtigte zählen** (§ 7): alle Arbeitnehmer ab 16 Jahren – **Auszubildende** und **befristet Beschäftigte** zählen mit, Teilzeitkräfte voll; Leiharbeitnehmer, wenn sie länger als drei Monate im Betrieb eingesetzt werden (in der Prüfung zählte, wer erst „seit einem Monat eingesetzt“ war, nicht mit); **leitende Angestellte** und Geschäftsführer zählen **nicht**\n- **Größe ablesen** (§ 9): in der Staffel des Auszugs die passende Zeile suchen (5 bis 20 Wahlberechtigte: 1 Person, 21 bis 50: 3 Mitglieder, 51 Wahlberechtigte bis 100 Arbeitnehmer: 5, 101 bis 200 Arbeitnehmer: 7 – ab hier zählen alle Arbeitnehmer, nicht nur die wahlberechtigten)\nBeispiel: Ein Systemhaus hat 38 Angestellte (davon zwei leitende), 6 Auszubildende (zwei davon 15 Jahre alt) und 4 befristet Beschäftigte. Wahlberechtigt sind 36 + 4 + 4 = **44**; laut Auszug hat der Betriebsrat bei 21 bis 50 Wahlberechtigten **drei Mitglieder**.\nTypische Verwechslung: Auszubildende und Befristete nicht weglassen, aber leitende Angestellte und unter 16-Jährige nicht mitzählen.",
             "karten": 2,
             "neu": null
           }
@@ -3783,7 +3783,7 @@
               "beleg:2023S-WISO-A16"
             ],
             "vorgegeben": null,
-            "erklaerung": "Die **Industrie- und Handelskammer (IHK)** ist die gesetzliche Vertretung der **gewerblichen Wirtschaft** ihres Bezirks. Aufgaben:\n- **Gesamtinteresse der gewerblichen Wirtschaft** gegenüber Politik und Verwaltung vertreten\n- Mitglieder **beraten**, zum Beispiel zu Gründung, Recht, Außenhandel oder der **Suche nach Fachkräften**\n- Aufgaben in der **Aus- und Weiterbildung** (zuständige Stelle, Prüfungen)\n- Gutachten erstellen, Sachverständige bestellen\nDie IHK tut **nicht**:\n- **Arbeitnehmer vertreten** (das tun Gewerkschaften und Betriebsrat)\n- **Tarifverträge schließen**\n- das **Handelsregister führen** (das führt das Amtsgericht)\n- **Bilanzen prüfen** (Wirtschaftsprüfer) oder **Steuern festlegen** (Gesetzgeber; den Hebesatz der Gewerbesteuer bestimmt die Gemeinde, das Finanzamt setzt die Steuer nur im Einzelfall fest)\n- **Arbeitsschutzgesetze überwachen** (Gewerbeaufsicht, Berufsgenossenschaft)\n- **Unfallmeldungen entgegennehmen** (die Unfallanzeige geht an die Berufsgenossenschaft)\n- in **Arbeitsgerichtsverfahren** mitwirken (sie wird dort nicht angehört)\nTypische Verwechslung: Die IHK wirkt beim Handelsregister nur beratend mit, sie führt es nicht.",
+            "erklaerung": "Die **Industrie- und Handelskammer (IHK)** ist die gesetzliche Vertretung der **gewerblichen Wirtschaft** ihres Bezirks. Aufgaben:\n- **Gesamtinteresse der gewerblichen Wirtschaft** gegenüber Politik und Verwaltung vertreten\n- Mitglieder **beraten**, zum Beispiel zu Gründung, Recht, Außenhandel oder der **Suche nach Fachkräften**\n- Aufgaben in der **Aus- und Weiterbildung** (zuständige Stelle, Prüfungen)\n- Gutachten erstellen, Sachverständige bestellen\nDie IHK tut **nicht**:\n- **Arbeitnehmer vertreten** (das tun Gewerkschaften und Betriebsrat)\n- **Tarifverträge schließen**\n- das **Handelsregister führen** (das führt das Amtsgericht)\n- **Bilanzen prüfen** (Wirtschaftsprüfer) oder **Steuern festlegen** (Gesetzgeber; den Hebesatz der Gewerbesteuer bestimmt die Gemeinde, das Finanzamt setzt nur den Steuermessbetrag fest, die Steuer selbst die Gemeinde)\n- **Arbeitsschutzgesetze überwachen** (Gewerbeaufsicht, Berufsgenossenschaft)\n- **Unfallmeldungen entgegennehmen** (die Unfallanzeige geht an die Berufsgenossenschaft)\n- in **Arbeitsgerichtsverfahren** mitwirken (sie wird dort nicht angehört)\nTypische Verwechslung: Die IHK wirkt beim Handelsregister nur beratend mit, sie führt es nicht.",
             "karten": 3,
             "neu": null
           },
@@ -3799,7 +3799,7 @@
               "beleg:2022W-WISO-A17"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Freiwillig:** die Mitgliedschaft in einer **Gewerkschaft** (für Arbeitnehmer) und in einem **Arbeitgeberverband** (für Arbeitgeber) – Ausdruck der Koalitionsfreiheit\n- **Pflicht:** die Mitgliedschaft in der **Kammer**: **Gewerbebetriebe** gehören der **IHK** an, **Handwerksbetriebe** der **Handwerkskammer**; sie zahlen Beiträge\n- **Rechtsform der Kammern:** **Körperschaften des öffentlichen Rechts** mit **Selbstverwaltung** – die Mitglieder wählen eine Vollversammlung; sie sind **keine Vereine** und keine Behörden im engeren Sinn\nBeispiel: Eine neu gegründete IT-Beratungs-GmbH wird automatisch Mitglied der IHK, muss aber keinem Arbeitgeberverband beitreten.\nTypische Verwechslung: Freiberufler (zum Beispiel Ärzte, Rechtsanwälte) gehören nicht der IHK an, sondern eigenen Kammern.",
+            "erklaerung": "- **Freiwillig:** die Mitgliedschaft in einer **Gewerkschaft** (für Arbeitnehmer) und in einem **Arbeitgeberverband** (für Arbeitgeber) – Ausdruck der Koalitionsfreiheit\n- **Pflicht:** die Mitgliedschaft in der **Kammer**: **Gewerbebetriebe** gehören der **IHK** an, **Handwerksbetriebe** der **Handwerkskammer**; sie zahlen Beiträge\n- **Rechtsform der Kammern:** **Körperschaften des öffentlichen Rechts** mit **Selbstverwaltung** – die Mitglieder wählen eine Vollversammlung; sie sind **keine Vereine** und keine Behörden im engeren Sinn\nBeispiel: Eine neu gegründete IT-Beratungs-GmbH wird automatisch Mitglied der IHK, muss aber keinem Arbeitgeberverband beitreten.\nTypische Verwechslung: Freiberufler gehören nicht der IHK an (außer zum Beispiel als GmbH im Handelsregister); manche haben eigene Kammern (zum Beispiel Ärzte, Rechtsanwälte), andere wie Journalisten gar keine.",
             "karten": 2,
             "neu": null
           },
@@ -11414,7 +11414,7 @@
               "katalog:WISO.05.01.1"
             ],
             "vorgegeben": null,
-            "erklaerung": "In gemischten Teams entstehen Missverständnisse oft aus:\n- **Fachsprache:** „Deployment“ oder „Ticket“ sagt dem Vertrieb wenig.\n- **unterschiedlichen Sprachkenntnissen:** Wer in einer Fremdsprache arbeitet, versteht Redewendungen und Ironie schwerer.\n- **Zeitzonen:** Eine Mail um 17 Uhr kommt beim Kollegen in Indien mitten in der Nacht an; Antworten verzögern sich.\n- **anderen Gewohnheiten im Umgang mit Kritik:** Direkte Kritik wirkt in manchen Kulturen unhöflich, indirekte wird in anderen überhört.\nBeispiel: Ein Kollege sagt „Das ist eine interessante Idee“ und meint „Das machen wir nicht“.\nTypische Verwechslung: Missverständnisse sind meist keine böse Absicht, sondern entstehen aus unterschiedlichen Voraussetzungen.",
+            "erklaerung": "In gemischten Teams entstehen Missverständnisse oft aus:\n- **Fachsprache:** „Deployment“ oder „Ticket“ sagt dem Vertrieb wenig.\n- **unterschiedlichen Sprachkenntnissen:** Wer in einer Fremdsprache arbeitet, versteht Redewendungen und Ironie schwerer.\n- **Zeitzonen:** Eine Mail um 17 Uhr kommt beim Kollegen in Indien erst nach Feierabend an (dort 21:30 Uhr, im Sommer 20:30 Uhr); Antworten verzögern sich.\n- **anderen Gewohnheiten im Umgang mit Kritik:** Direkte Kritik wirkt in manchen Kulturen unhöflich, indirekte wird in anderen überhört.\nBeispiel: Ein Kollege sagt „Das ist eine interessante Idee“ und meint „Das machen wir nicht“.\nTypische Verwechslung: Missverständnisse sind meist keine böse Absicht, sondern entstehen aus unterschiedlichen Voraussetzungen.",
             "karten": 1,
             "neu": null
           }
@@ -14022,7 +14022,7 @@
       "sp": "WISO-1-3-3",
       "k": "WISO-1-3-3-K9",
       "v": "Wie lange und wie weit sind Betriebsratsmitglieder vor einer Kündigung geschützt?",
-      "h": "Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen. Eine außerordentliche Kündigung braucht die Zustimmung des Betriebsrats (ersatzweise des Arbeitsgerichts)."
+      "h": "Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen. Eine außerordentliche Kündigung braucht während der Amtszeit die Zustimmung des Betriebsrats (ersatzweise des Arbeitsgerichts)."
     },
     {
       "id": "WISO-1-3-2-K6-1",

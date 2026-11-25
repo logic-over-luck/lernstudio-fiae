@@ -2049,7 +2049,7 @@
               "beleg:2024W-PB1-A1-d"
             ],
             "vorgegeben": null,
-            "erklaerung": "- **Datenschutzerklärung:** erfüllt die **Informationspflicht** – welche Daten, wofür, wie lange, welche Rechte der Nutzer hat. Sie ist immer nötig, sobald die App personenbezogene Daten verarbeitet – auch ohne Einwilligung.\n- **Einwilligung:** eine von **sechs Rechtsgrundlagen** (Art. 6 DSGVO). Nötig, wenn keine andere greift – z. B. für Werbung oder Analyse. Für die Vertragserfüllung (Bestellung abwickeln) braucht es keine Einwilligung.\n- **Grundsatz:** Die Verarbeitung personenbezogener Daten ist verboten, außer eine Rechtsgrundlage erlaubt sie (Verbot mit Erlaubnisvorbehalt).\n- **Wirksame Einwilligung:** freiwillig, für einen bestimmten Zweck, informiert, unmissverständlich (aktives Ankreuzen, kein vorangekreuztes Kästchen), jederzeit widerrufbar.\nAchtung: Eine IHK-Lösung sagt „Einwilligung immer nötig“ – fachlich ungenau.\nWeitere Gründe, die die IHK anerkennt: **Rechtssicherheit/Compliance** – die App erfüllt die DSGVO und vermeidet Bußgelder; **Selbstbestimmung und Schutz vor Missbrauch** – der Nutzer entscheidet aktiv, ob seine Daten verarbeitet werden, und kann die Einwilligung widerrufen; das schafft Vertrauen.",
+            "erklaerung": "- **Datenschutzerklärung:** erfüllt die **Informationspflicht** – welche Daten, wofür, wie lange, welche Rechte der Nutzer hat. Sie ist immer nötig, sobald die App personenbezogene Daten verarbeitet – auch ohne Einwilligung.\n- **Einwilligung:** eine von **sechs Rechtsgrundlagen** (Art. 6 DSGVO). Nötig, wenn keine andere greift – z. B. oft für Werbung (bei E-Mail-Werbung meist) oder Analyse. Für die Vertragserfüllung (Bestellung abwickeln) braucht es keine Einwilligung.\n- **Grundsatz:** Die Verarbeitung personenbezogener Daten ist verboten, außer eine Rechtsgrundlage erlaubt sie (Verbot mit Erlaubnisvorbehalt).\n- **Wirksame Einwilligung:** freiwillig, für einen bestimmten Zweck, informiert, unmissverständlich (aktives Ankreuzen, kein vorangekreuztes Kästchen), jederzeit widerrufbar.\nAchtung: Eine IHK-Lösung sagt „Einwilligung immer nötig“ – fachlich ungenau.\nWeitere Gründe, die die IHK anerkennt: **Rechtssicherheit/Compliance** – die App erfüllt die DSGVO und vermeidet Bußgelder; **Selbstbestimmung und Schutz vor Missbrauch** – der Nutzer entscheidet aktiv, ob seine Daten verarbeitet werden, und kann die Einwilligung widerrufen; das schafft Vertrauen.",
             "karten": 4,
             "neu": null
           },
@@ -12570,7 +12570,7 @@
         ],
         [
           "PB1-12-1-2-K4",
-          "Du kannst die MTTR erklären – die mittlere Zeit von der Störungsmeldung über Diagnose, Reparatur und Test, bis das System wieder verfügbar ist – und wie sie zusammen mit der MTBF die Verfügbarkeit bestimmt: Verfügbarkeit = MTBF ÷ (MTBF + MTTR)."
+          "Du kannst die MTTR erklären – die mittlere Zeit vom Ausfall über Erkennen, Diagnose, Reparatur und Test, bis das System wieder verfügbar ist – und wie sie zusammen mit der MTBF die Verfügbarkeit bestimmt: Verfügbarkeit = MTBF ÷ (MTBF + MTTR)."
         ],
         [
           "PB1-12-1-2-K5",
@@ -12643,7 +12643,7 @@
               "buch:FS-1.2.3-S46"
             ],
             "vorgegeben": null,
-            "erklaerung": "Die **MTBF** sagt, wie lange ein System im Mittel zwischen zwei Ausfällen läuft (Zuverlässigkeit). Die **MTTR** (Mean Time To Repair bzw. Restore) sagt, wie lange es nach einem Ausfall im Mittel dauert, bis es wieder läuft.\n- Die MTTR läuft ab der Störungsmeldung und umfasst: Ursache diagnostizieren, reparieren, testen, wieder freigeben. Die Zeit bis zur Meldung zählt nicht dazu; sie wird mit Monitoring-Alarmen kürzer.\n- `Verfügbarkeit = MTBF ÷ (MTBF + MTTR)`\nVerfügbarkeit steigt also nicht nur durch seltenere Ausfälle, sondern auch durch schnellere Wiederherstellung – etwa mit Ersatzteilen vor Ort, Monitoring-Alarmen und eingeübten Abläufen.\nBeispiel: MTBF 999 h, MTTR 1 h → 999 ÷ 1000 = 99,9 %. Halbiert ein Ersatzteillager die MTTR auf 0,5 h, steigt die Verfügbarkeit auf rund 99,95 %.",
+            "erklaerung": "Die **MTBF** sagt, wie lange ein System im Mittel zwischen zwei Ausfällen läuft (Zuverlässigkeit). Die **MTTR** (Mean Time To Repair bzw. Restore) sagt, wie lange es nach einem Ausfall im Mittel dauert, bis es wieder läuft.\n- Die MTTR läuft ab dem Ausfall und umfasst: Störung erkennen, Ursache diagnostizieren, reparieren, testen, wieder freigeben. Auch die Zeit, bis die Störung bemerkt ist, zählt dazu; Monitoring-Alarme verkürzen sie.\n- `Verfügbarkeit = MTBF ÷ (MTBF + MTTR)`\nVerfügbarkeit steigt also nicht nur durch seltenere Ausfälle, sondern auch durch schnellere Wiederherstellung – etwa mit Ersatzteilen vor Ort, Monitoring-Alarmen und eingeübten Abläufen.\nBeispiel: MTBF 999 h, MTTR 1 h → 999 ÷ 1000 = 99,9 %. Halbiert ein Ersatzteillager die MTTR auf 0,5 h, steigt die Verfügbarkeit auf rund 99,95 %.",
             "karten": 2,
             "neu": null
           },
@@ -14824,7 +14824,7 @@
       "sp": "PB1-2-1-2",
       "k": "PB1-2-1-2-K3",
       "v": "Braucht eine Shop-App für das Speichern der Lieferadresse eine Einwilligung des Kunden?",
-      "h": "Nein: Die Verarbeitung ist zur Erfüllung des Kaufvertrags nötig (eigene Rechtsgrundlage). Die Einwilligung ist eine von sechs Rechtsgrundlagen und z. B. für Werbung oder Analyse nötig. Informiert werden muss der Kunde aber immer (Datenschutzerklärung)."
+      "h": "Nein: Die Verarbeitung ist zur Erfüllung des Kaufvertrags nötig (eigene Rechtsgrundlage). Die Einwilligung ist eine von sechs Rechtsgrundlagen und z. B. oft für Werbung oder Analyse nötig. Informiert werden muss der Kunde aber immer (Datenschutzerklärung)."
     },
     {
       "id": "PB1-2-1-2-K4-1",
@@ -20984,7 +20984,7 @@
       "sp": "PB1-12-1-2",
       "k": "PB1-12-1-2-K4",
       "v": "Was misst die MTTR, und welche Schritte zählen dazu?",
-      "h": "Die mittlere Zeit von der Störungsmeldung bis zur erneuten Verfügbarkeit: Diagnose, Reparatur, Test und Freigabe."
+      "h": "Die mittlere Zeit vom Ausfall bis zur erneuten Verfügbarkeit: Erkennen, Diagnose, Reparatur, Test und Freigabe."
     },
     {
       "id": "PB1-12-1-2-K4-2",

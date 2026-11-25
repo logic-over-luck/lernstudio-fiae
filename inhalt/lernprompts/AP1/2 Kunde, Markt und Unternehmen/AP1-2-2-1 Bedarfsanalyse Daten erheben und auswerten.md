@@ -159,7 +159,7 @@ Beispiel: Vorgefunden werden PCs mit 8 GB RAM und HDD (Ist); damit die neue Soft
 
 **Typische Missverständnisse:**
 - Viele denken, eine Ist-Analyse heiße Geräte zählen; richtig ist: Die Ziele des Unternehmens gehören dazu, sonst weiß niemand, wofür beschafft wird.
-- Viele denken, eine Frage zum Problem des Kunden sei schon offen („Haben Sie Probleme mit …?“); richtig ist: Kann man mit einem Wort antworten, ist die Frage geschlossen, egal worum es geht.
+- Viele denken, eine Frage zum Problem des Kunden sei schon offen („Haben Sie Probleme mit …?“); richtig ist: Lässt die Frage nur Ja/Nein oder feste Antworten zu, ist sie geschlossen, egal worum es geht.
 - Viele denken, Muss sei, was der Kunde am lautesten fordert; richtig ist: Muss ist, ohne was die Lösung unbrauchbar wäre.
 
 **Fachwörter:**

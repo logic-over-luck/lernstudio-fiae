@@ -118,12 +118,12 @@ Das Kündigungsschutzgesetz schützt vor sozial ungerechtfertigten ordentlichen 
 Beispiel: Ein IT-Dienstleister hat 8 Vollzeitkräfte, 4 Teilzeitkräfte mit je 20 Stunden und 2 Azubis: 8 + 4 × 0,5 = 10 – nicht mehr als zehn, das Kündigungsschutzgesetz gilt dort nicht.
 
 ### K9 – Kündigungsschutz für Betriebsratsmitglieder (Stufe 2 Verstehen)
-Du kannst den besonderen Kündigungsschutz von Betriebsratsmitgliedern erklären: Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen; eine außerordentliche Kündigung aus wichtigem Grund braucht die Zustimmung des Betriebsrats, die ersatzweise das Arbeitsgericht erteilen kann.
+Du kannst den besonderen Kündigungsschutz von Betriebsratsmitgliedern erklären: Während der Amtszeit und noch ein Jahr danach ist eine ordentliche Kündigung ausgeschlossen; eine außerordentliche Kündigung aus wichtigem Grund braucht während der Amtszeit die Zustimmung des Betriebsrats, die ersatzweise das Arbeitsgericht erteilen kann.
 
 Erklärung:
 Betriebsratsmitglieder vertreten die Belegschaft oft gegen den Willen des Arbeitgebers. Damit sie das ohne Angst um ihren Arbeitsplatz tun können, sind sie besonders geschützt.
 - **ordentliche Kündigung:** während der Amtszeit ausgeschlossen und noch ein Jahr danach (nachwirkender Schutz)
-- **außerordentliche Kündigung** aus wichtigem Grund bleibt möglich, braucht aber die **Zustimmung des Betriebsrats**; verweigert er sie, kann das Arbeitsgericht sie ersetzen.
+- **außerordentliche Kündigung** aus wichtigem Grund bleibt möglich, braucht aber während der Amtszeit die **Zustimmung des Betriebsrats**; verweigert er sie, kann das Arbeitsgericht sie ersetzen. Im Jahr danach genügt die normale Anhörung.
 - Ähnlich geschützt sind Mitglieder der JAV und Wahlbewerber.
 - Ausnahme: Wird der Betrieb ganz stillgelegt, ist eine Kündigung zum Zeitpunkt der Stilllegung möglich.
 Beispiel: Die Amtszeit einer Betriebsrätin in einem Softwarehaus endet am 31. Mai 2026; eine ordentliche Kündigung darf ihr frühestens am 1. Juni 2027 zugehen.

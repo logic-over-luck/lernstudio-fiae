@@ -96,7 +96,7 @@ Du kannst mit einem abgedruckten Auszug aus §§ 7 und 9 des Betriebsverfassungs
 Erklärung:
 § 7 und § 9 BetrVG stehen in der Aufgabe. So rechnest du:
 - **Wahlberechtigte zählen** (§ 7): alle Arbeitnehmer ab 16 Jahren – **Auszubildende** und **befristet Beschäftigte** zählen mit, Teilzeitkräfte voll; Leiharbeitnehmer, wenn sie länger als drei Monate im Betrieb eingesetzt werden (in der Prüfung zählte, wer erst „seit einem Monat eingesetzt“ war, nicht mit); **leitende Angestellte** und Geschäftsführer zählen **nicht**
-- **Größe ablesen** (§ 9): in der Staffel des Auszugs die passende Zeile suchen (5 bis 20 Wahlberechtigte: 1 Person, 21 bis 50: 3 Mitglieder, 51 bis 100: 5, 101 bis 200: 7)
+- **Größe ablesen** (§ 9): in der Staffel des Auszugs die passende Zeile suchen (5 bis 20 Wahlberechtigte: 1 Person, 21 bis 50: 3 Mitglieder, 51 Wahlberechtigte bis 100 Arbeitnehmer: 5, 101 bis 200 Arbeitnehmer: 7 – ab hier zählen alle Arbeitnehmer, nicht nur die wahlberechtigten)
 Beispiel: Ein Systemhaus hat 38 Angestellte (davon zwei leitende), 6 Auszubildende (zwei davon 15 Jahre alt) und 4 befristet Beschäftigte. Wahlberechtigt sind 36 + 4 + 4 = **44**; laut Auszug hat der Betriebsrat bei 21 bis 50 Wahlberechtigten **drei Mitglieder**.
 Typische Verwechslung: Auszubildende und Befristete nicht weglassen, aber leitende Angestellte und unter 16-Jährige nicht mitzählen.
 

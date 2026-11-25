@@ -78,7 +78,7 @@ Du kannst die Form einer Kündigung des Ausbildungsverhältnisses beschreiben un
 Erklärung:
 Jede Kündigung des Ausbildungsverhältnisses muss **schriftlich** erfolgen – eine E-Mail oder mündliche Kündigung ist unwirksam.
 - **in der Probezeit:** ohne Begründung
-- **nach der Probezeit:** mit **Angabe der Kündigungsgründe** (beim wichtigen Grund und bei der Kündigung wegen Berufswechsel)
+- **nach der Probezeit:** mit **Angabe der Kündigungsgründe** (beim wichtigen Grund und bei der Kündigung durch Auszubildende, die die Ausbildung aufgeben oder einen anderen Beruf lernen wollen)
 - **Minderjährige:** Kündigen sie selbst, müssen die gesetzlichen Vertreter zustimmen; kündigt der Betrieb, muss die Kündigung den Eltern zugehen
 Fall: Der 17-jährige Tim kündigt nach der Probezeit per WhatsApp, weil er Koch werden will. Die Kündigung ist unwirksam: nicht schriftlich, ohne Mitwirkung der Eltern.
 Typische Verwechslung: Die Frist allein macht eine Kündigung nicht wirksam – Form, Gründe und Mitwirkung der Eltern gehören dazu.

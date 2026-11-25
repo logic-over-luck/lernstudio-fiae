@@ -89,14 +89,14 @@ Beispiel: 60 GiB sollen in 2 Stunden hochgeladen werden.
 - Upload nur 40 Mbit/s → reicht **nicht**.
 
 ### K7 – Durchsatz unter der Bruttorate (Stufe 4 Beurteilen)
-Du kannst begründen, warum der tatsächliche Durchsatz unter der angegebenen Rate einer Schnittstelle liegt: Die Angabe ist eine Bruttorate, von der Protokoll-Overhead und Leitungscodierung abgehen; vor einem Vergleich musst du außerdem bit/s und Byte/s auf eine Einheit bringen.
+Du kannst begründen, warum der tatsächliche Durchsatz unter der angegebenen Rate einer Schnittstelle liegt: Die Angabe ist eine Bruttorate, von der Protokoll-Overhead und je nach Schnittstelle die Leitungscodierung abgehen; vor einem Vergleich musst du außerdem bit/s und Byte/s auf eine Einheit bringen.
 
 Erklärung:
 Datenblätter nennen die **Bruttorate** – alles, was über die Leitung geht. Nutzdaten sind weniger:
-- **Leitungscodierung:** zusätzliche Bits, damit der Empfänger das Signal sicher erkennt
+- **Leitungscodierung:** zusätzliche Bits, damit der Empfänger das Signal sicher erkennt (z. B. bei SATA und USB 3.0 in der angegebenen Rate enthalten, bei Ethernet schon herausgerechnet)
 - **Protokoll-Overhead:** Kopfdaten, Prüfsummen, Bestätigungen
 Dazu kommt die Einheitenfalle: Schnittstellen in **bit/s**, Kopierprogramme in **Byte/s** – Faktor 8.
-Beispiel: 1 Gbit/s ÷ 8 = 125 MB/s brutto; über eine 1-Gbit/s-Verbindung kommen beim Kopieren davon etwa 110–118 MB/s an, nicht 1.000 – und erst recht nicht 1 GB/s.
+Beispiel: 1 Gbit/s ÷ 8 = 125 MB/s brutto; über eine 1-Gbit/s-Verbindung kommen beim Kopieren davon etwa 110–118 MB/s an (bei Ethernet fehlt der Rest nur wegen des Protokoll-Overheads), nicht 1.000 – und erst recht nicht 1 GB/s.
 
 ### K8 – Datenrate gegen Signalgeschwindigkeit (Stufe 2 Verstehen)
 Du kannst die Datenübertragungsrate (Bit je Sekunde, auch Bitrate, umgangssprachlich Bandbreite) von der Signalgeschwindigkeit abgrenzen: Das Signal breitet sich in Kupfer wie in Glasfaser mit etwa zwei Dritteln der Lichtgeschwindigkeit aus; Glasfaser erlaubt höhere Datenraten.
@@ -120,7 +120,7 @@ Datenrate gegen Signalgeschwindigkeit: Die Datenrate gibt an, wie viele Bit je S
 **Kerngedanken:**
 - Die Richtung ergibt sich aus dem Datenfluss, nicht aus dem Vertrag: Was vom eigenen Anschluss weggeht (sichern, einreichen, hochladen), ist Upload; was ankommt, ist Download. Die Aufgabe nennt beide Raten, die Wahl ist Teil der Lösung.
 - In der typischen Dauerrechnung treffen beide Präfixarten aufeinander: die Datenmenge binär (steht sie ausdrücklich in MB oder GB, dezimal) und mal 8, die Rate dezimal. Erst wenn oben Bit und unten Bit je Sekunde stehen, wird geteilt.
-- „Um x % komprimiert“ lässt (100 − x) % übrig, „auf x % komprimiert“ lässt x % übrig.- Beim Vergleich einer Schnittstelle mit einer Kopieranzeige gibt es zwei getrennte Gründe: Zuerst die Einheit – bit/s durch 8 ergibt Byte/s, das erklärt den größten Teil. Die kleine Lücke, die danach bleibt, erklärt brutto gegen netto (Overhead, Leitungscodierung).
+- „Um x % komprimiert“ lässt (100 − x) % übrig, „auf x % komprimiert“ lässt x % übrig.- Beim Vergleich einer Schnittstelle mit einer Kopieranzeige gibt es zwei getrennte Gründe: Zuerst die Einheit – bit/s durch 8 ergibt Byte/s, das erklärt den größten Teil. Die kleine Lücke, die danach bleibt, erklärt brutto gegen netto: bei Ethernet nur der Overhead, bei Schnittstellen wie SATA oder USB 3.0 auch die Leitungscodierung.
 
 **Abläufe zum Verstehen (Hintergrund, mehr als die IHK verlangt):**
 - K7 – Von den Nutzdaten zu den Bits auf der Leitung: (1) Der Sender teilt die Nutzdaten der Datei in Stücke, die jeweils in ein Paket passen. (2) Jede Protokollschicht setzt ihre Kopfdaten vor das Stück, und die Sicherungsschicht hängt an den fertigen Rahmen eine Prüfsumme an. (3) Die Leitungscodierung ersetzt Gruppen von Datenbits durch längere Bitgruppen, zum Beispiel 8 Datenbits durch 10 Leitungsbits, damit der Empfänger Takt und Signal sicher erkennt. (4) Der Empfänger macht die Leitungscodierung rückgängig, prüft die Prüfsumme, entfernt die Kopfdaten und reicht nur die Nutzdaten an das Programm weiter. (5) Der Empfänger bestätigt den Empfang; nicht bestätigte Pakete sendet der Sender erneut, was Übertragungszeit ohne neue Nutzdaten kostet. (6) Die Bruttorate zählt alle Bits auf der Leitung, der Durchsatz nur die angekommenen Nutzdaten, deshalb liegt er immer darunter. Vereinfacht: Wie groß die Abzüge sind, hängt von Schnittstelle und Protokoll ab; bei manchen Schnittstellen ist die Leitungscodierung in der angegebenen Rate bereits berücksichtigt.
