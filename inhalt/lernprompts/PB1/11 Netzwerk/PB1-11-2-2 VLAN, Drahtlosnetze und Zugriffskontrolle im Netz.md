@@ -45,7 +45,7 @@ Zweck:
 - **Abteilungen oder Gäste trennen**
 - **Sicherheit** erhöhen
 - **Broadcast-Verkehr** (Rundsendungen an alle Geräte im selben Netz) begrenzen
-Verkehr zwischen VLANs geht nur über einen Router.
+Verkehr zwischen VLANs geht nur über einen Router oder Layer-3-Switch (siehe K5).
 
 ### K2 – Drahtlosnetze: Bluetooth, WLAN und Mesh (Stufe 2 Verstehen)
 Du kannst Drahtlosnetze charakterisieren: PAN mit Bluetooth für kurze Entfernungen, WLAN im Gebäude, Mesh-WLAN mit mehreren zusammenarbeitenden Zugangspunkten für große Flächen.

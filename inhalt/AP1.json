@@ -9460,7 +9460,7 @@
         ],
         [
           "AP1-4-1-2-K7",
-          "Du kannst die Aufgabe des Chipsatzes erklären: Er verbindet auf dem Mainboard den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt damit weitgehend fest, wie viele USB-, SATA- und PCIe-Anschlüsse ein Mainboard bietet; was er nicht kann, lässt sich nur über Zusatzchips oder Erweiterungskarten nachrüsten."
+          "Du kannst die Aufgabe des Chipsatzes erklären: Er verbindet auf dem Mainboard den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt damit weitgehend fest, wie viele USB-, SATA- und PCIe-Anschlüsse ein Mainboard bieten kann; wie viele davon verbaut sind, entscheidet der Hersteller des Mainboards, und zusätzliche Anschlüsse kommen über Erweiterungskarten dazu, bei USB auch über einen Hub."
         ],
         [
           "AP1-4-1-2-K8",
@@ -9508,7 +9508,7 @@
       "quer": null,
       "gegen": [],
       "neu": {
-        "ziel": "Aufgaben und Kenngrößen der Komponenten kennen, Datenblätter vergleichen, die Verträglichkeit beurteilen und den Arbeitsspeicher prüfen.",
+        "ziel": "Aufgaben und Kenngrößen der Komponenten kennen, Datenblätter vergleichen und die Verträglichkeit beurteilen.",
         "hinweis": "Das Lehrbuch lässt den Arbeitsspeicher über den Chipsatz angebunden sein; in aktuellen PCs sitzt der Speichercontroller in der CPU, der Chipsatz bindet Laufwerke, weitere PCIe-Steckplätze und Anschlüsse an. 2026H-A2-ba (RAM-Größe prüfen) und 2026H-A2-bb (defekten Riegel ermitteln) stehen hier nur als Beleg: Die Aussagen dazu stehen in AP1-1-5-3 (K3, K6), den ESD-Schutz lernst du in AP1-4-1-5-K6.",
         "kurz": "**Was steckt eigentlich in einem PC – und wie liest du ein Datenblatt?** Hier lernst du die Aufgaben der wichtigsten Komponenten, ihre Kenngrößen und wie du prüfst, ob ein Speicherriegel passt.",
         "bautAuf": [],
@@ -9546,7 +9546,7 @@
               "katalog:AP1.03.03.1"
             ],
             "vorgegeben": null,
-            "erklaerung": "Zwei Regeln:\n- **Die DDR-Generation muss gleich sein.** Ein DDR4-Riegel passt nicht in ein DDR5-System – die Kerbe sitzt an einer anderen Stelle.\n- **Bei unterschiedlichem Takt gilt der niedrigere.** Steckt ein DDR4-3200 neben einem DDR4-2666, laufen beide mit 2666. Beim Kauf heißt das: Ein schnellerer, teurerer Riegel lohnt nicht, wenn er neben dem vorhandenen doch nur mit dem niedrigeren Takt läuft.\nDazu muss ein Steckplatz frei sein und die Bauform passen (DIMM im Desktop, SO-DIMM im Notebook).",
+            "erklaerung": "Zwei Regeln:\n- **Die DDR-Generation muss gleich sein.** Ein DDR4-Riegel passt nicht in ein DDR5-System – die Kerbe sitzt an einer anderen Stelle.\n- **Bei unterschiedlichem Takt gilt der niedrigere.** Steckt ein DDR4-3200 neben einem DDR4-2666, laufen beide mit 2666. Beim Kauf heißt das: Ein schnellerer, teurerer Riegel lohnt nicht, wenn er neben dem vorhandenen doch nur mit dem niedrigeren Takt läuft.\nDazu muss ein Steckplatz frei sein; welche Bauform passt (DIMM oder SO-DIMM), lernst du in AP1-4-1-7-K7.",
             "karten": 3,
             "neu": null
           },
@@ -9572,7 +9572,7 @@
               "buch:GS-2.4.3-S155"
             ],
             "vorgegeben": null,
-            "erklaerung": "Der Chipsatz ist der **Verkehrsknoten des Mainboards**. Arbeitsspeicher und Grafikkarte hängen heute meist direkt am Prozessor, oft auch ein M.2-Steckplatz und einzelne USB-Anschlüsse; alles andere – SATA-Laufwerke, weitere PCIe-Steckplätze, USB, Netzwerk, Audio – läuft über den Chipsatz.\n- Er bestimmt die **Ausstattung**: Anzahl der Anschlüsse, unterstützte Standards, teils Übertaktung.\n- Eingestellt wird er über das **BIOS/UEFI**, z. B. SATA-Modus oder abgeschaltete Anschlüsse.\n- Prozessor und Chipsatz müssen zueinander passen.\nBeispiel: Braucht ein Rechner mehr USB-Anschlüsse, als der Chipsatz bietet, hilft nur eine USB-Erweiterungskarte.",
+            "erklaerung": "Der Chipsatz ist der **Verkehrsknoten des Mainboards**. Arbeitsspeicher und Grafikkarte hängen heute meist direkt am Prozessor, oft auch ein M.2-Steckplatz und einzelne USB-Anschlüsse; alles andere – SATA-Laufwerke, weitere PCIe-Steckplätze, USB, Netzwerk, Audio – läuft über den Chipsatz.\n- Er gibt den **Rahmen für die Ausstattung** vor: wie viele Anschlüsse höchstens möglich sind, welche Standards unterstützt werden, teils Übertaktung. Wie viele davon verbaut sind, entscheidet der Hersteller des Mainboards; er kann mit Zusatzchips weitere ergänzen.\n- Eingestellt wird er über das **BIOS/UEFI**, z. B. SATA-Modus oder abgeschaltete Anschlüsse.\n- Prozessor und Chipsatz müssen zueinander passen.\nBeispiel: Braucht ein Rechner mehr USB-Anschlüsse, als das Mainboard hat, hilft ein USB-Hub oder eine USB-Erweiterungskarte.",
             "karten": 2,
             "neu": null
           },
@@ -28290,14 +28290,14 @@
       "sp": "AP1-4-1-2",
       "k": "AP1-4-1-2-K7",
       "v": "Welche Aufgabe hat der Chipsatz auf dem Mainboard?",
-      "h": "Er verbindet den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt fest, welche Schnittstellen (USB, SATA, PCIe, Netzwerk) das Mainboard bietet."
+      "h": "Er verbindet den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt weitgehend fest, welche Schnittstellen (USB, SATA, PCIe, Netzwerk) das Mainboard bieten kann."
     },
     {
       "id": "AP1-4-1-2-K7-2",
       "sp": "AP1-4-1-2",
       "k": "AP1-4-1-2-K7",
       "v": "Ein Mainboard bietet zu wenige Anschlüsse. Was kannst du tun?",
-      "h": "Nur nachrüsten: über eine Erweiterungskarte im PCIe-Steckplatz (oder einen Zusatzchip) – der Chipsatz selbst lässt sich nicht erweitern."
+      "h": "Nachrüsten: über eine Erweiterungskarte im PCIe-Steckplatz, bei USB auch über einen USB-Hub – der Chipsatz selbst lässt sich nicht erweitern."
     },
     {
       "id": "AP1-4-1-2-K8-1",

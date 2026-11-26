@@ -32,7 +32,7 @@ Antworte auf Deutsch.
 
 ## Stoff: Prozessor, Mainboard, Arbeitsspeicher, Grafikkarte und Netzteil
 
-Ziel: Aufgaben und Kenngrößen der Komponenten kennen, Datenblätter vergleichen, die Verträglichkeit beurteilen und den Arbeitsspeicher prüfen.
+Ziel: Aufgaben und Kenngrößen der Komponenten kennen, Datenblätter vergleichen und die Verträglichkeit beurteilen.
 
 Das muss ich können:
 
@@ -64,7 +64,7 @@ Erklärung:
 Zwei Regeln:
 - **Die DDR-Generation muss gleich sein.** Ein DDR4-Riegel passt nicht in ein DDR5-System – die Kerbe sitzt an einer anderen Stelle.
 - **Bei unterschiedlichem Takt gilt der niedrigere.** Steckt ein DDR4-3200 neben einem DDR4-2666, laufen beide mit 2666. Beim Kauf heißt das: Ein schnellerer, teurerer Riegel lohnt nicht, wenn er neben dem vorhandenen doch nur mit dem niedrigeren Takt läuft.
-Dazu muss ein Steckplatz frei sein und die Bauform passen (DIMM im Desktop, SO-DIMM im Notebook).
+Dazu muss ein Steckplatz frei sein; welche Bauform passt (DIMM oder SO-DIMM), lernst du in AP1-4-1-7-K7.
 
 ### K6 – Logische Prozessoren und Cache (Stufe 2 Verstehen)
 Du kannst logische Prozessoren und Cache erklären: Logische Prozessoren sind die Threads, die eine CPU gleichzeitig ausführen kann – mit SMT (bei Intel Hyper-Threading) zwei je Kern, bei Effizienzkernen und neueren Intel-Prozessoren ohne Hyper-Threading einer; der Cache ist ein schneller Zwischenspeicher, der Zugriffe auf langsameren Speicher spart.
@@ -74,14 +74,14 @@ Erklärung:
 - **Cache:** ein kleiner, sehr schneller Zwischenspeicher direkt in der CPU. Häufig gebrauchte Daten liegen dort, die CPU muss seltener auf den langsameren Arbeitsspeicher warten.
 
 ### K7 – Chipsatz auf dem Mainboard (Stufe 2 Verstehen)
-Du kannst die Aufgabe des Chipsatzes erklären: Er verbindet auf dem Mainboard den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt damit weitgehend fest, wie viele USB-, SATA- und PCIe-Anschlüsse ein Mainboard bietet; was er nicht kann, lässt sich nur über Zusatzchips oder Erweiterungskarten nachrüsten.
+Du kannst die Aufgabe des Chipsatzes erklären: Er verbindet auf dem Mainboard den Prozessor mit Laufwerken, Steckplätzen und Anschlüssen und legt damit weitgehend fest, wie viele USB-, SATA- und PCIe-Anschlüsse ein Mainboard bieten kann; wie viele davon verbaut sind, entscheidet der Hersteller des Mainboards, und zusätzliche Anschlüsse kommen über Erweiterungskarten dazu, bei USB auch über einen Hub.
 
 Erklärung:
 Der Chipsatz ist der **Verkehrsknoten des Mainboards**. Arbeitsspeicher und Grafikkarte hängen heute meist direkt am Prozessor, oft auch ein M.2-Steckplatz und einzelne USB-Anschlüsse; alles andere – SATA-Laufwerke, weitere PCIe-Steckplätze, USB, Netzwerk, Audio – läuft über den Chipsatz.
-- Er bestimmt die **Ausstattung**: Anzahl der Anschlüsse, unterstützte Standards, teils Übertaktung.
+- Er gibt den **Rahmen für die Ausstattung** vor: wie viele Anschlüsse höchstens möglich sind, welche Standards unterstützt werden, teils Übertaktung. Wie viele davon verbaut sind, entscheidet der Hersteller des Mainboards; er kann mit Zusatzchips weitere ergänzen.
 - Eingestellt wird er über das **BIOS/UEFI**, z. B. SATA-Modus oder abgeschaltete Anschlüsse.
 - Prozessor und Chipsatz müssen zueinander passen.
-Beispiel: Braucht ein Rechner mehr USB-Anschlüsse, als der Chipsatz bietet, hilft nur eine USB-Erweiterungskarte.
+Beispiel: Braucht ein Rechner mehr USB-Anschlüsse, als das Mainboard hat, hilft ein USB-Hub oder eine USB-Erweiterungskarte.
 
 ### K8 – Formfaktor: Normmaße und Auswahl (Stufe 2 Verstehen)
 Du kannst erklären, was ein Formfaktor festlegt und warum er für die Auswahl zählt: Er normt Größe, Befestigungspunkte und Lage der Anschlüsse, damit Mainboard, Gehäuse und Netzteil verschiedener Hersteller zusammenpassen; ein großes ATX-Board bietet viele Steckplätze, ein kompaktes Mini-ITX-Board passt in kleine Gehäuse, lässt sich aber kaum erweitern.
@@ -162,7 +162,7 @@ Beispiel: Die Sachbearbeitung kommt mit integrierter Grafik aus, die 3D-Visualis
 - Muster 1: Vorgegeben ist ein Taskmanager-Ausschnitt. „Erläutern“ des Begriffs logische Prozessoren (2 Punkte, etwa 3 Zeilen; die Lösung sagt gröber: Teilung der physischen Kerne, um mehrere Threads gleichzeitig in einem Kern auszuführen, Hyperthreading – das zählt ebenso). „Beschreiben“ der Aufgabe eines Cache (2 Punkte: schneller Zwischenspeicher, weniger Zugriffe auf ein langsameres Speichermedium).
 - Muster 2: Eckdaten eines Laptops, ein Steckplatz frei, drei Riegelangebote mit Preis (andere Generation, gleiche Generation schneller, gleich). Kompatibilität je Angebot in einem knappen Satz „erklären“ (3 Punkte), dann eine Empfehlung wirtschaftlich „begründen“ (2 Punkte). Die IHK schreibt dabei „DDR4-3200MHz“; gemeint ist die Datenrate.
 - Chipsatz, Formfaktor, PCIe, Netzteil und Grafik kamen noch nicht vor. Der Prüfungskatalog nennt Netzteil, Grafikkarte, Motherboard, Wirkungsgrad und Gütesiegel; zu erwarten sind „erklären“ und eine begründete Auswahl am Datenblatt, beim Netzteil mit Lastanteil.
-- 2026H, Testprotokoll: Laut Spezifikation 32 GB RAM, angezeigt werden 16 GB. Zwei weitere Wege angeben, die Speichergröße zu prüfen, und beschreiben, wie man den defekten von zwei Riegeln findet (je 2 Punkte).
+- 2026H, Testprotokoll: Laut Spezifikation 32 GB RAM, angezeigt werden 16 GB. Zwei weitere Wege angeben, die Speichergröße zu prüfen, und beschreiben, wie man den defekten von zwei Riegeln findet (je 2 Punkte). Beide Teilaufgaben werden in AP1-1-5-3 gelernt (K3, K6) und stehen hier nur zur Einordnung: nicht abfragen.
 
 **Fallen:**
 - Eine Aufgabe nur umschreiben: „Netzteil liefert Strom“ ohne die Umwandlung, „RAM speichert Daten“ ohne „laufende Programme“ – oder Arbeitsspeicher und SSD als „Speicher“ vermengen.

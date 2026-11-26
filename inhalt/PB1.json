@@ -11788,7 +11788,7 @@
               "katalog:AP2b.01.03.6"
             ],
             "vorgegeben": null,
-            "erklaerung": "**VLAN** = logisch getrenntes Netz auf derselben Switch-Infrastruktur.\nZweck:\n- **Abteilungen oder Gäste trennen**\n- **Sicherheit** erhöhen\n- **Broadcast-Verkehr** (Rundsendungen an alle Geräte im selben Netz) begrenzen\nVerkehr zwischen VLANs geht nur über einen Router.",
+            "erklaerung": "**VLAN** = logisch getrenntes Netz auf derselben Switch-Infrastruktur.\nZweck:\n- **Abteilungen oder Gäste trennen**\n- **Sicherheit** erhöhen\n- **Broadcast-Verkehr** (Rundsendungen an alle Geräte im selben Netz) begrenzen\nVerkehr zwischen VLANs geht nur über einen Router oder Layer-3-Switch (siehe K5).",
             "karten": 3,
             "neu": null
           },
