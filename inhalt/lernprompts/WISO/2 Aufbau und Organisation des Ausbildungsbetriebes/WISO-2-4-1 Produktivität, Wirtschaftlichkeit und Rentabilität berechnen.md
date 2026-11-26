@@ -111,6 +111,8 @@ Achtung: Manche Quellen rechnen nur Rückflüsse / Investition (dann ist 1 bzw. 
 
 ## Lehrnotiz: Produktivität, Wirtschaftlichkeit und Rentabilität berechnen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch rechnet den ROI noch als Rückflüsse geteilt durch Investition (Gewinnschwelle bei 1 bzw. 100 %); üblich und hier gelernt ist (Rückflüsse − Investition) / Investition, bei der jeder Wert über 0 % einen Überschuss zeigt.
+
 **Aufteilung:**
 - Produktivität und ihre Veränderung: K1
 - Wirtschaftlichkeit und Vergleich mehrerer Aufträge: K2

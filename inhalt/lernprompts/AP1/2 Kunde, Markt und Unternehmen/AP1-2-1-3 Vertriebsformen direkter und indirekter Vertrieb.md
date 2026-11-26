@@ -79,6 +79,8 @@ Die AIDA-Formel beschreibt die Stufen der Kundenansprache: Aufmerksamkeit, Inter
 
 ## Lehrnotiz: Vertriebsformen: direkter und indirekter Vertrieb
 
+**Hinweis aus dem Lernplan:** Die Nutzwertanalyse (AP1.02.05.1) wird im Ordner Wirtschaftlichkeit und Verträge mit dem Angebotsvergleich zusammen gelernt.
+
 **Aufteilung:**
 - Direkt oder über Händler, mit Zuordnen von Beispielen: K1, K3
 - Je ein Vorteil der beiden Wege: K2

@@ -111,6 +111,8 @@ Erkennungstipp: Beginnt eine Adresse mit 2 oder 3, ist sie global; mit fe80 loka
 
 ## Lehrnotiz: IPv6-Adressen lesen und schreiben
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt, der IPv6-Kopf habe fest 40 Byte ohne Zusatzheader; richtig ist: Der Grundkopf hat fest 40 Byte, dahinter können Erweiterungsheader folgen. Die Hex-Form von ::ffff:10.0.1.1 gibt es als ::ffff:a011 an; richtig ist ::ffff:a00:101.
+
 **Aufteilung:**
 - Aufbau, Vergleich mit IPv4 und Vorteile: K1, K6, K5
 - Kürzen und ausschreiben: K2

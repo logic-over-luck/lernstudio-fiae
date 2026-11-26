@@ -74,6 +74,8 @@ Beispiel: Eine Fitness-App mit Smartwatch → REST. Die Anbindung an den bestehe
 
 ## Lehrnotiz: REST und SOAP: Prinzipien, Nachrichtenaufbau und Auswahl
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt „WDSL“ und nennt ACID als Eigenschaft von SOAP; richtig ist: Die Beschreibungssprache heißt WSDL, und ACID beschreibt Datenbanktransaktionen – SOAP unterstützt verlässliche Transaktionen nur über Zusatzstandards wie WS-AtomicTransaction.
+
 **Aufteilung:**
 - Die sechs Prinzipien von REST: K2
 - Aufbau einer SOAP-Nachricht und Rolle der WSDL: K1

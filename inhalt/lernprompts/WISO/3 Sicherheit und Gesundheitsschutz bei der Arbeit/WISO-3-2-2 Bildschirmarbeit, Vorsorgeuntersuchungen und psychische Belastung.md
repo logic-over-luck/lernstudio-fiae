@@ -79,6 +79,8 @@ Typische Verwechslung: nicht „Bildschirmarbeitsverordnung“, sondern **Arbeit
 
 ## Lehrnotiz: Bildschirmarbeit, Vorsorgeuntersuchungen und psychische Belastung
 
+**Hinweis aus dem Lernplan:** Wie ein Bildschirmarbeitsplatz ergonomisch gestaltet und beurteilt wird, steht in AP1-4-3-1.
+
 **Aufteilung:**
 - Vorsorge für die Augen und wer die Brille zahlt: K3
 - Wo die Regeln stehen und wie Bildschirmarbeit organisiert wird: K6

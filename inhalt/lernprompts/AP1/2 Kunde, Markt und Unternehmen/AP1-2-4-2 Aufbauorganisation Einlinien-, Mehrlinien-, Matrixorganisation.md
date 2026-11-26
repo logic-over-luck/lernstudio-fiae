@@ -84,6 +84,8 @@ Beispiel: Eine Entwicklerin arbeitet drei Tage pro Woche im Projekt „Neues Kun
 
 ## Lehrnotiz: Aufbauorganisation: Einlinien-, Mehrlinien-, Matrixorganisation
 
+**Hinweis aus dem Lernplan:** Stabsstellen wie Datenschutz- oder Informationssicherheitsbeauftragte stehen oft in IT-Organigrammen: Sie beraten die Leitung ohne Weisungsbefugnis und hängen seitlich an einer Linie. Das Stabliniensystem selbst lernst du in WiSo (WISO.02.03).
+
 **Aufteilung:**
 - Die drei Formen unterscheiden und im Organigramm erkennen: K2, K1
 - Vor- und Nachteile: K3

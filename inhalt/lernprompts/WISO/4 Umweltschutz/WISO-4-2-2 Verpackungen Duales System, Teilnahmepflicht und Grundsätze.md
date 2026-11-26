@@ -77,6 +77,8 @@ Typische Verwechslung: nicht „nur große Hersteller“ – auch ein kleiner On
 
 ## Lehrnotiz: Verpackungen: Duales System, Teilnahmepflicht und Grundsätze
 
+**Hinweis aus dem Lernplan:** Das Recycling-Symbol steht in WISO-4-1-3, die Abfallhierarchie in WISO-4-2-1.
+
 **Aufteilung:**
 - Was das Duale System ist: K1
 - Wer sich beteiligen und registrieren muss: K4

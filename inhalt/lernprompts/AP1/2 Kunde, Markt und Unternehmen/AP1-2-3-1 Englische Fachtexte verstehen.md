@@ -118,6 +118,8 @@ Begründe, welche Variante zur Situation in der Aufgabe passt.
 
 ## Lehrnotiz: Englische Fachtexte verstehen
 
+**Hinweis aus dem Lernplan:** Die Fachinhalte der Teilaufgaben (Energiekosten, Skript, Sicherheitsmaßnahmen, Kamera) werden in den jeweiligen Fachordnern gelernt; hier zählt das Verstehen des englischen Materials. Englisches Material steht seit 2025 in jeder Prüfung (1–3 Texte oder Datenblätter, auch zu Datenbank, Change Management und KI); geübt wird hier an eigenen kurzen Übungstexten im Prüfungsformat.
+
 **Aufteilung:**
 - Gezielt suchen und Fachbegriffe kennen: K1, K3
 - Den Sinn übertragen statt der Wörter: K4

@@ -150,6 +150,8 @@ Jeder Baustein des Grundschutz-Kompendiums nennt die zuständigen Rollen, etwa I
 
 ## Lehrnotiz: IT-Grundschutz-Kompendium und Bausteine
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt noch das IT-Sicherheitsgesetz mit KRITIS-Betreibern und Anbietern digitaler Dienste (§§ 8a–8d BSIG alter Fassung). Richtig ist: Seit der Umsetzung der NIS-2-Richtlinie (Dezember 2025) ist das BSI-Gesetz neu gefasst; die Pflichten gelten für deutlich mehr Unternehmen (wichtige und besonders wichtige Einrichtungen, grob ab 50 Beschäftigten oder 10 Mio. € Umsatz in bestimmten Branchen), Meldungen sind gestuft (Erstmeldung binnen 24 Stunden). Paragrafen nicht lernen. Prüfungsstand ist das IT-Grundschutz-Kompendium in der Edition 2023 (die letzte Edition). Das BSI löst es durch Grundschutz++ ab (die Methodik ist am 26.10.2026 als BSI-Standard 300-1 erschienen; der bisherige IT-Grundschutz bleibt bis 30.11.2031 zertifizierbar). Für die Prüfung gilt weiter das Kompendium, nach dem der Prüfungskatalog fragt (Stand 11/2026).
+
 **Aufteilung:**
 - Wann eine Gefahr entsteht: K8
 - Wer das Wissen schon gesammelt hat – BSI und Kompendium: K1

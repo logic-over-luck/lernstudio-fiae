@@ -95,6 +95,8 @@ Typische Verwechslung: Kleine Geräte oder einzelne Akkus sind **keine** Ausnahm
 
 ## Lehrnotiz: Abfall vermeiden, verringern, trennen und verwerten; IT-typische Abfälle erfassen, lagern und entsorgen
 
+**Hinweis aus dem Lernplan:** Verpackungen vermeiden (2023S-A24) steht in WISO-4-2-2, Emissionen vermeiden in WISO-4-2-3.
+
 **Aufteilung:**
 - Die fünf Stufen der Abfallhierarchie: K1
 - Recycling und was keines ist: K2

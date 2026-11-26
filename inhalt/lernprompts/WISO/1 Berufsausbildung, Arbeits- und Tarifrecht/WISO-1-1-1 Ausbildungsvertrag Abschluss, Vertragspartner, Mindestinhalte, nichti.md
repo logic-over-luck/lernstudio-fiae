@@ -123,6 +123,8 @@ Beispiel: Eine Auszubildende mit kleinem Kind vereinbart 75 % der üblichen Woch
 
 ## Lehrnotiz: Ausbildungsvertrag: Abschluss, Vertragspartner, Mindestinhalte, nichtige Vereinbarungen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für die Teilzeitausbildung noch § 8 BBiG mit Begründungspflicht (z. B. Alleinerziehende); seit der BBiG-Novelle 2020 regelt § 7a BBiG die Teilzeitausbildung, die ohne besonderen Grund vereinbart werden kann.
+
 **Aufteilung:**
 - Wer den Vertrag schließt und welches Gesetz gilt: K1, K6
 - Wann und wie der Vertrag festgehalten wird: K3

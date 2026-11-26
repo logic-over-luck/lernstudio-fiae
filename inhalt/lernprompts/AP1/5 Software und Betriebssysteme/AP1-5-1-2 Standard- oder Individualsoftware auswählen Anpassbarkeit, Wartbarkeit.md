@@ -69,6 +69,8 @@ Dazwischen: Standardsoftware, die sich gut anpassen lässt (Customizing), ist of
 
 ## Lehrnotiz: Standard- oder Individualsoftware auswählen: Anpassbarkeit, Wartbarkeit, Schnittstellen
 
+**Hinweis aus dem Lernplan:** Die Rechnung Eigenentwicklung gegen Lizenzkauf (2022F-A4-c) und Gründe gegen eine Fremdvergabe (2024H-A2-a) stehen im Ordner Wirtschaftlichkeit und Verträge (AP1-3-2-4).
+
 **Aufteilung:**
 - Fertig gekauft oder eigens entwickelt, mit Vorteilen: K1, K2
 - Die drei Kriterien: K3

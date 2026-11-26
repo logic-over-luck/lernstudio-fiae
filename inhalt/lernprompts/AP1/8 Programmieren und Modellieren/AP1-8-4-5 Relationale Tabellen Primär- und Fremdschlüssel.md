@@ -105,6 +105,8 @@ Deshalb ist der künstliche Schlüssel in der Praxis der Normalfall.
 
 ## Lehrnotiz: Relationale Tabellen: Primär- und Fremdschlüssel
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2025H-A4-aa bis -ac fehlen; K1–K3 folgen den Aufgabenstellungen.
+
 **Aufteilung:**
 - Aufbau einer Tabelle und Primärschlüssel: K5, K1
 - Fremdschlüssel und der Nutzen der Verknüpfung: K2, K3

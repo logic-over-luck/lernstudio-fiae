@@ -73,6 +73,8 @@ Beispiel: Umsätze je Filiale (Zeile) und Monat (Spalte); eine neue Filiale hat 
 
 ## Lehrnotiz: Datenstrukturen: Array, zweidimensionales Array, dynamische Liste
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch (FS2 2.2.1) nennt bei der verketteten Liste „geringen Speicherplatzbedarf“ und bei der Hashtabelle „weniger Speicher als Arrays“; richtig ist: Je Element braucht eine Liste mehr Speicher als ein Array (Wert plus Verweis), sparsamer ist sie nur, weil nichts auf Vorrat angelegt wird; eine Hashtabelle braucht in der Regel mehr Speicher als ein Array mit denselben Werten.
+
 **Aufteilung:**
 - Woran man eine Datenstruktur misst: K2
 - Array oder dynamische Liste abwägen: K4

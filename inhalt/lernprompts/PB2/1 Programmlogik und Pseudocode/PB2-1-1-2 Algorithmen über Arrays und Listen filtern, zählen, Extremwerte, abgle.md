@@ -190,6 +190,8 @@ Die letzte Zeile ist die Ausgabe der letzten Gruppe – sie fehlt in fehlerhafte
 
 ## Lehrnotiz: Algorithmen über Arrays und Listen: filtern, zählen, Extremwerte, abgleichen, gruppieren
 
+**Hinweis aus dem Lernplan:** Die Minimumsuche (2025W-PB2-A1-b) durchläuft die Liste wie die lineare Suche (PB2-2-1-1), sucht aber keinen festen Wert, sondern vergleicht mit dem bisher besten Element und läuft immer bis zum Ende. Den Fehler „letzte Gruppe fehlt“ im vorgegebenen Code zu finden (2023S-PB2-A3-aa) übst du in PB2-3; das Muster selbst steht hier.
+
 **Aufteilung:**
 - Filtern: K1
 - Zählen, Summieren, Durchschnitt: K2

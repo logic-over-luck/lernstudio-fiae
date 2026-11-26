@@ -124,6 +124,8 @@ Im Schweizer Sprachgebrauch heißt die Methode nach den Anfangsbuchstaben IPERKA
 
 ## Lehrnotiz: Arbeitstechniken: Zeitmanagement, Moderation, Planung, lernförderlicher Arbeitsplatz
 
+**Hinweis aus dem Lernplan:** Fachinformationen beschaffen und auswerten (AP1-2-3-2), Präsentieren (AP1-2-3-3), Projektplanung (AP1-1-2-1) sowie Scrum und agiles Vorgehen (AP1-1-1-2, PB1-1-1-1, PB1-1-1-3) kennst du aus AP1 und PB1; 2022W-WISO-A30 (Vorteil agilen Projektmanagements) beantwortest du mit PB1-1-1-1, für 2022W-WISO-A29 ergänzt K8 die Merkmale agiler Arbeit.
+
 **Aufteilung:**
 - Teil A – Eigene Arbeit planen: Zeitmanagement K2; Pareto-Prinzip K10; lernförderlicher Arbeitsplatz K6; vollständige Handlung K11
 - Teil B – Im Team arbeiten: Moderation K4; agile Arbeit K8

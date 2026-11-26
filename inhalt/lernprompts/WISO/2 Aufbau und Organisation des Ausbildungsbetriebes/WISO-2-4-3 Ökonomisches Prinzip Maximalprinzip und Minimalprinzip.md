@@ -67,6 +67,8 @@ Typische Verwechslung: „Mehr Umsatz“ klingt nach Maximalprinzip – aber nur
 
 ## Lehrnotiz: Ökonomisches Prinzip: Maximalprinzip und Minimalprinzip
 
+**Hinweis aus dem Lernplan:** Das ökonomische Prinzip steht nicht im Katalog, kam aber 2025S vor; es gehört zur Wirtschaftlichkeit. Das Lehrbuch nennt beim Optimumprinzip das Angebot mit dem niedrigeren Wert Output/Input als das bessere; richtig ist das Angebot mit dem höheren Wert Output/Input (also mit dem niedrigeren Einsatz je Leistungseinheit).
+
 **Aufteilung:**
 - Maximalprinzip: K1
 - Minimalprinzip als Gegenstück: K2

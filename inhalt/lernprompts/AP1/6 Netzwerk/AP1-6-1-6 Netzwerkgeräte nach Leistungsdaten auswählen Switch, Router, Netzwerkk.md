@@ -86,6 +86,8 @@ Entscheide nach dem Bedarf: Im kleinen Büro mit fünf PCs reicht meist ein nich
 
 ## Lehrnotiz: Netzwerkgeräte nach Leistungsdaten auswählen: Switch, Router, Netzwerkkarte, PoE
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt die Adresstabelle des Switches „ARP-Speicher“; richtig ist MAC-Adresstabelle (Port ↔ MAC-Adresse) – ARP-Tabellen führen Hosts und Router.
+
 **Aufteilung:**
 - Switch nach Ports, Datenrate und Bauform: K1
 - Managebar oder nicht: K5

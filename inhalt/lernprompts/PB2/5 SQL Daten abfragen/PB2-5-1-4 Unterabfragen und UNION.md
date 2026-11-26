@@ -112,6 +112,8 @@ Gleichwertig mit einem Vergleich:
 
 ## Lehrnotiz: Unterabfragen und UNION
 
+**Hinweis aus dem Lernplan:** UPDATE und DELETE mit Unterabfrage (2021W-PB2-A4-c, 2022S-PB2-A4-bb, 2023W-PB2-A4-c) übst du in PB2-6-1-2. Die IHK-Lösungen zu 2022S-PB2-A4-bd zeigen zwei Wege: zwei korrelierte Unterabfragen in der SELECT-Liste oder zwei Unterabfragen in FROM (qry21, qry22). UNION steht im SQL-Auszug (unter Operatoren) und ist in 2024S-PB2-A4-d verlangt.
+
 **Aufteilung:**
 - Teil A – Unterabfragen in WHERE: genau ein Wert K2; Liste mit IN und NOT IN K1; korreliert mit EXISTS K6
 - Teil B – Unterabfragen an anderer Stelle: korreliert in der SELECT-Liste K5; in FROM K3

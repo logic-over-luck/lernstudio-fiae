@@ -89,6 +89,8 @@ Beispiel: `shop.example.de/api` geht an den API-Server, `/bilder` an den Bildser
 
 ## Lehrnotiz: Netzwerkdienste: DNS, DHCP und Proxy
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt DNSSEC abhörsicher; richtig ist: DNSSEC signiert die Einträge (Echtheit), verschlüsselt aber nicht. Reverse-DNS-Einträge verortet es beim Reverse Proxy; richtig ist: Es sind PTR-Einträge im DNS (Adresse zu Name). Beim Proxy beschreibt es das Austauschen von Absender- und Zieladressen; das ist NAT, ein Proxy baut auf der Anwendungsebene eine eigene Verbindung auf.
+
 **Aufteilung:**
 - DNS, erst Aufgabe und Ablauf, dann die Eintragstypen: K1, K4
 - DHCP: K2

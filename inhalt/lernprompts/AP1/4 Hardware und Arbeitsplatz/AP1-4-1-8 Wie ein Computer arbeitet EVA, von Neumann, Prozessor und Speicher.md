@@ -91,6 +91,8 @@ Abgrenzung:
 
 ## Lehrnotiz: Wie ein Computer arbeitet: EVA, von Neumann, Prozessor und Speicher
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch gibt den Adressraum von 64 Bit zu klein an; richtig sind 2^64 Byte = 16 EiB (praktische Grenzen setzen Mainboard und Betriebssystem). Es beschreibt außerdem noch den Front Side Bus, den es in aktuellen PCs nicht mehr gibt, und bezieht das Mooresche Gesetz auf die Leistung mit 18 Monaten; gemeint ist die Transistorzahl je Chip, etwa alle zwei Jahre.
+
 **Aufteilung:**
 - EVA-Prinzip, Zentraleinheit und Peripherie: K1
 - Flüchtiger Arbeitsspeicher und dauerhafte Datenträger: K4

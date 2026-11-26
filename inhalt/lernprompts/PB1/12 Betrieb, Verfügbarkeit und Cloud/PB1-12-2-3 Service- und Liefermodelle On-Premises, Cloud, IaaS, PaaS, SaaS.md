@@ -110,6 +110,8 @@ Beispiel: Eine Klinik hält Patientendaten in der privaten Cloud und betreibt We
 
 ## Lehrnotiz: Service- und Liefermodelle: On-Premises, Cloud, IaaS, PaaS, SaaS
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt Function as a Service als Bereitstellung fertiger, vielfach verwendeter Funktionen durch den Anbieter; richtig ist: Bei FaaS führt der Anbieter vom Kunden geschriebene Funktionen ereignisgesteuert aus. Das Lehrbuch nennt Proxmox VE als Beispiel für einen Typ-2-Hypervisor; richtig ist Typ 1 (KVM direkt auf der Hardware). Paravirtualisierung ist kein direkter Hardwarezugriff (das wäre Passthrough), sondern die Nutzung angepasster Treiber zum Hypervisor.
+
 **Aufteilung:**
 - Servicemodelle und wer wofür verantwortlich ist: K1, K2
 - Das passende Servicemodell auswählen: K3

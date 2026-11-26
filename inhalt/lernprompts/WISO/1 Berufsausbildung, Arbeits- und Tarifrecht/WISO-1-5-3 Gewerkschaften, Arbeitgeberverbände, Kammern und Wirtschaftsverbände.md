@@ -101,6 +101,8 @@ Typische Verwechslung: Ein Branchenverband verhandelt keine Tarifverträge, nur 
 
 ## Lehrnotiz: Gewerkschaften, Arbeitgeberverbände, Kammern und Wirtschaftsverbände
 
+**Hinweis aus dem Lernplan:** In WISO-2-5-2 steht, welcher Tarifpartner für eine Branche zuständig ist, dazu berufsständische Vertretungen und Ehrenamt; die IHK als zuständige Stelle in der Ausbildung steht in WISO-1-2-3.
+
 **Aufteilung:**
 - Gewerkschaften und ihr Dachverband: K1
 - Arbeitgeberverbände als Gegenüber: K2

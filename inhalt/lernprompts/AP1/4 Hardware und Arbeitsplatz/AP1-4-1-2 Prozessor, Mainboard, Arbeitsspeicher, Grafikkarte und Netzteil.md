@@ -127,6 +127,8 @@ Beispiel: Die Sachbearbeitung kommt mit integrierter Grafik aus, die 3D-Visualis
 
 ## Lehrnotiz: Prozessor, Mainboard, Arbeitsspeicher, Grafikkarte und Netzteil
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch lässt den Arbeitsspeicher über den Chipsatz angebunden sein; in aktuellen PCs sitzt der Speichercontroller in der CPU, der Chipsatz bindet Laufwerke, weitere PCIe-Steckplätze und Anschlüsse an. 2026H-A2-ba (RAM-Größe prüfen) und 2026H-A2-bb (defekten Riegel ermitteln) stehen hier nur als Beleg: Die Aussagen dazu stehen in AP1-1-5-3 (K3, K6), den ESD-Schutz lernst du in AP1-4-1-5-K6.
+
 **Aufteilung:**
 - Die fünf Komponenten und ihre Aufgaben: K1
 - Datenblatt lesen, zuerst die Prozessorzeile: K2, K6

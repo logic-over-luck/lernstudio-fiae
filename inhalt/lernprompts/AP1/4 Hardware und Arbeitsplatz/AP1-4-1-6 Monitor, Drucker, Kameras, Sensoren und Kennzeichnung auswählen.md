@@ -105,6 +105,8 @@ So beurteilst du es: Soll der Austausch nur bei bewusstem Hinhalten passieren (B
 
 ## Lehrnotiz: Monitor, Drucker, Kameras, Sensoren und Kennzeichnung auswählen
 
+**Hinweis aus dem Lernplan:** Die Kenngrößen von Monitor und Drucker (K5, K6) kommen in den Prüfungen u. a. in 2025F-A1-a (Multifunktionsgeräte), 2023F-A1 (Material „17 Zoll FHD IPS“) und 2024F-A1 (Monitor für CAD) vor.
+
 **Aufteilung:**
 - Monitor auswählen: K5
 - Drucker und Multifunktionsgerät, mit Gesamtkosten: K6

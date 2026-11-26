@@ -90,6 +90,8 @@ Beispiel: Ein Server mit zwei Netzteilen meldet häufiger ein defektes Netzteil 
 
 ## Lehrnotiz: Ausfallrisiken, MTBF/AFR und Notfallkonzept
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch rechnet bei zwei redundanten Netzteilen 0,001 · 0,001 = 0,0000001 (0,00001 %); richtig ist 0,000001 (0,0001 %). Der genannte Faktor 1000 stimmt.
+
 **Aufteilung:**
 - Risiken für den Betrieb erkennen: K1
 - Kennzahlen der Zuverlässigkeit: erst K2, darauf aufbauend K4

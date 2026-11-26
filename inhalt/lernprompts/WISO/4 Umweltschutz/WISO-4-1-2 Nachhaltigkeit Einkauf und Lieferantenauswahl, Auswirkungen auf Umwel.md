@@ -86,6 +86,8 @@ Typische Verwechslung: Die Belastung entsteht **nicht** nur bei der Entsorgung, 
 
 ## Lehrnotiz: Nachhaltigkeit: Einkauf und Lieferantenauswahl, Auswirkungen auf Umwelt, Pflanzen, Tiere und Lebensräume
 
+**Hinweis aus dem Lernplan:** Die drei Seiten der Nachhaltigkeit (ökonomische, ökologische und soziale Ziele) stehen in AP1-2-4-1, Green IT (umweltschonend herstellen, betreiben, entsorgen) in PB1-1-2-1. Auswirkungen auf Umwelt, Pflanzen, Tiere und Lebensräume wohnen hier; WISO-5-3-1 verweist hierher und behält nur den Zeithorizont bei IT-Lösungen.
+
 **Aufteilung:**
 - Was Nachhaltigkeit heißt: K1
 - Wie ein Produkt über seinen Lebensweg die Umwelt belastet: K4

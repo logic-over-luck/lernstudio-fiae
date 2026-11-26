@@ -82,6 +82,8 @@ Vor dem Klicken mit der Maus über den Link fahren und das Ziel prüfen; im Zwei
 
 ## Lehrnotiz: Phishing erkennen und abwehren
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt Skimming als Mails mit Gewinnversprechen; richtig ist: Skimming ist das Ausspähen von Kartendaten an Geldautomaten oder Kartenlesern, Mails mit Gewinnversprechen sind Vorschuss- bzw. Gewinnspielbetrug.
+
 **Aufteilung:**
 - Was Phishing ist und welche Gefahr daraus entsteht: K3
 - Merkmale einer Phishing-Mail: K1

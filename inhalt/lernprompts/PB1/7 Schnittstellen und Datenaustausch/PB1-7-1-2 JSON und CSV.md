@@ -105,6 +105,8 @@ Beispiel: Eine Mietverwaltung exportiert alle Verträge als JSON, ein Abrechnung
 
 ## Lehrnotiz: JSON und CSV
 
+**Hinweis aus dem Lernplan:** Das Skript aus 2024W-PB1-A2-c steht in PB1-3 (Automatisierung); hier zählt die JSON-Ausgabe.
+
 **Aufteilung:**
 - JSON aufbauen: K1
 - Tabellen in JSON umwandeln: K2

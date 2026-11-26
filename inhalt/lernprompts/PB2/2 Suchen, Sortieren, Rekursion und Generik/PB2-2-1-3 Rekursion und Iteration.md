@@ -134,6 +134,8 @@ Beispiel dezimal → dual:
 
 ## Lehrnotiz: Rekursion und Iteration
 
+**Hinweis aus dem Lernplan:** Die Umrechnung dezimal → binär kennst du aus AP1-4-2-1, Modulo und ganzzahlige Division aus AP1-8-2-1. Den Schreibtischtest eines rekursiven Algorithmus (2022W-PB2-A2-aa) übst du in PB2-3; warum die Ziffern verkehrt herum erscheinen, erklärt K4. Das Lehrbuch (FS2 2.3.2) beschreibt Rekursion so, als werde der Rückgabewert eines Aufrufs als Parameter an den nächsten weitergereicht; richtig ist: Der Selbstaufruf erhält ein verkleinertes Teilproblem als Parameter (z. B. zahl div 2), die Rückgabewerte werden erst auf dem Rückweg zusammengesetzt.
+
 **Aufteilung:**
 - Was Rekursion ist, Abbruchbedingung und Aufrufstapel: K1
 - Eignet sich ein Problem für Rekursion: K5

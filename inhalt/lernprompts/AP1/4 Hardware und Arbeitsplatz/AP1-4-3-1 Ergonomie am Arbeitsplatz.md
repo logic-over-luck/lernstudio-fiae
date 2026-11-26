@@ -108,6 +108,8 @@ Ergonomische Tastaturen: geteilte oder V-förmige Bauform, Handballenauflage und
 
 ## Lehrnotiz: Ergonomie am Arbeitsplatz
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch vertauscht die Achsen der Monitorverstellung; richtig ist: Tilt = nach vorn/hinten neigen, Swivel = seitlich drehen, Pivot = ins Hochformat drehen.
+
 **Aufteilung:**
 - Der ergonomische Grundplatz und was passiert, wenn er fehlt: K2, K4
 - Der Monitor im Detail: K6

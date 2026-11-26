@@ -147,6 +147,8 @@ Beispiel: Ein IT-Unternehmen mit 100 Arbeitsplätzen muss 5 Stellen mit schwerbe
 
 ## Lehrnotiz: Mutterschutz, Elternzeit, Gleichbehandlung und Schutz schwerbehinderter Menschen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch begrenzt die Elternzeit auf die Zeit bis zum dritten Geburtstag; seit der BEEG-Reform (Geburten ab 1.7.2015) können bis zu 24 der 36 Monate auch zwischen dem dritten und dem achten Geburtstag genommen werden.
+
 **Aufteilung:**
 - Teil A – Mutterschutz und Elternzeit: Schutzfristen K1, K5; Kündigungsverbot, Vorsorge und Bezahlung K2, K8; Elternzeit und Elterngeld K9
 - Pause möglich nach Teil A.

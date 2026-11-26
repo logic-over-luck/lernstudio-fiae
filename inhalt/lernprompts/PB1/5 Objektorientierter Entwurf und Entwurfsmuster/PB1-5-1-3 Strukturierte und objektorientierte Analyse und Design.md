@@ -96,6 +96,8 @@ Eine Begründung ohne Bezug zur Anforderung („weil Hashtabellen schnell sind�
 
 ## Lehrnotiz: Strukturierte und objektorientierte Analyse und Design
 
+**Hinweis aus dem Lernplan:** 2024W-PB1-A3-a (Klassendiagramm aus einem Sachverhalt) zeichnet PB1-4-1-2; hier steht die Unterscheidung dahinter. Den Entwurf setzt der Stichpunkt Pseudocode um.
+
 **Aufteilung:**
 - Teil A – Ein Programm zerlegen: Top-down und Bottom-up K1; Modularisierung K2; Bindung und Kopplung K5
 - Pause möglich nach Teil A.

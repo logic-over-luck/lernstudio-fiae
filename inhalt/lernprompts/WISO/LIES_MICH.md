@@ -24,3 +24,4 @@ diese Datei. Jede Datei besteht aus Kopf, Regelblock (in allen Dateien gleich), 
 - Länge: im Mittel 14.000–18.000 Zeichen.
 - Wo das Buch dem Stoff widerspricht: `../_Buch-Abweichungen_2026-11-10.md` (dort gilt der Stoff).
 - Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen WISO` (siehe `CLAUDE.md`).
+- Hinweis aus dem Lernplan (erste Zeile der Lehrnotiz) ändern: `neu.hinweis` in `inhalt/WISO.json` ändern, dann `npm run hinweis einsetzen WISO` (siehe `CLAUDE.md`).

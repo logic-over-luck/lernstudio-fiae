@@ -144,6 +144,8 @@ Beispiel: Eine Werkstudentin arbeitet nur in den Semesterferien voll. In diesen 
 
 ## Lehrnotiz: Entgeltabrechnung: Lohn- und Gehaltsformen, Brutto und Netto, Lohn- und Kirchensteuer, vermögenswirksame Leistungen
 
+**Hinweis aus dem Lernplan:** Welche Unterlagen der neue Arbeitgeber verlangen kann, zum Beispiel die steuerliche Identifikationsnummer (2023W-WISO-A3), steht in WISO-1-3-6. Das Lehrbuch zählt Lohn- und Einkommensteuer zu den indirekten Steuern; richtig ist: Sie sind direkte Steuern, der Arbeitgeber behält die Lohnsteuer nur ein und führt sie ab.
+
 **Aufteilung:**
 - Wie bezahlt wird: Lohnformen K5, weitere Entgeltbestandteile K8
 - Bruttolohn eines Monats berechnen: K7

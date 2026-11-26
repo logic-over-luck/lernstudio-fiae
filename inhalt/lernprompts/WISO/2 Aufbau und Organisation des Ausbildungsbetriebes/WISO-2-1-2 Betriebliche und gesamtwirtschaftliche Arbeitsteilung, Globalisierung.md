@@ -88,6 +88,8 @@ Typische Verwechslung: „Mehr Wettbewerb“ ist für die Kunden eher günstig, 
 
 ## Lehrnotiz: Betriebliche und gesamtwirtschaftliche Arbeitsteilung, Globalisierung
 
+**Hinweis aus dem Lernplan:** Wie ein Betrieb Aufgaben auf Stellen verteilt (nach Verrichtung oder Objekt), steht in WISO-2-2-6-K4.
+
 **Aufteilung:**
 - Drei Formen der Arbeitsteilung: K2
 - Vorteile und Nachteile der Arbeitsteilung: K5

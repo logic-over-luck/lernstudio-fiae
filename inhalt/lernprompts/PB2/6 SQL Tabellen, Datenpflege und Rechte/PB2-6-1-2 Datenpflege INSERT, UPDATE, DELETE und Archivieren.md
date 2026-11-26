@@ -126,6 +126,8 @@ Tipp: Die Bedingung vorher mit `SELECT * FROM … WHERE …` testen – kommen g
 
 ## Lehrnotiz: Datenpflege: INSERT, UPDATE, DELETE und Archivieren
 
+**Hinweis aus dem Lernplan:** Unterabfragen selbst (IN, NOT IN, EXISTS, korreliert) lernst du in PB2-5-1-4; hier setzt du sie in UPDATE und DELETE ein. Abhängige Datensätze löschst du in der Reihenfolge, die die referenzielle Integrität verlangt (PB1-6-1-2). Die IHK-Lösung 2022W-PB2-A4-b verschiebt mit SELECT … INTO Fehlzeit_Archiv, die Lösung 2023W-PB2-A4-c ändert mit UPDATE … FROM … INNER JOIN; beides wurde dort als Lösung anerkannt. Die SQL-Syntax (Auszug) steht im Belegsatz; Befehle und Funktionen musst du anwenden, nicht auswendig kennen. Das Lehrbuch schreibt im Transaktionsbeispiel Texte in doppelten Anführungszeichen; richtig ist nach Standard-SQL: Text in einfachen Anführungszeichen. Im Programmbeispiel zur Transaktion wird dieselbe Änderungsanweisung zweimal ausgeführt und das DELETE nie; richtig ist, jede der gebündelten Anweisungen einmal auszuführen und erst danach commit aufzurufen.
+
 **Aufteilung:**
 - Einfügen: K1
 - Ändern, erst die Rolle von WHERE, dann Unterabfragen: K8, K2

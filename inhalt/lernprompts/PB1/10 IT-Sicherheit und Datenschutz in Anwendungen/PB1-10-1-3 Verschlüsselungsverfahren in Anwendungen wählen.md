@@ -102,6 +102,8 @@ Beispiel: Ein Unternehmen mit eigener Zertifikatsverwaltung wählt S/MIME; ein O
 
 ## Lehrnotiz: Verschlüsselungsverfahren in Anwendungen wählen
 
+**Hinweis aus dem Lernplan:** Symmetrische Verschlüsselung beschreiben (2021W-PB1-A4-aa), ein alternatives Verfahren mit Vor- und Nachteil (2021W-PB1-A4-ab) und den Vorteil asymmetrischer Verfahren (2025W-PB1-A3-ab) erklärt AP1-7-3-1. Bei TLS und E-Mail gibt die Antwort „asymmetrisch“ laut Lösung 2025W-PB1-A3-aa keine Punkte; erwartet ist „hybrid“. Das Lehrbuch beschreibt als Diffie-Hellman das Verschlüsseln mit dem öffentlichen Schlüssel des Partners; das ist asymmetrische Verschlüsselung. Richtig ist: Beim Diffie-Hellman-Verfahren berechnen beide Seiten aus ausgetauschten öffentlichen Werten denselben Schlüssel, ohne ihn zu übertragen.
+
 **Aufteilung:**
 - Verfahren für eine Anwendung begründet wählen: K1
 - Warum TLS und E-Mail-Transport hybrid arbeiten: K2

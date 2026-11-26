@@ -121,6 +121,8 @@ Beispiel: Eine Rabattfunktion `if (summe >= 100) rabatt = 10;` ist mit `summe = 
 
 ## Lehrnotiz: Testabdeckung: Anweisungs-, Zweig- und Pfadüberdeckung
 
+**Hinweis aus dem Lernplan:** Was der White-Box-Test ist, steht in PB1-9-1-3. 2023S-PB2-A3-bb und -bc gehören zu einer Aufgabe: erst die nicht durchlaufenen Anweisungen finden, dann die Testdaten anpassen.
+
 **Aufteilung:**
 - Testabdeckung als Prozentwert: K1
 - Die drei Überdeckungsmaße und ihr Aufbau: K2

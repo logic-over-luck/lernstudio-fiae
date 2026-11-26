@@ -82,6 +82,8 @@ Statt jedem Benutzer einzeln Rechte zu geben, bündelst du sie in einer **Rolle*
 
 ## Lehrnotiz: Benutzer, Rollen und Rechte: CREATE USER, GRANT, REVOKE
 
+**Hinweis aus dem Lernplan:** Das Rollen- und Berechtigungskonzept selbst steht in PB1-10-2-1. Die Sicherheitsfragen aus 2024S-PB2-A1-b/-c gehören nicht zu SQL und werden mit früheren Räumen gelöst: Risiko von Word-Anhängen per E-Mail und die sicherere Anzeige im Browser auf der Plattform (2024S-PB2-A1-ba/-bb) mit AP1-7-4-1 (keine Makros und Anhänge unbekannter Herkunft), Passwort-Zurücksetzen über einen zweiten, unabhängigen Weg (2024S-PB2-A1-ca/-cb) mit PB1-10-1-2. Die SQL-Syntax (Auszug) steht im Belegsatz; CREATE ROLE ist die Standardform, der Auszug fasst Benutzer und Rolle in einer Zeile zusammen.
+
 **Aufteilung:**
 - Benutzer anlegen: K1
 - Rechte vergeben: K2

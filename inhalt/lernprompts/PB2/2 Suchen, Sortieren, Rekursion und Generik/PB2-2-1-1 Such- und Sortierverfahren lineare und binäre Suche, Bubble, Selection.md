@@ -165,6 +165,8 @@ Beispiel Mergesort mit 5 2 8 1: halbieren zu 5 2 | 8 1, dann 5 | 2 | 8 | 1; zusa
 
 ## Lehrnotiz: Such- und Sortierverfahren: lineare und binäre Suche, Bubble, Selection und Insertion Sort, Quicksort, Mergesort und O-Notation
 
+**Hinweis aus dem Lernplan:** Der Katalog verlangt die Such- und Sortierverfahren nur zu „kennen“; das Prinzip erklären gehört dazu, selbst geschrieben wird in den Prüfungen nur das Sortieren. Eine Liste von Objekten durchsuchen und true oder false zurückgeben kannst du aus PB1-5-1-5. Die Minimumsuche (2025W-PB2-A1-b, Muster in PB2-1-1-2) durchläuft die Liste wie die lineare Suche, sucht aber keinen festen Wert, sondern vergleicht mit dem bisher besten Element und läuft immer bis zum Ende. Sortieren mit übergebener Vergleichsfunktion: PB2-2-1-4. O-Notation, Quicksort und Mergesort (K8, K9) gehen über den Katalog hinaus, der nur elementare Verfahren nennt. Verlangt eine Aufgabe einen „Sortieralgorithmus eigener Wahl“, darfst du Quicksort nennen, in Pseudocode ist Bubble Sort aber kürzer und sicherer.
+
 **Aufteilung:**
 - Suchen: lineare Suche K1, binäre Suche mit Vergleich K2
 - Die drei einfachen Sortierverfahren am Vorgehen unterscheiden: K5

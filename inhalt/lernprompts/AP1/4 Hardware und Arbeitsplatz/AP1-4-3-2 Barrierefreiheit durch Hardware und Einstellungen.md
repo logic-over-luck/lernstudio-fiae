@@ -92,6 +92,8 @@ Rechtsgrundlagen der Barrierefreiheit: Behindertengleichstellungsgesetz und BITV
 
 ## Lehrnotiz: Barrierefreiheit durch Hardware und Einstellungen
 
+**Hinweis aus dem Lernplan:** Barrierefreie Bildschirmmasken (AP1.04.07.3) stehen im Ordner Programmieren und Modellieren. Das Lehrbuch zitiert § 81 SGB IX in alter Zählung; heute § 164 SGB IX.
+
 **Aufteilung:**
 - Zwei Wege zum leichteren Zugang, Hardware und Einstellungen: K1, K3
 - Hilfsmittel, wenn man gar nicht oder kaum sieht: K5

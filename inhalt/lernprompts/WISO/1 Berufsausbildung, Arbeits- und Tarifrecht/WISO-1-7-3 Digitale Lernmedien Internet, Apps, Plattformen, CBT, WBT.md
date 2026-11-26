@@ -80,6 +80,8 @@ Typische Verwechslung: Ein Medium zu nutzen heißt nicht, alles darin zu konsumi
 
 ## Lehrnotiz: Digitale Lernmedien: Internet, Apps, Plattformen, CBT, WBT
 
+**Hinweis aus dem Lernplan:** Sicher mobil arbeiten (Gerät sperren, Blickschutz, VPN, Datenschutz) kennst du aus AP1-7-4-3; hier geht es um das Lernen mit mobilen Geräten.
+
 **Aufteilung:**
 - CBT und WBT unterscheiden: K2
 - Lernmedien für ein Lernziel nutzen: K6

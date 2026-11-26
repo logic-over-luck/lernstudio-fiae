@@ -98,6 +98,8 @@ Beispiel: Du verschiebst im Designer einen Button; der Generator schreibt die Ob
 
 ## Lehrnotiz: Entwicklungswerkzeuge aufgabenbezogen auswählen und anwenden
 
+**Hinweis aus dem Lernplan:** Unterschied Compiler/Interpreter sowie Vor- und Nachteile (2021W-PB1-A1-ab, -ac) sind in AP1-8-1-1 abgedeckt und werden importiert. Debugging mit Haltepunkten gehört nach PB2. Die IHK-Lösung 2021W-PB1-A4-bb nennt den Betriebssystemhersteller als Aussteller des Zertifikats; allgemein stellt es eine vertrauenswürdige Zertifizierungsstelle aus, die bei manchen Plattformen (z. B. Apple für macOS) der Betriebssystemhersteller selbst ist (vgl. AP1-7-3-2).
+
 **Aufteilung:**
 - Programmgenerator und Testsoftware: K1
 - GUI-Builder als Programmgenerator für Oberflächen, erst der Nutzen, dann der Umgang mit dem erzeugten Code: K5, K6

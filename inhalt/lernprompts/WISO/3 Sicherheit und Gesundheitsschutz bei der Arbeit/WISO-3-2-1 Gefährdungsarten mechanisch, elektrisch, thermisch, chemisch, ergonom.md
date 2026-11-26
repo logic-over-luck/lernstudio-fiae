@@ -80,6 +80,8 @@ Typische Verwechslung: Kopfschmerzen und Zeitdruck sind **keine Privatsache**, s
 
 ## Lehrnotiz: Gefährdungsarten: mechanisch, elektrisch, thermisch, chemisch, ergonomisch, akustisch, psychisch
 
+**Hinweis aus dem Lernplan:** Schwere Geräte heben ordnet der Katalog nicht ausdrücklich zu. Nach seiner Liste ist es am ehesten eine mechanische Gefährdung (Verletzung durch die Last) und, wegen der körperlichen Belastung, eine ergonomische; das ist eine Einordnung, keine Katalogvorgabe (die Leitlinie der Gemeinsamen Deutschen Arbeitsschutzstrategie spricht von physischer Belastung).
+
 **Aufteilung:**
 - Die sieben Gefährdungsarten kennen: K1
 - Sachverhalte aus der IT-Arbeit zuordnen: K3

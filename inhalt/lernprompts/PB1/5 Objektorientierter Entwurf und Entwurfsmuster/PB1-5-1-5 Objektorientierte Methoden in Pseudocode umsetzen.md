@@ -78,6 +78,8 @@ Oft nur einfügen, wenn das Objekt noch fehlt – dazu vorhandene Methoden der K
 
 ## Lehrnotiz: Objektorientierte Methoden in Pseudocode umsetzen
 
+**Hinweis aus dem Lernplan:** Verlangt ist Pseudocode (2023S-PB1-A2-bc); das Struktogramm ist als Darstellungsform aus dem Katalog gestrichen.
+
 **Aufteilung:**
 - Liste durchlaufen und je Objekt Methoden aufrufen: K1
 - Prüfmethoden mit true/false und überschriebene Berechnungen: K2

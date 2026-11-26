@@ -127,6 +127,8 @@ Beispiel: Ein Betrieb, der keinem Arbeitgeberverband angehört, muss die Mindest
 
 ## Lehrnotiz: Tarifvertrag: Arten, Tarifautonomie, Tarifbindung, Geltungsbereich, Laufzeit
 
+**Hinweis aus dem Lernplan:** Das Günstigkeitsprinzip steht in WISO-1-3-1, Betriebsvereinbarung und Tarifvorrang in WISO-1-4-2. IHK-Lösungen: 2022S-WISO-A13 wertete „schließt günstigere Betriebsvereinbarungen nicht aus“ als richtig (fachlich nur bei Öffnungsklausel oder nicht tarifüblichen Themen, siehe WISO-1-4-2). 2022S-WISO-A14 wertete „Definition der jeweiligen Vergütungsgruppen“ nicht als Inhalt des Mantel- oder Rahmentarifvertrags; in der Praxis legt das oft ein eigener Entgeltrahmentarifvertrag fest. Das Lehrbuch nennt für die Allgemeinverbindlicherklärung noch den Antrag „einer Tarifpartei“; seit 2014 verlangt § 5 TVG einen gemeinsamen Antrag der Tarifvertragsparteien und ein öffentliches Interesse.
+
 **Aufteilung:**
 - Wer Tarifverträge schließt und warum der Staat nicht mitredet: K1, K3
 - Die beiden Arten von Tarifverträgen: K2

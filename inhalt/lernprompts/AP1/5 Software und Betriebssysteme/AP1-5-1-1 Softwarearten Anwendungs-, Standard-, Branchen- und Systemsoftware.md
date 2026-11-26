@@ -136,6 +136,8 @@ Die Norm teilt Software nach ihrer Aufgabe in drei Arten ein: Systemsoftware lä
 
 ## Lehrnotiz: Softwarearten: Anwendungs-, Standard-, Branchen- und Systemsoftware
 
+**Hinweis aus dem Lernplan:** Leistungsmerkmale aus einem englischen Text (2022F-A4-a) stehen im Ordner Kunde, Markt und Unternehmen, digitale Rechnungen (2025H-A2-a) im Ordner Wirtschaftlichkeit und Verträge.
+
 **Aufteilung:**
 - Teil A – Was den Rechner betreibt: System gegen Anwendung K1; Schichten eines PCs K6; Firmware K10
 - Teil B – Arten von Software: Standardsoftware K2; Branchensoftware mit ERP, SCM, CRM K4; Unterstützungssoftware K13; Produkte zuordnen K5

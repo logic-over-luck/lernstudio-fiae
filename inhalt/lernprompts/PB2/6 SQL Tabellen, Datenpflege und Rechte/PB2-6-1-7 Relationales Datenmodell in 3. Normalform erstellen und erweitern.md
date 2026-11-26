@@ -141,6 +141,8 @@ Werden danach Datentypen verlangt: Dauer → Integer, Name und Bezeichnung → V
 
 ## Lehrnotiz: Relationales Datenmodell in 3. Normalform erstellen und erweitern
 
+**Hinweis aus dem Lernplan:** In 6 von 9 PB2-Prüfungen war das die Aufgabe 3 (16 bis 25 Punkte): 2021W, 2022S, 2022W, 2023W, 2024W und 2025S. Punkte gibt es einzeln je Tabelle, Primärschlüssel, Fremdschlüssel und Beziehung – auch ein unvollständiges Modell bringt Teilpunkte, und andere richtige Lösungen werden gewertet. Schreibweise und Beispiele stammen aus den Lösungshinweisen; zur Aufgabe 2025S gibt es keine amtliche Lösung. Die Grundlagen (ER-Modell, Schlüssel und Integrität, Normalformen) lernst du in PB1-6-1-1 bis PB1-6-1-3; der Trainer „Relationales Modell“ unterstreicht Primärschlüssel, in der Prüfung schreibst du PK und FK aus. Aus dem fertigen Modell werden in PB2-6-1-1 die CREATE-TABLE-Anweisungen.
+
 **Aufteilung:**
 - Tabellen finden, Attribute atomar: K1
 - Schreibweise mit PK und FK: K2

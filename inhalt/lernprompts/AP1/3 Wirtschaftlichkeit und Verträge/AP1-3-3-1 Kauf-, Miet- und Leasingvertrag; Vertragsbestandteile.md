@@ -139,6 +139,8 @@ Verpflichtungs- und Erfüllungsgeschäft: Mit dem Kaufvertrag (Verpflichtungsges
 
 ## Lehrnotiz: Kauf-, Miet- und Leasingvertrag; Vertragsbestandteile
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch behandelt Vertragsstrafe und Konventionalstrafe als zwei Dinge und setzt die Konventionalstrafe mit pauschaliertem Schadensersatz gleich; richtig ist: Vertragsstrafe und Konventionalstrafe sind dasselbe, pauschalierter Schadensersatz ist eine eigene Regelung. Für Leasing nennt das Lehrbuch nur die Untergrenze der Grundlaufzeit; steuerlich muss sie zwischen 40 % und 90 % der betriebsgewöhnlichen Nutzungsdauer liegen.
+
 **Aufteilung:**
 - Teil A – Kaufen, mieten, leasen: Eigentum und Besitz K1; Leasing gegen Miete K9; Vorteile und Ende des Leasings K2, K3; SaaS als Miete K8
 - Pause möglich nach Teil A.

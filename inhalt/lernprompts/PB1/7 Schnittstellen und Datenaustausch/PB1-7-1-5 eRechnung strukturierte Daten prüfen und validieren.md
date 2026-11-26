@@ -75,6 +75,8 @@ Beim **Online-Validator**:
 
 ## Lehrnotiz: eRechnung: strukturierte Daten prüfen und validieren
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für die elektronische Rechnung noch die Zustimmung des Empfängers; richtig ist: Seit 1.1.2025 müssen inländische Unternehmen E-Rechnungen empfangen können, eine Zustimmung ist dafür nicht mehr nötig. Die Pflicht betrifft nur Rechnungen zwischen inländischen Unternehmen (B2B): Ausstellen müssen E-Rechnungen ab 1.1.2027 Unternehmen mit mehr als 800.000 Euro Vorjahresumsatz und ab 1.1.2028 alle übrigen; ausgenommen sind u. a. Kleinbetragsrechnungen bis 250 Euro, Fahrausweise und Kleinunternehmer (sie müssen nur empfangen können).
+
 **Aufteilung:**
 - Hauptziel der eRechnung: K1
 - Aspekte einer digitalen Rechnung, eRechnung gegen reines PDF: K2

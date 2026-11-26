@@ -64,6 +64,8 @@ Typische Verwechslung: Die IHK vertritt Gewerbebetriebe aller Branchen, eine ber
 
 ## Lehrnotiz: Branchenorganisation, Wirtschaftsorganisationen, berufsständische Vertretungen und Ehrenamt
 
+**Hinweis aus dem Lernplan:** Ziele und Aufgaben von Gewerkschaften, Arbeitgeberverbänden, Kammern (IHK, Handwerkskammer) und Wirtschaftsverbänden stehen in WISO-1-5-3; hier nur die Zuordnung über die Branche.
+
 **Aufteilung:**
 - Über die Branche zu Tarifpartnern und Branchenverband: K3
 - Kammern für einen Beruf: K6

@@ -155,6 +155,8 @@ Die Grenzen –40 und 85 °C stehen hier beispielhaft für den Messbereich des S
 
 ## Lehrnotiz: Cyber-physische Systeme: Sensoren, Aktoren, Abfragerhythmus
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt, das MQTT-Platzhalterzeichen + ersetze eine oder mehrere Topic-Ebenen; richtig ist genau eine Ebene, für beliebig viele folgende steht #. Es nennt MQTT außerdem einmal ganz ohne Sicherheitsmechanismus; richtig ist: MQTT kennt Benutzername und Passwort, verschlüsselt aber nicht selbst (dafür TLS).
+
 **Aufteilung:**
 - Teil A – Das System verstehen und planen
   - Begriff und Merkmale: K1, K4

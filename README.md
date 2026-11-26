@@ -18,11 +18,11 @@ die Prüfungen meiner Umschulung. Öffentlich ist es, weil die App über GitHub 
 
 ## Was die App kann
 
-- **Lernplan** je Prüfungsteil: 293 Stichpunkte mit Ziel, Kurzfassung, 1.854 Können-Aussagen mit Erklärung und
+- **Lernplan** je Prüfungsteil: 293 Stichpunkte mit Ziel, Kurzfassung, 1.849 Können-Aussagen mit Erklärung und
   Buchstellen
 - **Lernprompts:** zu jedem Stichpunkt ein fertiger Auftrag für einen KI-Chat (Regeln, Stoff, Lehrnotiz); die KI
   erklärt, fragt nach und stellt am Ende eine Aufgabe im Stil der Prüfung
-- **Lernkarten:** 4.240 Karten mit Wiederholung in festen Abständen (Gewusst / Unsicher / Nicht gewusst) und einer
+- **Lernkarten:** 4.231 Karten mit Wiederholung in festen Abständen (Gewusst / Unsicher / Nicht gewusst) und einer
   Prüfungsrunde in den letzten sechs Wochen vor dem eingetragenen Termin
 - **Lernreihenfolge** (AP1) und **Wichtigkeit** (PB1, PB2, WiSo): was zuerst gelernt wird und warum
 - **Trainer:** Zahlen und IT-Rechnen, Subnetze, Kaufmännisch, Netzplan, Pseudocode, SQL-Labor, Modellieren (UML, ER,
@@ -56,6 +56,7 @@ npm run build      # baut Lernstudio.html
 npm test           # Tests
 npm run pruefen    # prüft inhalt/ auf Stimmigkeit
 npm run regelblock # Regelblock der Lernprompts: pruefen | einsetzen <Prüfungsteil>
+npm run hinweis    # Hinweis aus dem Lernplan in den Lernprompts: pruefen | einsetzen <Prüfungsteil>
 npm run saetze     # prüft die Probeprüfungen
 ```
 

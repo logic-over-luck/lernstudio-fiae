@@ -120,6 +120,8 @@ Das Lastenheft heißt auch Anforderungskatalog (englisch Customer Requirements S
 
 ## Lehrnotiz: Lastenheft und Pflichtenheft
 
+**Hinweis aus dem Lernplan:** Reihenfolge nach DIN 69901-5 und Praxis: Das Angebot beruht auf dem Lastenheft; das Pflichtenheft schreibt der Auftragnehmer nach der Auftragserteilung, mit der Freigabe durch den Auftraggeber wird es Vertragsgrundlage. Das Lehrbuch (GS 2.6.1) stellt das Pflichtenheft vor das Angebot; bei großen Vorhaben liegt ein Grobkonzept oder Pflichtenheft-Entwurf manchmal schon dem Angebot bei.
+
 **Aufteilung:**
 - Was gegen Wie – wer schreibt welches Heft: K1, K2
 - Inhalte beider Hefte und Lastenheft-Punkte formulieren: K3, K5

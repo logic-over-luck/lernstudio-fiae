@@ -136,6 +136,8 @@ Beispiel: Ein Softwarehaus und ein Betrieb, der Netzwerkkabel in Rohbauten verle
 
 ## Lehrnotiz: Sozialversicherung: Zweige, Träger, Finanzierung, Leistungen
 
+**Hinweis aus dem Lernplan:** Träger und Beitrag der gesetzlichen Unfallversicherung stehen hier; wer in der Unfallversicherung versichert ist, Versicherungsfälle und Leistungen stehen in WISO-3-1-3. Zu 2022W-WISO-A16: Die IHK wertete „Bei geringfügig Beschäftigten zahlt der Arbeitgeber in der Regel alle Beiträge“ als richtig; fachlich trägt der Minijobber einen kleinen Rentenversicherungsanteil, wenn er sich nicht befreien lässt.
+
 **Aufteilung:**
 - Fünf Zweige und ihre Träger: K1
 - Wer die Beiträge zahlt: K6, dazu der Unfallversicherungsbeitrag K12

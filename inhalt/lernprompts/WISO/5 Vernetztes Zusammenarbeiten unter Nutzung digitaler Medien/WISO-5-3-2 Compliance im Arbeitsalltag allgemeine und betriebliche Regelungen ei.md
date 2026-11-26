@@ -79,6 +79,8 @@ Typische Verwechslung: Abmahnung und Kündigung sind Folgen für den einzelnen B
 
 ## Lehrnotiz: Compliance im Arbeitsalltag: allgemeine und betriebliche Regelungen einhalten
 
+**Hinweis aus dem Lernplan:** Was Compliance ist und wie ein Softwareprojekt regelkonform bleibt (Lizenzen, Datenschutz), steht in PB1-2-1-2. Benachteiligung nach AGG-Merkmalen (Hautfarbe, Religion, sexuelle Identität) steht in WISO-1-3-5, persönliche arbeitsrechtliche Folgen von Pflichtverletzungen in WISO-1-1-4.
+
 **Aufteilung:**
 - Allgemeine und betriebliche Regelungen: K2
 - Sachliche Gründe gegen Vetternwirtschaft: K3

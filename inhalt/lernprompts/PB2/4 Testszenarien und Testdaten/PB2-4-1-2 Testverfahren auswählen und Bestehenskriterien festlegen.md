@@ -79,6 +79,8 @@ Beispiel: Die 300 Unit-Tests einer Preisberechnung laufen bei jedem Commit autom
 
 ## Lehrnotiz: Testverfahren auswählen und Bestehenskriterien festlegen
 
+**Hinweis aus dem Lernplan:** Was Black-Box- und White-Box-Test sind und welche Vorteile der White-Box-Test hat, steht in PB1-9-1-3 (2025S-PB2-A2-bb, 2024S-PB2-A3-aa werden damit gelöst); den Aufbau eines Testprotokolls kennst du aus PB1-9-1-5. „Erwartet gegen tatsächlich“ steht nur hier (K3); PB2-3 wendet es beim Schreibtischtest und beim Unit-Test an.
+
 **Aufteilung:**
 - Testverfahren für eine Situation wählen und begründen: K1
 - Überdeckungsmaß für eine Vorgabe vorschlagen: K2

@@ -140,6 +140,8 @@ Beispiel: Eine Azubine hat dienstags sechs und donnerstags vier Stunden Schule. 
 
 ## Lehrnotiz: Arbeitszeit und Jugendarbeitsschutz
 
+**Hinweis aus dem Lernplan:** Stand Oktober 2026 gilt die tägliche Höchstarbeitszeit (Achtstundentag). Eine Reform des Arbeitszeitgesetzes mit wöchentlicher statt täglicher Höchstarbeitszeit ist politisch geplant – vor der Prüfung den Stand prüfen. Das Lehrbuch nennt die ganztägige Freistellung am Berufsschultag mit mehr als fünf Unterrichtsstunden nur beim Jugendarbeitsschutz; seit der BBiG-Novelle 2020 gilt sie nach § 15 BBiG für alle Auszubildenden, auch volljährige.
+
 **Aufteilung:**
 - Teil A – Erwachsene: Höchstarbeitszeit und Ruhezeit K5; Ruhepausen K1
 - Teil B – Jugendliche: Schutzregeln K2, K8, K4; Pausen K3; Dienstplan prüfen K7

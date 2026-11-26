@@ -119,6 +119,8 @@ Beurteilen heißt: Ein System ohne Sicherheitsupdates ist ein Risiko – tauglic
 
 ## Lehrnotiz: Betriebssysteme: Einsatzzweck, Dateiverwaltung, Freigaben und Gruppenrichtlinien
 
+**Hinweis aus dem Lernplan:** Stand 10/2026, geprüft an Microsoft Learn (Windows 11 requirements; Lifecycle Windows 10 Home and Pro; Extended Security Updates) und microsoft.com/windows/extended-security-updates: Windows 10 hat seit dem 14.10.2025 kein Support mehr; ESU gibt es für Firmen höchstens drei Jahre (Jahr für Jahr zu kaufen), für Privatkunden bis 12.10.2027. Diese Daten ändern sich – vor der Prüfung nachsehen.
+
 **Aufteilung:**
 - Aufgaben und Einsatzzweck: K2, K1
 - Laufwerk, Ordner, Pfad: K3

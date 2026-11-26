@@ -97,6 +97,8 @@ Beispiel: Beschäftigte eines Rechenzentrums legen spontan die Arbeit nieder, we
 
 ## Lehrnotiz: Tarifverhandlung, Schlichtung und Arbeitskampf: Streik und Aussperrung
 
+**Hinweis aus dem Lernplan:** Reihenfolge der Tarifrunde nach den IHK-Lösungen: 2021W-WISO-A7 ohne Arbeitskampf (Scheitern → Schlichtung), 2023W-WISO-A26 mit Arbeitskampf (Scheitern → Urabstimmung/Streik → Schlichtung). Gesetzlich ist die Reihenfolge nicht festgelegt; in manchen Branchen wird vor einem Streik geschlichtet. Wie Gewerkschaften und der DGB organisiert sind, steht in WISO-1-5-3.
+
 **Aufteilung:**
 - Die beiden Kampfmittel: K1
 - Wann ein Streik rechtmäßig ist, mit Urabstimmung: K6, K2

@@ -81,6 +81,8 @@ Beispiel: Eine Arztpraxis ohne IT-Personal kauft alles ein; ein Softwarehaus mit
 
 ## Lehrnotiz: Hosting, Colocation und Managed Services auswählen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch ordnet Webhosting den SaaS-Angeboten zu; fachlich ist Shared Webhosting eher ein Plattformangebot (nahe PaaS), weil der Kunde darauf eigene Inhalte und Anwendungen betreibt.
+
 **Aufteilung:**
 - Hosting-Varianten auswählen: K1
 - Colocation beurteilen: K2

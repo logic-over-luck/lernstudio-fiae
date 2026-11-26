@@ -95,6 +95,8 @@ Typische Verwechslung: nicht „die Unfallverhütungsvorschriften hängen aus, a
 
 ## Lehrnotiz: Gefährdungen einschätzen und Schutzmaßnahmen ableiten
 
+**Hinweis aus dem Lernplan:** Der Katalog verlangt Gefährdungen „wahrnehmen und einschätzen“; die WiSo-Prüfungen fragten dazu bisher nur Auswahlaufgaben (Unterweisung: WISO-3-1-1-K7, Pflichten: WISO-3-1-2).
+
 **Aufteilung:**
 - Gefährdungsbeurteilung als Pflicht des Arbeitgebers: K1
 - Rangfolge der Schutzmaßnahmen: K2

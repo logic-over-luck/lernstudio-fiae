@@ -100,6 +100,8 @@ Beispiel: Die Stellenbeschreibung „Anwendungsentwickler/in Backend“ nennt di
 
 ## Lehrnotiz: Arbeitsabläufe und Aufgabenteilung: Ablauforganisation, Stelle und Abteilung
 
+**Hinweis aus dem Lernplan:** Betriebliche Arbeitsteilung erkennen (2025W-WISO-A22) steht in WISO-2-1-2-K2.
+
 **Aufteilung:**
 - Aufbau- und Ablauforganisation: K1
 - Schritte eines Ablaufs den Abteilungen zuordnen: K2

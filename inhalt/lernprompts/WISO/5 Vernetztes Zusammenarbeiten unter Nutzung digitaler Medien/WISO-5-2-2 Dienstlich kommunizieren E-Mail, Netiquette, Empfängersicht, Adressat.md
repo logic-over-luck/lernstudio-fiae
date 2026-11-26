@@ -118,6 +118,8 @@ Typische Verwechslung: nicht „ich kenne die Antwort, also darf ich sie geben�
 
 ## Lehrnotiz: Dienstlich kommunizieren: E-Mail, Netiquette, Empfängersicht, Adressatenlisten und Zuständigkeiten
 
+**Hinweis aus dem Lernplan:** Kommunikationsmodelle und eine unbequeme Nachricht an Kunden formulieren stehen in AP1-2-2-3, verdächtige Absender und Links prüfen in AP1-7-4-2, Verschlüsselung in AP1-7-3. Wer im Betrieb für IT-Sicherheit und wer für Datenschutz zuständig ist, steht in AP1-7-1-4.
+
 **Aufteilung:**
 - Form und Ton der dienstlichen E-Mail: K1
 - Netiquette: K3

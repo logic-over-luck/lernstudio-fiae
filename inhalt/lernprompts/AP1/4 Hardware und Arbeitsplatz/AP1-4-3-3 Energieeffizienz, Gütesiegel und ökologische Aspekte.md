@@ -146,6 +146,8 @@ Netzwerkgeräte sparen Energie, indem sie ihre Leistung nach dem Datenaufkommen 
 
 ## Lehrnotiz: Energieeffizienz, Gütesiegel und ökologische Aspekte
 
+**Hinweis aus dem Lernplan:** Ökologische Unternehmensziele (AP1.07.02.2) stehen im Ordner Kunde, Markt und Unternehmen. Das Lehrbuch zeigt eine alte Prognose mit bis zu 75 Mrd. IoT-Geräten für 2025; tatsächlich sind es rund 20 Mrd. Es nennt den Energy Star als Zeichen ohne externe Prüfung und als in Europa gültig; das Abkommen zwischen EU und USA ist 2018 ausgelaufen, in der EU zählt für viele Geräte das EU-Energielabel.
+
 **Aufteilung:**
 - Teil A – Auswählen und sparen: Kriterien und Zweck der Siegel K1, K2; die einzelnen Siegel K3, K8; Effizienz vergleichen und Ersparnis rechnen K6; Energiekosten am Arbeitsplatz senken K5
 - Pause möglich nach Teil A.

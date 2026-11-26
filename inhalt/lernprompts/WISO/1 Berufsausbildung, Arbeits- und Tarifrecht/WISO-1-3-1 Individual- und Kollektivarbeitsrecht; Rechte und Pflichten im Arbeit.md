@@ -113,6 +113,8 @@ Beispiel: Eine Systemadministratorin hält eine Abmahnung wegen angeblich verges
 
 ## Lehrnotiz: Individual- und Kollektivarbeitsrecht; Rechte und Pflichten im Arbeitsverhältnis
 
+**Hinweis aus dem Lernplan:** Wem die Rechte an Software gehören, die ein Angestellter im Rahmen seiner Arbeit schreibt (2021W-WISO-A23), steht in AP1-3-4-1. Zu 2022W-WISO-A7: Die IHK wertete nur die im Arbeitsvertrag vereinbarte Regel (übertarifliche Gehaltsvereinbarung) als Individualarbeitsrecht, nicht aber Urlaubsregelungen nach dem Bundesurlaubsgesetz oder Unfallverhütungsvorschriften; in der Fachliteratur wird das Arbeitnehmerschutzrecht teils dem Individualarbeitsrecht zugerechnet. Betriebsvereinbarung und Tarifvorrang stehen in WISO-1-4-2, Tarifbindung, Tarifautonomie, Laufzeit und Mindestbedingungen des Tarifvertrags in WISO-1-5-1 (danach fragen die übrigen Antworten von 2022S-WISO-A13). Das Lehrbuch sagt vereinfacht, bei Fahrlässigkeit oder Vorsatz könne der Betrieb vom Mitarbeiter Schadensersatz fordern; richtig ist die nach Verschulden gestufte Arbeitnehmerhaftung: bei leichter Fahrlässigkeit keine, bei mittlerer anteilige, bei grober Fahrlässigkeit und Vorsatz in der Regel volle Haftung.
+
 **Aufteilung:**
 - Zwei Bereiche des Arbeitsrechts und Zuordnung von Regelungen: K1, K2
 - Haupt- und Nebenpflichten beider Seiten: K3, K4

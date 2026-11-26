@@ -135,6 +135,8 @@ Anfragen muss der Betrieb in der Regel innerhalb eines Monats beantworten.
 
 ## Lehrnotiz: DSGVO und BDSG: personenbezogene Daten, Betroffenenrechte, Einwilligung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt noch das Telemediengesetz (TMG) und das TTDSG; richtig ist: Seit Mai 2024 gelten stattdessen das Digitale-Dienste-Gesetz (DDG, z. B. Impressumpflicht) und das Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG, z. B. Einwilligung für Cookies). Die im Buch angekündigte ePrivacy-Verordnung hat die EU-Kommission 2025 zurückgezogen.
+
 **Aufteilung:**
 - Teil A – Grundlagen: Gesetze und Zweck K1; personenbezogene Daten K2; Datenschutz gegen Datensicherheit K5
 - Teil B – Wann Verarbeiten erlaubt ist: Rechtsgrundlagen K9; Einwilligung K4; Grundsätze nennen K6 und ein Vorgehen daran prüfen K7

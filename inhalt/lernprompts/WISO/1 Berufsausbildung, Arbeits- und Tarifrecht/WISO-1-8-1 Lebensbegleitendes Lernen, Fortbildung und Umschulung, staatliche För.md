@@ -110,6 +110,8 @@ Beispiel: Ein Azubi zieht für seine Ausbildung in eine teure Großstadt; reicht
 
 ## Lehrnotiz: Lebensbegleitendes Lernen, Fortbildung und Umschulung, staatliche Förderung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt noch die ausbildungsbegleitenden Hilfen (abH); seit 2021 sind sie in der Assistierten Ausbildung (AsA flex) der Agentur für Arbeit aufgegangen.
+
 **Aufteilung:**
 - Warum man in der IT nie auslernt: K6
 - Ausbildung, Fortbildung oder Umschulung: K1

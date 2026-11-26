@@ -119,6 +119,8 @@ Beispiel: Die „Nordwind Holding AG“ hält die Nordwind Cloud GmbH, die Nordw
 
 ## Lehrnotiz: Wirtschaftliche Verflechtungen: Konzern, Kartell, Fusion
 
+**Hinweis aus dem Lernplan:** 2024S-WISO-A22 fragt nach einem „anmeldepflichtigen“ Kartell; die IHK-Lösung (Normen- und Typenkartell) gibt die Rechtslage vor 2005 wieder. Seitdem gibt es keine Anmeldepflicht mehr; Unternehmen prüfen selbst, ob eine Absprache ausnahmsweise erlaubt ist.
+
 **Aufteilung:**
 - Die zwei Prüffragen und die losen Formen der Zusammenarbeit: K5
 - Kartell und seine Aufsicht: K2, K6

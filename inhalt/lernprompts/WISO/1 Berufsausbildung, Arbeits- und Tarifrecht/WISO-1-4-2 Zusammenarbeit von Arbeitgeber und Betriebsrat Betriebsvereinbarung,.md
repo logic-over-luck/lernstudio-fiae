@@ -110,6 +110,8 @@ Beispiel: Ein Entwicklerteam hat Gleitzeit mit Kernzeit von 10 bis 15 Uhr; Über
 
 ## Lehrnotiz: Zusammenarbeit von Arbeitgeber und Betriebsrat: Betriebsvereinbarung, Betriebsversammlung, Einigungsstelle
 
+**Hinweis aus dem Lernplan:** Tarifvorrang (§ 77 Abs. 3 BetrVG) und IHK-Lösung: 2022S-WISO-A13 wertete „Ein Tarifvertrag schließt günstigere Betriebsvereinbarungen nicht aus“ als richtig. Fachlich gilt das nur, wenn der Tarifvertrag es zulässt (Öffnungsklausel) oder für Themen, die er nicht regelt und die auch nicht tarifüblich sind; in dieser Aufgabe war die Aussage anzukreuzen. Das Günstigkeitsprinzip für den Arbeitsvertrag steht in WISO-1-3-1.
+
 **Aufteilung:**
 - Betriebsvereinbarung, was sie ist und wie sie wirkt: K2
 - Was hinein darf und was nicht: K1

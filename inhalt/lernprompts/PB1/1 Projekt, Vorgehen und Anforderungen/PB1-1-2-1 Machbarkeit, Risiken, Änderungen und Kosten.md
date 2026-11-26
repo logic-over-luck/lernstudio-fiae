@@ -123,6 +123,8 @@ Beispiel: Eine App, die alle fünf Sekunden den kompletten Datenbestand vom Serv
 
 ## Lehrnotiz: Machbarkeit, Risiken, Änderungen und Kosten
 
+**Hinweis aus dem Lernplan:** Fremdvergabe (2022S-PB1-A2-a) ist in AP1-3-2-4 abgedeckt und wird importiert; als Vorteile zusätzlich Festpreis und Kostenkontrolle, Know-how des Dienstleisters. Meilenstein, Stakeholder und Lessons Learned aus 2024W-PB1-A1-c sind in AP1 erklärt (AP1-1-2-3, AP1-1-1-3, AP1-1-4-3). Das Abnahmeprotokoll steht in PB1-9.
+
 **Aufteilung:**
 - Vor dem Start prüfen: Machbarkeit K1, dann Umfeld K2
 - Risiken in der Tabelle: K3

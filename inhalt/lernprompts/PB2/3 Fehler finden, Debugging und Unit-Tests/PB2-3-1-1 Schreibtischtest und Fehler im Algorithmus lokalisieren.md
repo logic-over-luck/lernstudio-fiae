@@ -103,6 +103,8 @@ Vorgehen: Lies den Code mit genau diesen Fragen im Kopf – Startwerte? Was pass
 
 ## Lehrnotiz: Schreibtischtest und Fehler im Algorithmus lokalisieren
 
+**Hinweis aus dem Lernplan:** Fehlersuche in einem Struktogramm (2021W-PB2-A1-c) zählt hier als Fehlersuche im Algorithmus. Falsche Schleifengrenze und vertauschter Vergleichsoperator stehen in AP1-8-2-4 und PB2-1-1-1; das Gruppenwechsel-Muster selbst und die Wirkung der Stellung einer Anweisung zum Selbstaufruf stehen in PB2-1 bzw. PB2-2-1-3 – hier geht es um das Finden und Beheben. 2023S-PB2-A3-ab (13 Punkte): die IHK-Lösung ergänzt nach der Schleife denselben Auswerteblock für den letzten Monat und teilt im Jahresdurchschnitt durch den Jahres- statt den Monatszähler.
+
 **Aufteilung:**
 - Ablauf verfolgen, erst Datenverlaufstabelle zu längerem Code, dann Rekursion: K1
 - Aus Abweichungen die fehlerhaften Zeilen bestimmen: K2

@@ -104,6 +104,8 @@ Beispiel: „Größten Wert einer Liste finden: ersten Wert merken, jeden weiter
 
 ## Lehrnotiz: Pseudocode: Kontrollstrukturen abbilden
 
+**Hinweis aus dem Lernplan:** 2022F-A4-d und 2022H-A4-b waren noch als Struktogramm zu lösen; die Logik dahinter stellst du heute in Pseudocode dar.
+
 **Aufteilung:**
 - Algorithmus und Programm: K7
 - Pseudocode lesen, auch verschachtelt: K1

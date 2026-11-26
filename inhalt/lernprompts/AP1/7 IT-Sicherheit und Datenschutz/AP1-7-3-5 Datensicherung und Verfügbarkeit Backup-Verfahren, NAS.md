@@ -131,6 +131,8 @@ Beispiel: Personalakten sollen nur für die Leitung lesbar sein – am USB-Speic
 
 ## Lehrnotiz: Datensicherung und Verfügbarkeit: Backup-Verfahren, NAS
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt mindestens 3 km Abstand zwischen zwei Rechenzentren; das BSI empfiehlt für Georedundanz heute deutlich größere Abstände (Richtwert 200 km).
+
 **Aufteilung:**
 - Teil A – Speicher und Verfügbarkeit: NAS K4; Redundanz und Datensicherung K3; USB-Speicher am Router statt NAS K11
 - Teil B – Was gesichert wird: Sicherungsarten K1; Image oder einzelne Dateien K10

@@ -94,6 +94,8 @@ Beispiel: Ein Programmierer bricht sich beim Fußball das Bein und fällt acht W
 
 ## Lehrnotiz: Rechtsquellen zuordnen: welches Gesetz regelt was
 
+**Hinweis aus dem Lernplan:** Dass Allgemeine Geschäftsbedingungen im BGB geregelt sind (2025S-WISO-A16 b), steht in PB1-2-1-1. Was Arbeitsschutzgesetz und Arbeitsstättenverordnung im Einzelnen regeln und wer den Arbeitsschutz überwacht, steht in WISO-3-1-1; die Zahlen zu Urlaub, Arbeitszeit, Mutterschutz und Schwerbehinderung in WISO-1-3-4 bis WISO-1-3-6. Heutige Fundstellen der Katalognamen: Das Schwerbehindertenrecht steht im Neunten Buch Sozialgesetzbuch (SGB IX), mit „Bundeselterngesetz“ ist das Bundeselterngeld- und Elternzeitgesetz gemeint; die Prüfungen verwenden noch die alten Namen (2021W-WISO-A18). Das Lehrbuch nennt für die Entgeltfortzahlung eine Betriebszugehörigkeit von „mehr als fünf Wochen“; richtig ist: Der Anspruch entsteht nach vier Wochen ununterbrochenem Arbeitsverhältnis (§ 3 Abs. 3 EntgFG). Das betriebliche Eingliederungsmanagement steht heute in § 167 Abs. 2 SGB IX, nicht mehr in § 84.
+
 **Aufteilung:**
 - Betriebsrat oder Jugendschutz: K1
 - Ausbildung, Mitbestimmung oder Arbeitsschutz: K2

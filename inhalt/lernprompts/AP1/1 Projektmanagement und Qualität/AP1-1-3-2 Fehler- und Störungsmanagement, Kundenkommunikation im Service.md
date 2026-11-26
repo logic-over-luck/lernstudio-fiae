@@ -105,6 +105,8 @@ Beispiel: Das Kassensystem aller Filialen fällt aus (hohe Dringlichkeit, hohe A
 
 ## Lehrnotiz: Fehler- und Störungsmanagement, Kundenkommunikation im Service
 
+**Hinweis aus dem Lernplan:** Die technische Fehlersuche steht in den Fachordnern: Netzwerk (AP1-6-3-2) und Hardware; das systematische Eingrenzen durch Austauschen in AP1-1-5-3. Das Lehrbuch setzt die Priorität eines Tickets mit der Dringlichkeit gleich; richtig ist: Die Priorität ergibt sich aus Dringlichkeit und Auswirkung. Ein Problem ist nach ITIL 4 die tatsächliche oder mögliche Ursache eines oder mehrerer Incidents; es kann also auch erkannt werden, bevor eine Störung aufgetreten ist (proaktives Problem Management). Eine Kunden-E-Mail mit überzeugenden Argumenten formulieren (2023H-A2-f) lernst du in AP1-2-2-3 (K6).
+
 **Aufteilung:**
 - Störung oder Serviceanfrage: K7
 - Rückfragen an einen Laien: K4

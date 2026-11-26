@@ -143,6 +143,8 @@ Typische Verwechslung: nicht „im Homeoffice gilt kein Arbeitszeitgesetz“ –
 
 ## Lehrnotiz: Arbeitsschutzvorschriften im Überblick und Unterweisung
 
+**Hinweis aus dem Lernplan:** Hier wohnen die Arbeitsschutzgesetze und die Gewerbeaufsicht (WISO-1-3-2 und WISO-2-5-3 verweisen hierher). Die einzelnen Regeln des Arbeitszeit- und des Jugendarbeitsschutzgesetzes stehen in WISO-1-3-4; die Ergonomie des Arbeitsplatzes in AP1-4-3-1. IT-Sicherheit (WISO.03.08: Schutzziele, DSGVO, BSI, Sicherheitskonzept, TOM) gehört zum selben Prüfungsgebiet; du lernst sie in AP1-7, die WiSo-Ergänzungen stehen in WISO-5-2-1. Unfallverhütungsvorschriften bekannt machen (K5): Die IHK-Lösung zu 2022S-WISO-A24 erwartete „im Betrieb gut sichtbar aushängen“ und wertete „im Intranet bereitstellen“ als falsch. Nach heutigem Recht (DGUV Vorschrift 1, § 12) muss der Arbeitgeber sie „an geeigneter Stelle zugänglich machen“, das geht auch elektronisch. Wird „aushängen“ angeboten, wähle in der Prüfung diese Antwort. Das Lehrbuch leitet die Aushangpflicht pauschal aus dem Arbeitsschutzgesetz ab; richtig ist: Die Pflicht zum Aushang bzw. zur Bekanntmachung steht jeweils im einzelnen Gesetz (z. B. Arbeitszeitgesetz, Jugendarbeitsschutzgesetz, Mutterschutzgesetz, Allgemeines Gleichbehandlungsgesetz). Das Lehrbuch nennt ein „Telearbeitsgesetz“; ein solches Gesetz gibt es nicht. Richtig ist: Telearbeitsplätze regelt die Arbeitsstättenverordnung, für mobiles Arbeiten gelten Arbeitsschutz- und Arbeitszeitgesetz.
+
 **Aufteilung:**
 - Teil A, Vorschriften – vier Gesetze: K1
 - Zwei Verordnungen, dazu Telearbeit und mobiles Arbeiten: K4, K11

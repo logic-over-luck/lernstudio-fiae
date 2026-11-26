@@ -143,6 +143,8 @@ Beispiel: Wer das Firmen-Notebook ungesichert im Auto liegen lässt und dabei ge
 
 ## Lehrnotiz: Rechte und Pflichten von Auszubildenden und Ausbildenden
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt eine ärztliche Bescheinigung „spätestens am dritten Tag“; richtig ist (§ 5 EntgFG): Dauert die Arbeitsunfähigkeit länger als drei Kalendertage, ist sie spätestens am darauffolgenden Arbeitstag ärztlich festzustellen; seit 2023 ruft der Betrieb die elektronische AU bei der Krankenkasse ab. Die Ruhepausen (2026S-WISO-A5: bei Erwachsenen spätestens nach sechs Stunden Arbeit) stehen in WISO-1-3-4.
+
 **Aufteilung:**
 - Pflichten beider Seiten im Überblick: K1, K2
 - Was der Betrieb außerdem schuldet: K8

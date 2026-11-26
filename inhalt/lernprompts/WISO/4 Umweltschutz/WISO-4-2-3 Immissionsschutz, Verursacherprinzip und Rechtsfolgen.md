@@ -93,6 +93,8 @@ Typische Verwechslungen: Das Verursacherprinzip sagt **nicht**, dass der Staat d
 
 ## Lehrnotiz: Immissionsschutz, Verursacherprinzip und Rechtsfolgen
 
+**Hinweis aus dem Lernplan:** Vermeiden vor Verwerten und Beseitigen (Distraktoren in 2022S-A27 und 2024S-A30): WISO-4-2-1. Allgemeine Folgen von Pflichtverstößen stehen je Ordner nur spezifisch (Ausbildung WISO-1-1-4, Compliance WISO-5-3-2).
+
 **Aufteilung:**
 - Emission und Immission: K1
 - Was alles Emission ist, Vermeiden vor Verringern: K2

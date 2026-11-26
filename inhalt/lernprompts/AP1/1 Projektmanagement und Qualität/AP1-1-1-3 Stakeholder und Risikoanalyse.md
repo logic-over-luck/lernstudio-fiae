@@ -115,6 +115,8 @@ Beispiel: Lieferverzug der Notebooks: Wahrscheinlichkeit 3, Schaden 4 → 12. Au
 
 ## Lehrnotiz: Stakeholder und Risikoanalyse
 
+**Hinweis aus dem Lernplan:** Die Risikomatrix für IT-Sicherheitsrisiken (AP1.06.03.3) steht im Ordner IT-Sicherheit und Datenschutz; Machbarkeitsanalyse und Vor- und Nachkalkulation (AP1.01.02.1, AP1.01.02.2) im Ordner Wirtschaftlichkeit und Verträge. Die vier Strategien der Risikobehandlung (K6: vermeiden, vermindern, übertragen, akzeptieren) gelten für IT-Sicherheitsrisiken genauso.
+
 **Aufteilung:**
 - Teil A, Stakeholder nennen und ihren Einfluss beurteilen: K1, K2
 - Teil A, Stakeholder einordnen: K3

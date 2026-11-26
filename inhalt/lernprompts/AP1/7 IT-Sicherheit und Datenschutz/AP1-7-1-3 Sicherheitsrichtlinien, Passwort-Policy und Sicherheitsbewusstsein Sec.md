@@ -116,6 +116,8 @@ Sicherheitsleitlinie gegen Sicherheitsrichtlinien: Die Leitlinie ist das Grundsa
 
 ## Lehrnotiz: Sicherheitsrichtlinien, Passwort-Policy und Sicherheitsbewusstsein: Security by Design, Security by Default
 
+**Hinweis aus dem Lernplan:** Zeichenvielfalt: IHK-Musterlösungen (z. B. 2023H-A3-ca „Mindestlänge acht Zeichen, Groß-/Kleinbuchstaben, Sonderzeichen“) werten Zeichenvielfalt weiter als Kriterium; NIST (SP 800-63B-4, 2025) lehnt feste Zeichenart-Regeln ab, das BSI lässt kurze komplexe oder lange einfache Passwörter zu. In der Prüfung Länge und Zeichenvielfalt nennen und jeweils begründen.
+
 **Aufteilung:**
 - Leitlinie und Richtlinien: K9, K1
 - Passwort-Policy bewerten: K3

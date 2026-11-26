@@ -98,6 +98,8 @@ Beispiel: Ein IT-Dienstleister wartet per Fernzugriff die Praxissoftware einer A
 
 ## Lehrnotiz: Datenschutz in der Praxis: Protokollierung, Videoaufnahmen, Gesundheitsdaten
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2025H-A3-a und 2026F-A3-a fehlen; K2 und K3 folgen den Aufgabenstellungen.
+
 **Aufteilung:**
 - Gesundheitsdaten als besondere Daten: K2
 - Weitere Grundsätze der DSGVO: K4

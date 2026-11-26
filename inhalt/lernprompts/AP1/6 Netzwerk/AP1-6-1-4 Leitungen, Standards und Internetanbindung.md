@@ -146,6 +146,8 @@ Aufbau von innen nach außen: Kern, Mantel, Schutzhülle.
 
 ## Lehrnotiz: Leitungen, Standards und Internetanbindung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt in der Tabelle der Ethernet-Standards Cat 6A für 2,5GBASE-T und Cat 7 für 10GBASE-T; richtig ist: Nach Norm genügen Cat 5e für 2,5GBASE-T, Cat 6 für 5GBASE-T und Cat 6A für 10GBASE-T. Das Lehrbuch beschreibt FTTH wie FTTB (Glasfaser bis ins Gebäude, danach Kupfer); richtig ist: Bei FTTH reicht die Glasfaser bis in die Wohnung bzw. Büroeinheit.
+
 **Aufteilung:**
 - Teil A – Kupferkabel: die drei Medien im Vergleich K1; Störungen abwehren K13; Aufdruck lesen K2, K6; passendes Kabel auswählen K3; Schäden K4
 - Pause möglich nach Teil A.

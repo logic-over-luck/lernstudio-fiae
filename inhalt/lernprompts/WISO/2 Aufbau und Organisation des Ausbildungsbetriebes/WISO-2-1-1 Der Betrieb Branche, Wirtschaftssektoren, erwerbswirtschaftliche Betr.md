@@ -122,6 +122,8 @@ Beispiel: Eine Fachinformatikerin erhält Gehalt von ihrem Arbeitgeber (Geld an 
 
 ## Lehrnotiz: Der Betrieb: Branche, Wirtschaftssektoren, erwerbswirtschaftliche Betriebe, Produktpalette und Märkte
 
+**Hinweis aus dem Lernplan:** Marktformen (Monopol, Oligopol, Polypol; 2025S-WISO-A2) stehen in AP1-2-1-1. Das Lehrbuch nennt für KMU nur die Umsatzgrenze; nach der EU-Definition genügt statt des Umsatzes bis 50 Mio. Euro auch eine Bilanzsumme bis 43 Mio. Euro.
+
 **Aufteilung:**
 - Unternehmen und Betrieb: K7
 - Wirtschaftssektoren: K1

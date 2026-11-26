@@ -151,6 +151,8 @@ Beispiel: Ein Entwickler in einem Unternehmen mit 60 Beschäftigten möchte nach
 
 ## Lehrnotiz: Arbeitsverhältnis: Einstellung, Probezeit, Befristung, Zeitarbeit, Urlaub und Zeugnis
 
+**Hinweis aus dem Lernplan:** Fragen zum Arbeitsvertrag kamen in fast jeder Prüfung vor. Das Ausbildungszeugnis nach dem Berufsbildungsgesetz steht in WISO-1-1-3; für das Arbeitszeugnis (Gewerbeordnung) gilt die Unterscheidung einfach/qualifiziert ebenso. Das Lehrbuch schreibt „bei 5 Arbeitstagen/Woche 20 Werktage“; gemeint sind 20 Arbeitstage (24 Werktage ÷ 6 × 5).
+
 **Aufteilung:**
 - Teil A – Vertrag: Einstellung K1; Probezeit K2; Befristung K3; Zeitarbeit K4; Teilzeit K9
 - Pause möglich nach Teil A.

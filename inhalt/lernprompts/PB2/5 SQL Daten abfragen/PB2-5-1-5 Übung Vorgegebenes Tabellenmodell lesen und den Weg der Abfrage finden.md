@@ -82,6 +82,8 @@ Beispiel: „Alle Mitarbeiter mit der Anzahl ihrer Urlaubseinträge 2022, auch 0
 
 ## Lehrnotiz: Übung: Vorgegebenes Tabellenmodell lesen und den Weg der Abfrage finden
 
+**Hinweis aus dem Lernplan:** Jede PB2-Prüfung bringt rund 20 Punkte zu einem Datenmodell (meist Aufgabe 3: ER-Modell erweitern, relationales Modell erstellen, 3. Normalform, Datentypen) und baut die SQL-Aufgabe 4 auf vorgegebenen Tabellen auf. Das Modellieren selbst lernst du in PB1-6-1-1 bis PB1-6-1-3 und übst es in PB2-6-1-7; hier liest du ein fertiges Modell für die Abfrage. Erst Modell lesen, dann Pfad und JOIN-Art festlegen, dann die Abfrage schreiben. Die IHK-Lösungen zu 2021W-PB2-A4 weichen stellenweise vom Modell ab (bei Hersteller Bezeichnung statt Name, in 2021W-PB2-A4-d ArzneimittelID statt AMID); du übernimmst die Spaltennamen immer aus dem vorgegebenen Modell.
+
 **Aufteilung:**
 - Den Weg durch das Modell finden: K1
 - Mehrere Fremdschlüssel auf dieselbe Tabelle, zwei Wege zum Ziel: K2

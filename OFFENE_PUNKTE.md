@@ -1,6 +1,6 @@
 # Offene Punkte
 
-Stand 25.11.2026. Alles Ältere (Protokolle, Pläne, die frühere lange Fassung dieser Datei) liegt außerhalb des Repos
+Stand 26.11.2026. Alles Ältere (Protokolle, Pläne, die frühere lange Fassung dieser Datei) liegt außerhalb des Repos
 in `Desktop\lernstudio_archiv\2026-11-12\`.
 
 ## 1. Offene Stoff-Meldungen zu PB1 und WiSo (vor der AP2)
@@ -43,3 +43,21 @@ Liste mit Urteil und Quelle je Meldung: `inhalt\lernprompts\_Ablauf-Nacharbeit_2
 - **14 fehlende Abläufe:** geschrieben, gegen Quellen geprüft und in die Lehrnotizen eingesetzt.
 - Noch offen, nebenbei gefunden: Das Glossar nennt beim „Bildungsgutschein“ noch „Agentur für Arbeit oder Jobcenter“;
   für neue Fälle ist seit 1.1.2025 nur die Agentur zuständig (siehe WISO-1-8-1-K5).
+
+## 5. Regelblock vom 26.11.2026 beobachten – nicht ändern
+
+Der Regelblock ist eingefroren (siehe `CLAUDE.md`). Nach einer Lernsitzung nur notieren, was auffällt; geändert wird
+erst, wenn dasselbe Problem in zwei Sitzungen zu verschiedenen Stichpunkten auftritt. Die Chats aufheben – ohne
+Protokoll lässt sich nichts vergleichen. Modell und Stufe gleich lassen (Opus 5.5, hoch).
+
+- **Worauf achten:** Punkte bei jeder Aufgabe und ✅ nur bei voller Punktzahl · nur Erklärtes wird abgefragt · eigene
+  Begründungen tragen „Hintergrund, nicht aus dem Stoff“ · kein Stoff aus Nachbarstichpunkten · ein Einwand wird
+  geprüft · eine Aufgabe pro Nachricht, Abschlussaufgabe, Abhak-Satz.
+- **Im Test vom 26.11.2026 (AP1-4-1-2) aufgefallen, noch kein Handlungsbedarf:** kleine eigene Zusätze ohne
+  Kennzeichnung; drei Aufgaben hintereinander zur selben Teilaussage, bevor es weiterging; Aufgaben mit mehreren
+  Teilen a) bis c); beim Fehler in K7 kam kein „⚠️ Hinweis zum Stoff“.
+- **Noch nicht erprobt:** Abschlussaufgabe mit der neuen Bewertung, Rechen- und Zeichen-Stichpunkte, PB1, PB2, WiSo,
+  die Wiederholung und die Hinweis-Zeile in der Lehrnotiz.
+- **Nebensätze im Stoff:** In rund vier von fünf Stichpunkten nennt eine Erklärung Begriffe, die Lernziel eines
+  anderen Stichpunkts sind. Wird daraus in einer Sitzung eine Aufgabe (wie die Bauform bei AP1-4-1-2-K3 oder der
+  „echte Takt“ bei K2), den Halbsatz in dieser einen Datei mit einem Verweis versehen, nicht den Regelblock ändern.

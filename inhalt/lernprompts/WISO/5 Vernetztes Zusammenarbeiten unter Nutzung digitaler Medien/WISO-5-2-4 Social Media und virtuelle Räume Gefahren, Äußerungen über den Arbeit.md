@@ -76,6 +76,8 @@ Typische Verwechslung: Ein Chat ist nicht „wie ein Gespräch, nur schneller“
 
 ## Lehrnotiz: Social Media und virtuelle Räume: Gefahren, Äußerungen über den Arbeitgeber, Kommunikation ohne direkten Kontakt
 
+**Hinweis aus dem Lernplan:** Pflichtverletzungen und ihre arbeitsrechtlichen Folgen allgemein (Abmahnung, Kündigung, Verschwiegenheit) stehen in WISO-1-1-4; hier nur das Besondere sozialer Netzwerke.
+
 **Aufteilung:**
 - Gefahren von Social Media für die IT-Sicherheit: K1
 - Äußerungen über den Arbeitgeber – was geht, was nicht, was folgt: K2

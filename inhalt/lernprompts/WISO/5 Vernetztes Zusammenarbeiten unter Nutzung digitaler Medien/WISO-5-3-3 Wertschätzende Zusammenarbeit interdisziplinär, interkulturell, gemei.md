@@ -93,6 +93,8 @@ Typische Verwechslung: Missverständnisse sind meist keine böse Absicht, sonder
 
 ## Lehrnotiz: Wertschätzende Zusammenarbeit: interdisziplinär, interkulturell, gemeinsame Verantwortung, Unternehmenswerte und Ethikregeln
 
+**Hinweis aus dem Lernplan:** Teamphasen und Regeln für Feedback stehen in AP1-1-1-4.
+
 **Aufteilung:**
 - Zwei Arten gemischter Teams: K1
 - Woher Missverständnisse in solchen Teams kommen: K6

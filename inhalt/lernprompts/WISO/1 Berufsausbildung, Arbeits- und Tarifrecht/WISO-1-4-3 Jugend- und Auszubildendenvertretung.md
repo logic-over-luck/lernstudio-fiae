@@ -81,6 +81,8 @@ Beispiel: Der Betriebsrat stimmt einem Schichtplan zu, nach dem Azubis regelmä�
 
 ## Lehrnotiz: Jugend- und Auszubildendenvertretung
 
+**Hinweis aus dem Lernplan:** Dass die JAV im Betriebsverfassungsgesetz geregelt ist (2025S-WISO-A11, 2025W-WISO-A8), steht in WISO-1-3-2. Rechtsstand: Seit dem Betriebsrätemodernisierungsgesetz (18.6.2021) gilt für Auszubildende keine Altersgrenze mehr, weder beim Wählen noch bei der Wählbarkeit. Ältere Prüfungsaufgaben gehen noch von „Auszubildende unter 25“ aus: 2022W-WISO-A14 wertete „Auszubildende bis zu einem Alter von 27 Jahren dürfen die JAV wählen“ als falsch (richtig war dort „Nur in einem Betrieb mit Betriebsrat …“); „Als Auszubildende/-r unter 25 sind Sie wahlberechtigt und auch wählbar“ (2022S-WISO-A11) ist nach beiden Fassungen richtig.
+
 **Aufteilung:**
 - Wozu es die JAV gibt und was sie tut: K2
 - Voraussetzungen, Wahl, Amtszeit und Größe: K3

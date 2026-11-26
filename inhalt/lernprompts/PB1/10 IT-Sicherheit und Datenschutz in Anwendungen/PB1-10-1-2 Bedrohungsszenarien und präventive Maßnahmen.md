@@ -109,6 +109,8 @@ Beispiel (CEO-Fraud): Eine Buchhalterin erhält eine eilige Mail „vom Geschäf
 
 ## Lehrnotiz: Bedrohungsszenarien und präventive Maßnahmen
 
+**Hinweis aus dem Lernplan:** Nur Testdaten an fremde Dienste geben (2025W-PB1-A3-bb) steht bei der eRechnung in PB1-7. Das Lehrbuch erklärt den SYN-Flood über die gefälschte Absenderadresse; entscheidend ist, dass viele Verbindungsaufbauten nie abgeschlossen werden und die Verbindungstabelle des Servers füllen.
+
 **Aufteilung:**
 - Angriffe auf den Menschen, das Prinzip: K8
 - Identitätsdiebstahl mit seinen menschlichen und technischen Wegen: K7

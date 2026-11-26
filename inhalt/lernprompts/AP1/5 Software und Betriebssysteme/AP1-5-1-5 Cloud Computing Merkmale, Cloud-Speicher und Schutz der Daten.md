@@ -84,6 +84,8 @@ Eine eigene (private) Cloud läuft auf einem Server im eigenen Netz oder auf ein
 
 ## Lehrnotiz: Cloud Computing: Merkmale, Cloud-Speicher und Schutz der Daten
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch stellt die DSGVO als nur in Deutschland geltend dar; richtig ist: Sie gilt in der ganzen EU und auch für Anbieter außerhalb, die Personen in der EU Dienste anbieten.
+
 **Aufteilung:**
 - Was einen Dienst zur Cloud macht, und die Cloud-Arten: K1, K4
 - Eigene Private Cloud von außen erreichbar machen: K5

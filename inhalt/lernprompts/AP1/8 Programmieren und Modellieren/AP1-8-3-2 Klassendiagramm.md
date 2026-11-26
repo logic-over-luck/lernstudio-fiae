@@ -106,6 +106,8 @@ Du kennst das Zeichen schon vom Anwendungsfalldiagramm (Generalisierung von Akte
 
 ## Lehrnotiz: Klassendiagramm
 
+**Hinweis aus dem Lernplan:** Aggregation und Komposition gehören dazu, weil sie in der Notationsübersicht des Katalog-Anhangs stehen. Den Vererbungspfeil zeigt der Katalog-Anhang ebenfalls, deshalb musst du ihn lesen können (K7).
+
 **Aufteilung:**
 - Die Klasse als Kasten und die Schreibweise der Zeilen: K1, K2
 - Wer zugreifen darf: K3

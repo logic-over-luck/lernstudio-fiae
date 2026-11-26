@@ -147,6 +147,8 @@ Beispiel: Zwei Azubis gründen nach der Prüfung eine App-Agentur als UG mit 1.0
 
 ## Lehrnotiz: Kapitalgesellschaften GmbH und AG, Genossenschaft, gemeinnützige Organisationen, Wahl der Rechtsform
 
+**Hinweis aus dem Lernplan:** Personengesellschaften (Haftung, Geschäftsführung) stehen in WISO-2-2-1; K8 setzt sie voraus.
+
 **Aufteilung:**
 - Teil A – GmbH und AG: Haftung der GmbH K2; Gründung K1; Geschäftsführung und Organe K3; die AG im Vergleich K5
 - Pause möglich nach Teil A.

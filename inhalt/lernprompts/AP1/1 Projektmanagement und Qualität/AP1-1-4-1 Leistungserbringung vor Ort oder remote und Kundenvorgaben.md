@@ -77,6 +77,8 @@ Beispiel: Ist vereinbart, dass die Rechner beim Kunden installiert werden, ist d
 
 ## Lehrnotiz: Leistungserbringung vor Ort oder remote und Kundenvorgaben
 
+**Hinweis aus dem Lernplan:** Die Technik des Fernzugriffs (Remote-Desktop, AP1.04.01.3) steht im Ordner Software und Betriebssysteme, die VPN-Verbindung im Ordner Netzwerk (AP1-6-3-3); die Hardware eines Arbeitsplatzes im Ordner Hardware und Arbeitsplatz. Vor- und Nachteile des Homeoffice für Beschäftigte (2023H-A2-d) stehen in AP1-2-4-1 (K6).
+
 **Aufteilung:**
 - Vor- und Nachteile der Fernwartung als Grundlage: K3
 - Im Einzelfall entscheiden und begründen: K1

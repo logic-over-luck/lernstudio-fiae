@@ -131,6 +131,8 @@ Kennzeichnung:
 
 ## Lehrnotiz: Zahlensysteme und Präfixe: binär, hexadezimal, kB und KiB
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt, die Hexadezimalschreibweise komprimiere Daten; richtig ist: Gespeichert werden dieselben Bits, nur die Darstellung für Menschen ist kürzer.
+
 **Aufteilung:**
 - Teil A – Zahlensysteme: Prinzip K8; Umrechnen K1; Zweck und Schreibweise von Hex K9
 - Textdatei gegen Binärdatei: K6

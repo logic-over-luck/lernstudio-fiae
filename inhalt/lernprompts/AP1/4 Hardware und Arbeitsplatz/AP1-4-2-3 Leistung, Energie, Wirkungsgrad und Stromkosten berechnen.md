@@ -116,6 +116,8 @@ Brauchen die Server 810 W, nimmt die USV auf: `P_auf = 810 W / 0,81 = 1.000 W` �
 
 ## Lehrnotiz: Leistung, Energie, Wirkungsgrad und Stromkosten berechnen
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2025H-A3-ea/-eb und 2026F-A1-ac fehlen; K1 und K7 folgen den Aufgabenstellungen.
+
 **Aufteilung:**
 - Grundformel P = U · I: K1
 - Die Formel anwenden: Mehrfachsteckdose K6, USB-Anschluss K7

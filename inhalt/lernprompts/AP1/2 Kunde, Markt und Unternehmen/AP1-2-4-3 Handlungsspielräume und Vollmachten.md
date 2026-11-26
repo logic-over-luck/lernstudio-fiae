@@ -88,6 +88,8 @@ Die Handlungsvollmacht gibt es als allgemeine (alle gewöhnlichen Geschäfte), A
 
 ## Lehrnotiz: Handlungsspielräume und Vollmachten
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt, die Prokura könne nur durch Veröffentlichung und Eintragung erteilt werden; richtig ist: Sie entsteht mit der ausdrücklichen Erteilung durch den Inhaber, die Eintragung ins Handelsregister ist Pflicht, wirkt aber nur bekanntmachend (deklaratorisch).
+
 **Aufteilung:**
 - Handlungsspielraum und Vollmacht: K1
 - Handlungsvollmacht und Prokura im Vergleich: K2

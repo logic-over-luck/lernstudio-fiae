@@ -156,6 +156,8 @@ Beispiel: Eine Website wird übergeben, nur im Impressum steht noch ein Tippfehl
 
 ## Lehrnotiz: Werkvertrag, Dienstvertrag, Servicevertrag und Service Level Agreement
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für den Werklieferungsvertrag noch § 651 BGB; seit 2018 steht die Regel in § 650 BGB.
+
 **Aufteilung:**
 - Teil A – Werk- und Dienstvertrag: Erfolg oder Tätigkeit K1, K2; Abnahme und ihre Folgen K7, K15; Mängel, Protokoll und Rechte K9, K11; Vertrag für einen Auftrag begründen K6
 - Pause möglich nach Teil A.

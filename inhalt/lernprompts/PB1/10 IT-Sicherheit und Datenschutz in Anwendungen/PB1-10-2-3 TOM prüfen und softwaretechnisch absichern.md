@@ -128,6 +128,8 @@ Die Regeln werden von oben nach unten geprüft; die letzte ist das Verbot. Wie d
 
 ## Lehrnotiz: TOM prüfen und softwaretechnisch absichern
 
+**Hinweis aus dem Lernplan:** Datenträger verschlüsseln und den Wiederherstellungsschlüssel aufbewahren steht in AP1-7-3-1; die Firewall als Paketfilter in PB1-11.
+
 **Aufteilung:**
 - Teil A – TOM prüfen: zuordnen und Wirksamkeit K2; physische Absicherung K4; Effizienz K3; was die Anwendung protokolliert K8; Auswertung und Berichte K5
 - Pause möglich nach Teil A.

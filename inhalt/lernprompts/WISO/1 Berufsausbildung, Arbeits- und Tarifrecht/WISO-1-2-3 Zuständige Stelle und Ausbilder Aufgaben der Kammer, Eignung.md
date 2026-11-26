@@ -89,6 +89,8 @@ Beispiel: Ein Azubi zum Fachinformatiker, der monatelang nur Kabel verlegt, erwi
 
 ## Lehrnotiz: Zuständige Stelle und Ausbilder: Aufgaben der Kammer, Eignung
 
+**Hinweis aus dem Lernplan:** Die Aufgaben der Kammer und die Eignung der Ausbilder kamen in fast jeder Prüfung vor. Wer den Arbeitsschutz überwacht (Gewerbeaufsicht, Berufsgenossenschaft), steht in WISO-3-1-1; die IHK als Interessenvertretung der Wirtschaft in WISO-1-5-3.
+
 **Aufteilung:**
 - Wozu die Berufsausbildung da ist: K4
 - Was die Kammer tut und was nicht: K1

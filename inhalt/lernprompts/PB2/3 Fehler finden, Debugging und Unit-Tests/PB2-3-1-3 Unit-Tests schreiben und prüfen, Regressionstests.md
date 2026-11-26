@@ -132,6 +132,8 @@ Beispiel: Ein Team baut den Warenkorb eines Shops per TDD fehlerarm auf – dass
 
 ## Lehrnotiz: Unit-Tests schreiben und prüfen, Regressionstests
 
+**Hinweis aus dem Lernplan:** Was ein Unit-Test im Rahmen der Teststufen ist, steht in PB1-9-1-4; wann ein Testfall als bestanden gilt, in PB2-4-1-2-K3. Den Code nach einem fehlgeschlagenen Unit-Test korrigieren (2022S-PB2-A2-bb) steht in PB2-3-1-1-K3. Das Lehrbuch (FS2 2.4.3) übergibt in einem JUnit-5-Beispiel die Fehlermeldung als ersten Parameter von assertEquals; das ist die Reihenfolge von JUnit 4 – richtig ist in JUnit 5 die Meldung als letzter Parameter: assertEquals(erwartet, tatsächlich, meldung).
+
 **Aufteilung:**
 - Aufbau einer Testmethode und Güte guter Tests: K2
 - Gegebene Tests von Hand gegen den Code prüfen: K3

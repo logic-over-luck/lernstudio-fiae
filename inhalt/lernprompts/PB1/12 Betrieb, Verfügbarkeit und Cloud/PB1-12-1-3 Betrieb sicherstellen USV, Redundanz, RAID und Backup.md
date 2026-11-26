@@ -119,6 +119,8 @@ Beispiel: Ein Techniker steckt beide Netzteile eines Datenbankservers in dieselb
 
 ## Lehrnotiz: Betrieb sicherstellen: USV, Redundanz, RAID und Backup
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch stellt beim Load Balancing die Bindung eines Browsers an denselben Server als immer gegeben dar; richtig ist: Sie ist eine Einstellung (Session-Affinität), alternativ werden Sitzungen zentral gespeichert. Das Lehrbuch nennt ein RAID als Voraussetzung dafür, dass VMs eines ausgefallenen Clusterknotens auf anderen Knoten neu starten; richtig ist: Nötig ist Speicher, den alle Knoten erreichen (gemeinsam oder repliziert) – ein lokales RAID im ausgefallenen Knoten hilft nicht.
+
 **Aufteilung:**
 - Teil A – Redundanz und Strom: Redundanz und ihre Formen K2, K6; USV und getrennte Stromkreise K1, K8
 - Pause möglich nach Teil A.

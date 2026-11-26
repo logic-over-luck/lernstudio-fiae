@@ -101,6 +101,8 @@ Gibt die Aufgabe eine Signatur ohne Liste und Zeitpunkt vor, etwa `getNaechsteAb
 
 ## Lehrnotiz: Bestehende Funktionen und Klassen erweitern
 
+**Hinweis aus dem Lernplan:** Die Darstellung soll laut Katalog in allgemein verständlichem Programm- oder Pseudocode erfolgen; eine bestimmte Sprache wird nicht verlangt (AP2b.03.05, AP2b.04.19). Aufbau einer HTTP-Antwort und Statuscodes kennst du aus PB1-7-1-4. Die Vergleichsfunktion aus 2022W-PB2-A1-b steht bei den Funktionsobjekten in PB2-2-1-4.
+
 **Aufteilung:**
 - Fremdes Objekt über ein Attribut, statische Methode, compare(): K1
 - Objekt erzeugen, befüllen, zurückgeben: K2

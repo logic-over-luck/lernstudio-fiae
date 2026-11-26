@@ -95,6 +95,8 @@ Mehrere Sinne und Aufnahmefähigkeit der Zuhörer: Was man hört, sieht, bespric
 
 ## Lehrnotiz: Präsentieren und Medienkompetenz
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt noch feste Behaltensquoten (z. B. 20 % beim Hören, 90 % bei Hören, Sehen und Tun); diese verbreiteten Zahlen sind empirisch nicht belegt. Richtig ist nur das Prinzip: Mehrere Sinne und eigenes Tun verbessern das Behalten.
+
 **Aufteilung:**
 - Botschaften auswählen: K3
 - Botschaften auf die Folie bringen, dazu die Grundregeln: K4, K1

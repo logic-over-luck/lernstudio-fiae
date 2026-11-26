@@ -132,6 +132,8 @@ Beispiel: Testnutzer übersehen im Mock-up den Bestellknopf – ein paar Minuten
 
 ## Lehrnotiz: Softwareergonomie, Usability und User Experience
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch schreibt, die Usability berücksichtige die subjektive Wahrnehmung der Nutzer nicht; richtig ist nach DIN EN ISO 9241-11, dass die Zufriedenheit neben Effektivität und Effizienz zur Usability gehört.
+
 **Aufteilung:**
 - Begriffe – Usability, User Experience, UI- und UX-Design: K1, K7
 - Was benutzerfreundlich ist und warum das über die Akzeptanz entscheidet: K2, K6

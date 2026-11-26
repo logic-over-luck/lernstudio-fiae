@@ -105,6 +105,8 @@ Beispiel: Ein Informatiker entwickelt allein Spezialsoftware nach Kundenanforder
 
 ## Lehrnotiz: Existenzgründung: Möglichkeiten und Grenzen
 
+**Hinweis aus dem Lernplan:** Die Rechtsform der Gründung steht in WISO-2-2.
+
 **Aufteilung:**
 - Chancen und Risiken: K1
 - Erfolgsfaktoren: K5

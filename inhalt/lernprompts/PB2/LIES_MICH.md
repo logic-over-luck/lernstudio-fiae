@@ -21,3 +21,4 @@ diese Datei. Jede Datei besteht aus Kopf, Regelblock (in allen Dateien gleich), 
   Tabellenmodell; es steht als „Material“ am Ende der Lehrnotiz.
 - Stoff ändern: in `inhalt/PB2.json` **und** in der Datei gleich (siehe `CLAUDE.md`).
 - Regelblock ändern: `_regelblock.md` in diesem Ordner ändern, dann `npm run regelblock einsetzen PB2` (siehe `CLAUDE.md`).
+- Hinweis aus dem Lernplan (erste Zeile der Lehrnotiz) ändern: `neu.hinweis` in `inhalt/PB2.json` ändern, dann `npm run hinweis einsetzen PB2` (siehe `CLAUDE.md`).

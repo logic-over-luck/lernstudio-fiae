@@ -131,6 +131,8 @@ Beispiel: Ein Angreifer auf dem Parkplatz probiert über Stunden WPS-PINs durch 
 
 ## Lehrnotiz: VLAN, Drahtlosnetze und Zugriffskontrolle im Netz
 
+**Hinweis aus dem Lernplan:** Schwachstellen einer IT-Infrastruktur (2022W-PB1-A1-a) stehen bei Verfügbarkeit und Ausfällen in PB1-12. Das Lehrbuch nennt WPA2 veraltet; richtig ist: WPA2 mit AES und langem Passwort gilt weiter als ausreichend, WPA3 ist vorzuziehen. Risiken von WPS nennt es nicht: Die WPS-PIN ist durch Ausprobieren angreifbar, WPS wird deshalb abgeschaltet. Für WLAN nennt es höchstens 600 Mbit/s (nur 802.11n, Wi-Fi 5 bis 7 schaffen deutlich mehr), für Bluetooth Low Energy 50 bis 150 m (übliche Geräte reichen etwa 10 m), für Z-Wave das 900-MHz-Band (in Europa 868 MHz).
+
 **Aufteilung:**
 - Teil A – VLAN: Zweck K1; Zuordnung im Switch K5
 - Pause möglich nach Teil A.

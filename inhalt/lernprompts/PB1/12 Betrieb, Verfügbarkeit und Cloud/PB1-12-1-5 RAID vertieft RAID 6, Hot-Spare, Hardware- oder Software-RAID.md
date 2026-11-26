@@ -70,6 +70,8 @@ Beispiel: Ein NAS mit RAID 5 aus vier Platten und einer fünften als Hot-Spare b
 
 ## Lehrnotiz: RAID vertieft: RAID 6, Hot-Spare, Hardware- oder Software-RAID
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für RAID 1 doppelte Schreibgeschwindigkeit; richtig ist: Schreiben ist nicht schneller als bei einer einzelnen Platte, Lesen kann von beiden Platten parallel erfolgen.
+
 **Aufteilung:**
 - RAID 6 gegenüber RAID 5: K1
 - Hot-Spare-Platte: K3 – knüpft direkt an die ungeschützte Zeit an

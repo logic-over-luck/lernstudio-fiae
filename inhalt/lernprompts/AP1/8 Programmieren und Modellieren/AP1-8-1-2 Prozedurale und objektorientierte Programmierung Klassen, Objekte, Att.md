@@ -107,6 +107,8 @@ Beispiel: `k = NEU Kunde("Anna Berg", 4711)` erzeugt ein Kundenobjekt, dessen Na
 
 ## Lehrnotiz: Prozedurale und objektorientierte Programmierung: Klassen, Objekte, Attribute, Methoden, Sichtbarkeit
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch (FS 3.6.1) stellt __init__ als private Methode dar; richtig ist: Namen mit doppeltem Unterstrich vorn und hinten sind Spezialmethoden, nicht privat.
+
 **Aufteilung:**
 - Prozedural gegenüber objektorientiert: K1
 - Klasse, Objekt, Attribut, Methode: K2, K3

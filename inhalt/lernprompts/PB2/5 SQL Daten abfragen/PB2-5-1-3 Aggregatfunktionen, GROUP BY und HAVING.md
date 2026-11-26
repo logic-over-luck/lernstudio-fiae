@@ -95,6 +95,8 @@ Du musst sie erkennen; die Beschreibung steht im Belegsatz.
 
 ## Lehrnotiz: Aggregatfunktionen, GROUP BY und HAVING
 
+**Hinweis aus dem Lernplan:** Die IHK-Lösung 2025W-PB2-A4-b gruppiert nur nach b.BID und gibt k.Name trotzdem aus; das erlauben manche Datenbanksysteme (z. B. MySQL), wenn die Spalte vom gruppierten Schlüssel abhängt, und die Lösung wurde anerkannt. Sicher in jedem System ist die Form aus PB2-5-1-3-K2 (GROUP BY b.BID, k.Name). STDDEV, VARIANCE und CORR stehen im SQL-Auszug des Belegsatzes: anwenden, nicht auswendig.
+
 **Aufteilung:**
 - Aggregatfunktionen über die ganze Tabelle: K1 (ohne das Zählen nach LEFT JOIN)
 - Weitere Funktionen des SQL-Auszugs erkennen: K5

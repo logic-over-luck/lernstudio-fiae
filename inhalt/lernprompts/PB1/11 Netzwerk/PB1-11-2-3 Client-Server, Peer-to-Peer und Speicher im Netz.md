@@ -120,6 +120,8 @@ Beispiel: Das kleine Büro nimmt ein NAS für gemeinsame Dateien, ein einzelner 
 
 ## Lehrnotiz: Client-Server, Peer-to-Peer und Speicher im Netz
 
+**Hinweis aus dem Lernplan:** Die Programmbeispiele des Lehrbuchs schreiben das Passwort in den Quelltext und setzen SQL als Text zusammen; richtig ist: Zugangsdaten in eine geschützte Konfiguration, Benutzereingaben als Parameter vorbereiteter Anweisungen (PB1-10-1-2-K4).
+
 **Aufteilung:**
 - Teil A – Netzmodell und Speicher: Peer-to-Peer oder Client-Server K1; NAS auswählen und Dateien freigeben K8, K2; NAS, SAN und DAS mit Anbindung K4, K5, K9
 - Pause möglich nach Teil A.

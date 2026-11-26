@@ -112,6 +112,8 @@ Beispiel Webshop: Kunde – „Bestellung aufgeben“ braucht eine Bestellseite,
 
 ## Lehrnotiz: UML-Überblick und Anwendungsfalldiagramm
 
+**Hinweis aus dem Lernplan:** 2023W-PB1-A2-b (User Stories zu einem Use-Case-Diagramm) liest das Diagramm; die User Stories selbst stehen in PB1-1-1-3.
+
 **Aufteilung:**
 - Wozu modellieren: K4
 - Fünf Diagramme, zwei Gruppen: K1, K5

@@ -109,6 +109,8 @@ Beispiel: Ein Prüfling hat in beiden schriftlichen Fachbereichen „mangelhaft�
 
 ## Lehrnotiz: Ende der Ausbildung, Prüfung, Zeugnis und Weiterbeschäftigung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch spricht von einer Abschlussprüfung „in drei Teilen“ und nennt als Bestehensregel „mindestens zwei Prüfungsbereiche von Teil 2“; richtig ist: Die gestreckte Prüfung hat zwei Teile (die Projektarbeit gehört zu Teil 2), und Fachinformatiker müssen nach der Verordnung 2020 mindestens drei Prüfungsbereiche von Teil 2 mit mindestens ausreichend abschließen.
+
 **Aufteilung:**
 - Aufbau der gestreckten Abschlussprüfung: K5
 - Wann die Prüfung bestanden ist: K7

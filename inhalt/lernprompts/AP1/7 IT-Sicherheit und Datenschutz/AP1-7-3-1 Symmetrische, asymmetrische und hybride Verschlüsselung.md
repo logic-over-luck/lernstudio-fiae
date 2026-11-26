@@ -112,6 +112,8 @@ Frag: **Wer** muss die Daten entschlüsseln, und **wie viele** Daten sind es?
 
 ## Lehrnotiz: Symmetrische, asymmetrische und hybride Verschlüsselung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt Triple DES (3DES) ohne Einschränkung neben AES; richtig ist: 3DES gilt als veraltet und soll für neue Verschlüsselungen nicht mehr eingesetzt werden, Standard ist AES.
+
 **Aufteilung:**
 - Teil A – die drei Verfahren: symmetrisch K1; asymmetrisch und Vergleich K2, K3; hybrid K4; Verfahren auswählen K10
 - Pause möglich nach Teil A.

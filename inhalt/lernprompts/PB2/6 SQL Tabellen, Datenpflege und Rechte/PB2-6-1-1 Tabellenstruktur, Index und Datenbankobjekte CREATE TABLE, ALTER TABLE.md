@@ -124,6 +124,8 @@ Beispiel: Eine Prozedur `Bestellung_stornieren(nr)` prüft den Status, bucht den
 
 ## Lehrnotiz: Tabellenstruktur, Index und Datenbankobjekte: CREATE TABLE, ALTER TABLE, CREATE INDEX, Prozedur, Trigger
 
+**Hinweis aus dem Lernplan:** Das Datenmodell selbst (ER-Modell, relationales Modell, 3. Normalform, Datentypen) lernst du in PB1-6; die Modellaufgabe der PB2-Prüfungen (Aufgabe 3) übst du in PB2-6-1-7. Den Speicherbedarf von Bildern (2023W-PB2-A3-b) berechnen steht in AP1-4-2-2. Die SQL-Syntax (Auszug) steht im Belegsatz; Befehle und Funktionen musst du anwenden, nicht auswendig kennen. Die IHK-Lösung 2025W-PB2-A4-d zerlegt den Namen mit SUBSTRING(Name, ' ', 1) (wirkt wie SUBSTRING_INDEX in MySQL) und wurde so anerkannt; welche Textfunktion du nutzen darfst, steht im Belegsatz (siehe PB2-5-1-1).
+
 **Aufteilung:**
 - Teil A – Struktur: Tabelle anlegen K1; ändern und löschen K2; nachträgliches Pflichtfeld K3; Index K4, K5
 - Pause möglich nach Teil A.

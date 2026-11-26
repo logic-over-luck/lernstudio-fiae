@@ -4,6 +4,7 @@
 
 import { ladeDaten, ladeLernprompts, erklaerungImPrompt, aussageUeberschrift, RAEUME } from './inhalt.mjs';
 import { pruefeRegelblock, regelblockPfad } from './regelblock.mjs';
+import { pruefeHinweis } from './hinweis.mjs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -159,6 +160,15 @@ for (const e of pruefeRegelblock(wurzel)) {
   for (const t of e.fehler) f(t);
   if (e.abweichler.length <= 5) for (const datei of e.abweichler) f(`${datei}: Regelblock weicht von ${regelblockPfad(e.raum)} ab`);
   else f(`${e.raum}: Regelblock von ${e.abweichler.length} Prompts weicht von ${regelblockPfad(e.raum)} ab, z. B. ${e.abweichler[0]} (alle: npm run regelblock pruefen ${e.raum})`);
+}
+
+// Hinweis aus dem Lernplan (neu.hinweis): steht Wort für Wort als „**Hinweis aus dem Lernplan:** …“ oben in der Lehrnotiz
+// des Prompts; ohne Hinweis gibt es die Zeile nicht. Ändern: neu.hinweis in inhalt/<RAUM>.json bearbeiten, dann
+// `npm run hinweis einsetzen <RAUM>` (tools/hinweis.mjs).
+for (const e of pruefeHinweis(wurzel)) {
+  for (const t of e.fehler) f(t);
+  if (e.abweichler.length <= 5) for (const datei of e.abweichler) f(`${datei}: Hinweis aus dem Lernplan weicht von neu.hinweis in inhalt/${e.raum}.json ab`);
+  else f(`${e.raum}: Hinweis aus dem Lernplan weicht in ${e.abweichler.length} Prompts von neu.hinweis ab, z. B. ${e.abweichler[0]} (alle: npm run hinweis pruefen ${e.raum})`);
 }
 
 const zahl = (n, wort) => `${n} ${wort}`;

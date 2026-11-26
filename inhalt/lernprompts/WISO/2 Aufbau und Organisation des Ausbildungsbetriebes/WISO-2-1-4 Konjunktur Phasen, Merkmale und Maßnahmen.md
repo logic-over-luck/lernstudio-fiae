@@ -84,6 +84,8 @@ Typische Verwechslung: Über den Leitzins entscheidet die **Europäische Zentral
 
 ## Lehrnotiz: Konjunktur: Phasen, Merkmale und Maßnahmen
 
+**Hinweis aus dem Lernplan:** Konjunktur steht nicht im Katalog, kam aber in drei der acht Prüfungen vor. Real- und Nominaleinkommen bei steigenden Preisen (2023S-WISO-A9) stehen in WISO-1-6-1-K6.
+
 **Aufteilung:**
 - Die vier Phasen und ihre Reihenfolge: K1
 - Eine Lage aus Kennzahlen bestimmen: K2

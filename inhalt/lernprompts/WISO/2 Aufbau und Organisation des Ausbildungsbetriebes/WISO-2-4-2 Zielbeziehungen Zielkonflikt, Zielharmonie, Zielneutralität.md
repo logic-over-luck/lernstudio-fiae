@@ -85,6 +85,8 @@ Typische Verwechslung: „Mehr Lager, mehr Personal = mehr Umsatz“ – das ist
 
 ## Lehrnotiz: Zielbeziehungen: Zielkonflikt, Zielharmonie, Zielneutralität
 
+**Hinweis aus dem Lernplan:** Ökonomische, ökologische und soziale Ziele einordnen (2025S-WISO-A7, 2026S-WISO-A23) steht in AP1-2-4-1.
+
 **Aufteilung:**
 - Zielharmonie und Zielneutralität: K4, K5
 - Zielkonflikt unter mehreren Zielpaaren finden: K3

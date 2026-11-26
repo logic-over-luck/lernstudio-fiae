@@ -142,6 +142,8 @@ Bei vielen Arbeitsplätzen übernimmt das eine **Softwareverteilung**: Programme
 
 ## Lehrnotiz: Installation und Einrichtung: BIOS/UEFI, Partitionieren, Formatieren, Dateisysteme FAT32, NTFS, APFS, ext4
 
+**Hinweis aus dem Lernplan:** Die RAM-Größe im UEFI oder im Task-Manager prüfen (2026H-A2-ba) wird im Ordner Projektmanagement und Qualität gelernt (AP1-1-5-3-K3). Die Leistungsmerkmale Softwareverteilung, Patch- und Lizenzmanagement aus 2022F-A4-a (englischer Text, Ordner Kunde, Markt und Unternehmen) stehen hier in AP1-5-2-2-K11.
+
 **Aufteilung:**
 - Teil A – Vor dem Betriebssystem: Firmware K1; Datenträger vorbereiten K2, K8
 - Teil A – Dateisysteme: Zuordnung K3; FAT32 K5; passendes Dateisystem beurteilen K7

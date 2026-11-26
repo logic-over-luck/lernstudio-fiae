@@ -129,6 +129,8 @@ Beispiel: Eine Kollegin meldet „kein Internet“. `ping www.example.com` antwo
 
 ## Lehrnotiz: Netzwerkbefehle und systematische Fehlersuche
 
+**Hinweis aus dem Lernplan:** Die Konsolenbefehle für Dateioperationen (dir, ls, mkdir, del, cp, copy, chmod, alias) aus demselben Baustein AP1.04.05.6 wohnen im Ordner Software und Betriebssysteme. Das Lehrbuch deutet TIME_WAIT als Verbindung im Aufbau; richtig ist: TIME_WAIT-Verbindungen sind gerade beendet. Viele halboffene Verbindungen, etwa bei einem Angriff, zeigen sich eher als SYN_RECV.
+
 **Aufteilung:**
 - Teil A – Befehle und Zweck: K1, K2
 - Teil A – Suchen und schließen: Reihenfolge K3; Fehlerort K4; Schnelltest K9; Prüfung und Behebung K7

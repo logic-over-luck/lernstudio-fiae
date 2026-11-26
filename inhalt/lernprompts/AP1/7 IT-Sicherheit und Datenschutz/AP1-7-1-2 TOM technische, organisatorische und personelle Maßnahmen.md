@@ -154,6 +154,8 @@ Bei Netzwerkdruckern schützt man vertrauliche Ausdrucke und Druckdaten: Gerät 
 
 ## Lehrnotiz: TOM: technische, organisatorische und personelle Maßnahmen
 
+**Hinweis aus dem Lernplan:** Sicherheitsmaßnahmen aus einem englischen Herstellertext (2025F-A1-ea) entnehmen steht im Ordner Kunde, Markt und Unternehmen (AP1-2-3-1). Das Lehrbuch leitet die Kontrollziele (Zugangs-, Datenträger-, Speicher-, Benutzerkontrolle …) aus § 64 BDSG ab; der gilt nur für Behörden in Strafverfolgung und Gefahrenabwehr. Richtig ist: Für Unternehmen gilt Art. 32 DSGVO, der keine Kontrollliste vorgibt, sondern dem Risiko angemessene TOM verlangt; die Kontrollziele sind trotzdem eine verbreitete Gliederung. Was § 64 BDSG „Zugangskontrolle“ nennt (Unbefugte von den Anlagen fernhalten), heißt hier wie üblich Zutrittskontrolle.
+
 **Aufteilung:**
 - Teil A – Maßnahmen einordnen und festlegen: Maßnahmenarten K1, K2, K5; Risiko einer Situation K4; Arbeitsplatz und Netzwerkdrucker K3, K11; Raum und Standort K10
 - Pause möglich nach Teil A.

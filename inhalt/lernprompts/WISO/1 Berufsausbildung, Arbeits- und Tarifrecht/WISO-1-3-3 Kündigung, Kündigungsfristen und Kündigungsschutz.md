@@ -135,6 +135,8 @@ Beispiel: Die Amtszeit einer Betriebsrätin in einem Softwarehaus endet am 31. M
 
 ## Lehrnotiz: Kündigung, Kündigungsfristen und Kündigungsschutz
 
+**Hinweis aus dem Lernplan:** Dass der Betriebsrat vor jeder Kündigung anzuhören ist (sonst ist sie unwirksam), steht in WISO-1-4-1.
+
 **Aufteilung:**
 - Ordentlich oder fristlos: K4
 - Kündigungsfristen mit dem Gesetzesauszug berechnen: K1

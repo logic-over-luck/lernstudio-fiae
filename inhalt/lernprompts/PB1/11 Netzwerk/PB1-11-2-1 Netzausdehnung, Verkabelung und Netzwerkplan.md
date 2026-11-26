@@ -107,6 +107,8 @@ Beispiel: Der Etagenswitch wird auf 10 Gbit/s aufgerüstet – die Glasfaser zum
 
 ## Lehrnotiz: Netzausdehnung, Verkabelung und Netzwerkplan
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für 5G durchschnittlich etwa 1 Gbit/s; das ist eher ein Spitzenwert, im Alltag liegen die Raten meist bei einigen hundert Mbit/s.
+
 **Aufteilung:**
 - Netzarten nach Ausdehnung: K1
 - Netzkonzept nach Anwendungsgebiet: K2

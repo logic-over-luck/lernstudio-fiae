@@ -106,6 +106,8 @@ Das BSI empfiehlt Passkeys seit 2024 ausdrücklich. Tipp: Ein Ersatzgerät oder 
 
 ## Lehrnotiz: Authentifizierung, Zwei-Faktor-Verfahren, Zugangs- und Zugriffskontrolle
 
+**Hinweis aus dem Lernplan:** Gruppenrichtlinien als Werkzeug stehen im Ordner Software und Betriebssysteme (AP1-5-2-1-K6).
+
 **Aufteilung:**
 - Die drei Hürden und der Zutritt zum Raum: K5, K4
 - Womit man sich ausweist: K2

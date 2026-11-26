@@ -94,6 +94,8 @@ Typische Verwechslung: Umweltschutz heißt **nicht** zwingend Verzicht oder Mehr
 
 ## Lehrnotiz: Umweltrisiken von IT-Prozessen; Speicher- und Printmedien und Betriebsstoffe sparsam einsetzen
 
+**Hinweis aus dem Lernplan:** Energie sparen am Arbeitsplatz (Standby vermeiden, Energielabel, Energiesparmodus) steht in AP1-4-3-3. Gemischte Maßnahmen als nachhaltig oder nicht nachhaltig unterscheiden: WISO-4-1-2.
+
 **Aufteilung:**
 - Umweltrisiken im IT-Betrieb mit ihrer Ursache: K1
 - Sparsam mit Papier und Datenträgern: K3

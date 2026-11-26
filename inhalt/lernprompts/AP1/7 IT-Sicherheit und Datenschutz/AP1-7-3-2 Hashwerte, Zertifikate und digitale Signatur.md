@@ -131,6 +131,8 @@ Die qualifizierte elektronische Signatur nach der EU-Verordnung eIDAS ist der ei
 
 ## Lehrnotiz: Hashwerte, Zertifikate und digitale Signatur
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch verlangt von kryptografischen Hashfunktionen Kollisionsfreiheit; richtig ist: Kollisionen sind wegen der festen Länge unvermeidbar, gefordert ist Kollisionsresistenz (praktisch nicht auffindbar). Für das Speichern von Passwörtern nimmt man bewusst langsame Verfahren mit Salt statt schneller Hashfunktionen. Der Ablauf „Hashwert mit dem privaten Schlüssel verschlüsseln“ (K4) ist das vereinfachte Prüfungsmodell, das die IHK-Skizzen erwarten (2025H-A3-h); bei modernen Verfahren wie ECDSA ist Signieren technisch keine Verschlüsselung.
+
 **Aufteilung:**
 - Teil A – Hashwert: Begriff K1; Download prüfen K2
 - Teil B – digitale Signatur: Leistung K3; Ablauf K4

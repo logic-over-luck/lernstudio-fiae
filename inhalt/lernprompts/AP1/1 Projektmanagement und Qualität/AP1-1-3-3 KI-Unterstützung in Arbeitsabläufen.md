@@ -75,6 +75,8 @@ Am Beispiel Rechnungsprüfung:
 
 ## Lehrnotiz: KI-Unterstützung in Arbeitsabläufen
 
+**Hinweis aus dem Lernplan:** KI-Software auswählen und beurteilen (AP1.03.01.5, AP1.04.03.8) steht im Ordner Software und Betriebssysteme. Das Lehrbuch beschreibt die EU-KI-Verordnung noch im Entwurfsstand; richtig ist: Sie ist seit 1. August 2024 in Kraft, ihre Pflichten gelten gestaffelt seit Februar 2025. Den Nutzen der KI-Unterstützung für skeptische Mitarbeiter erläutern (2025F-A4-b) lernst du in AP1-2-5-1 (K2: Chancen einer Veränderung).
+
 **Aufteilung:**
 - Wo KI in einem Ablauf hilft: K1
 - Routineprüfung mit KI: K5

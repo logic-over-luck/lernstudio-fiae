@@ -90,6 +90,8 @@ MD5 taucht noch als einfache Prüfsumme gegen Übertragungsfehler auf; gegen abs
 
 ## Lehrnotiz: Integrität, Authentizität, Zertifikate und Passwortspeicherung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch begründet die Schwäche von MD5 damit, dass sich aus dem Hash die Originaldaten berechnen ließen; richtig ist: MD5 gilt als gebrochen, weil sich Kollisionen gezielt erzeugen lassen. Das Lehrbuch füllt im Java-Beispiel den SHA-256-Hash auf 32 Hexadezimalstellen auf; richtig sind 64 Stellen (32 Byte). Die Bezeichnungen der Zertifikatsarten sind im Lehrbuch verstümmelt; richtig ist: DV = Domain Validation, OV = Organization Validation, EV = Extended Validation. Das Lehrbuch speichert Passwörter im Beispiel als einfachen SHA-256-Hash; richtig ist ein bewusst langsames Verfahren mit Salt wie bcrypt, scrypt oder Argon2.
+
 **Aufteilung:**
 - Was ein Zertifikat für einen Webserver bewirkt: K1
 - Viele Dienste prüfen über eine Zertifizierungsstelle: K2

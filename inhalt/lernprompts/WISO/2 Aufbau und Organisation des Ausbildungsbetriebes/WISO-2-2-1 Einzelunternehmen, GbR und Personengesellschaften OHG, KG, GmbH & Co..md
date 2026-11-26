@@ -119,6 +119,8 @@ Abgrenzung: Der Komplementär führt die Geschäfte und haftet unbeschränkt (WI
 
 ## Lehrnotiz: Einzelunternehmen, GbR und Personengesellschaften: OHG, KG, GmbH & Co. KG
 
+**Hinweis aus dem Lernplan:** Die Rechtsform für eine Gründung wählen und die eG (2023S-WISO-A23, 2023W-WISO-A15) steht in WISO-2-2-2-K7 und -K8. Das Lehrbuch nennt für GbR und OHG ohne Vertragsregel noch die Gewinnverteilung nach Köpfen bzw. 4 % auf die Einlage und den Rest nach Köpfen; richtig ist seit dem 1.1.2024 (MoPeG): nach den vereinbarten Beteiligungsverhältnissen, hilfsweise nach dem Verhältnis der vereinbarten Werte der Beiträge, sonst zu gleichen Teilen.
+
 **Aufteilung:**
 - Zwei Gruppen von Rechtsformen und die Mindestzahl der Gesellschafter: K1, K5
 - Haftung bei Einzelunternehmen, GbR und OHG: K2

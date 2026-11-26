@@ -84,6 +84,8 @@ Beispiel: Im Zug ohne Netz committest du drei Korrekturen lokal und überträgst
 
 ## Lehrnotiz: Versionsverwaltung im Entwicklungsteam
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt Git so, als gäbe es ein zentrales Repository, von dem jeder nur eine Arbeitskopie holt; richtig ist: Git ist verteilt, jeder Klon enthält das ganze Repository mit Historie, und ein gemeinsames Remote-Repository ist nur eine Absprache im Team.
+
 **Aufteilung:**
 - Zweck und Grundfunktionen: K1
 - Verteilt statt zentral, Git: K4

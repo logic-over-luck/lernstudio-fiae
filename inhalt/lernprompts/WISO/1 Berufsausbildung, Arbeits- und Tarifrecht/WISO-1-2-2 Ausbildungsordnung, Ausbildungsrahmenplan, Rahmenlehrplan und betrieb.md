@@ -93,6 +93,8 @@ Typische Verwechslung: nicht die IHK erlässt die Ausbildungsordnung, und nicht 
 
 ## Lehrnotiz: Ausbildungsordnung, Ausbildungsrahmenplan, Rahmenlehrplan und betrieblicher Ausbildungsplan
 
+**Hinweis aus dem Lernplan:** Dass der betriebliche Ausbildungsplan Teil des Ausbildungsvertrags wird (2025S-WISO-A10), steht in WISO-1-1-1.
+
 **Aufteilung:**
 - Was die Ausbildungsordnung regelt: K4
 - Zwei Lernorte, zwei Pläne, zwei Zuständige: K1, K5

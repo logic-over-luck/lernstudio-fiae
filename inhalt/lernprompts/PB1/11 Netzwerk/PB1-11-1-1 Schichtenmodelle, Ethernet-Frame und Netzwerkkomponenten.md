@@ -143,6 +143,8 @@ Beispiel: Die Filiale mit einem einzigen Internetanschluss kommt mit einer stati
 
 ## Lehrnotiz: Schichtenmodelle, Ethernet-Frame und Netzwerkkomponenten
 
+**Hinweis aus dem Lernplan:** Netzwerk ist im AP2-Katalog gemeinsamer Inhalt aller Fachinformatiker. Der Aufbau der MAC-Adresse (2024W-PB1-A2-bb) steht in AP1-6-2-4, das Skript über die Host-Adressen (2024W-PB1-A2-c) in PB1-3. Das Lehrbuch nennt beim Weg eines Webseitenaufrufs auf Schicht 2 die Ziel-IP-Adresse des Interfaces; richtig ist die Ziel-MAC-Adresse (die des Routers, wenn der Server in einem anderen Netz liegt). Den dritten Switchtyp nennt es „Fast-Forward oder Fragment-free“; richtig ist: Fast Forward ist ein anderer Name für Cut-Through, der Mittelweg heißt Fragment-Free. Bei TTL 0 meldet der Router laut Lehrbuch „Ziel nicht erreichbar“; richtig ist die ICMP-Meldung „Time Exceeded“. CSMA/CD stellt es als heute übliches LAN-Verfahren dar; im geswitchten Vollduplex-Ethernet gibt es keine Kollisionen mehr.
+
 **Aufteilung:**
 - Schichten und Kapselung: K1, K5
 - Adressen und Geräte beim Webseitenaufruf: K6

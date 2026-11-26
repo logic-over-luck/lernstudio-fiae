@@ -157,6 +157,8 @@ Beispiel: In der Buchhaltung mit vielen Zahleneingaben eine Tastatur mit Nummern
 
 ## Lehrnotiz: Peripheriegeräte und Anschlüsse
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2026F-A1-ca bis -cc fehlen; K5 und K7 folgen der Aufgabenstellung.
+
 **Aufteilung:**
 - Teil A – Geräte und Anschlüsse: Ein- oder Ausgabe K1; Zweck der Anschlüsse K4; Buchsen, Logos und Symbole erkennen K2, K3; Steckerform gegen Version K6; ein Kabel zum Dock K9
 - Pause möglich nach Teil A.

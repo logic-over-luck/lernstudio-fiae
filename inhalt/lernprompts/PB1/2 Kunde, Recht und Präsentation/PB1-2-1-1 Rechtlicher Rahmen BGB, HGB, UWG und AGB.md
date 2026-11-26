@@ -100,6 +100,8 @@ Beispiel: Die AGB eines Softwarehauses sehen Support nur werktags vor; im Vertra
 
 ## Lehrnotiz: Rechtlicher Rahmen: BGB, HGB, UWG und AGB
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt beim Fernabsatzvertrag und bei der Impressumspflicht noch das Telemediengesetz (TMG); seit Mai 2024 gilt stattdessen das Digitale-Dienste-Gesetz (DDG), die Impressumspflicht steht in § 5 DDG. Die Regeln zum Fernabsatz selbst stehen im BGB.
+
 **Aufteilung:**
 - BGB, HGB und der passende Vertrag: K1
 - Verträge, die nicht gelten (nichtig oder anfechtbar): K5

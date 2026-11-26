@@ -106,6 +106,8 @@ Beispiel: Der Browser (7) fordert eine Seite an, TCP (4) schickt die Anfrage an 
 
 ## Lehrnotiz: OSI-Modell und Zuordnung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch ordnet DNS und DHCP der Schicht 3 zu; richtig ist Schicht 7 – beides sind Anwendungsprotokolle (DHCP über UDP, DNS meist über UDP; bei großen Antworten und Zonentransfers nutzt DNS auch TCP). Die LED ordnen die Prüfungen nach ihrer Bedeutung zu: „Buchse mit LED“ steht bei Schicht 1 (2024F-A2-b); im Aufgabenblatt 2026H-A2-cd steht die Sichtprüfung der LED, die blinkt, weil Frames gesendet werden, in der Zeile Data Link – gefragt war dort das Protokoll dieser Zeile, laut nicht amtlicher Lösung Ethernet (IEEE 802.3) bzw. ARP.
+
 **Aufteilung:**
 - Aufgaben der Schichten am Weg einer Anfrage, dann die Namen: K6, K1
 - Begriffe einsortieren: K2

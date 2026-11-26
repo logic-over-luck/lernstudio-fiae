@@ -89,6 +89,8 @@ Stand 10/2026 – vor der Prüfung kurz gegenprüfen.
 
 ## Lehrnotiz: Preisnachlässe und Bezahlen: Rabattgründe, GiroCode, digitale Rechnung
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2025H fehlen; die Beispiele folgen den Aufgabenstellungen. Fristen der E-Rechnung (K5): Stand 10/2026, am 19.10.2026 am Wortlaut von § 27 Abs. 38 UStG geprüft (Übergangsregel bis Ende 2026 für alle, bis Ende 2027 bei höchstens 800.000 € Vorjahresumsatz); vor jeder Prüfung gegenprüfen.
+
 **Aufteilung:**
 - Warum es Rabatt gibt: K1
 - Bezahlen ohne Abtippen: K2, K3

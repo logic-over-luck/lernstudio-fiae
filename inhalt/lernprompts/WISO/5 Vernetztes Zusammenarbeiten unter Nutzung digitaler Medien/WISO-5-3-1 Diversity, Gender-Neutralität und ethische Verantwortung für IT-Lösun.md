@@ -85,6 +85,8 @@ Typische Verwechslung: **nicht** dazu gehören Ausbildungsstand oder Art des Abs
 
 ## Lehrnotiz: Diversity, Gender-Neutralität und ethische Verantwortung für IT-Lösungen
 
+**Hinweis aus dem Lernplan:** Die Merkmale des Allgemeinen Gleichbehandlungsgesetzes und die Benachteiligung nach dem AGG stehen in WISO-1-3-5; hier nur, was die Charta der Vielfalt anders macht. Die Auswirkungen auf Umwelt, Pflanzen, Tiere und Lebensräume (WISO.05.03.4 wiederholt WISO.04.04.1) stehen in WISO-4-1-2; hier nur der Zeithorizont bei IT-Lösungen.
+
 **Aufteilung:**
 - Diversity und das Ziel des Diversity Managements: K1
 - Charta der Vielfalt, Abgrenzung zum AGG, sieben Dimensionen: K6

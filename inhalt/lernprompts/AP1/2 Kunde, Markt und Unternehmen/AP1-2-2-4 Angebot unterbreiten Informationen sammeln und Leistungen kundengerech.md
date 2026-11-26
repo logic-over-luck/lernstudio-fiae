@@ -109,6 +109,8 @@ Beispiel: Statt „Das Notebook hat 32 GB RAM“ sagst du „Damit laufen Ihre E
 
 ## Lehrnotiz: Angebot unterbreiten: Informationen sammeln und Leistungen kundengerecht beschreiben
 
+**Hinweis aus dem Lernplan:** Die Technik der angebotenen Leistungen (z. B. Cloud, AP1.03.01.4) steht im Ordner Software und Betriebssysteme; Preise und Angebotsvergleich im Ordner Wirtschaftlichkeit und Verträge.
+
 **Aufteilung:**
 - Was vor dem Angebot vorliegen muss: K1
 - Anpreisung, Anfrage, Angebot: K5

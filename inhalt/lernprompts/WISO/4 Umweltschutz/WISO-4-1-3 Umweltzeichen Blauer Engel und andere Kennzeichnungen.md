@@ -71,6 +71,8 @@ Typische Verwechslung: Recyclingpapier senkt **nicht** den eigenen Papierverbrau
 
 ## Lehrnotiz: Umweltzeichen: Blauer Engel und andere Kennzeichnungen
 
+**Hinweis aus dem Lernplan:** Dass es Gütesiegel für Energieeffizienz gibt (EU-Energielabel, Energy Star, Blauer Engel als Beispiel), steht in AP1-4-3-3. Das CE-Zeichen steht in WISO-3-3-2.
+
 **Aufteilung:**
 - Der Blaue Engel, was er bedeutet und was nicht: K1
 - Drei Zeichen auseinanderhalten: K3

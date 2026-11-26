@@ -82,6 +82,8 @@ In der Prüfung immer mit der Situation begründen: „Weil der Fehler nur im Pr
 
 ## Lehrnotiz: Debugging und Fehlerbehandlung
 
+**Hinweis aus dem Lernplan:** Ausnahmen mit try/catch und die Reaktion einer Methode auf Fehlerfälle stehen in PB1-5-1-2; Sonderfälle im Pseudocode abfangen steht in PB2-1-1-1. Ablaufverfolgung ist der Schreibtischtest (PB2-3-1-1-K1).
+
 **Aufteilung:**
 - Fehler mit dem Debugger eingrenzen: K1
 - Debugger oder print-Debugging begründet wählen: K5

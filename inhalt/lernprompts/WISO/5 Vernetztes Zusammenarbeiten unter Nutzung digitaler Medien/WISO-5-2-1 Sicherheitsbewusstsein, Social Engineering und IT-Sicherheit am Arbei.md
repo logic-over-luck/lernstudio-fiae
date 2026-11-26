@@ -108,6 +108,8 @@ Typische Verwechslung: nicht „das BSI verhängt Datenschutz-Bußgelder“ oder
 
 ## Lehrnotiz: Sicherheitsbewusstsein, Social Engineering und IT-Sicherheit am Arbeitsplatz
 
+**Hinweis aus dem Lernplan:** Schutzziele, technische und organisatorische Maßnahmen, BSI und IT-Grundschutz, Datenschutz (DSGVO), Schadsoftware, Phishing und sicheres mobiles Arbeiten kennst du aus AP1-7; hier steht nur, was WiSo darüber hinaus verlangt (Authentizität, zweites Ziel der DSGVO, BSI-Abgrenzung). Damit lösen sich 2021W-WISO-A25 bis A28 (Phishing erkennen und richtig reagieren: AP1-7-4-2; offenes WLAN nur mit VPN: AP1-7-4-3). Bildschirm sperren, eigene Passwörter, Updates und Vorfälle melden stehen in AP1-7-1-3, AP1-7-1-4 und AP1-7-4-3.
+
 **Aufteilung:**
 - Warum Sicherheitsbewusstsein nötig ist: K1
 - Social Engineering erkennen, dann richtig reagieren: K3, K4

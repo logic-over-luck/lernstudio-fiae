@@ -89,6 +89,8 @@ Der ROI (Return on Investment) setzt den Gewinn einer Investition ins Verhältni
 
 ## Lehrnotiz: Kosten über die Nutzungsdauer berechnen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch rechnet den ROI als Rückflüsse ÷ Investition und nennt eine Investition lohnend, wenn er positiv ist; dieser Quotient ist aber immer positiv. Üblich ist ROI = (Rückflüsse − Investition) ÷ Investition, dann lohnt sich die Investition ab einem Wert über null.
+
 **Aufteilung:**
 - Alles auf den Monat bringen: K1
 - Über mehrere Jahre, netto und brutto: K2

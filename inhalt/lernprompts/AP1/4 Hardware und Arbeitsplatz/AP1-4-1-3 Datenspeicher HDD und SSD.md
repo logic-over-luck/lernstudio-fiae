@@ -105,6 +105,8 @@ HDD-Leistung hängt von Zugriffszeit (Kopfbewegung und Drehwartezeit, bis die ge
 
 ## Lehrnotiz: Datenspeicher: HDD und SSD
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch gibt 2,5 Zoll mit 8,9 cm an; richtig sind etwa 6,35 cm. QLC-Zellen vertragen weniger Schreibzyklen als TLC-Zellen, nicht gleich viele.
+
 **Aufteilung:**
 - Funktionsprinzip und was daraus folgt: K1, K2, K3
 - Für einen Einsatzzweck auswählen: K6

@@ -78,6 +78,8 @@ Typische Verwechslung: nicht „offen halten, damit man schneller fliehen kann�
 
 ## Lehrnotiz: Vorbeugender Brandschutz: Brandursachen und Brandschutzordnung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt den Sauerstoffentzug so, als geschehe er erst bei einem Brand; richtig ist: Sauerstoffreduzierungsanlagen halten den Sauerstoffanteil dauerhaft abgesenkt (vorbeugend), Gaslöschanlagen fluten erst im Brandfall.
+
 **Aufteilung:**
 - Wie ein Brand entsteht und was Löschen heißt: K1
 - Brandursachen und Vorbeugung, als Anwendung der drei Bedingungen: K2

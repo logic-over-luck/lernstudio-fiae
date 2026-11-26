@@ -69,6 +69,8 @@ Beispiel: Ein Notebook im Hotel-WLAN ist nur durch seine Personal Firewall gesch
 
 ## Lehrnotiz: Firewall: Regelwerk, Prüftiefe und Einsatzort
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt Deep Packet Inspection als Prüfung des IP-Headers; richtig ist: DPI prüft die Nutzdaten. Stateful Inspection ordnet es Schicht 7 zu; richtig ist: Sie arbeitet mit dem Verbindungszustand auf Schicht 3/4.
+
 **Aufteilung:**
 - Regelwerk abarbeiten: K1
 - Prüftiefe bis zur Next-Generation-Firewall: K2

@@ -128,6 +128,8 @@ Beispiel: Die Produktsuche eines Shops nutzt GET, das Anmeldeformular und die Be
 
 ## Lehrnotiz: Übertragungsprotokolle: TCP, UDP, HTTP, HTTPS
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch ordnet Port 443 „dynamischen Webseiten“ zu; richtig ist: 443 ist der Standardport von HTTPS, unabhängig vom Seiteninhalt. POST-Daten kommen laut Lehrbuch über den Standardeingabekanal; das gilt nur für CGI-Programme, allgemein stehen sie im Rumpf der Anfrage. Bei der Latenz schreibt es, eine geringe Latenz wirke sich negativ aus; richtig ist: Eine hohe Latenz wirkt negativ. Das Lehrbuch nennt UDP einen Datenstrom; richtig ist: UDP sendet einzelne, voneinander unabhängige Datagramme, einen Bytestrom bietet TCP.
+
 **Aufteilung:**
 - IP als Grundlage: K4
 - Ports und Sockets: K6

@@ -71,6 +71,8 @@ Beispiel: Eine Tabelle mit 5 Mio. Zählerständen wird ständig nach `ZSt_Datum`
 
 ## Lehrnotiz: SQL-Sprachteile, Spaltenoptionen und Indexwahl
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch stellt die Index-Regeln zu pauschal dar; richtig ist: Fremdschlüssel werden nicht in jedem Datenbanksystem automatisch indiziert (z. B. nicht in PostgreSQL oder SQL Server), und MIN/MAX können einen Index durchaus nutzen. Den automatisch hochgezählten Schlüssel schreibt das Buch in der SQLite-Form; der Name hängt vom System ab (AUTO_INCREMENT, AUTOINCREMENT, IDENTITY).
+
 **Aufteilung:**
 - Sprachteile von SQL: K1
 - Spaltenoptionen und Reihenfolge beim Anlegen: K2

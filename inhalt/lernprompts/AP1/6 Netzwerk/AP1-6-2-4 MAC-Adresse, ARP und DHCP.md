@@ -134,6 +134,8 @@ Beispiel: 01-00-5e-… → erstes Byte 0000 0001, Bit 0 = 1 → Multicast. 02-�
 
 ## Lehrnotiz: MAC-Adresse, ARP und DHCP
 
+**Hinweis aus dem Lernplan:** Stand 10/2026: Aktuelle Betriebssysteme melden sich im WLAN oft mit einer zufälligen, je WLAN eigenen MAC-Adresse an (Android ab Version 10 standardmäßig, iOS/iPadOS als „private WLAN-Adresse“, Windows als „zufällige Hardwareadresse“). In der Prüfung gilt weiter die Antwort „vom Hersteller fest vergeben“ (2022F-A3-ea). In der Praxis muss man für eine DHCP-Reservierung oder einen MAC-Filter die zufällige Adresse für dieses WLAN abschalten oder die angezeigte Adresse verwenden.
+
 **Aufteilung:**
 - DHCP und die selbst vergebene Adresse: K4, K5
 - Die physische Adresse und ihre Schreibweise: K1, K6

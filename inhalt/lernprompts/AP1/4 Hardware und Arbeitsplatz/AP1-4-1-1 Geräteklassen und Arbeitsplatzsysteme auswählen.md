@@ -157,6 +157,8 @@ Der Abgleich von Ist und Soll zeigt, was geändert oder beschafft werden muss.
 
 ## Lehrnotiz: Geräteklassen und Arbeitsplatzsysteme auswählen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt noch 4–8 GB Arbeitsspeicher für Desktop-PCs und mehr als 8 GB für Workstations; heute sind eher 8–16 GiB im Büro und 32–128 GiB und mehr in Workstations üblich.
+
 **Aufteilung:**
 - Teil A – Geräte kennen: Geräteklassen mit je einem Vor- und Nachteil K1, K5; mobil gegen stationär K3; Desktop-PC gegen Workstation K8
 - Teil B – wo gerechnet wird: Thin Client und Fat Client K4, K10; Thin, Zero und Cloud Client K11

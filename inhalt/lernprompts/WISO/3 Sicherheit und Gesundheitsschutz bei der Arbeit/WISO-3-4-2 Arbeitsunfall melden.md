@@ -64,6 +64,8 @@ Typische Verwechslung: nicht „jeder Unfall“ und nicht „ab drei Tagen“, s
 
 ## Lehrnotiz: Arbeitsunfall melden
 
+**Hinweis aus dem Lernplan:** Versicherte Personen, Fälle und Leistungen der Unfallversicherung stehen in WISO-3-1-3, Träger und Beitrag in WISO-1-6-2. Verletztengeld zahlt die Berufsgenossenschaft, nicht der Betrieb (Distraktor in 2023S-WISO-A5, siehe WISO-3-1-3-K3).
+
 **Aufteilung:**
 - Wer meldet, womit und an wen: K1
 - Ab wann meldepflichtig und in welcher Frist, mit Tagezählen: K6

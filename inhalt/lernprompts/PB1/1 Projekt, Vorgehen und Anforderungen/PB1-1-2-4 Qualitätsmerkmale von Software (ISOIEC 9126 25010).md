@@ -72,6 +72,8 @@ So wird sichtbar, ob ein Merkmal noch gar nicht bedacht ist.
 
 ## Lehrnotiz: Qualitätsmerkmale von Software (ISO/IEC 9126 / 25010)
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch ordnet die Untermerkmale noch nach ISO/IEC 9126 (Sicherheit unter Funktionalität); in der ISO/IEC 25010 ist Sicherheit ein eigenes Hauptmerkmal. Die ISO/IEC 25010 hatte in der Fassung von 2011 acht Hauptmerkmale, seit der Fassung von 2023 sind es neun (neu: Safety).
+
 **Aufteilung:**
 - Die Merkmale und ihre Bedeutung: K1
 - Eine Anforderung dem passenden Merkmal zuordnen: K2

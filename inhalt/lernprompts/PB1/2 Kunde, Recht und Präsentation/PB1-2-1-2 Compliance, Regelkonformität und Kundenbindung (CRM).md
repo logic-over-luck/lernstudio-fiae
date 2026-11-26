@@ -91,6 +91,8 @@ Ziel: Kunden binden und Verkaufschancen erkennen.
 
 ## Lehrnotiz: Compliance, Regelkonformität und Kundenbindung (CRM)
 
+**Hinweis aus dem Lernplan:** Die IHK-Lösung 2024W-PB1-A1-d nennt die Einwilligung als immer nötig; fachlich ist sie eine von sechs Rechtsgrundlagen (Art. 6 DSGVO). In der Prüfung die Informationspflicht und die passende Rechtsgrundlage nennen.
+
 **Aufteilung:**
 - Compliance und Maßnahmen im Projekt: K1
 - Open-Source-Bibliothek nach Lizenzart beurteilen: K2

@@ -79,6 +79,8 @@ Typische Verwechslung: Umgangssprachlich heißt „Firma“ der Betrieb. Im Hand
 
 ## Lehrnotiz: Kaufmann, Firma und Handelsregister
 
+**Hinweis aus dem Lernplan:** Kaufmann und Handelsregister stehen nicht im Katalog, kamen aber in fünf Prüfungen vor. Prokura und ihre Eintragung ins Handelsregister stehen in AP1-2-4-3.
+
 **Aufteilung:**
 - Handelsregister – wer es führt und wie es gegliedert ist: K1
 - Wirkung der Eintragung: K2

@@ -130,6 +130,8 @@ Achte auf die Einheiten: Bit durch 8 ergibt Byte, Datenmengen in KiB/MiB mit Bin
 
 ## Lehrnotiz: Datenmengen und Speicherbedarf berechnen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt 22,05 kHz als Abtastrate für Spiele; heute sind 44,1 oder 48 kHz üblich. WAV und AIFF stehen dort bei den verlustbehafteten Formaten, speichern aber meist unkomprimiertes Audio.
+
 **Aufteilung:**
 - Analog und digital: K10
 - Wie viele Werte in n Bit passen: K2

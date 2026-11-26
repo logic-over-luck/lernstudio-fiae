@@ -96,6 +96,8 @@ Belege sind Testprotokolle mit erwartetem und tatsächlichem Ergebnis, Messproto
 
 ## Lehrnotiz: Abnahme, Übergabe und Einweisung: Abnahmeprotokoll
 
+**Hinweis aus dem Lernplan:** Mängel und Mängelarten (AP1.07.06.2) wohnen im Ordner Wirtschaftlichkeit und Verträge, weil sie dort mit Vertragsstörungen und Rechnungsprüfung zusammen geprüft werden (2025H-A1-b). Die passende Form einer Einweisung oder Schulung wählen (2021H-A3-d) lernst du in AP1-2-5-1 (K4: Wege der Mitarbeiterqualifizierung).
+
 **Aufteilung:**
 - Die Übergabe planen: K3
 - Die Einweisung oder Schulung planen: K5

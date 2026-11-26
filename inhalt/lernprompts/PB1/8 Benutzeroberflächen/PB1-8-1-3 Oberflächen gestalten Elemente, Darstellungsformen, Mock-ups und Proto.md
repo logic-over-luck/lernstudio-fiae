@@ -121,6 +121,8 @@ Beispiel: Ein Klick-Prototyp zeigt dem Kunden den Bestellablauf (explorativ); ei
 
 ## Lehrnotiz: Oberflächen gestalten: Elemente, Darstellungsformen, Mock-ups und Prototypen
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt den evolutionären Prototyp nur als Mittel, die Akzeptanz der Anwender zu testen und fehlende Funktionen zu finden; kennzeichnend ist, dass er schrittweise zum fertigen Produkt weiterentwickelt wird.
+
 **Aufteilung:**
 - Teil A – Begriffe: Entwurfsstufen und ihr Zweck K6, K7; Prototyping und seine Arten K5, K8; Gestaltungselemente K1
 - Pause möglich nach Teil A.

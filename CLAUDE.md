@@ -15,8 +15,8 @@
   ist aufgehoben** (seit 14.11.2026): Alle elf AP1-Prüfungen werden genannt, geöffnet und in Lehrnotizen, Stoff und
   Lernplan verwendet. `npm run pruefen` meldet, wenn in der Datei die Zeile „Thema:“, die Zeile „Ziel:“ oder bei
   einer Aussage Überschrift (Kurztitel, Stufe, „in der Prüfung vorgegeben“), Wortlaut oder Erklärung nicht mehr zu
-  `inhalt/<RAUM>.json` passen oder der Regelblock nicht mehr zu `_regelblock.md`, und verlangt je Raum alle Prompts
-  oder keinen.
+  `inhalt/<RAUM>.json` passen, der Regelblock nicht mehr zu `_regelblock.md` oder der Hinweis aus dem Lernplan nicht
+  mehr zu `neu.hinweis`, und verlangt je Raum alle Prompts oder keinen.
   - **Das Repo ist die einzige Quelle** (seit 15.11.2026): Prompts und `inhalt/<RAUM>.json` werden direkt hier
     geändert. Die frühere Arbeitsmappe mit ihren Skripten und der Sicherung der Drehbuch-Prompts gibt es nicht mehr;
     `inhalt/lernprompts/_FORTSCHRITT_LEHRNOTIZ.md` ist nur noch das Protokoll dazu.
@@ -31,6 +31,17 @@
     für die Wiederholung stehen nicht dort, sondern im Code (`wiederholRegeln` in
     `src/bereiche/lernen/lernprompt-neu.js`) und wiederholen einzelne Sätze des Regelblocks – bei Bedarf dort
     mit ändern.
+  - **Der Regelblock ist seit 26.11.2026 eingefroren.** Bis dahin wurde er nach einzelnen Sitzungen viermal
+    umgeschrieben, und jede Fassung behob die Nebenwirkung der vorigen. Deshalb gilt: Fällt in einer Lernsitzung
+    etwas auf, zuerst prüfen, ob die Ursache in Stoff, Lehrnotiz oder Hinweis dieses einen Stichpunkts liegt – dann
+    nur diese Datei ändern. Am Regelblock wird erst etwas geändert, wenn dasselbe Problem in zwei Sitzungen zu
+    verschiedenen Stichpunkten aufgetreten ist, und dann nur die eine Zeile dazu. Anlass und Probe der Fassung vom
+    26.11.2026 stehen im Commit-Text; was noch beobachtet wird, in `OFFENE_PUNKTE.md`.
+  - **Hinweis aus dem Lernplan** (seit 26.11.2026): Was die App am Stichpunkt als Hinweis zeigt (`neu.hinweis`), steht
+    Wort für Wort als erste Zeile der Lehrnotiz: „**Hinweis aus dem Lernplan:** …“. Dort steht, was zu einem anderen
+    Stichpunkt gehört und wo das Lehrbuch abweicht. Ändern: `neu.hinweis` in `inhalt/<RAUM>.json` bearbeiten, dann
+    `npm run hinweis einsetzen <RAUM>`; `npm run hinweis pruefen [RAUM]` nennt Prompts, die abweichen (181 der 293
+    Stichpunkte haben einen Hinweis, die anderen keine Zeile).
   - **Abläufe in der Lehrnotiz** (seit 25.11.2026): Der Abschnitt „**Abläufe zum Verstehen (Hintergrund, mehr als die
     IHK verlangt):**“ hinter den Kerngedanken beschreibt Schritt für Schritt, was der Stoff nur aufzählt. Er kommt aus
     `tools/ablauf-ergaenzen.mjs`: `npm run ablauf start [ALLE|RAUM|Ordner wie AP1-4|Stichpunkt] [neu]`, dann

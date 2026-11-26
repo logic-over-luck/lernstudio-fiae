@@ -159,6 +159,8 @@ Entscheidend ist, wann sich der Mangel zeigt – nicht, wann der Käufer ihn mel
 
 ## Lehrnotiz: Vertragsstörungen und Mängelarten: Schlechtleistung, Falschlieferung, Minderlieferung
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch beschreibt den Sachmangel noch nach dem Recht vor 2022: zuerst die vereinbarte Beschaffenheit, die gewöhnliche Verwendung nur ohne Vereinbarung. Seit 1.1.2022 (§ 434 BGB n. F.) ist eine Sache nur mangelfrei, wenn sie die vereinbarte Beschaffenheit hat, sich für die gewöhnliche Verwendung eignet, die übliche Beschaffenheit hat und richtig montiert ist; diese Anforderungen gelten nebeneinander.
+
 **Aufteilung:**
 - Teil A – Störungen und Mängel erkennen: vier Vertragsstörungen K1; Mängelarten K3; Sachmangel und Rechtsmangel K10; Warenannahme K9; Mängel bestimmen und festhalten K6
 - Pause möglich nach Teil A.

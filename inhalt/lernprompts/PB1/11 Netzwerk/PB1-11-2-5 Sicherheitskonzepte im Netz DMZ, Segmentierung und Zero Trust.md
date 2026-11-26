@@ -72,6 +72,8 @@ Beispiel: Eine Mitarbeiterin bekommt im Büro für die Personalakten dieselbe An
 
 ## Lehrnotiz: Sicherheitskonzepte im Netz: DMZ, Segmentierung und Zero Trust
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch setzt Zero Trust mit dem Auslagern von Diensten in die Cloud gleich; richtig ist: Zero Trust ist ein Zugriffsprinzip, unabhängig davon, wo die Dienste laufen.
+
 **Aufteilung:**
 - DMZ mit Extranet: K1
 - Segmentierung in Zonen: K2

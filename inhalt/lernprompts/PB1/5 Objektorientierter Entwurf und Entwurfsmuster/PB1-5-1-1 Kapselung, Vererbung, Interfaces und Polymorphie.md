@@ -128,6 +128,8 @@ Beispiel in Pseudocode: `Mitarbeiter(name, gehalt)` ruft zuerst `super(name)` au
 
 ## Lehrnotiz: Kapselung, Vererbung, Interfaces und Polymorphie
 
+**Hinweis aus dem Lernplan:** Die Notation abstrakter Klassen und Interfaces im Klassendiagramm steht in PB1-4-1-2. Das Lehrbuch (FS 3.5.3) nennt noch, ein Element ohne Zugriffsmodifizierer sei automatisch private; richtig ist: In Java ist es dann im ganzen Paket sichtbar (package-private, im Klassendiagramm ~).
+
 **Aufteilung:**
 - Kapselung im Entwurf: K1
 - Vererbung und was die Unterklasse benutzen darf: K2, K6

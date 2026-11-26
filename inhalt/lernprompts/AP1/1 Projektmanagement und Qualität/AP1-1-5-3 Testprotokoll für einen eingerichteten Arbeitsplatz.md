@@ -73,6 +73,8 @@ Beispiel mit zwei Speicherriegeln, der Rechner stürzt ab:
 
 ## Lehrnotiz: Testprotokoll für einen eingerichteten Arbeitsplatz
 
+**Hinweis aus dem Lernplan:** Die Umrechnung zwischen GB und GiB selbst (2026H-A2-a) wird im Ordner Hardware und Arbeitsplatz gelernt; hier zählt, die Abweichung im Testprotokoll damit zu begründen.
+
 **Aufteilung:**
 - Testprotokoll aus der Spezifikation ableiten: K5
 - Testfall fehlgeschlagen, Ursache eingrenzen: K3

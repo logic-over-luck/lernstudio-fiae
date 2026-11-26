@@ -129,6 +129,8 @@ Beispiel: „IEEE 802.3at“ im Datenblatt eines Access Points heißt: Er kann p
 
 ## Lehrnotiz: WLAN- und Ethernet-Standards, Power over Ethernet
 
+**Hinweis aus dem Lernplan:** Die Berechnung der Stromstärke aus P = U · I in derselben Teilaufgabe (2026F-A1-ac) wohnt im Ordner Hardware und Arbeitsplatz (AP1.03.03.4.2). Das Lehrbuch ordnet ZigBee IEEE 802.15.1 zu; richtig ist 802.15.4 (802.15.1 ist die Grundlage von Bluetooth). Außerdem beschreibt es OFDMA als Messen von Kanälen; richtig ist: OFDMA teilt einen Kanal in Gruppen von Unterträgern, die gleichzeitig verschiedenen Clients zugewiesen werden.
+
 **Aufteilung:**
 - Die Nummern im Datenblatt: K9
 - Ethernet, Datenraten und Bezeichnungen: K2, K8

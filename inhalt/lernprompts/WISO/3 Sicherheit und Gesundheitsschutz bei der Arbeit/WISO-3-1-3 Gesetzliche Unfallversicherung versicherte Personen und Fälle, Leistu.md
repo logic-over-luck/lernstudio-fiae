@@ -69,6 +69,8 @@ Typische Verwechslung: nicht die Krankenkasse zahlt Krankengeld und nicht der Be
 
 ## Lehrnotiz: Gesetzliche Unfallversicherung: versicherte Personen und Fälle, Leistungen
 
+**Hinweis aus dem Lernplan:** Die Unfallversicherung kam in vier Prüfungen vor. Träger und Finanzierung aller Zweige der Sozialversicherung (Unfallversicherung: Berufsgenossenschaften, Beitrag allein vom Arbeitgeber) stehen in WISO-1-6-2; Unfallmeldung und Durchgangsarzt in WISO-3-4-2. Unfallstatistiken (2022W-WISO-A22) liest du wie jede Statistik: absolute Zahlen, Werte je 1.000 und Veränderungen in Prozent getrennt prüfen – das übst du in WISO-1-7-2-K7.
+
 **Aufteilung:**
 - Wer versichert ist: K2
 - Welche Fälle versichert sind: K1

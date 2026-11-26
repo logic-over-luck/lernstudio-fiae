@@ -101,6 +101,8 @@ Beispiel Warenkorb: Im Zustand „gefüllt“ führt „Artikel hinzufügen“ p
 
 ## Lehrnotiz: Zustandsdiagramm
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch (FS2 2.1.2) nennt die Übergänge im Zustandsdiagramm „Transaktionen“; richtig ist Transition bzw. Zustandsübergang – „Transaktion“ ist ein Begriff aus der Datenbanktechnik.
+
 **Aufteilung:**
 - Wozu ein Zustandsdiagramm, Abgrenzung zum Aktivitätsdiagramm: K5
 - Zustände im Text finden und das Grundgerüst zeichnen: K1

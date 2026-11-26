@@ -141,6 +141,8 @@ In einer Schleife `FOR EACH p IN pakete` ist `p` in jedem Durchlauf **ein** Date
 
 ## Lehrnotiz: Schreibtischtest
 
+**Hinweis aus dem Lernplan:** Drei der vier Code-Aufgaben nach aktuellem Katalog sind nicht in deutschem Pseudocode geschrieben – 2025F-A3-d in Python, 2026F-A4-bb in englischem Pseudocode mit FOR EACH und Schlüsselzugriff auf Datensätze, 2026H-A3-ba in C#-ähnlicher Syntax mit Ganzzahldivision. K7–K10 machen das Lesen dieser Schreibweisen zur Pflicht. Der Code-Trainer übt bisher nur deutschen Pseudocode; sein Spickzettel („/ teilt mit Nachkommastellen“) gilt nicht für int / int in C#, Java und C (dafür K7).
+
 **Aufteilung:**
 - Teil A – die Methode: Variablentabelle K1; Ergebnis begründen K2; verschachtelte Verzweigungen K4; zweidimensionales Array K6
 - Pause möglich nach Teil A.

@@ -82,6 +82,8 @@ Beispiel: Ein Hoster sagt 99,95 % zu, nimmt aber jeden Sonntag 2 Stunden Wartung
 
 ## Lehrnotiz: Verfügbarkeit von Anwendungsdiensten beurteilen
 
+**Hinweis aus dem Lernplan:** Betreiben von IT-Systemen ist im AP2-Katalog gemeinsamer Inhalt aller Fachinformatiker. Verfügbarkeit als nichtfunktionale Anforderung steht in PB1-1.
+
 **Aufteilung:**
 - Verfügbarkeit berechnen: K1
 - Wie dringend ist welcher Dienst: K2

@@ -90,6 +90,8 @@ Beispiel: Ein Softwarehaus mit einem Produkt ist meist funktional organisiert; e
 
 ## Lehrnotiz: Leitungssysteme: Stabliniensystem und Spartenorganisation
 
+**Hinweis aus dem Lernplan:** Einlinien-, Mehrlinien- und Matrixorganisation (Erkennen am Organigramm, Unterschiede, je einen Vor- und Nachteil nennen) stehen in AP1-2-4-2; damit lösen sich 2022S-WISO-A21, 2023W-WISO-A21 und 2024S-WISO-A21. Das Zuordnen von Vor- und Nachteilen zu Mehrlinien- und Matrixsystem (2021W-WISO-A13) geht darüber hinaus und steht in K4.
+
 **Aufteilung:**
 - Stabsstelle und Stabliniensystem: K2
 - Funktional oder nach Sparten gegliedert, erst die funktionale Organisation als Ausgangspunkt: K5, K3

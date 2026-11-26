@@ -98,6 +98,8 @@ Manche Werkzeuge beherrschen mehrere Arten.
 
 ## Lehrnotiz: Testdaten auswählen und generieren: Äquivalenzklassen, Grenzwerte, Sonderfälle
 
+**Hinweis aus dem Lernplan:** Den Extremwertetest erklären steht in PB1-9-1-3; hier wird er beim Bilden der Testdaten angewendet. Sonderfälle im Code abfangen steht in PB2-1-1-1; hier geht es um die Testdaten dazu. Testdaten für eine Überdeckung anpassen steht in PB2-4-1-1-K6.
+
 **Aufteilung:**
 - Äquivalenzklassen bilden: K1
 - Normalfall, Grenzwerte, ungültige Eingaben: K2 – die Klassen zeigen, wo die Grenzen liegen

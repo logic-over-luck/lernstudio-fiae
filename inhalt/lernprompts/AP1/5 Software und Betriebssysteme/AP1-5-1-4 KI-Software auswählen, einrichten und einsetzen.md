@@ -118,6 +118,8 @@ Beispiel: Eine KI soll Bewerbungen vorsortieren. Lernt sie aus alten Einstellung
 
 ## Lehrnotiz: KI-Software auswählen, einrichten und einsetzen
 
+**Hinweis aus dem Lernplan:** KI-Unterstützung in Arbeitsabläufen steht im Ordner Projektmanagement und Qualität (AP1-1-3-3), die Kosten eines KI-Chatbots (2025F-A4-c) im Ordner Wirtschaftlichkeit und Verträge. Abgrenzung zu AP1-1-3-3: Dort wird geübt, an welchen Stellen eines Ablaufs KI hilft und warum ein Mensch die Ergebnisse prüft; hier geht es um Auswahl, Einrichtung und Pflichten beim Einsatz von KI-Software.
+
 **Aufteilung:**
 - Was KI ist und was sie am Arbeitsplatz kann: K7, K1
 - Grenzen der KI und Chatbot im Kundenkontakt: K4, K2

@@ -143,6 +143,8 @@ Dann kann der Lieferant verlangen:
 
 ## Lehrnotiz: Rechnung prüfen: Positionen, Rabatt, Umsatzsteuer, Skonto
 
+**Hinweis aus dem Lernplan:** Die Musterlösungen zu 2025H fehlen; K2, K6 und K7 folgen den Aufgabenstellungen.
+
 **Aufteilung:**
 - Wo die Rechnung im Ablauf steht: K9, K6
 - Mit Bestellung und Lieferschein abgleichen: K3, K7, K5

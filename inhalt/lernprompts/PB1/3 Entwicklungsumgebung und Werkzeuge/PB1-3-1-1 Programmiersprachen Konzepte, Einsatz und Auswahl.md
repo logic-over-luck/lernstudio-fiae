@@ -113,6 +113,8 @@ Beispiel: Eine Lagerverwaltung, die auf Windows-Arbeitsplätzen und einem Linux-
 
 ## Lehrnotiz: Programmiersprachen: Konzepte, Einsatz und Auswahl
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt Java und C# „rein“ objektorientiert; besser ist „konsequent“ objektorientiert: In Java sind einfache Datentypen wie int keine Objekte, und in beiden Sprachen gibt es statische Methoden, die ohne Objekt aufgerufen werden.
+
 **Aufteilung:**
 - Die vier Konzepte, erst Merkmale, dann Beispielsprachen: K2, K1
 - Zwei Familien, imperativ und deklarativ: K7

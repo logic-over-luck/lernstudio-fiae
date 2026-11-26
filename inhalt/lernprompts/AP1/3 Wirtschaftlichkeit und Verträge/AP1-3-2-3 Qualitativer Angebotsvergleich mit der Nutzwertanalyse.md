@@ -102,6 +102,8 @@ Liegen zwei Angebote dicht beieinander, kann schon eine kleine Änderung die Ran
 
 ## Lehrnotiz: Qualitativer Angebotsvergleich mit der Nutzwertanalyse
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt für öffentliche Ausschreibungen die VOB; die gilt nur für Bauleistungen. IT-Lieferungen und -Dienstleistungen werden nach UVgO (unterhalb) bzw. VgV (oberhalb der EU-Schwellenwerte) vergeben.
+
 **Aufteilung:**
 - Messbare und nur einschätzbare Kriterien: K8
 - Punkte je Kriterium vergeben: K1

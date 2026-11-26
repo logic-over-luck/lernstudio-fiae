@@ -114,6 +114,8 @@ Einen Befehl schreibst du aus Befehlsname, Optionen und Argumenten:
 
 ## Lehrnotiz: Kommandozeile: Befehle für Dateioperationen
 
+**Hinweis aus dem Lernplan:** Die Netzwerkbefehle aus AP1.04.05.6 stehen im Ordner Netzwerk (AP1-6-3-2); Skripte im Ordner Programmieren und Modellieren.
+
 **Aufteilung:**
 - Aufbau eines Befehls: K1
 - Welcher Befehl in welcher Shell, nur Name und Zweck: K2, K7

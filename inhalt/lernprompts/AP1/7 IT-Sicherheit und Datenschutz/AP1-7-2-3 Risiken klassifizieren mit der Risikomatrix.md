@@ -77,6 +77,8 @@ Beispiel: Wasserschaden im Serverraum im Keller – Verfügbarkeit, Server, Scha
 
 ## Lehrnotiz: Risiken klassifizieren mit der Risikomatrix
 
+**Hinweis aus dem Lernplan:** Die Risikoanalyse im Projekt (AP1.01.02.4) steht im Ordner Projektmanagement und Qualität (AP1-1-1-3). Wie ein eingeordnetes Risiko behandelt wird (vermeiden, vermindern, übertragen, akzeptieren), steht ebenfalls dort; hier wird nur festgelegt, welche Risiken zuerst behandelt werden.
+
 **Aufteilung:**
 - Aufbau der Matrix und warum eine Achse nicht reicht: K1
 - Ein beschriebenes Risiko einordnen: K2

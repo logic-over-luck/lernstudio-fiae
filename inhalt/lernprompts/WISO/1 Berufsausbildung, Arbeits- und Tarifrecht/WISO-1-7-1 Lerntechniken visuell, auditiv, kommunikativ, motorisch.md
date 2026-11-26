@@ -75,6 +75,8 @@ Typische Verwechslung: Eine Mindmap ist kein Fließtext mit Pfeilen, sondern ein
 
 ## Lehrnotiz: Lerntechniken: visuell, auditiv, kommunikativ, motorisch
 
+**Hinweis aus dem Lernplan:** Die vier Techniken sind Zugänge zum Stoff, keine festen „Lerntypen“: Das Lerntypen-Modell gilt in der Lernforschung als nicht belegt; mehrere Zugänge zu verbinden hilft am meisten.
+
 **Aufteilung:**
 - Vier Zugänge zum Stoff: K1
 - Beispiele aus dem Katalog zuordnen: K2

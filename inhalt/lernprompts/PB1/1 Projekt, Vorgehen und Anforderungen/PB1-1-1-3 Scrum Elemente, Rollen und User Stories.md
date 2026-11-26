@@ -136,6 +136,8 @@ Beispiel: Eine Bank-App mit 60 Entwicklern muss die Arbeit auf mehrere Teams ver
 
 ## Lehrnotiz: Scrum: Elemente, Rollen und User Stories
 
+**Hinweis aus dem Lernplan:** Das Lehrbuch nennt noch ein Entwicklungsteam von drei bis neun Personen; richtig ist nach dem Scrum Guide 2020 ein Scrum-Team (Product Owner, Scrum Master, Developers) von in der Regel höchstens zehn Personen.
+
 **Aufteilung:**
 - Artefakte und Zeitrahmen: K1
 - Rollen: K2

@@ -87,6 +87,8 @@ Auf einer **generischen Liste** greifst du mit `get(i)` und `set(i, x)` statt mi
 
 ## Lehrnotiz: Generische Klassen und Funktionsobjekte
 
+**Hinweis aus dem Lernplan:** Attribute mit Typparameter wie List<Strecke> kennst du aus PB1-4-1-2. Das Funktionsobjekt selbst ist in den Aufgaben vorgegeben (Speichern und Aufruf stehen dabei); du musst es anwenden, nicht erklären.
+
 **Aufteilung:**
 - Generische Klasse erläutern: K1
 - Vergleichsfunktion schreiben: K2

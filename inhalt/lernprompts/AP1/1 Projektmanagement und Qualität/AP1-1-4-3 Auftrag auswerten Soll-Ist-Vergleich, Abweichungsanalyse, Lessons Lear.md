@@ -102,6 +102,8 @@ Daten für die Auswertung eines Projekts gewinnt man durch Befragung der Beteili
 
 ## Lehrnotiz: Auftrag auswerten: Soll-Ist-Vergleich, Abweichungsanalyse, Lessons Learned, Nachfolgeaufträge
 
+**Hinweis aus dem Lernplan:** Die Nachkalkulation (AP1.07.07.2, AP1.01.02.2) steht im Ordner Wirtschaftlichkeit und Verträge.
+
 **Aufteilung:**
 - Plan und Wirklichkeit gegenüberstellen: K1
 - Woher die Daten für die Auswertung kommen: K8

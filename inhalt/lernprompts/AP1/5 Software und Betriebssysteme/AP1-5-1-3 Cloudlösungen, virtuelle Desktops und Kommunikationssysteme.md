@@ -134,6 +134,8 @@ Aufbau einer Virtual Desktop Infrastructure: Jeder Desktop läuft als virtuelle 
 
 ## Lehrnotiz: Cloudlösungen, virtuelle Desktops und Kommunikationssysteme
 
+**Hinweis aus dem Lernplan:** Das kundengerechte Beschreiben von Cloud-Leistungen (2022F-A1-b) steht im Ordner Kunde, Markt und Unternehmen (AP1-2-2-4).
+
 **Aufteilung:**
 - Teil A – Cloud: Virtualisierung als Grundlage K10; Servicemodelle K9, K1; Vor- und Nachteile K4; Entscheidung nach Vorgabe K3
 - Pause möglich nach Teil A.

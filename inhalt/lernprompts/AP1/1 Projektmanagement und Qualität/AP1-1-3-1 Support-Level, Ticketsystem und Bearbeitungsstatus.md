@@ -139,6 +139,8 @@ Ein Ticket wird kategorisiert (fachlich, z. B. Hardware, Netzwerk, Cloud) und kl
 
 ## Lehrnotiz: Support-Level, Ticketsystem und Bearbeitungsstatus
 
+**Hinweis aus dem Lernplan:** Die Kalkulation in 2023H-A2-e (Vorkalkulation, AP1.01.02.2) gehört zugleich zum Ordner Wirtschaftlichkeit und Verträge.
+
 **Aufteilung:**
 - Teil A – Anlaufstelle und Stufen: Servicedesk K8; Support-Stufen K1
 - Teil A – das Ticket: Zweck K2; Angaben K4; einordnen K10

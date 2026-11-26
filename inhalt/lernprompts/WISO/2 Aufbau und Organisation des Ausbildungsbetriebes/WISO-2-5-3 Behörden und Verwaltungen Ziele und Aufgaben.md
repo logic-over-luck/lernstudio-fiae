@@ -67,6 +67,8 @@ Typische Verwechslung: Die Agentur für Arbeit vor Ort ist keine Behörde der St
 
 ## Lehrnotiz: Behörden und Verwaltungen: Ziele und Aufgaben
 
+**Hinweis aus dem Lernplan:** Handelsregister beim Amtsgericht: WISO-2-2-4-K1; Gewerbeaufsicht und Arbeitsschutz: WISO-3-1-1; Bundeskartellamt: WISO-2-5-1-K6.
+
 **Aufteilung:**
 - Wozu Behörden da sind: K1
 - Welche Stelle wofür zuständig ist: K2

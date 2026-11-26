@@ -138,6 +138,8 @@ Beispiel: „Das System soll benutzerfreundlich sein“ ist weder eindeutig noch
 
 ## Lehrnotiz: Anforderungen ableiten, Lasten- und Pflichtenheft
 
+**Hinweis aus dem Lernplan:** Die IHK-Lösungen 2022S-PB1-A2-b und 2023S-PB1-A1-c zählen „läuft auf gängigen mobilen Systemen“ zu den funktionalen Anforderungen; fachlich ist es Übertragbarkeit, also nichtfunktional. In der Prüfung beides mit Begründung akzeptabel. Das Lehrbuch zählt Endgeräte, Betriebssysteme und Browser zu den funktionalen Anforderungen an die Oberfläche; fachlich sind Plattformvorgaben Übertragbarkeit bzw. Randbedingung, also nichtfunktional (vgl. Hinweis zu den IHK-Lösungen).
+
 **Aufteilung:**
 - Teil A – Anforderungen: funktional oder nichtfunktional K3; Schwächen des Papierablaufs K5 und Eignung für Automatisierung K7; Entstehen mit Rücksprüngen K6; ableiten und prüfbar formulieren K4; beurteilen und verbessern K9
 - Pause möglich nach Teil A.
