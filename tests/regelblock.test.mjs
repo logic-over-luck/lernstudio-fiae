@@ -41,6 +41,24 @@ test('Im Repo hat jeder Prompt den Regelblock aus der _regelblock.md seines Raum
   );
 });
 
+test('Alle vier Vorlagen tragen die Regeln vom 26.11.2026 (Raum-Fassungen laufen nicht auseinander)', () => {
+  const drin = [
+    'Beides liest nur du. Ich kenne nur, was du mir in dieser Sitzung erklärst.',
+    'Fehlende Nummern (etwa K4) sind Absicht.',
+    'und für alles, was eine Erklärung im Stoff nur nebenbei erwähnt.',
+    'kennzeichne sie mit „Hintergrund, nicht aus dem Stoff: …“.',
+    'Steht zu einer Aussage kein Ablauf da, reicht die Erklärung aus dem Stoff.',
+    'aber nur mit dem, was du mir vorher erklärt hast.',
+    'mit „x von y Punkten“ und dem, was fehlte: ✅ nur bei voller Punktzahl, ⚠️ bei Teilpunkten, ❌ bei null.',
+  ];
+  const raus = ['Eselsbrücke', 'lösbar allein mit dem Stoff', 'dem Warum dahinter', 'wurde das geprüft'];
+  for (const r of RAEUME) {
+    const vorlage = lies(wurzel, regelblockPfad(r));
+    for (const satz of drin) assert.ok(vorlage.includes(satz), `${r}: „${satz}“ fehlt`);
+    for (const wort of raus) assert.ok(!vorlage.includes(wort), `${r}: „${wort}“ steht noch drin`);
+  }
+});
+
 test('_regelblock.md wird nicht als Lernprompt geladen (der Build lässt sie weg)', () => {
   for (const r of RAEUME) assert.ok(fs.existsSync(path.join(wurzel, regelblockPfad(r))), r);
   const { prompts } = ladeLernprompts(wurzel);

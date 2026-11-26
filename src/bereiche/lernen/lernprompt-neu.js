@@ -19,6 +19,8 @@ function zerlege(fest) {
 // Regeln für die Wiederholung; in WiSo sind die Aufgaben gebunden wie in der Prüfung.
 // Bei mehreren Stichpunkten wächst die Zahl der Aufgaben mit (mindestens zwei je Stichpunkt, zusammen mindestens 10),
 // damit das Urteil je Stichpunkt eine Grundlage hat.
+// Seit 26.11.2026 wie im Regelblock: Stoff und Lehrnotiz liest nur die Lehrkraft, geprüft wird der Satz „Du kannst …“
+// (keine Nebenbemerkung, kein Nachbarstoff), bewertet wird mit Punkten. In WiSo bleibt es bei „ganz oder gar nicht“.
 export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
   const auswertung = mehrere
     ? `- Stell zu jedem Stichpunkt mindestens zwei Aufgaben, zusammen etwa ${Math.max(10, 2 * anzahl)}. Danach wertest du aus, was sitzt und was wackelt – je Stichpunkt. Was wackelt, erklärst du kurz noch einmal – wo etwas abläuft, Schritt für Schritt, was passiert, nicht nur mit einem Vergleich – und stellst dazu eine weitere Aufgabe.`
@@ -31,16 +33,21 @@ export function wiederholRegeln(raum, mehrere, anzahl = mehrere ? 2 : 1) {
     raum === 'WISO'
       ? '- Stell die Aufgaben gebunden wie in der Prüfung: Auswahl 1 aus 5, Zuordnung, Reihenfolge oder Zahl eintragen, mit plausiblen falschen Antworten. Jede zählt ganz oder gar nicht.'
       : '- Die Aufgaben sollen mich vor allem anwenden lassen, nicht nur die Erklärung nachsagen. Bei Rechnungen rechnest du erst selbst nach, bevor du meine Antwort bewertest. Zeichnungen mache ich auf Papier und lade ein Foto hoch.';
+  const bewertung =
+    raum === 'WISO'
+      ? '- Lass mich erst antworten, bevor du die Lösung zeigst. Danach sag mir kurz, was gepasst hat und wo es hakt. Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.'
+      : '- Lass mich erst antworten, bevor du die Lösung zeigst. Sag bei jeder Aufgabe, wie viele Punkte sie hat (ein Punkt je verlangtem Teil). Bewerte nur, was verlangt war, mit „x von y Punkten“ und dem, was fehlte: ✅ nur bei voller Punktzahl, ⚠️ bei Teilpunkten, ❌ bei null. Stimmt der Inhalt und fehlt nur das Fachwort, gibt es den Punkt: Nenn mir das Wort und weiter.';
   return [
     '## So läuft die Wiederholung',
     '',
-    `Hey! ${was} habe ich schon gelernt und abgehakt – jetzt schauen wir, ob ${mehrere ? 'sie noch sitzen' : 'er noch sitzt'}. Du bist dabei mein Prüfer für die IHK-Prüfung. Unten stehen der **Stoff** (was ich können muss, mit Erklärungen) und ${mehrere ? 'je Stichpunkt eine **Lehrnotiz**' : 'eine **Lehrnotiz**'} mit typischen Fehlern und dem, was schon geprüft wurde.`,
+    `Hey! ${was} habe ich schon gelernt und abgehakt – jetzt schauen wir, ob ${mehrere ? 'sie noch sitzen' : 'er noch sitzt'}. Du bist dabei mein Prüfer für die IHK-Prüfung. Unten stehen der **Stoff** (was ich können muss, mit Erklärungen) und ${mehrere ? 'je Stichpunkt eine **Lehrnotiz**' : 'eine **Lehrnotiz**'} mit typischen Fehlern und dem, was schon geprüft wurde. Beides liest nur du.`,
     '',
     'Sei einfach du selbst, locker und ehrlich – wir duzen uns. Ein paar Sachen sind mir wichtig:',
     '',
     `- Keine Erklärung vorweg, wir legen direkt mit Aufgaben zu den Aussagen los${mehrere ? ', gemischt quer durch alle Stichpunkte' : ''}. Immer nur eine Aufgabe pro Nachricht. Fang mit dem an, was schon in einer Prüfung dran war (Lehrnotiz „Schon geprüft“), und bau die typischen Fehler aus der Lehrnotiz ein.`,
+    '- Jede Aufgabe prüft, was ein Satz „Du kannst …“ verlangt. Was eine Erklärung im Stoff nur nebenbei erwähnt oder die Lehrnotiz einem Nachbarstichpunkt zuordnet, fragst du nicht ab. Fehlende Nummern (etwa K4) sind Absicht.',
     aufgaben,
-    '- Lass mich erst antworten, bevor du die Lösung zeigst. Danach sag mir kurz, was gepasst hat und wo es hakt. Bewerte nur, was in der Aufgabe verlangt war. Stimmt der Inhalt und fehlt nur das Fachwort, zählt es als richtig: Nenn mir das Wort und weiter.',
+    bewertung,
     '- Vereinfachst du etwas so, dass es fachlich nicht mehr ganz stimmt, kennzeichne es mit „vereinfacht: …“.',
     '- Der Stoff ist die Grundlage. Hältst du etwas darin für falsch oder veraltet, sag es offen mit „⚠️ Hinweis zum Stoff: …“. Steht „in der Prüfung vorgegeben“ dabei, muss ich das nur anwenden.',
     auswertung,

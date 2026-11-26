@@ -118,3 +118,14 @@ test('Wiederholung: Die Zahl der Aufgaben wächst mit der Zahl der Stichpunkte, 
   }
   assert.ok(groessen.has(10) && groessen.has(16), [...groessen].join(','));
 });
+
+test('Wiederholung wie der Regelblock vom 26.11.2026: geprüft wird der Können-Satz, bewertet mit Punkten (WiSo: ganz oder gar nicht)', () => {
+  for (const r of mitFest) {
+    const sp = alle.find((s) => s.raum === r);
+    const text = promptStichpunkt(sp, index, stand([sp.id]));
+    assert.ok(text.includes('und dem, was schon geprüft wurde. Beides liest nur du.'), r);
+    assert.ok(text.includes('- Jede Aufgabe prüft, was ein Satz „Du kannst …“ verlangt. Was eine Erklärung im Stoff nur nebenbei erwähnt'), r);
+    assert.equal(text.includes('mit „x von y Punkten“ und dem, was fehlte'), r !== 'WISO', r);
+    assert.equal(text.includes('zählt es als richtig'), r === 'WISO', r);
+  }
+});
